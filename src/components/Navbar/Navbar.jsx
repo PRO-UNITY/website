@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logotogether.png";
 import Topbar from "../Topbar/Topbar";
 const Navbar = () => {
@@ -9,17 +10,17 @@ const Navbar = () => {
         className="navbar navbar-expand-lg navbar-light sticky-top p-0 wow fadeIn"
         data-wow-delay="0.1s"
       >
-        <a
-          href="index.html"
+        <Link
+          to={"/"}
           className="navbar-brand d-flex px-2 align-items-center pt-3 pb-4"
         >
           <img
             className=" ml-0"
-            style={{ width: 250, height: 150, objectFit: "contain" }}
+            style={{ width: 200, height: 100, objectFit: "cover" }}
             src={Logo}
             alt
           />
-        </a>
+        </Link>
         <button
           type="button"
           className="navbar-toggler me-4"
@@ -30,12 +31,12 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" className="nav-item nav-link active">
+            <Link to={"/"} className="nav-item nav-link active">
               Home
-            </a>
-            <a href="about.html" className="nav-item nav-link">
+            </Link>
+            <Link to={"/about"} className="nav-item nav-link">
               About
-            </a>
+            </Link>
             <a href="service.html" className="nav-item nav-link">
               Service
             </a>

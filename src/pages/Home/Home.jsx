@@ -18,7 +18,7 @@ const Home = () => {
               <div className="col-sm-4">
                 <div className="border-start border-light ps-4">
                   <h2 className="text-white mb-1" data-toggle="counter-up">
-                    123
+                    10
                   </h2>
                   <p className="text-light mb-0">Expert Developers</p>
                 </div>
@@ -34,7 +34,7 @@ const Home = () => {
               <div className="col-sm-4">
                 <div className="border-start border-light ps-4">
                   <h2 className="text-white mb-1" data-toggle="counter-up">
-                    12345
+                    10+
                   </h2>
                   <p className="text-light mb-0">Projects</p>
                 </div>

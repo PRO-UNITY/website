@@ -1,3 +1,5 @@
+import { followUsLinks } from "../../constants";
+
 const Topbar = () => {
   return (
     <div className="container-fluid p-0 wow fadeIn " data-wow-delay="0.1s">
@@ -26,46 +28,17 @@ const Topbar = () => {
             <small>+998 33 899 50 00</small>
           </a>
           <div className="h-100 d-inline-flex align-items-center">
-            <a
-              className="text-decoration-none btn-sm-square rounded-circle bg-white text-primary me-1"
-              href="https://github.com/PRO-UNITY"
-            >
-              <img
-                width={16}
-                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                alt=""
-              />
-            </a>
-            <a
-              className=" text-decoration-none btn-sm-square rounded-circle bg-white text-primary me-1 "
-              href
-            >
-              <i className="fa-solid fa-basketball" />
-            </a>
-            <a
-              className="btn btn-sm-square rounded-circle bg-white text-primary me-1"
-              href
-            >
-              <img width="20px" src="./img/clutchicon.webp" alt />
-            </a>
-            <a
-              className="text-decoration-none btn-sm-square rounded-circle bg-white text-primary me-1"
-              href="https://clutch.co/profile/pro-unity"
-            >
-              <i className="fab fa-linkedin-in" />
-            </a>
-            <a
-              className="btn btn-sm-square rounded-circle bg-white text-primary m-0"
-              href="https://www.instagram.com/prounity.uz/"
-            >
-              <i className="fab fa-instagram" />
-            </a>
-            <a
-              className="btn btn-sm-square rounded-circle bg-white text-primary m-0"
-              href="https://www.upwork.com/agencies/1514836313665982464/"
-            >
-              <i className="fa-brands fa-upwork"></i>
-            </a>
+            {followUsLinks.map((item) => (
+              <a
+                key={item.id}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-decoration-none btn-sm-square rounded-circle bg-white text-primary me-1"
+                href={item.link}
+              >
+                <img width={16} src={item.icon} alt="" />
+              </a>
+            ))}
           </div>
         </div>
       </div>
