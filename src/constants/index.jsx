@@ -52,3 +52,5 @@ export const HomeSliderImage = [
   { id: 1, img: slider_img_8 },
   { id: 1, img: slider_img_9 },
 ];
+
+export const Partners = [slider_img_1, slider_img_1];
