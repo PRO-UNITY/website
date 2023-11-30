@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { followUsLinks } from "../../constants";
 
 const Topbar = () => {
+  const { t } = useTranslation();
   return (
     <div className="container-fluid p-0 wow fadeIn " data-wow-delay="0.1s">
       <div className="row gx-0 d-none d-lg-flex">
@@ -12,11 +14,11 @@ const Topbar = () => {
             className="h-100 d-inline-flex align-items-center py-3 me-4 text-decoration-none text-dark"
           >
             <small className="fa fa-map-marker-alt text-primary me-2" />
-            <small>Islom Karimov 1 Street, Bukhara, Uzbekistan</small>
+            <small>{t("topbar.location")}</small>
           </a>
           <div className="h-100 d-inline-flex align-items-center py-3">
             <small className="far fa-clock text-primary me-2" />
-            <small>Mon - Sat : 09.00 AM - 06.00 PM</small>
+            <small>{t("topbar.time")}</small>
           </div>
         </div>
         <div className="col-lg-5 px-5 text-end">

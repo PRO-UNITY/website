@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { followUsLinks } from "../../constants";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div
       className="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn"
@@ -10,7 +12,7 @@ const Footer = () => {
       <div className="container py-5">
         <div className="row g-5">
           <div className="col-lg-4 col-md-6">
-            <h5 className="text-light mb-4">Address</h5>
+            <h5 className="text-light mb-4">{t("footer.address")}</h5>
             <a
               target="_blank"
               rel="noreferrer"
@@ -18,7 +20,7 @@ const Footer = () => {
               className="mb-2 text-decoration-none text-white d-block"
             >
               <i className="fa fa-map-marker-alt me-3" />
-              Islom Karimov 1 Street, Bukhara, Uzbekistan
+              {t("topbar.location")}
             </a>
             <a
               href="tel:+998-33-899-50-00 "
@@ -51,47 +53,43 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <h5 className="text-light mb-4">Services</h5>
+            <h5 className="text-light mb-4">{t("footer.services.title")}</h5>
             <a className="btn btn-link" href>
-              Software Development
+              {t("footer.services.link1")}
             </a>
             <a className="btn btn-link" href>
-              IT School
+              {t("footer.services.link2")}
             </a>
             <a className="btn btn-link" href>
-              Authorized Tutorials
+              {t("footer.services.link3")}
             </a>
             <a className="btn btn-link" href>
-              Coworking
+              {t("footer.services.link4")}
             </a>
             <a className="btn btn-link" href>
-              Open Source
+              {t("footer.services.link5")}
             </a>
             <a className="btn btn-link" href>
-              Pro Community
+              {t("footer.services.link6")}
             </a>
           </div>
           <div className="col-lg-4 col-md-6">
-            <h5 className="text-light mb-4">Quick Links</h5>
+            <h5 className="text-light mb-4">{t("footer.quicklinks.title")}</h5>
             <Link to={"/about"} className="btn btn-link">
-              About Us
+              {t("footer.quicklinks.link1")}
             </Link>
             <Link to={"contact"} className="btn btn-link">
-              Contact Us
+              {t("footer.quicklinks.link2")}
             </Link>
             <Link to={"/services"} className="btn btn-link">
-              Our Services
+              {t("footer.quicklinks.link3")}
             </Link>
           </div>
         </div>
       </div>
       <div className="container">
-        <div className="copyright">
-          <div className="row">
-            <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              © Pro Unity, All Right Reserved.
-            </div>
-          </div>
+        <div className=" copyright text-center text-md-center mb-3 mb-md-0">
+          © Pro Unity, All Right Reserved.
         </div>
       </div>
     </div>

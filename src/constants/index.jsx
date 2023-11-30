@@ -34,7 +34,7 @@ export const followUsLinks = [
   {
     id: 2,
     icon: "https://cdn.freebiesupply.com/logos/large/2x/dribbble-icon-1-logo-png-transparent.png",
-    link: "",
+    link: "https://dribbble.com/prounity",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const followUsLinks = [
   {
     id: 4,
     icon: "https://static.vecteezy.com/system/resources/previews/018/930/584/original/linkedin-logo-linkedin-icon-transparent-free-png.png",
-    link: "",
+    link: "https://www.linkedin.com/company/prounityuz",
   },
   {
     id: 5,

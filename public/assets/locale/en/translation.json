@@ -1,0 +1,201 @@
+{
+  "topbar": {
+    "location": "Islom Karimov 1 Street, Bukhara, Uzbekistan",
+    "time": "Mon - Sat : 09.00 AM - 06.00 PM"
+  },
+  "navbar": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "service": "SERVICE",
+    "products": "PRODUCTS",
+    "language": "EN",
+    "contact": "CONTACT",
+    "appointment": "APPOINTMENT"
+  },
+  "herosection": {
+    "title": "Our mission is to empower individuals with the skills and knowledge needed to thrive in the digital age.",
+    "developers": "Expert Developers",
+    "students": "Students",
+    "projects": "Projects"
+  },
+  "aboutsection": {
+    "aboutbutton": "About Us",
+    "title": "Welcome to PRO UNITY",
+    "text": "Located in Bukhara, Uzbekistan, PRO UNITY is an innovative IT company specializing in software development and IT education. Our mission is to empower individuals with the skills and knowledge needed to thrive in the digital age.",
+    "list1": "Customer-Centric Approach",
+    "list2": "Careful Conceptualization",
+    "list3": "Precision Preparation and Finalization",
+    "list4": "Top-Notch Services",
+    "morebutton": "Read More"
+  },
+  "followsection": {
+    "followbutton": "Follow",
+    "title": "Follow Us Here"
+  },
+  "partners": {
+    "partnersbutton": "Partners",
+    "title": "Clients & Partners"
+  },
+  "featuresection": {
+    "featurebutton": "Features",
+    "title": "Why Choose Us",
+    "text": "",
+    "listmini1": "Experience",
+    "listbig1": "Developers",
+    "listmini2": "Quality",
+    "listbig2": "Services",
+    "listmini3": "Positive",
+    "listbig3": "Consultation",
+    "listmini4": "24 Hours",
+    "listbig4": "Support"
+  },
+  "teamsection": {
+    "teambutton": "Team",
+    "title": "Our Pro Team",
+    "user1": {
+      "name": "Azizbek Hamroyev",
+      "occupation": "Co-founder"
+    },
+    "user2": {
+      "name": "Miron Mustafoev",
+      "occupation": "Co-founder, CEO"
+    },
+    "user3": {
+      "name": "Andrey Molodsov",
+      "occupation": "Designer"
+    },
+    "user4": {
+      "name": "Sobirjon Bobojonov",
+      "occupation": "Software Engineer"
+    },
+    "user5": {
+      "name": "Davlatshoh Naimov",
+      "occupation": "Frontend Developer"
+    },
+    "user6": {
+      "name": "Amirbek Azimov",
+      "occupation": "Mobile Developer"
+    },
+    "user7": {
+      "name": "Jobir Ashurov",
+      "occupation": "Frontend Developer"
+    },
+    "user8": {
+      "name": "Ibrohim Istamov",
+      "occupation": "Devops Developer"
+    },
+    "user9": {
+      "name": "Otabek Kadirov",
+      "occupation": "Frontend Mentor"
+    },
+    "user10": {
+      "name": "Behzod Baxshilloyev",
+      "occupation": "Frontend Mentor"
+    },
+    "user11": {
+      "name": "Behzod Usmanov",
+      "occupation": "Graphic Designer"
+    },
+    "user12": {
+      "name": "Bobur Khamraev",
+      "occupation": "Backend Mentor"
+    },
+    "user13": {
+      "name": "Dilshod Chuliev",
+      "occupation": "Frontend Developer"
+    },
+    "user14": {
+      "name": "Jamshid Barotov",
+      "occupation": "Software Engineer"
+    },
+    "user15": {
+      "name": "Baxtior Raxmonov",
+      "occupation": "Finance"
+    },
+    "user16": {
+      "name": "Miron Nusratov",
+      "occupation": "PR Meneger"
+    },
+    "user17": {
+      "name": "Mirxon Kuziyev",
+      "occupation": "Mobile Developer"
+    },
+    "user18": {
+      "name": "Murod Axmadov",
+      "occupation": "Designer"
+    },
+    "user19": {
+      "name": "Nafisa Rasulova",
+      "occupation": "Sales Manager"
+    },
+    "user20": {
+      "name": "Darya Usyakina",
+      "occupation": "Trainer"
+    },
+    "user21": {
+      "name": "Polina Nosova",
+      "occupation": "Designer"
+    },
+    "user22": {
+      "name": "Samiya Ibragimova",
+      "occupation": "Sales assistant"
+    },
+    "user23": {
+      "name": "Sadoqat Abdullayeva",
+      "occupation": "Office Manager"
+    },
+    "user24": {
+      "name": "Zarnigor Majidova",
+      "occupation": "Marketing Manager"
+    },
+    "user25": {
+      "name": "Nigina Burxanova",
+      "occupation": "Videographer"
+    },
+    "user26": {
+      "name": "Dilnoza Barakatova",
+      "occupation": "Trainer"
+    },
+    "user27": {
+      "name": "Shaxina",
+      "occupation": "Trainer"
+    },
+    "user28": {
+      "name": "Mohinur Tursunova",
+      "occupation": "Web-designer"
+    }
+  },
+  "appointment": {
+    "appointmentbutton": "Appointment",
+    "title": "Make An Appointment To Visit Our Doctor",
+    "text": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+    "call": "Call Us Now",
+    "message": "Mail Us Now",
+    "inputplaceholdername": "Your Name",
+    "inputplaceholderemail": "Your Email",
+    "inputplaceholdermobile": "Your Mobile",
+    "inputplaceholderpurpose": "Your Purpose",
+    "inputplaceholderdescripe": "Describe your problem",
+    "bookbutton": "Book Appointment"
+  },
+  "footer": {
+    "address": "Address",
+    "services": {
+      "title": "Services",
+      "link1": "Software Development",
+      "link2": "It School",
+      "link3": "Authorized Tutorial",
+      "link4": "Coworking",
+      "link5": "Open Source",
+      "link6": "Pro Community"
+    },
+    "quicklinks": {
+      "title": "Quick Links",
+      "link1": "About Us",
+      "link2": "Contact Us",
+      "link3": "Our Services",
+      "link4": "Terms & Condition",
+      "link5": "Support"
+    }
+  }
+}

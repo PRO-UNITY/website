@@ -4,7 +4,9 @@ import teamCard from "../../assets/akaaziz.jpg";
 import teamwork from "../../assets/teamwork.jpg";
 import { HomeSlider, OurTeam, PartnersCard } from "../../components";
 import { Partners } from "../../constants";
+import { useTranslation } from "react-i18next";
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <>
       {/* Header Start */}
@@ -15,8 +17,7 @@ const Home = () => {
               style={{ fontWeight: "600" }}
               className="display-4 text-white mb-5"
             >
-              Our mission is to empower individuals with the skills and
-              knowledge needed to thrive in the digital age.
+              {t("herosection.title")}
             </h1>
             <div className="row g-4">
               <div className="col-sm-4">
@@ -24,7 +25,9 @@ const Home = () => {
                   <h2 className="text-white mb-1" data-toggle="counter-up">
                     10
                   </h2>
-                  <p className="text-light mb-0">Expert Developers</p>
+                  <p className="text-light mb-0">
+                    {t("herosection.developers")}
+                  </p>
                 </div>
               </div>
               <div className="col-sm-4">
@@ -32,7 +35,7 @@ const Home = () => {
                   <h2 className="text-white mb-1" data-toggle="counter-up">
                     100+
                   </h2>
-                  <p className="text-light mb-0">Students</p>
+                  <p className="text-light mb-0">{t("herosection.students")}</p>
                 </div>
               </div>
               <div className="col-sm-4">
@@ -40,7 +43,7 @@ const Home = () => {
                   <h2 className="text-white mb-1" data-toggle="counter-up">
                     10+
                   </h2>
-                  <p className="text-light mb-0">Projects</p>
+                  <p className="text-light mb-0">{t("herosection.projects")}</p>
                 </div>
               </div>
             </div>
@@ -75,33 +78,28 @@ const Home = () => {
             </div>
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
               <p className="d-inline-block border rounded-pill py-1 px-4">
-                About Us
+                {t("aboutsection.aboutbutton")}
               </p>
-              <h1 className="mb-4">Welcome to PRO UNITY</h1>
+              <h1 className="mb-4">{t("herosection.title")}</h1>
+              <p>{t("aboutsection.text")}</p>
               <p>
-                Located in Bukhara, Uzbekistan, PRO UNITY is an innovative IT
-                company specializing in software development and IT education.
-                Our mission is to empower individuals with the skills and
-                knowledge needed to thrive in the digital age.
+                <i className="far fa-check-circle text-primary me-3" />
+                {t("aboutsection.list1")}
               </p>
               <p>
                 <i className="far fa-check-circle text-primary me-3" />
-                Customer-Centric Approach
+                {t("aboutsection.list2")}
               </p>
               <p>
                 <i className="far fa-check-circle text-primary me-3" />
-                Careful Conceptualization
+                {t("aboutsection.list3")}
               </p>
               <p>
                 <i className="far fa-check-circle text-primary me-3" />
-                Precision Preparation and Finalization
-              </p>
-              <p>
-                <i className="far fa-check-circle text-primary me-3" />
-                Top-Notch Services
+                {t("aboutsection.list4")}
               </p>
               <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" href>
-                Read More
+                {t("aboutsection.morebutton")}
               </a>
             </div>
           </div>
@@ -118,9 +116,9 @@ const Home = () => {
             style={{ maxWidth: 600 }}
           >
             <p className="d-inline-block border rounded-pill py-1 px-4">
-              Follow
+              {t("followsection.followbutton")}
             </p>
-            <h1>Follow Us Here</h1>
+            <h1>{t("followsection.title")}</h1>
           </div>
           <div className="row g-4">
             <div
@@ -174,9 +172,9 @@ const Home = () => {
             style={{ maxWidth: 600 }}
           >
             <p className="d-inline-block border rounded-pill py-1 px-4">
-              Partners
+              {t("partners.partnersbutton")}
             </p>
-            <h1>Clients &amp; Partners</h1>
+            <h1>{t("partners.title")}</h1>
           </div>
           <div className="row g-4">
             {Partners.map((item, i) => (
@@ -197,13 +195,11 @@ const Home = () => {
             >
               <div className="p-lg-5 ps-lg-0">
                 <p className="d-inline-block border rounded-pill text-light py-1 px-4">
-                  Features
+                  {t("featuresection.featurebutton")}
                 </p>
-                <h1 className="text-white mb-4">Why Choose Us</h1>
-                <p className="text-white mb-4 pb-2">
-                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                  Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                  sed stet lorem sit clita duo justo erat amet
+                <h1 className="text-white mb-4">{t("featuresection.title")}</h1>
+                <p className="text-white mb-4 pb-2 ">
+                  {t("featuresection.text")}
                 </p>
                 <div className="row g-4">
                   <div className="col-6">
@@ -215,8 +211,12 @@ const Home = () => {
                         <i className="fa fa-user-md text-primary" />
                       </div>
                       <div className="ms-4">
-                        <p className="text-white mb-2">Experience</p>
-                        <h5 className="text-white mb-0">Developers</h5>
+                        <p className="text-white mb-2">
+                          {t("featuresection.listmini1")}
+                        </p>
+                        <h5 className="text-white mb-0">
+                          {t("featuresection.listbig1")}
+                        </h5>
                       </div>
                     </div>
                   </div>
@@ -229,8 +229,12 @@ const Home = () => {
                         <i className="fa fa-check text-primary" />
                       </div>
                       <div className="ms-4">
-                        <p className="text-white mb-2">Quality</p>
-                        <h5 className="text-white mb-0">Services</h5>
+                        <p className="text-white mb-2">
+                          {t("featuresection.listmini2")}
+                        </p>
+                        <h5 className="text-white mb-0">
+                          {t("featuresection.listbig2")}
+                        </h5>
                       </div>
                     </div>
                   </div>
@@ -243,8 +247,12 @@ const Home = () => {
                         <i className="fa fa-comment-medical text-primary" />
                       </div>
                       <div className="ms-4">
-                        <p className="text-white mb-2">Positive</p>
-                        <h5 className="text-white mb-0">Consultation</h5>
+                        <p className="text-white mb-2">
+                          {t("featuresection.listmini3")}
+                        </p>
+                        <h5 className="text-white mb-0">
+                          {t("featuresection.listbig3")}
+                        </h5>
                       </div>
                     </div>
                   </div>
@@ -257,8 +265,12 @@ const Home = () => {
                         <i className="fa fa-headphones text-primary" />
                       </div>
                       <div className="ms-4">
-                        <p className="text-white mb-2">24 Hours</p>
-                        <h5 className="text-white mb-0">Support</h5>
+                        <p className="text-white mb-2">
+                          {t("featuresection.listmini4")}
+                        </p>
+                        <h5 className="text-white mb-0">
+                          {t("featuresection.listbig4")}
+                        </h5>
                       </div>
                     </div>
                   </div>
@@ -325,8 +337,10 @@ const Home = () => {
             data-wow-delay="0.1s"
             style={{ maxWidth: 600 }}
           >
-            <p className="d-inline-block border rounded-pill py-1 px-4">Team</p>
-            <h1>Our PRO Team</h1>
+            <p className="d-inline-block border rounded-pill py-1 px-4">
+              {t("teamsection.teambutton")}
+            </p>
+            <h1>{t("teamsection.title")}</h1>
           </div>
           <div className="row g-4">
             <OurTeam
@@ -345,13 +359,10 @@ const Home = () => {
           <div className="row g-5">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
               <p className="d-inline-block border rounded-pill py-1 px-4">
-                Appointment
+                {t("appointment.appointmentbutton")}
               </p>
-              <h1 className="mb-4">Our Company</h1>
-              <p className="mb-4">
-                Contact us today to learn more about how PRO UNITY can help you
-                achieve your IT goals
-              </p>
+              <h1 className="mb-4"> {t("appointment.title")}</h1>
+              <p className="mb-4">{t("appointment.text")}</p>
               <div className="bg-light rounded d-flex align-items-center p-5 mb-4">
                 <div
                   className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
@@ -360,7 +371,7 @@ const Home = () => {
                   <i className="fa fa-phone-alt text-primary" />
                 </div>
                 <div className="ms-4">
-                  <p className="mb-2">Call Us Now</p>
+                  <p className="mb-2">{t("appointment.call")}</p>
                   <h5 className="mb-0">+998 33 899 50 00</h5>
                 </div>
               </div>
@@ -372,7 +383,7 @@ const Home = () => {
                   <i className="fa fa-envelope-open text-primary" />
                 </div>
                 <div className="ms-4">
-                  <p className="mb-2">Mail Us Now</p>
+                  <p className="mb-2">{t("appointment.message")}</p>
                   <h5 className="mb-0">prounity.uz@gmail.com</h5>
                 </div>
               </div>
@@ -385,7 +396,7 @@ const Home = () => {
                       <input
                         type="text"
                         className="form-control border-0"
-                        placeholder="Your Name"
+                        placeholder={t("appointment.inputplaceholdername")}
                         style={{ height: 55 }}
                       />
                     </div>
@@ -393,7 +404,7 @@ const Home = () => {
                       <input
                         type="email"
                         className="form-control border-0"
-                        placeholder="Your Email"
+                        placeholder={t("appointment.inputplaceholderemail")}
                         style={{ height: 55 }}
                       />
                     </div>
@@ -401,7 +412,7 @@ const Home = () => {
                       <input
                         type="text"
                         className="form-control border-0"
-                        placeholder="Your Mobile"
+                        placeholder={t("appointment.inputplaceholdermobile")}
                         style={{ height: 55 }}
                       />
                     </div>
@@ -410,7 +421,9 @@ const Home = () => {
                         className="form-select border-0"
                         style={{ height: 55 }}
                       >
-                        <option selected>Choose Purpose</option>
+                        <option selected>
+                          {t("appointment.inputplaceholderpurpose")}
+                        </option>
                         <option value={1}>Frontend</option>
                         <option value={2}>Backend</option>
                         <option value={3}>Mobile</option>
@@ -420,7 +433,7 @@ const Home = () => {
                       <textarea
                         className="form-control border-0"
                         rows={5}
-                        placeholder="Describe your problem"
+                        placeholder={t("appointment.inputplaceholderdescripe")}
                         defaultValue={""}
                       />
                     </div>
@@ -429,7 +442,7 @@ const Home = () => {
                         className="btn btn-primary w-100 py-3"
                         type="submit"
                       >
-                        Book Appointment
+                        {t("appointment.bookbutton")}
                       </button>
                     </div>
                   </div>

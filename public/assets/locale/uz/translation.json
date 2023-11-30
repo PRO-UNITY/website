@@ -1,0 +1,201 @@
+{
+  "topbar": {
+    "location": "Islom Karimov 1 Ko'cha, Buxoro, O'zbekiston",
+    "time": "Dush - shan : 09.00 - 18.00"
+  },
+  "navbar": {
+    "home": "UY",
+    "about": "HAQIDA",
+    "service": "XIZMATLAR",
+    "products": "MAHSULOTLAR",
+    "language": "UZ",
+    "contact": "KONTAKT",
+    "appointment": "Tayinlash"
+  },
+  "herosection": {
+    "title": "Bizning vazifamiz odamlarga raqamli asrda rivojlanish uchun zarur bo'lgan ko'nikma va bilimlarni berishdir.",
+    "developers": "Expert Dasturchilar",
+    "students": "Talabalar",
+    "projects": "Loyihalar"
+  },
+  "aboutsection": {
+    "aboutbutton": "Biz haqimizda",
+    "title": "PRO UNITY ga xush kelibsiz",
+    "text": "O‘zbekistonning Buxoro shahrida joylashgan PRO UNITY innovatsion IT-kompaniyasi bo‘lib, dasturiy ta’minot ishlab chiqish va IT-ta’limga ixtisoslashgan. Bizning vazifamiz odamlarga raqamli asrda rivojlanish uchun zarur bo'lgan ko'nikma va bilimlarni berishdir.        ",
+    "list1": "Mijozlarga yo'naltirilgan yondashuv",
+    "list2": "Ehtiyotkorlik bilan kontseptsiyalash",
+    "list3": "Aniq tayyorlash va yakunlash",
+    "list4": " Yuqori darajadagi xizmatlar",
+    "morebutton": "Ko'proq o'qish"
+  },
+  "followsection": {
+    "followbutton": "Kuzating",
+    "title": "Bizni bu yerda kuzatib boring"
+  },
+  "partners": {
+    "partnersbutton": "Hamkorlar",
+    "title": "Mijozlar & Hamkorlar"
+  },
+  "featuresection": {
+    "featurebutton": "Xususiyatlari",
+    "title": "Nima uchun bizni tanlaysiz",
+    "text": "",
+    "listmini1": "Tajriba",
+    "listbig1": "Dasturchilar",
+    "listmini2": "Sifat",
+    "listbig2": "Xizmatlar",
+    "listmini3": "Ijobiy",
+    "listbig3": "Maslahat",
+    "listmini4": "24 Soat",
+    "listbig4": "Qo'llab-quvvatlash"
+  },
+  "teamsection": {
+    "teambutton": "Jamoa",
+    "title": "Bizning Pro Jamoa",
+    "user1": {
+      "name": "Azizbek Hamroyev",
+      "occupation": "Co-founder"
+    },
+    "user2": {
+      "name": "Miron Mustafoev",
+      "occupation": "Co-founder, CEO"
+    },
+    "user3": {
+      "name": "Andrey Molodsov",
+      "occupation": "Designer"
+    },
+    "user4": {
+      "name": "Sobirjon Bobojonov",
+      "occupation": "Software Engineer"
+    },
+    "user5": {
+      "name": "Davlatshoh Naimov",
+      "occupation": "Frontend Developer"
+    },
+    "user6": {
+      "name": "Amirbek Azimov",
+      "occupation": "Mobile Developer"
+    },
+    "user7": {
+      "name": "Jobir Ashurov",
+      "occupation": "Frontend Developer"
+    },
+    "user8": {
+      "name": "Ibrohim Istamov",
+      "occupation": "Devops Developer"
+    },
+    "user9": {
+      "name": "Otabek Kadirov",
+      "occupation": "Frontend Mentor"
+    },
+    "user10": {
+      "name": "Behzod Baxshilloyev",
+      "occupation": "Frontend Mentor"
+    },
+    "user11": {
+      "name": "Behzod Usmanov",
+      "occupation": "Graphic Designer"
+    },
+    "user12": {
+      "name": "Bobur Khamraev",
+      "occupation": "Backend Mentor"
+    },
+    "user13": {
+      "name": "Dilshod Chuliev",
+      "occupation": "Frontend Developer"
+    },
+    "user14": {
+      "name": "Jamshid Barotov",
+      "occupation": "Software Engineer"
+    },
+    "user15": {
+      "name": "Baxtior Raxmonov",
+      "occupation": "Finance"
+    },
+    "user16": {
+      "name": "Miron Nusratov",
+      "occupation": "PR Meneger"
+    },
+    "user17": {
+      "name": "Mirxon Kuziyev",
+      "occupation": "Mobile Developer"
+    },
+    "user18": {
+      "name": "Murod Axmadov",
+      "occupation": "Designer"
+    },
+    "user19": {
+      "name": "Nafisa Rasulova",
+      "occupation": "Sales Manager"
+    },
+    "user20": {
+      "name": "Darya Usyakina",
+      "occupation": "Trainer"
+    },
+    "user21": {
+      "name": "Polina Nosova",
+      "occupation": "Designer"
+    },
+    "user22": {
+      "name": "Samiya Ibragimova",
+      "occupation": "Sales assistant"
+    },
+    "user23": {
+      "name": "Sadoqat Abdullayeva",
+      "occupation": "Office Manager"
+    },
+    "user24": {
+      "name": "Zarnigor Majidova",
+      "occupation": "Marketing Manager"
+    },
+    "user25": {
+      "name": "Nigina Burxanova",
+      "occupation": "Videographer"
+    },
+    "user26": {
+      "name": "Dilnoza Barakatova",
+      "occupation": "Trainer"
+    },
+    "user27": {
+      "name": "Shaxina",
+      "occupation": "Trainer"
+    },
+    "user28": {
+      "name": "Mohinur Tursunova",
+      "occupation": "Web-designer"
+    }
+  },
+  "appointment": {
+    "appointmentbutton": "Tayinlash",
+    "title": "Bizning Kompaniya",
+    "text": "PRO UNITY sizga IT maqsadlaringizga erishishda qanday yordam berishi haqida ko'proq bilish uchun bugun biz bilan bog'laning",
+    "call": "Bizga qo'ng'iroq qilin",
+    "message": "Hozir bizga xat yuboring",
+    "inputplaceholdername": "Ismingiz",
+    "inputplaceholderemail": "Emailingiz",
+    "inputplaceholdermobile": "Telefon Raqamingiz",
+    "inputplaceholderpurpose": "Yo'nalishni tanlang",
+    "inputplaceholderdescripe": "Fikringizni qoldiring",
+    "bookbutton": "Yuborish"
+  },
+  "footer": {
+    "address": "Manzil",
+    "services": {
+      "title": "Xizmatlar",
+      "link1": "Dasturiy Taminotni ishlab chiqish",
+      "link2": "It Maktab",
+      "link3": "Vakolatli Darsliklar",
+      "link4": "Kovorking",
+      "link5": "Ochiq Manba",
+      "link6": "Pro Oilasi"
+    },
+    "quicklinks": {
+      "title": "Tez havolalar",
+      "link1": "Biz haqimizda",
+      "link2": "Bizga bog'lanish",
+      "link3": "Bizning xizmatlarimiz",
+      "link4": "Shartlar",
+      "link5": "Qo'llab-quvvatlash"
+    }
+  }
+}

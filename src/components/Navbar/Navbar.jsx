@@ -2,29 +2,10 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/logotogether.png";
 import Topbar from "../Topbar/Topbar";
 import { useTranslation } from "react-i18next";
-import cookie from "js-cookie";
-const language = [
-  {
-    code: "ru",
-    name: "Russian",
-    country_code: "ru",
-  },
-  {
-    code: "en",
-    name: "English",
-    country_code: "gb",
-  },
-  {
-    code: "zh-hant",
-    name: "China",
-    country_code: "zh-hant",
-  },
-];
-const Navbar = () => {
-  const currentLanguageCode = cookie.get("i18next") || "en";
-  const currentLanguage = language.find((l) => l.code === currentLanguageCode);
-  const { t } = useTranslation();
+import i18next from "i18next";
 
+const Navbar = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Topbar />
@@ -55,13 +36,13 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
             <Link to={"/"} className="nav-item nav-link active">
-              Home
+              {t("navbar.home")}
             </Link>
             <Link to={"/about"} className="nav-item nav-link">
-              About
+              {t("navbar.about")}
             </Link>
             <Link to={"/services"} className="nav-item nav-link">
-              Service
+              {t("navbar.service")}
             </Link>
             <div className="nav-item dropdown">
               <a
@@ -69,7 +50,7 @@ const Navbar = () => {
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
-                Products
+                {t("navbar.products")}
               </a>
               <div className="dropdown-menu rounded-0 rounded-bottom m-0">
                 <a href="#" className="dropdown-item">
@@ -78,24 +59,41 @@ const Navbar = () => {
               </div>
             </div>
             <div className="nav-item dropdown">
-              <Link
-                to={"/"}
+              <span
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
                 En
-              </Link>
+              </span>
               <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                <Link to="/" className="dropdown-item">
+                <span
+                  className="dropdown-item"
+                  onClick={() => {
+                    i18next.changeLanguage("en");
+                  }}
+                >
+                  En
+                </span>
+                <span
+                  className="dropdown-item"
+                  onClick={() => {
+                    i18next.changeLanguage("ru");
+                  }}
+                >
+                  Ru
+                </span>
+                <span
+                  className="dropdown-item"
+                  onClick={() => {
+                    i18next.changeLanguage("uz");
+                  }}
+                >
                   Uz
-                </Link>
-                <Link to="/" className="dropdown-item">
-                  Uz
-                </Link>
+                </span>
               </div>
             </div>
             <Link to={"/contact"} className="nav-item nav-link">
-              Contact
+              {t("navbar.contact")}
             </Link>
           </div>
         </div>
