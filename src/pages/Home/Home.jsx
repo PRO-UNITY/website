@@ -1,7 +1,7 @@
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
 import teamCard from "../../assets/akaaziz.jpg";
-import { HomeSlider, OurTeam } from "../../components";
+import { HomeSlider, OurTeam, PartnersCard } from "../../components";
 const Home = () => {
   return (
     <>
@@ -177,176 +177,7 @@ const Home = () => {
             <h1>Clients &amp; Partners</h1>
           </div>
           <div className="row g-4">
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partnerfp.jpg"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.3s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner2.png"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner3.png"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner8.jpg"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner10.png"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner13.jpg"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.1s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner4.jpg"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partnerskrepka.jpg"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner11.png"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.1s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner1.jpg"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner6.png"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partnerenrico.png"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partnerart.jpg"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.3s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner5.png"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner7.png"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner9.png"
-                alt
-              />
-            </div>
-            <div
-              className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
-              data-wow-delay="0.5s"
-            >
-              <img
-                style={{ width: "100%", height: 130, objectFit: "contain" }}
-                src="./img/partner12.png"
-                alt
-              />
-            </div>
+            <PartnersCard img={""} />
           </div>
         </div>
       </div>
@@ -448,6 +279,39 @@ const Home = () => {
         </div>
       </div>
       {/* Feature End */}
+
+      <div className="back">
+        <div className="container-xxl pt-3">
+          <div className="container pt-3">
+            <div className="row w-100 align-items-center pt-3 g-5 body-video">
+              <div className="col-lg-6">
+                <h1 className="display-4 text-white mb-5">
+                  Lorem ipsum dolor sit amet.
+                </h1>
+                <h2 className="mb-4 text-light">
+                  Lorem ipsum dolor sit amet consectetur <br /> adipisicing
+                  elit. Omnis, unde.
+                </h2>
+                <p className="fs-4 text-white">
+                  Biz shuni tushunamizki siz bizga fikringizni eshitishimiz{" "}
+                  <br />
+                  va eng muhimi sizning qarashlaringizni tushunishimiz <br />
+                  uchun murojaat qilasiz.
+                </p>
+              </div>
+              <div className="col-lg-6 d-flex justify-content-center align-items-center">
+                <a
+                  href="https://youtu.be/uWsZCqd5Tzg"
+                  className=" btn-danger btn-youtube   mx-auto mb-4 "
+                >
+                  <i className="fa-solid fa-play text-light fs-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="extra" />
+      </div>
 
       {/* Team Start */}
       <div className="container-xxl py-5">

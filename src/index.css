@@ -127,7 +127,7 @@
 }
 
 .back {
-  background: url(../img/koworking.jpg);
+  background: url(./assets/koworking.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -168,11 +168,18 @@ p {
 }
 
 .btn-youtube {
+  display: block;
   animation: pulsing 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.5s;
   border: none;
   background-color: red;
   border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .cursor {
