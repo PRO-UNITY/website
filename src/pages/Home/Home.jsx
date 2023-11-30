@@ -1,8 +1,7 @@
-
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
 import teamCard from "../../assets/akaaziz.jpg";
-import { HomeSlider, OurTeam } from "../../components";
+import { OurTeam } from "../../components";
 const Home = () => {
   return (
     <>
@@ -46,7 +45,7 @@ const Home = () => {
           </div>
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
             <div className="owl-carousel header-carousel">
-              <HomeSlider />
+              {/* <HomeSlider /> */}
             </div>
           </div>
         </div>

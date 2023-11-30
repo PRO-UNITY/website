@@ -1,4 +1,13 @@
-import team from "../assets/team.jpg";
+import slider_img_1 from "../assets/team.jpg";
+import slider_img_2 from "../assets/slide7.jpg";
+import slider_img_3 from "../assets/slide4.jpg";
+import slider_img_4 from "../assets/koridor.jpg";
+import slider_img_5 from "../assets/koworking.jpg";
+import slider_img_6 from "../assets/grouplider.jpg";
+import slider_img_7 from "../assets/group1.jpg";
+import slider_img_8 from "../assets/slide5.jpg";
+import slider_img_9 from "../assets/slide8.jpg";
+
 export const followUsLinks = [
   {
     id: 1,
@@ -33,7 +42,13 @@ export const followUsLinks = [
 ];
 
 export const HomeSliderImage = [
-  { id: 1, img: team },
-  { id: 1, img: "" },
-  { id: 1, img: "" },
+  { id: 1, img: slider_img_1 },
+  { id: 1, img: slider_img_2 },
+  { id: 1, img: slider_img_3 },
+  { id: 1, img: slider_img_4 },
+  { id: 1, img: slider_img_5 },
+  { id: 1, img: slider_img_6 },
+  { id: 1, img: slider_img_7 },
+  { id: 1, img: slider_img_8 },
+  { id: 1, img: slider_img_9 },
 ];
