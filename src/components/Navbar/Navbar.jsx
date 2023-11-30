@@ -1,7 +1,30 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logotogether.png";
 import Topbar from "../Topbar/Topbar";
+import { useTranslation } from "react-i18next";
+import cookie from "js-cookie";
+const language = [
+  {
+    code: "ru",
+    name: "Russian",
+    country_code: "ru",
+  },
+  {
+    code: "en",
+    name: "English",
+    country_code: "gb",
+  },
+  {
+    code: "zh-hant",
+    name: "China",
+    country_code: "zh-hant",
+  },
+];
 const Navbar = () => {
+  const currentLanguageCode = cookie.get("i18next") || "en";
+  const currentLanguage = language.find((l) => l.code === currentLanguageCode);
+  const { t } = useTranslation();
+
   return (
     <>
       <Topbar />
@@ -55,20 +78,20 @@ const Navbar = () => {
               </div>
             </div>
             <div className="nav-item dropdown">
-              <a
-                href="#"
+              <Link
+                to={"/"}
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
                 En
-              </a>
+              </Link>
               <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                <a href="uz.html" className="dropdown-item">
+                <Link to="/" className="dropdown-item">
                   Uz
-                </a>
-                <a href="ru.html" className="dropdown-item">
-                  Ru
-                </a>
+                </Link>
+                <Link to="/" className="dropdown-item">
+                  Uz
+                </Link>
               </div>
             </div>
             <Link to={"/contact"} className="nav-item nav-link">

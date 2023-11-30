@@ -7,6 +7,23 @@ import slider_img_6 from "../assets/slide8.jpg";
 import slider_img_7 from "../assets/slide8.jpg";
 import slider_img_8 from "../assets/slide5.jpg";
 import slider_img_9 from "../assets/slide8.jpg";
+import partner1 from "../assets/partnerfp.jpg";
+import partner2 from "../assets/partner2.png";
+import partner3 from "../assets/partner3.png";
+import partner4 from "../assets/partner8.jpg";
+import partner5 from "../assets/partner10.png";
+import partner6 from "../assets/partner13.jpg";
+import partner7 from "../assets/partner4.jpg";
+import partner8 from "../assets/partnerskrepka.jpg";
+import partner9 from "../assets/partner11.png";
+import partner10 from "../assets/partner1.jpg";
+import partner11 from "../assets/partner6.png";
+import partner12 from "../assets/partnerenrico.png";
+import partner13 from "../assets/partnerart.jpg";
+import partner14 from "../assets/partner5.png";
+import partner15 from "../assets/partner7.png";
+import partner16 from "../assets/partner9.png";
+import partner17 from "../assets/partner12.png";
 
 export const followUsLinks = [
   {
@@ -53,4 +70,22 @@ export const HomeSliderImage = [
   { id: 1, img: slider_img_9 },
 ];
 
-export const Partners = [slider_img_1, slider_img_1];
+export const Partners = [
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  partner6,
+  partner7,
+  partner8,
+  partner9,
+  partner10,
+  partner11,
+  partner12,
+  partner13,
+  partner14,
+  partner15,
+  partner16,
+  partner17,
+];

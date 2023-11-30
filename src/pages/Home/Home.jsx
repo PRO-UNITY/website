@@ -1,7 +1,9 @@
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
 import teamCard from "../../assets/akaaziz.jpg";
+import teamwork from "../../assets/teamwork.jpg";
 import { HomeSlider, OurTeam, PartnersCard } from "../../components";
+import { Partners } from "../../constants";
 const Home = () => {
   return (
     <>
@@ -177,7 +179,9 @@ const Home = () => {
             <h1>Clients &amp; Partners</h1>
           </div>
           <div className="row g-4">
-            <PartnersCard img={""} />
+            {Partners.map((item, i) => (
+              <PartnersCard key={i} img={item} />
+            ))}
           </div>
         </div>
       </div>
@@ -269,7 +273,7 @@ const Home = () => {
               <div className="position-relative h-100">
                 <img
                   className="position-absolute img-fluid w-100 h-100"
-                  src="img/teamwork.jpg"
+                  src={teamwork}
                   style={{ objectFit: "cover" }}
                   alt
                 />

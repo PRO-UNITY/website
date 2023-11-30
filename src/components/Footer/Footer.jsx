@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { followUsLinks } from "../../constants";
 
 const Footer = () => {
@@ -72,15 +73,15 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <h5 className="text-light mb-4">Quick Links</h5>
-            <a className="btn btn-link" href>
+            <Link to={"/about"} className="btn btn-link">
               About Us
-            </a>
-            <a className="btn btn-link" href>
+            </Link>
+            <Link to={"contact"} className="btn btn-link">
               Contact Us
-            </a>
-            <a className="btn btn-link" href>
+            </Link>
+            <Link to={"/services"} className="btn btn-link">
               Our Services
-            </a>
+            </Link>
           </div>
         </div>
       </div>
