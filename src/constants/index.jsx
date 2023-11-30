@@ -1,10 +1,10 @@
-import slider_img_1 from "../assets/group1.jpg";
-import slider_img_2 from "../assets/group1.jpg";
-import slider_img_3 from "../assets/group1.jpg";
-import slider_img_4 from "../assets/group1.jpg";
-import slider_img_5 from "../assets/group1.jpg";
-import slider_img_6 from "../assets/group1.jpg";
-import slider_img_7 from "../assets/group1.jpg";
+import slider_img_1 from "../assets/slide8.jpg";
+import slider_img_2 from "../assets/slide8.jpg";
+import slider_img_3 from "../assets/slide8.jpg";
+import slider_img_4 from "../assets/slide8.jpg";
+import slider_img_5 from "../assets/slide8.jpg";
+import slider_img_6 from "../assets/slide8.jpg";
+import slider_img_7 from "../assets/slide8.jpg";
 import slider_img_8 from "../assets/slide5.jpg";
 import slider_img_9 from "../assets/slide8.jpg";
 
