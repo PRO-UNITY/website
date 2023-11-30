@@ -1,0 +1,25 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy React App
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+
+          script: |
+            cd /var/www/website
+            npm i
+            npm run build
+            scp -r /var/www/website/dist/* root@142.93.49.29:/var/www/site
+            sudo nginx -t
+            sudo systemctl restart nginx
+            echo "Deployed Success"
