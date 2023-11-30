@@ -1,7 +1,7 @@
 import team from "../../assets/team.jpg";
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
-import teamCard from "../../assets/akaaziz.JPG";
+import teamCard from "../../assets/akaaziz.jpg";
 import { OurTeam } from "../../components";
 const Home = () => {
   return (
