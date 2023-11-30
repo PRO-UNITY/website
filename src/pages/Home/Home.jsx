@@ -1,8 +1,8 @@
-import team from "../../assets/team.jpg";
+
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
 import teamCard from "../../assets/akaaziz.jpg";
-import { OurTeam } from "../../components";
+import { HomeSlider, OurTeam } from "../../components";
 const Home = () => {
   return (
     <>
@@ -10,7 +10,10 @@ const Home = () => {
       <section className="container-fluid header bg-primary p-0 mb-5">
         <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
           <div className="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
-            <h1 className="display-4 text-white mb-5">
+            <h1
+              style={{ fontWeight: "600" }}
+              className="display-4 text-white mb-5"
+            >
               Our mission is to empower individuals with the skills and
               knowledge needed to thrive in the digital age.
             </h1>
@@ -43,9 +46,7 @@ const Home = () => {
           </div>
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
             <div className="owl-carousel header-carousel">
-              <div className="owl-carousel-item position-relative">
-                <img className="img-fluid" src={team} alt />
-              </div>
+              <HomeSlider />
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import team from "../assets/team.jpg";
 export const followUsLinks = [
   {
     id: 1,
@@ -29,4 +30,10 @@ export const followUsLinks = [
     icon: "https://assets-global.website-files.com/603fea6471d9d8559d077603/6092b7514135708162a4be92_Favicon%20256.png",
     link: "https://www.upwork.com/agencies/1514836313665982464/",
   },
+];
+
+export const HomeSliderImage = [
+  { id: 1, img: team },
+  { id: 1, img: "" },
+  { id: 1, img: "" },
 ];
