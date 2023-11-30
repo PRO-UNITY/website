@@ -49,20 +49,8 @@ const Navbar = () => {
                 Products
               </a>
               <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                <a href="feature.html" className="dropdown-item">
-                  Feature
-                </a>
-                <a href="team.html" className="dropdown-item">
-                  Our Doctor
-                </a>
-                <a href="appointment.html" className="dropdown-item">
-                  Appointment
-                </a>
-                <a href="testimonial.html" className="dropdown-item">
-                  Testimonial
-                </a>
-                <a href="404.html" className="dropdown-item">
-                  404 Page
+                <a href="#" className="dropdown-item">
+                  Hrms
                 </a>
               </div>
             </div>
@@ -87,13 +75,6 @@ const Navbar = () => {
               Contact
             </a>
           </div>
-          <a
-            href="appointment.html"
-            className="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-          >
-            Appointment
-            <i className="fa fa-arrow-right ms-3" />
-          </a>
         </div>
       </nav>
     </>

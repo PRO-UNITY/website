@@ -1,3 +1,5 @@
+import { followUsLinks } from "../../constants";
+
 const Footer = () => {
   return (
     <div
@@ -6,70 +8,48 @@ const Footer = () => {
     >
       <div className="container py-5">
         <div className="row g-5">
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-4 col-md-6">
             <h5 className="text-light mb-4">Address</h5>
-            <p className="mb-2">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://maps.app.goo.gl/oz5im3ic1GM48FfL6"
+              className="mb-2 text-decoration-none text-white d-block"
+            >
               <i className="fa fa-map-marker-alt me-3" />
               Islom Karimov 1 Street, Bukhara, Uzbekistan
-            </p>
-            <p className="mb-2">
+            </a>
+            <a
+              href="tel:+998-33-899-50-00 "
+              className="mb-2 text-decoration-none text-white d-block"
+            >
               <i className="fa fa-phone-alt me-3" />
               +998 33 899 50 00
-            </p>
-            <p className="mb-2">
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:prounity.uz@gmail.com"
+              className="mb-2 text-decoration-none text-white"
+            >
               <i className="fa fa-envelope me-3" />
               prounity.uz@gmail.com
-            </p>
+            </a>
             <div className="d-flex pt-2">
-              <a
-                className="btn btn-outline-light btn-social rounded-circle"
-                href="https://github.com/prounitycompany"
-              >
-                <i className="fa-brands fa-github" />
-              </a>
-              <a
-                className="btn btn-outline-light btn-social rounded-circle"
-                href
-              >
-                <i className="fa-solid fa-basketball" />
-              </a>
-              <a
-                className="btn btn-outline-light btn-social rounded-circle"
-                href
-              >
-                <img
-                  width="20px"
-                  style={{ borderRadius: "50%" }}
-                  src="./img/clutchicon.webp"
-                  alt
-                />
-              </a>
-              <a
-                className="btn btn-outline-light btn-social rounded-circle"
-                href="https://www.linkedin.com/company/prounityuz"
-              >
-                <i className="fab fa-linkedin-in" />
-              </a>
-              <a
-                className="btn btn-outline-light btn-social rounded-circle"
-                href="https://www.instagram.com/prounity.uz/"
-              >
-                <i className="fab fa-instagram" />
-              </a>
-              <a
-                className="btn btn-outline-light btn-social rounded-circle"
-                href="https://www.upwork.com/agencies/1514836313665982464/"
-              >
-                <img
-                  width="20px"
-                  style={{ borderRadius: "50%" }}
-                  src="./img/upworkround.avif"
-                  alt
-                />
-              </a>
+              {followUsLinks.map((item) => (
+                <a
+                  key={item.id}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-decoration-none btn btn-outline-light btn-social rounded-circle"
+                  href={item.link}
+                >
+                  <img width={16} src={item.icon} alt="" />
+                </a>
+              ))}
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-4 col-md-6">
             <h5 className="text-light mb-4">Services</h5>
             <a className="btn btn-link" href>
               Software Development
@@ -90,7 +70,7 @@ const Footer = () => {
               Pro Community
             </a>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-4 col-md-6">
             <h5 className="text-light mb-4">Quick Links</h5>
             <a className="btn btn-link" href>
               About Us
@@ -101,32 +81,6 @@ const Footer = () => {
             <a className="btn btn-link" href>
               Our Services
             </a>
-            <a className="btn btn-link" href>
-              Terms &amp; Condition
-            </a>
-            <a className="btn btn-link" href>
-              Support
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-6">
-            <h5 className="text-light mb-4">Newsletter</h5>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-            <div
-              className="position-relative mx-auto"
-              style={{ maxWidth: 400 }}
-            >
-              <input
-                className="form-control border-0 w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -134,18 +88,7 @@ const Footer = () => {
         <div className="copyright">
           <div className="row">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              ©{" "}
-              <a className="border-bottom" href="#">
-                Your Site Name
-              </a>
-              , All Right Reserved.
-            </div>
-            <div className="col-md-6 text-center text-md-end">
-              {/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
-              Designed By{" "}
-              <a className="border-bottom" href="https://htmlcodex.com">
-                HTML Codex
-              </a>
+              © Pro Unity, All Right Reserved.
             </div>
           </div>
         </div>
