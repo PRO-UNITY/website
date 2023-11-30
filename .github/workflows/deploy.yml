@@ -20,7 +20,7 @@ jobs:
             git pull
             npm i
             npm run build
-            scp -r /var/www/website/dist/* SSH_USERNAME@SSH_HOST:/var/www/html/site
+            scp -r /var/www/website/dist/* root@142.93.49.29:/var/www/html/site
             sudo nginx -t
             sudo systemctl restart nginx
             echo "Deployed Success"
