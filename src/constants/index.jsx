@@ -3,7 +3,7 @@ import slider_img_2 from "../assets/slide7.jpg";
 import slider_img_3 from "../assets/slide4.jpg";
 import slider_img_4 from "../assets/koridor.jpg";
 import slider_img_5 from "../assets/koworking.jpg";
-import slider_img_6 from "../assets/grouplider.jpg";
+import slider_img_6 from "../assets/koworking.jpg";
 import slider_img_7 from "../assets/group1.jpg";
 import slider_img_8 from "../assets/slide5.jpg";
 import slider_img_9 from "../assets/slide8.jpg";

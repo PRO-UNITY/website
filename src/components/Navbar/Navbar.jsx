@@ -37,9 +37,9 @@ const Navbar = () => {
             <Link to={"/about"} className="nav-item nav-link">
               About
             </Link>
-            <a href="service.html" className="nav-item nav-link">
+            <Link to={"/services"} className="nav-item nav-link">
               Service
-            </a>
+            </Link>
             <div className="nav-item dropdown">
               <a
                 href="#"
@@ -71,9 +71,9 @@ const Navbar = () => {
                 </a>
               </div>
             </div>
-            <a href="contact.html" className="nav-item nav-link">
+            <Link to={"/contact"} className="nav-item nav-link">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
