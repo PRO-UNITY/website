@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -28,10 +29,10 @@ const Services = () => {
               <p className="mb-4">
                 {t("servicesection.cardservice1.Description")}
               </p>
-              <a className="btn bg-light" href>
+              <Link to={"/services/1"} className="btn bg-light" href>
                 <i className="fa fa-plus text-primary me-3" />
                 {t("servicesection.servicebutton")}
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -76,9 +77,9 @@ const Services = () => {
                 className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                 style={{ width: 65, height: 65 }}
               >
-                <i className="fa-solid fa-diagram-successor text-primary fs-4" />
+                <i className="fa-solid fa-briefcase text-primary fs-4" />
               </div>
-              <h4 className="mb-3">{t("servicesection.cardservice5.title")}</h4>
+              <h4 className="mb-3">{t("servicesection.cardservice4.title")}</h4>
               <p className="mb-4">
                 {t("servicesection.cardservice4.Description")}
               </p>
@@ -92,63 +93,36 @@ const Services = () => {
           <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="service-item bg-white rounded h-100 p-5">
               <div
-                className="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style={{ width: 65, height: 65 }}
-              >
-                <i className="fa-solid fa-briefcase text-primary fs-4" />
-              </div>
-              <h4 className="mb-3">Coworking</h4>
-              <p className="mb-4">
-                Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga
-                olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz.
-                Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va ishlab
-                chiquvchilar hamjamiyatidagi hamkorlik natijasidir
-              </p>
-              <a className="btn bg-light" href>
-                <i className="fa fa-plus text-primary me-3" />
-                Ko'proq
-              </a>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div className="service-item bg-white rounded h-100 p-5">
-              <div
-                className="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                 style={{ width: 65, height: 65 }}
               >
                 <i className="fa-brands fa-sourcetree text-primary fs-4" />
               </div>
-              <h4 className="mb-3">Open Source</h4>
+              <h4 className="mb-3">{t("servicesection.cardservice5.title")}</h4>
               <p className="mb-4">
-                Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga
-                olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz.
-                Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va ishlab
-                chiquvchilar hamjamiyatidagi hamkorlik natijasidir
+                {t("servicesection.cardservice5.Description")}
               </p>
               <a className="btn bg-light" href>
                 <i className="fa fa-plus text-primary me-3" />
-                Ko'proq
+                {t("servicesection.servicebutton")}
               </a>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="service-item bg-white rounded h-100 p-5">
               <div
-                className="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                 style={{ width: 65, height: 65 }}
               >
                 <i className="fa-solid fa-people-group text-primary fs-4" />
               </div>
-              <h4 className="mb-3">Pro Community</h4>
+              <h4 className="mb-3">{t("servicesection.cardservice6.title")}</h4>
               <p className="mb-4">
-                Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga
-                olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz.
-                Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va ishlab
-                chiquvchilar hamjamiyatidagi hamkorlik natijasidir
+                {t("servicesection.cardservice6.Description")}
               </p>
               <a className="btn bg-light" href>
                 <i className="fa fa-plus text-primary me-3" />
-                Ko'proq
+                {t("servicesection.servicebutton")}
               </a>
             </div>
           </div>

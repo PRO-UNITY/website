@@ -1,106 +1,68 @@
 import { Link } from "react-router-dom";
+
+import Container from "react-bootstrap/Container";
 import Logo from "../../assets/logotogether.png";
 import Topbar from "../Topbar/Topbar";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import { Nav, NavDropdown, Navbar } from "react-bootstrap";
 
-
-const Navbar = () => {
+const MyNavbar = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Topbar />
-      <nav
+      <Navbar
         style={{ backgroundColor: "yellow" }}
-        className="navbar navbar-expand-lg navbar-light sticky-top p-0 wow fadeIn"
+        expand="lg"
+        className="sticky-top wow fadeIn"
         data-wow-delay="0.1s"
       >
-        <Link
-          to={"/"}
-          className="navbar-brand d-flex px-2 align-items-center pt-3 pb-4"
-        >
-          <img
-            className=" ml-0"
-            style={{ width: 200, height: 100, objectFit: "cover" }}
-            src={Logo}
-            alt
-          />
-        </Link>
-        <button
-          type="button"
-          className="navbar-toggler me-4"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav ms-auto p-4 p-lg-0">
-            <Link to={"/"} className="nav-item nav-link active">
-              {t("navbar.home")}
-            </Link>
-            <Link to={"/about"} className="nav-item nav-link">
-              {t("navbar.about")}
-            </Link>
-            <Link to={"/services"} className="nav-item nav-link">
-              {t("navbar.service")}
-            </Link>
-            <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
+        <div className="container-fluid">
+          <Navbar.Brand as={Link} to="/">
+            <img
+              className="ml-0"
+              style={{ width: 200, height: 100, objectFit: "cover" }}
+              src={Logo}
+              alt=""
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarCollapse" />
+          <Navbar.Collapse id="navbarCollapse">
+            <Nav className="ms-auto p-4 p-lg-0">
+              <Nav.Link as={Link} to="/" className="nav-link active">
+                {t("navbar.home")}
+              </Nav.Link>
+              <Nav.Link as={Link} to="/about" className="nav-link">
+                {t("navbar.about")}
+              </Nav.Link>
+              <Nav.Link as={Link} to="/services" className="nav-link">
+                {t("navbar.service")}
+              </Nav.Link>
+              <Nav.Link as={Link} to="#" className="nav-link">
                 {t("navbar.products")}
-              </a>
-              <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                <a href="#" className="dropdown-item">
-                  Hrms
-                </a>
-              </div>
-            </div>
-            <div className="nav-item dropdown">
-              <span
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
-                En
-              </span>
-              <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                <span
-                  className="dropdown-item"
-                  onClick={() => {
-                    i18next.changeLanguage("en");
-                  }}
-                >
+              </Nav.Link>
+              <Nav.Link as={Link} to="/contact" className="nav-link">
+                {t("navbar.contact")}
+              </Nav.Link>
+              <NavDropdown title="En" id="language-dropdown">
+                <NavDropdown.Item onClick={() => i18next.changeLanguage("en")}>
                   En
-                </span>
-                <span
-                  className="dropdown-item"
-                  onClick={() => {
-                    i18next.changeLanguage("ru");
-                  }}
-                >
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={() => i18next.changeLanguage("ru")}>
                   Ru
-                </span>
-                <span
-                  className="dropdown-item"
-                  onClick={() => {
-                    i18next.changeLanguage("uz");
-                  }}
-                >
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={() => i18next.changeLanguage("uz")}>
                   Uz
-                </span>
-              </div>
-            </div>
-            <Link to={"/contact"} className="nav-item nav-link">
-              {t("navbar.contact")}
-            </Link>
-          </div>
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
         </div>
-      </nav>
+      </Navbar>
     </>
   );
 };
 
-export default Navbar;
+export default MyNavbar;
