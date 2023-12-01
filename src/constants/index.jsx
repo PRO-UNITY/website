@@ -35,10 +35,9 @@ import Amirbek from "../assets/amirbek.jpg";
 import Jobir from "../assets/jobir.jpg";
 import Ibrohim from "../assets/ibrohim.jpg";
 import Otabek from "../assets/otabek.jpg";
-
 import Behzodf from "../assets/behzodf.jpg";
 import Behzodorg from "../assets/behzodorg.jpg";
-import Bobur from "../assets/bobur.jpg";
+import Bobur from "../assets/dilshod.jpg";
 import Dilshod from "../assets/dilshod.jpg";
 import Jamshid from "../assets/jamshid1.jpg";
 import Baxtior from "../assets/bugalter.jpg";
@@ -54,7 +53,6 @@ import Apazarnigor from "../assets/apazarnigor.jpg";
 import Nigina from "../assets/nig.jpg";
 import Dilnozaorg from "../assets/dilnozaorg.jpg";
 import Shaxinaorg from "../assets/shaxinaorg.jpg";
-import Albom from "../assets/albom.jpg";
 import Mohinur from "../assets/albom.jpg";
 
 export const followUsLinks = [
