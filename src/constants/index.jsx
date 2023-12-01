@@ -40,7 +40,7 @@ import Behzodorg from "../assets/behzodorg.jpg";
 import Bobur from "../assets/dilshod.jpg";
 import Dilshod from "../assets/dilshod.jpg";
 import Jamshid from "../assets/jamshid1.jpg";
-import Baxtior from "../assets/bugalter.jpg";
+import Baxtior from "../assets/behzodf.jpg";
 import Mironchik from "../assets/mironchik1.jpg";
 import Mirxon from "../assets/mirxon.jpg";
 import Murod from "../assets/murod.jpg";
