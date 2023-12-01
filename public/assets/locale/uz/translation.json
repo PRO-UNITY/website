@@ -49,6 +49,10 @@
     "listmini4": "24 Soat",
     "listbig4": "Qo'llab-quvvatlash"
   },
+  "blogSection": {
+    "title": "Смотрите наши блоги здесь",
+    "text": "Будьте в курсе последних новостей и событий в мире разработки программного обеспечения, посещая наш блог. Мы охватываем все: от уроков для начинающих до продвинутых техник, поэтому каждый найдет что-то для себя."
+  },
   "teamsection": {
     "teambutton": "Jamoa",
     "title": "Bizning Pro Jamoa",
@@ -199,9 +203,11 @@
     }
   },
   "servicesection": {
+    "title": "PROUNITY xizmatlari",
+    "subtitle": "Xizmatlar",
     "cardservice1": {
       "title": "Dasturiy ta'minotni ishlab chiqish",
-      "Description": "PRO UNITY kompaniyasida biz biznes va jismoniy shaxslar uchun ilg'or dasturiy yechimlarni yaratishga o'zimizni bag'ishlaymiz. Biz Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django va boshqalarni o'z ichiga olgan turli texnologiyalardan foydalanamiz.",
+      "Description": "PRO UNITY kompaniyasida biz biznes va jismoniy shaxslar uchun ilg'or dasturiy yechimlarni yaratishga o'zimizni bag'ishlaymiz. Bizning tajribali dasturchilar jamoasi mobil ilovalar, veb-ishlab chiqish va boshqalarga ixtisoslashgan. Biz Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django va boshqalarni o'z ichiga olgan turli texnologiyalardan foydalanamiz.",
       "servicebutton": "Ko'proq"
     },
     "cardservice2": {
@@ -211,22 +217,21 @@
     },
     "cardservice3": {
       "title": "Ruxsat etilgan darsliklar",
-      "Description": "Bu, albatta, faqat ikki ko'p va og'riq ko'p edi, ulardan ikki ikki bor, lekin diam, diam, diam, lekin diam. Bizning maqsadimiz o'quvchilarimizni doimo rivojlanib borayotgan texnologiya sanoatida muvaffaqiyatga erishish uchun zarur bo'lgan vositalar bilan jihozlashdir.",
-      "servicebutton": "Ko'proq"
+      "Description": "Kodlash va dasturlash kurslarimizdan tashqari, biz IT va dizayn ta'limi bo'yicha vakolatli video kurslarni ham taklif etamiz. Ushbu kurslar odamlarga sohada ustunlik qilish uchun zarur bo'lgan bilim va ko'nikmalarni berish uchun mo'ljallangan. Mutaxassis o'qituvchilarimiz o'quvchilarimizning eng yaxshi ta'lim olishlarini ta'minlab, tushunish va kuzatish oson bo'lgan yuqori sifatli kontentni taqdim etadilar."
     },
     "cardservice4": {
       "title": "Kovorking",
-      "Description": "Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz. Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va ishlab chiquvchilar hamjamiyatidagi hamkorlik natijasidir",
+      "Description": "Bizning birgalikdagi ish joyimiz kichik, ammo qulay bo'lib, jamoamiz ishlashi va hamkorlik qilishi uchun qulay sharoit yaratadi. Shuningdek, biz odamlarga bilim va ko'nikmalarini kengaytirishga yordam berish uchun IT va dizayn ta'limi bo'yicha vakolatli darsliklar taklif etamiz.",
       "servicebutton": "Ko'proq"
     },
     "cardservice5": {
       "title": "Ochiq manba",
-      "Description": "Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz. Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va ishlab chiquvchilar hamjamiyatidagi hamkorlik natijasidir",
+      "Description": "Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz. Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va dasturchilar hamjamiyatidagi hamkorlik natijasidir. Bizning tajribali dasturchilar jamoamiz mobil ilovalar, veb-ishlab chiqish va boshqalarga ixtisoslashgan.",
       "servicebutton": "Ko'proq"
     },
     "cardservice6": {
       "title": "Pro Jamoa",
-      "Description": "Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz. Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va ishlab chiquvchilar hamjamiyatidagi hamkorlik natijasidir",
+      "Description": "PRO UNITY kompaniyasida biz buxorolik ko‘plab dasturchilar va startaplardan tashkil topgan hamjamiyatning bir qismi ekanligimizdan faxrlanamiz. Innovatsion yechimlarni yaratish va texnologiya chegaralarini oshirish missiyamizga qo'shiling.r",
       "servicebutton": "Ko'proq"
     }
   }

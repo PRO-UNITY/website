@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-const SevicesDetail = () => {
+const AuthorizedTutorial = () => {
   const { t } = useTranslation();
   return (
     <div className="container-xxl servces-detail py-5">
@@ -12,15 +12,15 @@ const SevicesDetail = () => {
                 className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                 style={{ width: 150, height: 150 }}
               >
-                <i className="fa-solid fa-computer fs-2 text-primary" />
+                <i className="fa-solid fa-diagram-successor text-primary fs-4" />
               </div>
             </div>
             <div className="col-lg-8">
               <h2 className="mb-3 ">
-                {t("servicesection.cardservice1.title")}
+                {t("servicesection.cardservice3.title")}
               </h2>
-              <p className="mb-4 fs-5">
-                {t("servicesection.cardservice1.Description")}
+              <p className="mb-4">
+                {t("servicesection.cardservice3.Description")}
               </p>
             </div>
           </div>
@@ -30,4 +30,4 @@ const SevicesDetail = () => {
   );
 };
 
-export default SevicesDetail;
+export default AuthorizedTutorial;

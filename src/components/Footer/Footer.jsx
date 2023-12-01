@@ -54,24 +54,32 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <h5 className="text-light mb-4">{t("footer.services.title")}</h5>
-            <a className="btn btn-link" href>
+            <Link
+              to={"/services/softwareDevelopenent"}
+              className="btn btn-link"
+              href
+            >
               {t("footer.services.link1")}
-            </a>
-            <a className="btn btn-link" href>
+            </Link>
+            <Link to={"/services/IT-school"} className="btn btn-link" href>
               {t("footer.services.link2")}
-            </a>
-            <a className="btn btn-link" href>
+            </Link>
+            <Link
+              to={"/services/authorized-tutorial"}
+              className="btn btn-link"
+              href
+            >
               {t("footer.services.link3")}
-            </a>
-            <a className="btn btn-link" href>
+            </Link>
+            <Link to={"/services/coworking"} className="btn btn-link" href>
               {t("footer.services.link4")}
-            </a>
-            <a className="btn btn-link" href>
+            </Link>
+            <Link to={"/services/opencourse"} className="btn btn-link" href>
               {t("footer.services.link5")}
-            </a>
-            <a className="btn btn-link" href>
+            </Link>
+            <Link to={"/services/pro-community"} className="btn btn-link" href>
               {t("footer.services.link6")}
-            </a>
+            </Link>
           </div>
           <div className="col-lg-4 col-md-6">
             <h5 className="text-light mb-4">{t("footer.quicklinks.title")}</h5>

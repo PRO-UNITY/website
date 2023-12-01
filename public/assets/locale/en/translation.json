@@ -50,7 +50,8 @@
     "listbig4": "Support"
   },
   "blogSection": {
-    "text": "Stay up-to-date with the latest news and developments in the world of software development by checking out our blog. We cover everything from beginner tutorials to advanced techniques, so there's something for everyone."
+    "title": "Bizning bloglarimizni bu yerda tomosha qiling",
+    "text": "Bizning blogimizga tashrif buyurib, dasturiy ta'minotni ishlab chiqish dunyosidagi so'nggi yangiliklar va o'zgarishlardan xabardor bo'ling. Biz boshlang'ich darsliklardan tortib ilg'or texnikalargacha hamma narsani qamrab olamiz, shuning uchun hamma uchun nimadir bor."
   },
   "teamsection": {
     "teambutton": "Team",
@@ -206,19 +207,19 @@
     "subtitle": "Services",
     "cardservice1": {
       "title": "Software Development",
-      "Description": "At PRO UNITY, we are dedicated to creating cutting-edge software solutions for businesses and individuals. Our team of experienced developers specializes in mobile applications, web development, and more. We utilize a variety of technologies, including Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django, and more"
+      "Description": "At PRO UNITY, we are dedicated to creating cutting-edge software solutions for businesses and individuals. Our team of experienced developers specializes in mobile applications, web development, and more. We utilize a variety of technologies, including Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django, and more."
     },
     "cardservice2": {
       "title": "IT School",
-      "Description": "In addition to our software development services, we also operate an IT school where we provide comprehensive training in coding and programming. Our goal is to equip our students with the tools they need to succeed in the ever-evolving tech industry.Our team of experienced developers specializes in mobile applications, web development, and more."
+      "Description": "In addition to our software development services, we also operate an IT school where we provide comprehensive training in coding and programming. Our goal is to equip our students with the tools they need to succeed in the ever-evolving tech industry."
     },
     "cardservice3": {
       "title": "Authorized Tutorials",
-      "Description": "At PRO UNITY, we are dedicated to creating cutting-edge software solutions for businesses and individuals. Our team of experienced developers specializes in mobile applications, web development, and more. We utilize a variety of technologies, including Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django, and more"
+      "Description": "In addition to our coding and programming courses, we also offer authorized video courses on IT and design education. These courses are designed to provide individuals with the knowledge and skills needed to excel in the industry. Our expert instructors deliver high-quality content that is easy to understand and follow, ensuring that our students receive the best possible education."
     },
     "cardservice4": {
       "title": "Coworking",
-      "Description": "We are proud to offer our own open source framework that includes essential components for UI and frontend work. This framework is the result of our dedication to innovation and collaboration within the developer community Our team of experienced developers specializes in mobile applications, web development, and more."
+      "Description": "Our co-working space is small yet convenient, providing a comfortable environment for our team to work and collaborate. We also offer authorized tutorials on IT and design education to help individuals expand their knowledge and skills."
     },
     "cardservice5": {
       "title": "Open Source",
@@ -226,7 +227,7 @@
     },
     "cardservice6": {
       "title": "Pro Community",
-      "Description": "We are proud to offer our own open source framework that includes essential components for UI and frontend work. This framework is the result of our dedication to innovation and collaboration within the developer community Our team of experienced developers specializes in mobile applications, web development, and more."
+      "Description": "At PRO UNITY, we are proud to be a part of the community, consisting of many developers and startups from Bukhara. Join us in our mission to create innovative solutions and push the boundaries of technology.."
     },
     "servicebutton": "Read More"
   }

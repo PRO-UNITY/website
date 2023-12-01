@@ -27,14 +27,19 @@ const Services = () => {
               </div>
               <h4 className="mb-3">{t("servicesection.cardservice1.title")}</h4>
               <p className="mb-4">
-                {t("servicesection.cardservice1.Description")}
+                {t("servicesection.cardservice1.Description").slice(0, 100)}...
               </p>
-              <Link to={"/services/1"} className="btn bg-light" href>
+              <Link
+                to={"/services/softwareDevelopenent"}
+                className="btn bg-light"
+                href
+              >
                 <i className="fa fa-plus text-primary me-3" />
                 {t("servicesection.servicebutton")}
               </Link>
             </div>
           </div>
+
           <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="service-item bg-white rounded h-100 p-5">
               <div
@@ -45,14 +50,15 @@ const Services = () => {
               </div>
               <h4 className="mb-3">{t("servicesection.cardservice2.title")}</h4>
               <p className="mb-4">
-                {t("servicesection.cardservice2.Description")}
+                {t("servicesection.cardservice2.Description").slice(0, 100)}...
               </p>
-              <a className="btn bg-light" href>
+              <Link to={"/services/IT-school"} className="btn bg-light" href>
                 <i className="fa fa-plus text-primary me-3" />
                 {t("servicesection.servicebutton")}
-              </a>
+              </Link>
             </div>
           </div>
+
           <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="service-item bg-white rounded h-100 p-5">
               <div
@@ -63,14 +69,19 @@ const Services = () => {
               </div>
               <h4 className="mb-3">{t("servicesection.cardservice3.title")}</h4>
               <p className="mb-4">
-                {t("servicesection.cardservice3.Description")}
+                {t("servicesection.cardservice3.Description").slice(0, 100)}...
               </p>
-              <a className="btn bg-light" href>
+              <Link
+                to={"/services/authorized-tutorial"}
+                className="btn bg-light"
+                href
+              >
                 <i className="fa fa-plus text-primary me-3" />
                 {t("servicesection.servicebutton")}
-              </a>
+              </Link>
             </div>
           </div>
+
           <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="service-item bg-white rounded h-100 p-5">
               <div
@@ -81,12 +92,12 @@ const Services = () => {
               </div>
               <h4 className="mb-3">{t("servicesection.cardservice4.title")}</h4>
               <p className="mb-4">
-                {t("servicesection.cardservice4.Description")}
+                {t("servicesection.cardservice4.Description").slice(0, 100)}...
               </p>
-              <a className="btn bg-light" href>
+              <Link to={"/services/coworking"} className="btn bg-light" href>
                 <i className="fa fa-plus text-primary me-3" />
                 {t("servicesection.servicebutton")}
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -100,14 +111,15 @@ const Services = () => {
               </div>
               <h4 className="mb-3">{t("servicesection.cardservice5.title")}</h4>
               <p className="mb-4">
-                {t("servicesection.cardservice5.Description")}
+                {t("servicesection.cardservice5.Description").slice(0, 100)}...
               </p>
-              <a className="btn bg-light" href>
+              <Link to={"/services/opencourse"} className="btn bg-light" href>
                 <i className="fa fa-plus text-primary me-3" />
                 {t("servicesection.servicebutton")}
-              </a>
+              </Link>
             </div>
           </div>
+
           <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="service-item bg-white rounded h-100 p-5">
               <div
@@ -118,12 +130,16 @@ const Services = () => {
               </div>
               <h4 className="mb-3">{t("servicesection.cardservice6.title")}</h4>
               <p className="mb-4">
-                {t("servicesection.cardservice6.Description")}
+                {t("servicesection.cardservice6.Description").slice(0, 100)}...
               </p>
-              <a className="btn bg-light" href>
+              <Link
+                to={"/services/pro-community"}
+                className="btn bg-light"
+                href
+              >
                 <i className="fa fa-plus text-primary me-3" />
                 {t("servicesection.servicebutton")}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

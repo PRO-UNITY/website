@@ -205,7 +205,7 @@ const Home = () => {
                     <div className="d-flex align-items-center">
                       <div
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                        style={{ width: 50, height: 50}}
+                        style={{ width: 50, height: 50 }}
                       >
                         <i className="fa fa-user-md text-primary" />
                       </div>
@@ -300,6 +300,12 @@ const Home = () => {
           <div className="container pt-3">
             <div className="row w-100 align-items-center pt-3 g-5 body-video">
               <div className="col-lg-6">
+                <div>
+                  <h1 className="display-4 text-white mb-5">
+                    Watch Our blogs here
+                  </h1>
+                </div>
+
                 <p className="fs-4 text-white">{t("blogSection.text")}</p>
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center">
