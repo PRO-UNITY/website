@@ -288,7 +288,7 @@ export const teamMembers = [
   },
   {
     id: 17,
-    name: "Mironchik",
+    name: "",
     occupation: "Content Manager",
     socialLinks: {
       facebook: "",
@@ -376,8 +376,8 @@ export const teamMembers = [
   },
   {
     id: 25,
-    name: "Apazarnigor",
-    occupation: "Accountant",
+    name: "",
+    occupation: "",
     socialLinks: {
       facebook: "",
       twitter: "",
