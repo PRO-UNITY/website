@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-
-import Container from "react-bootstrap/Container";
 import Logo from "../../assets/logotogether.png";
 import Topbar from "../Topbar/Topbar";
 import { useTranslation } from "react-i18next";
@@ -16,17 +14,12 @@ const MyNavbar = () => {
       <Navbar
         style={{ backgroundColor: "yellow" }}
         expand="lg"
-        className="sticky-top wow fadeIn"
+        className="sticky-top navbar wow fadeIn"
         data-wow-delay="0.1s"
       >
         <div className="container-fluid">
-          <Navbar.Brand as={Link} to="/">
-            <img
-              className="ml-0"
-              style={{ width: 200, height: 100, objectFit: "cover" }}
-              src={Logo}
-              alt=""
-            />
+          <Navbar.Brand as={Link} to="/" className="logo">
+            <img className="ml-0 " src={Logo} alt="prounity-logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarCollapse" />
           <Navbar.Collapse id="navbarCollapse">
@@ -43,9 +36,6 @@ const MyNavbar = () => {
               <Nav.Link as={Link} to="#" className="nav-link">
                 {t("navbar.products")}
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact" className="nav-link">
-                {t("navbar.contact")}
-              </Nav.Link>
               <NavDropdown title="En" id="language-dropdown">
                 <NavDropdown.Item onClick={() => i18next.changeLanguage("en")}>
                   En
@@ -57,6 +47,9 @@ const MyNavbar = () => {
                   Uz
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link as={Link} to="/contact" className="nav-link">
+                {t("navbar.contact")}
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>

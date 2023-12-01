@@ -300,23 +300,11 @@ const Home = () => {
           <div className="container pt-3">
             <div className="row w-100 align-items-center pt-3 g-5 body-video">
               <div className="col-lg-6">
-                <h1 className="display-4 text-white mb-5">
-                  Lorem ipsum dolor sit amet.
-                </h1>
-                <h2 className="mb-4 text-light">
-                  Lorem ipsum dolor sit amet consectetur <br /> adipisicing
-                  elit. Omnis, unde.
-                </h2>
-                <p className="fs-4 text-white">
-                  Biz shuni tushunamizki siz bizga fikringizni eshitishimiz{" "}
-                  <br />
-                  va eng muhimi sizning qarashlaringizni tushunishimiz <br />
-                  uchun murojaat qilasiz.
-                </p>
+                <p className="fs-4 text-white">{t("blogSection.text")}</p>
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center">
                 <a
-                  href="https://youtu.be/uWsZCqd5Tzg"
+                  href="https://www.youtube.com/watch?v=_voQ5MGXX3g"
                   className=" btn-danger btn-youtube   mx-auto mb-4 "
                 >
                   <i className="fa-solid fa-play text-light fs-4" />

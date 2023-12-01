@@ -49,6 +49,9 @@
     "listmini4": "24 Hours",
     "listbig4": "Support"
   },
+  "blogSection": {
+    "text": "Stay up-to-date with the latest news and developments in the world of software development by checking out our blog. We cover everything from beginner tutorials to advanced techniques, so there's something for everyone."
+  },
   "teamsection": {
     "teambutton": "Team",
     "title": "Our Pro Team",
