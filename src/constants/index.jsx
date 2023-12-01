@@ -295,7 +295,7 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: Mironchik,
+    image: "",
   },
   {
     id: 18,
@@ -317,7 +317,7 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: Murod,
+    image: "",
   },
   {
     id: 20,
@@ -394,7 +394,7 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: Nigina,
+    image: "",
   },
   {
     id: 27,
@@ -405,7 +405,7 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: Dilnozaorg,
+    image: "",
   },
   {
     id: 28,
