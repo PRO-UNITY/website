@@ -33,9 +33,19 @@ const MyNavbar = () => {
               <Nav.Link as={Link} to="/services" className="nav-link">
                 {t("navbar.service")}
               </Nav.Link>
-              <Nav.Link as={Link} to="#" className="nav-link">
-                {t("navbar.products")}
-              </Nav.Link>
+              <div className="nav-item dropdown">
+                <span
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  Products
+                </span>
+                <div className="dropdown-menu rounded-0 rounded-bottom m-0">
+                  <a href="#" className="dropdown-item">
+                    Hrms
+                  </a>
+                </div>
+              </div>
               <NavDropdown title="En" id="language-dropdown">
                 <NavDropdown.Item onClick={() => i18next.changeLanguage("en")}>
                   En

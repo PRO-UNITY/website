@@ -205,11 +205,11 @@ const Home = () => {
                     <div className="d-flex align-items-center">
                       <div
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                        style={{ width: 55, height: 55 }}
+                        style={{ width: 50, height: 50}}
                       >
                         <i className="fa fa-user-md text-primary" />
                       </div>
-                      <div className="ms-4">
+                      <div className="ms-2">
                         <p className="text-white mb-2">
                           {t("featuresection.listmini1")}
                         </p>
@@ -223,11 +223,11 @@ const Home = () => {
                     <div className="d-flex align-items-center">
                       <div
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                        style={{ width: 55, height: 55 }}
+                        style={{ width: 50, height: 50 }}
                       >
                         <i className="fa fa-check text-primary" />
                       </div>
-                      <div className="ms-4">
+                      <div className="ms-2">
                         <p className="text-white mb-2">
                           {t("featuresection.listmini2")}
                         </p>
@@ -241,15 +241,15 @@ const Home = () => {
                     <div className="d-flex align-items-center">
                       <div
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                        style={{ width: 55, height: 55 }}
+                        style={{ width: 50, height: 50 }}
                       >
                         <i className="fa fa-comment-medical text-primary" />
                       </div>
-                      <div className="ms-4">
+                      <div className="ms-2">
                         <p className="text-white mb-2">
                           {t("featuresection.listmini3")}
                         </p>
-                        <h5 className="text-white mb-0">
+                        <h5 className="text-white text-wrap mb-0">
                           {t("featuresection.listbig3")}
                         </h5>
                       </div>
@@ -259,11 +259,11 @@ const Home = () => {
                     <div className="d-flex align-items-center">
                       <div
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                        style={{ width: 55, height: 55 }}
+                        style={{ width: 50, height: 50 }}
                       >
                         <i className="fa fa-headphones text-primary" />
                       </div>
-                      <div className="ms-4">
+                      <div className="ms-2">
                         <p className="text-white mb-2">
                           {t("featuresection.listmini4")}
                         </p>

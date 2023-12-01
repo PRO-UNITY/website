@@ -4,7 +4,12 @@ const OurTeam = ({ name, occupation, image, socialLinks }) => {
     <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
       <div className="team-item position-relative rounded overflow-hidden">
         <div className="overflow-hidden">
-          <img className="img-fluid" src={image} alt={"team-img"} />
+          <img
+            style={{ height: 380, width: "100%", objectFit: "cover" }}
+            className="img-fluid"
+            src={image}
+            alt={"team-img"}
+          />
         </div>
         <div className="team-text bg-primary text-center p-4">
           <h5 className="text-white">{name}</h5>
