@@ -1,9 +1,8 @@
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
-import teamCard from "../../assets/akaaziz.jpg";
 import teamwork from "../../assets/teamwork.jpg";
 import { HomeSlider, OurTeam, PartnersCard } from "../../components";
-import { Partners } from "../../constants";
+import { Partners, teamMembers } from "../../constants";
 import { useTranslation } from "react-i18next";
 const Home = () => {
   const { t } = useTranslation();
@@ -343,11 +342,9 @@ const Home = () => {
             <h1>{t("teamsection.title")}</h1>
           </div>
           <div className="row g-4">
-            <OurTeam
-              img={teamCard}
-              name={"Azizbek Hamroyev"}
-              occupation={"Co-founder"}
-            />
+            {teamMembers.map((item, i) => (
+              <OurTeam key={i} {...item} />
+            ))}
           </div>
         </div>
       </div>

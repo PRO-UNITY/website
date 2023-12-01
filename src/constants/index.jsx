@@ -25,6 +25,38 @@ import partner15 from "../assets/partner7.png";
 import partner16 from "../assets/partner9.png";
 import partner17 from "../assets/partner12.png";
 
+// Team
+import Azizbek from "../assets/akaaziz.jpg";
+import Miron from "../assets/akamiron.jpg";
+import Andrey from "../assets/andrey.jpg";
+import Sobir from "../assets/sobir.jpg";
+import Davlatshoh from "../assets/davlatshoh.jpg";
+import Amirbek from "../assets/amirbek.jpg";
+import Jobir from "../assets/jobir.jpg";
+import Ibrohim from "../assets/ibrohim.jpg";
+import Otabek from "../assets/otabek.jpg";
+
+import Behzodf from "../assets/behzodf.jpg";
+import Behzodorg from "../assets/behzodorg.jpg";
+import Bobur from "../assets/bobur.jpg";
+import Dilshod from "../assets/dilshod.jpg";
+import Jamshid from "../assets/jamshid1.jpg";
+import Baxtior from "../assets/bugalter.jpg";
+import Mironchik from "../assets/mironchik1.jpg";
+import Mirxon from "../assets/mirxon.jpg";
+import Murod from "../assets/murod.jpg";
+import Nafisa from "../assets/nafisa.jpg";
+import Darya from "../assets/darya.jpg";
+import Polina from "../assets/polina.jpg";
+import Samiya from "../assets/samiya.jpg";
+import Sadoqat from "../assets/sadoqat.jpg";
+import Apazarnigor from "../assets/apazarnigor.jpg";
+import Nigina from "../assets/nig.jpg";
+import Dilnozaorg from "../assets/dilnozaorg.jpg";
+import Shaxinaorg from "../assets/shaxinaorg.jpg";
+import Albom from "../assets/albom.jpg";
+import Mohinur from "../assets/albom.jpg";
+
 export const followUsLinks = [
   {
     id: 1,
@@ -88,4 +120,316 @@ export const Partners = [
   partner15,
   partner16,
   partner17,
+];
+
+export const teamMembers = [
+  {
+    id: 1,
+    name: "Azizbek Hamroyev",
+    occupation: "Co-founder",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Azizbek,
+  },
+  {
+    id: 2,
+    name: "Miron Mustafoev",
+    occupation: "Co-founder, CEO",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Miron,
+  },
+  {
+    id: 3,
+    name: "Andrey Molodsov",
+    occupation: "Designer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Andrey,
+  },
+  {
+    id: 4,
+    name: "Sobirjon Bobojonov",
+    occupation: "Software Engineer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Sobir,
+  },
+  {
+    id: 5,
+    name: "Davlatshoh Naimov",
+    occupation: "Frontend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Davlatshoh,
+  },
+  {
+    id: 6,
+    name: "Amirbek Azimov",
+    occupation: "Mobile Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Amirbek,
+  },
+  {
+    id: 7,
+    name: "Jobir Ashurov",
+    occupation: "Frontend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Jobir,
+  },
+  {
+    id: 8,
+    name: "Ibrohim Istamov",
+    occupation: "Devops Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Ibrohim,
+  },
+  {
+    id: 9,
+    name: "Otabek Kadirov",
+    occupation: "Frontend Mentor",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Otabek,
+  },
+  {
+    id: 11,
+    name: "Behzod Baxshilloyev",
+    occupation: "Frontend Mentor",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Behzodf,
+  },
+  {
+    id: 12,
+    name: "Behzod Usmanov",
+    occupation: "Graphic Designer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Behzodorg,
+  },
+  {
+    id: 13,
+    name: "Bobur Khamraev",
+    occupation: "Backend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Bobur,
+  },
+  {
+    id: 14,
+    name: "Dilshod Bobomurodov",
+    occupation: "Backend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Dilshod,
+  },
+  {
+    id: 15,
+    name: "Jamshid Ismoilov",
+    occupation: "Backend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Jamshid,
+  },
+  {
+    id: 16,
+    name: "Baxtior Khakimov",
+    occupation: "Accountant",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Baxtior,
+  },
+  {
+    id: 17,
+    name: "Mironchik",
+    occupation: "Content Manager",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Mironchik,
+  },
+  {
+    id: 18,
+    name: "Mirxon Khudayberganov",
+    occupation: "Backend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Mirxon,
+  },
+  {
+    id: 19,
+    name: "Murod Alikulov",
+    occupation: "Backend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Murod,
+  },
+  {
+    id: 20,
+    name: "Nafisa Abidova",
+    occupation: "Frontend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Nafisa,
+  },
+  {
+    id: 21,
+    name: "Darya Safina",
+    occupation: "Frontend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Darya,
+  },
+  {
+    id: 22,
+    name: "Polina",
+    occupation: "Content Writer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Polina,
+  },
+  {
+    id: 23,
+    name: "Samiya Jumaboeva",
+    occupation: "Content Writer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Samiya,
+  },
+  {
+    id: 24,
+    name: "Sadoqat Safarova",
+    occupation: "Frontend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Sadoqat,
+  },
+  {
+    id: 25,
+    name: "Apazarnigor",
+    occupation: "Accountant",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Apazarnigor,
+  },
+  {
+    id: 26,
+    name: "Nigina Khamidova",
+    occupation: "Graphic Designer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Nigina,
+  },
+  {
+    id: 27,
+    name: "Dilnoza",
+    occupation: "Content Writer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Dilnozaorg,
+  },
+  {
+    id: 28,
+    name: "Shaxina",
+    occupation: "Graphic Designer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Shaxinaorg,
+  },
+
+  {
+    id: 30,
+    name: "Mohinur Ismoilova",
+    occupation: "Frontend Developer",
+    socialLinks: {
+      facebook: "",
+      twitter: "",
+      instagram: "",
+    },
+    image: Mohinur,
+  },
 ];
