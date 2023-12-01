@@ -277,8 +277,8 @@ export const teamMembers = [
   },
   {
     id: 16,
-    name: "Baxtior Khakimov",
-    occupation: "Accountant",
+    name: "Baxtior Raxmonov",
+    occupation: "Finance",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -288,8 +288,8 @@ export const teamMembers = [
   },
   {
     id: 17,
-    name: "",
-    occupation: "Content Manager",
+    name: "Miron Nusratov",
+    occupation: "PR Manager",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -299,8 +299,8 @@ export const teamMembers = [
   },
   {
     id: 18,
-    name: "Mirxon Khudayberganov",
-    occupation: "Backend Developer",
+    name: "Mirxon Kuziyev",
+    occupation: "Mobile Developer",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -310,8 +310,8 @@ export const teamMembers = [
   },
   {
     id: 19,
-    name: "Murod Alikulov",
-    occupation: "Backend Developer",
+    name: "Murod Axmadov",
+    occupation: "Designer",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -321,8 +321,8 @@ export const teamMembers = [
   },
   {
     id: 20,
-    name: "Nafisa Abidova",
-    occupation: "Frontend Developer",
+    name: "Nafisa Rasulova",
+    occupation: "Sales Manager",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -332,8 +332,8 @@ export const teamMembers = [
   },
   {
     id: 21,
-    name: "Darya Safina",
-    occupation: "Frontend Developer",
+    name: "Darya Usyakiya",
+    occupation: "Trainer",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -343,8 +343,8 @@ export const teamMembers = [
   },
   {
     id: 22,
-    name: "Polina",
-    occupation: "Content Writer",
+    name: "Polina Nosova",
+    occupation: "Designer",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -354,8 +354,8 @@ export const teamMembers = [
   },
   {
     id: 23,
-    name: "Samiya ",
-    occupation: "Content Writer",
+    name: "Samiya Ibragimova",
+    occupation: "Sales assistaint",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -365,8 +365,8 @@ export const teamMembers = [
   },
   {
     id: 24,
-    name: "Sadoqat Safarova",
-    occupation: "Frontend Developer",
+    name: "Sadoqat Abdulayeva",
+    occupation: "Office Manager",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -376,8 +376,8 @@ export const teamMembers = [
   },
   {
     id: 25,
-    name: "",
-    occupation: "",
+    name: "Zarnigor Majidova",
+    occupation: "Marketing Manager",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -387,8 +387,8 @@ export const teamMembers = [
   },
   {
     id: 26,
-    name: "Nigina Khamidova",
-    occupation: "Graphic Designer",
+    name: "Nigina Burxanova",
+    occupation: "Videographer",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -398,8 +398,8 @@ export const teamMembers = [
   },
   {
     id: 27,
-    name: "Dilnoza",
-    occupation: "Content Writer",
+    name: "Dilnoza Barakatova",
+    occupation: "Trainer",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -410,7 +410,7 @@ export const teamMembers = [
   {
     id: 28,
     name: "Shaxina",
-    occupation: "Graphic Designer",
+    occupation: "Trainer",
     socialLinks: {
       facebook: "",
       twitter: "",
@@ -421,8 +421,8 @@ export const teamMembers = [
 
   {
     id: 30,
-    name: "Mohinur Ismoilova",
-    occupation: "Frontend Developer",
+    name: "Mohinur Tursunova",
+    occupation: "Web-designer",
     socialLinks: {
       facebook: "",
       twitter: "",
