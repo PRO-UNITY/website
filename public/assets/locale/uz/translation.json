@@ -197,5 +197,37 @@
       "link4": "Shartlar",
       "link5": "Qo'llab-quvvatlash"
     }
+  },
+  "servicesection": {
+    "cardservice1": {
+      "title": "Dasturiy ta'minotni ishlab chiqish",
+      "Description": "PRO UNITY kompaniyasida biz biznes va jismoniy shaxslar uchun ilg'or dasturiy yechimlarni yaratishga o'zimizni bag'ishlaymiz. Biz Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django va boshqalarni o'z ichiga olgan turli texnologiyalardan foydalanamiz.",
+      "servicebutton": "Ko'proq"
+    },
+    "cardservice2": {
+      "title": "IT Maktab",
+      "Description": "Dasturiy ta'minotni ishlab chiqish xizmatlaridan tashqari, biz kodlash va dasturlash bo'yicha keng qamrovli treninglar o'tkazadigan IT maktabini ham boshqaramiz. Bizning maqsadimiz o'quvchilarimizni doimo rivojlanib borayotgan texnologiya sanoatida muvaffaqiyatga erishish uchun zarur bo'lgan vositalar bilan jihozlashdir.",
+      "servicebutton": "Ko'proq"
+    },
+    "cardservice3": {
+      "title": "Ruxsat etilgan darsliklar",
+      "Description": "Bu, albatta, faqat ikki ko'p va og'riq ko'p edi, ulardan ikki ikki bor, lekin diam, diam, diam, lekin diam. Bizning maqsadimiz o'quvchilarimizni doimo rivojlanib borayotgan texnologiya sanoatida muvaffaqiyatga erishish uchun zarur bo'lgan vositalar bilan jihozlashdir.",
+      "servicebutton": "Ko'proq"
+    },
+    "cardservice4": {
+      "title": "Kovorking",
+      "Description": "Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz. Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va ishlab chiquvchilar hamjamiyatidagi hamkorlik natijasidir",
+      "servicebutton": "Ko'proq"
+    },
+    "cardservice5": {
+      "title": "Ochiq manba",
+      "Description": "Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz. Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va ishlab chiquvchilar hamjamiyatidagi hamkorlik natijasidir",
+      "servicebutton": "Ko'proq"
+    },
+    "cardservice6": {
+      "title": "Pro Jamoa",
+      "Description": "Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz. Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va ishlab chiquvchilar hamjamiyatidagi hamkorlik natijasidir",
+      "servicebutton": "Ko'proq"
+    }
   }
 }

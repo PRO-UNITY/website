@@ -197,5 +197,34 @@
       "link4": "Terms & Condition",
       "link5": "Support"
     }
+  },
+  "servicesection": {
+    "title": "PROUNITY services",
+    "subtitle": "Services",
+    "cardservice1": {
+      "title": "Software Development",
+      "Description": "At PRO UNITY, we are dedicated to creating cutting-edge software solutions for businesses and individuals. Our team of experienced developers specializes in mobile applications, web development, and more. We utilize a variety of technologies, including Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django, and more"
+    },
+    "cardservice2": {
+      "title": "IT School",
+      "Description": "In addition to our software development services, we also operate an IT school where we provide comprehensive training in coding and programming. Our goal is to equip our students with the tools they need to succeed in the ever-evolving tech industry.Our team of experienced developers specializes in mobile applications, web development, and more."
+    },
+    "cardservice3": {
+      "title": "Authorized Tutorials",
+      "Description": "At PRO UNITY, we are dedicated to creating cutting-edge software solutions for businesses and individuals. Our team of experienced developers specializes in mobile applications, web development, and more. We utilize a variety of technologies, including Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django, and more"
+    },
+    "cardservice4": {
+      "title": "Coworking",
+      "Description": "We are proud to offer our own open source framework that includes essential components for UI and frontend work. This framework is the result of our dedication to innovation and collaboration within the developer community Our team of experienced developers specializes in mobile applications, web development, and more."
+    },
+    "cardservice5": {
+      "title": "Open Source",
+      "Description": "We are proud to offer our own open source framework that includes essential components for UI and frontend work. This framework is the result of our dedication to innovation and collaboration within the developer community Our team of experienced developers specializes in mobile applications, web development, and more."
+    },
+    "cardservice6": {
+      "title": "Pro Community",
+      "Description": "We are proud to offer our own open source framework that includes essential components for UI and frontend work. This framework is the result of our dedication to innovation and collaboration within the developer community Our team of experienced developers specializes in mobile applications, web development, and more."
+    },
+    "servicebutton": "Read More"
   }
 }
