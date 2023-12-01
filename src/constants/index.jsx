@@ -251,11 +251,11 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: Bobur,
+    image: "#",
   },
   {
     id: 14,
-    name: "Dilshod Bobomurodov",
+    name: "Dilshod Chuliyev",
     occupation: "Backend Developer",
     socialLinks: {
       facebook: "",
@@ -354,7 +354,7 @@ export const teamMembers = [
   },
   {
     id: 23,
-    name: "Samiya Jumaboeva",
+    name: "Samiya ",
     occupation: "Content Writer",
     socialLinks: {
       facebook: "",
