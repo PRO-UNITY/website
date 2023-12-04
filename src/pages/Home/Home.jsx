@@ -5,8 +5,31 @@ import { HomeSlider, OurTeam, PartnersCard } from "../../components";
 import { Partners, teamMembers } from "../../constants";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 const Home = () => {
   const { t } = useTranslation();
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const mobileRef = useRef(null);
+  const purposeRef = useRef(null);
+  const descriptionRef = useRef(null);
+  const ContactPost = async (event) => {
+    event.preventDefault();
+    const formData = {
+      name: nameRef.current?.value,
+      email: emailRef.current?.value,
+      phone: mobileRef.current?.value,
+      purpose: purposeRef.current?.value,
+      description: descriptionRef.current?.value,
+    };
+    await fetch("https://api.prounity.uz/email/send_email/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+  };
   return (
     <>
       {/* Header Start */}
@@ -385,7 +408,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
               <div className="bg-light rounded h-100 d-flex align-items-center p-5">
-                <form>
+                <form onSubmit={ContactPost}>
                   <div className="row g-3">
                     <div className="col-12 col-sm-6">
                       <input
@@ -393,6 +416,8 @@ const Home = () => {
                         className="form-control border-0"
                         placeholder={t("appointment.inputplaceholdername")}
                         style={{ height: 55 }}
+                        name="name"
+                        ref={nameRef}
                       />
                     </div>
                     <div className="col-12 col-sm-6">
@@ -401,6 +426,8 @@ const Home = () => {
                         className="form-control border-0"
                         placeholder={t("appointment.inputplaceholderemail")}
                         style={{ height: 55 }}
+                        name="email"
+                        ref={emailRef}
                       />
                     </div>
                     <div className="col-12 col-sm-6">
@@ -409,12 +436,15 @@ const Home = () => {
                         className="form-control border-0"
                         placeholder={t("appointment.inputplaceholdermobile")}
                         style={{ height: 55 }}
+                        name="mobile"
+                        ref={mobileRef}
                       />
                     </div>
                     <div className="col-12 col-sm-6">
                       <select
                         className="form-select border-0"
                         style={{ height: 55 }}
+                        ref={purposeRef}
                       >
                         <option selected>
                           {t("appointment.inputplaceholderpurpose")}
@@ -429,7 +459,7 @@ const Home = () => {
                         className="form-control border-0"
                         rows={5}
                         placeholder={t("appointment.inputplaceholderdescripe")}
-                        defaultValue={""}
+                        ref={descriptionRef}
                       />
                     </div>
                     <div className="col-12">
