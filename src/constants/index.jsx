@@ -41,17 +41,17 @@ import Bobur from "../assets/bobur1.jpg";
 import Dilshod from "../assets/dilshod.jpg";
 import Jamshid from "../assets/jamshid1.jpg";
 import Baxtior from "../assets/behzodf.jpg";
-import Mironchik from "../assets/akamiron.jpg";
+import Mironchik from "../assets/mironchik1.jpg";
 import Mirxon from "../assets/mirxon.jpg";
-import Murod from "../assets/akamiron.jpg";
+import Murod from "../assets/murod.jpg";
 import Nafisa from "../assets/nafisa.jpg";
 import Darya from "../assets/darya.jpg";
 import Polina from "../assets/polina.jpg";
 import Samiya from "../assets/samiya.jpg";
 import Sadoqat from "../assets/sadoqat.jpg";
 import Apazarnigor from "../assets/apazarnigor.jpg";
-import Nigina from "../assets/akamiron.jpg";
-import Dilnozaorg from "../assets/akamiron.jpg";
+import Nigina from "../assets/nig.jpg";
+import Dilnozaorg from "../assets/dilnozaorg.jpg";
 import Shaxinaorg from "../assets/shaxinaorg.jpg";
 import Mohinur from "../assets/albom.jpg";
 
@@ -295,7 +295,7 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: "",
+    image: Mironchik,
   },
   {
     id: 18,
@@ -317,7 +317,7 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: "",
+    image: Murod,
   },
   {
     id: 20,
@@ -394,7 +394,7 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: "",
+    image: Nigina,
   },
   {
     id: 27,
@@ -405,7 +405,7 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: "",
+    image: Dilnozaorg,
   },
   {
     id: 28,
