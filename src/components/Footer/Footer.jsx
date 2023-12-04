@@ -44,7 +44,7 @@ const Footer = () => {
                   key={item.id}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-decoration-none btn btn-outline-light btn-social rounded-circle"
+                  className="text-decoration-none btn btn-light btn-social rounded-circle"
                   href={item.link}
                 >
                   <img width={16} src={item.icon} alt="" />
