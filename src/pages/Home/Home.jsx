@@ -4,6 +4,7 @@ import teamwork from "../../assets/teamwork.jpg";
 import { HomeSlider, OurTeam, PartnersCard } from "../../components";
 import { Partners, teamMembers } from "../../constants";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 const Home = () => {
   const { t } = useTranslation();
   return (
@@ -97,9 +98,12 @@ const Home = () => {
                 <i className="far fa-check-circle text-primary me-3" />
                 {t("aboutsection.list4")}
               </p>
-              <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" href>
+              <Link
+                to={"/about"}
+                className="btn btn-primary rounded-pill py-3 px-5 mt-3"
+              >
                 {t("aboutsection.morebutton")}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -302,7 +306,7 @@ const Home = () => {
               <div className="col-lg-6">
                 <div>
                   <h1 className="display-4 text-white mb-5">
-                    Watch Our blogs here
+                    {t("blogSection.title")}
                   </h1>
                 </div>
 

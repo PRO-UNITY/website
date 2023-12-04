@@ -44,9 +44,6 @@ const About = () => {
               <i className="far fa-check-circle text-primary me-3" />
               {t("aboutsection.list4")}
             </p>
-            <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" href>
-              {t("aboutsection.morebutton")}
-            </a>
           </div>
         </div>
       </div>
