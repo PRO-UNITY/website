@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
@@ -25,7 +25,9 @@ const Contact = () => {
       body: JSON.stringify(formData),
     });
   };
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="container-xxl py-5">
       <div className="container">

@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const Services = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="container-xxl py-5">
       <div className="container ">
@@ -134,7 +138,7 @@ const Services = () => {
               </p>
               <Link
                 to={"/services/pro-community"}
-                className="btn bg-light"
+                className="btn bg-light pl-5"
                 href
               >
                 <i className="fa fa-plus text-primary me-3" />

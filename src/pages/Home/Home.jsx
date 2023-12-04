@@ -13,6 +13,7 @@ const Home = () => {
   const mobileRef = useRef(null);
   const purposeRef = useRef(null);
   const descriptionRef = useRef(null);
+
   const ContactPost = async (event) => {
     event.preventDefault();
     const formData = {
@@ -46,7 +47,7 @@ const Home = () => {
               <div className="col-sm-4">
                 <div className="border-start border-light ps-4">
                   <h2 className="text-white mb-1" data-toggle="counter-up">
-                    10
+                    12
                   </h2>
                   <p className="text-light mb-0">
                     {t("herosection.developers")}
@@ -56,7 +57,7 @@ const Home = () => {
               <div className="col-sm-4">
                 <div className="border-start border-light ps-4">
                   <h2 className="text-white mb-1" data-toggle="counter-up">
-                    100+
+                    120
                   </h2>
                   <p className="text-light mb-0">{t("herosection.students")}</p>
                 </div>
@@ -64,7 +65,7 @@ const Home = () => {
               <div className="col-sm-4">
                 <div className="border-start border-light ps-4">
                   <h2 className="text-white mb-1" data-toggle="counter-up">
-                    10+
+                    20
                   </h2>
                   <p className="text-light mb-0">{t("herosection.projects")}</p>
                 </div>

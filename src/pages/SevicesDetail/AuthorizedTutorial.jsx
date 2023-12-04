@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const AuthorizedTutorial = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="container-xxl servces-detail py-5">
       <div className="container ">

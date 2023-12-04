@@ -1,8 +1,12 @@
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 const About = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="container-xxl py-5">
       <div className="container">

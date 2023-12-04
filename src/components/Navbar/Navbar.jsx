@@ -24,13 +24,13 @@ const MyNavbar = () => {
           <Navbar.Toggle aria-controls="navbarCollapse" />
           <Navbar.Collapse id="navbarCollapse">
             <Nav className="ms-auto p-4 p-lg-0">
-              <Nav.Link as={Link} to="/" className="nav-link active">
+              <Nav.Link as={Link} to="/">
                 {t("navbar.home")}
               </Nav.Link>
-              <Nav.Link as={Link} to="/about" className="nav-link">
+              <Nav.Link as={Link} to="/about">
                 {t("navbar.about")}
               </Nav.Link>
-              <Nav.Link as={Link} to="/services" className="nav-link">
+              <Nav.Link as={Link} to="/services">
                 {t("navbar.service")}
               </Nav.Link>
               <div className="nav-item dropdown">
@@ -41,9 +41,9 @@ const MyNavbar = () => {
                   Products
                 </span>
                 <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                  <a href="#" className="dropdown-item">
+                  <Link to={"/products/hrms"} className="dropdown-item">
                     Hrms
-                  </a>
+                  </Link>
                 </div>
               </div>
               <NavDropdown title="En" id="language-dropdown">
