@@ -43,7 +43,7 @@ import Jamshid from "../assets/jamshid1.jpg";
 import Baxtior from "../assets/behzodf.jpg";
 import Mironchik from "../assets/mironchik1.jpg";
 import Mirxon from "../assets/mirxon.jpg";
-import Murod from "../assets/murod.jpg";
+import Murod from "../assets/murod1.jpg";
 import Nafisa from "../assets/nafisa.jpg";
 import Darya from "../assets/darya.jpg";
 import Polina from "../assets/polina.jpg";
