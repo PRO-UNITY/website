@@ -37,7 +37,7 @@ import Ibrohim from "../assets/ibrohim.jpg";
 import Otabek from "../assets/otabek.jpg";
 import Behzodf from "../assets/behzodf.jpg";
 import Behzodorg from "../assets/behzodorg.jpg";
-import Bobur from "../assets/akamiron.jpg";
+import Bobur from "../assets/bobur.jpg";
 import Dilshod from "../assets/dilshod.jpg";
 import Jamshid from "../assets/jamshid1.jpg";
 import Baxtior from "../assets/behzodf.jpg";
@@ -251,7 +251,7 @@ export const teamMembers = [
       twitter: "",
       instagram: "",
     },
-    image: "#",
+    image: Bobur,
   },
   {
     id: 14,
