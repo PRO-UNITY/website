@@ -50,7 +50,7 @@ import Polina from "../assets/polina.jpg";
 import Samiya from "../assets/samiya.jpg";
 import Sadoqat from "../assets/sadoqat.jpg";
 import Apazarnigor from "../assets/apazarnigor.jpg";
-import Nigina from "../assets/nig.jpg";
+import Nigina from "../assets/nig1.jpg";
 import Dilnozaorg from "../assets/dilnozaorg.jpg";
 import Shaxinaorg from "../assets/shaxinaorg.jpg";
 import Mohinur from "../assets/albom.jpg";
