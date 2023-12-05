@@ -72,15 +72,13 @@
 .feedback .feedback-cards {
   transform: translateY(80px);
 }
-.pricing .price-box {
-  width: 200px;
-  height: 200px;
-  margin: auto;
+.pricing .unlimited .start-btn {
+  background: var(--secondary);
 }
-.pricing .price-box h1 {
-  font-size: 70px;
-  font-weight: 600;
+.pricing .card .card-content span {
+  font-size: 18px;
 }
+
 .get-app .container {
   max-width: 1000px;
   height: 300px;
@@ -189,5 +187,11 @@
   }
   .get-app .img-box img {
     display: none;
+  }
+  .pricing .card .card-content span {
+    font-size: 15px;
+  }
+  .pricing .card .card-bottom {
+    text-align: center;
   }
 }
