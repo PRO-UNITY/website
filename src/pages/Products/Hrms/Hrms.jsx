@@ -1,7 +1,9 @@
 import "./Hrms.css";
 import home_slider from "../../../assets/images/hrms/home-img.png";
 import about_img from "../../../assets/images/hrms/about-img.png";
-import feedbackProfile from "../../../assets/images/hrms/feedback-profile-user.jpg";
+import check_icon from "../../../assets/images/hrms/CheckCircle.svg";
+import close_icon from "../../../assets/images/hrms/XCircle.svg";
+// import feedbackProfile from "../../../assets/images/hrms/feedback-profile-user.jpg";
 import { useTranslation } from "react-i18next";
 
 const Hrms = () => {
@@ -52,10 +54,80 @@ const Hrms = () => {
             </h2>
             <p className="description">{t("hrms.about.box1.description")}</p>
             <p className="description">{t("hrms.about.box1.description")}</p>
-            <a className=" btn btn-outline-primary me-3 fs-5 py-3 px-4 mt-3">
+            <a className=" btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3">
               {t("hrms.about.moreButton")}
               <i className="fa-solid fa-arrow-right-long mx-2"></i>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="pricing container-fluid  bg-primary py-5">
+        <div className="container d-flex align-items-center flex-column  flex-md-row py-5 justify-content-center gap-5">
+          <div className="card p-3 p-md-5 rounded-4">
+            <div className="card-head">
+              <h4 className="fw-semibold">Econom</h4>
+              <p className="m-0">
+                E-commerce app for One Store Owner, use for multi-purpose app
+              </p>
+            </div>
+            <ul className="card-content p-0 pb-4 border-bottom border-primary">
+              <li className="d-flex align-items-center mt-2 gap-2">
+                <img src={check_icon} alt="check" />
+                Work with ProUnity 3.x
+              </li>
+              <li className="d-flex align-items-center mt-2 gap-2">
+                <img src={check_icon} alt="check" />
+                Full ProUnity Source Code
+              </li>
+              <li className="d-flex align-items-center mt-2 gap-2">
+                <img src={check_icon} alt="check" />
+                Design & Extensions Files
+              </li>
+              <li className="d-flex align-items-center mt-2 gap-2">
+                <img src={close_icon} alt="check" />
+                Purchase one, life-time update
+              </li>
+            </ul>
+            <div className="card-bottom">
+              <div className="price text-center d-flex justify-content-center align-items-end">
+                <h1 className="m-0 fw-bold">69$ </h1>{" "}
+                <span className="h6"> /one time</span>
+              </div>
+            </div>
+          </div>
+          <div className="card p-3 p-md-5 rounded-4">
+            <div className="card-head">
+              <h4 className="fw-semibold">Econom</h4>
+              <p className="m-0">
+                E-commerce app for One Store Owner, use for multi-purpose app
+              </p>
+            </div>
+            <ul className="card-content p-0 pb-4 border-bottom border-primary">
+              <li className="d-flex align-items-center mt-2 gap-2">
+                <img src={check_icon} alt="check" />
+                Work with ProUnity 3.x
+              </li>
+              <li className="d-flex align-items-center mt-2 gap-2">
+                <img src={check_icon} alt="check" />
+                Full ProUnity Source Code
+              </li>
+              <li className="d-flex align-items-center mt-2 gap-2">
+                <img src={check_icon} alt="check" />
+                Design & Extensions Files
+              </li>
+              <li className="d-flex align-items-center mt-2 gap-2">
+                <img src={close_icon} alt="check" />
+                Purchase one, life-time update
+              </li>
+            </ul>
+            <div className="card-bottom">
+              <div className="price text-center d-flex justify-content-center align-items-end">
+                <h1 className="m-0 fw-bold">79$ </h1>{" "}
+                <span className="h6"> /one time</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
