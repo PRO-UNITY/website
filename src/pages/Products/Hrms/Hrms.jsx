@@ -21,11 +21,11 @@ const Hrms = () => {
             <p className="description text-white">
               {t("hrms.home.description")}
             </p>
-            <a className="download-btn btn text-decoration-none fs-5 text-primary me-3 rounded ">
+            <a className="download-btn  text-decoration-none fs-5 text-primary me-3 rounded ">
               {t("hrms.home.button1")}
               <i className="fa-solid fa-arrow-right-long mt-1"></i>
             </a>
-            <a className="download-btn download-btn-outline btn  text-decoration-none fs-5  me-3 rounded ">
+            <a className="download-btn download-btn-outline   text-decoration-none fs-5  me-3 rounded ">
               {t("hrms.home.button2")}
               <i className="fa-solid fa-arrow-right-long mt-1"></i>
             </a>
