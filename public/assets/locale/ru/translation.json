@@ -299,20 +299,33 @@
     "pricing": {
       "subtitle": "Pricing",
       "title": "We Have Better Pricing Plan",
-      "card1": {
-        "title": "Personal",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ea, molestias natus alias error magni"
+      "cardProffesional": {
+        "title": "Proffesional",
+        "cardList": {
+          "list1": "All Basic Services",
+          "list2": "Unlimited Request",
+          "list3": "Unlimited Revision",
+          "list4": "Cancel Anytime",
+          "list5": "A-Sync Collaboration"
+        }
       },
-      "card2": {
-        "title": "Standart",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ea, molestias natus alias error magni"
+      "cardUnlimited": {
+        "title": "Unlimited",
+        "subtitle": "Most Popular",
+        "cardList": {
+          "list1": "All Basic Services",
+          "list2": "All Advanced Services",
+          "list3": "Cancel Anytime",
+          "list4": "Art Direction",
+          "list5": "Concept and Ideation",
+          "list6": "Unlimited Request",
+          "list7": "Unlimited Revision",
+          "list8": "A-Sync Collaboration",
+          "list9": "Weekly Updates"
+        }
       },
-      "card3": {
-        "title": "Bussiness",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ea, molestias natus alias error magni"
-      },
-      "pricingButton": "Start Now",
-      "pricingCardText": "Get The App"
+
+      "pricingButton": "Start Now"
     }
   }
 }
