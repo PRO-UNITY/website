@@ -1,7 +1,6 @@
 import "./Hrms.css";
-import aplleLogo from "../../../assets/images/hrms/apple-logo.png";
-import playStoreLogo from "../../../assets/images/hrms/play-store.webp";
 import home_slider from "../../../assets/images/hrms/home-img.png";
+import about_img from "../../../assets/images/hrms/about-img.png";
 import feedbackProfile from "../../../assets/images/hrms/feedback-profile-user.jpg";
 import { useTranslation } from "react-i18next";
 
@@ -32,50 +31,35 @@ const Hrms = () => {
           </div>
           <div className="col-lg-6  h-100">
             <div className="hero_slider d-flex justify-content-center .align-items-end">
-              <img src={home_slider} alt="" />
+              <img src={home_slider} alt="hero-img" />
             </div>
           </div>
         </div>
       </section>
 
       {/* About */}
-      <section className="hrms-about container-lg  p-0 mb-5">
-        <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
-          <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <div className="img-box">
-              <img src={home_slider} alt="about-img" />
+      <section className="hrms-about container-lg  p-0 py-5 mb-5">
+        <div className="row g-0 align-items-center  flex-column-reverse flex-lg-row">
+          <div className="col-lg-6 ">
+            <div className="img-box rounded-4 d-flex justify-content-center">
+              <img src={about_img} alt="about-img" />
+              <div className="img-mask rounded-4"></div>
             </div>
           </div>
-          <div className="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
-            <h3 style={{ fontWeight: "600" }} className=" mb-3">
+          <div className="col-lg-6 p-3 p-md-5">
+            <h2 style={{ fontWeight: "600" }} className="mb-4">
               {t("hrms.about.box1.title")}
-            </h3>
+            </h2>
             <p className="description">{t("hrms.about.box1.description")}</p>
             <p className="description">{t("hrms.about.box1.description")}</p>
-            <a className=" btn btn-primary me-3 rounded-pill py-2 px-4 mt-3">
+            <a className=" btn btn-outline-primary me-3 fs-5 py-3 px-4 mt-3">
               {t("hrms.about.moreButton")}
+              <i className="fa-solid fa-arrow-right-long mx-2"></i>
             </a>
           </div>
         </div>
       </section>
-      <section className="hrms-about container-lg  p-0 mb-5">
-        <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
-          <div className="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
-            <h3 style={{ fontWeight: "600" }} className=" mb-3">
-              {t("hrms.about.box2.title")}
-            </h3>
-            <p className="description">{t("hrms.about.box2.description")}</p>
-            <a className=" btn btn-primary me-3 rounded-pill py-2 px-4 mt-3">
-              {t("hrms.about.moreButton")}
-            </a>
-          </div>
-          <div className="col-lg-6 " data-wow-delay="0.5s">
-            <div className="img-box">
-              <img src={home_slider} alt="about-img" />
-            </div>
-          </div>
-        </div>
-      </section>
+
       {/* Archive */}
       <div className=" hrms-archive container-fluid bg-primary servces-detail pt-5">
         <div className="head text-center text-white">

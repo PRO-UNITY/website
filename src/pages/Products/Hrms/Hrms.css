@@ -17,31 +17,24 @@
 .hero_slider img {
   margin: 80px 0 0 0;
 }
-.hero_slider .mySwiper {
-  height: 500px;
+
+.hrms-about .img-box {
+  position: relative;
+  max-width: 440px;
+  width: 100%;
 }
-.hero_slider .mySwiper .slider-item {
-  height: 500px;
-}
-.hero_slider .mySwiper .slider-item {
-  background-color: transparent;
-}
-.hero_slider .mySwiper .swiper-button-prev,
-.hero_slider .mySwiper .swiper-button-next {
-  background: rgb(255, 255, 255);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.hero_slider .mySwiper .swiper-button-prev::after,
-.hero_slider .mySwiper .swiper-button-next::after {
-  color: var(--primary);
-  font-size: 22px;
-}
+
 .hrms-about .img-box img {
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
+  width: 250px;
+  height: 500px;
+  z-index: 99;
+}
+.hrms-about .img-box .img-mask {
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  bottom: -30px;
+  background-color: rgba(0, 0, 0, 0.123);
 }
 .hrms-archive .archive-card {
   max-width: 1000px;
