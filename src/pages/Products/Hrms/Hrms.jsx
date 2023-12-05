@@ -1,56 +1,38 @@
 import "./Hrms.css";
 import aplleLogo from "../../../assets/images/hrms/apple-logo.png";
 import playStoreLogo from "../../../assets/images/hrms/play-store.webp";
-import home_slider from "../../../assets/images/hrms/hrms-slider.webp";
+import home_slider from "../../../assets/images/hrms/home-img.png";
 import feedbackProfile from "../../../assets/images/hrms/feedback-profile-user.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 
 const Hrms = () => {
   const { t } = useTranslation();
   return (
     <div className="hrms">
-      <section className="hrms-hero container-fluid header bg-primary py-md-5 mb-5">
-        <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
-          <div className="col-lg-6 px-3 px-md-5  pb-4">
+      <section className="hrms-hero container-fluid header bg-primary  mb-5">
+        <div className="row g-0 h-100 align-items-center flex-column flex-lg-row">
+          <div className="col-lg-6 px-3 px-md-5 py-md-5  pb-4">
             <h1
               style={{ fontWeight: "600" }}
-              className="display-2 text-white mb-5 "
+              className="display-2 text-white mt-5 mt-md-0 mb-5 "
             >
               {t("hrms.home.title")}
             </h1>
             <p className="description text-white">
               {t("hrms.home.description")}
             </p>
-            <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
-              {t("hrms.home.button")}
-              <img src={aplleLogo} alt="aplle" />
+            <a className="download-btn btn text-decoration-none fs-5 text-primary me-3 rounded ">
+              {t("hrms.home.button1")}
+              <i className="fa-solid fa-arrow-right-long mt-1"></i>
             </a>
-            <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
-              {t("hrms.home.button")}
-              <img src={playStoreLogo} alt="" />
+            <a className="download-btn download-btn-outline btn  text-decoration-none fs-5  me-3 rounded ">
+              {t("hrms.home.button2")}
+              <i className="fa-solid fa-arrow-right-long mt-1"></i>
             </a>
           </div>
-          <div className="col-lg-6 ">
-            <div className="hero_slider d-flex justify-content-center">
-              <Swiper
-                navigation={true}
-                modules={[Navigation]}
-                className="mySwiper"
-              >
-                <SwiperSlide className="slider-item">
-                  <img src={home_slider} alt="hrms-img" />
-                </SwiperSlide>
-                <SwiperSlide className="slider-item">
-                  <img src={home_slider} alt="hrms-img" />
-                </SwiperSlide>
-                <SwiperSlide className="slider-item">
-                  <img src={home_slider} alt="hrms-img" />
-                </SwiperSlide>
-              </Swiper>
+          <div className="col-lg-6  h-100">
+            <div className="hero_slider d-flex justify-content-center .align-items-end">
+              <img src={home_slider} alt="" />
             </div>
           </div>
         </div>
@@ -435,14 +417,14 @@ const Hrms = () => {
           <div className="head text-center text-white">
             <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
             <h2>{t("hrms.pricing.pricingCardText")}</h2>
-            <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
+            {/* <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
               {t("hrms.home.button")}
               <img src={aplleLogo} alt="aplle" />
             </a>
             <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
               {t("hrms.home.button")}
               <img src={playStoreLogo} alt="" />
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
