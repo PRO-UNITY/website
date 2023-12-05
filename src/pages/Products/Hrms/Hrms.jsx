@@ -61,7 +61,7 @@ const Hrms = () => {
       </section>
 
       {/* Archive */}
-      <div className=" hrms-archive container-fluid bg-primary servces-detail pt-5">
+      {/* <div className=" hrms-archive container-fluid bg-primary servces-detail pt-5">
         <div className="head text-center text-white">
           <h5 className="subtitle">{t("hrms.archived.subtitle")}</h5>
           <h2>{t("hrms.archived.title")}</h2>
@@ -82,10 +82,10 @@ const Hrms = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Features */}
-      <section className="feature container mt-5 pt-5">
+      {/* <section className="feature container mt-5 pt-5">
         <div className="head text-center text-dark">
           <h5 className="subtitle">{t("hrms.features.subtitle")}</h5>
           <h1 className="mx-auto w-100" style={{ maxWidth: "800px" }}>
@@ -146,9 +146,9 @@ const Hrms = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Feedback */}
-      <section className="feedback container-fluid bg-primary servces-detail my-5 py-3  pt-md-5">
+      {/* <section className="feedback container-fluid bg-primary servces-detail my-5 py-3  pt-md-5">
         <div className="head text-center text-white">
           <h5 className="subtitle">{t("hrms.feedback.subtitle")}</h5>
           <h1 className="mx-auto w-100" style={{ maxWidth: "800px" }}>
@@ -237,10 +237,10 @@ const Hrms = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Pricing */}
-      <section className="pricing py-md-5 ">
+      {/* <section className="pricing py-md-5 ">
         <div className="head text-center mt-5">
           <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
           <h2>{t("hrms.pricing.title")}</h2>
@@ -350,48 +350,10 @@ const Hrms = () => {
             </div>
           </div>
         </div>
-        {/* <div className="pricingq-cards mt-4 container d-lg-flex align-items-center justify-content-center gap-4">
-          <div className="card my-3 d-flex w-100 text-center p-4">
-            <h2>{t("hrms.pricing.card1.title")}</h2>
-            <div className="price-box d-inline-flex align-items-center justify-content-center bg-light rounded-circle my-4">
-              <h1>$15</h1>
-            </div>
-            <p className="px-md-5">{t("hrms.pricing.card1.description")}</p>
-            <div className="">
-              <a className=" btn btn-primary me-3 rounded-pill py-2 px-4 mt-3">
-                {t("hrms.pricing.pricingButton")}
-              </a>
-            </div>
-          </div>
-          <div className="card my-3 w-100 text-center p-4">
-            <h2>{t("hrms.pricing.card2.title")}</h2>
-            <div className="price-box d-inline-flex align-items-center justify-content-center bg-light rounded-circle my-4">
-              <h1>$25</h1>
-            </div>
-            <p className="px-md-5">{t("hrms.pricing.card2.description")}</p>
-            <div>
-              <a className=" btn btn-primary me-3 rounded-pill py-2 px-4 mt-3">
-                {t("hrms.pricing.pricingButton")}
-              </a>
-            </div>
-          </div>
-          <div className="card my-3 w-100 text-center p-4">
-            <h2>{t("hrms.pricing.card3.title")}</h2>
-            <div className="price-box d-inline-flex align-items-center justify-content-center bg-light rounded-circle my-4">
-              <h1>$35</h1>
-            </div>
-            <p className="px-md-5">{t("hrms.pricing.card3.description")}</p>
-            <div>
-              <a className=" btn btn-primary me-3 rounded-pill py-2 px-4 mt-3">
-                {t("hrms.pricing.pricingButton")}
-              </a>
-            </div>
-          </div>
-        </div> */}
-      </section>
+      </section> */}
 
       {/*  */}
-      <section className="get-app my-5">
+      {/* <section className="get-app my-5">
         <div className="img-box d-flex align-items-center justify-content-center">
           <img src={home_slider} alt="phone-img" />
           <img src={home_slider} alt="phone-img" />
@@ -401,17 +363,17 @@ const Hrms = () => {
           <div className="head text-center text-white">
             <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
             <h2>{t("hrms.pricing.pricingCardText")}</h2>
-            {/* <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
+            <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
               {t("hrms.home.button")}
               <img src={aplleLogo} alt="aplle" />
             </a>
             <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
               {t("hrms.home.button")}
               <img src={playStoreLogo} alt="" />
-            </a> */}
+            </a>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
