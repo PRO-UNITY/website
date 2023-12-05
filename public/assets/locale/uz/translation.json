@@ -230,5 +230,13 @@
       "Description": "PRO UNITY kompaniyasida biz buxorolik ko‘plab dasturchilar va startaplardan tashkil topgan hamjamiyatning bir qismi ekanligimizdan faxrlanamiz. Innovatsion yechimlarni yaratish va texnologiya chegaralarini oshirish missiyamizga qo'shiling.r"
     },
     "servicebutton": "Ko'proq"
+  },
+  "hrms": {
+    "home": {
+      "title": "",
+      "description": "",
+      "button": ""
+    },
+    "about": {}
   }
 }

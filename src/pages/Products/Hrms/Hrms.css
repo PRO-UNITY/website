@@ -1,14 +1,42 @@
 .hrms .download-btn {
   background: var(--secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 25px;
+  height: 55px;
+  cursor: pointer;
+  margin: 10px 0;
 }
 .hrms .download-btn img {
-  width: 30px;
+  width: 20px;
   object-fit: cover;
 }
-.hero_img img {
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
+.hero_slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hero_slider .mySwiper {
+  height: 500px;
+}
+.hero_slider .mySwiper .slider-item {
+  height: 500px;
+}
+.hero_slider .mySwiper .slider-item {
+  background-color: transparent;
+}
+.hero_slider .mySwiper .swiper-button-prev,
+.hero_slider .mySwiper .swiper-button-next {
+  background: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.hero_slider .mySwiper .swiper-button-prev::after,
+.hero_slider .mySwiper .swiper-button-next::after {
+  color: var(--primary);
+  font-size: 22px;
 }
 .hrms-about .img-box img {
   width: 80%;
@@ -84,6 +112,11 @@
   .hrms-hero {
     text-align: center;
   }
+  .hero_slider img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
   .hrms-hero img {
     width: 320px;
   }
@@ -140,6 +173,10 @@
   }
 }
 @media only screen and (max-width: 425px) {
+  .hero_slider img {
+    width: 320px;
+    object-fit: contain;
+  }
   .pricing .price-box {
     width: 100px;
     height: 100px;
