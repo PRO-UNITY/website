@@ -90,11 +90,17 @@ const Hrms = () => {
                 Purchase one, life-time update
               </li>
             </ul>
-            <div className="card-bottom">
+            <div className="card-bottom text-center">
               <div className="price text-center d-flex justify-content-center align-items-end">
                 <h1 className="m-0 fw-bold">69$ </h1>{" "}
                 <span className="h6"> /one time</span>
               </div>
+              <button
+                style={{ color: "yellow" }}
+                className="btn btn-primary mt-4 px-3 py-2 fw-semibold"
+              >
+                Purchase Now
+              </button>
             </div>
           </div>
           <div className="card p-3 p-md-5 rounded-4">
@@ -122,11 +128,17 @@ const Hrms = () => {
                 Purchase one, life-time update
               </li>
             </ul>
-            <div className="card-bottom">
+            <div className="card-bottom text-center">
               <div className="price text-center d-flex justify-content-center align-items-end">
-                <h1 className="m-0 fw-bold">79$ </h1>{" "}
+                <h1 className="m-0 fw-bold">79$ </h1>
                 <span className="h6"> /one time</span>
               </div>
+              <button
+                style={{ color: "yellow" }}
+                className="btn btn-primary mt-4 px-3 py-2 fw-semibold"
+              >
+                Purchase Now
+              </button>
             </div>
           </div>
         </div>
