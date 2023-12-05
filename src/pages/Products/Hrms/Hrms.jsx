@@ -13,9 +13,9 @@ const Hrms = () => {
   const { t } = useTranslation();
   return (
     <div className="hrms">
-      <section className="hrms-hero container-fluid header bg-primary p-0 mb-5">
+      <section className="hrms-hero container-fluid header bg-primary py-md-5 mb-5">
         <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
-          <div className="col-lg-6 px-5 " data-wow-delay="0.1s">
+          <div className="col-lg-6 px-3 px-md-5  pb-4">
             <h1
               style={{ fontWeight: "600" }}
               className="display-2 text-white mb-5 "

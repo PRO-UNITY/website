@@ -233,10 +233,86 @@
   },
   "hrms": {
     "home": {
-      "title": "",
-      "description": "",
-      "button": ""
+      "title": "Book Movie Ticket From Your Home",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus. Dolorum, ipsam maiores est quibusdam consequatur ratione omnis adipisci ea quis soluta possimus sapiente dolor voluptatum.",
+      "button": "Download for"
     },
-    "about": {}
-  }
+    "about": {
+      "box1": {
+        "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
+      },
+      "box2": {
+        "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
+      },
+      "moreButton": "Read More"
+    },
+    "archived": {
+      "subtitle": "What we have",
+      "title": "Archived",
+      "cardDownloads": {
+        "text": "Downloads"
+      },
+      "cardReviews": {
+        "text": "Positive Reviews"
+      },
+      "cardRating": {
+        "text": "Rating"
+      }
+    },
+    "features": {
+      "subtitle": "Advanced Features",
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum ipsa eaque quibusdam aspernatur",
+      "card1": {
+        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
+      },
+      "card2": {
+        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
+      },
+      "card3": {
+        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
+      }
+    },
+    "feedback": {
+      "subtitle": "What we have",
+      "title": "Feedback",
+      "card1": {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
+        "name": "Logan Wolf",
+        "proffesion": "User Experiens Designer"
+      },
+      "card2": {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
+        "name": "Logan Wolf",
+        "proffesion": "User Experiens Designer"
+      },
+      "card3": {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
+        "name": "Logan Wolf",
+        "proffesion": "User Experiens Designer"
+      }
+    },
+    "pricing": {
+      "subtitle": "Pricing",
+      "title": "We Have Better Pricing Plan",
+      "card1": {
+        "title": "Personal",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ea, molestias natus alias error magni"
+      },
+      "card2": {
+        "title": "Standart",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ea, molestias natus alias error magni"
+      },
+      "card3": {
+        "title": "Bussiness",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ea, molestias natus alias error magni"
+      },
+      "pricingButton": "Start Now",
+      "pricingCardText": "Get The App"
+    }
+  } 
 }
