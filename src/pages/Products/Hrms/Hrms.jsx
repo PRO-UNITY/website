@@ -1,8 +1,6 @@
 import "./Hrms.css";
 import home_slider from "../../../assets/images/hrms/home-img.png";
 import about_img from "../../../assets/images/hrms/about-img.png";
-import check_icon from "../../../assets/images/hrms/CheckCircle.svg";
-import close_icon from "../../../assets/images/hrms/XCircle.svg";
 import slider_img1 from "../../../assets/images/hrms/Rectangle 30.jpg";
 import slider_img2 from "../../../assets/images/hrms/Rectangle 31.png";
 import slider_img3 from "../../../assets/images/hrms/Rectangle 32.png";
@@ -11,9 +9,14 @@ import slider_img5 from "../../../assets/images/hrms/Rectangle 34.png";
 import slider_img6 from "../../../assets/images/hrms/Rectangle 35.jpg";
 import slider_img7 from "../../../assets/images/hrms/Rectangle 36.jpg";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
+import flutter from "../../../assets/images/hrms/icons8-flutter-480 1.png";
+import android from "../../../assets/images/hrms/icons8-android-240 1.png";
+import firebase from "../../../assets/images/hrms/icons8-firebase-480 1.png";
+import ios from "../../../assets/images/hrms/icons8-ios-logo-512 1.png";
+import dribbble from "../../../assets/images/hrms/icons8-dribble-480 1.png";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const CaruselItem = [
@@ -48,6 +51,34 @@ const CaruselItem = [
   {
     id: 8,
     image: slider_img5,
+  },
+];
+
+const platformData = [
+  {
+    id: 1,
+    image: flutter,
+    background: "rgba(64, 196, 255, 0.26)",
+  },
+  {
+    id: 2,
+    image: android,
+    background: "rgba(48, 220, 128, 0.26);",
+  },
+  {
+    id: 3,
+    image: firebase,
+    background: "rgba(255, 111, 0, 0.26)",
+  },
+  {
+    id: 4,
+    image: ios,
+    background: "rgba(143, 58, 255, 0.26)",
+  },
+  {
+    id: 5,
+    image: dribbble,
+    background: "rgba(234, 76, 137, 0.26)",
   },
 ];
 
@@ -301,7 +332,7 @@ const Hrms = () => {
       </section>
 
       {/* Carusel */}
-      <section className="carusel  my-5 position-relative">
+      <section className="carusel py-5 my-5 position-relative">
         <Swiper
           slidesPerView={4}
           centeredSlides
@@ -310,19 +341,39 @@ const Hrms = () => {
           autoplay={{
             delay: 2500,
           }}
-          className="mySwiper"
+          className="mySwiper "
           modules={[Autoplay]}
         >
           {CaruselItem.map((item) => (
-            <SwiperSlide key={item.id}>
-              <img src={item.image} alt="" />
-            </SwiperSlide>
+            <>
+              <SwiperSlide key={item.id}>
+                <img src={item.image} alt="" />
+              </SwiperSlide>
+            </>
           ))}
         </Swiper>
-
-        <div className="img-form w-100   h-100 text-center">
-          <div className="img-box position-absolute top-0 ">
+        <div className="slider-overlay"></div>
+        <div className="img-form w-100 h-100 position-absolute top-0 text-center">
+          <div className="img-box  ">
             <img src={form_bg} alt="" className="bg-img" />
+          </div>
+        </div>
+      </section>
+      <section className="platform py-2 py-md-5 container-fluid bg-primary">
+        <div className="container h-100 my-4 d-flex justify-content-center align-items-center">
+          <div className="row">
+            {platformData.map((item) => (
+              <div className="col " key={item.id}>
+                <div className="card my-3">
+                  <div
+                    style={{ background: item.background }}
+                    className="img-box d-flex justify-content-center align-items-center"
+                  >
+                    <img src={item.image} alt="" />
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
