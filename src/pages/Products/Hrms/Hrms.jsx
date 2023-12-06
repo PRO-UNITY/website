@@ -188,6 +188,117 @@ const Hrms = () => {
           </div>
         </div>
       </section> */}
+      <section className="pricing py-md-5 ">
+        <div className="head text-center mt-5">
+          <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
+          <h2>{t("hrms.pricing.title")}</h2>
+        </div>
+        <div className="pricing-cards mt-4 container gap-4">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="card bg-light rounded-4 border-0 proffesional my-3 w-100  p-5">
+                <div className="mt-md-5 border-bottom pb-4">
+                  <h2>{t("hrms.pricing.cardProffesional.title")}</h2>
+                </div>
+                <div className="card-content mt-2 border-bottom pb-4">
+                  <span className="d-block mt-3 ">
+                    <i className="fa-solid fa-check me-2"></i>
+                    {t("hrms.pricing.cardProffesional.cardList.list1")}
+                  </span>
+                  <span className="d-block mt-3 ">
+                    <i className="fa-solid fa-check me-2"></i>
+                    {t("hrms.pricing.cardProffesional.cardList.list2")}
+                  </span>
+                  <span className="d-block mt-3 ">
+                    <i className="fa-solid fa-check me-2"></i>
+                    {t("hrms.pricing.cardProffesional.cardList.list3")}
+                  </span>
+                  <span className="d-block mt-3 ">
+                    <i className="fa-solid fa-check me-2"></i>
+                    {t("hrms.pricing.cardProffesional.cardList.list4")}
+                  </span>
+                  <span className="d-block mt-3 ">
+                    <i className="fa-solid fa-check me-2"></i>
+                    {t("hrms.pricing.cardProffesional.cardList.list5")}
+                  </span>
+                </div>
+                <div className="card-bottom mt-2 mt-md-5 d-md-flex align-items-center justify-content-between">
+                  <div>
+                    <span className="h5 lh-lg">3.990$ </span>
+                    <span className="text-secondary">/ month</span>
+                  </div>
+                  <a className=" btn btn-primary  px-3 rounded-pill  ">
+                    {t("hrms.pricing.pricingButton")}
+                    <i className="fa-solid fa-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-8">
+              <div className="card unlimited bg-primary text-white unlimited rounded-4 border-0 my-3 d-flex w-100  p-5">
+                <div className="border-bottom pb-4">
+                  <a className="btn border text-white mb-2 rounded-pill ">
+                    {t("hrms.pricing.cardUnlimited.subtitle")}
+                  </a>
+                  <h2>{t("hrms.pricing.cardUnlimited.title")}</h2>
+                </div>
+                <div className="card-content mt-2 border-bottom row pb-4">
+                  <div className="col-lg-6">
+                    <span className="d-block mt-3 ">
+                      <i className="fa-solid fa-circle-check me-2"></i>
+                      {t("hrms.pricing.cardUnlimited.cardList.list1")}
+                    </span>
+                    <span className="d-block mt-3 ">
+                      <i className="fa-solid fa-circle-check me-2"></i>
+                      {t("hrms.pricing.cardUnlimited.cardList.list2")}
+                    </span>
+                    <span className="d-block mt-3 ">
+                      <i className="fa-solid fa-circle-check me-2"></i>
+                      {t("hrms.pricing.cardUnlimited.cardList.list3")}
+                    </span>
+                    <span className="d-block mt-3 ">
+                      <i className="fa-solid fa-circle-check me-2"></i>
+                      {t("hrms.pricing.cardUnlimited.cardList.list4")}
+                    </span>
+                    <span className="d-block mt-3 ">
+                      <i className="fa-solid fa-circle-check me-2"></i>
+                      {t("hrms.pricing.cardUnlimited.cardList.list5")}
+                    </span>
+                  </div>
+                  <div className="col-lg-6">
+                    <span className="d-block mt-3 ">
+                      <i className="fa-solid fa-circle-check me-2"></i>
+                      {t("hrms.pricing.cardUnlimited.cardList.list6")}
+                    </span>
+                    <span className="d-block mt-3 ">
+                      <i className="fa-solid fa-circle-check me-2"></i>
+                      {t("hrms.pricing.cardUnlimited.cardList.list7")}
+                    </span>
+                    <span className="d-block mt-3 ">
+                      <i className="fa-solid fa-circle-check me-2"></i>
+                      {t("hrms.pricing.cardUnlimited.cardList.list8")}
+                    </span>
+                    <span className="d-block mt-3 ">
+                      <i className="fa-solid fa-circle-check me-2"></i>
+                      {t("hrms.pricing.cardUnlimited.cardList.list9")}
+                    </span>
+                  </div>
+                </div>
+                <div className="card-bottom  mt-2 mt-md-5 d-md-flex align-items-center justify-content-between">
+                  <div>
+                    <span className="h5 lh-lg">5.990$ </span>
+                    <span className="text-light">/ month</span>
+                  </div>
+                  <a className="start-btn  btn px-4 rounded-pill  ">
+                    {t("hrms.pricing.pricingButton")}
+                    <i className="fa-solid fa-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Carusel */}
       <section className="carusel  my-5 position-relative">
@@ -396,117 +507,6 @@ const Hrms = () => {
       </section> */}
 
       {/* Pricing */}
-      <section className="pricing py-md-5 ">
-        <div className="head text-center mt-5">
-          <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
-          <h2>{t("hrms.pricing.title")}</h2>
-        </div>
-        <div className="pricing-cards mt-4 container gap-4">
-          <div className="row">
-            <div className="col-lg-4">
-              <div className="card bg-light rounded-4 border-0 proffesional my-3 w-100  p-5">
-                <div className="mt-md-5 border-bottom pb-4">
-                  <h2>{t("hrms.pricing.cardProffesional.title")}</h2>
-                </div>
-                <div className="card-content mt-2 border-bottom pb-4">
-                  <span className="d-block mt-3 ">
-                    <i className="fa-solid fa-check me-2"></i>
-                    {t("hrms.pricing.cardProffesional.cardList.list1")}
-                  </span>
-                  <span className="d-block mt-3 ">
-                    <i className="fa-solid fa-check me-2"></i>
-                    {t("hrms.pricing.cardProffesional.cardList.list2")}
-                  </span>
-                  <span className="d-block mt-3 ">
-                    <i className="fa-solid fa-check me-2"></i>
-                    {t("hrms.pricing.cardProffesional.cardList.list3")}
-                  </span>
-                  <span className="d-block mt-3 ">
-                    <i className="fa-solid fa-check me-2"></i>
-                    {t("hrms.pricing.cardProffesional.cardList.list4")}
-                  </span>
-                  <span className="d-block mt-3 ">
-                    <i className="fa-solid fa-check me-2"></i>
-                    {t("hrms.pricing.cardProffesional.cardList.list5")}
-                  </span>
-                </div>
-                <div className="card-bottom mt-2 mt-md-5 d-md-flex align-items-center justify-content-between">
-                  <div>
-                    <span className="h5 lh-lg">3.990$ </span>
-                    <span className="text-secondary">/ month</span>
-                  </div>
-                  <a className=" btn btn-primary  px-3 rounded-pill  ">
-                    {t("hrms.pricing.pricingButton")}
-                    <i className="fa-solid fa-arrow-right ms-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-8">
-              <div className="card unlimited bg-primary text-white unlimited rounded-4 border-0 my-3 d-flex w-100  p-5">
-                <div className="border-bottom pb-4">
-                  <a className="btn border text-white mb-2 rounded-pill ">
-                    {t("hrms.pricing.cardUnlimited.subtitle")}
-                  </a>
-                  <h2>{t("hrms.pricing.cardUnlimited.title")}</h2>
-                </div>
-                <div className="card-content mt-2 border-bottom row pb-4">
-                  <div className="col-lg-6">
-                    <span className="d-block mt-3 ">
-                      <i className="fa-solid fa-circle-check me-2"></i>
-                      {t("hrms.pricing.cardUnlimited.cardList.list1")}
-                    </span>
-                    <span className="d-block mt-3 ">
-                      <i className="fa-solid fa-circle-check me-2"></i>
-                      {t("hrms.pricing.cardUnlimited.cardList.list2")}
-                    </span>
-                    <span className="d-block mt-3 ">
-                      <i className="fa-solid fa-circle-check me-2"></i>
-                      {t("hrms.pricing.cardUnlimited.cardList.list3")}
-                    </span>
-                    <span className="d-block mt-3 ">
-                      <i className="fa-solid fa-circle-check me-2"></i>
-                      {t("hrms.pricing.cardUnlimited.cardList.list4")}
-                    </span>
-                    <span className="d-block mt-3 ">
-                      <i className="fa-solid fa-circle-check me-2"></i>
-                      {t("hrms.pricing.cardUnlimited.cardList.list5")}
-                    </span>
-                  </div>
-                  <div className="col-lg-6">
-                    <span className="d-block mt-3 ">
-                      <i className="fa-solid fa-circle-check me-2"></i>
-                      {t("hrms.pricing.cardUnlimited.cardList.list6")}
-                    </span>
-                    <span className="d-block mt-3 ">
-                      <i className="fa-solid fa-circle-check me-2"></i>
-                      {t("hrms.pricing.cardUnlimited.cardList.list7")}
-                    </span>
-                    <span className="d-block mt-3 ">
-                      <i className="fa-solid fa-circle-check me-2"></i>
-                      {t("hrms.pricing.cardUnlimited.cardList.list8")}
-                    </span>
-                    <span className="d-block mt-3 ">
-                      <i className="fa-solid fa-circle-check me-2"></i>
-                      {t("hrms.pricing.cardUnlimited.cardList.list9")}
-                    </span>
-                  </div>
-                </div>
-                <div className="card-bottom  mt-2 mt-md-5 d-md-flex align-items-center justify-content-between">
-                  <div>
-                    <span className="h5 lh-lg">5.990$ </span>
-                    <span className="text-light">/ month</span>
-                  </div>
-                  <a className="start-btn  btn px-4 rounded-pill  ">
-                    {t("hrms.pricing.pricingButton")}
-                    <i className="fa-solid fa-arrow-right ms-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/*  */}
       {/* <section className="get-app my-5">
