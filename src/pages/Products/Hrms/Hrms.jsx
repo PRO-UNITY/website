@@ -13,8 +13,8 @@ import slider_img7 from "../../../assets/images/hrms/Rectangle 36.jpg";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
-import { useState } from "react";
 
 const CaruselItem = [
   {
@@ -49,7 +49,6 @@ const CaruselItem = [
 
 const Hrms = () => {
   const { t } = useTranslation();
-  const [activeSlide, setactiveSlide] = useState(0);
   return (
     <div className="hrms">
       <section className="hrms-hero container-fluid header bg-primary  mb-5">
@@ -192,9 +191,11 @@ const Hrms = () => {
           slidesPerView={5}
           centeredSlides
           spaceBetween={30}
+          autoplay={{
+            delay: 2500,
+          }}
           className="mySwiper"
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={(e) => setactiveSlide(e.activeIndex)}
+          modules={[Autoplay]}
         >
           {CaruselItem.map((item) => (
             <SwiperSlide key={item.id}>
@@ -206,11 +207,6 @@ const Hrms = () => {
         <div className="img-form w-100   h-100 text-center">
           <div className="img-box position-absolute top-0 ">
             <img src={form_bg} alt="" className="bg-img" />
-            <img
-              className="slider-img"
-              src={CaruselItem[activeSlide]?.image}
-              alt=""
-            />
           </div>
         </div>
       </section>

@@ -94,16 +94,18 @@ ul {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  z-index: 999;
 }
 .hrms .carusel .swiper-slide {
   background: transparent;
 }
 .hrms .carusel .swiper-slide img {
-  width: 300px;
+  width: 290px;
+  height: 99%;
   border-radius: 20px;
 }
-.hrms .carusel .swiper-slide-active {
-  visibility: hidden;
+.hrms .carusel .swiper-slide-active img {
+  border-radius: 50px;
 }
 .hrms .carusel .img-box .bg-img {
   position: absolute;
@@ -115,6 +117,12 @@ ul {
   height: 95%;
   object-fit: cover;
   border-radius: 20px;
+}
+.mainSlider {
+  background: #eca;
+}
+.mainSlider h3 {
+  text-align: center;
 }
 
 /* .pricing .unlimited .start-btn {
