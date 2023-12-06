@@ -70,7 +70,7 @@ const MyNavbar = () => {
                 <span
                   className={`${
                     activeNav === 4 ? "active" : ""
-                  } py-0 nav-link dropdown-toggle pointer`}
+                  } py-0 nav-link dropdown-toggle `}
                   onClick={() => setactiveNav(4)}
                 >
                   Products
@@ -81,22 +81,36 @@ const MyNavbar = () => {
                   </Link>
                 </div>
               </div>
-              <NavDropdown
-                title="En"
-                id="language-dropdown"
-                className={activeNav === 5 ? "active" : ""}
-                onClick={() => setactiveNav(5)}
-              >
-                <NavDropdown.Item onClick={() => i18next.changeLanguage("en")}>
+              <div className="nav-item dropdown">
+                <span
+                  className={`${
+                    activeNav === 5 ? "active" : ""
+                  } py-0 nav-link dropdown-toggle `}
+                  onClick={() => setactiveNav(5)}
+                >
                   En
-                </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => i18next.changeLanguage("ru")}>
-                  Ru
-                </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => i18next.changeLanguage("uz")}>
-                  Uz
-                </NavDropdown.Item>
-              </NavDropdown>
+                </span>
+                <div className="dropdown-menu rounded-0 rounded-bottom m-0">
+                  <span
+                    className="dropdown-item"
+                    onClick={() => i18next.changeLanguage("en")}
+                  >
+                    En
+                  </span>
+                  <span
+                    className="dropdown-item"
+                    onClick={() => i18next.changeLanguage("ru")}
+                  >
+                    Ru
+                  </span>
+                  <span
+                    className="dropdown-item"
+                    onClick={() => i18next.changeLanguage("uz")}
+                  >
+                    Uz
+                  </span>
+                </div>
+              </div>
               <Nav.Link
                 as={Link}
                 to="/contact"
