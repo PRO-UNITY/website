@@ -73,11 +73,11 @@ ul {
   transform: translateY(80px);
 }
 
-.pricing .card {
+/* .pricing .card {
   max-width: 450px;
   width: 100%;
   background: var(--secondary);
-}
+} */
 .hrms.mySwiper {
   position: relative;
 }
@@ -125,13 +125,13 @@ ul {
   text-align: center;
 }
 
-/* .pricing .unlimited .start-btn {
+.pricing .unlimited .start-btn {
   background: var(--secondary);
-} */
+}
 
-/* .pricing .card .card-content span {
+.pricing .card .card-content span {
   font-size: 18px;
-} */
+}
 
 .get-app .container {
   max-width: 1000px;

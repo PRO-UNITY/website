@@ -396,7 +396,7 @@ const Hrms = () => {
       </section> */}
 
       {/* Pricing */}
-      {/* <section className="pricing py-md-5 ">
+      <section className="pricing py-md-5 ">
         <div className="head text-center mt-5">
           <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
           <h2>{t("hrms.pricing.title")}</h2>
@@ -404,7 +404,7 @@ const Hrms = () => {
         <div className="pricing-cards mt-4 container gap-4">
           <div className="row">
             <div className="col-lg-4">
-              <div className="card rounded-4 border-0 proffesional my-3 w-100  p-5">
+              <div className="card bg-light rounded-4 border-0 proffesional my-3 w-100  p-5">
                 <div className="mt-md-5 border-bottom pb-4">
                   <h2>{t("hrms.pricing.cardProffesional.title")}</h2>
                 </div>
@@ -506,7 +506,7 @@ const Hrms = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/*  */}
       {/* <section className="get-app my-5">
