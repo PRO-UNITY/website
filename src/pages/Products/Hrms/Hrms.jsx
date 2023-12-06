@@ -3,11 +3,53 @@ import home_slider from "../../../assets/images/hrms/home-img.png";
 import about_img from "../../../assets/images/hrms/about-img.png";
 import check_icon from "../../../assets/images/hrms/CheckCircle.svg";
 import close_icon from "../../../assets/images/hrms/XCircle.svg";
-// import feedbackProfile from "../../../assets/images/hrms/feedback-profile-user.jpg";
+import slider_img1 from "../../../assets/images/hrms/Rectangle 30.jpg";
+import slider_img2 from "../../../assets/images/hrms/Rectangle 31.png";
+import slider_img3 from "../../../assets/images/hrms/Rectangle 32.png";
+import slider_img4 from "../../../assets/images/hrms/Rectangle 33.png";
+import slider_img5 from "../../../assets/images/hrms/Rectangle 34.png";
+import slider_img6 from "../../../assets/images/hrms/Rectangle 35.jpg";
+import slider_img7 from "../../../assets/images/hrms/Rectangle 36.jpg";
+import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import { useTranslation } from "react-i18next";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { useState } from "react";
+
+const CaruselItem = [
+  {
+    id: 1,
+    image: slider_img1,
+  },
+  {
+    id: 2,
+    image: slider_img2,
+  },
+  {
+    id: 3,
+    image: slider_img3,
+  },
+  {
+    id: 4,
+    image: slider_img4,
+  },
+  {
+    id: 5,
+    image: slider_img5,
+  },
+  {
+    id: 6,
+    image: slider_img6,
+  },
+  {
+    id: 7,
+    image: slider_img7,
+  },
+];
 
 const Hrms = () => {
   const { t } = useTranslation();
+  const [activeSlide, setactiveSlide] = useState(0);
   return (
     <div className="hrms">
       <section className="hrms-hero container-fluid header bg-primary  mb-5">
@@ -140,6 +182,34 @@ const Hrms = () => {
                 Purchase Now
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Carusel */}
+      <section className="carusel  position-relative">
+        <Swiper
+          slidesPerView={4}
+          centeredSlides
+          className="mySwiper"
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={(e) => setactiveSlide(e.activeIndex)}
+        >
+          {CaruselItem.map((item) => (
+            <SwiperSlide key={item.id}>
+              <img src={item.image} alt="" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <div className="img-form w-100   h-100 text-center">
+          <div className="img-box position-absolute top-0 ">
+            <img src={form_bg} alt="" className="bg-img" />
+            <img
+              className="slider-img"
+              src={CaruselItem[activeSlide]?.image}
+              alt=""
+            />
           </div>
         </div>
       </section>
