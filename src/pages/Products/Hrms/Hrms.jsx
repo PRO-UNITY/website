@@ -108,7 +108,7 @@ const Hrms = () => {
       </section>
 
       {/* Pricing */}
-      <section className="pricing container-fluid  bg-primary py-5">
+      {/* <section className="pricing container-fluid  bg-primary py-5">
         <div className="container d-flex align-items-center flex-column  flex-md-row py-5 justify-content-center gap-5">
           <div className="card p-3 p-md-5 rounded-4">
             <div className="card-head">
@@ -187,7 +187,7 @@ const Hrms = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Carusel */}
       <section className="carusel  my-5 position-relative">
