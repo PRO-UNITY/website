@@ -45,6 +45,10 @@ const CaruselItem = [
     id: 7,
     image: slider_img7,
   },
+  {
+    id: 8,
+    image: slider_img5,
+  },
 ];
 
 const Hrms = () => {
@@ -188,8 +192,9 @@ const Hrms = () => {
       {/* Carusel */}
       <section className="carusel  my-5 position-relative">
         <Swiper
-          slidesPerView={5}
+          slidesPerView={4}
           centeredSlides
+          loop
           spaceBetween={30}
           autoplay={{
             delay: 2500,
