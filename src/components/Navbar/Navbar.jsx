@@ -11,7 +11,7 @@ const MyNavbar = () => {
   const { t } = useTranslation();
   const [activeNav, setactiveNav] = useState(1);
   const [activeProduct, setactiveProduct] = useState(0);
-  const [activeLang, setactiveLang] = useState(0);
+  const [activeLang, setactiveLang] = useState("en");
   return (
     <>
       <Topbar />
@@ -86,20 +86,35 @@ const MyNavbar = () => {
                 </a>
                 <div className="dropdown-menu  rounded pb-3  px-3 mt-2">
                   <span
-                    className="dropdown-item px-0 "
-                    onClick={() => i18next.changeLanguage("en")}
+                    className={`dropdown-item px-0 ${
+                      activeLang === "en" ? "dropdown-item-active " : ""
+                    } `}
+                    onClick={() => {
+                      i18next.changeLanguage("en");
+                      setactiveLang("en");
+                    }}
                   >
                     En
                   </span>
                   <span
-                    className="dropdown-item px-0 "
-                    onClick={() => i18next.changeLanguage("ru")}
+                    className={`dropdown-item px-0 ${
+                      activeLang === "ru" ? "dropdown-item-active " : ""
+                    } `}
+                    onClick={() => {
+                      i18next.changeLanguage("ru");
+                      setactiveLang("ru");
+                    }}
                   >
                     Ru
                   </span>
                   <span
-                    className="dropdown-item px-0 "
-                    onClick={() => i18next.changeLanguage("uz")}
+                    className={`dropdown-item px-0 ${
+                      activeLang === "uz" ? "dropdown-item-active " : ""
+                    } `}
+                    onClick={() => {
+                      i18next.changeLanguage("uz");
+                      setactiveLang("uz");
+                    }}
                   >
                     Uz
                   </span>

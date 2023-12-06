@@ -2,6 +2,13 @@
   border: 1px solid var(--primary);
   border-radius: 5px;
 }
+.navbar .dropdown .dropdown-item {
+  cursor: pointer;
+}
+.navbar .dropdown .dropdown-item:active {
+  background: none;
+  color: #000;
+}
 .navbar .dropdown .dropdown-item-active {
   border-bottom: 1px solid var(--primary);
 }
