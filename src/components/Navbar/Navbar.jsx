@@ -66,19 +66,21 @@ const MyNavbar = () => {
               >
                 {t("navbar.service")}
               </Nav.Link>
-              <NavDropdown
-                title={"Products"}
-                id="product"
-                className={`${activeNav === 4 ? "active" : ""} `}
-                onClick={() => setactiveNav(4)}
-              >
-                <NavDropdown.Item className="dropdown-menu rounded-0 rounded-bottom m-0">
-                  Hrms
-                </NavDropdown.Item>
-                <NavDropdown.Item className="dropdown-menu rounded-0 rounded-bottom m-0">
-                  Hrms
-                </NavDropdown.Item>
-              </NavDropdown>
+              <div className="nav-item dropdown">
+                <span
+                  className={`${
+                    activeNav === 4 ? "active" : ""
+                  } py-0 nav-link dropdown-toggle pointer`}
+                  onClick={() => setactiveNav(4)}
+                >
+                  Products
+                </span>
+                <div className="dropdown-menu rounded-0 rounded-bottom m-0">
+                  <Link to={"/products/hrms"} className="dropdown-item">
+                    Hrms
+                  </Link>
+                </div>
+              </div>
               <NavDropdown
                 title="En"
                 id="language-dropdown"
