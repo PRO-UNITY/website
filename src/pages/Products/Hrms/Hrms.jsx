@@ -356,7 +356,7 @@ const Hrms = () => {
       </section>
 
       {/* Carusel */}
-      <section className="carusel py-5 my-5 position-relative">
+      <section className="carusel py-5 mt-5 position-relative">
         <Swiper
           breakpoints={{
             576: {
