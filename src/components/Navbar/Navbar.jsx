@@ -3,29 +3,15 @@ import Logo from "../../assets/logotogether.png";
 import Topbar from "../Topbar/Topbar";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import { Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import { useState } from "react";
 import "./Navbar.css";
 
 const MyNavbar = () => {
   const { t } = useTranslation();
   const [activeNav, setactiveNav] = useState(1);
-  // const Navs = [
-  //   { id: 1, name: t("navbar.home") },
-  //   { id: 2, name: t("navbar.about") },
-  //   { id: 3, name: t("navbar.service") },
-  //   { id: 4, name: "Products", child: [{ id: 1, name: "Hrms" }] },
-  //   {
-  //     id: 5,
-  //     name: "En",
-  //     child: [
-  //       { id: 1, name: "En" },
-  //       { id: 2, name: "Ru" },
-  //       { id: 3, name: "Uz" },
-  //     ],
-  //   },
-  //   { id: 6, name: "Contact" },
-  // ];
+  const [activeProduct, setactiveProduct] = useState(0);
+  const [activeLang, setactiveLang] = useState(0);
   return (
     <>
       <Topbar />
@@ -79,7 +65,10 @@ const MyNavbar = () => {
                 <div className="dropdown-menu  rounded px-3 mt-2">
                   <Link
                     to={"/products/hrms"}
-                    className="dropdown-item border-bottom  px-0 border-primary "
+                    className={`dropdown-item    px-0 ${
+                      activeProduct === 1 ? "dropdown-item-active " : ""
+                    }`}
+                    onClick={() => setactiveProduct(1)}
                   >
                     Hrms
                   </Link>
@@ -97,19 +86,19 @@ const MyNavbar = () => {
                 </a>
                 <div className="dropdown-menu  rounded pb-3  px-3 mt-2">
                   <span
-                    className="dropdown-item px-0 border-bottom border-primary"
+                    className="dropdown-item px-0 "
                     onClick={() => i18next.changeLanguage("en")}
                   >
                     En
                   </span>
                   <span
-                    className="dropdown-item px-0 border-bottom border-primary"
+                    className="dropdown-item px-0 "
                     onClick={() => i18next.changeLanguage("ru")}
                   >
                     Ru
                   </span>
                   <span
-                    className="dropdown-item px-0 border-bottom border-primary"
+                    className="dropdown-item px-0 "
                     onClick={() => i18next.changeLanguage("uz")}
                   >
                     Uz
