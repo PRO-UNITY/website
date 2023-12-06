@@ -264,9 +264,9 @@ const Hrms = () => {
                     <span className="h5 lh-lg">3.990$ </span>
                     <span className="text-secondary">/ month</span>
                   </div>
-                  <a className=" btn btn-outline-primary  py-md-2 px-2 ">
+                  <a className=" btn btn-outline-primary  py-md-3 px-3 ">
                     Start now
-                    <i className="fa-solid fa-arrow-right-long mx-2"></i>
+                    <i className="fa-solid fa-arrow-right-long ms-1"></i>
                   </a>
                 </div>
               </div>
@@ -340,7 +340,18 @@ const Hrms = () => {
       {/* Carusel */}
       <section className="carusel py-5 my-5 position-relative">
         <Swiper
-          slidesPerView={4}
+          breakpoints={{
+            576: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 4,
+            },
+          }}
+          slidesPerView={1}
           centeredSlides
           loop
           spaceBetween={30}
