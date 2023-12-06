@@ -136,7 +136,10 @@ const Hrms = () => {
             </h2>
             <p className="description">{t("hrms.about.box1.description")}</p>
             <p className="description">{t("hrms.about.box1.description")}</p>
-            <a className=" btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3">
+            <a
+              href="#demo"
+              className=" btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3"
+            >
               {t("hrms.about.moreButton")}
               <i className="fa-solid fa-arrow-right-long mx-2"></i>
             </a>
@@ -356,7 +359,7 @@ const Hrms = () => {
       </section>
 
       {/* Carusel */}
-      <section className="carusel py-5 mt-5 position-relative">
+      <section id="demo" className="carusel py-5 mt-5 position-relative">
         <Swiper
           breakpoints={{
             576: {

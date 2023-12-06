@@ -1,0 +1,7 @@
+.navbar .active {
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+}
+.navbar .dropdown {
+  display: inline;
+}
