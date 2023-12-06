@@ -67,44 +67,49 @@ const MyNavbar = () => {
                 {t("navbar.service")}
               </Nav.Link>
               <div className="nav-item dropdown">
-                <span
+                <a
+                  href="#"
                   className={`${
                     activeNav === 4 ? "active" : ""
                   } py-0 nav-link dropdown-toggle `}
                   onClick={() => setactiveNav(4)}
                 >
                   Products
-                </span>
-                <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                  <Link to={"/products/hrms"} className="dropdown-item">
+                </a>
+                <div className="dropdown-menu  rounded px-3 mt-2">
+                  <Link
+                    to={"/products/hrms"}
+                    className="dropdown-item border-bottom  px-0 border-primary "
+                  >
                     Hrms
                   </Link>
                 </div>
               </div>
-              <div className="nav-item dropdown">
-                <span
+              <div className="nav-item dropdown ">
+                <a
+                  href="#"
                   className={`${
                     activeNav === 5 ? "active" : ""
                   } py-0 nav-link dropdown-toggle `}
                   onClick={() => setactiveNav(5)}
                 >
                   En
-                </span>
-                <div className="dropdown-menu rounded-0 rounded-bottom m-0">
+                </a>
+                <div className="dropdown-menu  rounded pb-3  px-3 mt-2">
                   <span
-                    className="dropdown-item"
+                    className="dropdown-item px-0 border-bottom border-primary"
                     onClick={() => i18next.changeLanguage("en")}
                   >
                     En
                   </span>
                   <span
-                    className="dropdown-item"
+                    className="dropdown-item px-0 border-bottom border-primary"
                     onClick={() => i18next.changeLanguage("ru")}
                   >
                     Ru
                   </span>
                   <span
-                    className="dropdown-item"
+                    className="dropdown-item px-0 border-bottom border-primary"
                     onClick={() => i18next.changeLanguage("uz")}
                   >
                     Uz
