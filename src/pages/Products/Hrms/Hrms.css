@@ -15,7 +15,8 @@ ul {
   cursor: pointer;
   margin: 10px 0;
 }
-.hrms .download-btn-outline {
+.hrms .download-btn-outline,
+.hrms .download-btn-outline:hover {
   background-color: transparent;
   color: var(--secondary);
   border: 1px solid var(--secondary);
