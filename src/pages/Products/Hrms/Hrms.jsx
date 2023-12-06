@@ -143,6 +143,24 @@ const Hrms = () => {
           </div>
         </div>
       </section>
+      <section className="platform py-2 py-md-5 container-fluid bg-primary">
+        <div className="container h-100 my-4 d-flex justify-content-center align-items-center">
+          <div className="row">
+            {platformData.map((item) => (
+              <div className="col " key={item.id}>
+                <div className="card my-3">
+                  <div
+                    style={{ background: item.background }}
+                    className="img-box d-flex justify-content-center align-items-center"
+                  >
+                    <img src={item.image} alt="" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Pricing */}
       {/* <section className="pricing container-fluid  bg-primary py-5">
@@ -373,24 +391,6 @@ const Hrms = () => {
         <div className="img-form w-100 h-100 position-absolute top-0 text-center">
           <div className="img-box  ">
             <img src={form_bg} alt="" className="bg-img" />
-          </div>
-        </div>
-      </section>
-      <section className="platform py-2 py-md-5 container-fluid bg-primary">
-        <div className="container h-100 my-4 d-flex justify-content-center align-items-center">
-          <div className="row">
-            {platformData.map((item) => (
-              <div className="col " key={item.id}>
-                <div className="card my-3">
-                  <div
-                    style={{ background: item.background }}
-                    className="img-box d-flex justify-content-center align-items-center"
-                  >
-                    <img src={item.image} alt="" />
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

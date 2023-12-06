@@ -5,7 +5,8 @@
 ul {
   list-style: none;
 }
-.hrms .download-btn {
+.hrms .download-btn,
+.hrms .download-btn:hover {
   background: var(--secondary);
   display: inline-flex;
   align-items: center;
