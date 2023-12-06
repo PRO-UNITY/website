@@ -1,5 +1,7 @@
 import "./Hrms.css";
 import home_slider from "../../../assets/images/hrms/home-img.png";
+import homeAndroidIcon from "../../../assets/images/hrms/icons8-android 1.svg";
+import homeIOSIcon from "../../../assets/images/hrms/icons8-apple 1.svg";
 import about_img from "../../../assets/images/hrms/about-img.png";
 import slider_img1 from "../../../assets/images/hrms/Rectangle 30.jpg";
 import slider_img2 from "../../../assets/images/hrms/Rectangle 31.png";
@@ -98,13 +100,17 @@ const Hrms = () => {
             <p className="description text-white">
               {t("hrms.home.description")}
             </p>
-            <a className="download-btn  text-decoration-none fs-5 text-primary me-3 rounded ">
+            <a className="download-btn btn  text-decoration-none fs-5 text-primary me-3 rounded ">
               {t("hrms.home.button1")}
-              <i className="fa-solid fa-arrow-right-long mt-1"></i>
+              <i className="fa-solid fa-arrow-right-long "></i>
             </a>
-            <a className="download-btn download-btn-outline   text-decoration-none fs-5  me-3 rounded ">
-              {t("hrms.home.button2")}
-              <i className="fa-solid fa-arrow-right-long mt-1"></i>
+            <a className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded ">
+              <img src={homeAndroidIcon} alt="" />
+              Goggle Play
+            </a>
+            <a className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded ">
+              <img src={homeIOSIcon} alt="" />
+              Appstore
             </a>
           </div>
           <div className="col-lg-6  h-100">
@@ -258,9 +264,9 @@ const Hrms = () => {
                     <span className="h5 lh-lg">3.990$ </span>
                     <span className="text-secondary">/ month</span>
                   </div>
-                  <a className=" btn btn-primary  px-3 rounded-pill  ">
-                    {t("hrms.pricing.pricingButton")}
-                    <i className="fa-solid fa-arrow-right ms-2"></i>
+                  <a className=" btn btn-outline-primary  py-md-2 px-2 ">
+                    Start now
+                    <i className="fa-solid fa-arrow-right-long mx-2"></i>
                   </a>
                 </div>
               </div>
@@ -320,9 +326,9 @@ const Hrms = () => {
                     <span className="h5 lh-lg">5.990$ </span>
                     <span className="text-light">/ month</span>
                   </div>
-                  <a className="start-btn  btn px-4 rounded-pill  ">
-                    {t("hrms.pricing.pricingButton")}
-                    <i className="fa-solid fa-arrow-right ms-2"></i>
+                  <a className="download-btn download-btn-outline  m-0 text-decoration-none  rounded ">
+                    Start now
+                    <i className="fa-solid fa-arrow-right-long mt-1"></i>
                   </a>
                 </div>
               </div>

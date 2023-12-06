@@ -20,6 +20,9 @@ ul {
   color: var(--secondary);
   border: 1px solid var(--secondary);
 }
+.hrms .download-btn-outline img {
+  width: 30px;
+}
 
 .hero_slider img {
   margin: 80px 0 0 0;
