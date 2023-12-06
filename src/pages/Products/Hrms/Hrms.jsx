@@ -187,10 +187,11 @@ const Hrms = () => {
       </section>
 
       {/* Carusel */}
-      <section className="carusel  position-relative">
+      <section className="carusel  my-5 position-relative">
         <Swiper
-          slidesPerView={4}
+          slidesPerView={5}
           centeredSlides
+          spaceBetween={30}
           className="mySwiper"
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={(e) => setactiveSlide(e.activeIndex)}
