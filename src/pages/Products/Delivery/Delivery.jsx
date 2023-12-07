@@ -1,4 +1,3 @@
-import "./Hrms.css";
 import home_slider from "../../../assets/images/hrms/home-img.png";
 import homeAndroidIcon from "../../../assets/images/hrms/icons8-android 1.svg";
 import homeIOSIcon from "../../../assets/images/hrms/icons8-apple 1.svg";
