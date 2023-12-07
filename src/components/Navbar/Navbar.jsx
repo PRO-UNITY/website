@@ -75,9 +75,9 @@ const MyNavbar = () => {
                   <Link
                     to={"/products/delivery"}
                     className={`dropdown-item    px-0 ${
-                      activeProduct === 1 ? "dropdown-item-active " : ""
+                      activeProduct === 2 ? "dropdown-item-active " : ""
                     }`}
-                    onClick={() => setactiveProduct(1)}
+                    onClick={() => setactiveProduct(2)}
                   >
                     Delivery
                   </Link>
