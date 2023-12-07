@@ -6,6 +6,7 @@ import { Partners, teamMembers } from "../../constants";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import Layout from "../../Layout/Layout";
 const Home = () => {
   const { t } = useTranslation();
   const nameRef = useRef(null);
@@ -32,7 +33,7 @@ const Home = () => {
     });
   };
   return (
-    <>
+    <Layout>
       {/* Header Start */}
       <section className="container-fluid header bg-primary p-0 mb-5">
         <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
@@ -505,7 +506,7 @@ const Home = () => {
         </div>
       </div>
       {/* Appointment End */}
-    </>
+    </Layout>
   );
 };
 

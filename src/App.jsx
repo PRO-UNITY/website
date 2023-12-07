@@ -8,6 +8,13 @@ import {
   Delivery,
   Home,
   Hrms,
+  HrmsAdminHome,
+  HrmsNotification,
+  HrmsServices,
+  HrmsSignIn,
+  HrmsSignUp,
+  HrmsStatistic,
+  HrmsTaskList,
   ITScholl,
   OpenCourse,
   PageNotFound,
@@ -15,16 +22,17 @@ import {
   Services,
   SoftwareDevelopenent,
 } from "./pages";
-import { Footer, Navbar } from "./components";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { useState } from "react";
 
 function App() {
   const [activeNav, setactiveNav] = useState(1);
+  const [activeHrmsDash, setActiveHrmsDash] = useState(1);
   return (
     <>
-      <ActiveNavContext.Provider value={{ activeNav, setactiveNav }}>
-        <Navbar />
+      <ActiveNavContext.Provider
+        value={{ activeNav, setactiveNav, activeHrmsDash, setActiveHrmsDash }}
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -42,11 +50,21 @@ function App() {
           <Route path="/services/pro-community" element={<ProCommunity />} />
           <Route path="/services/opencourse" element={<OpenCourse />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/products/hrms" element={<Hrms />} />
           <Route path="/products/delivery" element={<Delivery />} />
           <Route path="*" element={<PageNotFound />} />
+          {/* Hrms */}
+          <Route path="/products/hrms" element={<Hrms />} />
+          <Route path="/products/hrms/admin/auth/sign-in" element={<HrmsSignIn />} />
+          <Route path="/products/hrms/admin/auth/sign-up" element={<HrmsSignUp />} />
+          <Route path="/products/hrms/admin" element={<HrmsAdminHome />} />
+          <Route path="/products/hrms/statistic" element={<HrmsStatistic />} />
+          <Route path="/products/hrms/task-list" element={<HrmsTaskList />} />
+          <Route path="/products/hrms/services" element={<HrmsServices />} />
+          <Route
+            path="/products/hrms/notification"
+            element={<HrmsNotification />}
+          />
         </Routes>
-        <Footer />
       </ActiveNavContext.Provider>
     </>
   );

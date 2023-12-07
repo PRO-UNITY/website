@@ -1,0 +1,11 @@
+.hrms-dash {
+  width: 100%;
+  background: #edeae7;
+}
+.hrms-dashboasrd-home .card {
+  height: 400px;
+  border-radius: 0;
+}
+.hrms-dashboasrd-home {
+  height: 80vh;
+}

@@ -1,0 +1,45 @@
+.hrms-dash .add-btn {
+  border-radius: 0 !important;
+  padding: 12px 10px;
+  background: #d85539;
+}
+.form {
+  position: relative;
+  width: 350px;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #000000;
+}
+
+.left-pan {
+  padding-left: 7px;
+}
+
+.left-pan i {
+  padding-left: 10px;
+}
+
+.form-input {
+  height: 55px;
+  text-indent: 33px;
+  border-radius: 0 !important;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .form {
+    position: relative;
+    width: auto;
+  }
+  .navbar h1 {
+    margin: 20px auto;
+  }
+}
