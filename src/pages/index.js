@@ -12,3 +12,4 @@ export { default as PageNotFound } from "./PageNotFound/PageNotFound";
 
 // Products
 export { default as Hrms } from "./Products/Hrms/Hrms";
+export { default as Delivery } from "./Products/Delivery/Delivery";

@@ -72,6 +72,15 @@ const MyNavbar = () => {
                   >
                     Hrms
                   </Link>
+                  <Link
+                    to={"/products/delivery"}
+                    className={`dropdown-item    px-0 ${
+                      activeProduct === 1 ? "dropdown-item-active " : ""
+                    }`}
+                    onClick={() => setactiveProduct(1)}
+                  >
+                    Delivery
+                  </Link>
                 </div>
               </div>
               <div className="nav-item dropdown ">
