@@ -65,10 +65,10 @@ const HrmsSidebar = () => {
           <li className="nav-item">
             <Link
               to={"/products/hrms/admin/auth/sign-in"}
-              className={`nav-link   py-3 my-2 text-dark rounded-0`}
+              className={`nav-link text-center text-md-start  py-3 my-2 text-dark rounded-0`}
             >
               <i
-                className={`fa-solid fa-arrow-right-from-bracket fs-5  text-secondary  me-3`}
+                className={`fa-solid fa-arrow-right-from-bracket fs-5  text-secondary  me-md-3`}
               ></i>
               <span>Log Out</span>
             </Link>
