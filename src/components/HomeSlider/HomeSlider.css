@@ -21,24 +21,19 @@
 .home-slider {
   position: relative;
 }
-.home-slider .navigationBox {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 15px 0;
+.navigationBox .swiper-button-prev {
+  display: none;
 }
 .navigationBox .swiper-button-prev,
 .navigationBox .swiper-button-next {
   background-color: rgb(255, 255, 255);
-  position: relative;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin: auto;
 }
 .navigationBox .swiper-button-prev::after,
 .navigationBox .swiper-button-next::after {
   color: var(----bs-blue);
-  font-size: 20px;
+  font-size: 17px;
 }

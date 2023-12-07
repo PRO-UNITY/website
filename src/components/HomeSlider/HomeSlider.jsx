@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import "swiper/css/effect-fade";
+import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 import { HomeSliderImage } from "../../constants";
 import "./HomeSlider.css";
 
@@ -10,20 +11,17 @@ export default function HomeSwipper() {
     <div className="home-slider">
       <Swiper
         slidesPerView={1}
+        loop
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        pagination={{
-          clickable: true,
-        }}
         effect={"fade"}
         fadeEffect={{ crossFade: true }}
         autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
+          delay: 4500,
         }}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay, EffectFade]}
         className="mySwiper"
       >
         {HomeSliderImage.map((item) => (

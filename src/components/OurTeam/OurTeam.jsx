@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
 const OurTeam = ({ name, occupation, image, socialLinks }) => {
   return (
-    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+    <div
+      className="col-lg-3 col-md-6 wow cursor fadeInUp"
+      data-wow-delay="0.7s"
+    >
       <div className="team-item position-relative rounded overflow-hidden">
         <div className="overflow-hidden">
           <img
@@ -15,15 +18,36 @@ const OurTeam = ({ name, occupation, image, socialLinks }) => {
           <h5 className="text-white">{name}</h5>
           <p className="text-white">{occupation}</p>
           <div className="team-social text-center">
-            <a className="btn btn-square" href={socialLinks.facebook}>
-              <i className="fab fa-facebook-f" />
-            </a>
-            <a className="btn btn-square" href={socialLinks.twitter}>
-              <i className="fab fa-twitter" />
-            </a>
-            <a className="btn btn-square" href>
-              <i className="fab fa-instagram" />
-            </a>
+            {socialLinks.facebook && (
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-square"
+                href={socialLinks.facebook}
+              >
+                <i className="fab fa-facebook-f" />
+              </a>
+            )}
+            {socialLinks.twitter && (
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-square"
+                href={socialLinks.twitter}
+              >
+                <i className="fab fa-twitter" />
+              </a>
+            )}
+            {socialLinks.instagram && (
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-square"
+                href={socialLinks.instagram}
+              >
+                <i className="fab fa-instagram" />
+              </a>
+            )}
           </div>
         </div>
       </div>

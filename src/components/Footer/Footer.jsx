@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import { followUsLinks } from "../../constants";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { ActiveNavContext } from "../../context/ActiveNav";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const { setactiveNav } = useContext(ActiveNavContext);
   return (
     <div
       className="container-fluid bg-dark text-light footer  pt-5 wow fadeIn"
@@ -57,39 +60,67 @@ const Footer = () => {
             <Link
               to={"/services/softwareDevelopenent"}
               className="btn btn-link"
-              href
+              onClick={() => setactiveNav(3)}
             >
               {t("footer.services.link1")}
             </Link>
-            <Link to={"/services/IT-school"} className="btn btn-link" href>
+            <Link
+              to={"/services/IT-school"}
+              className="btn btn-link"
+              onClick={() => setactiveNav(3)}
+            >
               {t("footer.services.link2")}
             </Link>
             <Link
               to={"/services/authorized-tutorial"}
               className="btn btn-link"
-              href
+              onClick={() => setactiveNav(3)}
             >
               {t("footer.services.link3")}
             </Link>
-            <Link to={"/services/coworking"} className="btn btn-link" href>
+            <Link
+              to={"/services/coworking"}
+              className="btn btn-link"
+              onClick={() => setactiveNav(3)}
+            >
               {t("footer.services.link4")}
             </Link>
-            <Link to={"/services/opencourse"} className="btn btn-link" href>
+            <Link
+              to={"/services/opencourse"}
+              className="btn btn-link"
+              onClick={() => setactiveNav(3)}
+            >
               {t("footer.services.link5")}
             </Link>
-            <Link to={"/services/pro-community"} className="btn btn-link" href>
+            <Link
+              to={"/services/pro-community"}
+              className="btn btn-link"
+              onClick={() => setactiveNav(3)}
+            >
               {t("footer.services.link6")}
             </Link>
           </div>
           <div className="col-lg-4 col-md-6">
             <h5 className="text-light mb-4">{t("footer.quicklinks.title")}</h5>
-            <Link to={"/about"} className="btn btn-link">
+            <Link
+              to={"/about"}
+              className="btn btn-link"
+              onClick={() => setactiveNav(2)}
+            >
               {t("footer.quicklinks.link1")}
             </Link>
-            <Link to={"contact"} className="btn btn-link">
+            <Link
+              to={"contact"}
+              className="btn btn-link"
+              onClick={() => setactiveNav(6)}
+            >
               {t("footer.quicklinks.link2")}
             </Link>
-            <Link to={"/services"} className="btn btn-link">
+            <Link
+              to={"/services"}
+              className="btn btn-link"
+              onClick={() => setactiveNav(3)}
+            >
               {t("footer.quicklinks.link3")}
             </Link>
           </div>

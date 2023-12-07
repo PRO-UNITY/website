@@ -237,7 +237,8 @@
       "title": "Book Movie Ticket From Your Home",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus. Dolorum, ipsam maiores est quibusdam consequatur ratione omnis adipisci ea quis soluta possimus sapiente dolor voluptatum.",
       "button1": "Buy Now",
-      "button2": "View Demo"
+      "googlePlay": "Goggle Play",
+      "appStore": "Appstore"
     },
     "about": {
       "box1": {

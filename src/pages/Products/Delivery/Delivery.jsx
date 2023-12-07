@@ -19,6 +19,7 @@ import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import "./Delivery.css";
 
 const CaruselItem = [
   {
@@ -86,8 +87,8 @@ const platformData = [
 const Delivery = () => {
   const { t } = useTranslation();
   return (
-    <div className="hrms">
-      <section className="hrms-hero container-fluid header bg-primary  mb-5">
+    <div className="delivery">
+      <section className="delivery-hero container-fluid header bg-primary  mb-5">
         <div className="row g-0 h-100 align-items-center flex-column flex-lg-row">
           <div className="col-lg-6 px-3 px-md-5 py-md-5  pb-4">
             <h1
@@ -113,7 +114,7 @@ const Delivery = () => {
             </a>
           </div>
           <div className="col-lg-6  h-100">
-            <div className="hero_slider d-flex justify-content-center .align-items-end">
+            <div className="delivery_slider d-flex justify-content-center .align-items-end">
               <img src={home_slider} alt="hero-img" />
             </div>
           </div>
@@ -121,7 +122,7 @@ const Delivery = () => {
       </section>
 
       {/* About */}
-      <section className="hrms-about container-lg  p-0 py-5 mb-5">
+      <section className="delivery-about container-lg  p-0 py-5 mb-5">
         <div className="row g-0 align-items-center  flex-column-reverse flex-lg-row">
           <div className="col-lg-6 ">
             <div className="img-box rounded-4 d-flex justify-content-center">

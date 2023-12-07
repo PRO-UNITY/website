@@ -139,7 +139,7 @@ export const teamMembers = [
     socialLinks: {
       facebook: "",
       twitter: "",
-      instagram: "",
+      instagram: "https://www.instagram.com/bigmustafaa/",
     },
     image: Miron,
   },
@@ -161,7 +161,7 @@ export const teamMembers = [
     socialLinks: {
       facebook: "",
       twitter: "",
-      instagram: "",
+      instagram: "https://instagram.com/sobirjon_0576/",
     },
     image: Sobir,
   },
@@ -172,7 +172,7 @@ export const teamMembers = [
     socialLinks: {
       facebook: "",
       twitter: "",
-      instagram: "",
+      instagram: "https://www.instagram.com/naimov_2001/",
     },
     image: Davlatshoh,
   },
@@ -183,7 +183,7 @@ export const teamMembers = [
     socialLinks: {
       facebook: "",
       twitter: "",
-      instagram: "",
+      instagram: "https://www.instagram.com/amirbek_azimov/",
     },
     image: Amirbek,
   },
@@ -192,9 +192,9 @@ export const teamMembers = [
     name: "Jobir Ashurov",
     occupation: "Frontend Developer",
     socialLinks: {
-      facebook: "",
+      facebook: "https://www.facebook.com/AshurovJobir/",
       twitter: "",
-      instagram: "",
+      instagram: "https://www.instagram.com/jobir__ashurov/",
     },
     image: Jobir,
   },
@@ -205,7 +205,7 @@ export const teamMembers = [
     socialLinks: {
       facebook: "",
       twitter: "",
-      instagram: "",
+      instagram: "https://www.instagram.com/ibrokhim10.06/",
     },
     image: Ibrohim,
   },

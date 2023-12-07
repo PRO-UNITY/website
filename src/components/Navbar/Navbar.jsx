@@ -4,12 +4,13 @@ import Topbar from "../Topbar/Topbar";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { Nav, Navbar } from "react-bootstrap";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./Navbar.css";
+import { ActiveNavContext } from "../../context/ActiveNav";
 
 const MyNavbar = () => {
   const { t } = useTranslation();
-  const [activeNav, setactiveNav] = useState(1);
+  const { activeNav, setactiveNav } = useContext(ActiveNavContext);
   const [activeProduct, setactiveProduct] = useState(0);
   const [activeLang, setactiveLang] = useState("en");
   return (
@@ -22,7 +23,12 @@ const MyNavbar = () => {
         data-wow-delay="0.1s"
       >
         <div className="container-fluid">
-          <Navbar.Brand as={Link} to="/" className="logo">
+          <Navbar.Brand
+            as={Link}
+            to="/"
+            onClick={() => setactiveNav(1)}
+            className="logo"
+          >
             <img className="ml-0 " src={Logo} alt="prounity-logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarCollapse" />
@@ -68,7 +74,10 @@ const MyNavbar = () => {
                     className={`dropdown-item    px-0 ${
                       activeProduct === 1 ? "dropdown-item-active " : ""
                     }`}
-                    onClick={() => setactiveProduct(1)}
+                    onClick={() => {
+                      setactiveProduct(1);
+                      setactiveNav(4);
+                    }}
                   >
                     Hrms
                   </Link>
@@ -77,12 +86,24 @@ const MyNavbar = () => {
                     className={`dropdown-item    px-0 ${
                       activeProduct === 2 ? "dropdown-item-active " : ""
                     }`}
-                    onClick={() => setactiveProduct(2)}
+                    onClick={() => {
+                      setactiveProduct(2);
+                      setactiveNav(4);
+                    }}
                   >
                     Delivery
                   </Link>
                 </div>
               </div>
+
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                className={`${activeNav === 6 ? "active" : ""} py-0 `}
+                onClick={() => setactiveNav(6)}
+              >
+                {t("navbar.contact")}
+              </Nav.Link>
               <div className="nav-item dropdown ">
                 <a
                   href="#"
@@ -93,7 +114,7 @@ const MyNavbar = () => {
                 >
                   En
                 </a>
-                <div className="dropdown-menu  rounded pb-3  px-3 mt-2">
+                <div className="dropdown-menu lang-menu  rounded pb-3  px-3 mt-2">
                   <span
                     className={`dropdown-item px-0 ${
                       activeLang === "en" ? "dropdown-item-active " : ""
@@ -129,14 +150,6 @@ const MyNavbar = () => {
                   </span>
                 </div>
               </div>
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                className={`${activeNav === 6 ? "active" : ""} py-0 `}
-                onClick={() => setactiveNav(6)}
-              >
-                {t("navbar.contact")}
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>

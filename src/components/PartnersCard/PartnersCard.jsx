@@ -2,7 +2,7 @@
 const PartnersCard = ({ img }) => {
   return (
     <div
-      className="col-lg-2 col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
+      className="col-lg-2 cursor col-md-6 wow fadeInUp d-flex justify-content-center align-items-center p-3"
       data-wow-delay="0.3s"
     >
       <img

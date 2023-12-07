@@ -106,11 +106,11 @@ const Hrms = () => {
             </a>
             <a className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded ">
               <img src={homeAndroidIcon} alt="" />
-              Goggle Play
+              {t("hrms.home.googlePlay")}
             </a>
             <a className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded ">
               <img src={homeIOSIcon} alt="" />
-              Appstore
+              {t("hrms.home.appStore")}
             </a>
           </div>
           <div className="col-lg-6  h-100">

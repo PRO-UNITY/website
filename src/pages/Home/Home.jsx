@@ -43,9 +43,9 @@ const Home = () => {
             >
               {t("herosection.title")}
             </h1>
-            <div className="row g-4">
+            <div className="row g-4 text-center">
               <div className="col-sm-4">
-                <div className="border-start border-light ps-4">
+                <div className=" ps-4">
                   <h2 className="text-white mb-1" data-toggle="counter-up">
                     12
                   </h2>
@@ -152,12 +152,16 @@ const Home = () => {
               className="col-lg-4 col-md-6 wow fadeInUp cursor p-3"
               data-wow-delay="0.1s"
             >
-              <a href>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={"https://github.com/PRO-UNITY"}
+              >
                 <img
                   className="img-partner"
                   style={{ width: "100%" }}
                   src="https://pngimg.com/d/github_PNG15.png"
-                  alt
+                  alt="github"
                 />
               </a>
             </div>
@@ -165,12 +169,16 @@ const Home = () => {
               className="col-lg-4 col-md-6 wow fadeInUp cursor p-3"
               data-wow-delay="0.3s"
             >
-              <a href>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={"https://dribbble.com/prounity"}
+              >
                 <img
                   className="img-partner"
                   style={{ width: "100%" }}
                   src="https://upload.wikimedia.org/wikipedia/commons/3/32/Dribbble_logo.png"
-                  alt
+                  alt="dribbble"
                 />
               </a>
             </div>
@@ -178,12 +186,18 @@ const Home = () => {
               className="col-lg-4 col-md-6 wow fadeInUp cursor p-3"
               data-wow-delay="0.5s"
             >
-              <img
-                className="img-partner mt-4"
-                style={{ width: "100%" }}
-                src="https://ml.globenewswire.com/Resource/Download/77ae316b-82ad-4147-9189-ee10517a4208"
-                alt
-              />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={"https://clutch.co/profile/pro-unity"}
+              >
+                <img
+                  className="img-partner mt-4"
+                  style={{ width: "100%" }}
+                  src="https://ml.globenewswire.com/Resource/Download/77ae316b-82ad-4147-9189-ee10517a4208"
+                  alt
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -213,7 +227,7 @@ const Home = () => {
       {/* Partners End */}
 
       {/* Feature Start */}
-      <div className="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+      <div className="container-fluid bg-primary overflow-hidden mt-5 px-lg-0">
         <div className="container-xxl feature px-lg-0">
           <div className="row g-0 mx-lg-0">
             <div
@@ -238,7 +252,7 @@ const Home = () => {
                         <i className="fa fa-user-md text-primary" />
                       </div>
                       <div className="ms-2">
-                        <p className="text-white mb-2">
+                        <p className="text-white m-0">
                           {t("featuresection.listmini1")}
                         </p>
                         <h5 className="text-white mb-0">
@@ -256,7 +270,7 @@ const Home = () => {
                         <i className="fa fa-check text-primary" />
                       </div>
                       <div className="ms-2">
-                        <p className="text-white mb-2">
+                        <p className="text-white m-0">
                           {t("featuresection.listmini2")}
                         </p>
                         <h5 className="text-white mb-0">
@@ -274,10 +288,10 @@ const Home = () => {
                         <i className="fa fa-comment-medical text-primary" />
                       </div>
                       <div className="ms-2">
-                        <p className="text-white mb-2">
+                        <p className="text-white m-0">
                           {t("featuresection.listmini3")}
                         </p>
-                        <h5 className="text-white text-wrap mb-0">
+                        <h5 className="text-white text-wrap m-0">
                           {t("featuresection.listbig3")}
                         </h5>
                       </div>
@@ -292,10 +306,10 @@ const Home = () => {
                         <i className="fa fa-headphones text-primary" />
                       </div>
                       <div className="ms-2">
-                        <p className="text-white mb-2">
+                        <p className="text-white m-0">
                           {t("featuresection.listmini4")}
                         </p>
-                        <h5 className="text-white mb-0">
+                        <h5 className="text-white m-0">
                           {t("featuresection.listbig4")}
                         </h5>
                       </div>
@@ -373,7 +387,7 @@ const Home = () => {
       {/* Team End */}
 
       {/* Appointment Start */}
-      <div className="container-xxl py-5">
+      <div className="container-xxl py-5 contact">
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -382,33 +396,45 @@ const Home = () => {
               </p>
               <h1 className="mb-4"> {t("appointment.title")}</h1>
               <p className="mb-4">{t("appointment.text")}</p>
-              <div className="bg-light rounded d-flex align-items-center p-5 mb-4">
-                <div
-                  className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                  style={{ width: 55, height: 55 }}
-                >
-                  <i className="fa fa-phone-alt text-primary" />
+              <a
+                href="tel:+998-33-899-50-00 "
+                className="text-decoration-none text-dark"
+              >
+                <div className="bg-light rounded  d-flex align-items-center py-4 px-2 px-md-5 py-md-5 mb-4">
+                  <div
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                    style={{ width: 55, height: 55 }}
+                  >
+                    <i className="fa fa-phone-alt text-primary" />
+                  </div>
+                  <div className="ms-2 ms-md-5">
+                    <p className="mb-2">{t("appointment.call")}</p>
+                    <h5 className="mb-0">+998 33 899 50 00</h5>
+                  </div>
                 </div>
-                <div className="ms-4">
-                  <p className="mb-2">{t("appointment.call")}</p>
-                  <h5 className="mb-0">+998 33 899 50 00</h5>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto:prounity.uz@gmail.com"
+                className="text-decoration-none text-dark"
+              >
+                <div className="bg-light rounded d-flex align-items-center py-4 px-2 px-md-5 py-md-5">
+                  <div
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                    style={{ width: 55, height: 55 }}
+                  >
+                    <i className="fa fa-envelope-open text-primary" />
+                  </div>
+                  <div className="ms-2 ms-md-5">
+                    <p className="mb-2">{t("appointment.message")}</p>
+                    <h5 className="mb-0 ">prounity.uz@gmail.com</h5>
+                  </div>
                 </div>
-              </div>
-              <div className="bg-light rounded d-flex align-items-center p-5">
-                <div
-                  className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                  style={{ width: 55, height: 55 }}
-                >
-                  <i className="fa fa-envelope-open text-primary" />
-                </div>
-                <div className="ms-4">
-                  <p className="mb-2">{t("appointment.message")}</p>
-                  <h5 className="mb-0">prounity.uz@gmail.com</h5>
-                </div>
-              </div>
+              </a>
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div className="bg-light rounded h-100 d-flex align-items-center p-5">
+              <div className="bg-light rounded h-100 d-flex align-items-center p-3 p-md-5">
                 <form onSubmit={ContactPost}>
                   <div className="row g-3">
                     <div className="col-12 col-sm-6">

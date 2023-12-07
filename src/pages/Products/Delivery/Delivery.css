@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800;900&display=swap");
-.hrms {
+.delivery {
   font-family: "Inter", sans-serif;
 }
 ul {
   list-style: none;
 }
-.hrms .download-btn,
-.hrms .download-btn:hover {
+.delivery .download-btn,
+.delivery .download-btn:hover {
   background: var(--secondary);
   display: inline-flex;
   align-items: center;
@@ -16,45 +16,45 @@ ul {
   cursor: pointer;
   margin: 10px 0;
 }
-.hrms .download-btn-outline,
-.hrms .download-btn-outline:hover {
+.delivery .download-btn-outline,
+.delivery .download-btn-outline:hover {
   background-color: transparent;
   color: var(--secondary);
   border: 1px solid var(--secondary);
 }
-.hrms .download-btn-outline img {
+.delivery .download-btn-outline img {
   width: 30px;
 }
 
-.hero_slider img {
+.delivery_slider img {
   margin: 80px 0 0 0;
 }
 
-.hrms-about .img-box {
+.delivery-about .img-box {
   position: relative;
   max-width: 440px;
   width: 100%;
 }
 
-.hrms-about .img-box img {
+.delivery-about .img-box img {
   width: 250px;
   height: 500px;
   z-index: 99;
 }
-.hrms-about .img-box .img-mask {
+.delivery-about .img-box .img-mask {
   position: absolute;
   width: 100%;
   height: 340px;
   bottom: -30px;
   background-color: rgba(0, 0, 0, 0.123);
 }
-.hrms-archive .archive-card {
+.delivery-archive .archive-card {
   max-width: 1000px;
   margin: auto;
   height: 200px;
   transform: translateY(50px);
 }
-.hrms-archive .archive-card .card-item {
+.delivery-archive .archive-card .card-item {
   border-right: 1px solid var(--primary);
   border-left: 1px solid var(--primary);
 }
@@ -78,27 +78,21 @@ ul {
   transform: translateY(80px);
 }
 
-/* .pricing .card {
-  max-width: 450px;
-  width: 100%;
-  background: var(--secondary);
-} */
-
-.hrms .slider-overlay {
+.delivery .slider-overlay {
   top: 0;
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.55);
 }
-.hrms .img-form {
+.delivery .img-form {
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 99;
   padding: 40px 0;
 }
-.hrms .carusel .img-box {
+.delivery .carusel .img-box {
   width: 300px;
   height: 100%;
   display: flex;
@@ -106,27 +100,27 @@ ul {
   justify-content: center;
   overflow: hidden;
 }
-.hrms .carusel .swiper-slide {
+.delivery .carusel .swiper-slide {
   background: transparent;
 }
-.hrms .carusel .swiper-slide img {
+.delivery .carusel .swiper-slide img {
   width: 290px;
   height: 99%;
   border-radius: 20px;
   z-index: -1;
   filter: brightness(0.5);
 }
-.hrms .carusel .swiper-slide-active img {
+.delivery .carusel .swiper-slide-active img {
   border-radius: 50px;
   position: absolute;
   z-index: 999;
   filter: brightness(1);
 }
-.hrms .carusel .img-box .bg-img {
+.delivery .carusel .img-box .bg-img {
   width: 100%;
   height: 100%;
 }
-.hrms .carusel .img-box .slider-img {
+.delivery .carusel .img-box .slider-img {
   width: 95%;
   height: 95%;
   object-fit: cover;
@@ -152,35 +146,9 @@ ul {
   background: rgba(64, 196, 255, 0.26);
   border-radius: 50%;
 }
-/* .get-app .container {
-  max-width: 1000px;
-  height: 300px;
-  z-index: 99;
-}
-.get-app .img-box {
-  margin-bottom: -150px;
-}
-.get-app .img-box img {
-  width: 350px;
-  z-index: -1;
-}
-.get-app .img-box img:first-child {
-  transform: rotate(-30deg);
-  margin-right: -50px;
-}
-.get-app .img-box img:last-child {
-  transform: rotate(30deg);
-  margin-left: -50px;
-} */
-@media only screen and (max-width: 1100px) {
-  .get-app .img-box img {
-    width: 280px;
-    z-index: -1;
-  }
-}
 
 @media only screen and (max-width: 990px) {
-  .hrms-hero {
+  .delivery-hero {
     text-align: center;
   }
   .hero_slider img {
@@ -188,13 +156,13 @@ ul {
     height: 80%;
     object-fit: cover;
   }
-  .hrms-hero img {
+  .delivery-hero img {
     width: 320px;
   }
-  .hrms-about {
+  .delivery-about {
     text-align: center;
   }
-  .hrms-archive .archive-card {
+  .delivery-archive .archive-card {
     transform: translateY(0);
     height: 450px;
   }
@@ -231,13 +199,13 @@ ul {
   }
 }
 @media only screen and (max-width: 768px) {
-  .hrms-archive .archive-card .card-item {
+  .delivery-archive .archive-card .card-item {
     border: 0;
   }
-  .hrms .download-btn {
+  .delivery .download-btn {
     padding: 10px 20px !important;
   }
-  .hrms .download-btn img {
+  .delivery .download-btn img {
     width: 20px;
     object-fit: cover;
     transform: translateX(5px);
@@ -249,7 +217,7 @@ ul {
 
     object-fit: contain;
   }
-  .hrms .download-btn {
+  .delivery .download-btn {
     height: 45px;
     font-size: 12px;
   }
@@ -259,12 +227,6 @@ ul {
   }
   .pricing .price-box h1 {
     font-size: 30px;
-  }
-  .get-app .img-box {
-    margin-bottom: 0;
-  }
-  .get-app .img-box img {
-    display: none;
   }
   .pricing .card .card-content span {
     font-size: 15px;
