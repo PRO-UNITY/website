@@ -142,7 +142,7 @@ const HrmsStatistic = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="card rounded-4 bg-light">
+            <div className="card p-3 rounded-4 bg-light">
               <PolarArea
                 data={{
                   labels: sourceData.map((data) => data.label),
