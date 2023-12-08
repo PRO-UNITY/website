@@ -43,7 +43,7 @@ const HrmsSidebar = () => {
           <span className="fs-4 fw-semibold text-uppercase">Admetrics</span>
         </Link>
 
-        <ul className="nav nav-pills mx-md-2 px-3 py-2 mt-5 flex-column mb-auto">
+        <ul className="nav nav-pills mx-md-2 px-md-3 py-2 mt-5 flex-column mb-auto">
           {sideNavs.map((item) => (
             <li className="nav-item pt-1" key={item.id}>
               <Link
