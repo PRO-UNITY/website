@@ -11,8 +11,7 @@ const HrmsDashNavbar = () => {
           <h1 className="fs-2 m-0 w-100 fw-semibold text-uppercase">
             Analytical board
           </h1>
-
-          <div className="form px-">
+          <div className="form ">
             <i className="fa fa-search fs-5" />
             <input
               type="text"
@@ -23,7 +22,7 @@ const HrmsDashNavbar = () => {
           <Nav className="ms-5 p-4 p-lg-0 align-items-center ">
             <div className=" d-flex align-items-center gap-4 mx-2">
               <i className="fa-solid fa-bell fs-4 mx-2"></i>
-              <i className="fa-solid fa-calendar-check fs-4 mx-2"></i>
+              <i className="fa-solid fa-calendar-check fs-4 mx-2 me-4"></i>
               <div className="d-flex justify-content-center align-items-center">
                 <img
                   style={{ zIndex: 9 }}
