@@ -9,3 +9,18 @@
 .hrms-dashboasrd-home {
   height: 80vh;
 }
+.hrms-dashboasrd-home .btns .btn-active {
+  background: rgba(23, 81, 208, 0.1);
+}
+.hrms-dashboasrd-home .btns .btn-no-active {
+  background: rgba(255, 255, 255, 0.838);
+  border: 1px solid #ececed;
+}
+
+.hrms-dashboasrd-home .table {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.hrms-dashboasrd-home table td {
+  padding: 20px;
+}
