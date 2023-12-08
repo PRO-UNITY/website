@@ -51,7 +51,7 @@ const HrmsSignUp = () => {
           </div>
 
           <button
-            className="btn rounde-0 mt-3 btn-dark w-100 py-3   text-white rounded-3"
+            className="btn rounde-0 mt-3 btn-primary w-100 py-3   text-white rounded-3"
             type="submit"
           >
             Sign in

@@ -38,34 +38,36 @@ const HrmsSidebar = () => {
         <Link
           onClick={() => setActiveHrmsDash(1)}
           to="/products/hrms/admin"
-          className="text-center sidebar-logo  w-100 mt-4 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          className="text-center sidebar-logo  w-100 pt-4 mt-4 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         >
-          <span className="fs-2 fw-semibold text-uppercase">Admetrics</span>
+          <span className="fs-4 fw-semibold text-uppercase">Admetrics</span>
         </Link>
 
-        <ul className="nav nav-pills mx-md-3 mt-5 flex-column mb-auto">
+        <ul className="nav nav-pills mx-md-2 px-3 py-2 mt-5 flex-column mb-auto">
           {sideNavs.map((item) => (
-            <li className="nav-item" key={item.id}>
+            <li className="nav-item pt-1" key={item.id}>
               <Link
                 to={item.path}
                 onClick={() => setActiveHrmsDash(item.id)}
-                className={`nav-link text-center text-md-start  py-3 my-2 text-dark ${
-                  activeHrmsDash == item.id ? "bg-dark text-white " : ""
+                className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark ${
+                  activeHrmsDash == item.id ? "active text-white " : ""
                 }rounded-0`}
               >
                 <i
-                  className={`fa-solid fs-5 me-md-2 ${
-                    activeHrmsDash == item.id ? " text-white " : ""
+                  className={`fa-solid fs-5  me-md-3 ${
+                    activeHrmsDash == item.id ? "  " : ""
                   }  text-secondary ${item.icon} `}
                 ></i>
                 <span>{item.name}</span>
               </Link>
             </li>
           ))}
+
           <li className="nav-item">
+            <hr />
             <Link
               to={"/products/hrms/admin/auth/sign-in"}
-              className={`nav-link text-center text-md-start  py-3 my-2 text-dark rounded-0`}
+              className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark`}
             >
               <i
                 className={`fa-solid fa-arrow-right-from-bracket fs-5  text-secondary  me-md-3`}

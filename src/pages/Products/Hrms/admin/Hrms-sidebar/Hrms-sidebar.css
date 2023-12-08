@@ -1,6 +1,12 @@
 .sidebar {
-  width: 300px;
+  width: 260px;
   height: 100%;
+}
+.sidebar .nav .nav-link.active {
+  background: var(--primary) !important;
+}
+.sidebar .nav .nav-link.active i {
+  color: var(--secondary) !important;
 }
 @media only screen and (max-width: 768px) {
   .sidebar {

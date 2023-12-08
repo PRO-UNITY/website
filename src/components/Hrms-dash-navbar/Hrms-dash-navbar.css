@@ -1,32 +1,45 @@
 .hrms-dash .add-btn {
   border-radius: 0 !important;
   padding: 12px 10px;
-  background: #d85539;
+  background: var(--primary);
+  width: 130px;
+}
+.hrms-dash .profile-count {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-12px);
+  z-index: 1;
 }
 .form {
   position: relative;
-  width: 350px;
+  width: 70%;
+  transform: translateX(-90px);
 }
 
 .form .fa-search {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 23px;
   color: #000000;
 }
 
 .left-pan {
-  padding-left: 7px;
+  padding-left: 10px;
 }
 
 .left-pan i {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .form-input {
   height: 55px;
-  text-indent: 33px;
+  text-indent: 40px;
   border-radius: 0 !important;
+  font-size: 17px !important;
 }
 
 .form-input:focus {
@@ -38,6 +51,8 @@
   .form {
     position: relative;
     width: auto;
+    transform: translateX(0);
+    width: 100%;
   }
   .navbar h1 {
     margin: 20px auto;
