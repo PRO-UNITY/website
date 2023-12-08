@@ -1,6 +1,6 @@
 .sidebar {
   width: 260px;
-  height: 100%;
+  min-height: 100dvh
 }
 .sidebar .nav .nav-link.active {
   background: var(--primary) !important;

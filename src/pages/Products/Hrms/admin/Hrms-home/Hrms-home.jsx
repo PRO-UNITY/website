@@ -1,12 +1,14 @@
 import { useState } from "react";
 import HrmsAdminLayout from "../../../../../Layout/Hrms-admin-layout";
 import "./Hrms-dash.css";
+import { Link } from "react-router-dom";
 const btns = [
   { id: 1, name: "Active", count: 8 },
   { id: 2, name: "Inactive", count: 24 },
 ];
 const HrmsHome = () => {
   const [activeBtn, setActiveBtn] = useState(1);
+  const [showMenu, setshowMenu] = useState(false);
   return (
     <HrmsAdminLayout>
       <div className="hrms-dashboasrd-home mt-4 overflow-auto">
@@ -81,9 +83,27 @@ const HrmsHome = () => {
                       <button className="action-button btn py-2  fw-semibold border">
                         <i className="fa-solid fa-rotate px-1"></i> Renew
                       </button>
-                      <button className="btn ms-1">
-                        <i className="fa-solid fa-ellipsis-vertical fs-5 "></i>
-                      </button>
+                      <div className="position-realative">
+                        {showMenu && (
+                          <div className="menu-open  p-3 rounded d-flex  justify-content-end flex-column gap-2">
+                            <Link
+                              to={"/products/hrms/admin/edit-profile"}
+                              className="btn btn-primary"
+                            >
+                              Edit Profile
+                            </Link>
+                            <button className="btn btn-danger">
+                              Delete Profile
+                            </button>
+                          </div>
+                        )}
+                        <button
+                          className="btn ms-1"
+                          onClick={() => setshowMenu((prev) => !prev)}
+                        >
+                          <i className="fa-solid fa-ellipsis-vertical fs-5 "></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>

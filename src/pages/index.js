@@ -10,16 +10,19 @@ export { default as ProCommunity } from "./SevicesDetail/ProCommunity";
 export { default as Contact } from "./Contact/Contact";
 export { default as PageNotFound } from "./PageNotFound/PageNotFound";
 
-// Products
+/*-- Products ---*/
+// Hrms
 export { default as Hrms } from "./Products/Hrms/Hrms";
 // Hrms admin
 export { default as HrmsSignIn } from "./Products/Hrms/admin/Hrms-sign-in/Hrms-sign-in";
 export { default as HrmsSignUp } from "./Products/Hrms/admin/Hrms-sign-up/Hrms-sign-up";
 export { default as HrmsAdminHome } from "./Products/Hrms/admin/Hrms-home/Hrms-home";
+export { default as HrmsAdminHomeEditProfile } from "./Products/Hrms/admin/Hrms-home/Edit-profile";
 export { default as HrmsAdminSidebar } from "./Products/Hrms/admin/Hrms-sidebar/Hrms-sidebar";
 export { default as HrmsStatistic } from "./Products/Hrms/admin/Hrms-statistic/Hrms-statistic";
 export { default as HrmsTaskList } from "./Products/Hrms/admin/Task-list/Task-list";
 export { default as HrmsServices } from "./Products/Hrms/admin/Hrms-services/Hrms-services";
 export { default as HrmsNotification } from "./Products/Hrms/admin/Hrms-notification/Hrms-notification";
 
+// Delivery
 export { default as Delivery } from "./Products/Delivery/Delivery";

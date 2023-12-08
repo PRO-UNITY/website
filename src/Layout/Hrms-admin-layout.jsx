@@ -9,7 +9,7 @@ const HrmsAdminLayout = ({ children }) => {
       <HrmsAdminSidebar />
       <div className="w-100">
         <HrmsDashNavbar />
-        <div className="px-md-3">{children}</div>
+        <div className="px-md-3 ">{children}</div>
       </div>
     </div>
   );
