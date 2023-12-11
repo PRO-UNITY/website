@@ -8,7 +8,7 @@ const PartnersCard = ({ img }) => {
       <img
         style={{ width: "100%", height: 130, objectFit: "contain" }}
         src={img}
-        alt
+        alt={"prouniti-partners"}
       />
     </div>
   );

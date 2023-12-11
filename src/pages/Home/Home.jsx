@@ -91,12 +91,12 @@ const Home = () => {
                 <img
                   className="img-fluid rounded w-75 align-self-end img-lider"
                   src={creator}
-                  alt
+                  alt="creator"
                 />
                 <img
                   className="img-animation img-fluid rounded w-50 bg-white cursor"
                   src={albomPro}
-                  alt
+                  alt={"albom-pro"}
                   style={{ marginTop: "-25%" }}
                 />
               </div>
@@ -162,7 +162,7 @@ const Home = () => {
                   className="img-partner"
                   style={{ width: "100%" }}
                   src="https://pngimg.com/d/github_PNG15.png"
-                  alt="github"
+                  alt="prounity-github"
                 />
               </a>
             </div>
@@ -179,10 +179,11 @@ const Home = () => {
                   className="img-partner"
                   style={{ width: "100%" }}
                   src="https://upload.wikimedia.org/wikipedia/commons/3/32/Dribbble_logo.png"
-                  alt="dribbble"
+                  alt="prounity-dribbble"
                 />
               </a>
             </div>
+
             <div
               className="col-lg-4 col-md-6 wow fadeInUp cursor p-3"
               data-wow-delay="0.5s"
@@ -196,7 +197,7 @@ const Home = () => {
                   className="img-partner mt-4"
                   style={{ width: "100%" }}
                   src="https://ml.globenewswire.com/Resource/Download/77ae316b-82ad-4147-9189-ee10517a4208"
-                  alt
+                  alt={"prounity-clutch"}
                 />
               </a>
             </div>
@@ -329,7 +330,7 @@ const Home = () => {
                   className="position-absolute img-fluid w-100 h-100"
                   src={teamwork}
                   style={{ objectFit: "cover" }}
-                  alt
+                  alt="team-work"
                 />
               </div>
             </div>
@@ -379,9 +380,9 @@ const Home = () => {
             <h1>{t("teamsection.title")}</h1>
           </div>
           <div className="row g-4">
-            {teamMembers.map((item, i) => (
+            {/* {teamMembers.map((item, i) => (
               <OurTeam key={i} {...item} />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
