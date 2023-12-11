@@ -1,17 +1,11 @@
-import gsap from "gsap";
-
 /* eslint-disable react/prop-types */
 const OurTeam = ({ name, occupation, image, socialLinks }) => {
-  const onEnter = ({ currentTarget }) => {
-    gsap.to(currentTarget, { backgroundColor: "#e77614", scale: 1.2 });
-  };
-
   return (
-    <div className="col-lg-3 col-md-6  cursor ">
-      <div
-        onClick={onEnter}
-        className="team-item position-relative rounded overflow-hidden"
-      >
+    <div
+      className="col-lg-3 col-md-6 wow cursor fadeInUp"
+      data-wow-delay="0.7s"
+    >
+      <div className="team-item position-relative rounded overflow-hidden">
         <div className="overflow-hidden">
           <img
             style={{ height: 380, width: "100%", objectFit: "cover" }}

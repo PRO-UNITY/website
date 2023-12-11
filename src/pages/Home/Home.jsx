@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import Layout from "../../Layout/Layout";
+
 const Home = () => {
   const { t } = useTranslation();
   const nameRef = useRef(null);
@@ -380,12 +381,13 @@ const Home = () => {
             <h1>{t("teamsection.title")}</h1>
           </div>
           <div className="row g-4">
-            {/* {teamMembers.map((item, i) => (
+            {teamMembers.map((item, i) => (
               <OurTeam key={i} {...item} />
-            ))} */}
+            ))}
           </div>
         </div>
       </div>
+
       {/* Team End */}
 
       {/* Appointment Start */}
