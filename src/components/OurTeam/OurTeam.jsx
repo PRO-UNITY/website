@@ -1,13 +1,11 @@
 /* eslint-disable react/prop-types */
-import { useFeature } from "@optimizely/react-sdk";
 import { Link } from "react-router-dom";
 const OurTeam = ({ id, name, occupation, image, socialLinks }) => {
-  const { isEnabled } = useFeature("LINK_STYLE", { id });
+  
   return (
     <div
-      className={`col-lg-3 col-md-6 wow cursor fadeInUp ${
-        isEnabled("withLink") ? "with-link" : "without-link"
-      }`}
+      className="col-lg-3 col-md-6 wow cursor fadeInUp"
+      data-wow-delay="0.7s"
     >
       <Link to={`user/${id}`} className="text-decoration-none">
         <div className="team-item position-relative rounded overflow-hidden">
