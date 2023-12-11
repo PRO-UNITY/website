@@ -5,19 +5,15 @@
   --dark: #1b2c51;
   --secondary: yellow;
 }
-
 .fw-medium {
   font-weight: 500 !important;
 }
-
 .fw-bold {
   font-weight: 700 !important;
 }
-
 .fw-black {
   font-weight: 900 !important;
 }
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -50,22 +46,18 @@
 .btn.btn-secondary {
   color: #ffffff;
 }
-
 .btn-square {
   width: 38px;
   height: 38px;
 }
-
 .btn-sm-square {
   width: 32px;
   height: 32px;
 }
-
 .btn-lg-square {
   width: 48px;
   height: 48px;
 }
-
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
@@ -104,12 +96,10 @@
   text-transform: uppercase;
   outline: none;
 }
-
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
   color: var(--primary);
 }
-
 @media (max-width: 991.98px) {
   .navbar .navbar-nav .nav-link {
     margin-right: 0;
@@ -120,22 +110,18 @@
     border-top: 1px solid #eeeeee;
   }
 }
-
 .navbar .navbar-brand,
 .navbar a.btn {
   height: 75px;
 }
-
 .navbar .navbar-nav .nav-link {
   color: var(--dark);
   font-weight: 500;
 }
-
 .navbar.sticky-top {
   top: -100px;
   transition: 0.5s;
 }
-
 .back {
   background: url(./assets/koworking.jpg);
   background-repeat: no-repeat;
@@ -146,27 +132,22 @@
   height: 100vh;
   width: 100%;
 }
-
 .body-video {
   height: 100vh;
 }
-
 .img-partner {
   opacity: 0.4;
   transition: 500ms;
 }
-
 .img-partner:hover {
   opacity: 1;
   transition: 500ms;
 }
-
 .back h1,
 h2,
 p {
   z-index: 9999;
 }
-
 .extra {
   width: 100%;
   height: 100%;
@@ -176,7 +157,6 @@ p {
   background-color: rgba(0, 0, 0, 0.627);
   z-index: -999;
 }
-
 .btn-youtube {
   display: block;
   animation: pulsing 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -191,25 +171,20 @@ p {
   justify-content: center;
   text-decoration: none;
 }
-
 .cursor {
   cursor: pointer;
 }
-
 .img-lider {
   transition: 500ms;
 }
-
 .img-lider:hover {
   box-shadow: 0 0 0 50px rgba(0, 8, 255, 0.616);
   transition: 500ms;
 }
-
 .img-animation {
   animation: pulsing2 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.5s;
 }
-
 @keyframes pulsing2 {
   from {
     box-shadow: 0 0 0 0 rgba(0, 20, 70, 0.2);
@@ -219,7 +194,6 @@ p {
     transform: scale3d(1.1, 1.1, 1.1);
   }
 }
-
 @keyframes pulsing {
   from {
     box-shadow: 0 0 0 0 rgba(0, 70, 67, 0.2);
@@ -228,7 +202,6 @@ p {
     box-shadow: 0 0 0 50px rgba(255, 255, 0, 0.121);
   }
 }
-
 @media (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: block;
@@ -239,7 +212,6 @@ p {
     visibility: hidden;
     transition: 0.5s;
   }
-
   .navbar .nav-item:hover .dropdown-menu {
     top: 100%;
     visibility: visible;
@@ -247,14 +219,13 @@ p {
     opacity: 1;
   }
 }
-
 .page-header {
   background: url(../img/header-page.jpg) top center no-repeat;
   background-size: cover;
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
   color: var(--light);
 }
 
@@ -262,12 +233,10 @@ p {
 .service-item {
   transition: 0.5s;
 }
-
 .service-item:hover {
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
   cursor: pointer;
 }
-
 .service-item .btn {
   width: 40px;
   height: 40px;
@@ -337,44 +306,36 @@ p {
 .team-item img {
   transition: 0.7s;
 }
-
 .team-item:hover img {
   top: -30px;
   transform: scale3d(1.2, 1.2, 1);
 }
-
 .team-item .team-text {
   position: relative;
   height: 100px;
   transition: 0.5s;
 }
-
 .team-item:hover .team-text {
   margin-top: -60px;
   height: 160px;
 }
-
 .team-item .team-text .team-social {
   opacity: 0;
   transition: 0.5s;
 }
-
 .team-item:hover .team-text .team-social {
   opacity: 1;
 }
-
 .team-item .team-social .btn {
   display: inline-flex;
   color: var(--primary);
   background: #ffffff;
   border-radius: 40px;
 }
-
 .team-item .team-social .btn:hover {
   color: #ffffff;
   background: var(--primary);
 }
-
 /*** Appointment ***/
 .bootstrap-datetimepicker-widget.bottom {
   top: auto !important;

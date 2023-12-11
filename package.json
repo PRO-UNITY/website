@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@optimizely/react-sdk": "^2.9.2",
     "bootstrap": "^5.3.2",
     "chart.js": "^4.4.1",
     "gsap": "^3.12.3",

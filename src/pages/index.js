@@ -9,6 +9,7 @@ export { default as OpenCourse } from "./SevicesDetail/OpenCourse";
 export { default as ProCommunity } from "./SevicesDetail/ProCommunity";
 export { default as Contact } from "./Contact/Contact";
 export { default as PageNotFound } from "./PageNotFound/PageNotFound";
+export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 
 /*-- Products ---*/
 // Hrms
