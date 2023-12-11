@@ -1,10 +1,7 @@
 /* eslint-disable react/prop-types */
 const OurTeam = ({ name, occupation, image, socialLinks }) => {
   return (
-    <div
-      className="col-lg-3 col-md-6 wow cursor fadeInUp"
-      data-wow-delay="0.7s"
-    >
+    <div className="col-lg-3 col-md-6  cursor ">
       <div className="team-item position-relative rounded overflow-hidden">
         <div className="overflow-hidden">
           <img

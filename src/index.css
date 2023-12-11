@@ -335,13 +335,12 @@ p {
 
 /*** Team ***/
 .team-item img {
-  position: relative;
-  top: 0;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .team-item:hover img {
   top: -30px;
+  transform: scale3d(1.2, 1.2, 1);
 }
 
 .team-item .team-text {
