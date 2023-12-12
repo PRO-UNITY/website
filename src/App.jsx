@@ -10,6 +10,7 @@ import {
   Hrms,
   HrmsAdminHome,
   HrmsAdminHomeEditProfile,
+  HrmsDocumentation,
   HrmsNotification,
   HrmsServices,
   HrmsSignIn,
@@ -66,23 +67,12 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
             {/* Hrms */}
             <Route path="/products/hrms" element={<Hrms />} />
-            <Route
-              path="/products/hrms/admin/auth/sign-in"
-              element={<HrmsSignIn />}
-            />
-            <Route
-              path="/products/hrms/admin/auth/sign-up"
-              element={<HrmsSignUp />}
-            />
+            <Route path="products/hrms/documentation" element={<HrmsDocumentation />} />
+            <Route path="/products/hrms/admin/auth/sign-in" element={<HrmsSignIn />} />
+            <Route path="/products/hrms/admin/auth/sign-up" element={<HrmsSignUp />}/>
             <Route path="/products/hrms/admin" element={<HrmsAdminHome />} />
-            <Route
-              path="/products/hrms/admin/edit-profile"
-              element={<HrmsAdminHomeEditProfile />}
-            />
-            <Route
-              path="/products/hrms/statistic"
-              element={<HrmsStatistic />}
-            />
+            <Route path="/products/hrms/admin/edit-profile" element={<HrmsAdminHomeEditProfile />} />
+            <Route path="/products/hrms/statistic" element={<HrmsStatistic />} />
             <Route path="/products/hrms/task-list" element={<HrmsTaskList />} />
             <Route path="/products/hrms/services" element={<HrmsServices />} />
             <Route

@@ -14,6 +14,7 @@ export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 /*-- Products ---*/
 // Hrms
 export { default as Hrms } from "./Products/Hrms/Hrms";
+export { default as HrmsDocumentation } from "./Products/Hrms/docomentation/Home";
 // Hrms admin
 export { default as HrmsSignIn } from "./Products/Hrms/admin/Hrms-sign-in/Hrms-sign-in";
 export { default as HrmsSignUp } from "./Products/Hrms/admin/Hrms-sign-up/Hrms-sign-up";

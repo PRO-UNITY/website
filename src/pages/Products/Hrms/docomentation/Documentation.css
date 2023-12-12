@@ -1,0 +1,63 @@
+.hrms-doc-sidebar {
+  max-width: 280px;
+  width: 100%;
+  width: 100vh;
+  background: var(--primary);
+  color: #fff;
+}
+.hrms-doc-sidebar .accordion .head i {
+  transform: rotate(0deg);
+  transition: 0.2s;
+}
+.hrms-doc-sidebar .accordion .head i.active {
+  transform: rotate(-90deg);
+}
+
+.doc-content {
+  overflow: auto;
+}
+.hrms-doc code {
+  color: #2f2f2f;
+  background: #00000024;
+  padding: 0 3px;
+  margin: 0 1px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.doc-list li.title code {
+  color: #292929;
+  font-size: 12px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.sidenote {
+  flex-grow: 1;
+  align-self: flex-start;
+  top: 0;
+  min-width: 500px;
+  padding-top: 50px;
+  max-width: 50vw;
+}
+
+.sidenote .box {
+  background: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+.sidenote .box .title {
+  background: rgb(219, 219, 219);
+  font-weight: 500;
+  color: rgb(76, 76, 76);
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}

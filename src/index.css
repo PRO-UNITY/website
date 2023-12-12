@@ -5,6 +5,9 @@
   --dark: #1b2c51;
   --secondary: yellow;
 }
+html {
+  scroll-behavior: smooth;
+}
 .fw-medium {
   font-weight: 500 !important;
 }
@@ -225,7 +228,7 @@ p {
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   color: var(--light);
 }
 
