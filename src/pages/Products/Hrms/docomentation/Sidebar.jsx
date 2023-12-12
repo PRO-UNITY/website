@@ -16,14 +16,14 @@ const Sidenavs = [
     title: "Tasks",
     show: false,
     child: [
-      { id: "create-task", name: "Create Task", path: "get-user" },
-      { id: "marking", name: "Marking as Complete", path: "get-user" },
-      { id: "listing", name: "Listing Tasks", path: "get-user" },
+      { id: "create-task", name: "Create Task", path: "creat-task" },
+      { id: "marking", name: "Marking as Complete", path: "making" },
+      { id: "listing", name: "Listing Tasks", path: "listing-task" },
     ],
   },
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ setShowSearchbar }) => {
   const [data, setData] = useState(Sidenavs);
 
   const handleToggle = (id) => {
@@ -36,10 +36,11 @@ const Sidebar = () => {
 
   return (
     <div className="hrms-doc-sidebar">
-      <div className="side-head p-3">
+      <div className="side-head p-3 pb-0">
         <h5 className="fs-4">DocHRMS</h5>
-        <div className="inut-box px-2 bg-light mt-4 rounded-2">
+        <div className="inut-box px-2 bg-light mt-3 rounded-2">
           <input
+            onClick={() => setShowSearchbar(true)}
             type="text"
             placeholder="Search ..."
             className="border-0 bg-light py-1"

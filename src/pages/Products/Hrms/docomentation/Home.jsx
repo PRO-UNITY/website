@@ -1,10 +1,15 @@
+import { useState } from "react";
+import Search from "./Search";
 import Sidebar from "./Sidebar";
 
 const DocumentationHome = () => {
+  const [showSearchbar, setShowSearchbar] = useState(false);
+
   return (
     <div className="d-flex hrms-doc vh-100 bg-white w-100">
-      <Sidebar />
-      <div className="doc-content w-100 pt-5">
+      {showSearchbar && <Search setShowSearchbar={setShowSearchbar} />}
+      <Sidebar setShowSearchbar={setShowSearchbar} />
+      <div className="doc-content bg-light w-100 pt-5">
         <div className="row px-5 mx-5">
           <div className="col-lg-6">
             <h1 className="text-primary">Users</h1>
@@ -16,7 +21,7 @@ const DocumentationHome = () => {
         </div>
         <div className="row pb-5 create-user px-5 mx-5">
           <div className="col-lg-6">
-            <h2 className="fs-3 mt-5 text-primary" id="create-user">
+            <h2 className="fs-3 my-4 text-primary" id="create-user">
               Create User
             </h2>
             <p>
@@ -65,8 +70,8 @@ const DocumentationHome = () => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-6">
-            <div className="sidenote">
+          <div className="col-lg-6 ">
+            <div className="sidenote pt-5">
               <div className="box">
                 <div className="title px-3 py-2">
                   <p className="m-0">Request</p>
@@ -117,7 +122,7 @@ const DocumentationHome = () => {
         <div className="row  pb-5 px-5 mx-5">
           <div className="col-lg-6">
             <div className="content">
-              <h2 className="fs-3 mt-5 text-primary" id="get-user">
+              <h2 className="fs-3 my-4 text-primary" id="get-user">
                 Get User
               </h2>
               <p>
@@ -232,7 +237,7 @@ const DocumentationHome = () => {
         <div className="row pb-5 px-5 mx-5">
           <div className="col-lg-6">
             <div className="content">
-              <h2 className="fs-3 mt-5 text-primary" id="creat-task">
+              <h2 className="fs-3 my-4 text-primary" id="creat-task">
                 Create Task
               </h2>
               <p>
@@ -342,10 +347,11 @@ const DocumentationHome = () => {
           </div>
         </div>
         <hr />
+        {/*  */}
         <div className="row py-5 px-5 mx-5">
           <div className="col-lg-6">
             <div className="content">
-              <h2 className="fs-3  my-5 text-primary" id="get-user">
+              <h2 className="fs-3  my-4 text-primary" id="making">
                 Marking as Complete
               </h2>
               <p>
@@ -356,7 +362,192 @@ const DocumentationHome = () => {
               </p>
             </div>
           </div>
-          <div className="col-lg-6"></div>
+          <div className="col-lg-6">
+            <div className="sidenote">
+              <div className="box">
+                <div className="title  px-3 py-2">
+                  <p className="m-0">Request</p>
+                </div>
+                <div className="pre-code-block p-1">
+                  <pre className="chroma">
+                    <span className="text-secondary mx-2">1</span>PATCH
+                    /users/8CD63BEE-CEF3-4CEC-83FD-6E3C2C2A0B47/tasks/B0FA0790-9CB0-473F-8E0B-7BD36D6CE867
+                    {"\n"}
+                  </pre>
+                </div>
+              </div>
+              <div className="box">
+                <div className="title  px-3 py-2">
+                  <p className="m-0">Response</p>
+                </div>
+                <div className="pre-code-block p-1">
+                  <pre className="chroma">
+                    <span className="text-secondary mx-2">1</span>
+                    <span className="p">{"{"}</span> {"\n"}
+                    <span className="text-secondary mx-2">2</span>
+                    {"  "}
+                    <span className="nt">"id"</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">
+                      "B0FA0790-9CB0-473F-8E0B-7BD36D6CE867"
+                    </span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">3</span>
+                    {"  "}
+                    <span className="nt">"title"</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">"Buy Milk"</span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"  "}
+                    <span className="nt">"done"</span>
+                    <span className="p">:</span>{" "}
+                    <span className="kc">true</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">5</span>
+                    <span className="p">{"}"}</span>
+                    {"\n"}
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        {/*  */}
+        <div className="row pb-5 px-5 mx-5">
+          <div className="col-lg-6">
+            <div className="content">
+              <h2 className="fs-3 mb-3 mt-5 text-primary" id="listing-task">
+                Listing Tasks
+              </h2>
+              <p>
+                The endpoint <code>/users/:id/tasks</code> is responsible for
+                listing all tasks for a given user. It also accepts an optional
+                <code>status</code> querystring parameter, used to filter which
+                kind of tasks to list.
+              </p>
+              <h5>QueryString</h5>
+              <ul className="doc-list p-0">
+                <li className="title">
+                  <p>
+                    <span className="fw-semibold">status</span>{" "}
+                    <code>optional string</code>
+                  </p>
+                </li>
+                <li className="content">
+                  <p>
+                    Optional parameter to only show tasks in a specific
+                    condition.
+                  </p>
+                  <h5 className="py-3 ps-2">Enum values</h5>
+                  <ul className="doc-list p-0">
+                    <li className="title px-2">
+                      <p className="mb-0 mt-2 fw-semibold">all</p>
+                    </li>
+                    <li className="content px-2">
+                      <p>Shows all tasks, independent of their status.</p>
+                    </li>
+                    <hr />
+                    <li className="title px-2">
+                      <p className="m-0 fw-semibold">pending</p>
+                    </li>
+                    <li className="content px-2">
+                      <p>Shows only tasks not marked as completed.</p>
+                    </li>
+                    <hr />
+                    <li className="title px-2">
+                      <p className="m-0 fw-semibold">done</p>
+                    </li>
+                    <li className="content px-2">
+                      <p>Shows only completed tasks.</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="sidenote">
+              <div className="box mt-5">
+                <div className="title">
+                  <p className="m-0 py-2 px-3">Response</p>
+                </div>
+                <div className="pre-code-block p-1">
+                  <pre className="chroma">
+                    <span className="text-secondary mx-2"> 1</span>
+                    <span className="p">[</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2"> 2</span>
+                    {"  "}
+                    <span className="p">{"{"}</span> {"\n"}
+                    <span className="text-secondary mx-2"> 3</span>
+                    {"    "}
+                    <span className="nt">"id"</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">
+                      "B0FA0790-9CB0-473F-8E0B-7BD36D6CE867"
+                    </span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2"> 4</span>
+                    {"    "}
+                    <span className="nt">"title"</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">"Buy Milk"</span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2"> 5</span>
+                    {"    "}
+                    <span className="nt">"done"</span>
+                    <span className="p">:</span>{" "}
+                    <span className="kc">true</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2"> 6</span>
+                    {"  "}
+                    <span className="p">{"}"}</span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2"> 7</span>
+                    {"  "}
+                    <span className="p">{"{"}</span> {"\n"}
+                    <span className="text-secondary mx-2"> 8</span>
+                    {"    "}
+                    <span className="nt">"id"</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">
+                      "97FF0CC1-BC1C-4415-ABEA-39666F759EAD"
+                    </span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2"> 9</span>
+                    {"    "}
+                    <span className="nt">"title"</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">"Check for mail"</span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">10</span>
+                    {"    "}
+                    <span className="nt">"done"</span>
+                    <span className="p">:</span>{" "}
+                    <span className="kc">false</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">11</span>
+                    {"  "}
+                    <span className="p">{"}"}</span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">12</span>
+                    <span className="p">]</span>
+                    {"\n"}
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

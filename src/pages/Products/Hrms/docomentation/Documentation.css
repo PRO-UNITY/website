@@ -5,12 +5,17 @@
   background: var(--primary);
   color: #fff;
 }
+.side-head input {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
 .hrms-doc-sidebar .accordion .head i {
-  transform: rotate(0deg);
+  transform: rotate(-90deg);
   transition: 0.2s;
 }
 .hrms-doc-sidebar .accordion .head i.active {
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 
 .doc-content {
@@ -36,6 +41,7 @@
 
 .sidenote {
   flex-grow: 1;
+  position: sticky;
   align-self: flex-start;
   top: 0;
   min-width: 500px;
@@ -44,7 +50,7 @@
 }
 
 .sidenote .box {
-  background: #f0f0f0;
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
   margin-bottom: 12px;
@@ -60,4 +66,66 @@
   justify-content: space-between;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+}
+.sidenote .s2 {
+  color: rgb(0, 150, 35);
+}
+.doc-list .content > .doc-list {
+  border: 1px solid rgb(219, 219, 219) !important;
+  border-radius: 0 0 8px 8px;
+  margin: 0;
+}
+.doc-list .content > h5 {
+  margin: 0;
+  margin-top: 12px !important;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.ovaylay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #ffffff94;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+.search-wrapp {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.search-box {
+  margin-top: 100px;
+  background-color: #282828;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 8px rgba(11, 11, 11, 0.7);
+  width: 500px;
+}
+.search-box input {
+  border: 1px solid #535353;
+  background: #202020;
+  padding: 8px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 25px;
+  width: 100%;
+}
+#search-container .hints {
+  display: flex;
+  justify-content: space-between;
+}
+#search-container .hints li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: 8px;
+  color: #999;
 }
