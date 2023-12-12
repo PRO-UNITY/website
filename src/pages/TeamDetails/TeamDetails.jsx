@@ -16,7 +16,7 @@ const TeamDetails = () => {
   console.log(user);
   return (
     <Layout>
-      <div className="team-detail bg-primary py-5">
+      <div className="team-detail bg-primary py-5 h-auto">
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
@@ -33,10 +33,10 @@ const TeamDetails = () => {
                   {user[0]?.name}
                 </h2>
                 <h3 className="display-5 text-center">{user[0]?.occupation}</h3>
-                <h4 className="display-6 mt-5">Position:</h4>
-                <h4 className="display-6 mt-3">Function:</h4>
-                <h4 className="display-6 mt-3">Education:</h4>
-                <h4 className="display-6 mt-3">Social Media:</h4>
+                <h4 className="display-6 pt-5">Position:</h4>
+                <h4 className="display-6 pt-3">Function:</h4>
+                <h4 className="display-6 pt-3">Education:</h4>
+                <h4 className="display-6 pt-3">Social Media:</h4>
               </div>
             </div>
           </div>
