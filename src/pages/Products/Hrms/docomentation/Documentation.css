@@ -1,3 +1,10 @@
+.hrms-doc {
+  overflow: hidden;
+}
+.hrms-doc .row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
 .hrms-doc-sidebar {
   max-width: 280px;
   width: 100%;
@@ -5,10 +12,21 @@
   background: var(--primary);
   color: #fff;
 }
-.side-head input {
-  outline: none;
-  border: 0;
-  cursor: pointer;
+.hrms-doc-sidebar .side-head {
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+.responsive-navbar {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: var(--primary);
+  border-bottom: 1px solid rgb(215, 215, 215);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
 }
 .hrms-doc-sidebar .accordion .head i {
   transform: rotate(-90deg);
@@ -44,9 +62,7 @@
   position: sticky;
   align-self: flex-start;
   top: 0;
-  min-width: 500px;
   padding-top: 50px;
-  max-width: 50vw;
 }
 
 .sidenote .box {
@@ -128,4 +144,25 @@
   height: 30px;
   margin-top: 8px;
   color: #999;
+}
+@media only screen and (max-width: 830px) {
+  .hrms-doc-sidebar {
+    position: absolute;
+    transition: 0.5s;
+    height: 100vh;
+    left: -100%;
+    z-index: 99;
+  }
+  .responsive-navbar {
+    display: flex;
+  }
+  .hrms-doc-sidebar.show {
+    left: 0;
+  }
+  .hrms-doc-sidebar .side-head {
+    display: none;
+  }
+  .hrms-doc-sidebar .side-body {
+    margin-top: 70px;
+  }
 }

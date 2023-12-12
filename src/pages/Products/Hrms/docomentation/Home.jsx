@@ -1,27 +1,22 @@
-import { useState } from "react";
-import Search from "./Search";
 import Sidebar from "./Sidebar";
 
 const DocumentationHome = () => {
-  const [showSearchbar, setShowSearchbar] = useState(false);
-
   return (
     <div className="d-flex hrms-doc vh-100 bg-white w-100">
-      {showSearchbar && <Search setShowSearchbar={setShowSearchbar} />}
-      <Sidebar setShowSearchbar={setShowSearchbar} />
+      <Sidebar />
       <div className="doc-content bg-light w-100 pt-5">
-        <div className="row px-5 mx-5">
+        <div className="row px-2 px-lg-5 mx-lg-5 ">
           <div className="col-lg-6">
-            <h1 className="text-primary">Users</h1>
+            <h1 className="text-primary mt-4">Users</h1>
             <p className="py-4">
               Users are the principal model implemented here. It is needed to
               perform any other task in this <br /> API.
             </p>
           </div>
         </div>
-        <div className="row pb-5 create-user px-5 mx-5">
+        <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
           <div className="col-lg-6">
-            <h2 className="fs-3 my-4 text-primary" id="create-user">
+            <h2 className="fs-3 my-md-4 text-primary" id="create-user">
               Create User
             </h2>
             <p>
@@ -71,7 +66,7 @@ const DocumentationHome = () => {
             </ul>
           </div>
           <div className="col-lg-6 ">
-            <div className="sidenote pt-5">
+            <div className="sidenote p-0 pt-md-5">
               <div className="box">
                 <div className="title px-3 py-2">
                   <p className="m-0">Request</p>
@@ -116,10 +111,10 @@ const DocumentationHome = () => {
             </div>
           </div>
         </div>
-        <hr className="my-5" />
+        <hr className="my-md-5" />
 
         {/* Get User */}
-        <div className="row  pb-5 px-5 mx-5">
+        <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
           <div className="col-lg-6">
             <div className="content">
               <h2 className="fs-3 my-4 text-primary" id="get-user">
@@ -226,15 +221,15 @@ const DocumentationHome = () => {
             </div>
           </div>
         </div>
-        <hr className="my-5" />
+        <hr className="my-md-5" />
 
         {/* Tasks section */}
-        <div className="row  pt-5 px-5 mx-5">
+        <div className="row pt-3 pt-md-5 px-2 px-lg-5 mx-lg-5 ">
           <div className="col-lg-6">
             <h1 className="text-primary">Tasks</h1>
           </div>
         </div>
-        <div className="row pb-5 px-5 mx-5">
+        <div className="row pb-md-5 px-2 px-lg-5 mx-lg-5 ">
           <div className="col-lg-6">
             <div className="content">
               <h2 className="fs-3 my-4 text-primary" id="creat-task">
@@ -348,10 +343,10 @@ const DocumentationHome = () => {
         </div>
         <hr />
         {/*  */}
-        <div className="row py-5 px-5 mx-5">
+        <div className="row py-3 py-md-5 px-2 px-lg-5 mx-lg-5 ">
           <div className="col-lg-6">
             <div className="content">
-              <h2 className="fs-3  my-4 text-primary" id="making">
+              <h2 className="fs-3  my-md-4 text-primary" id="making">
                 Marking as Complete
               </h2>
               <p>
@@ -386,23 +381,23 @@ const DocumentationHome = () => {
                     <span className="p">{"{"}</span> {"\n"}
                     <span className="text-secondary mx-2">2</span>
                     {"  "}
-                    <span className="nt">"id"</span>
+                    <span className="nt">&quot;id&quot;</span>
                     <span className="p">:</span>{" "}
                     <span className="s2">
-                      "B0FA0790-9CB0-473F-8E0B-7BD36D6CE867"
+                      &quot;B0FA0790-9CB0-473F-8E0B-7BD36D6CE867&quot;
                     </span>
                     <span className="p">,</span>
                     {"\n"}
                     <span className="text-secondary mx-2">3</span>
                     {"  "}
-                    <span className="nt">"title"</span>
+                    <span className="nt">&quot;title&quot;</span>
                     <span className="p">:</span>{" "}
-                    <span className="s2">"Buy Milk"</span>
+                    <span className="s2">&quot;Buy Milk&quot;</span>
                     <span className="p">,</span>
                     {"\n"}
                     <span className="text-secondary mx-2">4</span>
                     {"  "}
-                    <span className="nt">"done"</span>
+                    <span className="nt">&quot;done&quot;</span>
                     <span className="p">:</span>{" "}
                     <span className="kc">true</span>
                     {"\n"}
@@ -417,10 +412,13 @@ const DocumentationHome = () => {
         </div>
         <hr />
         {/*  */}
-        <div className="row pb-5 px-5 mx-5">
+        <div className="row pb-5 px-2 px-lg-5 mx-lg-5 ">
           <div className="col-lg-6">
             <div className="content">
-              <h2 className="fs-3 mb-3 mt-5 text-primary" id="listing-task">
+              <h2
+                className="fs-3 mb-3 mt-2 mt-md-5 text-primary"
+                id="listing-task"
+              >
                 Listing Tasks
               </h2>
               <p>
@@ -485,23 +483,23 @@ const DocumentationHome = () => {
                     <span className="p">{"{"}</span> {"\n"}
                     <span className="text-secondary mx-2"> 3</span>
                     {"    "}
-                    <span className="nt">"id"</span>
+                    <span className="nt">&quot;id&quot;</span>
                     <span className="p">:</span>{" "}
                     <span className="s2">
-                      "B0FA0790-9CB0-473F-8E0B-7BD36D6CE867"
+                      &quot;B0FA0790-9CB0-473F-8E0B-7BD36D6CE867&quot;
                     </span>
                     <span className="p">,</span>
                     {"\n"}
                     <span className="text-secondary mx-2"> 4</span>
                     {"    "}
-                    <span className="nt">"title"</span>
+                    <span className="nt">&quot;title&quot;</span>
                     <span className="p">:</span>{" "}
-                    <span className="s2">"Buy Milk"</span>
+                    <span className="s2">&quot;Buy Milk&quot;</span>
                     <span className="p">,</span>
                     {"\n"}
                     <span className="text-secondary mx-2"> 5</span>
                     {"    "}
-                    <span className="nt">"done"</span>
+                    <span className="nt">&quot;done&quot;</span>
                     <span className="p">:</span>{" "}
                     <span className="kc">true</span>
                     {"\n"}
@@ -515,23 +513,23 @@ const DocumentationHome = () => {
                     <span className="p">{"{"}</span> {"\n"}
                     <span className="text-secondary mx-2"> 8</span>
                     {"    "}
-                    <span className="nt">"id"</span>
+                    <span className="nt">&quot;id&quot;</span>
                     <span className="p">:</span>{" "}
                     <span className="s2">
-                      "97FF0CC1-BC1C-4415-ABEA-39666F759EAD"
+                      &quot;97FF0CC1-BC1C-4415-ABEA-39666F759EAD&quot;
                     </span>
                     <span className="p">,</span>
                     {"\n"}
                     <span className="text-secondary mx-2"> 9</span>
                     {"    "}
-                    <span className="nt">"title"</span>
+                    <span className="nt">&quot;title&quot;</span>
                     <span className="p">:</span>{" "}
-                    <span className="s2">"Check for mail"</span>
+                    <span className="s2">&quot;Check for mail&quot;</span>
                     <span className="p">,</span>
                     {"\n"}
                     <span className="text-secondary mx-2">10</span>
                     {"    "}
-                    <span className="nt">"done"</span>
+                    <span className="nt">&quot;done&quot;</span>
                     <span className="p">:</span>{" "}
                     <span className="kc">false</span>
                     {"\n"}
