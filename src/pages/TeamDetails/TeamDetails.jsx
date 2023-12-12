@@ -33,10 +33,10 @@ const TeamDetails = () => {
                   {user[0]?.name}
                 </h2>
                 <h3 className="display-5 text-center">{user[0]?.occupation}</h3>
-                <h4 className="display-6 pt-5">Position:</h4>
-                <h4 className="display-6 pt-3">Function:</h4>
-                <h4 className="display-6 pt-3">Education:</h4>
-                <h4 className="display-6 pt-3">Social Media:</h4>
+                <h4 className="fs-3 pt-5">Position:</h4>
+                <h4 className="fs-3 pt-3">Function:</h4>
+                <h4 className="fs-3 pt-3">Education:</h4>
+                <h4 className="fs-3 pt-3">Social Media:</h4>
               </div>
             </div>
           </div>
