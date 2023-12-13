@@ -27,6 +27,20 @@ const Sidenavs = [
       { id: "create-task", name: "Link", path: "/products/hrms/documentation" },
     ],
   },
+  {
+    id: 3,
+    title: "Use Cases",
+    child: [
+      { id: "create-task", name: "Link", path: "/products/hrms/documentation" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Payment",
+    child: [
+      { id: "create-task", name: "Link", path: "/products/hrms/documentation" },
+    ],
+  },
 ];
 
 const Sidebar = () => {
@@ -41,9 +55,9 @@ const Sidebar = () => {
         <div className="side-body bg-light px-3">
           <Accordion defaultActiveKey="">
             {Sidenavs.map((item) => (
-              <Accordion.Item eventKey={item.id} key={item.id}>
+              <Accordion.Item eventKey={item.id} key={item.id} className="mb-1">
                 <Accordion.Header>
-                  <h5 className="h5 m-0">{item.title}</h5>
+                  <h5 className="fs-6 m-0">{item.title}</h5>
                 </Accordion.Header>
                 <Accordion.Body>
                   {item.child.map((link) => (

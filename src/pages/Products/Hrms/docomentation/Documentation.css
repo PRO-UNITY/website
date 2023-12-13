@@ -6,8 +6,8 @@
   margin-left: 0 !important;
 }
 .hrms-doc-sidebar {
-  max-width: 300px;
-  width: 100%;
+  min-width: 300px;
+  width: 320px !important;
   width: 100vh;
   background: #292929;
 }
@@ -15,8 +15,8 @@
   background: transparent;
   border: 0;
 }
-.accordion-body{
-  padding: 7px 20px !important
+.accordion-body {
+  padding: 7px 20px !important;
 }
 .hrms-doc-navbar .searchbar {
   border: 1px solid #ccc;
@@ -149,13 +149,14 @@
   padding-left: 10px;
   padding-top: 10px;
 }
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 1000px) {
   .hrms-doc-sidebar {
     position: absolute;
     transition: 0.5s;
     height: 100vh;
     left: -100%;
     z-index: 99;
+    display: none;
   }
   .responsive-navbar {
     display: flex;

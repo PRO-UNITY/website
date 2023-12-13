@@ -557,7 +557,7 @@ const DocumentationHome = () => {
             </div>
           </div>
         </div>
-        <Asaide />
+        {/* <Asaide /> */}
       </div>
     </HrmsDocumentationLayout>
   );
