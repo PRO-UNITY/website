@@ -6,12 +6,54 @@
   margin-left: 0 !important;
 }
 .hrms-doc-sidebar {
-  max-width: 280px;
+  max-width: 300px;
   width: 100%;
   width: 100vh;
-  background: var(--primary);
-  color: #fff;
+  background: #292929;
 }
+.accordion .accordion-item {
+  background: transparent;
+  border: 0;
+}
+.accordion-body{
+  padding: 7px 20px !important
+}
+.hrms-doc-navbar .searchbar {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 500px;
+  padding: 5px 10px;
+}
+.hrms-doc-navbar .searchbar input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.accordion-button {
+  background: transparent !important;
+  padding: 7px 10px !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+.accordion-button:focus {
+  outline: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.hrms-doc-asaide {
+  max-width: 230px;
+  width: 100%;
+  width: 100vh;
+}
+.hrms-doc-asaide a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5b5b5b;
+}
+
 .hrms-doc-sidebar .side-head {
   border-bottom: 1px solid rgb(180, 180, 180);
 }
@@ -38,6 +80,14 @@
 
 .doc-content {
   overflow: auto;
+}
+.doc-content::-webkit-scrollbar {
+  background-color: rgb(234, 234, 234);
+  width: 5px;
+}
+.doc-content::-webkit-scrollbar-thumb {
+  background-color: rgb(137, 137, 137);
+  border-radius: 5px;
 }
 .hrms-doc code {
   color: #2f2f2f;
@@ -98,52 +148,6 @@
   border-radius: 8px 8px 0 0;
   padding-left: 10px;
   padding-top: 10px;
-}
-.ovaylay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #ffffff94;
-  backdrop-filter: blur(10px);
-  z-index: 999;
-}
-.search-wrapp {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.search-box {
-  margin-top: 100px;
-  background-color: #282828;
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0px 1px 8px rgba(11, 11, 11, 0.7);
-  width: 500px;
-}
-.search-box input {
-  border: 1px solid #535353;
-  background: #202020;
-  padding: 8px 10px;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 25px;
-  width: 100%;
-}
-#search-container .hints {
-  display: flex;
-  justify-content: space-between;
-}
-#search-container .hints li {
-  padding: 8px 0;
-  display: flex;
-  align-items: center;
-  height: 30px;
-  margin-top: 8px;
-  color: #999;
 }
 @media only screen and (max-width: 830px) {
   .hrms-doc-sidebar {

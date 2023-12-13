@@ -1,94 +1,64 @@
+import { Accordion } from "react-bootstrap";
 import "./Documentation.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidenavs = [
   {
     id: 1,
-    title: "Users",
-    show: false,
+    title: "Getting Started",
     child: [
-      { id: "create-user", name: "Create User", path: "create-user" },
-      { id: "get-user", name: "Get User", path: "get-user" },
+      {
+        id: "create-user",
+        name: "Installation",
+        path: "installation",
+      },
+      {
+        id: "get-user",
+        name: "Get User",
+        path: "/products/hrms/documentation",
+      },
     ],
   },
   {
     id: 2,
-    title: "Tasks",
-    show: false,
+    title: "Api",
     child: [
-      { id: "create-task", name: "Create Task", path: "creat-task" },
-      { id: "marking", name: "Marking as Complete", path: "making" },
-      { id: "listing", name: "Listing Tasks", path: "listing-task" },
+      { id: "create-task", name: "Link", path: "/products/hrms/documentation" },
     ],
   },
 ];
 
 const Sidebar = () => {
-  const [data, setData] = useState(Sidenavs);
-  const [sideShow, setSideShow] = useState();
-
-  const handleToggle = (id) => {
-    setData((prevData) =>
-      prevData.map((item) =>
-        item.id === id ? { ...item, show: !item.show } : item
-      )
-    );
-  };
+  const [sideShow, setSideShow] = useState(true);
 
   return (
     <>
-      <div className="responsive-navbar text-white px-3  ">
-        <button
-          className="btn text-white"
-          onClick={() => setSideShow((prev) => !prev)}
-        >
-          <i className="fa-solid fa-bars fs-5"></i>
-        </button>
-        <h5 className="fs-4">DocHRMS</h5>
-        <span></span>
-      </div>
-      <div className={`hrms-doc-sidebar ${sideShow && "show"} `}>
-        <div className="side-head   p-md-3 pb-0">
-          <h5 className="fs-4">DocHRMS</h5>
-        </div>
-
-        <div className="side-body px-3">
-          {data.map((nav) => (
-            <div className="accordion pt-2" key={nav.id}>
-              <div
-                className="head cursor d-flex justify-content-between"
-                onClick={() => handleToggle(nav.id)}
-              >
-                <h5>{nav.title}</h5>
-                <i
-                  className={`fa-solid fa-sort-down ${nav.show && "active"}`}
-                ></i>
-              </div>
-              {nav.show && (
-                <div className={`body ps-2 `}>
-                  <ul className="p-0">
-                    {nav.child.map((childItem) => (
-                      <li
-                        key={childItem.id}
-                        className="py-1"
-                        onClick={() => setSideShow(false)}
-                      >
-                        <a
-                          href={`#${childItem.path} `}
-                          to={`/documentation/${childItem.id}`}
-                          className="text-light text-decoration-none"
-                        >
-                          {childItem.name}
-
-                          <i className=""></i>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          ))}
+      <div
+        className={`hrms-doc-sidebar py-4
+         bg-light border border-right ${sideShow && "show"} `}
+      >
+        <div className="side-body bg-light px-3">
+          <Accordion defaultActiveKey="">
+            {Sidenavs.map((item) => (
+              <Accordion.Item eventKey={item.id} key={item.id}>
+                <Accordion.Header>
+                  <h5 className="h5 m-0">{item.title}</h5>
+                </Accordion.Header>
+                <Accordion.Body>
+                  {item.child.map((link) => (
+                    <Link
+                      key={link.id}
+                      to={link.path}
+                      className="d-block text-dark text-decoration-none"
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </Accordion.Body>
+              </Accordion.Item>
+            ))}
+          </Accordion>
         </div>
       </div>
     </>

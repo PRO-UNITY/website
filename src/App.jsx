@@ -10,6 +10,7 @@ import {
   Hrms,
   HrmsAdminHome,
   HrmsAdminHomeEditProfile,
+  HrmsDocInstallation,
   HrmsDocumentation,
   HrmsNotification,
   HrmsServices,
@@ -61,10 +62,8 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
           {/* Hrms */}
           <Route path="/products/hrms" element={<Hrms />} />
-          <Route
-            path="products/hrms/documentation"
-            element={<HrmsDocumentation />}
-          />
+          <Route path="products/hrms/documentation" element={<HrmsDocumentation />} />
+          <Route path="products/hrms/documentation/installation" element={<HrmsDocInstallation />} />
           <Route
             path="/products/hrms/admin/auth/sign-in"
             element={<HrmsSignIn />}
