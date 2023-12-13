@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="hrms-doc-navbar d-flex align-items-center  justify-content-between px-5 py-3 border border-bottom">
+    <div className="hrms-doc-navbar d-flex flex-column flex-md-row gap-3 align-items-center  justify-content-between px-5 py-3 border border-bottom">
       <div className="hrms-doc-navbar-logo">
         <h4>Hrms</h4>
       </div>
