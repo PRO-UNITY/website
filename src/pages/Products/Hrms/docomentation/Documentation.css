@@ -99,7 +99,7 @@
   align-self: flex-start;
   top: 0;
   padding-top: 50px;
-  max-width: 450px;
+
   width: 100%;
 }
 
@@ -124,6 +124,12 @@
 .sidenote .s2 {
   color: rgb(0, 150, 35);
 }
+.sidenote .bool {
+  color: rgb(106, 1, 187);
+}
+.sidenote .num {
+  color: rgb(216, 131, 3);
+}
 .doc-list .content > .doc-list {
   border: 1px solid rgb(219, 219, 219) !important;
   border-radius: 0 0 8px 8px;
@@ -139,7 +145,7 @@
 }
 .hrms-doc-navbar {
   position: sticky;
-  top: 0
+  top: 0;
 }
 @media only screen and (max-width: 1000px) {
   .hrms-doc-navbar .fa-bars {

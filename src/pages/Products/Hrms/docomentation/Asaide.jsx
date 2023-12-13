@@ -4,28 +4,33 @@ import { useState } from "react";
 const Sidenavs = [
   {
     id: 1,
-    title: "Overview",
+    title: "Create User",
     path: "create-user",
   },
   {
     id: 2,
-    title: "Quick Start",
-    path: "get-user",
+    title: "Sign in",
+    path: "sign-in",
   },
   {
     id: 3,
-    title: "Configure your integration",
-    path: "creat-task",
+    title: "User Profile",
+    path: "user-profile",
   },
   {
     id: 4,
-    title: "Complate Your KYC",
-    path: "making",
+    title: "User Update",
+    path: "user-update",
   },
   {
     id: 5,
-    title: "Access APIs",
-    path: "listing-task",
+    title: "User Detail",
+    path: "user-detail",
+  },
+  {
+    id: 6,
+    title: "User Meneger",
+    path: "user-manager",
   },
 ];
 
