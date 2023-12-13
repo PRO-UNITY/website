@@ -44,7 +44,7 @@ const Sidenavs = [
 ];
 
 const Sidebar = () => {
-  const [sideShow, setSideShow] = useState(true);
+  const [sideShow, setSideShow] = useState(false);
 
   return (
     <>

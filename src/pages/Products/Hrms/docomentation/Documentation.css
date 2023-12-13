@@ -1,14 +1,13 @@
 .hrms-doc {
-  overflow: hidden;
+  background-color: red;
 }
 .hrms-doc .row {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
 .hrms-doc-sidebar {
-  min-width: 300px;
-  width: 320px !important;
-  background: #292929;
+  position: relative;
+  min-width: 250px;
 }
 .accordion .accordion-item {
   background: transparent;
@@ -76,7 +75,6 @@
 .hrms-doc-sidebar .accordion .head i.active {
   transform: rotate(0deg);
 }
-
 .doc-content {
   height: 91vh;
   overflow: auto;
@@ -156,10 +154,13 @@
     height: 100vh;
     left: -100%;
     z-index: 99;
-    display: none;
   }
-  .responsive-navbar {
-    display: flex;
+  .hrms-doc-navbar .searchbar {
+    width: auto;
+  }
+  .hrms-doc-asaide {
+    position: absolute;
+    right: 100%;
   }
   .hrms-doc-sidebar.show {
     left: 0;

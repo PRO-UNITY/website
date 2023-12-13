@@ -1,13 +1,15 @@
 import HrmsDocumentationLayout from "../../../../Layout/HrmsDocumentationLayout";
 import Asaide from "./Asaide";
+import Navbar from "./Navbar";
 
 const DocumentationHome = () => {
   return (
     <HrmsDocumentationLayout>
-      <div className="d-flex hrms-doc bg-light  bg-white w-100">
-        <div className="doc-content bg-light w-100 pt-5">
+   
+      <div className="d-flex hrms-doc bg-light  bg-white ">
+        <div className="doc-content bg-light pt-5">
           <div className="row px-2 px-lg-5 mx-lg-5 ">
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <h1 className="text-primary mt-4">Users</h1>
               <p className="py-4">
                 Users are the principal model implemented here. It is needed to
@@ -16,7 +18,7 @@ const DocumentationHome = () => {
             </div>
           </div>
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <h2 className="fs-3 my-md-4 text-primary" id="create-user">
                 Create User
               </h2>
@@ -66,7 +68,7 @@ const DocumentationHome = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-6 ">
+            <div className="col-xl-6 ">
               <div className="sidenote p-0 pt-md-5">
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -118,7 +120,7 @@ const DocumentationHome = () => {
 
           {/* Get User */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <div className="content">
                 <h2 className="fs-3 my-4 text-primary" id="get-user">
                   Get User
@@ -151,7 +153,7 @@ const DocumentationHome = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <div className="sidenote">
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -230,12 +232,12 @@ const DocumentationHome = () => {
 
           {/* Tasks section */}
           <div className="row pt-3 pt-md-5 px-2 px-lg-5 mx-lg-5 ">
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <h1 className="text-primary">Tasks</h1>
             </div>
           </div>
           <div className="row pb-md-5 px-2 px-lg-5 mx-lg-5 ">
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <div className="content">
                 <h2 className="fs-3 my-4 text-primary" id="creat-task">
                   Create Task
@@ -300,7 +302,7 @@ const DocumentationHome = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <div className="sidenote">
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -351,7 +353,7 @@ const DocumentationHome = () => {
           <hr />
           {/*  */}
           <div className="row py-3 py-md-5 px-2 px-lg-5 mx-lg-5 ">
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <div className="content">
                 <h2 className="fs-3  my-md-4 text-primary" id="making">
                   Marking as Complete
@@ -365,7 +367,7 @@ const DocumentationHome = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <div className="sidenote">
                 <div className="box">
                   <div className="title  px-3 py-2">
@@ -421,7 +423,7 @@ const DocumentationHome = () => {
           <hr />
           {/*  */}
           <div className="row pb-5 px-2 px-lg-5 mx-lg-5 ">
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <div className="content">
                 <h2
                   className="fs-3 mb-3 mt-2 mt-md-5 text-primary"
@@ -476,7 +478,7 @@ const DocumentationHome = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <div className="sidenote">
                 <div className="box mt-5">
                   <div className="title">
@@ -557,7 +559,7 @@ const DocumentationHome = () => {
             </div>
           </div>
         </div>
-        {/* <Asaide /> */}
+        <Asaide />
       </div>
     </HrmsDocumentationLayout>
   );

@@ -31,10 +31,15 @@ const Sidenavs = [
 
 const Asaide = () => {
   const [sideShow, setSideShow] = useState();
+  const [activeLink, setActiveLink] = useState(1);
 
   return (
     <>
-      <div className={`hrms-doc-asaide border border-left ${sideShow && "show"} ps-5`}>
+      <div
+        className={`hrms-doc-asaide border border-left ${
+          sideShow && "show"
+        } ps-5`}
+      >
         <div className="  pt-5">
           <h5 className="h6 m-0 fw-bold text-uppercase ">One This Page</h5>
         </div>
@@ -43,7 +48,10 @@ const Asaide = () => {
           {Sidenavs.map((nav) => (
             <a
               key={nav.id}
-              className=" d-block pt-1 text-decoration-none"
+              onClick={() => setActiveLink(nav.id)}
+              className={`d-block pt-1 text-decoration-none  ${
+                activeLink == nav.id && "fw-bold"
+              }`}
               href={`#${nav.path}`}
             >
               {nav.title}

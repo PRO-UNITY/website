@@ -4,7 +4,7 @@ import Sidebar from "../pages/Products/Hrms/docomentation/Sidebar";
 
 const HrmsDocumentationLayout = ({ children }) => {
   return (
-    <div className="bg-light vh-100  w-100">
+    <div className="bg-light vh-100 overflow-auto  ">
       <Navbar />
       <div className="d-flex bg-white">
         <Sidebar />
