@@ -22,49 +22,56 @@ const DocumentationHome = () => {
                 Create User
               </h2>
               <p>
-                Users can be created by issuing a <code>POST</code> request to
-                the <code>/users</code> endpoint. An user is required to have a{" "}
-                <code>name</code>. Users with same name are allowed to coexist.
+                Userlarni yaratish uchun <code>POST</code> so&apos;rovidan
+                foydalaniladi. Bir xil <pre className="d-inline">username </pre>
+                lardan foydalanib bo&apos;lmaydi
               </p>
               <h5>Attributes</h5>
               <hr />
               <ul className="doc-list p-0">
                 <li className="title">
                   <p className="m-0">
-                    name <code>string</code>
+                    username :<code>string</code>
+                  </p>
+                  <p className="m-0">
+                    first_name :<code>string</code>
+                  </p>
+                  <p className="m-0">
+                    last_name :<code>string</code>
+                  </p>
+                  <p className="m-0">
+                    email :<code>string</code>
+                  </p>
+                  <p className="m-0">
+                    password :<code>string</code>
+                  </p>
+                  <p className="m-0">
+                    confirm_password :<code>string</code>
                   </p>
                 </li>
-                <li className="content">
-                  <p>Name of the user being created</p>
+                <li className="content mt-3">
+                  <p className="m-0">
+                    / Takror <code>username</code> lardan foydalanib
+                    bo&apos;lmaydi
+                  </p>
+                  <p className="m-0">
+                    / <code>password</code> 8 ta belgidan ko&apos;p
+                    bo&apos;lishi kerak
+                  </p>
                 </li>
               </ul>
-              <p>
-                API will return the new user record, using the provided name,
-                and a generated ID:
-              </p>
 
-              <h5>Response Values</h5>
+              <h5>Response Status</h5>
               <hr />
               <ul className="doc-list p-0">
-                <li className="title">
-                  <p>
-                    ID <code>string</code>
-                  </p>
-                </li>
-                <li className="content">
-                  <p>Unique ID for the created user</p>
-                </li>
-                <hr />
-                <li className="title">
-                  <p className="p-0">
-                    name <code>string</code>
-                  </p>
-                </li>
-                <li className="content">
-                  <p className="m-0">
-                    The user’s name, as provided through the request
-                  </p>
-                </li>
+                <h6>
+                  Success:{" "}
+                  <pre className="text-success d-inline">201 Created</pre>
+                </h6>
+                <h6>
+                  Error:{" "}
+                  <pre className="text-danger d-inline">400 Bad Request</pre>
+                </h6>
               </ul>
             </div>
             <div className="col-xl-6 ">
@@ -75,11 +82,11 @@ const DocumentationHome = () => {
                   </div>
                   <div className="pre-code-block p-1">
                     <pre className="chroma">
-                      <span className="text-secondary mx-2">1</span>POST /users
+                      <span className="text-secondary mx-2">1</span>SignUp
+                      /users
                       {"\n"}
-                      <span className="text-secondary mx-2">2</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2">3</span>name=Fefo
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/food-delivery/auth/user_signup
                       {"\n"}
                     </pre>
                   </div>
@@ -87,27 +94,42 @@ const DocumentationHome = () => {
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">201 Created</span>
+                    </pre>
                   </div>
                   <div className="pre-code-block p-1">
-                    <pre className="chroma ">
-                      <span className="text-secondary mx-2">1</span>
-                      <span className="">{"{"}</span> {"\n"}
-                      <span className="text-secondary mx-2">2</span>{" "}
-                      <span className="text-secondary mx-2">
-                        &quot;id&quot;
-                      </span>
-                      <span>:</span>{" "}
-                      <span className="">
-                        &quot;FA3901CC-F667-4AA0-8CFE-B6B1C5058DFA&quot;
-                      </span>
-                      <span>,</span> {"\n"}
-                      <span className="text-secondary mx-2">3</span>
+                    <h6 className="ms-2 m-0 h6 text-success text-center">
+                      Success
+                    </h6>
+
+                    <pre className="chroma">
+                      <span className="text-secondary mx-2"> 1</span>
+                      <span className="p">{"{"}</span>
+                      {"\n"}
+                      <span className="text-secondary mx-2"> 2</span>
                       {"  "}
-                      <span>&quot;name&quot;</span>
-                      <span>:</span>{" "}
-                      <span className="s2">&quot;Fefo&quot;</span> {"\n"}
-                      <span className="text-secondary mx-2">4</span>
-                      <span>{"}"}</span>
+                      <span className="p">&quot;token&quot;{" {"}</span> {"\n"}
+                      <span className="text-secondary mx-2"> 3</span>
+                      {"    "}
+                      <span className="nt">&quot;refresh&quot;</span>
+                      <span className="p">:</span>{" "}
+                      <span className="s2">&quot;string&quot;</span>
+                      <span className="p">,</span>
+                      {"\n"}
+                      <span className="text-secondary mx-2"> 3</span>
+                      {"    "}
+                      <span className="nt">&quot;access&quot;</span>
+                      <span className="p">:</span>{" "}
+                      <span className="s2">&quot;string&quot;</span>
+                      <span className="p">,</span>
+                      {"\n"}
+                      <span className="text-secondary mx-2"> 4</span>
+                      {"  "}
+                      <span className="p">{"}"}</span>
+                      <span className="p">,</span>
+                      {"\n"} <span className="text-secondary mx-2">5</span>
+                      <span className="p">{"}"}</span>
                       {"\n"}
                     </pre>
                   </div>
@@ -122,33 +144,37 @@ const DocumentationHome = () => {
             <div className="col-xl-6">
               <div className="content">
                 <h2 className="fs-3 my-4 text-primary" id="get-user">
-                  Get User
+                  Sign in
                 </h2>
                 <p>
-                  To get all known users, issue a <code>GET</code> request to{" "}
-                  <code>/users</code>. The endpoint will return a list
-                  containing all users, together with their IDs
+                  Foydalanuvchilar tizimga kirishi{" "}
+                  <pre className="d-inline">username</pre> va{" "}
+                  <pre className="d-inline">password</pre> yordamida amalga
+                  oshiriladi <code>POST</code> so'rovi yordamida amalga
+                  oshiriladi.
                 </p>
                 <h5>Attributes</h5>
                 <hr />
                 <ul className="doc-list p-0">
                   <li className="title">
-                    <p className="m-0 fw-semibold">
-                      ID <code>string</code>
+                    <p className="m-0">
+                      username :<code>string</code>
+                    </p>
+                    <p className="m-0">
+                      password :<code>string</code>
                     </p>
                   </li>
-                  <li className="content">
-                    <p className="">Unique ID for the created user</p>
-                  </li>
-                  <hr />
-                  <li className="title">
-                    <p className="m-0 fw-semibold">
-                      name <code>string</code>
-                    </p>
-                  </li>
-                  <li className="content">
-                    <p>The user’s name</p>
-                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">400 Bad Request</pre>
+                  </h6>
                 </ul>
               </div>
             </div>
@@ -160,7 +186,10 @@ const DocumentationHome = () => {
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>GET /users
+                      <span className="text-secondary mx-2">1</span>LOGIN /users
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/food-delivery/auth/user_sigin
                       {"\n"}
                     </pre>
                   </div>
@@ -168,61 +197,192 @@ const DocumentationHome = () => {
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
                   </div>
-                  <div className="pre-code-block py-2">
+                  <div className="pre-code-block p-1">
+                    <h6 className="ms-2 m-0 h6 text-success text-center">
+                      Success
+                    </h6>
+
                     <pre className="chroma">
                       <span className="text-secondary mx-2"> 1</span>
-                      <span>[</span>
+                      <span className="p">{"{"}</span>
                       {"\n"}
                       <span className="text-secondary mx-2"> 2</span>
                       {"  "}
-                      <span>{"{"}</span>
+                      <span className="p">&quot;token&quot;{" {"}</span> {"\n"}
+                      <span className="text-secondary mx-2"> 3</span>
+                      {"    "}
+                      <span className="nt">&quot;refresh&quot;</span>
+                      <span className="p">:</span>{" "}
+                      <span className="s2">&quot;string&quot;</span>
+                      <span className="p">,</span>
                       {"\n"}
                       <span className="text-secondary mx-2"> 3</span>
-                      {"\t"}
-                      <span>&quot;id&quot;</span>
-                      <span>:</span>{" "}
-                      <span className="s2">
-                        &quot;FA3901CC-F667-4AA0-8CFE-B6B1C5058DFA&quot;
-                      </span>
-                      <span>,</span> {"\n"}
+                      {"    "}
+                      <span className="nt">&quot;access&quot;</span>
+                      <span className="p">:</span>{" "}
+                      <span className="s2">&quot;string&quot;</span>
+                      <span className="p">,</span>
+                      {"\n"}
                       <span className="text-secondary mx-2"> 4</span>
-                      {"\t"}
-                      <span>&quot;name&quot;</span>
-                      <span>:</span>{" "}
-                      <span className="s2">&quot;Fefo&quot;</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 5</span>
                       {"  "}
-                      <span>{"}"}</span>
-                      <span>,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 6</span>
-                      {"  "}
-                      <span>{"{"}</span> {"\n"}
-                      <span className="text-secondary mx-2"> 7</span>
-                      {"\t"}
-                      <span>&quot;id&quot;</span>
-                      <span>:</span>{" "}
-                      <span className="s2">
-                        &quot;BA77D274-12B1-487D-8C9E-72F0D37BAC05&quot;
-                      </span>
-                      <span>,</span> {"\n"}
-                      <span className="text-secondary mx-2"> 8</span>
-                      {"\t"}
-                      <span>&quot;name&quot;</span>
-                      <span>:</span>{" "}
-                      <span className="s2">&quot;Vito&quot;</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 9</span>
-                      {"  "}
-                      <span>{"}"}</span>
-                      {"\n"}
-                      <span className="text-secondary ms-3 me-1">10</span>
-                      <span>]</span>
+                      <span className="p">{"}"}</span>
+                      <span className="p">,</span>
+                      {"\n"} <span className="text-secondary mx-2">5</span>
+                      <span className="p">{"}"}</span>
                       {"\n"}
                     </pre>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* User Profile */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="get-user">
+                  User Profile
+                </h2>
+                <p>
+                  Foydalanuvchilarga tegishli ma'lumootlarni olish uchun{" "}
+                  <code>GET</code> so'rovi yordamida amalga oshiriladi
+                </p>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /users
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/food-delivery/auth/user_profiles
+                      {"\n"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma">
+                    <span className="text-secondary mx-2">1</span>
+                    <span className="p">{"{"}</span> {"\n"}
+                    <span className="text-secondary mx-2">2</span>
+                    {"  "}
+                    <span className="nt">&quot;id&quot;</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">number</span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">3</span>
+                    {"  "}
+                    <span className="nt">&quot;username&quot;</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">&quot;string&quot;</span>
+                    <span className="p">,</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"  "}
+                    <span className="nt">&quot;first_name&quot;</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">&quot;string&quot;</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"  "}
+                    <span className="nt">&quot;last_name&quot;</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">&quot;string&quot;</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"  "}
+                    <span className="nt">&quot;avatar&quot;</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">&quot;string&quot;</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"  "}
+                    <span className="nt">&quot;email&quot;</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">&quot;string&quot;</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"  "}
+                    <span className="nt">&quot;phone&quot;</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">&quot;string&quot;</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"  "}
+                    <span className="nt">&quot;user_id&quot;</span>
+                    <span className="p">:</span>{" "}
+                    <span className="s2">&quot;number&quot;</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"  "}
+                    <span className="nt">&quot;groups&quot;</span>
+                    <span className="p">:</span> <span className="">{"["}</span>{" "}
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"    "}
+                    <span className="">{"{"}</span> {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"    "}
+                    <span className=" mx-2">&quot;id&quot;</span>
+                    <span>:</span>{" "}
+                    <span className="">
+                      &quot;FA3901CC-F667-4AA0-8CFE-B6B1C5058DFA&quot;
+                    </span>
+                    <span>,</span> {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"     "}
+                    <span>&quot;name&quot;</span>
+                    <span>:</span> <span className="s2">&quot;Fefo&quot;</span>{" "}
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"     "}
+                    <span>{"}"}</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">4</span>
+                    {"   "}
+                    <span>{"]"}</span>
+                    {"\n"}
+                    <span className="text-secondary mx-2">5</span>
+                    <span className="p">{"}"}</span>
+                    {"\n"}
+                  </pre>
                 </div>
               </div>
             </div>
