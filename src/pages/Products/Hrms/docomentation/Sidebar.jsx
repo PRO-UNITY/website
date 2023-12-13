@@ -1,6 +1,5 @@
 import { Accordion } from "react-bootstrap";
 import "./Documentation.css";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Sidenavs = [
@@ -43,14 +42,13 @@ const Sidenavs = [
   },
 ];
 
-const Sidebar = () => {
-  const [sideShow, setSideShow] = useState(false);
-
+// eslint-disable-next-line react/prop-types
+const Sidebar = ({ showSidebar }) => {
   return (
     <>
       <div
         className={`hrms-doc-sidebar py-4
-         bg-light border border-right ${sideShow && "show"} `}
+         bg-light border border-right ${showSidebar && "show"} `}
       >
         <div className="side-body bg-light px-3">
           <Accordion defaultActiveKey="">

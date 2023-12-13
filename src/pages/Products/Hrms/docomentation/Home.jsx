@@ -17,6 +17,7 @@ const DocumentationHome = () => {
               </p>
             </div>
           </div>
+          {/*  */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <h2 className="fs-3 my-md-4 text-primary" id="create-user">
