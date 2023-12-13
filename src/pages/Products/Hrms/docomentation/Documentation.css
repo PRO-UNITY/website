@@ -8,7 +8,6 @@
 .hrms-doc-sidebar {
   min-width: 300px;
   width: 320px !important;
-  width: 100vh;
   background: #292929;
 }
 .accordion .accordion-item {
@@ -79,6 +78,7 @@
 }
 
 .doc-content {
+  height: 91vh;
   overflow: auto;
 }
 .doc-content::-webkit-scrollbar {

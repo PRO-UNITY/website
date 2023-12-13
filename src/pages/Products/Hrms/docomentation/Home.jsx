@@ -4,7 +4,7 @@ import Asaide from "./Asaide";
 const DocumentationHome = () => {
   return (
     <HrmsDocumentationLayout>
-      <div className="d-flex hrms-doc bg-light vh-100 bg-white w-100">
+      <div className="d-flex hrms-doc bg-light  bg-white w-100">
         <div className="doc-content bg-light w-100 pt-5">
           <div className="row px-2 px-lg-5 mx-lg-5 ">
             <div className="col-lg-6">

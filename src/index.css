@@ -6,7 +6,8 @@
   --secondary: yellow;
 }
 html {
-  scroll-behavior: smooth;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 .fw-medium {
   font-weight: 500 !important;
