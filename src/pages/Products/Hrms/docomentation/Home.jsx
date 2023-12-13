@@ -1,11 +1,9 @@
 import HrmsDocumentationLayout from "../../../../Layout/HrmsDocumentationLayout";
 import Asaide from "./Asaide";
-import Navbar from "./Navbar";
 
 const DocumentationHome = () => {
   return (
     <HrmsDocumentationLayout>
-   
       <div className="d-flex hrms-doc bg-light  bg-white ">
         <div className="doc-content bg-light pt-5">
           <div className="row px-2 px-lg-5 mx-lg-5 ">

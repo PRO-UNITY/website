@@ -43,7 +43,7 @@ const Sidenavs = [
 ];
 
 // eslint-disable-next-line react/prop-types
-const Sidebar = ({ showSidebar }) => {
+const Sidebar = ({ showSidebar, setshowSidebar }) => {
   return (
     <>
       <div
@@ -63,6 +63,7 @@ const Sidebar = ({ showSidebar }) => {
                       key={link.id}
                       to={link.path}
                       className="d-block text-dark text-decoration-none"
+                      onClick={() => setshowSidebar(false)}
                     >
                       {link.name}
                     </Link>

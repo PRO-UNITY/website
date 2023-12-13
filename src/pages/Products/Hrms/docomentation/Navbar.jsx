@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ setshowSidebar }) => {
   return (
-    <div className="hrms-doc-navbar bg-light  sticky-sm-top position-md-relative top-0 d-flex flex-column flex-md-row gap-3 align-items-center  justify-content-between px-md-5 py-3 border border-bottom">
+    <div className="hrms-doc-navbar bg-light   d-flex flex-column flex-md-row gap-3 align-items-center  justify-content-between px-md-5 py-3 border border-bottom">
       <i
-        className="fa-solid fa-bars position-absolute top-0 start-0 m-3 "
+        className="fa-solid fa-bars position-absolute top-0 start-0 m-3 my-4 "
         onClick={() => setshowSidebar((prev) => !prev)}
       ></i>
       <div className="hrms-doc-navbar-logo">

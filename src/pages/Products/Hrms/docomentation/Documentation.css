@@ -137,6 +137,10 @@
   padding-left: 10px;
   padding-top: 10px;
 }
+.hrms-doc-navbar {
+  position: sticky;
+  top: 0
+}
 @media only screen and (max-width: 1000px) {
   .hrms-doc-navbar .fa-bars {
     display: block;
@@ -161,6 +165,6 @@
 }
 @media only screen and (max-width: 425px) {
   .sidenote {
-    max-width: 275px;
+    width: 275px;
   }
 }
