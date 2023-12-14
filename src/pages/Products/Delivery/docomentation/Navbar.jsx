@@ -9,7 +9,7 @@ const Navbar = ({ setshowSidebar }) => {
         onClick={() => setshowSidebar((prev) => !prev)}
       ></i>
       <div className="hrms-doc-navbar-logo">
-        <h4>Hrms</h4>
+        <h4>Delivery</h4>
       </div>
       <div className="searchbar">
         <i className="fa-solid fa-magnifying-glass"></i>
