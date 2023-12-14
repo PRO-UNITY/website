@@ -29,6 +29,11 @@ export { default as HrmsServices } from "./Products/Hrms/admin/Hrms-services/Hrm
 export { default as HrmsNotification } from "./Products/Hrms/admin/Hrms-notification/Hrms-notification";
 
 // Delivery
+export { default as DeliveryDocumentation } from "./Products/Delivery/docomentation/Home";
+export { default as DeliveryDocUser } from "./Products/Delivery/docomentation/Users";
+export { default as DeliveryDocInstallation } from "./Products/Delivery/docomentation/Installation";
+
+// Delivery admin
 export { default as Delivery } from "./Products/Delivery/Delivery";
 export { default as DeliverySignIn } from "./Products/Delivery/admin/Delivery-sign-in/Delivery-sign-in";
 export { default as DeliverySignUp } from "./Products/Delivery/admin/Delivery-sign-up/Delivery-sign-up";
