@@ -33,6 +33,9 @@ import {
   DeliveryTaskList,
   DeliveryServices,
   DeliveryNotification,
+  DeliveryDocumentation,
+  DeliveryDocUser,
+  DeliveryDocInstallation,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { useState } from "react";
@@ -96,6 +99,9 @@ function App() {
           />
           {/* Delivery */}
           <Route path="/products/delivery" element={<Delivery />} />
+          <Route path="products/delivery/documentation" element={<DeliveryDocumentation />} />
+          <Route path="products/delivery/documentation/users" element={<DeliveryDocUser />} />  
+          <Route path="products/delivery/documentation/installation" element={<DeliveryDocInstallation />} />
           <Route
             path="/products/delivery/admin/auth/sign-in"
             element={<DeliverySignIn />}
