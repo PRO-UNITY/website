@@ -152,7 +152,6 @@ const Users = () => {
                     <h6 className="ms-2 m-0 h6 text-danger text-center">
                       Error
                     </h6>
-
                     <pre className="chroma">
                       <span className="text-secondary mx-2"> 1</span>
                       <span className="p">{"{"}</span>
@@ -166,6 +165,58 @@ const Users = () => {
                       {"    "}
                       <span className="s2">
                         &quot;This field must be unique.&quot;
+                      </span>
+                      <span className="p">,</span>
+                      {"\n"}
+                      <span className="text-secondary mx-2"> 5</span>
+                      {"  "}
+                      <span className="p">]</span>
+                      <span className="p">,</span>
+                      {"\n"} <span className="text-secondary mx-2">6</span>
+                      <span className="p">{"}"}</span>
+                      {"\n"}
+                    </pre>
+                    <hr />
+                    <pre className="chroma">
+                      <span className="text-secondary mx-2"> 1</span>
+                      <span className="p">{"{"}</span>
+                      {"\n"}
+                      <span className="text-secondary mx-2"> 3</span>
+                      {"  "}
+                      <span className="nt">
+                        &quot;email&quot; || &quot;username&quot;
+                      </span>
+                      <span className="p">:</span> <span>[</span>
+                      {"\n"}
+                      <span className="text-secondary mx-2"> 4</span>
+                      {"    "}
+                      <span className="s2">
+                        &quot;This field must be unique.&quot;
+                      </span>
+                      <span className="p">,</span>
+                      {"\n"}
+                      <span className="text-secondary mx-2"> 5</span>
+                      {"  "}
+                      <span className="p">]</span>
+                      <span className="p">,</span>
+                      {"\n"} <span className="text-secondary mx-2">6</span>
+                      <span className="p">{"}"}</span>
+                      {"\n"}
+                    </pre>
+                    <hr />
+                    <pre className="chroma">
+                      <span className="text-secondary mx-2"> 1</span>
+                      <span className="p">{"{"}</span>
+                      {"\n"}
+                      <span className="text-secondary mx-2"> 3</span>
+                      {"  "}
+                      <span className="nt">&quot;password&quot;</span>
+                      <span className="p">:</span> <span>[</span>
+                      {"\n"}
+                      <span className="text-secondary mx-2"> 4</span>
+                      {"    "}
+                      <span className="s2">
+                        &quot;This password is too short. It must contain at least 8 characters.&quot;
                       </span>
                       <span className="p">,</span>
                       {"\n"}
