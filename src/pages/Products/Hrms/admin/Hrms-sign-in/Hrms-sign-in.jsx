@@ -1,9 +1,23 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Hrms-sign-in.css";
+import { useDispatch } from "react-redux";
+import { signInUser } from "../../redux/slices/authSlice";
 
 const HrmsSignIn = () => {
   const navigate = useNavigate();
-  const handleLogin = () => navigate("/products/hrms/admin");
+  const dispatch = useDispatch();
+
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get("email");
+    const password = formData.get("password");
+    dispatch(signInUser({ email, password }));
+    // navigate("/products/hrms/admin")
+  };
+
+
   return (
     <section className="auth hrms-dash w-100 vh-100">
       <main className="form-signin  h-100  w-100 d-flex justify-content-center align-items-center m-auto">
@@ -16,6 +30,7 @@ const HrmsSignIn = () => {
           </h1>
           <div className="form-floating">
             <input
+              name="email"
               type="email"
               className="form-control  my-4 rounded-3"
               id="floatingInput"
@@ -25,6 +40,7 @@ const HrmsSignIn = () => {
           </div>
           <div className="form-floating rounded-3">
             <input
+              name="password"
               type="password"
               className="form-control"
               id="floatingPassword"

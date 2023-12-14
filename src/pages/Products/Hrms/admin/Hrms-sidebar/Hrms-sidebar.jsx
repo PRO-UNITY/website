@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Hrms-sidebar.css";
 import { useContext } from "react";
 import { ActiveNavContext } from "../../../../../context/ActiveNav";
+import { useDispatch } from "react-redux";
+import { logOut } from "../../redux/slices/authSlice";
+import { useSelector } from 'react-redux';
 
 const sideNavs = [
   { id: 1, path: "/products/hrms/admin", name: "Dashboard", icon: "fa-house" },
@@ -32,6 +35,17 @@ const sideNavs = [
 ];
 const HrmsSidebar = () => {
   const { activeHrmsDash, setActiveHrmsDash } = useContext(ActiveNavContext);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const user = useSelector((state) => state.user);
+  console.log(user);
+
+  const handleLogout = () => {
+    dispatch(logOut());
+    navigate("/products/hrms/admin/auth/sign-in");
+  }
+
   return (
     <div>
       <div className="sidebar d-flex  border-secondary border-end  flex-column flex-shrink-0 p-2 ">
@@ -49,14 +63,12 @@ const HrmsSidebar = () => {
               <Link
                 to={item.path}
                 onClick={() => setActiveHrmsDash(item.id)}
-                className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark ${
-                  activeHrmsDash == item.id ? "active text-white " : ""
-                }rounded-0`}
+                className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark ${activeHrmsDash == item.id ? "active text-white " : ""
+                  }rounded-0`}
               >
                 <i
-                  className={`fa-solid fs-5  me-md-3 ${
-                    activeHrmsDash == item.id ? "  " : ""
-                  }  text-secondary ${item.icon} `}
+                  className={`fa-solid fs-5  me-md-3 ${activeHrmsDash == item.id ? "  " : ""
+                    }  text-secondary ${item.icon} `}
                 ></i>
                 <span>{item.name}</span>
               </Link>
@@ -65,15 +77,15 @@ const HrmsSidebar = () => {
 
           <li className="nav-item">
             <hr />
-            <Link
-              to={"/products/hrms/admin/auth/sign-in"}
+            <button
+              onClick={handleLogout}
               className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark`}
             >
               <i
                 className={`fa-solid fa-arrow-right-from-bracket fs-5  text-secondary  me-md-3`}
               ></i>
               <span>Log Out</span>
-            </Link>
+            </button>
           </li>
         </ul>
         <div className="profile  d-flex flex-column justify-content-center align-items-center">
