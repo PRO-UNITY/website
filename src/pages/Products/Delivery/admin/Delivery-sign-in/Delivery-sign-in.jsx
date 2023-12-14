@@ -3,7 +3,7 @@ import "./Delivery-sign-in.css";
 
 const DeliverySignIn = () => {
   const navigate = useNavigate();
-  const handleLogin = () => navigate("/products/hrms/admin");
+  const handleLogin = () => navigate("/products/delivery/admin");
   return (
     <section className="auth hrms-dash w-100 vh-100">
       <main className="form-signin  h-100  w-100 d-flex justify-content-center align-items-center m-auto">
@@ -63,7 +63,7 @@ const DeliverySignIn = () => {
           <div className="text-center mt-3 text-center">
             Don&apos;t have you account?{" "}
             <Link
-              to={"/products/hrms/admin/auth/sign-up"}
+              to={"/products/delivery/admin/auth/sign-up"}
               className="fw-medium text-decoration-none"
             >
               Sign up

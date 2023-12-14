@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const DeliverySignUp = () => {
   const navigate = useNavigate();
-  const handleSignUp = () => navigate("/products/hrms/admin");
+  const handleSignUp = () => navigate("/products/delivery/admin");
   return (
     <section className="auth hrms-dash w-100 vh-100">
       <main className="form-signin  h-100  w-100 d-flex justify-content-center align-items-center m-auto">
@@ -54,12 +54,12 @@ const DeliverySignUp = () => {
             className="btn rounde-0 mt-3 btn-primary w-100 py-3   text-white rounded-3"
             type="submit"
           >
-            Sign in
+            Sign up
           </button>
           <div className="text-center mt-3 text-center">
             Don&apos;t have you account?{" "}
             <Link
-              to={"/products/hrms/admin/auth/sign-in"}
+              to={"/products/delivery/admin/auth/sign-in"}
               className="fw-medium text-decoration-none"
             >
               Sign in
