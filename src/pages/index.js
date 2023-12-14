@@ -15,7 +15,8 @@ export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 // Hrms
 export { default as Hrms } from "./Products/Hrms/Hrms";
 export { default as HrmsDocumentation } from "./Products/Hrms/docomentation/Home";
-export { default as HrmsDocUser } from "./Products/Hrms/docomentation/Users";
+export { default as HrmsDocUser } from "./Products/Hrms/docomentation/API/Users";
+export { default as HrmsDocKitchen } from "./Products/Hrms/docomentation/API/Kitchen";
 export { default as HrmsDocInstallation } from "./Products/Hrms/docomentation/Installation";
 // Hrms admin
 export { default as HrmsSignIn } from "./Products/Hrms/admin/Hrms-sign-in/Hrms-sign-in";

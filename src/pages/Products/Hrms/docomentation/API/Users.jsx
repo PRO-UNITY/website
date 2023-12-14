@@ -1,5 +1,52 @@
-import HrmsDocumentationLayout from "../../../../Layout/HrmsDocumentationLayout";
-import Asaide from "./Asaide";
+import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
+import Asaide from "../Asaide";
+const Sidenavs = [
+  {
+    id: 1,
+    title: "Create User",
+    path: "create-user",
+  },
+  {
+    id: 2,
+    title: "Sign in",
+    path: "sign-in",
+  },
+  {
+    id: 3,
+    title: "User Profile",
+    path: "user-profile",
+  },
+  {
+    id: 4,
+    title: "User Update",
+    path: "user-update",
+  },
+  {
+    id: 5,
+    title: "User Detail",
+    path: "user-detail",
+  },
+  {
+    id: 6,
+    title: "User Meneger",
+    path: "user-manager",
+  },
+  {
+    id: 7,
+    title: "User Delivery",
+    path: "user-delivery",
+  },
+  {
+    id: 8,
+    title: "User Delivery with ID",
+    path: "user-delivery-id",
+  },
+  {
+    id: 9,
+    title: "User Delivery Update",
+    path: "user-delivery-update",
+  },
+];
 
 const Users = () => {
   return (
@@ -1578,7 +1625,7 @@ const Users = () => {
 
           {/* Tasks section */}
         </div>
-        <Asaide />
+        <Asaide Sidenavs={Sidenavs} />
       </div>
     </HrmsDocumentationLayout>
   );
