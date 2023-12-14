@@ -31,21 +31,7 @@ const AsaideNavs = [
     title: "Update Kitchen",
     path: "update-kitchen",
   },
-  {
-    id: 7,
-    title: "User Delivery",
-    path: "user-delivery",
-  },
-  {
-    id: 8,
-    title: "User Delivery with ID",
-    path: "user-delivery-id",
-  },
-  {
-    id: 9,
-    title: "User Delivery Update",
-    path: "user-delivery-update",
-  },
+  
 ];
 const Kitchen = () => {
   return (
