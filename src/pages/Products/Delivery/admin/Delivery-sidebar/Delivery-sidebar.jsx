@@ -66,7 +66,7 @@ const DeliverySidebar = () => {
           <li className="nav-item">
             <hr />
             <Link
-              to={"/products/hrms/auth/sign-in"}
+              to={"/products/delivery/admin/auth/sign-in"}
               className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark`}
             >
               <i

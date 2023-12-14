@@ -1,6 +1,6 @@
 import { Dropdown, DropdownButton, Form, InputGroup } from "react-bootstrap";
-import HrmsAdminLayout from "../../../../../Layout/Hrms-admin-layout";
 import { useRef } from "react";
+import DeliveryAdminLayout from "../../../../../Layout/Delivery-admin-layout";
 
 const EditProfile = () => {
   const hiddenFileInput = useRef(null);

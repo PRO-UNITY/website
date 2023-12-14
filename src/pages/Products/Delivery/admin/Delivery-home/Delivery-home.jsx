@@ -87,7 +87,7 @@ const DeliveryHome = () => {
                         {showMenu && (
                           <div className="menu-open  p-3 rounded d-flex  justify-content-end flex-column gap-2">
                             <Link
-                              to={"/products/hrms/admin/edit-profile"}
+                              to={"/products/delivery/admin/edit-profile"}
                               className="btn btn-primary"
                             >
                               Edit Profile
