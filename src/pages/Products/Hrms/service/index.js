@@ -34,11 +34,6 @@ export const loginUser = async (user) => {
         headers: getHeader(),
         body: JSON.stringify(user),
     });
-
-    if (response && typeof response === 'object') {
-        console.log('response : ' + response);
-    }
-
     if (!response.ok) {
         // console.log('response ok : ' + response.ok);
         throw new Error('Invalid response structure. Token property missing.');

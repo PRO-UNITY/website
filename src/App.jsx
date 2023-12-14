@@ -40,6 +40,7 @@ import {
 import { ActiveNavContext } from "./context/ActiveNav";
 import { useState } from "react";
 import DeliveryHome from "./pages/Products/Delivery/admin/Delivery-home/Delivery-home";
+import HrmsCalendar from "./pages/Products/Hrms/admin/Hrms-calendar/HrmsCalendar";
 
 // const optimizely = createInstance({
 //   sdkKey: "YOUR_OPTIMIZELY_SDK_KEY", // Optimizely SDK key
@@ -93,6 +94,7 @@ function App() {
           <Route path="/products/hrms/statistic" element={<HrmsStatistic />} />
           <Route path="/products/hrms/task-list" element={<HrmsTaskList />} />
           <Route path="/products/hrms/services" element={<HrmsServices />} />
+          <Route path="/products/hrms/calendar" element={<HrmsCalendar />} />
           <Route
             path="/products/hrms/notification"
             element={<HrmsNotification />}
@@ -100,7 +102,7 @@ function App() {
           {/* Delivery */}
           <Route path="/products/delivery" element={<Delivery />} />
           <Route path="products/delivery/documentation" element={<DeliveryDocumentation />} />
-          <Route path="products/delivery/documentation/users" element={<DeliveryDocUser />} />  
+          <Route path="products/delivery/documentation/users" element={<DeliveryDocUser />} />
           <Route path="products/delivery/documentation/installation" element={<DeliveryDocInstallation />} />
           <Route
             path="/products/delivery/admin/auth/sign-in"
