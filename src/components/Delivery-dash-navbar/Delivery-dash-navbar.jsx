@@ -1,12 +1,12 @@
 import { Nav, Navbar } from "react-bootstrap";
 import { useState } from "react";
-import "./Hrms-dash-navbar.css";
+import "./Delivery-dash-navbar.css";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { Link } from "react-router-dom";
 
-const HrmsDashNavbar = () => {
+const DeliveryDashNavbar = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -23,7 +23,7 @@ const HrmsDashNavbar = () => {
             </h1>
             <Nav className="ms-5 p-4 p-lg-0 align-items-center ">
               <div className=" d-flex align-items-center gap-4 mx-2">
-                <Link to={'/products/hrms/notification'}>
+                <Link to={'/products/delivery/notification'}>
                   <i className="fa-solid fa-bell fs-4 mx-2"></i>
                 </Link>
                 <Link className="text-dark" to={'/products/hrms/calendar'}>
@@ -102,4 +102,4 @@ const HrmsDashNavbar = () => {
   );
 };
 
-export default HrmsDashNavbar;
+export default DeliveryDashNavbar;
