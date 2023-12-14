@@ -14,7 +14,7 @@ const HrmsSignIn = () => {
     const email = formData.get("email");
     const password = formData.get("password");
     dispatch(signInUser({ email, password }));
-    // navigate("/products/hrms/admin")
+    navigate("/products/hrms/admin/")
   };
 
 
