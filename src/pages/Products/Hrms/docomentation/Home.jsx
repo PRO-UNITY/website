@@ -829,10 +829,10 @@ const DocumentationHome = () => {
             <div className="col-xl-6">
               <div className="content">
                 <h2 className="fs-3 my-4 text-primary" id="user-delivery">
-                  Delevery User
+                  Delivery User
                 </h2>
                 <p>
-                  Har qaysi oshxona deleverylarini ma&apos;lumootlarni olish
+                  Har qaysi oshxona deliverylarini ma&apos;lumootlarni olish
                   uchun <code>GET</code> so&apos;rovi yordamida amalga
                   oshiriladi
                 </p>
@@ -993,10 +993,10 @@ const DocumentationHome = () => {
             <div className="col-xl-6">
               <div className="content">
                 <h2 className="fs-3 my-4 text-primary" id="user-delivery-id">
-                  Delevery User with ID
+                  Delivery User with ID
                 </h2>
                 <p>
-                  Har qaysi oshxona uchun aynan biror deleverylarini
+                  Har qaysi oshxona uchun aynan biror deliverylarini
                   ma&apos;lumootlarni olish uchun <code>ID</code> orqali{" "}
                   <code>GET</code> so&apos;rovi yordamida amalga oshiriladi
                 </p>
