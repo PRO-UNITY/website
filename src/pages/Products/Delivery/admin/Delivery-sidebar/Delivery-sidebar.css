@@ -1,0 +1,25 @@
+.sidebar {
+  width: 260px;
+  min-height: 100dvh
+}
+.sidebar .nav .nav-link.active {
+  background: var(--primary) !important;
+}
+.sidebar .nav .nav-link.active i {
+  color: var(--secondary) !important;
+}
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 85px;
+  }
+  .sidebar .sidebar-logo {
+    display: none;
+  }
+  .sidebar .nav-item span {
+    display: none;
+  }
+  .sidebar .name,
+  .sidebar .mail {
+    display: none;
+  }
+}
