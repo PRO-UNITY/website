@@ -6,7 +6,6 @@
   --secondary: yellow;
 }
 html {
-  overflow: hidden;
   overscroll-behavior: none;
 }
 .fw-medium {

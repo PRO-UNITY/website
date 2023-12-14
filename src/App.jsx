@@ -11,6 +11,7 @@ import {
   HrmsAdminHome,
   HrmsAdminHomeEditProfile,
   HrmsDocInstallation,
+  HrmsDocUser,
   HrmsDocumentation,
   HrmsNotification,
   HrmsServices,
@@ -63,6 +64,7 @@ function App() {
           {/* Hrms */}
           <Route path="/products/hrms" element={<Hrms />} />
           <Route path="products/hrms/documentation" element={<HrmsDocumentation />} />
+          <Route path="products/hrms/documentation/users" element={<HrmsDocUser />} />
           <Route path="products/hrms/documentation/installation" element={<HrmsDocInstallation />} />
           <Route
             path="/products/hrms/admin/auth/sign-in"
