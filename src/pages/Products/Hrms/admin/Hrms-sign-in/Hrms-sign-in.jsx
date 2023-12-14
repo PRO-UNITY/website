@@ -2,10 +2,12 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Hrms-sign-in.css";
 import { useDispatch } from "react-redux";
 import { signInUser } from "../../redux/slices/authSlice";
+import { useState } from "react";
 
 const HrmsSignIn = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [emailError, setEmailError] = useState('')
 
 
   const handleLogin = (e) => {
@@ -13,10 +15,20 @@ const HrmsSignIn = () => {
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email");
     const password = formData.get("password");
-    dispatch(signInUser({ email, password }));
-    navigate("/products/hrms/admin/")
-  };
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setEmailError('Please enter a valid email address');
+      return;
+    }
+
+    dispatch(signInUser({ email, password })).unwrap().then(() => {
+      navigate("/products/hrms/admin/");
+    }).catch((err) => {
+      console.log(err);
+      setEmailError(err.message);
+    });
+  };
 
   return (
     <section className="auth hrms-dash w-100 vh-100">
@@ -28,6 +40,13 @@ const HrmsSignIn = () => {
           <h1 className="h2 mb-3  text-center primary-text fw-semibold">
             Sign in
           </h1>
+          {
+            emailError && (
+              <div className={`alert alert-danger`} role="alert">
+                {emailError}
+              </div>
+            )}
+
           <div className="form-floating">
             <input
               name="email"

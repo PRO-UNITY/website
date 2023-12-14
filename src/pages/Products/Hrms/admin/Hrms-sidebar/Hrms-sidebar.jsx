@@ -39,7 +39,7 @@ const HrmsSidebar = () => {
   const navigate = useNavigate();
 
   const user = useSelector((state) => state.user);
-  console.log(user);
+  // console.log(user);
 
   const handleLogout = () => {
     dispatch(logOut());

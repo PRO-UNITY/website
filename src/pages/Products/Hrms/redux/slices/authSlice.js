@@ -1,5 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { registerUser, loginUser } from '../../service/index'
+import { useNavigate } from 'react-router-dom';
+
 
 // const initialState = {
 //     email: '',
@@ -20,7 +22,7 @@ export const signUpUser = createAsyncThunk('signupuser', async (body) => {
 export const signInUser = createAsyncThunk('signinuser', async (body) => {
     const response = await loginUser(body);
     if (!response || !response.token) {
-        throw new Error('Invalid response structure. Token property missing.');
+        throw new Error('Invalid amir response structure. Token property missing.');
     }
     return response;
 });
