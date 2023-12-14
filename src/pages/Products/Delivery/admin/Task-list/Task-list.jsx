@@ -1,33 +1,60 @@
-import HrmsAdminLayout from "../../../../../Layout/Hrms-admin-layout";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
-const HrmsServices = () => {
+import DeliveryAdminLayout from "../../../../../Layout/Delivery-admin-layout";
+const btns = [
+  { id: 1, name: "Active", count: 8 },
+  { id: 2, name: "Inactive", count: 24 },
+];
+const TaskList = () => {
+  const [activeBtn, setActiveBtn] = useState(1);
   const [showMenu, setshowMenu] = useState(false);
   return (
-    <HrmsAdminLayout>
+    <DeliveryAdminLayout>
        <div className="hrms-dashboasrd-home mt-4 overflow-auto">
         <div className="container">
-          <h3>Services</h3>
-          
+          <h3>Tasks</h3>
+          <div className="btns my-2">
+            {btns.map((btn) => (
+              <button
+                onClick={() => setActiveBtn(btn.id)}
+                key={btn.id}
+                className={`btn ${
+                  activeBtn === btn.id ? "btn-active" : "btn-no-active"
+                } text-primary my-2 me-2`}
+              >
+                <span
+                  className={`badge ${
+                    activeBtn === btn.id ? "text-bg-primary" : "text-bg-light"
+                  }  fw-normal me-2`}
+                >
+                  {btn.count}
+                </span>
+                {btn.name}
+              </button>
+            ))}
+          </div>
           <div className="card p-0 rounded overflow-hidden">
             <table className="table m-0">
               <tbody>
                 <tr>
                   
                   <td>
-                    <h6 className="m-0 mt-2">Frontend </h6>
-                    <span className="text-secondary ">Sevice</span>
+                    <h6 className="m-0 mt-2">Oct 01, 2022 </h6>
+                    <span className="text-secondary ">Start Date</span>
                   </td>
                   <td>
                     <h6 className="m-0 mt-2">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, architecto?
+                      None
+                      <i className="fa-solid fa-circle-exclamation mx-1 text-warning"></i>
+                      <span className="text-warning fw-normal">
+                        Expires soon
+                      </span>
                     </h6>
-                    <span className="text-secondary">Content</span>
+                    <span className="text-secondary">Deadline</span>
                   </td>
                   <td>
-                    <h6 className="m-0 mt-2">PROUnity</h6>
-                    <span className="text-secondary">Company</span>
+                    <h6 className="m-0 mt-2">Michael John</h6>
+                    <span className="text-secondary">User</span>
                   </td>
                   <td align="center" className="text-end">
                     <div className="d-flex align-items-center justify-content-end mt-2">
@@ -41,10 +68,10 @@ const HrmsServices = () => {
                               to={"/products/delivery/admin/edit-profile"}
                               className="btn btn-primary"
                             >
-                              Edit Service
+                              Edit Task
                             </Link>
                             <button className="btn btn-danger">
-                              Delete Service
+                              Delete Task
                             </button>
                           </div>
                         )}
@@ -60,16 +87,16 @@ const HrmsServices = () => {
                 </tr>
                 <tr>
                   <td>
-                    <h6 className="m-0 mt-2">Backend </h6>
-                    <span className="text-secondary ">Service</span>
+                    <h6 className="m-0 mt-2">Oct 01, 2022 </h6>
+                    <span className="text-secondary ">Start Date</span>
                   </td>
                   <td>
-                    <h6 className="m-0 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eos.</h6>
-                    <span className="text-secondary">Content</span>
+                    <h6 className="m-0 mt-2">Apr 17, 2023</h6>
+                    <span className="text-secondary">Deadline</span>
                   </td>
                   <td>
-                    <h6 className="m-0 mt-2">PROUnity</h6>
-                    <span className="text-secondary">Company</span>
+                    <h6 className="m-0 mt-2">Adrey Molodsov</h6>
+                    <span className="text-secondary">User</span>
                   </td>
                   <td align="center" className="text-end">
                     <div className="d-flex align-items-center justify-content-end mt-2">
@@ -87,10 +114,8 @@ const HrmsServices = () => {
           </div>
         </div>
       </div>
-    </HrmsAdminLayout>
+    </DeliveryAdminLayout>
   );
 };
 
-export default HrmsServices;
-
-
+export default TaskList;

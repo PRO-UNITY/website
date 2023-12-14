@@ -1,35 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
-import "./Hrms-sign-in.css";
-import { useDispatch } from "react-redux";
-import { signInUser } from "../../redux/slices/authSlice";
-import { useState } from "react";
+import "./Delivery-sign-in.css";
 
-const HrmsSignIn = () => {
+const DeliverySignIn = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const [emailError, setEmailError] = useState('')
-
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const email = formData.get("email");
-    const password = formData.get("password");
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      setEmailError('Please enter a valid email address');
-      return;
-    }
-
-    dispatch(signInUser({ email, password })).unwrap().then(() => {
-      navigate("/products/hrms/admin/");
-    }).catch((err) => {
-      console.log(err);
-      setEmailError(err.message);
-    });
-  };
-
+  const handleLogin = () => navigate("/products/delivery/admin");
   return (
     <section className="auth hrms-dash w-100 vh-100">
       <main className="form-signin  h-100  w-100 d-flex justify-content-center align-items-center m-auto">
@@ -40,16 +14,8 @@ const HrmsSignIn = () => {
           <h1 className="h2 mb-3  text-center primary-text fw-semibold">
             Sign in
           </h1>
-          {
-            emailError && (
-              <div className={`alert alert-danger`} role="alert">
-                {emailError}
-              </div>
-            )}
-
           <div className="form-floating">
             <input
-              name="email"
               type="email"
               className="form-control  my-4 rounded-3"
               id="floatingInput"
@@ -59,7 +25,6 @@ const HrmsSignIn = () => {
           </div>
           <div className="form-floating rounded-3">
             <input
-              name="password"
               type="password"
               className="form-control"
               id="floatingPassword"
@@ -98,7 +63,7 @@ const HrmsSignIn = () => {
           <div className="text-center mt-3 text-center">
             Don&apos;t have you account?{" "}
             <Link
-              to={"/products/hrms/admin/auth/sign-up"}
+              to={"/products/delivery/admin/auth/sign-up"}
               className="fw-medium text-decoration-none"
             >
               Sign up
@@ -110,4 +75,4 @@ const HrmsSignIn = () => {
   );
 };
 
-export default HrmsSignIn;
+export default DeliverySignIn;

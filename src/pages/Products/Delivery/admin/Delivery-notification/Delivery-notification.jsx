@@ -1,10 +1,10 @@
-import HrmsAdminLayout from "../../../../../Layout/Hrms-admin-layout";
 import { useState } from "react";
+import DeliveryAdminLayout from "../../../../../Layout/Delivery-admin-layout";
 
-const HrmsNotification = () => {
+const DeliveryNotification = () => {
   const [showMenu, setshowMenu] = useState(false);
   return (
-    <HrmsAdminLayout>
+    <DeliveryAdminLayout>
        <div className="hrms-dashboasrd-home mt-4 overflow-auto">
         <div className="container">
           <h3>Tasks</h3>
@@ -82,9 +82,8 @@ const HrmsNotification = () => {
           </div>
         </div>
       </div>
-    </HrmsAdminLayout>
+    </DeliveryAdminLayout>
   );
 };
 
-export default HrmsNotification;
-
+export default DeliveryNotification;

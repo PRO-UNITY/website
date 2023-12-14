@@ -30,4 +30,19 @@ export { default as HrmsServices } from "./Products/Hrms/admin/Hrms-services/Hrm
 export { default as HrmsNotification } from "./Products/Hrms/admin/Hrms-notification/Hrms-notification";
 
 // Delivery
+export { default as DeliveryDocumentation } from "./Products/Delivery/docomentation/Home";
+export { default as DeliveryDocUser } from "./Products/Delivery/docomentation/Users";
+export { default as DeliveryDocInstallation } from "./Products/Delivery/docomentation/Installation";
+
+// Delivery admin
 export { default as Delivery } from "./Products/Delivery/Delivery";
+export { default as DeliverySignIn } from "./Products/Delivery/admin/Delivery-sign-in/Delivery-sign-in";
+export { default as DeliverySignUp } from "./Products/Delivery/admin/Delivery-sign-up/Delivery-sign-up";
+export { default as DeliverAdminHome} from './Products/Delivery/admin/Delivery-home/Delivery-home'
+export { default as DeliveryAdminHomeEditProfile } from "./Products/Delivery/admin/Delivery-home/Edit-profile";
+export { default as DeliveryAdminSidebar } from "./Products/Delivery/admin/Delivery-sidebar/Delivery-sidebar";
+export { default as DeliveryStatistic } from "./Products/Delivery/admin/Delivery-statistic/Delivery-statistic";
+export { default as DeliveryTaskList } from "./Products/Delivery/admin/Task-list/Task-list";
+export { default as DeliveryServices } from "./Products/Delivery/admin/Delivery-services/Delivery-services";
+export { default as DeliveryNotification } from "./Products/Delivery/admin/Delivery-notification/Delivery-notification";
+

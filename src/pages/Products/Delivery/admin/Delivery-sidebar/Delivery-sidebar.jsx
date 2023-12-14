@@ -1,51 +1,37 @@
-import { Link, useNavigate } from "react-router-dom";
-import "./Hrms-sidebar.css";
+import { Link } from "react-router-dom";
+import "./Delivery-sidebar.css";
 import { useContext } from "react";
 import { ActiveNavContext } from "../../../../../context/ActiveNav";
-import { useDispatch } from "react-redux";
-import { logOut } from "../../redux/slices/authSlice";
-import { useSelector } from 'react-redux';
 
 const sideNavs = [
-  { id: 1, path: "/products/hrms/admin", name: "Dashboard", icon: "fa-house" },
+  { id: 1, path: "/products/delivery/admin", name: "Dashboard1", icon: "fa-house" },
   {
     id: 2,
-    path: "/products/hrms/statistic",
+    path: "/products/delivery/statistic",
     name: "Statictic",
     icon: "fa-square-poll-vertical",
   },
   {
     id: 3,
-    path: "/products/hrms/task-list",
+    path: "/products/delivery/task-list",
     name: "Tack list",
     icon: "fa-list-check",
   },
   {
     id: 4,
-    path: "/products/hrms/services",
+    path: "/products/delivery/services",
     name: "Services",
     icon: "fa-square-poll-vertical",
   },
   {
     id: 5,
-    path: "/products/hrms/notification",
+    path: "/products/delivery/notification",
     name: "Notification",
     icon: "fa-bell",
   },
 ];
-const HrmsSidebar = () => {
+const DeliverySidebar = () => {
   const { activeHrmsDash, setActiveHrmsDash } = useContext(ActiveNavContext);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const user = useSelector((state) => state.user);
-  // console.log(user);
-
-  const handleLogout = () => {
-    dispatch(logOut());
-    navigate("/products/hrms/admin/auth/sign-in");
-  }
-
   return (
     <div>
       <div className="sidebar d-flex  border-secondary border-end  flex-column flex-shrink-0 p-2 ">
@@ -63,12 +49,14 @@ const HrmsSidebar = () => {
               <Link
                 to={item.path}
                 onClick={() => setActiveHrmsDash(item.id)}
-                className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark ${activeHrmsDash == item.id ? "active text-white " : ""
-                  }rounded-0`}
+                className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark ${
+                  activeHrmsDash == item.id ? "active text-white " : ""
+                }rounded-0`}
               >
                 <i
-                  className={`fa-solid fs-5  me-md-3 ${activeHrmsDash == item.id ? "  " : ""
-                    }  text-secondary ${item.icon} `}
+                  className={`fa-solid fs-5  me-md-3 ${
+                    activeHrmsDash == item.id ? "  " : ""
+                  }  text-secondary ${item.icon} `}
                 ></i>
                 <span>{item.name}</span>
               </Link>
@@ -77,15 +65,15 @@ const HrmsSidebar = () => {
 
           <li className="nav-item">
             <hr />
-            <button
-              onClick={handleLogout}
+            <Link
+              to={"/products/delivery/admin/auth/sign-in"}
               className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark`}
             >
               <i
                 className={`fa-solid fa-arrow-right-from-bracket fs-5  text-secondary  me-md-3`}
               ></i>
               <span>Log Out</span>
-            </button>
+            </Link>
           </li>
         </ul>
         <div className="profile  d-flex flex-column justify-content-center align-items-center">
@@ -103,4 +91,4 @@ const HrmsSidebar = () => {
   );
 };
 
-export default HrmsSidebar;
+export default DeliverySidebar;

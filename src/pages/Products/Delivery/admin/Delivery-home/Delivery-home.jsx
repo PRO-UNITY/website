@@ -1,18 +1,19 @@
-import HrmsAdminLayout from "../../../../../Layout/Hrms-admin-layout";
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import "./Delivery-dash.css";
+import { Link } from "react-router-dom";
+import DeliveryAdminLayout from "../../../../../Layout/Delivery-admin-layout";
 const btns = [
   { id: 1, name: "Active", count: 8 },
   { id: 2, name: "Inactive", count: 24 },
 ];
-const TaskList = () => {
+const DeliveryHome = () => {
   const [activeBtn, setActiveBtn] = useState(1);
   const [showMenu, setshowMenu] = useState(false);
   return (
-    <HrmsAdminLayout>
-       <div className="hrms-dashboasrd-home mt-4 overflow-auto">
+    <DeliveryAdminLayout>
+      <div className="hrms-dashboasrd-home mt-4 overflow-auto">
         <div className="container">
-          <h3>Tasks</h3>
+          <h3>Users</h3>
           <div className="btns my-2">
             {btns.map((btn) => (
               <button
@@ -37,10 +38,31 @@ const TaskList = () => {
             <table className="table m-0">
               <tbody>
                 <tr>
-                  
+                  <td>
+                    <div className="d-flex align-items-center">
+                      <img
+                        width={40}
+                        height={40}
+                        className="me-3 rounded-circle table-profile-img"
+                        src="https://www.growcropsonline.com/assets/img/agent-2.jpg"
+                        alt=""
+                      />
+                      <div className="user-data ">
+                        <div className="d-flex align-items-center">
+                          <h6 className="m-0">Maribel_Koss </h6>
+                          <img
+                            width={28}
+                            src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/Twitter-Verified-900x0.png"
+                            alt=""
+                          />
+                        </div>
+                        <span className="text-secondary">@maribelk</span>
+                      </div>
+                    </div>
+                  </td>
                   <td>
                     <h6 className="m-0 mt-2">Oct 01, 2022 </h6>
-                    <span className="text-secondary ">Start Date</span>
+                    <span className="text-secondary ">Subscribe Date</span>
                   </td>
                   <td>
                     <h6 className="m-0 mt-2">
@@ -50,11 +72,11 @@ const TaskList = () => {
                         Expires soon
                       </span>
                     </h6>
-                    <span className="text-secondary">Deadline</span>
+                    <span className="text-secondary">Renew Date</span>
                   </td>
                   <td>
-                    <h6 className="m-0 mt-2">Michael John</h6>
-                    <span className="text-secondary">User</span>
+                    <h6 className="m-0 mt-2">$3.00</h6>
+                    <span className="text-secondary">Monthly Cost</span>
                   </td>
                   <td align="center" className="text-end">
                     <div className="d-flex align-items-center justify-content-end mt-2">
@@ -68,10 +90,10 @@ const TaskList = () => {
                               to={"/products/delivery/admin/edit-profile"}
                               className="btn btn-primary"
                             >
-                              Edit Task
+                              Edit Profile
                             </Link>
                             <button className="btn btn-danger">
-                              Delete Task
+                              Delete Profile
                             </button>
                           </div>
                         )}
@@ -87,16 +109,38 @@ const TaskList = () => {
                 </tr>
                 <tr>
                   <td>
+                    <div className="d-flex align-items-center">
+                      <img
+                        width={40}
+                        height={40}
+                        className="me-3 rounded-circle table-profile-img"
+                        src="https://www.growcropsonline.com/assets/img/agent-2.jpg"
+                        alt=""
+                      />
+                      <div className="user-data ">
+                        <div className="d-flex align-items-center">
+                          <h6 className="m-0">Maribel_Koss </h6>
+                          <img
+                            width={28}
+                            src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/Twitter-Verified-900x0.png"
+                            alt=""
+                          />
+                        </div>
+                        <span className="text-secondary">@maribelk</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
                     <h6 className="m-0 mt-2">Oct 01, 2022 </h6>
-                    <span className="text-secondary ">Start Date</span>
+                    <span className="text-secondary ">Subscribe Date</span>
                   </td>
                   <td>
                     <h6 className="m-0 mt-2">Apr 17, 2023</h6>
-                    <span className="text-secondary">Deadline</span>
+                    <span className="text-secondary">Renew Date</span>
                   </td>
                   <td>
-                    <h6 className="m-0 mt-2">Adrey Molodsov</h6>
-                    <span className="text-secondary">User</span>
+                    <h6 className="m-0 mt-2">$3.00</h6>
+                    <span className="text-secondary">Monthly Cost</span>
                   </td>
                   <td align="center" className="text-end">
                     <div className="d-flex align-items-center justify-content-end mt-2">
@@ -114,8 +158,8 @@ const TaskList = () => {
           </div>
         </div>
       </div>
-    </HrmsAdminLayout>
+    </DeliveryAdminLayout>
   );
 };
 
-export default TaskList;
+export default DeliveryHome;

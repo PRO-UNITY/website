@@ -1,11 +1,11 @@
-import HrmsAdminLayout from "../../../../../Layout/Hrms-admin-layout";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import DeliveryAdminLayout from "../../../../../Layout/Delivery-admin-layout";
 
-const HrmsServices = () => {
+const DeliveryServices = () => {
   const [showMenu, setshowMenu] = useState(false);
   return (
-    <HrmsAdminLayout>
+    <DeliveryAdminLayout>
        <div className="hrms-dashboasrd-home mt-4 overflow-auto">
         <div className="container">
           <h3>Services</h3>
@@ -87,10 +87,9 @@ const HrmsServices = () => {
           </div>
         </div>
       </div>
-    </HrmsAdminLayout>
+    </DeliveryAdminLayout>
   );
 };
 
-export default HrmsServices;
-
+export default DeliveryServices;
 
