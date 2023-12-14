@@ -15,7 +15,7 @@ const DocumentationHome = () => {
               </p>
             </div>
           </div>
-          {/*  */}
+          {/* Creat User */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <h2 className="fs-3 my-md-4 text-primary" id="create-user">
@@ -79,6 +79,12 @@ const DocumentationHome = () => {
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-success text-light">POST</code>
+                      </span>
+                    </pre>
                   </div>
                   <div className="pre-code-block p-1">
                     <pre className="chroma">
@@ -183,6 +189,12 @@ const DocumentationHome = () => {
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-success text-light">POST</code>
+                      </span>
+                    </pre>
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
@@ -240,6 +252,7 @@ const DocumentationHome = () => {
               </div>
             </div>
           </div>
+          <hr className="my-md-5" />
           {/* User Profile */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
@@ -278,6 +291,12 @@ const DocumentationHome = () => {
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-success text-light">POST</code>
+                      </span>
+                    </pre>
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
@@ -393,7 +412,7 @@ const DocumentationHome = () => {
               </div>
             </div>
           </div>
-
+          <hr className="my-md-5" />
           {/* Update User */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
@@ -457,6 +476,12 @@ const DocumentationHome = () => {
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-success text-light">POST</code>
+                      </span>
+                    </pre>
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
@@ -540,6 +565,7 @@ const DocumentationHome = () => {
               </div>
             </div>
           </div>
+          <hr className="my-md-5" />
           {/* User Detail */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
@@ -579,6 +605,12 @@ const DocumentationHome = () => {
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-white">GET</code>
+                      </span>
+                    </pre>
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
@@ -627,6 +659,7 @@ const DocumentationHome = () => {
               </div>
             </div>
           </div>
+          <hr className="my-md-5" />
           {/* User Manager */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
@@ -666,6 +699,12 @@ const DocumentationHome = () => {
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-white">GET</code>
+                      </span>
+                    </pre>
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
@@ -784,6 +823,7 @@ const DocumentationHome = () => {
               </div>
             </div>
           </div>
+          <hr className="my-md-5" />
           {/* Delevery User */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
@@ -823,6 +863,12 @@ const DocumentationHome = () => {
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-white">GET</code>
+                      </span>
+                    </pre>
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
@@ -830,7 +876,7 @@ const DocumentationHome = () => {
                       /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/manager_user
+                      https://api.prounity.uz/food-delivery/auth/delivery_user
                       {"\n"}
                     </pre>
                   </div>

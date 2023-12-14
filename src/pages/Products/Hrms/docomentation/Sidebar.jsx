@@ -23,7 +23,7 @@ const Sidenavs = [
     id: 2,
     title: "Api",
     child: [
-      { id: "create-task", name: "Link", path: "/products/hrms/documentation" },
+      { id: "create-task", name: "Users", path: "/products/hrms/documentation" },
     ],
   },
   {
