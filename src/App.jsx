@@ -39,16 +39,27 @@ import {
   DeliveryDocInstallation,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
-import { useState } from "react";
+import { getRoleUser } from "./pages/Products/Delivery/functions";
+import { useState, useEffect } from "react";
 import DeliveryHome from "./pages/Products/Delivery/admin/Delivery-home/Delivery-home";
 import HrmsCalendar from "./pages/Products/Hrms/admin/Hrms-calendar/HrmsCalendar";
 
 // const optimizely = createInstance({
 //   sdkKey: "YOUR_OPTIMIZELY_SDK_KEY", // Optimizely SDK key
 // });
+
 function App() {
   const [activeNav, setactiveNav] = useState(1);
   const [activeHrmsDash, setActiveHrmsDash] = useState(1);
+  const [role, setRole] = useState('')
+
+  useEffect(() => {
+    const fetchRole = async () => {
+        const role = await getRoleUser();
+        setRole(role);
+    };
+    fetchRole();
+  }, []);
   return (
     <>
       <ActiveNavContext.Provider

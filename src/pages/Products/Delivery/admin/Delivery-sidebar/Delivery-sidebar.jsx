@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Delivery-sidebar.css";
 import { useContext } from "react";
 import { ActiveNavContext } from "../../../../../context/ActiveNav";
@@ -32,6 +32,15 @@ const sideNavs = [
 ];
 const DeliverySidebar = () => {
   const { activeHrmsDash, setActiveHrmsDash } = useContext(ActiveNavContext);
+  const navigate = useNavigate()
+
+  const signOut = () => {
+    localStorage.removeItem('token')
+    localStorage.removeItem('role')
+    navigate('/products/delivery/admin/auth/sign-in')
+    window.location.reload()
+}
+
   return (
     <div>
       <div className="sidebar d-flex  border-secondary border-end  flex-column flex-shrink-0 p-2 ">
@@ -65,15 +74,15 @@ const DeliverySidebar = () => {
 
           <li className="nav-item">
             <hr />
-            <Link
-              to={"/products/delivery/admin/auth/sign-in"}
+            <button
               className={`nav-link text-center text-md-start mx-1  px-3 py-3   text-dark`}
+              onClick={signOut}
             >
               <i
                 className={`fa-solid fa-arrow-right-from-bracket fs-5  text-secondary  me-md-3`}
               ></i>
               <span>Log Out</span>
-            </Link>
+            </button>
           </li>
         </ul>
         <div className="profile  d-flex flex-column justify-content-center align-items-center">
