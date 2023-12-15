@@ -6,6 +6,14 @@ const getHeader = () => {
     };
 };
 
+const getHeaderWithToken = (token) => {
+    return {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+    };
+};
+
+
 export const postData = async (item,url) => {
     const response = await fetch(BASE_URL + url, {
         method: 'POST',
@@ -15,7 +23,6 @@ export const postData = async (item,url) => {
     const data = await response.json();
     return data;
 };
-
 
 export const getRoleUser = async () => {
     const token = localStorage.getItem('token');
@@ -34,4 +41,14 @@ export const getRoleUser = async () => {
     localStorage.setItem('role', role);
     return role;
 }
+
+export const getDataWithToken = async (url) => {
+    const response = await fetch(BASE_URL + url, {
+        method: 'GET',
+        headers:getHeaderWithToken(localStorage.getItem('token'))
+    });
+    const data = await response.json();
+    return data;
+};
+
 
