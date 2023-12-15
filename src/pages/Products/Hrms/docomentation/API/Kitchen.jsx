@@ -56,7 +56,7 @@ const Kitchen = () => {
   return (
     <HrmsDocumentationLayout>
       <div className="d-flex w-100 hrms-doc bg-light  bg-white">
-        <div className="doc-content bg-light pt-5">
+        <div className="doc-content w-100 bg-light pt-5">
           <div className="row px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <h1 className="text-primary mt-4">Kitchen</h1>

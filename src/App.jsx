@@ -10,7 +10,7 @@ import {
   Hrms,
   HrmsAdminHome,
   HrmsAdminHomeEditProfile,
-  HrmsDocInstallation,
+
   HrmsDocKitchen,
   HrmsDocUser,
   HrmsDocumentation,
@@ -37,6 +37,10 @@ import {
   DeliveryDocumentation,
   DeliveryDocUser,
   DeliveryDocInstallation,
+  HrmsDocFoods,
+  HrmsDocDeliveryman,
+  HrmsDocManager,
+  HrmsDocOrders,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { useState } from "react";
@@ -79,7 +83,11 @@ function App() {
           <Route path="products/hrms/documentation" element={<HrmsDocumentation />} />
           <Route path="products/hrms/documentation/users" element={<HrmsDocUser />} />
           <Route path="products/hrms/documentation/kitchen" element={<HrmsDocKitchen />} />
-          <Route path="products/hrms/documentation/installation" element={<HrmsDocInstallation />} />
+          <Route path="products/hrms/documentation/foods" element={<HrmsDocFoods />} />
+          <Route path="products/hrms/documentation/deliveryman" element={<HrmsDocDeliveryman />} />
+          <Route path="products/hrms/documentation/manager" element={<HrmsDocManager />} />
+          <Route path="products/hrms/documentation/orders" element={<HrmsDocOrders />} />
+          
           <Route
             path="/products/hrms/admin/auth/sign-in"
             element={<HrmsSignIn />}
