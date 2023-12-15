@@ -122,7 +122,7 @@ const EditProfile = () => {
                  ref={emailRef}
                  className="form-control mb-1"
                 />
-                <label>Email</label>
+                <label>Phone number</label>
                 <input
                 defaultValue={user.phone}
                  type="text" 
