@@ -1,30 +1,45 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { registerUser, loginUser } from '../../service/index'
-import { useNavigate } from 'react-router-dom';
-
-
-// const initialState = {
-//     email: '',
-//     token: '',
-//     loading: false,
-//     error: '',
-// };
+import { editUserProfile } from '../../service/user'
 
 const initialState = {
     user: {},
 };
 
 export const signUpUser = createAsyncThunk('signupuser', async (body) => {
-    const response = await registerUser(body)
-    return response.data
-})
+    try {
+        const response = await registerUser(body);
+        console.log('Response from registerUser:', response);
+
+        if (!response || !response.data || !response.data.token || !response.data.token.accsess) {
+            throw new Error('Invalid response structure. Token property missing.');
+        }
+        return response.data;
+    } catch (error) {
+        console.error('Error during signUpUser:', error.message);
+        throw error;
+    }
+});
 
 export const signInUser = createAsyncThunk('signinuser', async (body) => {
     const response = await loginUser(body);
     if (!response || !response.token) {
-        throw new Error('Invalid amir response structure. Token property missing.');
+        throw new Error('Invalid  response structure. Token property missing.');
     }
     return response;
+});
+
+export const editUser = createAsyncThunk('edituser', async (body) => {
+    try {
+        const response = await editUserProfile(body);
+        if (!response || response.error) {
+            throw new Error(response.error || 'Invalid response structure.');
+        }
+        return response.data;
+    } catch (error) {
+        console.error('Error during editUser:', error.message);
+        throw error;
+    }
 });
 
 export const authSlice = createSlice({
@@ -67,7 +82,6 @@ export const authSlice = createSlice({
                 if (payload.token.accsess) {
                     localStorage.setItem('token', payload.token.accsess);
                 }
-                console.log(payload);
                 authSlice.actions.setUser(state, { payload: payload.token.user });
             })
             .addCase(signInUser.rejected, (state, action) => {
@@ -79,16 +93,37 @@ export const authSlice = createSlice({
             .addCase(signUpUser.pending, (state) => {
                 state.loading = true;
             })
-            .addCase(signUpUser.fulfilled, (state, { payload: { error, msg } }) => {
+            .addCase(signUpUser.fulfilled, (state, action) => {
                 state.loading = false;
-                if (error) {
-                    state.error = error;
-                } else {
-                    state.msg = msg;
+                const payload = action.payload;
+
+                if (!payload || !payload.token || !payload.token.accsess) {
+                    console.error('Invalid response structure. Actual payload:', payload);
+                    state.error = 'Invalid response structure. Token property missing.';
+                    return;
                 }
+
+                state.token = payload.token.accsess;
+                localStorage.setItem('token', state.token);
+                authSlice.actions.setUser(state, { payload: payload.token.user });
             })
-            .addCase(signUpUser.rejected, (state) => {
+            .addCase(signUpUser.rejected, (state, action) => {
                 state.loading = false;
+                state.error = action.error.message || 'An error occurred during signup.';
+            });
+        // edit profile
+        builder
+            .addCase(editUser.pending, (state) => {
+                state.loading = true;
+            })
+            .addCase(editUser.fulfilled, (state, { payload }) => {
+                state.loading = false;
+                state.user = { ...state.user, ...payload };
+                localStorage.setItem('user', JSON.stringify(state.user));
+            })
+            .addCase(editUser.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.error.message || 'An error occurred during profile edit.';
             });
     },
 })

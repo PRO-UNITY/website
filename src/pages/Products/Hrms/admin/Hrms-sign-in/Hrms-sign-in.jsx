@@ -7,7 +7,10 @@ import { useState } from "react";
 const HrmsSignIn = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const [emailError, setEmailError] = useState('')
+  const [error, setError] = useState({
+    text: '',
+    type: ''
+  })
 
 
   const handleLogin = (e) => {
@@ -21,12 +24,24 @@ const HrmsSignIn = () => {
       setEmailError('Please enter a valid email address');
       return;
     }
-
     dispatch(signInUser({ email, password })).unwrap().then(() => {
-      navigate("/products/hrms/admin/");
+
+      setError({
+        text: 'Sign in successfully',
+        type: 'success'
+      });
+
+      setTimeout(() => {
+        setError('');
+        navigate("/products/hrms/admin/");
+      }, 1000);
+
     }).catch((err) => {
-      console.log(err);
-      setEmailError(err.message);
+      const errorMessage = err.message || 'An error occurred during login.';
+      setError({
+        text: errorMessage,
+        type: 'danger'
+      });
     });
   };
 
@@ -41,9 +56,9 @@ const HrmsSignIn = () => {
             Sign in
           </h1>
           {
-            emailError && (
-              <div className={`alert alert-danger`} role="alert">
-                {emailError}
+            error && (
+              <div className={`alert alert-${error.type}`} role="alert">
+                {error.text}
               </div>
             )}
 
