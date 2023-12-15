@@ -1,15 +1,25 @@
 import { Nav, Navbar } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Delivery-dash-navbar.css";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { Link } from "react-router-dom";
+import { getDataWithToken } from "../../pages/Products/Delivery/functions";
 
 const DeliveryDashNavbar = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [user, setUser] = useState({})
+
+  useEffect(()=>{
+    getDataWithToken('/user').
+    then((res)=>
+     {setUser(res)
+    console.log(res);
+    })
+  },[])
 
   return (
     <>
@@ -23,21 +33,25 @@ const DeliveryDashNavbar = () => {
             </h1>
             <Nav className="ms-5 p-4 p-lg-0 align-items-center ">
               <div className=" d-flex align-items-center gap-4 mx-2">
-                <Link to={'/products/delivery/notification'}>
+                <Link className="text-dark" to={'/products/delivery/notification'}>
                   <i className="fa-solid fa-bell fs-4 mx-2"></i>
                 </Link>
                 <Link className="text-dark" to={'/products/hrms/calendar'}>
                   <i className="fa-solid fa-calendar-check fs-4 mx-2 me-4"></i>
                 </Link>
-                <div className="d-flex justify-content-center align-items-center">
+                <Link to={'/products/delivery/admin/edit-profile'} className="d-flex justify-content-center align-items-center">
                   <img
-                    style={{ zIndex: 9 }}
-                    width={55}
-                    className=" rounded-circle"
-                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                    style={{ 
+                      zIndex: 9, 
+                      width:"55px",
+                      height:"55px",
+                      borderRadius:"50%",
+                      objectFit:"cover"
+                    }}
+                    src={`https://api.prounity.uz/food-delivery${user.avatar}`}
                     alt=""
                   />
-                </div>
+                </Link>
               </div>
               <button onClick={handleShow} className=" add-btn btn text-white my-3">Add member</button>
             </Nav>

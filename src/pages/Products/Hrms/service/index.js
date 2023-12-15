@@ -1,13 +1,3 @@
-// export const postVacancy = async (vacancy) => {
-//     const response = await fetch(BASE_URL + '/job/job-vacancies', {
-//         method: 'POST',
-//         headers: getHeader(),
-//         body: JSON.stringify(vacancy)
-//     });
-//     const data = await response.json();
-//     return data;
-// };
-
 export const BASE_URL = 'https://api.prounity.uz/hrms';
 
 const getHeader = () => {
@@ -16,16 +6,24 @@ const getHeader = () => {
     };
 };
 
-
-
 export const registerUser = async (user) => {
-    const response = await fetch(BASE_URL + '/auth/register', {
-        method: 'POST',
-        headers: getHeader(),
-        body: JSON.stringify(user)
-    });
-    const data = await response.json();
-    return data;
+    try {
+        const response = await fetch(BASE_URL + '/auth/register', {
+            method: 'POST',
+            headers: getHeader(),
+            body: JSON.stringify(user)
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(JSON.stringify({ error: errorData, status: response.status }));
+        }
+        const data = await response.json();
+        return { data };
+    } catch (error) {
+        console.error('Error during registerUser:', error.message);
+        throw error;
+    }
 }
 
 export const loginUser = async (user) => {
@@ -35,8 +33,9 @@ export const loginUser = async (user) => {
         body: JSON.stringify(user),
     });
     if (!response.ok) {
-        // console.log('response ok : ' + response.ok);
-        throw new Error('Invalid response structure. Token property missing.');
+        // throw new Error('Invalid response structure. Token property missing.');
+        const errorData = await response.json();
+        throw new Error(JSON.stringify({ error: errorData, status: response.status }));
     }
     const data = await response.json();
     return data;

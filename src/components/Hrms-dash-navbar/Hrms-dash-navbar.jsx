@@ -23,23 +23,25 @@ const HrmsDashNavbar = () => {
             </h1>
             <Nav className="ms-5 p-4 p-lg-0 align-items-center ">
               <div className=" d-flex align-items-center gap-4 mx-2">
-                <Link to={'/products/hrms/notification'}>
+                <Link className="text-dark" to={'/products/hrms/notification'}>
                   <i className="fa-solid fa-bell fs-4 mx-2"></i>
                 </Link>
                 <Link className="text-dark" to={'/products/hrms/calendar'}>
                   <i className="fa-solid fa-calendar-check fs-4 mx-2 me-4"></i>
                 </Link>
                 <div className="d-flex justify-content-center align-items-center">
-                  <img
-                    style={{ zIndex: 9 }}
-                    width={55}
-                    className=" rounded-circle"
-                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
-                    alt=""
-                  />
+                  <Link to={'/products/hrms/admin/edit-profile'}>
+                    <img
+                      style={{ zIndex: 9 }}
+                      width={55}
+                      className=" rounded-circle"
+                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                      alt=""
+                    />
+                  </Link>
                 </div>
               </div>
-              <button onClick={handleShow} className=" add-btn btn text-white my-3">Add member</button>
+              <button onClick={handleShow} className="add-btn btn btn-primary text-white my-3">Add member</button>
             </Nav>
           </Navbar.Collapse>
         </div>

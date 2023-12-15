@@ -1,34 +1,58 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Delivery-sign-in.css";
+import { useRef } from "react";
+import { postData } from "../../functions";
 
 const DeliverySignIn = () => {
   const navigate = useNavigate();
-  const handleLogin = () => navigate("/products/delivery/admin");
+  const usernameRef = useRef(null);
+  const passwordRef = useRef(null);
+
+    const handleSignInUser = async (e) => {
+      e.preventDefault();
+      const user = {
+         username : usernameRef.current?.value,
+         password : passwordRef.current?.value,
+      };
+      await postData(user,"/auth/sigin").then((res)=>{
+        localStorage.setItem('token',res.token.access)
+        console.log(res);
+        if(localStorage.getItem("token") !== "undefined" ){
+          navigate('/products/delivery/admin')
+          window.location.reload()
+      }
+      })
+  };
+
   return (
     <section className="auth hrms-dash w-100 vh-100">
       <main className="form-signin  h-100  w-100 d-flex justify-content-center align-items-center m-auto">
         <form
           className="bg-white mx-3 p-4 p-md-5 border "
-          onSubmit={handleLogin}
+          onSubmit={handleSignInUser}
         >
           <h1 className="h2 mb-3  text-center primary-text fw-semibold">
             Sign in
           </h1>
           <div className="form-floating">
             <input
-              type="email"
+              type="text"
+              required
               className="form-control  my-4 rounded-3"
               id="floatingInput"
-              placeholder="name@example.com"
+              placeholder="michael"
+              ref={usernameRef}
             />
-            <label htmlFor="floatingInput">Email address</label>
+            <label htmlFor="floatingInput">Username</label>
           </div>
           <div className="form-floating rounded-3">
             <input
               type="password"
               className="form-control"
+              required
               id="floatingPassword"
               placeholder="Password"
+              ref={passwordRef}
             />
             <label htmlFor="floatingPassword">Password</label>
           </div>
