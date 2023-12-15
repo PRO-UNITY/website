@@ -1,25 +1,78 @@
-import { Dropdown, DropdownButton, Form, InputGroup } from "react-bootstrap";
+// import { Dropdown, DropdownButton, Form, InputGroup } from "react-bootstrap";
 import { useRef } from "react";
 import DeliveryAdminLayout from "../../../../../Layout/Delivery-admin-layout";
+import { useEffect, useState } from "react";
+import { getDataWithToken } from "../../functions";
+import { useNavigate } from "react-router-dom";
+import axios from 'axios'
 
 const EditProfile = () => {
   const hiddenFileInput = useRef(null);
 
   const handleClick = () => hiddenFileInput.current.click();
+  const [img, setImg] = useState(null)
 
   const handleChange = (event) => {
     const fileUploaded = event.target.files[0];
     console.log(fileUploaded);
+    setImg(fileUploaded)
   };
+  
+  const [user, setUser] = useState({})
+  const imgRef = useRef()
+  const firstnameRef = useRef()
+  const lastnameRef = useRef()
+  const usernameRef = useRef()
+  const phoneRef = useRef()
+  const emailRef = useRef()
+  const navigate = useNavigate()
+
+
+  useEffect(()=>{
+      getDataWithToken('/user').
+      then((res)=>
+       {setUser(res)
+      console.log(res);
+      })
+  },[])
+
+  const handleSubmit = async (e) => {
+    const token = localStorage.getItem("token")
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append('first_name', firstnameRef.current?.value);
+    formData.append('last_name', lastnameRef.current?.value);
+    formData.append('username', usernameRef.current?.value);
+    formData.append('phone', phoneRef.current?.value);
+    formData.append('email', emailRef.current?.value);
+    if(img){
+        formData.append('avatar', img);
+    }
+
+    try {
+        const response = await axios.put('https://api.prounity.uz/food-delivery/user', formData, {
+            headers: {
+                'Content-Type': 'multipart/formData',
+                Authorization: `Bearer ${token}`,
+            },
+        });
+        window.location.reload()
+    } catch (error) {
+        console.error('Error creating category', error);
+    }
+};
+
+
+
   return (
     <DeliveryAdminLayout>
       <div className="mt-4 profile-setting overflow-auto">
         <div className="container">
           <h3>Profile settings</h3>
-          <div className="card profile-setting-card overfoll p-4">
+          <form onSubmit={handleSubmit} className="card profile-setting-card overfoll p-4">
             <div className="card-head rounded-3 d-flex align-items-center justify-content-center p-4 flex-column bg-light">
               <div className="user-img d-flex align-items-center rounded-circle justify-content-center">
-                <i className="fa-solid fa-circle-user fs-5"></i>
+                <img style={{width:"40px", height:"40px", borderRadius:"50%", objectFit:"cover"}} src={`https://api.prounity.uz/food-delivery${user.avatar}`} alt="" />
               </div>
               <span className="my-2">Image must be 256 x 256px - Max 2MB</span>
               <div className="mt-1">
@@ -31,17 +84,56 @@ const EditProfile = () => {
                 />
                 <button
                   className="btn py-2 px-3 bg-white border me-3 fw-semibold"
+                  type="button"
                   onClick={handleClick}
                 >
                   <i className="fa-solid fa-upload me-2"></i>Upload image
                 </button>
-                <button className="btn py-2 text-danger px-3 bg-white border fw-semibold">
-                  <i className="fa-solid fa-trash-can me-2"></i>Delete image
-                </button>
+               
               </div>
             </div>
             <div className="card-body px-0 py-0 pt-4">
-              <div className="mb-3">
+              
+                <label>Firstname</label>
+                <input
+                defaultValue={user.first_name}
+                 type="text" 
+                 className="form-control mb-1"
+                 ref={firstnameRef}
+                />
+                <label>Lastname</label>
+                <input
+                defaultValue={user.last_name}
+                 type="text" 
+                 className="form-control mb-1"
+                 ref={lastnameRef}
+                />
+                <label>Username</label>
+                <input
+                defaultValue={user.username}
+                 type="text" 
+                 ref={usernameRef}
+                 className="form-control mb-1"
+                />
+                <label>Email</label>
+                <input
+                defaultValue={user.email}
+                 type="email" 
+                 ref={emailRef}
+                 className="form-control mb-1"
+                />
+                <label>Email</label>
+                <input
+                defaultValue={user.phone}
+                 type="text" 
+                 ref={phoneRef}
+                 className="form-control mb-1"
+                />
+                <button className=" float-end mt-4 btn btn-primary px-4 py-2">
+                  Save
+                </button>
+              
+              {/* <div className="mb-3">
                 <div className="row">
                   <div className="col-lg-6">
                     <input
@@ -128,9 +220,10 @@ const EditProfile = () => {
                 <button className=" float-end mt-4 btn btn-primary px-4 py-2">
                   Save
                 </button>
-              </div>
+              </div> */}
             </div>
-          </div>
+            
+          </form>
         </div>
       </div>
     </DeliveryAdminLayout>
