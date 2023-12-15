@@ -34,7 +34,7 @@ const HrmsSignIn = () => {
     <section className="auth hrms-dash w-100 vh-100">
       <main className="form-signin  h-100  w-100 d-flex justify-content-center align-items-center m-auto">
         <form
-          className="bg-white mx-3 p-4 p-md-5 border "
+          className="bg-white mx-3 p-4 p-md-5 border"
           onSubmit={handleLogin}
         >
           <h1 className="h2 mb-3  text-center primary-text fw-semibold">
