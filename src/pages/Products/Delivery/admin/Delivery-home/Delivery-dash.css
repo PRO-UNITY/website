@@ -3,6 +3,10 @@
   background: #ffffff;
 }
 
+.register{
+  min-height: 100vh;
+}
+
 .hrms-dashboasrd-home {
   height: 80vh;
 }
