@@ -56,7 +56,7 @@ function App() {
   const [activeNav, setactiveNav] = useState(1);
   const [activeHrmsDash, setActiveHrmsDash] = useState(1);
   const [role, setRole] = useState("");
-
+  //
   useEffect(() => {
     const fetchRole = async () => {
       const role = await getRoleUser();
