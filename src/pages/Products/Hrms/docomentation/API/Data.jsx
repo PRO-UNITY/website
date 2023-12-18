@@ -68,7 +68,21 @@ export const User = {
     "city": "string",
     "bio": "string",
     "avatar": "file"
-  }
+  },
+  Hrlist: {
+    "id": "number",
+    "first_name": "string",
+    "username": "string",
+    "last_name": "string",
+    "email": "string",
+    "role": "string",
+    "phone": "string",
+    "country": "string",
+    "city": "string",
+    "bio": "string",
+    "avatar": "string"
+  },
+
 };
 
 // Orders
