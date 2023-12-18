@@ -356,7 +356,7 @@ const Users = () => {
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
                       <span className="text-secondary mx-2">1</span>Profile
-                      /users
+                      /user
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
                       https://api.prounity.uz/hrms/user
@@ -398,6 +398,14 @@ const Users = () => {
                   <code>PUT</code> so&apos;rovi yordamida amalga oshiriladi
                 </p>
                 <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0 fw-semibold">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
                 <hr />
                 <ul className="doc-list p-0">
                   <li className="title">
@@ -474,7 +482,7 @@ const Users = () => {
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
                       <span className="text-secondary mx-2">1</span>Update
-                      /users
+                      /user
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
                       https://api.prounity.uz/hrms/user
@@ -493,6 +501,89 @@ const Users = () => {
                     Success
                   </h6>
                   <CodeFormat JsonData={User.UpdateUserSuccess} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Delete User */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-update">
+                  User Delete
+                </h2>
+                <p>
+                  Foydalanuvchini o'chirish uchun{" "}
+                  <code>DELETE</code> so&apos;rovi yordamida amalga oshiriladi
+                </p>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0 fw-semibold">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <hr />
+
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span>
+                        <code className="bg-warning text-dark">DELETE</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Delete
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/user
+                      {"\n"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <h6 className="ms-2 m-0 h6 text-success text-center">
+                    Success
+                  </h6>
+                  <CodeFormat JsonData={User.DeleteUserSuccess} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -1016,7 +1107,6 @@ const Users = () => {
             </div>
           </div> */}
           {/* Delevery User  Update*/}
-
 
           {/* Tasks section */}
         </div>

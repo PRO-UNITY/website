@@ -11,6 +11,9 @@ export const User = {
     password: [
       "This password is too short. It must contain at least 8 characters.",
     ],
+    confirm_password: [
+      "error: Those passwords don't match",
+    ],
   },
   GetUserSucces: {
     token: {
@@ -24,21 +27,26 @@ export const User = {
     ]
   },
   ProfileUserSucces: {
-    "id": "number",
-    "username": "string",
-    "first_name": "string",
-    "last_name": "string",
-    "avatar": "string",
-    "email": "string",
-    "phone": "string",
-    "user_id": "number",
-    "groups": [
-      {
-        "id": "string",
-        "name": "string"
-      }
-    ],
-    "active_profile": false
+    "data": {
+      "count": "number",
+      "next": "https://api.prounity.uz/hrms/users?page=number'",
+      "previous": null,
+      "results": [
+        {
+          "id": "number",
+          "first_name": "string",
+          "username": "string",
+          "last_name": "string",
+          "email": "string",
+          "role": "string",
+          "phone": "string",
+          "country": "string",
+          "city": "string",
+          "bio": "string",
+          "avatar": "file"
+        },
+      ]
+    }
   },
   ProfileUserError: {
     error: {
@@ -82,6 +90,9 @@ export const User = {
     "bio": "string",
     "avatar": "string"
   },
+  DeleteUserSuccess: {
+    "message": "deleted successfully"
+  }
 
 };
 
