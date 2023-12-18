@@ -6,6 +6,7 @@ import './Jobs.css'
 const Jobs = () => {
     const [jobs, setJobs] = React.useState([]);
     const [jobCategories, setJobCategories] = React.useState([]);
+    const [isBlockVisible, setIsBlockVisible] = useState(window.innerWidth > 768);
 
     useEffect(() => {
         getJobs().then((res) => {

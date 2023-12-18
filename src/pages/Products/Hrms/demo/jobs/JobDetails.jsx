@@ -43,7 +43,7 @@ const JobDetails = () => {
                     </p>
                 </div>
 
-                <div className="d-flex mt-5 flex-column gap-2">
+                {/* <div className="d-flex mt-5 flex-column gap-2">
                     <p className="h3">Role Overview:</p>
                     <p>
                         As our first designer, working directly with the founders your role will extend beyond shaping the UI/UX of our AI Sellers. You'll be instrumental in designing our brand identity, design systems, and customer-facing applications. This role is initially a part-time, contract position but should then evolve into a full-time position complemented by equity, reflecting your foundational contribution to our company’s growth.
@@ -85,7 +85,7 @@ const JobDetails = () => {
                         <li>Innovate and push boundaries in UI/UX design, ensuring our products stand out in the market.</li>
                         <li>Establish and maintain a consistent, engaging design across all platforms and customer touchpoints.</li>
                     </ul>
-                </div>
+                </div> */}
 
                 <br />
                 <button className="btn btn-dark rounded-5 p-2">Apply for this position</button>
