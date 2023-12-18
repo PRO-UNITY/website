@@ -1,10 +1,12 @@
 import HrmsDocumentationLayout from "../../../../Layout/HrmsDocumentationLayout";
-import Asaide from "./Asaide";
+import CodeFormat from "./components/Code-format";
 
 const DocumentationHome = () => {
   return (
     <HrmsDocumentationLayout>
-      <div className="doc-content">Documentat</div>
+      <div className="doc-content">
+        <CodeFormat />
+      </div>
     </HrmsDocumentationLayout>
   );
 };

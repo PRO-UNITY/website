@@ -1,5 +1,7 @@
 import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
 import Asaide from "../Asaide";
+import CodeFormat from "../components/Code-format";
+import { User } from "./Data";
 const Sidenavs = [
   {
     id: 1,
@@ -51,7 +53,7 @@ const Sidenavs = [
 const Users = () => {
   return (
     <HrmsDocumentationLayout>
-      <div className="d-flex hrms-doc bg-light  bg-white ">
+      <div className="d-flex hrms-doc bg-light  ">
         <div className="doc-content bg-light pt-5">
           <div className="row px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
@@ -155,36 +157,7 @@ const Users = () => {
                     <h6 className="ms-2 m-0 h6 text-success text-center">
                       Success
                     </h6>
-
-                    <pre className="chroma">
-                      <span className="text-secondary mx-2"> 1</span>
-                      <span className="p">{"{"}</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 2</span>
-                      {"  "}
-                      <span className="p">&quot;token&quot;{" {"}</span> {"\n"}
-                      <span className="text-secondary mx-2"> 3</span>
-                      {"    "}
-                      <span className="nt">&quot;refresh&quot;</span>
-                      <span className="p">:</span>{" "}
-                      <span className="s2">&quot;string&quot;</span>
-                      <span className="p">,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 3</span>
-                      {"    "}
-                      <span className="nt">&quot;access&quot;</span>
-                      <span className="p">:</span>{" "}
-                      <span className="s2">&quot;string&quot;</span>
-                      <span className="p">,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 4</span>
-                      {"  "}
-                      <span className="p">{"}"}</span>
-                      <span className="p">,</span>
-                      {"\n"} <span className="text-secondary mx-2">5</span>
-                      <span className="p">{"}"}</span>
-                      {"\n"}
-                    </pre>
+                    <CodeFormat JsonData={User.CreateUserSucces} />
                   </div>
                 </div>
                 <div className="box">
@@ -199,83 +172,8 @@ const Users = () => {
                     <h6 className="ms-2 m-0 h6 text-danger text-center">
                       Error
                     </h6>
-                    <pre className="chroma">
-                      <span className="text-secondary mx-2"> 1</span>
-                      <span className="p">{"{"}</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 3</span>
-                      {"  "}
-                      <span className="nt">&quot;email&quot;</span>
-                      <span className="p">:</span> <span>[</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 4</span>
-                      {"    "}
-                      <span className="s2">
-                        &quot;This field must be unique.&quot;
-                      </span>
-                      <span className="p">,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 5</span>
-                      {"  "}
-                      <span className="p">]</span>
-                      <span className="p">,</span>
-                      {"\n"} <span className="text-secondary mx-2">6</span>
-                      <span className="p">{"}"}</span>
-                      {"\n"}
-                    </pre>
+                    <CodeFormat JsonData={User.CreateUserError} />
                     <hr />
-                    <pre className="chroma">
-                      <span className="text-secondary mx-2"> 1</span>
-                      <span className="p">{"{"}</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 3</span>
-                      {"  "}
-                      <span className="nt">
-                        &quot;email&quot; || &quot;username&quot;
-                      </span>
-                      <span className="p">:</span> <span>[</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 4</span>
-                      {"    "}
-                      <span className="s2">
-                        &quot;This field must be unique.&quot;
-                      </span>
-                      <span className="p">,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 5</span>
-                      {"  "}
-                      <span className="p">]</span>
-                      <span className="p">,</span>
-                      {"\n"} <span className="text-secondary mx-2">6</span>
-                      <span className="p">{"}"}</span>
-                      {"\n"}
-                    </pre>
-                    <hr />
-                    <pre className="chroma">
-                      <span className="text-secondary mx-2"> 1</span>
-                      <span className="p">{"{"}</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 3</span>
-                      {"  "}
-                      <span className="nt">&quot;password&quot;</span>
-                      <span className="p">:</span> <span>[</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 4</span>
-                      {"    "}
-                      <span className="s2">
-                        &quot;This password is too short. It must contain at
-                        least 8 characters.&quot;
-                      </span>
-                      <span className="p">,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 5</span>
-                      {"  "}
-                      <span className="p">]</span>
-                      <span className="p">,</span>
-                      {"\n"} <span className="text-secondary mx-2">6</span>
-                      <span className="p">{"}"}</span>
-                      {"\n"}
-                    </pre>
                   </div>
                 </div>
               </div>
@@ -501,98 +399,7 @@ const Users = () => {
                       Status:<span className="text-success">200 Ok</span>
                     </pre>
                   </div>
-                  <pre className="chroma">
-                    <span className="text-secondary mx-2">1</span>
-                    <span className="p">{"{"}</span> {"\n"}
-                    <span className="text-secondary mx-2">2</span>
-                    {"  "}
-                    <span className="nt">&quot;id&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="num">number</span>
-                    <span className="p">,</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">3</span>
-                    {"  "}
-                    <span className="nt">&quot;username&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    <span className="p">,</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">4</span>
-                    {"  "}
-                    <span className="nt">&quot;first_name&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">5</span>
-                    {"  "}
-                    <span className="nt">&quot;last_name&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">6</span>
-                    {"  "}
-                    <span className="nt">&quot;avatar&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">7</span>
-                    {"  "}
-                    <span className="nt">&quot;email&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">8</span>
-                    {"  "}
-                    <span className="nt">&quot;phone&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">9</span>
-                    {"  "}
-                    <span className="nt">&quot;user_id&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="num">number</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">10</span>
-                    {"  "}
-                    <span className="nt">&quot;groups&quot;</span>
-                    <span className="p">:</span> <span className="">{"["}</span>{" "}
-                    {"\n"}
-                    <span className="text-secondary mx-2">11</span>
-                    {"    "}
-                    <span className="">{"{"}</span> {"\n"}
-                    <span className="text-secondary mx-2">12</span>
-                    {"    "}
-                    <span className=" mx-2">&quot;id&quot;</span>
-                    <span>:</span>{" "}
-                    <span className="">
-                      <span className="s2">&quot;string&quot;</span>
-                    </span>
-                    <span>,</span> {"\n"}
-                    <span className="text-secondary mx-2">13</span>
-                    {"     "}
-                    <span>&quot;name&quot;</span>
-                    <span>:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span> {"\n"}
-                    <span className="text-secondary mx-2">14</span>
-                    {"     "}
-                    <span>{"}"}</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">15</span>
-                    {"   "}
-                    <span>{"]"}</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">16</span>
-                    {"  "}
-                    <span className="nt">&quot;active_profile&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="bool">boolean</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">17</span>
-                    <span className="p">{"}"}</span>
-                    {"\n"}
-                  </pre>
+                  <CodeFormat JsonData={User.ProfileUserSucces} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
