@@ -101,7 +101,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
           {/* Hrms */}
           <Route path="/products/hrms/demo" element={<Jobs />} />
-          <Route path="/products/hrms/demo/job-details" element={<JobDetails />} />
+          <Route path="/products/hrms/demo/job-details/:id" element={<JobDetails />} />
           <Route path="/products/hrms" element={<Hrms />} />
           <Route
             path="products/hrms/documentation"
@@ -204,10 +204,10 @@ function App() {
             element={<DeliveryNotification />}
           />
           {/* Demo Delivery */}
-          <Route path="/products/delivery/demo" element={<DemoHome/>} />
-          <Route path="/products/delivery/demo/dashboard" element={<Dashboard/>} />
+          <Route path="/products/delivery/demo" element={<DemoHome />} />
+          <Route path="/products/delivery/demo/dashboard" element={<Dashboard />} />
           {/* <Route path="/products/delivery/demo" element={<DemoSidebar/>} /> */}
-          
+
         </Routes>
       </ActiveNavContext.Provider>
     </>

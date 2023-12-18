@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { BASE_URL, getData } from '../../service/index'
 
 const JobDetails = () => {
-    return <div className="d-flex flex-column gap-5">
+    const [job, setJob] = useState()
+    const { id } = useParams()
 
+    useEffect(() => {
+        getData(`/job/vacancies/${id}`).then(res => {
+            setJob(res)
+            console.log(res);
+        })
+    }, [])
+
+    return <div className="d-flex flex-column gap-5">
         <div>
             <nav class="p-3 navbar-light bg-light">
                 <span class="navbar-brand mb-0 h1">Navbar</span>
@@ -15,11 +26,14 @@ const JobDetails = () => {
                     <p className="lead">
                         Job Details
                     </p>
-                    <h3 className="display-5">Founding Product Designer (UI/UX)</h3>
+                    <h3 className="display-5">{job?.job_category.tag}</h3>
                 </div>
 
                 <div className="d-flex mt-5 w-75 flex-column gap-2">
-                    <p className="h3">About getitAI:</p>
+                    <p className="h3">About {job?.company.name}:</p>
+
+                    <p>{job?.company.content}</p>
+
                     <p>
                         Join getitAI, a trailblazer in human-centric commerce, where we're transforming the way buyers are engaged online through our autonomous AI Sellers. Watch an investor video we made: https://go.getit.ai/pier39-pitch
                     </p>
@@ -79,8 +93,8 @@ const JobDetails = () => {
                 <div className="card">
                     <div className="card-body">
                         <div className="d-flex flex-column align-items-center gap-2 text-center">
-                            <img style={{ width: 65 }} class="card-img-top rounded-5" src="https://pbs.twimg.com/profile_images/1673292360568958978/Xe543-4D_400x400.jpg" alt="Card image cap" />
-                            <h5 className="card-title">GetAi</h5>
+                            <img style={{ width: 65, height: 65 }} class="card-img-top rounded-5" src={`${BASE_URL}${job?.company?.logo}`} alt="Card image cap" />
+                            <h5 className="card-title">{job?.company.name}</h5>
                             <h6 className="card-subtitle mb-2 text-muted">Visit Website</h6>
                             <button className="btn btn-dark rounded-5">Apply for this position</button>
                         </div>
@@ -88,16 +102,19 @@ const JobDetails = () => {
                         <div className="d-flex flex-column gap-3">
                             <div>
                                 <span>Job Type</span>
-                                <h5 className="text-dark mt-2">Freelance</h5>
+                                <h5 className="text-dark mt-2">{job.job_type.type}</h5>
                             </div>
                             <div>
                                 <span>Location</span>
-                                <h5 className="text-dark mt-2">Remote</h5>
-                                <h5 className="text-dark mt-2">Remote Friendly</h5>
+                                <h5 className="text-dark mt-2">{job.company.countries.name}</h5>
                             </div>
                             <div>
                                 <span>Date posted</span>
-                                <h5 className="text-dark mt-2">Dec 17, 2023</h5>
+                                <h5 className="text-dark mt-2">{job.company.created_at}</h5>
+                            </div>
+                            <div>
+                                <span>Salary</span>
+                                <h5 className="text-danger mt-2">{job.salary}$</h5>
                             </div>
                         </div>
 

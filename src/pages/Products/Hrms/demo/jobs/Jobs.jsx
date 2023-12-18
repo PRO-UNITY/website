@@ -1,14 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BASE_URL, getJobs } from "../../service";
+import { BASE_URL, getJobs, getData } from "../../service";
+import './Jobs.css'
 
 const Jobs = () => {
     const [jobs, setJobs] = React.useState([]);
+    const [jobCategories, setJobCategories] = React.useState([]);
 
     useEffect(() => {
         getJobs().then((res) => {
-            console.log(res.data);
+            console.log(res);
             setJobs(res.data);
+        })
+    }, [])
+
+    useEffect(() => {
+        getData('/job/categories').then((res) => {
+            console.log(res);
+            setJobCategories(res);
         }
         ).catch((err) => {
             console.log(err);
@@ -16,10 +25,18 @@ const Jobs = () => {
         )
     }, [])
 
+
+
+
+    const toggleBlockVisibility = () => {
+        setIsBlockVisible(!isBlockVisible);
+    };
+
     return <div className="d-flex flex-column gap-5">
         <div>
             <nav class="p-3 navbar-light bg-light">
                 <span class="navbar-brand mb-0 h1">Navbar</span>
+
             </nav>
         </div>
 
@@ -68,11 +85,11 @@ const Jobs = () => {
                                             </div>
                                             <div className="d-flex align-items-center gap-5 justify-content-center">
                                                 <div>
-                                                    <p className='card-text'>Type: {job.job_type.type}</p>
+                                                    <p className='card-text'>Location: <span className="text-primary">{job.company.countries.name}</span></p>
                                                     <p className="card-title text-muted">Posted {job.created_at}</p>
                                                 </div>
                                                 <div className="d-flex flex-column gap-1 justify-content-center">
-                                                    <Link to={'/products/hrms/demo/job-details'}>
+                                                    <Link to={`/products/hrms/demo/job-details/${job.id}`}>
                                                         <button className="btn btn-light w-100">View Job</button>
                                                     </Link>
                                                     <button className="btn btn-light">Apply Now</button>
@@ -84,188 +101,23 @@ const Jobs = () => {
                             ))
                         }
 
-                        <Link style={{ textDecoration: 'none' }} to={'/products/hrms/demo/job-details'}>
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center justify-content-between">
-                                    <div className="d-flex align-items-center gap-3">
-                                        <img style={{ width: '65px', height: '65px' }} class="card-img-top" src="https://pbs.twimg.com/profile_images/1673292360568958978/Xe543-4D_400x400.jpg" alt="Card image cap" />
-                                        <div>
-                                            <p class="card-text text-muted">getitAI</p>
-                                            <p class="card-title">With supporting text below as.</p>
-                                        </div>
-                                    </div>
-                                    <div className="d-flex align-items-center gap-5 justify-content-center">
-                                        <div>
-                                            <p className='card-text'> <i class="fa-solid fa-location-dot"></i> Remote</p>
-                                            <p className="card-title text-muted">Posted 2 days ago</p>
-                                        </div>
-                                        <div className="d-flex flex-column gap-1 justify-content-center">
-                                            <button className="btn btn-light">View Job</button>
-                                            <button className="btn btn-light">Apply Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
-
-                        <Link style={{ textDecoration: 'none' }} to={'/products/hrms/demo/job-details'}>
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center justify-content-between">
-                                    <div className="d-flex align-items-center gap-3">
-                                        <img style={{ width: '65px', height: '65px' }} class="card-img-top" src="https://pbs.twimg.com/profile_images/1673292360568958978/Xe543-4D_400x400.jpg" alt="Card image cap" />
-                                        <div>
-                                            <p class="card-text text-muted">getitAI</p>
-                                            <p class="card-title">With supporting text below as.</p>
-                                        </div>
-                                    </div>
-                                    <div className="d-flex align-items-center  gap-5 justify-content-center">
-                                        <div>
-                                            <p className='card-text'> <i class="fa-solid fa-location-dot"></i> Remote</p>
-                                            <p className="card-title text-muted">Posted 2 days ago</p>
-                                        </div>
-                                        <div className="d-flex flex-column gap-1 justify-content-center">
-                                            <button className="btn btn-light">View Job</button>
-                                            <button className="btn btn-light">Apply Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
-
-                        <Link style={{ textDecoration: 'none' }} to={'/products/hrms/demo/job-details'}>
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center justify-content-between">
-                                    <div className="d-flex align-items-center gap-3">
-                                        <img style={{ width: '65px', height: '65px' }} class="card-img-top" src="https://pbs.twimg.com/profile_images/1673292360568958978/Xe543-4D_400x400.jpg" alt="Card image cap" />
-                                        <div>
-                                            <p class="card-text text-muted">getitAI</p>
-                                            <p class="card-title">With supporting text below as.</p>
-                                        </div>
-                                    </div>
-                                    <div className="d-flex align-items-center  gap-5 justify-content-center">
-                                        <div>
-                                            <p className='card-text'> <i class="fa-solid fa-location-dot"></i> Remote</p>
-                                            <p className="card-title text-muted">Posted 2 days ago</p>
-                                        </div>
-                                        <div className="d-flex flex-column gap-1 justify-content-center">
-                                            <button className="btn btn-light">View Job</button>
-                                            <button className="btn btn-light">Apply Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
-
-                        <Link style={{ textDecoration: 'none' }} to={'/products/hrms/demo/job-details'}>
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center justify-content-between">
-                                    <div className="d-flex align-items-center gap-3">
-                                        <img style={{ width: '65px', height: '65px' }} class="card-img-top" src="https://pbs.twimg.com/profile_images/1673292360568958978/Xe543-4D_400x400.jpg" alt="Card image cap" />
-                                        <div>
-                                            <p class="card-text text-muted">getitAI</p>
-                                            <p class="card-title">With supporting text below as.</p>
-                                        </div>
-                                    </div>
-                                    <div className="d-flex align-items-center  gap-5 justify-content-center">
-                                        <div>
-                                            <p className='card-text'> <i class="fa-solid fa-location-dot"></i> Remote</p>
-                                            <p className="card-title text-muted">Posted 2 days ago</p>
-                                        </div>
-                                        <div className="d-flex flex-column gap-1 justify-content-center">
-                                            <button className="btn btn-light">View Job</button>
-                                            <button className="btn btn-light">Apply Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
-
-                        <Link style={{ textDecoration: 'none' }} to={'/products/hrms/demo/job-details'}>
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center justify-content-between">
-                                    <div className="d-flex align-items-center gap-3">
-                                        <img style={{ width: '65px', height: '65px' }} class="card-img-top" src="https://pbs.twimg.com/profile_images/1673292360568958978/Xe543-4D_400x400.jpg" alt="Card image cap" />
-                                        <div>
-                                            <p class="card-text text-muted">getitAI</p>
-                                            <p class="card-title">With supporting text below as.</p>
-                                        </div>
-                                    </div>
-                                    <div className="d-flex align-items-center  gap-5 justify-content-center">
-                                        <div>
-                                            <p className='card-text'> <i class="fa-solid fa-location-dot"></i> Remote</p>
-                                            <p className="card-title text-muted">Posted 2 days ago</p>
-                                        </div>
-                                        <div className="d-flex flex-column gap-1 justify-content-center">
-                                            <button className="btn btn-light">View Job</button>
-                                            <button className="btn btn-light">Apply Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
                     </div>
                 </div>
 
-                <div className="d-flex col-3 flex-column gap-4">
+                <div className={`desktop d-flex col-3 flex-column gap-4 `}>
                     <div class="card p-4 rounded-4">
                         <div class="card-body">
                             <p class="card-title ">Specialties</p>
                             <div className="d-flex flex-column gap-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        Animation
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        Brand / graphic design
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        Illustration
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        Leadership
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        Mobile Designer
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        UI / Visual Designer
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        Product Designer
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        UX Design / Research
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        Web Design
-                                    </label>
-                                </div>
-
+                                {
+                                    jobCategories?.map((category) => (
+                                        <div className="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id={category.id} />
+                                            <label class="form-check-label text-secondary" for="flexCheckDefault">
+                                                {category.tag}
+                                            </label>
+                                        </div>
+                                    ))}
                                 <hr />
                                 <h5 class="card-title">Location</h5>
                                 <input type="text" class="form-control py-2 rounded-3" placeholder="Enter location..." />
@@ -275,21 +127,7 @@ const Jobs = () => {
                                         Open to remote
                                     </label>
                                 </div>
-
                                 <hr />
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        Full-time
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label text-secondary" for="flexCheckDefault">
-                                        Freelance/Contract
-                                    </label>
-                                </div>
-
                                 <button className="btn btn-secondary mt-2 rounded-5 p-2">Filter</button>
                             </div>
                         </div>
