@@ -1,7 +1,5 @@
 import "./Hrms.css";
 import home_slider from "../../../assets/images/hrms/home-img.png";
-import homeAndroidIcon from "../../../assets/images/hrms/icons8-android 1.svg";
-import homeIOSIcon from "../../../assets/images/hrms/icons8-apple 1.svg";
 import about_img from "../../../assets/images/hrms/about-img.png";
 import slider_img1 from "../../../assets/images/hrms/Rectangle 30.jpg";
 import slider_img2 from "../../../assets/images/hrms/Rectangle 31.png";
@@ -12,15 +10,16 @@ import slider_img6 from "../../../assets/images/hrms/Rectangle 35.jpg";
 import slider_img7 from "../../../assets/images/hrms/Rectangle 36.jpg";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import flutter from "../../../assets/images/hrms/icons8-flutter-480 1.png";
-import android from "../../../assets/images/hrms/icons8-android-240 1.png";
-import firebase from "../../../assets/images/hrms/icons8-firebase-480 1.png";
-import ios from "../../../assets/images/hrms/icons8-ios-logo-512 1.png";
-import dribbble from "../../../assets/images/hrms/icons8-dribble-480 1.png";
+import flutterb from "../../../assets/images/hrms/pluginIcon.png";
+import python from "../../../assets/images/hrms/python-logo.png";
+import django from "../../../assets/images/hrms/django-logo.png";
+import dribbble from "../../../assets/images/hrms/material-design-icon-512x512-fz9kqvlo.png";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Layout from "../../../Layout/Layout";
+import { Link } from "react-router-dom";
 
 const CaruselItem = [
   {
@@ -65,23 +64,23 @@ const platformData = [
   },
   {
     id: 2,
-    image: android,
+    image: flutterb,
     background: "rgba(48, 220, 128, 0.26);",
   },
   {
     id: 3,
-    image: firebase,
-    background: "rgba(255, 111, 0, 0.26)",
+    image: python,
+    background: "rgba(255, 111, 0, 0.15)",
   },
   {
     id: 4,
-    image: ios,
-    background: "rgba(143, 58, 255, 0.26)",
+    image: django,
+    background: "rgba(48, 220, 128, 0.15)",
   },
   {
     id: 5,
     image: dribbble,
-    background: "rgba(234, 76, 137, 0.26)",
+    background: "rgba(255, 255, 255, 0.6)",
   },
 ];
 
@@ -107,14 +106,13 @@ const Hrms = () => {
                 {t("hrms.home.button1")}
                 <i className="fa-solid fa-arrow-right-long "></i>
               </a>
-              <a className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded ">
-                <img src={homeAndroidIcon} alt="" />
-                {t("hrms.home.googlePlay")}
-              </a>
-              <a className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded ">
-                <img src={homeIOSIcon} alt="" />
-                {t("hrms.home.appStore")}
-              </a>
+              <Link
+                to={"/products/hrms/documentation/"}
+                className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded "
+              >
+                <i className="fa-solid fa-file-lines"></i>
+                Documentation
+              </Link>
             </div>
             <div className="col-lg-6  h-100">
               <div className="hero_slider d-flex justify-content-center .align-items-end">
@@ -138,13 +136,15 @@ const Hrms = () => {
                 {t("hrms.about.box1.title")}
               </h2>
               <p className="description">{t("hrms.about.box1.description")}</p>
-              <p className="description">{t("hrms.about.box1.description")}</p>
-              <a
-                href="#demo"
-                className=" btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3"
-              >
-                {t("hrms.about.moreButton")}
-                <i className="fa-solid fa-arrow-right-long mx-2"></i>
+              <p className="description">{t("hrms.about.box1.description2")}</p>
+              <p className="description">{t("hrms.about.box1.description3")}</p>
+              <a className=" btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3">
+                <i className="fa-brands fa-google-play fs-5 me-2"></i>
+                Google Play
+              </a>
+              <a className=" btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3">
+                <i className="fa-brands fa-apple fs-4 me-2"></i>
+                App Store
               </a>
             </div>
           </div>
@@ -159,7 +159,11 @@ const Hrms = () => {
                       style={{ background: item.background }}
                       className="img-box d-flex justify-content-center align-items-center"
                     >
-                      <img src={item.image} alt="" />
+                      <img
+                        src={item.image}
+                        alt=""
+                        className="w-100 h-100  p-3"
+                      />
                     </div>
                   </div>
                 </div>

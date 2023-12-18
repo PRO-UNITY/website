@@ -234,16 +234,16 @@
 
   "hrms": {
     "home": {
-      "title": "Book Movie Ticket From Your Home",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus. Dolorum, ipsam maiores est quibusdam consequatur ratione omnis adipisci ea quis soluta possimus sapiente dolor voluptatum.",
-      "button1": "Buy Now",
-      "googlePlay": "Goggle Play",
-      "appStore": "Appstore"
+      "title": "All-In-One HR platform to manage your entire employee experience",
+      "description": "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management. Explore the future of workforce optimization with our innovative solution.",
+      "button1": "Buy Now"
     },
     "about": {
       "box1": {
-        "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
+        "title": "Discover Our Story: Revolutionizing HR Management for Success",
+        "description": "At Pro Unity, we embark on a journey of transforming traditional HR management into a dynamic and efficient process. Founded with a vision to empower businesses through innovative technology, we have dedicated ourselves to creating an HRMS solution that caters to the evolving needs of modern enterprises.",
+        "description2": "Our commitment goes beyond just providing a software solution. We believe in fostering a collaborative environment, where businesses thrive and employees excel. With a focus on simplicity, automation, and adaptability, our HRMS platform is designed to seamlessly integrate into your workflow, allowing you to focus on what truly matters - the growth of your business.",
+        "description3": "As we continue to evolve, our mission remains clear: to be the catalyst for positive change in HR management. Join us in redefining the future of your business with a personalized and powerful HRMS experience. Your success is our motivation."
       },
       "box2": {
         "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",

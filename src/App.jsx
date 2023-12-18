@@ -10,7 +10,6 @@ import {
   Hrms,
   HrmsAdminHome,
   HrmsAdminHomeEditProfile,
-
   HrmsDocKitchen,
   HrmsDocUser,
   HrmsDocumentation,
@@ -41,6 +40,7 @@ import {
   HrmsDocDeliveryman,
   HrmsDocManager,
   HrmsDocOrders,
+  Products,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { getRoleUser } from "./pages/Products/Delivery/functions";
@@ -55,12 +55,12 @@ import HrmsCalendar from "./pages/Products/Hrms/admin/Hrms-calendar/HrmsCalendar
 function App() {
   const [activeNav, setactiveNav] = useState(1);
   const [activeHrmsDash, setActiveHrmsDash] = useState(1);
-  const [role, setRole] = useState('')
+  const [role, setRole] = useState("");
 
   useEffect(() => {
     const fetchRole = async () => {
-        const role = await getRoleUser();
-        setRole(role);
+      const role = await getRoleUser();
+      setRole(role);
     };
     fetchRole();
   }, []);
@@ -85,20 +85,42 @@ function App() {
           <Route path="/services/coworking" element={<Coworking />} />
           <Route path="/services/pro-community" element={<ProCommunity />} />
           <Route path="/services/opencourse" element={<OpenCourse />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products/delivery" element={<Delivery />} />
           <Route path="/user/:id" element={<TeamDetails />} />
           <Route path="*" element={<PageNotFound />} />
           {/* Hrms */}
           <Route path="/products/hrms" element={<Hrms />} />
-          <Route path="products/hrms/documentation" element={<HrmsDocumentation />} />
-          <Route path="products/hrms/documentation/users" element={<HrmsDocUser />} />
-          <Route path="products/hrms/documentation/kitchen" element={<HrmsDocKitchen />} />
-          <Route path="products/hrms/documentation/foods" element={<HrmsDocFoods />} />
-          <Route path="products/hrms/documentation/deliveryman" element={<HrmsDocDeliveryman />} />
-          <Route path="products/hrms/documentation/manager" element={<HrmsDocManager />} />
-          <Route path="products/hrms/documentation/orders" element={<HrmsDocOrders />} />
-          
+          <Route
+            path="products/hrms/documentation"
+            element={<HrmsDocumentation />}
+          />
+          <Route
+            path="products/hrms/documentation/users"
+            element={<HrmsDocUser />}
+          />
+          <Route
+            path="products/hrms/documentation/kitchen"
+            element={<HrmsDocKitchen />}
+          />
+          <Route
+            path="products/hrms/documentation/foods"
+            element={<HrmsDocFoods />}
+          />
+          <Route
+            path="products/hrms/documentation/deliveryman"
+            element={<HrmsDocDeliveryman />}
+          />
+          <Route
+            path="products/hrms/documentation/manager"
+            element={<HrmsDocManager />}
+          />
+          <Route
+            path="products/hrms/documentation/orders"
+            element={<HrmsDocOrders />}
+          />
+
           <Route
             path="/products/hrms/admin/auth/sign-in"
             element={<HrmsSignIn />}
@@ -122,9 +144,18 @@ function App() {
           />
           {/* Delivery */}
           <Route path="/products/delivery" element={<Delivery />} />
-          <Route path="products/delivery/documentation" element={<DeliveryDocumentation />} />
-          <Route path="products/delivery/documentation/users" element={<DeliveryDocUser />} />
-          <Route path="products/delivery/documentation/installation" element={<DeliveryDocInstallation />} />
+          <Route
+            path="products/delivery/documentation"
+            element={<DeliveryDocumentation />}
+          />
+          <Route
+            path="products/delivery/documentation/users"
+            element={<DeliveryDocUser />}
+          />
+          <Route
+            path="products/delivery/documentation/installation"
+            element={<DeliveryDocInstallation />}
+          />
           <Route
             path="/products/delivery/admin/auth/sign-in"
             element={<DeliverySignIn />}
@@ -138,9 +169,18 @@ function App() {
             path="/products/delivery/admin/edit-profile"
             element={<DeliveryAdminHomeEditProfile />}
           />
-          <Route path="/products/delivery/statistic" element={<DeliveryStatistic />} />
-          <Route path="/products/delivery/task-list" element={<DeliveryTaskList />} />
-          <Route path="/products/delivery/services" element={<DeliveryServices />} />
+          <Route
+            path="/products/delivery/statistic"
+            element={<DeliveryStatistic />}
+          />
+          <Route
+            path="/products/delivery/task-list"
+            element={<DeliveryTaskList />}
+          />
+          <Route
+            path="/products/delivery/services"
+            element={<DeliveryServices />}
+          />
           <Route
             path="/products/delivery/notification"
             element={<DeliveryNotification />}

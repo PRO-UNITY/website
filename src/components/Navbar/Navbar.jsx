@@ -59,15 +59,15 @@ const MyNavbar = () => {
                 {t("navbar.service")}
               </Nav.Link>
               <div className="nav-item dropdown">
-                <a
-                  href="#"
+                <Link
+                  to={"/products"}
                   className={`${
                     activeNav === 4 ? "active" : ""
                   } py-0 nav-link dropdown-toggle `}
                   onClick={() => setactiveNav(4)}
                 >
                   Products
-                </a>
+                </Link>
                 <div className="dropdown-menu  rounded px-3 mt-2">
                   <Link
                     to={"/products/hrms"}

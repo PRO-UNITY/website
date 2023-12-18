@@ -12,6 +12,7 @@ export { default as PageNotFound } from "./PageNotFound/PageNotFound";
 export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 
 /*-- Products ---*/
+export { default as Products } from "./Products/Products";
 // Hrms
 export { default as Hrms } from "./Products/Hrms/Hrms";
 export { default as HrmsDocumentation } from "./Products/Hrms/docomentation/Home";
