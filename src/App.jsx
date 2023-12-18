@@ -54,6 +54,8 @@ import { getRoleUser } from "./pages/Products/Delivery/functions";
 import { useState, useEffect } from "react";
 import DeliveryHome from "./pages/Products/Delivery/admin/Delivery-home/Delivery-home";
 import HrmsCalendar from "./pages/Products/Hrms/admin/Hrms-calendar/HrmsCalendar";
+import Jobs from "./pages/Products/Hrms/demo/jobs/Jobs";
+import JobDetails from "./pages/Products/Hrms/demo/jobs/JobDetails";
 
 // const optimizely = createInstance({
 //   sdkKey: "YOUR_OPTIMIZELY_SDK_KEY", // Optimizely SDK key
@@ -98,6 +100,8 @@ function App() {
           <Route path="/user/:id" element={<TeamDetails />} />
           <Route path="*" element={<PageNotFound />} />
           {/* Hrms */}
+          <Route path="/products/hrms/demo" element={<Jobs />} />
+          <Route path="/products/hrms/demo/job-details" element={<JobDetails />} />
           <Route path="/products/hrms" element={<Hrms />} />
           <Route
             path="products/hrms/documentation"

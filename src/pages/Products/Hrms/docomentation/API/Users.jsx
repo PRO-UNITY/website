@@ -598,12 +598,12 @@ const Users = () => {
             </div>
           </div>
           <hr className="my-md-5" />
-          {/* User Detail */}
+          {/* User Details */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
                 <h2 className="fs-3 my-4 text-primary" id="user-detail">
-                  User Detail
+                  User Details
                 </h2>
                 <p>
                   Har qaysi foydalanuvchini <pre className="d-inline">ID</pre>{" "}
