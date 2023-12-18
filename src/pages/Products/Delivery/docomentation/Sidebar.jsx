@@ -33,6 +33,26 @@ const Sidenavs = [
         name: "Kitchen",
         path: "/products/delivery/documentation/kitchen",
       },
+      {
+        id: "foods",
+        name: "Foods",
+        path: "/products/delivery/documentation/foods",
+      },
+      {
+        id: "deliveryman",
+        name: "Deliveryman",
+        path: "/products/delivery/documentation/deliveryman",
+      },
+      {
+        id: "manager",
+        name: "Manager",
+        path: "/products/delivery/documentation/manager",
+      },
+      {
+        id: "orders",
+        name: "Orders",
+        path: "/products/delivery/documentation/orders",
+      },
     ],
   },
   {

@@ -38,6 +38,10 @@ export { default as HrmsNotification } from "./Products/Hrms/admin/Hrms-notifica
 export { default as DeliveryDocumentation } from "./Products/Delivery/docomentation/Home";
 export { default as DeliveryDocUser } from "./Products/Delivery/docomentation/API/Users";
 export { default as DeliveryDocKitchen } from "./Products/Delivery/docomentation/API/Kitchen";
+export { default as DeliveryDocFoods } from "./Products/Delivery/docomentation/API/Foods";
+export { default as DeliveryDocDeliveryman } from "./Products/Delivery/docomentation/API/Deliveryman";
+export { default as DeliveryDocManager } from "./Products/Delivery/docomentation/API/Manager";
+export { default as DeliveryDocOrders } from "./Products/Delivery/docomentation/API/Orders";
 export { default as DeliveryDocInstallation } from "./Products/Delivery/docomentation/Installation";
 
 // Delivery admin

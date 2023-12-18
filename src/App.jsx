@@ -41,6 +41,11 @@ import {
   HrmsDocManager,
   HrmsDocOrders,
   Products,
+  DeliveryDocKitchen,
+  DeliveryDocFoods,
+  DeliveryDocDeliveryman,
+  DeliveryDocManager,
+  DeliveryDocOrders,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { getRoleUser } from "./pages/Products/Delivery/functions";
@@ -156,6 +161,13 @@ function App() {
             path="products/delivery/documentation/installation"
             element={<DeliveryDocInstallation />}
           />
+          <Route path="products/delivery/documentation" element={<DeliveryDocumentation />} />
+          <Route path="products/delivery/documentation/users" element={<DeliveryDocUser />} />
+          <Route path="products/delivery/documentation/kitchen" element={<DeliveryDocKitchen />} />
+          <Route path="products/delivery/documentation/foods" element={<DeliveryDocFoods />} />
+          <Route path="products/delivery/documentation/deliveryman" element={<DeliveryDocDeliveryman />} />
+          <Route path="products/delivery/documentation/manager" element={<DeliveryDocManager />} />
+          <Route path="products/delivery/documentation/orders" element={<DeliveryDocOrders />} />
           <Route
             path="/products/delivery/admin/auth/sign-in"
             element={<DeliverySignIn />}
