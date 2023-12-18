@@ -61,26 +61,31 @@ const platformData = [
     id: 1,
     image: flutter,
     background: "rgba(64, 196, 255, 0.26)",
+    link: "https://flutter.dev/",
   },
   {
     id: 2,
     image: flutterb,
     background: "rgba(48, 220, 128, 0.26);",
+    link: "https://bloclibrary.dev/",
   },
   {
     id: 3,
     image: python,
     background: "rgba(255, 111, 0, 0.15)",
+    link: "https://www.python.org/",
   },
   {
     id: 4,
     image: django,
     background: "rgba(48, 220, 128, 0.15)",
+    link: "https://www.djangoproject.com/",
   },
   {
     id: 5,
     image: dribbble,
     background: "rgba(255, 255, 255, 0.6)",
+    link: "https://m3.material.io/",
   },
 ];
 
@@ -154,7 +159,12 @@ const Hrms = () => {
             <div className="row">
               {platformData.map((item) => (
                 <div className="col " key={item.id}>
-                  <a href="https://flutter.dev/" className="card my-3">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://flutter.dev/"
+                    className="card my-3"
+                  >
                     <div
                       style={{ background: item.background }}
                       className="img-box d-flex justify-content-center align-items-center"
