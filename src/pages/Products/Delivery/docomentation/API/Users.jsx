@@ -139,7 +139,7 @@ const Users = () => {
                       /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_signup
+                      https://api.prounity.uz/food-delivery/auth/signup
                       {"\n"}
                     </pre>
                   </div>
@@ -339,7 +339,7 @@ const Users = () => {
                       <span className="text-secondary mx-2">1</span>LOGIN /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_sigin
+                      https://api.prounity.uz/food-delivery/auth/sigin
                       {"\n"}
                     </pre>
                   </div>
@@ -489,7 +489,7 @@ const Users = () => {
                       /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_profiles
+                      https://api.prounity.uz/food-delivery/auth/user
                       {"\n"}
                     </pre>
                   </div>
@@ -683,7 +683,7 @@ const Users = () => {
                       /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_update
+                      https://api.prounity.uz/food-delivery/auth/user
                       {"\n"}
                     </pre>
                   </div>
@@ -710,24 +710,17 @@ const Users = () => {
                     {"\n"}
                     <span className="text-secondary mx-2">3</span>
                     {"  "}
-                    <span className="nt">&quot;username&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    <span className="p">,</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">4</span>
-                    {"  "}
                     <span className="nt">&quot;first_name&quot;</span>
                     <span className="p">:</span>{" "}
                     <span className="s2">&quot;string&quot;</span>
                     {"\n"}
-                    <span className="text-secondary mx-2">5</span>
+                    <span className="text-secondary mx-2">4</span>
                     {"  "}
                     <span className="nt">&quot;last_name&quot;</span>
                     <span className="p">:</span>{" "}
                     <span className="s2">&quot;string&quot;</span>
                     {"\n"}
-                    <span className="text-secondary mx-2">7</span>
+                    <span className="text-secondary mx-2">5</span>
                     {"  "}
                     <span className="nt">&quot;email&quot;</span>
                     <span className="p">:</span>{" "}
@@ -739,7 +732,7 @@ const Users = () => {
                     <span className="p">:</span>{" "}
                     <span className="s2">&quot;string&quot;</span>
                     {"\n"}
-                    <span className="text-secondary mx-2">8</span>
+                    <span className="text-secondary mx-2">7</span>
                     {"  "}
                     <span className="nt">&quot;phone&quot;</span>
                     <span className="p">:</span>{" "}
@@ -764,112 +757,6 @@ const Users = () => {
                     </pre>
                   </div>
                   <pre className="chroma py-3 px-2">* Not Found</pre>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr className="my-md-5" />
-          {/* User Detail */}
-          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
-            <div className="col-xl-6">
-              <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-detail">
-                  User Detail
-                </h2>
-                <p>
-                  Har qaysi foydalanuvchini <pre className="d-inline">ID</pre>{" "}
-                  ma&apos;lumootlarni olish uchun <code>GET</code> so&apos;rovi
-                  yordamida amalga oshiriladi
-                </p>
-                <h5>Attributes</h5>
-                <hr />
-                <ul className="doc-list p-0">
-                  <li className="title">
-                    <p className="m-0 fw-semibold">
-                      token :<code>string</code>
-                    </p>
-                  </li>
-                </ul>
-                <h5>Response Status</h5>
-                <hr />
-                <ul className="doc-list p-0">
-                  <h6>
-                    Success: <pre className="text-success d-inline">200 Ok</pre>
-                  </h6>
-                  <h6>
-                    Error:{" "}
-                    <pre className="text-danger d-inline">404 Not Found</pre>
-                  </h6>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-6">
-              <div className="sidenote">
-                <div className="box">
-                  <div className="title px-3 py-2">
-                    <p className="m-0">Request</p>
-                    <pre className="ms-2 m-0 ">
-                      Method:
-                      <span className="text-success">
-                        <code className="bg-primary text-white">GET</code>
-                      </span>
-                    </pre>
-                  </div>
-                  <div className="pre-code-block">
-                    <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>Detail
-                      /users
-                      {"\n"}
-                      <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_details/
-                      {"{id}"}
-                      {"\n"}
-                    </pre>
-                  </div>
-                </div>
-                <div className="box">
-                  <div className="title px-3 py-2">
-                    <p className="m-0">Response</p>
-                    <pre className="ms-2 m-0 ">
-                      Status:<span className="text-success">200 Ok</span>
-                    </pre>
-                  </div>
-                  <h6 className="ms-2 m-0 h6 text-success text-center">
-                    Success
-                  </h6>
-                  <pre className="chroma">
-                    <span className="text-secondary mx-2">1</span>
-                    <span className="p">{"{"}</span> {"\n"}
-                    <span className="text-secondary mx-2">2</span>
-                    {"  "}
-                    <span className="nt">&quot;property1&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="num">string</span>
-                    <span className="p">,</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">2</span>
-                    {"  "}
-                    <span className="nt">&quot;property2&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="num">string</span>
-                    <span className="p">,</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">9</span>
-                    <span className="p">{"}"}</span>
-                    {"\n"}
-                  </pre>
-                </div>
-                <div className="box">
-                  <div className="title px-3 py-2">
-                    <p className="m-0">Response</p>
-                    <pre className="ms-2 m-0 ">
-                      Status:
-                      <span className="text-danger">404 Not Found</span>
-                    </pre>
-                  </div>
-                  <pre className="chroma py-3">
-                    <span className="mx-2">*Not found</span>
-                  </pre>
                 </div>
               </div>
             </div>
