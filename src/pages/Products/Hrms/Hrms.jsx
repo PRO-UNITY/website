@@ -154,7 +154,7 @@ const Hrms = () => {
             <div className="row">
               {platformData.map((item) => (
                 <div className="col " key={item.id}>
-                  <div className="card my-3">
+                  <a href="https://flutter.dev/" className="card my-3">
                     <div
                       style={{ background: item.background }}
                       className="img-box d-flex justify-content-center align-items-center"
@@ -165,7 +165,7 @@ const Hrms = () => {
                         className="w-100 h-100  p-3"
                       />
                     </div>
-                  </div>
+                  </a>
                 </div>
               ))}
             </div>
