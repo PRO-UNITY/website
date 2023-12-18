@@ -42,5 +42,15 @@ export const loginUser = async (user) => {
 };
 
 
-
-
+export const getJobs = async () => {
+    const response = await fetch(BASE_URL + `/job/vacancies`, {
+        method: 'GET',
+        headers: getHeader(),
+    });
+    if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(JSON.stringify({ error: errorData, status: response.status }));
+    }
+    const data = await response.json();
+    return data;
+}

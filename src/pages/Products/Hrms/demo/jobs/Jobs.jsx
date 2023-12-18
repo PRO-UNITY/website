@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { BASE_URL, getJobs } from "../../service";
 
 const Jobs = () => {
+    const [jobs, setJobs] = React.useState([]);
+
+    useEffect(() => {
+        getJobs().then((res) => {
+            console.log(res.data);
+            setJobs(res.data);
+        }
+        ).catch((err) => {
+            console.log(err);
+        }
+        )
+    }, [])
+
     return <div className="d-flex flex-column gap-5">
         <div>
             <nav class="p-3 navbar-light bg-light">
@@ -39,6 +53,37 @@ const Jobs = () => {
                     <h2>Recent posts</h2>
 
                     <div className="d-flex flex-column gap-3">
+
+                        {
+                            jobs?.results?.map((job) => (
+                                <Link style={{ textDecoration: 'none' }}>
+                                    <div class="card" key={job.id}>
+                                        <div class="card-body d-flex align-items-center justify-content-between">
+                                            <div className="d-flex align-items-center gap-3">
+                                                <img style={{ width: '70px', height: '70px' }} class="card-img-top" src={`${BASE_URL}${job.company.logo}`} alt="Card image cap" />
+                                                <div>
+                                                    <p class="card-text text-muted">{job.company.name}</p>
+                                                    <p class="card-title">{job.description}</p>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex align-items-center gap-5 justify-content-center">
+                                                <div>
+                                                    <p className='card-text'>Type: {job.job_type.type}</p>
+                                                    <p className="card-title text-muted">Posted {job.created_at}</p>
+                                                </div>
+                                                <div className="d-flex flex-column gap-1 justify-content-center">
+                                                    <Link to={'/products/hrms/demo/job-details'}>
+                                                        <button className="btn btn-light w-100">View Job</button>
+                                                    </Link>
+                                                    <button className="btn btn-light">Apply Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))
+                        }
+
                         <Link style={{ textDecoration: 'none' }} to={'/products/hrms/demo/job-details'}>
                             <div class="card">
                                 <div class="card-body d-flex align-items-center justify-content-between">
@@ -49,7 +94,7 @@ const Jobs = () => {
                                             <p class="card-title">With supporting text below as.</p>
                                         </div>
                                     </div>
-                                    <div className="d-flex align-items-center  gap-5 justify-content-center">
+                                    <div className="d-flex align-items-center gap-5 justify-content-center">
                                         <div>
                                             <p className='card-text'> <i class="fa-solid fa-location-dot"></i> Remote</p>
                                             <p className="card-title text-muted">Posted 2 days ago</p>
@@ -110,7 +155,6 @@ const Jobs = () => {
                                 </div>
                             </div>
                         </Link>
-
 
                         <Link style={{ textDecoration: 'none' }} to={'/products/hrms/demo/job-details'}>
                             <div class="card">
