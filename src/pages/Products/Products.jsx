@@ -28,8 +28,8 @@ const Products = () => {
               <h1 className="text-center  mb-3 mt-2">Delivery</h1>
             </div>
             <p>
-              Elevate your organizational efficiency with our cutting-edge HRMS
-              application. Streamline HR processes, empower ....
+              Hello there! Experience lightning-fast, hassle-free, and reliable
+              delivery with our services. Whether it&apos;s gourmet ...
             </p>
           </Link>
         </div>
