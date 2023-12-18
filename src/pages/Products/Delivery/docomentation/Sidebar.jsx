@@ -28,6 +28,11 @@ const Sidenavs = [
         name: "Users",
         path: "/products/delivery/documentation/users",
       },
+      {
+        id: "kitchen",
+        name: "Kitchen",
+        path: "/products/delivery/documentation/kitchen",
+      },
     ],
   },
   {

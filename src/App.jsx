@@ -37,6 +37,7 @@ import {
   DeliveryDocumentation,
   DeliveryDocUser,
   DeliveryDocInstallation,
+  DeliveryDocKitchen,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { getRoleUser } from "./pages/Products/Delivery/functions";
@@ -116,6 +117,7 @@ function App() {
           <Route path="/products/delivery" element={<Delivery />} />
           <Route path="products/delivery/documentation" element={<DeliveryDocumentation />} />
           <Route path="products/delivery/documentation/users" element={<DeliveryDocUser />} />
+          <Route path="products/delivery/documentation/kitchen" element={<DeliveryDocKitchen />} />
           <Route path="products/delivery/documentation/installation" element={<DeliveryDocInstallation />} />
           <Route
             path="/products/delivery/admin/auth/sign-in"
