@@ -46,7 +46,6 @@ import {
   DeliveryDocDeliveryman,
   DeliveryDocManager,
   DeliveryDocOrders,
-  DemoHome,
   Dashboard,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
@@ -204,10 +203,9 @@ function App() {
             element={<DeliveryNotification />}
           />
           {/* Demo Delivery */}
-          <Route path="/products/delivery/demo" element={<DemoHome />} />
-          <Route path="/products/delivery/demo/dashboard" element={<Dashboard />} />
-          {/* <Route path="/products/delivery/demo" element={<DemoSidebar/>} /> */}
-
+          <Route path="/products/delivery/demo" element={<Dashboard/>} />
+          <Route path="/products/delivery/demo/dashboard" element={<Dashboard/>} />
+          
         </Routes>
       </ActiveNavContext.Provider>
     </>

@@ -3,6 +3,19 @@
   color: white !important;
   border-radius: 10px;
 }
+
+.orange{
+  color: rgb(255, 187, 0);
+}
+
+.bg-orange {
+  background-color: rgb(255, 187, 0);
+}
+
+.demo-navbar{
+  width: 950px !important;
+  height: 100px;
+}
 .hrms-doc-asaide {
   max-width: 230px;
   width: 100%;
@@ -104,6 +117,118 @@
   position: sticky;
   top: 0;
 }
+
+.hrms-doc-navbar .searchbar{
+  border: none;
+  background-color: white;
+}
+
+.vaucher{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(255, 187, 0);
+  border-radius: 20px;
+}
+
+.categories{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: start;
+}
+
+.category-item{
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-category{
+  font-size: 40px;
+}
+
+.name-category{
+  font-size: 12px;
+}
+
+.foods{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.food-item{
+  width: 260px;
+  height: 260px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.btn-add{
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: white;
+}
+
+.sale{
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale-percent{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgb(247, 69, 69);
+}
+
+.btn-favourite{
+  border: none;
+  background: none;
+}
+
+.body-main{
+  height: 100vh;
+  overflow-y: scroll;
+}
+.btn-none{
+  border: none;
+  background: none;
+}
+.card-balance{
+  background: url(https://img.freepik.com/premium-photo/orange-bright-background-with-lines-waves_763713-4584.jpg);
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
 @media only screen and (max-width: 1000px) {
   .hrms-doc-navbar .fa-bars {
     display: block;
@@ -129,5 +254,64 @@
 @media only screen and (max-width: 435px) {
   .sidenote {
     width: 275px;
+  }
+  .demo-navbar{
+    width: 400px !important;
+    height: 100px;
+
+  }
+  .categories{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .category-item{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon-category{
+    font-size: 30px;
+  }
+  
+  .name-category{
+    font-size: 10px;
+  }
+  .foods{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .food-item{
+    width: 100%;
+    height: 260px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .btn-add{
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: white;
   }
 }

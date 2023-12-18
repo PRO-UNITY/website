@@ -2,6 +2,7 @@
 import { useState } from "react";
 import DemoNavbar from "../pages/Products/Delivery/Demo/Navbar";
 import DemoSidebar from "../pages/Products/Delivery/Demo/Sidebar";
+import Profile from "../pages/Products/Delivery/Demo/Profile";
 
 const DemoLayout = ({ children }) => {
   const [showSidebar, setshowSidebar] = useState(false  );
@@ -12,7 +13,7 @@ const DemoLayout = ({ children }) => {
             <DemoNavbar setshowSidebar={setshowSidebar} />
             <main className="">{children}</main>
         </div>
-        <div className="">salom</div>
+        <Profile/>
     </div>
   );
 };

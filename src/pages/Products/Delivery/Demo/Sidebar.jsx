@@ -45,7 +45,6 @@ const Sidenavs = [
         path: "/products/delivery/demo/settings",
         active: "/products/delivery/demo/settings",
         icon: "fa-solid fa-gears",
-
       }
 ];
 
@@ -61,13 +60,13 @@ const DemoSidebar = ({ showSidebar, setshowSidebar }) => {
   return (
     <>
       <div
-        className={`hrms-doc-sidebar py-4
-         bg-light border border-right ${showSidebar && "show"} `}
+        className={`hrms-doc-sidebar py-2
+         bg-white  ${showSidebar && "show"} `}
       >
         <div className="w-100 text-center mb-5">
         <h2>Delivery</h2>
         </div>
-        <div className="side-body bg-light">
+        <div className="side-body bg-white">
           <ul className="px-3">
           {
             Sidenavs.map(item=>
