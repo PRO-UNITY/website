@@ -1,57 +1,10 @@
+/* eslint-disable react/prop-types */
 import "./Documentation.css";
 import { useState } from "react";
 
-const Sidenavs = [
-  {
-    id: 1,
-    title: "Create User",
-    path: "create-user",
-  },
-  {
-    id: 2,
-    title: "Sign in",
-    path: "sign-in",
-  },
-  {
-    id: 3,
-    title: "User Profile",
-    path: "user-profile",
-  },
-  {
-    id: 4,
-    title: "User Update",
-    path: "user-update",
-  },
-  {
-    id: 5,
-    title: "User Detail",
-    path: "user-detail",
-  },
-  {
-    id: 6,
-    title: "User Meneger",
-    path: "user-manager",
-  },
-  {
-    id: 7,
-    title: "User Delivery",
-    path: "user-delivery",
-  },
-  {
-    id: 8,
-    title: "User Delivery with ID",
-    path: "user-delivery-id",
-  },
-  {
-    id: 9,
-    title: "User Delivery Update",
-    path: "user-delivery-update",
-  },
-];
-
-const Asaide = () => {
+const Asaide = ({ Sidenavs }) => {
   const [activeLink, setActiveLink] = useState(1);
-
+  
   return (
     <>
       <div
@@ -61,7 +14,7 @@ const Asaide = () => {
           <h5 className="h6 m-0 fw-bold text-uppercase ">One This Page</h5>
         </div>
         <div className="side-body  pt-3">
-          {Sidenavs.map((nav) => (
+          {Sidenavs?.map((nav) => (
             <a
               key={nav.id}
               onClick={() => setActiveLink(nav.id)}

@@ -36,8 +36,8 @@ export { default as HrmsNotification } from "./Products/Hrms/admin/Hrms-notifica
 
 // Delivery
 export { default as DeliveryDocumentation } from "./Products/Delivery/docomentation/Home";
-export { default as DeliveryDocUser } from "./Products/Delivery/docomentation/Users";
-
+export { default as DeliveryDocUser } from "./Products/Delivery/docomentation/API/Users";
+export { default as DeliveryDocKitchen } from "./Products/Delivery/docomentation/API/Kitchen";
 export { default as DeliveryDocInstallation } from "./Products/Delivery/docomentation/Installation";
 
 // Delivery admin
