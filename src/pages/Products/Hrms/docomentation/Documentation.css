@@ -5,6 +5,7 @@
 .hrms-doc-sidebar {
   position: relative;
   min-width: 250px;
+  z-index: 9999;
 }
 .accordion .accordion-item {
   background: transparent;
@@ -152,7 +153,7 @@
   .hrms-doc-sidebar {
     position: absolute;
     transition: 0.5s;
-    height: 100vh;
+    height: 130vh;
     left: -100%;
     z-index: 99;
     margin-top: -2px;
@@ -162,6 +163,7 @@
   }
   .hrms-doc-sidebar.show {
     left: 0;
+    z-index: 9999;
   }
 }
 @media only screen and (max-width: 435px) {

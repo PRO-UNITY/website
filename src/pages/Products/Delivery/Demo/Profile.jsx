@@ -1,6 +1,8 @@
+import './Documentation.css'
+
 const Profile = () => {
     return (
-        <div className="w-100 bg-white py-2 px-4">
+        <div className="w-100 bg-white py-2 px-4 profile">
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <button className="btn-none fs-4"><i className="fa-solid fa-gears"></i></button>
                 <button className="btn-none">
@@ -76,6 +78,11 @@ const Profile = () => {
                 <p style={{fontSize:"10px"}}>service</p>
                 <p style={{fontWeight:"bold"}} className="mx-2">+<span className="orange">$</span>5.59</p>
             </div>
+            <div className="d-flex justify-content-between align-items-center">
+                <p>Total</p>
+                <p style={{fontWeight:"bold"}} className="mx-2"><span className="orange">$</span>202.00</p>
+            </div>
+            <button className="btn btn-warning w-100 text-light">Checkout</button>
         </div>
     )
 }

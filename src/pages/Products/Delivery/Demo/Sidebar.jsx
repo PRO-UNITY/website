@@ -61,12 +61,12 @@ const DemoSidebar = ({ showSidebar, setshowSidebar }) => {
     <>
       <div
         className={`hrms-doc-sidebar py-2
-         bg-white  ${showSidebar && "show"} `}
+         bg-light  ${showSidebar && "show"} `}
       >
         <div className="w-100 text-center mb-5">
         <h2>Delivery</h2>
         </div>
-        <div className="side-body bg-white">
+        <div className="side-body ">
           <ul className="px-3">
           {
             Sidenavs.map(item=>

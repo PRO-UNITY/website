@@ -4,6 +4,10 @@
   border-radius: 10px;
 }
 
+.profile{
+  min-height: 130vh;
+}
+
 .orange{
   color: rgb(255, 187, 0);
 }
@@ -211,7 +215,7 @@
 }
 
 .body-main{
-  height: 100vh;
+  height: 130vh;
   overflow-y: scroll;
 }
 .btn-none{
@@ -239,9 +243,9 @@
   .hrms-doc-sidebar {
     position: absolute;
     transition: 0.5s;
-    height: 100vh;
+    height: 130vh;
     left: -100%;
-    z-index: 99;
+    z-index: 9999;
     margin-top: -2px;
   }
   .hrms-doc-navbar .searchbar {
@@ -255,9 +259,21 @@
   .sidenote {
     width: 275px;
   }
+  .profile{
+    display: none;
+  }
+  .hrms-doc-sidebar {
+    position: absolute;
+    transition: 0.5s;
+    height: 130vh;
+    left: -100%;
+    z-index: 9999 !important;
+    margin-top: 120px;
+  }
   .demo-navbar{
-    width: 400px !important;
-    height: 100px;
+    width: 380px !important;
+    height: 130px;
+    z-index: 9999;
 
   }
   .categories{
@@ -268,8 +284,8 @@
     justify-content: space-between;
   }
   .category-item{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
