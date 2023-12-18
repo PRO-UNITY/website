@@ -330,5 +330,103 @@
 
       "pricingButton": "Start Now"
     }
+  },
+  "delivery": {
+    "home": {
+      "title": "Fast, Convenient, and Reliable: Elevate Your Delivery Experience with Us",
+      "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟"
+    },
+    "about": {
+      "box1": {
+        "title": "Effortless Delivery: Streamlining Logistics for Your Success",
+        "description": "At Delivary, we redefine the logistics landscape by providing a seamless and efficient delivery solution tailored to meet the unique needs of your business. Our commitment is to elevate your delivery processes, ensuring reliability, speed, and customer satisfaction.",
+        "description2": "Our cutting-edge technology empowers you with real-time tracking, smart route optimization, and robust analytics, giving you unparalleled control and insights into your delivery operations. Delivary is not just a delivery service; it's a strategic partner in your business growth.",
+        "description3": "Experience the ease of logistics management with Delivary. From doorstep to destination, we are dedicated to ensuring your deliveries are prompt, precise, and hassle-free. Join us in simplifying the way you deliver success."
+      },
+      "box2": {
+        "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
+      },
+      "moreButton": "View Demo"
+    },
+    "archived": {
+      "subtitle": "What we have",
+      "title": "Archived",
+      "cardDownloads": {
+        "text": "Downloads"
+      },
+      "cardReviews": {
+        "text": "Positive Reviews"
+      },
+      "cardRating": {
+        "text": "Rating"
+      }
+    },
+    "features": {
+      "subtitle": "Advanced Features",
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum ipsa eaque quibusdam aspernatur",
+      "card1": {
+        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
+      },
+      "card2": {
+        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
+      },
+      "card3": {
+        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
+      }
+    },
+    "feedback": {
+      "subtitle": "What we have",
+      "title": "Feedback",
+      "card1": {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
+        "name": "Logan Wolf",
+        "proffesion": "User Experiens Designer"
+      },
+      "card2": {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
+        "name": "Logan Wolf",
+        "proffesion": "User Experiens Designer"
+      },
+      "card3": {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
+        "name": "Logan Wolf",
+        "proffesion": "User Experiens Designer"
+      }
+    },
+    "pricing": {
+      "subtitle": "Pricing",
+      "title": "We Have Better Pricing Plan",
+      "cardProffesional": {
+        "title": "Proffesional",
+        "cardList": {
+          "list1": "All Basic Services",
+          "list2": "Unlimited Request",
+          "list3": "Unlimited Revision",
+          "list4": "Cancel Anytime",
+          "list5": "A-Sync Collaboration"
+        }
+      },
+      "cardUnlimited": {
+        "title": "Unlimited",
+        "subtitle": "Most Popular",
+        "cardList": {
+          "list1": "All Basic Services",
+          "list2": "All Advanced Services",
+          "list3": "Cancel Anytime",
+          "list4": "Art Direction",
+          "list5": "Concept and Ideation",
+          "list6": "Unlimited Request",
+          "list7": "Unlimited Revision",
+          "list8": "A-Sync Collaboration",
+          "list9": "Weekly Updates"
+        }
+      },
+
+      "pricingButton": "Start Now"
+    }
   }
 }

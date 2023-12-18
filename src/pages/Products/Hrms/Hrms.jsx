@@ -162,7 +162,7 @@ const Hrms = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://flutter.dev/"
+                    href={item.link}
                     className="card my-3"
                   >
                     <div
