@@ -41,6 +41,7 @@ import {
   HrmsDocDeliveryman,
   HrmsDocManager,
   HrmsDocOrders,
+  DeliveryDocKitchen,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { getRoleUser } from "./pages/Products/Delivery/functions";
