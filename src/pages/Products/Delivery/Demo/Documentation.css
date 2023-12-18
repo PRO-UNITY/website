@@ -1,0 +1,133 @@
+.active{
+  background-color: rgb(255, 187, 0) !important;
+  color: white !important;
+  border-radius: 10px;
+}
+.hrms-doc-asaide {
+  max-width: 230px;
+  width: 100%;
+  width: 100vh;
+}
+.hrms-doc-asaide a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5b5b5b;
+}
+
+.hrms-doc-sidebar .side-head {
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+.hrms-doc-navbar .fa-bars {
+  display: none;
+  font-size: 20px;
+}
+
+.doc-content {
+  height: 91vh;
+  overflow: auto;
+}
+.doc-content::-webkit-scrollbar {
+  background-color: rgb(234, 234, 234);
+  width: 5px;
+}
+.doc-content::-webkit-scrollbar-thumb {
+  background-color: rgb(137, 137, 137);
+  border-radius: 5px;
+}
+.hrms-doc code {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 500;
+  font-size: 1em;
+}
+.hrms-doc .sidenote .title code {
+  padding: 0 3px;
+}
+.doc-list li.title code {
+  color: #292929;
+  font-size: 12px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.sidenote {
+  flex-grow: 1;
+  position: sticky;
+  align-self: flex-start;
+  top: 0;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.sidenote .box {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+.sidenote .box .title {
+  background: rgb(219, 219, 219);
+  font-weight: 500;
+  color: rgb(76, 76, 76);
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.sidenote .s2 {
+  color: rgb(0, 150, 35);
+}
+.sidenote .bool {
+  color: rgb(106, 1, 187);
+}
+.sidenote .num {
+  color: rgb(216, 131, 3);
+}
+.doc-list .content > .doc-list {
+  border: 1px solid rgb(219, 219, 219) !important;
+  border-radius: 0 0 8px 8px;
+  margin: 0;
+}
+.doc-list .content > h5 {
+  margin: 0;
+  margin-top: 12px !important;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.hrms-doc-navbar {
+  position: sticky;
+  top: 0;
+}
+@media only screen and (max-width: 1000px) {
+  .hrms-doc-navbar .fa-bars {
+    display: block;
+  }
+  .hrms-doc-asaide {
+    display: none;
+  }
+  .hrms-doc-sidebar {
+    position: absolute;
+    transition: 0.5s;
+    height: 100vh;
+    left: -100%;
+    z-index: 99;
+    margin-top: -2px;
+  }
+  .hrms-doc-navbar .searchbar {
+    width: auto;
+  }
+  .hrms-doc-sidebar.show {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .sidenote {
+    width: 275px;
+  }
+}

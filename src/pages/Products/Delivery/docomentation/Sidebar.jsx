@@ -95,7 +95,7 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
                       onClick={() => setshowSidebar(false)}
                     >
                       {link.name}
-                    </Link>
+                    </Link> 
                   ))}
                 </Accordion.Body>
               </Accordion.Item>
