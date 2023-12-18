@@ -1,0 +1,480 @@
+//----------------------------------------------------------//
+//	BUTTON
+//----------------------------------------------------------//
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  letter-spacing: $letter-spacing;
+  position: relative;
+  &:not(.btn-link):hover {
+    transform: translateY(-0.15rem);
+    @include box-shadow($btn-active-box-shadow);
+  }
+  &.btn-white:hover,
+  &[class*="btn-soft-"]:hover {
+    @include box-shadow($btn-shadow-sm);
+  }
+  &.btn-block {
+    padding: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include font-size(1rem);
+    line-height: 1;
+    backface-visibility: hidden;
+    &.btn-sm {
+      width: 1.8rem;
+      height: 1.8rem;
+      @include font-size(1rem);
+    }
+    &.btn-lg {
+      width: 3rem;
+      height: 3rem;
+      @include font-size(1.4rem);
+    }
+    &.btn-play {
+      width: 3.5rem;
+      height: 3.5rem;
+      @include font-size(1.2rem);
+      i {
+        margin-left: 0.15rem;
+      }
+    }
+    .number {
+      display: table-cell;
+      text-align: center;
+      margin: 0 auto;
+      vertical-align: middle;
+      @include font-size(1.1rem);
+      font-weight: $font-weight-bold;
+    }
+  }
+  &.btn-circle {
+    padding: 0;
+    border-radius: 100% !important;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include font-size(1rem);
+    line-height: 1;
+    backface-visibility: hidden;
+    &.btn-sm {
+      width: 1.8rem;
+      height: 1.8rem;
+      @include font-size(0.8rem);
+      i {
+        @include font-size(0.85rem);
+      }
+    }
+    &.btn-lg {
+      width: 3rem;
+      height: 3rem;
+      @include font-size(1.3rem);
+    }
+    &.btn-play {
+      width: 3.5rem;
+      height: 3.5rem;
+      @include font-size(2.3rem);
+      i {
+        margin-left: 0.15rem;
+      }
+      &:hover {
+        transform: translateY(0);
+      }
+    }
+    &.counter {
+      @include box-shadow($box-shadow);
+    }
+    .number {
+      display: table-cell;
+      text-align: center;
+      margin: 0 auto;
+      vertical-align: middle;
+      @include font-size(1.1rem);
+      font-weight: $font-weight-bold;
+    }
+  }
+  &.btn-expand {
+    background: none;
+    border: 0;
+    padding-left: 0;
+    padding-top: $btn-padding-y + 0.05;
+    padding-bottom: $btn-padding-y + 0.05;
+    max-height: 2.5rem;
+    @include font-size($btn-font-size + 0.05);
+    span {
+      position: relative;
+      z-index: 2;
+      padding-left: 2.95rem;
+    }
+    i {
+      position: absolute;
+      z-index: 2;
+      width: 2.5rem;
+      height: 2.5rem;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--#{$prefix}white);
+      @include font-size(1.35rem);
+      transition: $bezier-transition;
+    }
+    &:before {
+      content: "";
+      transition: $bezier-transition;
+      width: auto;
+      height: 2.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2.5rem;
+      border-radius: $border-radius-pill;
+      z-index: 0;
+    }
+    &:hover {
+      background: none;
+      transform: translateY(0);
+      color: var(--#{$prefix}white);
+      box-shadow: none;
+      i {
+        left: 0.25rem;
+      }
+      &:before {
+        width: 100%;
+      }
+    }
+    &.btn-sm {
+      padding-top: $btn-padding-y-sm + 0.05;
+      padding-bottom: $btn-padding-y-sm + 0.05;
+      @include font-size($btn-font-size-sm + 0.05);
+      i {
+        width: 2.15rem;
+        height: 2.15rem;
+        @include font-size(1.1rem);
+      }
+      span {
+        padding-left: 2.65rem;
+      }
+      &:before {
+        width: 2.15rem;
+      }
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+    &.btn-lg {
+      padding-top: $btn-padding-y-lg + 0.05;
+      padding-bottom: $btn-padding-y-lg + 0.05;
+      @include font-size($btn-font-size-lg + 0.05);
+      i {
+        width: 2.9rem;
+        height: 2.9rem;
+        @include font-size(1.35rem);
+      }
+      span {
+        padding-left: 3.4rem;
+      }
+      &:before {
+        width: 2.9rem;
+      }
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.input-group .btn:hover {
+  transform: none;
+}
+button:focus {
+  outline: 0;
+}
+@each $color,
+$value in $colors {
+  .btn-#{$color} {
+    --bs-btn-color: var(--#{$prefix}white);
+    --bs-btn-hover-color: var(--#{$prefix}white);
+    --bs-btn-active-color: var(--#{$prefix}white);
+    &.btn-expand {
+      color: var(--#{$prefix}#{$color});
+      &:before {
+        background-color: var(--#{$prefix}#{$color});
+      }
+    }
+  }
+}
+@each $color,
+$value in $colors {
+  .btn-soft-#{$color} {
+    --bs-btn-color: var(--#{$prefix}#{$color});
+    --bs-btn-hover-color: var(--#{$prefix}#{$color});
+    --bs-btn-bg: var(--#{$prefix}pale-#{$color});
+    --bs-btn-border-color: var(--#{$prefix}pale-#{$color});
+    --bs-btn-hover-bg: var(--#{$prefix}pale-#{$color});
+    --bs-btn-hover-border-color: var(--#{$prefix}pale-#{$color});
+    --bs-btn-active-color: var(--#{$prefix}#{$color});
+    --bs-btn-active-bg: var(--#{$prefix}pale-#{$color});
+    --bs-btn-active-border-color: var(--#{$prefix}pale-#{$color});
+    &.btn-expand {
+      color: var(--#{$prefix}#{$color});
+      i,
+      &:before,
+      &:hover,
+      &:hover:before {
+        color: var(--#{$prefix}#{$color});
+      }
+      &:before {
+        background-color: var(--#{$prefix}pale-#{$color});
+      }
+    }
+  }
+}
+.btn-white,
+.btn-soft-ash {
+  --bs-btn-color: var(--#{$prefix}dark);
+  --bs-btn-hover-color: var(--#{$prefix}dark);
+  --bs-btn-active-color: var(--#{$prefix}dark);
+  &.btn-expand {
+    color: var(--#{$prefix}dark);
+    i {
+      color: var(--#{$prefix}dark);
+    }
+    &:before {
+      background-color: var(--#{$prefix}dark);
+    }
+  }
+  &.btn-play:hover {
+    color: var(--#{$prefix}dark);
+  }
+}
+.btn-soft-ash {
+  --bs-btn-border-color: transparent !important;
+  --bs-btn-hover-border-color: transparent !important;
+  --bs-btn-active-border-color: transparent !important;
+  --bs-btn-disabled-border-color: transparent !important;
+}
+.btn-primary {
+  --bs-btn-bg: var(--#{$prefix}primary);
+  --bs-btn-border-color: var(--#{$prefix}primary);
+  --bs-btn-hover-bg: var(--#{$prefix}primary);
+  --bs-btn-hover-border-color: var(--#{$prefix}primary);
+  --bs-btn-active-bg: var(--#{$prefix}primary);
+  --bs-btn-active-border-color: var(--#{$prefix}primary);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--#{$prefix}primary);
+  --bs-btn-border-color: var(--#{$prefix}primary);
+  --bs-btn-hover-bg: var(--#{$prefix}primary);
+  --bs-btn-hover-border-color: var(--#{$prefix}primary);
+  --bs-btn-active-bg: var(--#{$prefix}primary);
+  --bs-btn-active-border-color: var(--#{$prefix}primary);
+  --bs-btn-disabled-color: var(--#{$prefix}primary);
+  --bs-btn-disabled-border-color: var(--#{$prefix}primary);
+}
+//----------------------------------------------------------//
+//	BUTTON GRADIENT
+//----------------------------------------------------------//
+.btn-gradient {
+  color: var(--#{$prefix}white) !important;
+  border: 0;
+  padding-top: $btn-padding-y + 0.1;
+  padding-bottom: $btn-padding-y + 0.1;
+  &.btn-sm {
+    padding-top: $btn-padding-y-sm + 0.1;
+    padding-bottom: $btn-padding-y-sm + 0.1;
+  }
+  &.btn-lg {
+    padding-top: $btn-padding-y-lg + 0.1;
+    padding-bottom: $btn-padding-y-lg + 0.1;
+  }
+}
+@each $gradient,
+$value in $gradients {
+  .#{$gradient} {
+    background-image: $value;
+  }
+  .#{$gradient}.btn-outline-gradient,
+  .#{$gradient}.btn-outline-gradient span {
+    background-image: linear-gradient(rgba(var(--#{$prefix}white-rgb), 0), rgba(var(--#{$prefix}white-rgb), 0)), $value;
+  }
+}
+.gradient-6,
+.gradient-7 {
+  background-size: 130% auto;
+}
+.btn-outline-gradient,
+.btn-outline-gradient:disabled,
+.btn-outline-gradient.disabled {
+  --#{$prefix}btn-active-border-color: transparent;
+  --#{$prefix}btn-active-color: var(--#{$prefix}white);
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px var(--#{$prefix}white) inset;
+  padding: $btn-padding-y $btn-padding-x - 0.1rem;
+  &.btn-sm:not(.btn-circle) {
+    padding: $btn-padding-y-sm $btn-padding-x-sm - 0.1rem;
+  }
+  &.btn-lg {
+    padding: $btn-padding-y-lg $btn-padding-x-lg - 0.1rem;
+  }
+  span {
+    color: $main-dark !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &:hover,
+  &:focus-visible,
+  &:active {
+    span {
+      color: var(--#{$prefix}white) !important;
+      background: none;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: unset;
+    }
+  }
+}
+//----------------------------------------------------------//
+//	BUTTON SIZES
+//----------------------------------------------------------//
+.btn-lg {
+  @include button-size($btn-padding-y-lg,
+    $btn-padding-x-lg,
+    $btn-font-size-lg,
+    $btn-border-radius-lg);
+}
+.btn-sm {
+  @include button-size($btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $btn-font-size-sm,
+    $btn-border-radius-sm);
+}
+//----------------------------------------------------------//
+//	BUTTON WITH ICON
+//----------------------------------------------------------//
+.btn-icon {
+  &.btn-sm {
+    padding-top: $btn-padding-y-sm - 0.1rem;
+    padding-bottom: $btn-padding-y-sm - 0.1rem;
+    i {
+      @include font-size(0.8rem);
+    }
+  }
+  &.btn-icon-start i {
+    margin-right: 0.3rem;
+  }
+  &.btn-icon-end i {
+    margin-left: 0.3rem;
+  }
+}
+.navigation .btn-icon {
+  i {
+    @include font-size(0.9rem);
+  }
+  &.btn-icon-start i {
+    margin-right: 0.2rem;
+  }
+  &.btn-icon-end i {
+    margin-left: 0.2rem;
+  }
+}
+//----------------------------------------------------------//
+//	NAVBAR BUTTON
+//----------------------------------------------------------//
+.navbar .btn-sm {
+  @include font-size($nav-link-font-size);
+}
+//----------------------------------------------------------//
+//	SOCIAL
+//----------------------------------------------------------//
+.social a:not(.btn-circle) {
+  @include font-size(1rem);
+  @include transition($btn-transition);
+  transform: translateY(0);
+  &:hover {
+    transform: translateY(-0.15rem);
+  }
+  i {
+    @include font-size(1rem);
+  }
+}
+@each $color,
+$value in $brand-colors {
+  .social a:not([class*="link-"]):not(.btn-circle) .uil[class*="#{$color}"] {
+    color: $value;
+  }
+  .social a.btn-circle[class*="#{$color}"] {
+    color: var(--#{$prefix}white);
+    background-color: $value;
+    border-color: transparent;
+  }
+}
+.social.social-muted a:not(.btn-circle):not([class*="link-"]) i {
+  color: $main-dark !important;
+}
+.social.social-white a i,
+.social.social-white a:hover i,
+.navbar-dark .social.social-muted a:not(.btn-circle):not([class*="link-"]) i,
+.navbar-dark .social.social-muted a:not(.btn-circle):not([class*="link-"]):hover i {
+  color: var(--#{$prefix}white) !important;
+}
+.social>a {
+  margin: 0 0.7rem 0 0;
+}
+[class*="text-end"] .social>a,
+.social[class*="text-end"]>a {
+  margin: 0 0 0 0.7rem;
+}
+@media (min-width: 768px) {
+  [class*="text-md-end"] .social>a,
+  .social[class*="text-md-end"]>a {
+    margin: 0 0 0 0.7rem;
+  }
+}
+.text-center .social>a,
+.social.text-center>a {
+  margin: 0 0.35rem;
+}
+//----------------------------------------------------------//
+//	BAGDE
+//----------------------------------------------------------//
+.badge-lg {
+  @include font-size(0.6rem);
+  padding: 0.35rem 0.55rem;
+}
+.badge-cart {
+  border-radius: 100%;
+  width: 0.9rem;
+  height: 0.9rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include font-size(0.55rem);
+}
+//----------------------------------------------------------//
+//	AVATAR
+//----------------------------------------------------------//
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  letter-spacing: $letter-spacing;
+  border-radius: 100%;
+  height: auto;
+}

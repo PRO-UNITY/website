@@ -1,0 +1,55 @@
+//----------------------------------------------------------//
+//	BACKGROUND COLORS
+//----------------------------------------------------------//
+@each $color,
+$value in $colors-soft {
+  .bg-soft-#{$color} {
+    background-color: var(--#{$prefix}soft-#{$color}) !important;
+  }
+}
+@each $color,
+$value in $colors-pale {
+  .bg-pale-#{$color} {
+    background-color: var(--#{$prefix}pale-#{$color}) !important;
+  }
+}
+@each $color,
+$value in $colors-soft {
+  .bg-gradient-#{$color} {
+    background: linear-gradient(180deg, var(--#{$prefix}soft-#{$color}), rgba(var(--#{$prefix}white-rgb), 0) 100%);
+  }
+  .bg-gradient-reverse-#{$color} {
+    background: linear-gradient(0deg, var(--#{$prefix}soft-#{$color}), rgba(var(--#{$prefix}white-rgb), 0) 100%);
+  }
+}
+.bg-gradient-blend {
+  background:linear-gradient(160deg, #FFB7B7 9%, #727272 100%), 
+  radial-gradient(100% 100% at 30% 10%, #FFD1D1 0%, #260000 100%), 
+  linear-gradient(180deg, #00FFFF 0%, #FFFFFF 100%),
+  radial-gradient(100% 100% at 70% 0%, #FF0000 0%, #00FFE0 100%), 
+  linear-gradient(280deg, #DBFF00 0%, #3300FF 100%);
+  background-blend-mode: screen, overlay, color-burn, color-dodge, normal;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#383838',GradientType=0 ); /* IE6-9 */
+}
+.bg-white-700 {
+  background: rgba(var(--#{$prefix}white-rgb), 0.7) !important;
+}
+.bg-white-900 {
+  background: rgba(var(--#{$prefix}white-rgb), 0.9) !important;
+}
+//----------------------------------------------------------//
+//	BACKGROUND HEIGHT
+//----------------------------------------------------------//
+.bg-height {
+  height: 30rem;
+}
+@media (max-width: 991.98px) {
+  .bg-height {
+    height: 20rem;
+  }
+}
+@media (max-width: 767px) {
+  .bg-height {
+    height: 15rem;
+  }
+}

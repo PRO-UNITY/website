@@ -1,0 +1,305 @@
+// Re-assigned maps
+//
+// Placed here so that others can override the default Sass maps and see automatic updates to utilities and more.
+
+// scss-docs-start theme-colors-rgb
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
+// scss-docs-end theme-colors-rgb
+
+// scss-docs-start theme-text-map
+$theme-colors-text: (
+	"primary": $primary-text-emphasis,
+	"secondary": $secondary-text-emphasis,
+	"success": $success-text-emphasis,
+	"info": $info-text-emphasis,
+	"warning": $warning-text-emphasis,
+	"danger": $danger-text-emphasis,
+	"light": $light-text-emphasis,
+	"dark": $dark-text-emphasis,
+) !default;
+// scss-docs-end theme-text-map
+
+// scss-docs-start theme-bg-subtle-map
+$theme-colors-bg-subtle: (
+	"primary": $primary-bg-subtle,
+	"secondary": $secondary-bg-subtle,
+	"success": $success-bg-subtle,
+	"info": $info-bg-subtle,
+	"warning": $warning-bg-subtle,
+	"danger": $danger-bg-subtle,
+	"light": $light-bg-subtle,
+	"dark": $dark-bg-subtle,
+) !default;
+// scss-docs-end theme-bg-subtle-map
+
+$colors-soft: (
+	"primary": $primary-soft,
+	"blue": $blue-soft,
+	"sky": $sky-soft,
+	"purple": $purple-soft,
+	"grape": $grape-soft,
+	"violet": $violet-soft,
+	"pink": $pink-soft,
+	"fuchsia": $fuchsia-soft,
+	"red": $red-soft,
+	"orange": $orange-soft,
+	"yellow": $yellow-soft,
+	"green": $green-soft,
+	"leaf": $leaf-soft,
+	"aqua": $aqua-soft,
+	"navy": $navy-soft,
+	"ash": $ash-soft,
+	"gray": $gray-soft,
+) !default;
+
+$colors-pale: (
+	"primary": $primary-pale,
+	"blue": $blue-pale,
+	"sky": $sky-pale,
+	"purple": $purple-pale,
+	"grape": $grape-pale,
+	"violet": $violet-pale,
+	"pink": $pink-pale,
+	"fuchsia": $fuchsia-pale,
+	"red": $red-pale,
+	"orange": $orange-pale,
+	"yellow": $yellow-pale,
+	"green": $green-pale,
+	"leaf": $leaf-pale,
+	"aqua": $aqua-pale,
+	"navy": $navy-pale,
+	"dark": $dark-pale,
+	"ash": $ash-pale,
+) !default;
+
+$bullet-soft: (
+	"primary": $primary-bullet-soft,
+	"blue": $blue-bullet-soft,
+	"sky": $sky-bullet-soft,
+	"purple": $purple-bullet-soft,
+	"grape": $grape-bullet-soft,
+	"violet": $violet-bullet-soft,
+	"pink": $pink-bullet-soft,
+	"fuchsia": $fuchsia-bullet-soft,
+	"red": $red-bullet-soft,
+	"orange": $orange-bullet-soft,
+	"yellow": $yellow-bullet-soft,
+	"green": $green-bullet-soft,
+	"leaf": $leaf-bullet-soft,
+	"aqua": $aqua-bullet-soft,
+	"navy": $navy-bullet-soft,
+	"ash": $ash-bullet-soft,
+) !default;
+
+$icon-fill: (
+	"primary": $primary-icon-fill,
+	"blue": $blue-icon-fill,
+	"sky": $sky-icon-fill,
+	"purple": $purple-icon-fill,
+	"grape": $grape-icon-fill,
+	"violet": $violet-icon-fill,
+	"pink": $pink-icon-fill,
+	"fuchsia": $fuchsia-icon-fill,
+	"red": $red-icon-fill,
+	"orange": $orange-icon-fill,
+	"yellow": $yellow-icon-fill,
+	"green": $green-icon-fill,
+	"leaf": $leaf-icon-fill,
+	"aqua": $aqua-icon-fill,
+	"navy": $navy-icon-fill,
+	"ash": $ash-icon-fill,
+) !default;
+
+$icon-solid-fill: (
+	"primary": $primary-icon-solid-fill,
+	"blue": $blue-icon-solid-fill,
+	"sky": $sky-icon-solid-fill,
+	"purple": $purple-icon-solid-fill,
+	"grape": $grape-icon-solid-fill,
+	"violet": $violet-icon-solid-fill,
+	"pink": $pink-icon-solid-fill,
+	"fuchsia": $fuchsia-icon-solid-fill,
+	"red": $red-icon-solid-fill,
+	"orange": $orange-icon-solid-fill,
+	"yellow": $yellow-icon-solid-fill,
+	"green": $green-icon-solid-fill,
+	"leaf": $leaf-icon-solid-fill,
+	"aqua": $aqua-icon-solid-fill,
+	"navy": $navy-icon-solid-fill,
+	"ash": $ash-icon-solid-fill,
+) !default;
+
+$border-soft: (
+	"primary": $primary-border-soft,
+	"blue": $blue-border-soft,
+	"sky": $sky-border-soft,
+	"purple": $purple-border-soft,
+	"grape": $grape-border-soft,
+	"violet": $violet-border-soft,
+	"pink": $pink-border-soft,
+	"fuchsia": $fuchsia-border-soft,
+	"red": $red-border-soft,
+	"orange": $orange-border-soft,
+	"yellow": $yellow-border-soft,
+	"green": $green-border-soft,
+	"leaf": $leaf-border-soft,
+	"aqua": $aqua-border-soft,
+	"navy": $navy-border-soft,
+	"ash": $ash-border-soft,
+) !default;
+
+// scss-docs-start theme-border-subtle-map
+$theme-colors-border-subtle: (
+	"primary": $primary-border-subtle,
+	"secondary": $secondary-border-subtle,
+	"success": $success-border-subtle,
+	"info": $info-border-subtle,
+	"warning": $warning-border-subtle,
+	"danger": $danger-border-subtle,
+	"light": $light-border-subtle,
+	"dark": $dark-border-subtle,
+) !default;
+// scss-docs-end theme-border-subtle-map
+
+$theme-colors-text-dark: null !default;
+$theme-colors-bg-subtle-dark: null !default;
+$theme-colors-border-subtle-dark: null !default;
+
+@if $enable-dark-mode {
+	// scss-docs-start theme-text-dark-map
+	$theme-colors-text-dark: (
+		"primary": $primary-text-emphasis-dark,
+		"secondary": $secondary-text-emphasis-dark,
+		"success": $success-text-emphasis-dark,
+		"info": $info-text-emphasis-dark,
+		"warning": $warning-text-emphasis-dark,
+		"danger": $danger-text-emphasis-dark,
+		"light": $light-text-emphasis-dark,
+		"dark": $dark-text-emphasis-dark,
+	) !default;
+	// scss-docs-end theme-text-dark-map
+
+	// scss-docs-start theme-bg-subtle-dark-map
+	$theme-colors-bg-subtle-dark: (
+		"primary": $primary-bg-subtle-dark,
+		"secondary": $secondary-bg-subtle-dark,
+		"success": $success-bg-subtle-dark,
+		"info": $info-bg-subtle-dark,
+		"warning": $warning-bg-subtle-dark,
+		"danger": $danger-bg-subtle-dark,
+		"light": $light-bg-subtle-dark,
+		"dark": $dark-bg-subtle-dark,
+	) !default;
+	// scss-docs-end theme-bg-subtle-dark-map
+
+	// scss-docs-start theme-border-subtle-dark-map
+	$theme-colors-border-subtle-dark: (
+		"primary": $primary-border-subtle-dark,
+		"secondary": $secondary-border-subtle-dark,
+		"success": $success-border-subtle-dark,
+		"info": $info-border-subtle-dark,
+		"warning": $warning-border-subtle-dark,
+		"danger": $danger-border-subtle-dark,
+		"light": $light-border-subtle-dark,
+		"dark": $dark-border-subtle-dark,
+	) !default;
+	// scss-docs-end theme-border-subtle-dark-map
+}
+
+// Utilities maps
+//
+// Extends the default `$theme-colors` maps to help create our utilities.
+
+// Come v6, we'll de-dupe these variables. Until then, for backward compatibility, we keep them to reassign.
+// scss-docs-start utilities-colors
+$utilities-colors: $theme-colors-rgb !default;
+// scss-docs-end utilities-colors
+
+// scss-docs-start utilities-text-colors
+$utilities-text: map-merge(
+	$utilities-colors,
+	(
+		"black": to-rgb($black),
+		"white": to-rgb($white),
+		"body": to-rgb($body-color)
+	)
+) !default;
+$utilities-text-colors: map-loop($utilities-text, rgba-css-var, "$key", "text") !default;
+
+$utilities-text-emphasis-colors: (
+	"primary-emphasis": var(--#{$prefix}primary-text-emphasis),
+	"secondary-emphasis": var(--#{$prefix}secondary-text-emphasis),
+	"success-emphasis": var(--#{$prefix}success-text-emphasis),
+	"info-emphasis": var(--#{$prefix}info-text-emphasis),
+	"warning-emphasis": var(--#{$prefix}warning-text-emphasis),
+	"danger-emphasis": var(--#{$prefix}danger-text-emphasis),
+	"light-emphasis": var(--#{$prefix}light-text-emphasis),
+	"dark-emphasis": var(--#{$prefix}dark-text-emphasis)
+) !default;
+// scss-docs-end utilities-text-colors
+
+// scss-docs-start utilities-bg-colors
+$utilities-bg: map-merge(
+	$utilities-colors,
+	(
+		"black": to-rgb($black),
+		"white": to-rgb($white),
+		"body": to-rgb($body-bg)
+	)
+) !default;
+$utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg") !default;
+
+$utilities-bg-subtle: (
+	"primary-subtle": var(--#{$prefix}primary-bg-subtle),
+	"secondary-subtle": var(--#{$prefix}secondary-bg-subtle),
+	"success-subtle": var(--#{$prefix}success-bg-subtle),
+	"info-subtle": var(--#{$prefix}info-bg-subtle),
+	"warning-subtle": var(--#{$prefix}warning-bg-subtle),
+	"danger-subtle": var(--#{$prefix}danger-bg-subtle),
+	"light-subtle": var(--#{$prefix}light-bg-subtle),
+	"dark-subtle": var(--#{$prefix}dark-bg-subtle),
+) !default;
+// scss-docs-end utilities-bg-colors
+
+// scss-docs-start utilities-border-colors
+$utilities-border: map-merge(
+	$utilities-colors,
+	(
+		"black": to-rgb($black),
+		"white": to-rgb($white)
+	)
+) !default;
+$utilities-border-colors: map-loop($utilities-border, rgba-css-var, "$key", "border") !default;
+
+$utilities-border-subtle: (
+	"primary-subtle": var(--#{$prefix}primary-border-subtle),
+	"secondary-subtle": var(--#{$prefix}secondary-border-subtle),
+	"success-subtle": var(--#{$prefix}success-border-subtle),
+	"info-subtle": var(--#{$prefix}info-border-subtle),
+	"warning-subtle": var(--#{$prefix}warning-border-subtle),
+	"danger-subtle": var(--#{$prefix}danger-border-subtle),
+	"light-subtle": var(--#{$prefix}light-border-subtle),
+	"dark-subtle": var(--#{$prefix}dark-border-subtle),
+	"blue-soft": var(--#{$prefix}soft-blue-border),
+	"sky-soft": var(--#{$prefix}soft-sky-border),
+	"purple-soft": var(--#{$prefix}soft-purple-border),
+	"grape-soft": var(--#{$prefix}soft-grape-border),
+	"violet-soft": var(--#{$prefix}soft-violet-border),
+	"pink-soft": var(--#{$prefix}soft-pink-border),
+	"fuchsia-soft": var(--#{$prefix}soft-fuchsia-border),
+	"red-soft": var(--#{$prefix}soft-red-border),
+	"orange-soft": var(--#{$prefix}soft-orange-border),
+	"yellow-soft": var(--#{$prefix}soft-yellow-border),
+	"green-soft": var(--#{$prefix}soft-green-border),
+	"leaf-soft": var(--#{$prefix}soft-leaf-border),
+	"aqua-soft": var(--#{$prefix}soft-aqua-border),
+	"navy-soft": var(--#{$prefix}soft-navy-border),
+	"ash-soft": var(--#{$prefix}soft-ash-border),
+) !default;
+// scss-docs-end utilities-border-colors
+
+$utilities-links-underline: map-loop($utilities-colors, rgba-css-var, "$key", "link-underline") !default;
+
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
+
+$gutters: $spacers !default;

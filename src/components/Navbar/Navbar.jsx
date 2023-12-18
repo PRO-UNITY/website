@@ -3,10 +3,10 @@ import Logo from "../../assets/logotogether.png";
 import Topbar from "../Topbar/Topbar";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import { Nav, Navbar } from "react-bootstrap";
 import { useContext, useState } from "react";
 import "./Navbar.css";
 import { ActiveNavContext } from "../../context/ActiveNav";
+import MenuLinks from "./Menu-links";
 
 const MyNavbar = () => {
   const { t } = useTranslation();
@@ -15,145 +15,63 @@ const MyNavbar = () => {
   const [activeLang, setactiveLang] = useState("en");
   return (
     <>
-      <Topbar />
-      <Navbar
-        style={{ backgroundColor: "yellow" }}
-        expand="lg"
-        className="sticky-top navbar wow fadeIn"
-        data-wow-delay="0.1s"
-      >
-        <div className="container-fluid">
-          <Navbar.Brand
-            as={Link}
-            to="/"
-            onClick={() => setactiveNav(1)}
-            className="logo"
-          >
-            <img className="ml-0 " src={Logo} alt="prounity-logo" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarCollapse" />
-          <Navbar.Collapse id="navbarCollapse">
-            <Nav className="ms-auto p-4 p-lg-0 align-items-center">
-              <Nav.Link
-                className={`${activeNav === 1 ? "active" : ""} py-0`}
-                onClick={() => setactiveNav(1)}
-                as={Link}
-                to="/"
-              >
-                {t("navbar.home")}
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                className={`${activeNav === 2 ? "active" : ""} py-0`}
-                onClick={() => setactiveNav(2)}
-              >
-                {t("navbar.about")}
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to="/services"
-                className={`${activeNav === 3 ? "active" : ""} py-0`}
-                onClick={() => setactiveNav(3)}
-              >
-                {t("navbar.service")}
-              </Nav.Link>
-              <div className="nav-item dropdown">
-                <Link
-                  to={"/products"}
-                  className={`${
-                    activeNav === 4 ? "active" : ""
-                  } py-0 nav-link dropdown-toggle `}
-                  onClick={() => setactiveNav(4)}
-                >
-                  Products
-                </Link>
-                <div className="dropdown-menu  rounded px-3 mt-2">
-                  <Link
-                    to={"/products/hrms"}
-                    className={`dropdown-item    px-0 ${
-                      activeProduct === 1 ? "dropdown-item-active " : ""
-                    }`}
-                    onClick={() => {
-                      setactiveProduct(1);
-                      setactiveNav(4);
-                    }}
-                  >
-                    Hrms
-                  </Link>
-                  <Link
-                    to={"/products/delivery"}
-                    className={`dropdown-item    px-0 ${
-                      activeProduct === 2 ? "dropdown-item-active " : ""
-                    }`}
-                    onClick={() => {
-                      setactiveProduct(2);
-                      setactiveNav(4);
-                    }}
-                  >
-                    Delivery
-                  </Link>
+      <div>
+        <nav className="navbar navbar-expand-lg ">
+          <div className="container flex-lg-row flex-nowrap align-items-center">
+            <div className="container">
+              <div className="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
+                <div className="navbar-brand w-100">
+                  <a href="#">
+                    <img src={Logo} width={120} alt="logo" />
+                  </a>
                 </div>
-              </div>
+                <div className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                  <div className="offcanvas-header d-lg-none">
+                    <h3 className="text-white fs-30 mb-0">Sandbox</h3>
+                    <button
+                      type="button"
+                      className="btn-close btn-close-white"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    />
+                  </div>
+                  <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                    <MenuLinks />
+                    <div className="offcanvas-footer d-lg-none"></div>
+                    {/* /.offcanvas-footer */}
+                  </div>
+                  <div className="navbar-other ms-5 flex text-dark">
+                    <ul className="navbar-nav flex-row align-items-center ms-auto">
+                      <li className="d-flex gap-3">
+                        <a href="#" className="text-decoration-none text-dark">
+                          <i className="uil uil-twitter" />
+                        </a>
+                        <a href="#" className="text-decoration-none text-dark">
+                          <i className="uil uil-facebook-f" />
+                        </a>
+                        <a href="#" className="text-decoration-none text-dark">
+                          <i className="uil uil-dribbble" />
+                        </a>
+                        <a href="#" className="text-decoration-none text-dark">
+                          <i className="uil uil-instagram" />
+                        </a>
 
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                className={`${activeNav === 6 ? "active" : ""} py-0 `}
-                onClick={() => setactiveNav(6)}
-              >
-                {t("navbar.contact")}
-              </Nav.Link>
-              <div className="nav-item dropdown ">
-                <a
-                  href="#"
-                  className={`${
-                    activeNav === 5 ? "active" : ""
-                  } py-0 nav-link dropdown-toggle `}
-                  onClick={() => setactiveNav(5)}
-                >
-                  En
-                </a>
-                <div className="dropdown-menu lang-menu  rounded pb-3  px-3 mt-2">
-                  <span
-                    className={`dropdown-item px-0 ${
-                      activeLang === "en" ? "dropdown-item-active " : ""
-                    } `}
-                    onClick={() => {
-                      i18next.changeLanguage("en");
-                      setactiveLang("en");
-                    }}
-                  >
-                    En
-                  </span>
-                  <span
-                    className={`dropdown-item px-0 ${
-                      activeLang === "ru" ? "dropdown-item-active " : ""
-                    } `}
-                    onClick={() => {
-                      i18next.changeLanguage("ru");
-                      setactiveLang("ru");
-                    }}
-                  >
-                    Ru
-                  </span>
-                  <span
-                    className={`dropdown-item px-0 ${
-                      activeLang === "uz" ? "dropdown-item-active " : ""
-                    } `}
-                    onClick={() => {
-                      i18next.changeLanguage("uz");
-                      setactiveLang("uz");
-                    }}
-                  >
-                    Uz
-                  </span>
+                        {/* /.social */}
+                      </li>
+
+                      <li className="nav-item d-lg-none">
+                        <button className="hamburger offcanvas-nav-btn">
+                          <span />
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </Nav>
-          </Navbar.Collapse>
-        </div>
-      </Navbar>
+            </div>
+          </div>
+        </nav>
+      </div>
     </>
   );
 };

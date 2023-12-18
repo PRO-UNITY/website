@@ -1,0 +1,59 @@
+//----------------------------------------------------------//
+//	ALERTS
+//----------------------------------------------------------//
+.alert-dismissible {
+  .btn-close {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    z-index: $stretched-link-z-index + 1;
+    padding: $alert-padding-y * 1.05 $alert-padding-x;
+    color: var(--#{$prefix}alert-link-color) !important;
+    &:before {
+      background: none;
+      @include font-size(1.2rem);
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+    &:hover {
+      &:before {
+        background: none;
+      }
+    }
+  }
+}
+.alert-icon {
+  padding-left: $alert-padding-x * 2.5;
+  // Adjust close link position
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $stretched-link-z-index + 1;
+    padding: 0.8rem $alert-padding-x;
+    @include font-size(1rem);
+  }
+}
+.alert[class*="bg-"] {
+  padding: 0.8rem 0; 
+  .alert-inner {
+    padding-right: 3rem;
+  }
+  &.alert-dismissible {
+    .btn-close {
+      padding-top: 0;
+      padding-bottom: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(var(--#{$prefix}white-rgb), 0.8);
+    }
+    .btn-close:hover {
+      color: var(--#{$prefix}white);
+    }
+  }
+}
+@media (max-width: 767px) {
+  .alert[class*="bg-"].alert-dismissible .btn-close {
+    padding-right: 0.5rem;
+  }
+}

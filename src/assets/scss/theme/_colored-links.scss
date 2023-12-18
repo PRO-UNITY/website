@@ -1,0 +1,18 @@
+//----------------------------------------------------------//
+//	COLORED LINKS
+//----------------------------------------------------------//
+@each $color,
+$value in $link-colors {
+  .link-#{$color} {
+    color: var(--#{$prefix}#{$color});
+    @if $link-shade-percentage !=0 {
+      &:hover,
+      &:focus {
+        color: var(--#{$prefix}#{$color});
+      }
+    }
+  }
+}
+.link-dark {
+  color: $main-dark;
+}
