@@ -19,32 +19,56 @@ export const User = {
     },
   },
   GetUserError: {
-    error: {
-      none_filed_error: ["This user is not available to the system"],
-    },
+    "errors": [
+      "Incorrect email or password"
+    ]
   },
   ProfileUserSucces: {
-    id: "number",
-    username: "string",
-    first_name: "string",
-    last_name: "string",
-    avatar: "string",
-    email: "string",
-    phone: "string",
-    user_id: "number",
-    groups: [
+    "id": "number",
+    "username": "string",
+    "first_name": "string",
+    "last_name": "string",
+    "avatar": "string",
+    "email": "string",
+    "phone": "string",
+    "user_id": "number",
+    "groups": [
       {
-        id: "string",
-        name: "string",
-      },
+        "id": "string",
+        "name": "string"
+      }
     ],
-    active_profile: false,
+    "active_profile": false
   },
   ProfileUserError: {
     error: {
       none_filed_error: ["This user is not available to the system"],
     },
   },
+  UpdateUserSuccess: {
+    "id": "number",
+    "first_name": "string",
+    "last_name": "string",
+    "role": "string",
+    "phone": "string",
+    "country": "string",
+    "city": "string",
+    "bio": "string",
+    "avatar": "file"
+  },
+  UserDetailSuccess: {
+    "id": "number",
+    "first_name": "string",
+    "username": "string",
+    "last_name": "string",
+    "email": "string@gmail.com",
+    "role": "string",
+    "phone": "string",
+    "country": "string",
+    "city": "string",
+    "bio": "string",
+    "avatar": "file"
+  }
 };
 
 // Orders

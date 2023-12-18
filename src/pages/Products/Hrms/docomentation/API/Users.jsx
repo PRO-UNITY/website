@@ -2,6 +2,7 @@ import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayo
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { User } from "./Data";
+
 const Sidenavs = [
   {
     id: 1,
@@ -97,6 +98,9 @@ const Users = () => {
                   <p className="m-0">
                     confirm_password :<code>string</code>
                   </p>
+                  <p className="m-0">
+                    role :<code>string</code>
+                  </p>
                 </li>
                 <li className="content mt-3">
                   <p className="m-0">
@@ -141,7 +145,7 @@ const Users = () => {
                       /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_signup
+                      https://api.prounity.uz/hrms/auth/register
                       {"\n"}
                     </pre>
                   </div>
@@ -215,7 +219,7 @@ const Users = () => {
                   </h6>
                   <h6>
                     Error:{" "}
-                    <pre className="text-danger d-inline">404 Not Found</pre>
+                    <pre className="text-danger d-inline">400 Bad Request</pre>
                   </h6>
                 </ul>
               </div>
@@ -237,7 +241,7 @@ const Users = () => {
                       <span className="text-secondary mx-2">1</span>LOGIN /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_sigin
+                      https://api.prounity.uz/hrms/auth/login
                       {"\n"}
                     </pre>
                   </div>
@@ -290,46 +294,14 @@ const Users = () => {
                     <p className="m-0">Response</p>
                     <pre className="ms-2 m-0 ">
                       Status:
-                      <span className="text-danger">404 Not Found</span>
+                      <span className="text-danger">400 Bad Request</span>
                     </pre>
                   </div>
                   <div className="pre-code-block p-1">
                     <h6 className="ms-2 m-0 h6 text-danger text-center">
                       Error
                     </h6>
-
-                    <pre className="chroma">
-                      <span className="text-secondary mx-2"> 1</span>
-                      <span className="p">{"{"}</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 2</span>
-                      {"  "}
-                      <span className="p">&quot;error&quot;{" {"}</span> {"\n"}
-                      <span className="text-secondary mx-2"> 3</span>
-                      {"    "}
-                      <span className="nt">&quot;none_filed_error&quot;</span>
-                      <span className="p">:</span> <span>[</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 4</span>
-                      {"      "}
-                      <span className="s2">
-                        &quot;This user is not available to the system&quot;
-                      </span>
-                      <span className="p">,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 4</span>
-                      {"    "}
-                      <span className="p">]</span>
-                      <span className="p">,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 4</span>
-                      {"  "}
-                      <span className="p">{"}"}</span>
-                      <span className="p">,</span>
-                      {"\n"} <span className="text-secondary mx-2">5</span>
-                      <span className="p">{"}"}</span>
-                      {"\n"}
-                    </pre>
+                    <CodeFormat JsonData={User.GetUserError} />
                   </div>
                 </div>
               </div>
@@ -387,7 +359,7 @@ const Users = () => {
                       /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_profiles
+                      https://api.prounity.uz/hrms/user
                       {"\n"}
                     </pre>
                   </div>
@@ -419,7 +391,7 @@ const Users = () => {
             <div className="col-xl-6">
               <div className="content">
                 <h2 className="fs-3 my-4 text-primary" id="user-update">
-                  User Udate
+                  User Update
                 </h2>
                 <p>
                   Foydalanuvchilarni ma&apos;lumootlarni tahrirlash uchun{" "}
@@ -450,12 +422,27 @@ const Users = () => {
                   </li>
                   <li className="title">
                     <p className="m-0 fw-semibold">
-                      avatar :<code>string</code>
+                      avatar :<code>file</code>
                     </p>
                   </li>
                   <li className="title">
                     <p className="m-0 fw-semibold">
                       phone :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0 fw-semibold">
+                      country :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0 fw-semibold">
+                      city :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0 fw-semibold">
+                      bio :<code>string</code>
                     </p>
                   </li>
                 </ul>
@@ -490,7 +477,7 @@ const Users = () => {
                       /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_update
+                      https://api.prounity.uz/hrms/user
                       {"\n"}
                     </pre>
                   </div>
@@ -505,63 +492,7 @@ const Users = () => {
                   <h6 className="ms-2 m-0 h6 text-success text-center">
                     Success
                   </h6>
-                  <pre className="chroma">
-                    <span className="text-secondary mx-2">1</span>
-                    <span className="p">{"{"}</span> {"\n"}
-                    <span className="text-secondary mx-2">2</span>
-                    {"  "}
-                    <span className="nt">&quot;id&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="num">number</span>
-                    <span className="p">,</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">3</span>
-                    {"  "}
-                    <span className="nt">&quot;username&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    <span className="p">,</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">4</span>
-                    {"  "}
-                    <span className="nt">&quot;first_name&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">5</span>
-                    {"  "}
-                    <span className="nt">&quot;last_name&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">7</span>
-                    {"  "}
-                    <span className="nt">&quot;email&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">6</span>
-                    {"  "}
-                    <span className="nt">&quot;avatar&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">8</span>
-                    {"  "}
-                    <span className="nt">&quot;phone&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="s2">&quot;string&quot;</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">8</span>
-                    {"  "}
-                    <span className="nt">&quot;active_profile&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="bool">boolean</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">9</span>
-                    <span className="p">{"}"}</span>
-                    {"\n"}
-                  </pre>
+                  <CodeFormat JsonData={User.UpdateUserSuccess} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -628,7 +559,7 @@ const Users = () => {
                       /users
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/auth/user_details/
+                      https://api.prounity.uz/hrms/
                       {"{id}"}
                       {"\n"}
                     </pre>
@@ -644,27 +575,7 @@ const Users = () => {
                   <h6 className="ms-2 m-0 h6 text-success text-center">
                     Success
                   </h6>
-                  <pre className="chroma">
-                    <span className="text-secondary mx-2">1</span>
-                    <span className="p">{"{"}</span> {"\n"}
-                    <span className="text-secondary mx-2">2</span>
-                    {"  "}
-                    <span className="nt">&quot;property1&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="num">string</span>
-                    <span className="p">,</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">2</span>
-                    {"  "}
-                    <span className="nt">&quot;property2&quot;</span>
-                    <span className="p">:</span>{" "}
-                    <span className="num">string</span>
-                    <span className="p">,</span>
-                    {"\n"}
-                    <span className="text-secondary mx-2">9</span>
-                    <span className="p">{"}"}</span>
-                    {"\n"}
-                  </pre>
+                  <CodeFormat JsonData={User.UserDetailSuccess} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
