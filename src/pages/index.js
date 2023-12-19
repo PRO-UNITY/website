@@ -17,11 +17,7 @@ export { default as Products } from "./Products/Products";
 export { default as Hrms } from "./Products/Hrms/Hrms";
 export { default as HrmsDocumentation } from "./Products/Hrms/docomentation/Home";
 export { default as HrmsDocUser } from "./Products/Hrms/docomentation/API/Users";
-export { default as HrmsDocKitchen } from "./Products/Hrms/docomentation/API/Kitchen";
-export { default as HrmsDocFoods } from "./Products/Hrms/docomentation/API/Foods";
-export { default as HrmsDocDeliveryman } from "./Products/Hrms/docomentation/API/Deliveryman";
-export { default as HrmsDocManager } from "./Products/Hrms/docomentation/API/Manager";
-export { default as HrmsDocOrders } from "./Products/Hrms/docomentation/API/Orders";
+export { default as HrmsDocJob } from "./Products/Hrms/docomentation/API/Job";
 
 // Hrms admin
 export { default as HrmsSignIn } from "./Products/Hrms/admin/Hrms-sign-in/Hrms-sign-in";

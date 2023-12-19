@@ -4,22 +4,6 @@ import { Link } from "react-router-dom";
 
 const Sidenavs = [
   {
-    id: 1,
-    title: "Getting Started",
-    child: [
-      {
-        id: "create-user",
-        name: "Installation",
-        path: "installation",
-      },
-      {
-        id: "get-user",
-        name: "Get User",
-        path: "/products/hrms/documentation",
-      },
-    ],
-  },
-  {
     id: 2,
     title: "Api",
     child: [
@@ -29,44 +13,10 @@ const Sidenavs = [
         path: "/products/hrms/documentation/users",
       },
       {
-        id: "kitchen",
-        name: "Kitchen",
-        path: "/products/hrms/documentation/kitchen",
+        id: "job",
+        name: "Job",
+        path: "/products/hrms/documentation/job",
       },
-      {
-        id: "foods",
-        name: "Foods",
-        path: "/products/hrms/documentation/foods",
-      },
-      {
-        id: "deliveryman",
-        name: "Deliveryman",
-        path: "/products/hrms/documentation/deliveryman",
-      },
-      {
-        id: "manager",
-        name: "Manager",
-        path: "/products/hrms/documentation/manager",
-      },
-      {
-        id: "orders",
-        name: "Orders",
-        path: "/products/hrms/documentation/orders",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Use Cases",
-    child: [
-      { id: "create-task", name: "Link", path: "/products/hrms/documentation" },
-    ],
-  },
-  {
-    id: 4,
-    title: "Payment",
-    child: [
-      { id: "create-task", name: "Link", path: "/products/hrms/documentation" },
     ],
   },
 ];

@@ -10,7 +10,6 @@ import {
   Hrms,
   HrmsAdminHome,
   HrmsAdminHomeEditProfile,
-  HrmsDocKitchen,
   HrmsDocUser,
   HrmsDocumentation,
   HrmsNotification,
@@ -36,16 +35,13 @@ import {
   DeliveryDocumentation,
   DeliveryDocUser,
   DeliveryDocInstallation,
-  HrmsDocFoods,
-  HrmsDocDeliveryman,
-  HrmsDocManager,
-  HrmsDocOrders,
   Products,
   DeliveryDocKitchen,
   DeliveryDocFoods,
   DeliveryDocDeliveryman,
   DeliveryDocManager,
   DeliveryDocOrders,
+  HrmsDocJob,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { getRoleUser } from "./pages/Products/Delivery/functions";
@@ -97,43 +93,11 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
           {/* Hrms */}
           <Route path="/products/hrms" element={<Hrms />} />
-          <Route
-            path="products/hrms/documentation"
-            element={<HrmsDocumentation />}
-          />
-          <Route
-            path="products/hrms/documentation/users"
-            element={<HrmsDocUser />}
-          />
-          <Route
-            path="products/hrms/documentation/kitchen"
-            element={<HrmsDocKitchen />}
-          />
-          <Route
-            path="products/hrms/documentation/foods"
-            element={<HrmsDocFoods />}
-          />
-          <Route
-            path="products/hrms/documentation/deliveryman"
-            element={<HrmsDocDeliveryman />}
-          />
-          <Route
-            path="products/hrms/documentation/manager"
-            element={<HrmsDocManager />}
-          />
-          <Route
-            path="products/hrms/documentation/orders"
-            element={<HrmsDocOrders />}
-          />
-
-          <Route
-            path="/products/hrms/admin/auth/sign-in"
-            element={<HrmsSignIn />}
-          />
-          <Route
-            path="/products/hrms/admin/auth/sign-up"
-            element={<HrmsSignUp />}
-          />
+          <Route path="products/hrms/documentation" element={<HrmsDocumentation />}/>
+          <Route path="products/hrms/documentation/users" element={<HrmsDocUser />}/>
+          <Route path="products/hrms/documentation/job" element={<HrmsDocJob />}/>
+          <Route path="/products/hrms/admin/auth/sign-in" element={<HrmsSignIn />} />
+          <Route path="/products/hrms/admin/auth/sign-up"  element={<HrmsSignUp />} />
           <Route path="/products/hrms/admin" element={<HrmsAdminHome />} />
           <Route
             path="/products/hrms/admin/edit-profile"
@@ -161,13 +125,34 @@ function App() {
             path="products/delivery/documentation/installation"
             element={<DeliveryDocInstallation />}
           />
-          <Route path="products/delivery/documentation" element={<DeliveryDocumentation />} />
-          <Route path="products/delivery/documentation/users" element={<DeliveryDocUser />} />
-          <Route path="products/delivery/documentation/kitchen" element={<DeliveryDocKitchen />} />
-          <Route path="products/delivery/documentation/foods" element={<DeliveryDocFoods />} />
-          <Route path="products/delivery/documentation/deliveryman" element={<DeliveryDocDeliveryman />} />
-          <Route path="products/delivery/documentation/manager" element={<DeliveryDocManager />} />
-          <Route path="products/delivery/documentation/orders" element={<DeliveryDocOrders />} />
+          <Route
+            path="products/delivery/documentation"
+            element={<DeliveryDocumentation />}
+          />
+          <Route
+            path="products/delivery/documentation/users"
+            element={<DeliveryDocUser />}
+          />
+          <Route
+            path="products/delivery/documentation/kitchen"
+            element={<DeliveryDocKitchen />}
+          />
+          <Route
+            path="products/delivery/documentation/foods"
+            element={<DeliveryDocFoods />}
+          />
+          <Route
+            path="products/delivery/documentation/deliveryman"
+            element={<DeliveryDocDeliveryman />}
+          />
+          <Route
+            path="products/delivery/documentation/manager"
+            element={<DeliveryDocManager />}
+          />
+          <Route
+            path="products/delivery/documentation/orders"
+            element={<DeliveryDocOrders />}
+          />
           <Route
             path="/products/delivery/admin/auth/sign-in"
             element={<DeliverySignIn />}

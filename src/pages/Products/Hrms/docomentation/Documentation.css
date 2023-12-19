@@ -41,6 +41,11 @@
   border: 0 !important;
   box-shadow: none !important;
 }
+.accordion-button::after {
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+  background-size: contain !important;
+}
 .hrms-doc-asaide {
   max-width: 230px;
   width: 100%;
