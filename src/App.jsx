@@ -59,6 +59,7 @@ import HrmsCalendar from "./pages/Products/Hrms/admin/Hrms-calendar/HrmsCalendar
 function App() {
   const [activeNav, setactiveNav] = useState(1);
   const [activeHrmsDash, setActiveHrmsDash] = useState(1);
+  const [activeHrmsdoc, setActiveHrmsdoc] = useState(0);
   const [role, setRole] = useState("");
   //
   useEffect(() => {
@@ -71,7 +72,14 @@ function App() {
   return (
     <>
       <ActiveNavContext.Provider
-        value={{ activeNav, setactiveNav, activeHrmsDash, setActiveHrmsDash }}
+        value={{
+          activeNav,
+          setactiveNav,
+          activeHrmsDash,
+          setActiveHrmsDash,
+          activeHrmsdoc,
+          setActiveHrmsdoc,
+        }}
       >
         <Routes>
           <Route path="/" element={<Home />} />
@@ -96,13 +104,34 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
           {/* Hrms */}
           <Route path="/products/hrms" element={<Hrms />} />
-          <Route path="products/hrms/documentation" element={<HrmsDocumentation />}/>
-          <Route path="products/hrms/documentation/users" element={<HrmsDocUser />}/>
-          <Route path="products/hrms/documentation/job" element={<HrmsDocJob />}/>
-          <Route path="products/hrms/documentation/resume" element={<HrmsDocResume />}/>
-          <Route path="products/hrms/documentation/company" element={<HrmsDocCompany />}/>
-          <Route path="/products/hrms/admin/auth/sign-in" element={<HrmsSignIn />} />
-          <Route path="/products/hrms/admin/auth/sign-up"  element={<HrmsSignUp />} />
+          <Route
+            path="products/hrms/documentation"
+            element={<HrmsDocumentation />}
+          />
+          <Route
+            path="products/hrms/documentation/users"
+            element={<HrmsDocUser />}
+          />
+          <Route
+            path="products/hrms/documentation/job"
+            element={<HrmsDocJob />}
+          />
+          <Route
+            path="products/hrms/documentation/resume"
+            element={<HrmsDocResume />}
+          />
+          <Route
+            path="products/hrms/documentation/company"
+            element={<HrmsDocCompany />}
+          />
+          <Route
+            path="/products/hrms/admin/auth/sign-in"
+            element={<HrmsSignIn />}
+          />
+          <Route
+            path="/products/hrms/admin/auth/sign-up"
+            element={<HrmsSignUp />}
+          />
           <Route path="/products/hrms/admin" element={<HrmsAdminHome />} />
           <Route
             path="/products/hrms/admin/edit-profile"
@@ -188,9 +217,11 @@ function App() {
             element={<DeliveryNotification />}
           />
           {/* Demo Delivery */}
-          <Route path="/products/delivery/demo" element={<Dashboard/>} />
-          <Route path="/products/delivery/demo/dashboard" element={<Dashboard/>} />
-          
+          <Route path="/products/delivery/demo" element={<Dashboard />} />
+          <Route
+            path="/products/delivery/demo/dashboard"
+            element={<Dashboard />}
+          />
         </Routes>
       </ActiveNavContext.Provider>
     </>

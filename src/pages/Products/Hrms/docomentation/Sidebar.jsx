@@ -1,6 +1,8 @@
 import { Accordion } from "react-bootstrap";
 import "./Documentation.css";
 import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { ActiveNavContext } from "../../../../context/ActiveNav";
 
 const Sidenavs = [
   {
@@ -33,6 +35,8 @@ const Sidenavs = [
 
 // eslint-disable-next-line react/prop-types
 const Sidebar = ({ showSidebar, setshowSidebar }) => {
+  const { activeHrmsdoc, setActiveHrmsdoc } = useContext(ActiveNavContext);
+
   return (
     <>
       <div
@@ -40,9 +44,14 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
          bg-light border border-right ${showSidebar && "show"} `}
       >
         <div className="side-body bg-light px-3">
-          <Accordion defaultActiveKey="">
+          <Accordion defaultActiveKey={activeHrmsdoc}>
             {Sidenavs.map((item) => (
-              <Accordion.Item eventKey={item.id} key={item.id} className="mb-1">
+              <Accordion.Item
+                eventKey={item.id}
+                key={item.id}
+                onClick={() => setActiveHrmsdoc(item.id)}
+                className="mb-1"
+              >
                 <Accordion.Header>
                   <h5 className="fs-6 m-0">{item.title}</h5>
                 </Accordion.Header>
