@@ -2,6 +2,9 @@
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
+.home ul {
+  list-style: outside;
+}
 .hrms-doc-sidebar {
   position: relative;
   min-width: 250px;
