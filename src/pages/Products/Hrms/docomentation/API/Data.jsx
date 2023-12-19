@@ -532,6 +532,185 @@ export const Jobs = {
 };
 
 // Resumes
+export const Company = {
+  CompanyList: {
+    count: 10,
+    next: null,
+    previous: null,
+    results: [
+      {
+        id: 18,
+        name: "Windows Bukhara",
+        logo: "/media/logo/5a46b63332adedb7d795ba690b03e58c_kZTA54R.png",
+        content: "123",
+        users: [
+          {
+            id: 56,
+            first_name: "amirbek",
+            last_name: "azimov",
+            email: "amirbekazimov7@gmail.com",
+            role: "user",
+            phone: null,
+            country: "uzb",
+            city: "buk",
+            bio: "iam bio",
+            avatar: "/media/avatar/image_2023-12-05_23-12-50_v8HSW86.png",
+          },
+        ],
+        countries: {
+          id: 2,
+          name: "Spain",
+          latitude: null,
+          longitude: null,
+        },
+        hrs: [
+          {
+            id: 158,
+            first_name: "first_name-test-hr",
+            last_name: "last_name-test-hr",
+            email: "email-test-hr1@gmail.com",
+            role: "hr",
+            phone: null,
+            country: null,
+            city: null,
+            bio: null,
+            avatar: null,
+          },
+        ],
+        sub_company: {
+          id: 17,
+          name: "Windows",
+          logo: "/media/logo/5a46b63332adedb7d795ba690b03e58c_rHZwjQ4.png",
+          content: "123",
+          users: [],
+          countries: 2,
+          created_at: "2023-12-18",
+          sub_company: null,
+        },
+        user_count: 1,
+        hrs_count: 1,
+        created_at: "2023-12-18",
+      },
+    ],
+  },
+  CompanyDetail: {
+    id: 18,
+    name: "Windows Bukhara",
+    logo: "/media/logo/5a46b63332adedb7d795ba690b03e58c_kZTA54R.png",
+    content: "123",
+    users: [
+      {
+        id: 56,
+        first_name: "amirbek",
+        last_name: "azimov",
+        email: "amirbekazimov7@gmail.com",
+        role: "user",
+        phone: null,
+        country: "uzb",
+        city: "buk",
+        bio: "iam bio",
+        avatar: "/media/avatar/image_2023-12-05_23-12-50_v8HSW86.png",
+      },
+    ],
+    countries: {
+      id: 2,
+      name: "Spain",
+      latitude: null,
+      longitude: null,
+    },
+    hrs: [
+      {
+        id: 158,
+        first_name: "first_name-test-hr",
+        last_name: "last_name-test-hr",
+        email: "email-test-hr1@gmail.com",
+        role: "hr",
+        phone: null,
+        country: null,
+        city: null,
+        bio: null,
+        avatar: null,
+      },
+    ],
+    sub_company: {
+      id: 17,
+      name: "Windows",
+      logo: "/media/logo/5a46b63332adedb7d795ba690b03e58c_rHZwjQ4.png",
+      content: "123",
+      users: [],
+      countries: 2,
+      created_at: "2023-12-18",
+      sub_company: null,
+    },
+    user_count: 1,
+    hrs_count: 1,
+    created_at: "2023-12-18",
+  },
+  CompanyVacansy: [
+    {
+      id: 25,
+      job_category: {
+        id: 23,
+        tag: "Front QA",
+      },
+      applied_count: 1,
+      viewer_count: 0,
+      looked_count: 0,
+      title: "title",
+      description: "description",
+      salary: 1000.0,
+      job_type: {
+        id: 1,
+        type: "Fixed Price",
+      },
+      company: {
+        id: 18,
+        name: "Windows Bukhara",
+        logo: "/media/logo/5a46b63332adedb7d795ba690b03e58c_kZTA54R.png",
+        content: "123",
+        hrs: [
+          {
+            id: 158,
+            first_name: "first_name-test-hr",
+            last_name: "last_name-test-hr",
+            email: "email-test-hr1@gmail.com",
+            role: "hr",
+            phone: null,
+            country: null,
+            city: null,
+            bio: null,
+            avatar: null,
+          },
+        ],
+        users: [
+          {
+            id: 56,
+            first_name: "amirbek",
+            last_name: "azimov",
+            email: "amirbekazimov7@gmail.com",
+            role: "user",
+            phone: null,
+            country: "uzb",
+            city: "buk",
+            bio: "iam bio",
+            avatar: "/media/avatar/image_2023-12-05_23-12-50_v8HSW86.png",
+          },
+        ],
+        countries: {
+          id: 2,
+          name: "Spain",
+          latitude: null,
+          longitude: null,
+        },
+        created_at: "2023-12-18",
+      },
+      experience: true,
+      work_hours: "2 days",
+      created_at: "2023-12-18",
+      updated_at: "2023-12-18",
+    },
+  ],
+};
 export const Resumes = {
   LevelEdu: [
     {
@@ -669,7 +848,7 @@ export const Resumes = {
     },
   ],
 };
-
+//
 // Orders
 export const orders = {
   AllOrderSucces: [
