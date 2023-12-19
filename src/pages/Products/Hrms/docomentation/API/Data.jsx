@@ -435,7 +435,7 @@ export const Jobs = {
     ],
   },
   JobVacanciesDetail: {
-    id: 21,
+    id: "number",
     job_category: {
       id: 1,
       tag: "Quality Control Specialist",

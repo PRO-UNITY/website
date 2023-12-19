@@ -1792,6 +1792,259 @@ const Job = () => {
               </div>
             </div>
           </div>
+          <hr className="my-md-5" />
+          {/* Updated Vacancies */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Update Vacancies
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      company :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      description :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      experience :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      job_category :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      job_type :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      salary :<code>number</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      title :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      work_hours :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-success text-light">POST</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/vacancies/{"{id}"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobVacanciesDetail} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/*  Delete Vacancies */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Delete Vacancies
+                </h2>
+                <p>
+                  Vakasiya ma&apos;lumootlarni ochirish uchun <code>POST</code>{" "}
+                  so&apos;rovi yordamida amalga oshiriladi
+                </p>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-danger text-light">DELETE</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/vacancies/{"{id}"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.Delete} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Viewers Vacancies */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Viewers Vacancies
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">-</ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-warning text-dark">PUT</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/viewers/{"{id}"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobVacanciesDetail} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
         </div>
         <Asaide Sidenavs={Sidenavs} />
       </div>

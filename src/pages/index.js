@@ -18,6 +18,7 @@ export { default as Hrms } from "./Products/Hrms/Hrms";
 export { default as HrmsDocumentation } from "./Products/Hrms/docomentation/Home";
 export { default as HrmsDocUser } from "./Products/Hrms/docomentation/API/Users";
 export { default as HrmsDocJob } from "./Products/Hrms/docomentation/API/Job";
+export { default as HrmsDocResume } from "./Products/Hrms/docomentation/API/Resume";
 
 // Hrms admin
 export { default as HrmsSignIn } from "./Products/Hrms/admin/Hrms-sign-in/Hrms-sign-in";
@@ -53,5 +54,5 @@ export { default as DeliveryServices } from "./Products/Delivery/admin/Delivery-
 export { default as DeliveryNotification } from "./Products/Delivery/admin/Delivery-notification/Delivery-notification";
 
 // Delivery Demo
-export { default as DemoHome} from './Products/Delivery/Demo/Home'
-export { default as Dashboard } from './Products/Delivery/Demo/API/Dashboard' 
+export { default as DemoHome } from "./Products/Delivery/Demo/Home";
+export { default as Dashboard } from "./Products/Delivery/Demo/API/Dashboard";
