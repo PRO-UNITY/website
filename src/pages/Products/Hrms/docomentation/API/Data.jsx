@@ -531,6 +531,145 @@ export const Jobs = {
   },
 };
 
+// Resumes
+export const Resumes = {
+  LevelEdu: [
+    {
+      id: "number",
+      level: "string",
+    },
+  ],
+  ResumeList: [
+    {
+      id: 0,
+      user: {
+        id: 0,
+        first_name: "string",
+        username: "string",
+        last_name: "string",
+        email: "user@example.com",
+        role: "string",
+        phone: "string",
+        country: "string",
+        city: "string",
+        bio: "string",
+        avatar: "string",
+      },
+      job_tag: {
+        id: 0,
+        tag: "string",
+      },
+      content: "string",
+      location: "string",
+      date_of_brith: "2023-12-19",
+      phone: "string",
+      level_of_education: {
+        id: 0,
+        level: "string",
+      },
+      place_of_study: {
+        additionalProp1: "string",
+        additionalProp2: "string",
+        additionalProp3: "string",
+      },
+      position: "string",
+      about: "string",
+      job_experiences: {
+        additionalProp1: "string",
+        additionalProp2: "string",
+        additionalProp3: "string",
+      },
+      created_at: "2023-12-19",
+    },
+  ],
+  ResumeDetails: {
+    id: 0,
+    user: {
+      id: 0,
+      first_name: "string",
+      username: "string",
+      last_name: "string",
+      email: "user@example.com",
+      role: "string",
+      phone: "string",
+      country: "string",
+      city: "string",
+      bio: "string",
+      avatar: "string",
+    },
+    job_tag: {
+      id: 0,
+      tag: "string",
+    },
+    content: "string",
+    location: "string",
+    date_of_brith: "2023-12-19",
+    phone: "string",
+    level_of_education: {
+      id: 0,
+      level: "string",
+    },
+    place_of_study: {
+      additionalProp1: "string",
+      additionalProp2: "string",
+      additionalProp3: "string",
+    },
+    position: "string",
+    about: "string",
+    job_experiences: {
+      additionalProp1: "string",
+      additionalProp2: "string",
+      additionalProp3: "string",
+    },
+    created_at: "2023-12-19",
+  },
+  UserResumes: [
+    {
+      id: 7,
+      user: {
+        id: 56,
+        first_name: "amirbek",
+        username: "amirbekazimov",
+        last_name: "azimov",
+        email: "amirbekazimov7@gmail.com",
+        role: "user",
+        phone: null,
+        country: "uzb",
+        city: "buk",
+        bio: "iam bio",
+        avatar: "/media/avatar/image_2023-12-05_23-12-50_v8HSW86.png",
+      },
+      job_tag: {
+        id: 1,
+        tag: "Quality Control Specialist",
+      },
+      content: "no-content",
+      location: "UZB",
+      date_of_brith: "2000-05-18",
+      phone: "997090576",
+      level_of_education: {
+        id: 1,
+        level: "Primary education.",
+      },
+      place_of_study: [
+        {
+          date: "2019-09-03",
+          name: "BUKHSU",
+        },
+      ],
+      position: "Backend-developer",
+      about: "Your name is Ibrokhim",
+      job_experiences: [
+        {
+          date: "2019-09-03",
+          name: "Bukhara state university",
+        },
+      ],
+      created_at: "2023-12-18",
+    },
+  ],
+};
+
 // Orders
 export const orders = {
   AllOrderSucces: [

@@ -19,6 +19,7 @@ export { default as HrmsDocumentation } from "./Products/Hrms/docomentation/Home
 export { default as HrmsDocUser } from "./Products/Hrms/docomentation/API/Users";
 export { default as HrmsDocJob } from "./Products/Hrms/docomentation/API/Job";
 export { default as HrmsDocResume } from "./Products/Hrms/docomentation/API/Resume";
+export { default as HrmsDocCompany } from "./Products/Hrms/docomentation/API/Companies";
 
 // Hrms admin
 export { default as HrmsSignIn } from "./Products/Hrms/admin/Hrms-sign-in/Hrms-sign-in";

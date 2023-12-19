@@ -3,50 +3,50 @@ import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { Jobs, Resumes } from "./Data";
 const Sidenavs = [
-  {
-    id: 1,
-    title: "Level Educataion list",
-    path: "level-edu",
-  },
-  {
-    id: 2,
-    title: "Resume List",
-    path: "resume-list",
-  },
-  {
-    id: 3,
-    title: "Creat Resume List",
-    path: "creat-resume-list",
-  },
-  {
-    id: 4,
-    title: "Resume List Detail",
-    path: "resume-list-detail",
-  },
-  {
-    id: 5,
-    title: "Update Resume List",
-    path: "updata-resume-list",
-  },
-  {
-    id: 6,
-    title: "Delete Resume List",
-    path: "delete-resume-list",
-  },
-  {
-    id: 8,
-    title: "User Resumes",
-    path: "user-resumes",
-  },
-];
-const Resume = () => {
+     {
+       id: 1,
+       title: "Level Educataion list",
+       path: "level-edu",
+     },
+     {
+       id: 2,
+       title: "Resume List",
+       path: "resume-list",
+     },
+     {
+       id: 3,
+       title: "Creat Resume List",
+       path: "creat-resume-list",
+     },
+     {
+       id: 4,
+       title: "Resume List Detail",
+       path: "resume-list-detail",
+     },
+     {
+       id: 5,
+       title: "Update Resume List",
+       path: "updata-resume-list",
+     },
+     {
+       id: 6,
+       title: "Delete Resume List",
+       path: "delete-resume-list",
+     },
+     {
+       id: 8,
+       title: "User Resumes",
+       path: "user-resumes",
+     },
+   ];
+const Companies = () => {
   return (
     <HrmsDocumentationLayout>
       <div className="d-flex hrms-doc bg-light  ">
         <div className="doc-content w-100 bg-light pt-5">
           <div className="row px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h1 className="text-primary mt-4">Resume</h1>
+              <h1 className="text-primary mt-4">Company</h1>
               <p className="py-4">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Nostrum, natus!
@@ -742,4 +742,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Companies;

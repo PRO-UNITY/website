@@ -17,6 +17,16 @@ const Sidenavs = [
         name: "Job",
         path: "/products/hrms/documentation/job",
       },
+      {
+        id: "resume",
+        name: "Resume",
+        path: "/products/hrms/documentation/resume",
+      },
+      {
+        id: "company",
+        name: "Company",
+        path: "/products/hrms/documentation/company",
+      },
     ],
   },
 ];
