@@ -269,10 +269,7 @@ const Job = () => {
                 <h2 className="fs-3 my-4 text-primary" id="user-profile">
                   Job Analytics
                 </h2>
-                <p>
-                  Foydalanuvchilarga tegishli ma&apos;lumootlarni olish uchun{" "}
-                  <code>GET</code> so&apos;rovi yordamida amalga oshiriladi
-                </p>
+
                 <h5>Attributes</h5>
                 <hr />
                 <ul className="doc-list p-0">
@@ -325,7 +322,7 @@ const Job = () => {
                       Status:<span className="text-success">200 Ok</span>
                     </pre>
                   </div>
-                  <CodeFormat JsonData={User.ProfileUserSucces} />
+                  <CodeFormat JsonData={Jobs.JobAnalytics} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -340,7 +337,7 @@ const Job = () => {
             </div>
           </div>
           <hr className="my-md-5" />
-          {/* Update User */}
+          {/* Job analitik with id */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
@@ -403,7 +400,7 @@ const Job = () => {
                       Status:<span className="text-success">200 Ok</span>
                     </pre>
                   </div>
-                  <CodeFormat JsonData={User.ProfileUserSucces} />
+                  <CodeFormat JsonData={Jobs.JobAnalytics} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -418,8 +415,7 @@ const Job = () => {
             </div>
           </div>
           <hr className="my-md-5" />
-
-          {/* Update User */}
+          {/* Job Filter */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
@@ -427,7 +423,7 @@ const Job = () => {
                   Job Filter
                 </h2>
                 <p>
-                  Job tegishli ma&apos;lumootlarni filterlas uchun{" "}
+                  Job tegishli ma&apos;lumootlarni filterlash uchun{" "}
                   <code>GET</code> so&apos;rovi yordamida amalga oshiriladi
                 </p>
                 <h5>Attributes</h5>
@@ -470,7 +466,8 @@ const Job = () => {
                       /user
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/hrms/job/analytics/{"id"}
+                      https://api.prounity.uz/hrms/job/filter?search=
+                      {"{string}"}
                       {"\n"}
                     </pre>
                   </div>
@@ -482,7 +479,7 @@ const Job = () => {
                       Status:<span className="text-success">200 Ok</span>
                     </pre>
                   </div>
-                  <CodeFormat JsonData={User.ProfileUserSucces} />
+                  <CodeFormat JsonData={Jobs.JobFilter} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -497,29 +494,26 @@ const Job = () => {
             </div>
           </div>
           <hr className="my-md-5" />
-
-          {/* Delete User */}
+          {/* Job Category */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-update">
-                  User Delete
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Category
                 </h2>
                 <p>
-                  Foydalanuvchini o'chirish uchun <code>DELETE</code>{" "}
+                  Job category ma&apos;lumootlarni olish uchun <code>GET</code>{" "}
                   so&apos;rovi yordamida amalga oshiriladi
                 </p>
                 <h5>Attributes</h5>
                 <hr />
                 <ul className="doc-list p-0">
                   <li className="title">
-                    <p className="m-0 fw-semibold">
+                    <p className="m-0">
                       token :<code>string</code>
                     </p>
                   </li>
                 </ul>
-                <hr />
-
                 <h5>Response Status</h5>
                 <hr />
                 <ul className="doc-list p-0">
@@ -540,18 +534,18 @@ const Job = () => {
                     <p className="m-0">Request</p>
                     <pre className="ms-2 m-0 ">
                       Method:
-                      <span>
-                        <code className="bg-warning text-dark">DELETE</code>
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
                       </span>
                     </pre>
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>Delete /user
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/hrms/user
-                      {"\n"}
+                      https://api.prounity.uz/hrms/job/categories
                     </pre>
                   </div>
                 </div>
@@ -562,10 +556,7 @@ const Job = () => {
                       Status:<span className="text-success">200 Ok</span>
                     </pre>
                   </div>
-                  <h6 className="ms-2 m-0 h6 text-success text-center">
-                    Success
-                  </h6>
-                  <CodeFormat JsonData={User.DeleteUserSuccess} />
+                  <CodeFormat JsonData={Jobs.JobCategory} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -580,23 +571,22 @@ const Job = () => {
             </div>
           </div>
           <hr className="my-md-5" />
-          {/* User Detail */}
+          {/* Job Category with Id */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-detail">
-                  User Detail
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Category Id
                 </h2>
                 <p>
-                  Har qaysi foydalanuvchini <pre className="d-inline">ID</pre>{" "}
-                  ma&apos;lumootlarni olish uchun <code>GET</code> so&apos;rovi
-                  yordamida amalga oshiriladi
+                  Biror category ma&apos;lumootlarni olish uchun{" "}
+                  <code>GET</code> so&apos;rovi yordamida amalga oshiriladi
                 </p>
                 <h5>Attributes</h5>
                 <hr />
                 <ul className="doc-list p-0">
                   <li className="title">
-                    <p className="m-0 fw-semibold">
+                    <p className="m-0">
                       token :<code>string</code>
                     </p>
                   </li>
@@ -622,18 +612,17 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-white">GET</code>
+                        <code className="bg-primary text-light">GET</code>
                       </span>
                     </pre>
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>Detail /user
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/hrms/user/
-                      {"{id}"}
-                      {"\n"}
+                      https://api.prounity.uz/hrms/job/categories/{"{id}"}
                     </pre>
                   </div>
                 </div>
@@ -644,41 +633,41 @@ const Job = () => {
                       Status:<span className="text-success">200 Ok</span>
                     </pre>
                   </div>
-                  <h6 className="ms-2 m-0 h6 text-success text-center">
-                    Success
-                  </h6>
-                  <CodeFormat JsonData={User.UserDetailSuccess} />
+                  <CodeFormat JsonData={Jobs.JobCategoryId} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
                     <p className="m-0">Response</p>
                     <pre className="ms-2 m-0 ">
-                      Status:
-                      <span className="text-danger">404 Not Found</span>
+                      Status:<span className="text-danger">404 Not Found</span>
                     </pre>
                   </div>
-                  <pre className="chroma py-3">
-                    <span className="mx-2">*Not found</span>
-                  </pre>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
                 </div>
               </div>
             </div>
           </div>
           <hr className="my-md-5" />
-          {/* User Manager */}
+          {/* Job Create Category */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-manager">
-                  HR Manager
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Create Category
                 </h2>
                 <p>
-                  Har qaysi company hrlarini ma&apos;lumootlarni olish uchun{" "}
-                  <code>GET</code> so&apos;rovi yordamida amalga oshiriladi
+                  Job category ma&apos;lumootlarni yaratish uchun{" "}
+                  <code>POST</code> so&apos;rovi yordamida amalga oshiriladi
                 </p>
                 <h5>Attributes</h5>
                 <hr />
-                <ul className="doc-list p-0"></ul>
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      tag :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
                 <h5>Response Status</h5>
                 <hr />
                 <ul className="doc-list p-0">
@@ -700,17 +689,17 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-white">GET</code>
+                        <code className="bg-success text-light">Post</code>
                       </span>
                     </pre>
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>Manager /hrs
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/hrms/hrs
-                      {"\n"}
+                      https://api.prounity.uz/hrms/job/categories
                     </pre>
                   </div>
                 </div>
@@ -721,10 +710,7 @@ const Job = () => {
                       Status:<span className="text-success">200 Ok</span>
                     </pre>
                   </div>
-                  <h6 className="ms-2 m-0 h6 text-success text-center">
-                    Success
-                  </h6>
-                  <CodeFormat JsonData={User.Hrlist} />
+                  <CodeFormat JsonData={Jobs.JobCategoryId} />
                 </div>
                 <div className="box">
                   <div className="title px-3 py-2">
@@ -739,354 +725,1073 @@ const Job = () => {
             </div>
           </div>
           <hr className="my-md-5" />
-          {/* Delevery User */}
-          {/* <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
-           <div className="col-xl-6">
-             <div className="content">
-               <h2 className="fs-3 my-4 text-primary" id="user-delivery">
-                 Delivery User
-               </h2>
-               <p>
-                 Har qaysi oshxona deliverylarini ma&apos;lumootlarni olish
-                 uchun <code>GET</code> so&apos;rovi yordamida amalga
-                 oshiriladi
-               </p>
-               <h5>Attributes</h5>
-               <hr />
-               <ul className="doc-list p-0">
-                 <li className="title">
-                   <p className="m-0 fw-semibold">
-                     token :<code>string</code>
-                   </p>
-                 </li>
-               </ul>
-               <h5>Response Status</h5>
-               <hr />
-               <ul className="doc-list p-0">
-                 <h6>
-                   Success: <pre className="text-success d-inline">200 Ok</pre>
-                 </h6>
-                 <h6>
-                   Error:{" "}
-                   <pre className="text-danger d-inline">404 Not Found</pre>
-                 </h6>
-               </ul>
-             </div>
-           </div>
-           <div className="col-xl-6">
-             <div className="sidenote">
-               <div className="box">
-                 <div className="title px-3 py-2">
-                   <p className="m-0">Request</p>
-                   <pre className="ms-2 m-0 ">
-                     Method:
-                     <span className="text-success">
-                       <code className="bg-primary text-white">GET</code>
-                     </span>
-                   </pre>
-                 </div>
-                 <div className="pre-code-block">
-                   <pre className="chroma p-2">
-                     <span className="text-secondary mx-2">1</span>Manager
-                     /users
-                     {"\n"}
-                     <span className="text-secondary mx-2">2</span>URL =
-                     https://api.prounity.uz/food-delivery/auth/delivery_user
-                     {"\n"}
-                   </pre>
-                 </div>
-               </div>
-               <div className="box">
-                 <div className="title px-3 py-2">
-                   <p className="m-0">Response</p>
-                   <pre className="ms-2 m-0 ">
-                     Status:<span className="text-success">200 Ok</span>
-                   </pre>
-                 </div>
-                 <h6 className="ms-2 m-0 h6 text-success text-center">
-                   Success
-                 </h6>
-                 <pre className="chroma">
-                   <span className="text-secondary mx-2">1</span>
-                   <span className="p">{"{"}</span> {"\n"}
-                   <span className="text-secondary mx-2">2</span>
-                   {"  "}
-                   <span className="nt">&quot;id&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="num">number</span>
-                   <span className="p">,</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">3</span>
-                   {"  "}
-                   <span className="nt">&quot;username&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   <span className="p">,</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">4</span>
-                   {"  "}
-                   <span className="nt">&quot;first_name&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">5</span>
-                   {"  "}
-                   <span className="nt">&quot;last_name&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">6</span>
-                   {"  "}
-                   <span className="nt">&quot;avatar&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">7</span>
-                   {"  "}
-                   <span className="nt">&quot;email&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">8</span>
-                   {"  "}
-                   <span className="nt">&quot;phone&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">9</span>
-                   {"  "}
-                   <span className="nt">&quot;user_id&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="num">number</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">10</span>
-                   {"  "}
-                   <span className="nt">&quot;groups&quot;</span>
-                   <span className="p">:</span> <span className="">{"["}</span>{" "}
-                   {"\n"}
-                   <span className="text-secondary mx-2">11</span>
-                   {"    "}
-                   <span className="">{"{"}</span> {"\n"}
-                   <span className="text-secondary mx-2">12</span>
-                   {"    "}
-                   <span className=" mx-2">&quot;id&quot;</span>
-                   <span>:</span>{" "}
-                   <span className="">
-                     <span className="s2">&quot;string&quot;</span>
-                   </span>
-                   <span>,</span> {"\n"}
-                   <span className="text-secondary mx-2">13</span>
-                   {"     "}
-                   <span>&quot;name&quot;</span>
-                   <span>:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span> {"\n"}
-                   <span className="text-secondary mx-2">14</span>
-                   {"     "}
-                   <span>{"}"}</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">15</span>
-                   {"   "}
-                   <span>{"]"}</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">16</span>
-                   {"  "}
-                   <span className="nt">&quot;active_profile&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="bool">boolean</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">17</span>
-                   <span className="p">{"}"}</span>
-                   {"\n"}
-                 </pre>
-               </div>
-               <div className="box">
-                 <div className="title px-3 py-2">
-                   <p className="m-0">Response</p>
-                   <pre className="ms-2 m-0 ">
-                     Status:<span className="text-danger">404 Not Found</span>
-                   </pre>
-                 </div>
-                 <pre className="chroma py-3 px-2">* Not Found</pre>
-               </div>
-             </div>
-           </div>
-         </div>
-         {/* Delevery User  with Id*/}
-          {/* <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
-           <div className="col-xl-6">
-             <div className="content">
-               <h2 className="fs-3 my-4 text-primary" id="user-delivery-id">
-                 HR User with ID
-               </h2>
-               <p>
-                 Har qaysi company uchun aynan biror hr
-                 ma&apos;lumootlarni olish uchun <code>ID</code> orqali{" "}
-                 <code>GET</code> so&apos;rovi yordamida amalga oshiriladi
-               </p>
-               <h5>Attributes</h5>
-               <hr />
-               <ul className="doc-list p-0">
-                 <li className="title">
-                   <p className="m-0 fw-semibold">
-                     token :<code>string</code>
-                   </p>
-                 </li>
-               </ul>
-               <h5>Response Status</h5>
-               <hr />
-               <ul className="doc-list p-0">
-                 <h6>
-                   Success: <pre className="text-success d-inline">200 Ok</pre>
-                 </h6>
-                 <h6>
-                   Error:{" "}
-                   <pre className="text-danger d-inline">404 Not Found</pre>
-                 </h6>
-               </ul>
-             </div>
-           </div>
-           <div className="col-xl-6">
-             <div className="sidenote">
-               <div className="box">
-                 <div className="title px-3 py-2">
-                   <p className="m-0">Request</p>
-                   <pre className="ms-2 m-0 ">
-                     Method:
-                     <span className="text-success">
-                       <code className="bg-primary text-white">GET</code>
-                     </span>
-                   </pre>
-                 </div>
-                 <div className="pre-code-block">
-                   <pre className="chroma p-2">
-                     <span className="text-secondary mx-2">1</span>Manager
-                     /hrs
-                     {"\n"}
-                     <span className="text-secondary mx-2">2</span>URL =
-                     https://api.prounity.uz/food-delivery/auth/delivery_user_crud/
-                     {"{id}"}
-                     {"\n"}
-                   </pre>
-                 </div>
-               </div>
-               <div className="box">
-                 <div className="title px-3 py-2">
-                   <p className="m-0">Response</p>
-                   <pre className="ms-2 m-0 ">
-                     Status:<span className="text-success">200 Ok</span>
-                   </pre>
-                 </div>
-                 <h6 className="ms-2 m-0 h6 text-success text-center">
-                   Success
-                 </h6>
-                 <pre className="chroma">
-                   <span className="text-secondary mx-2">1</span>
-                   <span className="p">{"{"}</span> {"\n"}
-                   <span className="text-secondary mx-2">2</span>
-                   {"  "}
-                   <span className="nt">&quot;id&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="num">number</span>
-                   <span className="p">,</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">3</span>
-                   {"  "}
-                   <span className="nt">&quot;username&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   <span className="p">,</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">4</span>
-                   {"  "}
-                   <span className="nt">&quot;first_name&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">5</span>
-                   {"  "}
-                   <span className="nt">&quot;last_name&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">6</span>
-                   {"  "}
-                   <span className="nt">&quot;avatar&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">7</span>
-                   {"  "}
-                   <span className="nt">&quot;email&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">8</span>
-                   {"  "}
-                   <span className="nt">&quot;phone&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">9</span>
-                   {"  "}
-                   <span className="nt">&quot;user_id&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="num">number</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">10</span>
-                   {"  "}
-                   <span className="nt">&quot;groups&quot;</span>
-                   <span className="p">:</span> <span className="">{"["}</span>{" "}
-                   {"\n"}
-                   <span className="text-secondary mx-2">11</span>
-                   {"    "}
-                   <span className="">{"{"}</span> {"\n"}
-                   <span className="text-secondary mx-2">12</span>
-                   {"    "}
-                   <span className=" mx-2">&quot;id&quot;</span>
-                   <span>:</span>{" "}
-                   <span className="">
-                     <span className="s2">&quot;string&quot;</span>
-                   </span>
-                   <span>,</span> {"\n"}
-                   <span className="text-secondary mx-2">13</span>
-                   {"     "}
-                   <span>&quot;name&quot;</span>
-                   <span>:</span>{" "}
-                   <span className="s2">&quot;string&quot;</span> {"\n"}
-                   <span className="text-secondary mx-2">14</span>
-                   {"     "}
-                   <span>{"}"}</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">15</span>
-                   {"   "}
-                   <span>{"]"}</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">16</span>
-                   {"  "}
-                   <span className="nt">&quot;active_profile&quot;</span>
-                   <span className="p">:</span>{" "}
-                   <span className="bool">boolean</span>
-                   {"\n"}
-                   <span className="text-secondary mx-2">17</span>
-                   <span className="p">{"}"}</span>
-                   {"\n"}
-                 </pre>
-               </div>
-               <div className="box">
-                 <div className="title px-3 py-2">
-                   <p className="m-0">Response</p>
-                   <pre className="ms-2 m-0 ">
-                     Status:<span className="text-danger">404 Not Found</span>
-                   </pre>
-                 </div>
-                 <pre className="chroma py-3 px-2">* Not Found</pre>
-               </div>
-             </div>
-           </div>
-         </div> */}
-          {/* Delevery User  Update*/}
+          {/* Job Update Category */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Update Category
+                </h2>
+                <p>
+                  Job category ma&apos;lumootlarni tahrirlash uchun{" "}
+                  <code>POST</code> so&apos;rovi yordamida amalga oshiriladi
+                </p>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      tag :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-warning text-dark">PUT</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/categories/{"{id}"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobCategoryId} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Job Delete Category */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Delete Category
+                </h2>
+                <p>
+                  Job category ma&apos;lumootlarni ochirish uchun{" "}
+                  <code>POST</code> so&apos;rovi yordamida amalga oshiriladi
+                </p>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      tag :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-danger text-light">DELETE</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/categories/{"{id}"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.Delete} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/*  Job Country */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Country
+                </h2>
 
-          {/* Tasks section */}
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/country
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobCountry} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/*  Job Detail  */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Detail
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/details/{"{id}"}/
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobDetail} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Job Delete Category */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Delete Details
+                </h2>
+                <p>
+                  Job category ma&apos;lumootlarni ochirish uchun{" "}
+                  <code>Delete</code> so&apos;rovi yordamida amalga oshiriladi
+                </p>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-danger text-light">DELETE</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/details/{"{id}"}/
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.Delete} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Job Favourite */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Favourite
+                </h2>
+
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/favorites
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobFavourite} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Create Job Resume */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Create Job Favourite
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      jobs :<code>number(id)</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-success text-light">POST</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/favorites
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobFavourite} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Resumes */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Resume
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/hr/resumes
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobResume} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Resumes Detail */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Resume Detail
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/hr/resumes/{"{id}"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobResume} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Notificaton list */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Notificaton List
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/hr/job/notification-list
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <span className="ms-2">[ ]</span>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Job Types */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job types
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/types
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobTypes} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Job Vacancies */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Vacancies
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/vacancies
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobVacancies} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Creat Vacancies */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Creat Vacancies
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      company :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      description :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      experience :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      job_category :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      job_type :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      salary :<code>number</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      title :<code>string</code>
+                    </p>
+                  </li>
+                  <li className="title">
+                    <p className="m-0">
+                      work_hours :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-success text-light">POST</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/vacancies
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobVacanciesDetail} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
+          {/* Job Vacancies Detail */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                  Job Vacancies Detail
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Profile
+                      /user
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/job/vacancies/{"{id}"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Jobs.JobVacanciesDetail} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <Asaide Sidenavs={Sidenavs} />
       </div>
