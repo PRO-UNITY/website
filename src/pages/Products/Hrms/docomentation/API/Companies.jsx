@@ -1,7 +1,7 @@
 import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
-import { Company, Jobs, Resumes } from "./Data";
+import { Company, Hrs, Jobs, Resumes } from "./Data";
 const Sidenavs = [
   {
     id: 2,
@@ -461,8 +461,8 @@ const Companies = () => {
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>Profile
-                      /user
+                      <span className="text-secondary mx-2">1</span>Company
+                      Vacancies
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
                       https://api.prounity.uz/hrms//company/{"{id}"}/vacancies
@@ -492,7 +492,79 @@ const Companies = () => {
             </div>
           </div>
           <hr className="my-md-5" />
-
+          {/* Hrs */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 className="fs-3 my-4 text-primary" id="company-vacansy">
+                  Hrs
+                </h2>
+                <h5>Attributes</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0">
+                      token :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-light">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Hrs
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/hrs
+                      {"\n"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <CodeFormat JsonData={Hrs.data} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
         </div>
         <Asaide Sidenavs={Sidenavs} />
       </div>

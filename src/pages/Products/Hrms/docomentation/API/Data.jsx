@@ -848,7 +848,29 @@ export const Resumes = {
     },
   ],
 };
-//
+//hrs
+export const Hrs = {
+  data: {
+    count: "number",
+    next: null,
+    previous: null,
+    results: [
+      {
+        id: "number",
+        first_name: "first_name-test-hr",
+        username: "username-test-hr1",
+        last_name: "last_name-test-hr",
+        email: "email-test-hr1@gmail.com",
+        role: "hr",
+        phone: null,
+        country: null,
+        city: null,
+        bio: null,
+        avatar: null,
+      },
+    ],
+  },
+};
 // Orders
 export const orders = {
   AllOrderSucces: [
