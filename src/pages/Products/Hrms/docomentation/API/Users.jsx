@@ -1,7 +1,9 @@
+import { useLocation } from "react-router-dom";
 import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { User } from "./Data";
+import { useEffect, useRef } from "react";
 
 const Sidenavs = [
   {
@@ -52,6 +54,19 @@ const Sidenavs = [
 ];
 
 const Users = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const elementId = location.hash.substring(1);
+    scrollToElement(elementId);
+  }, [location]);
+
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <HrmsDocumentationLayout>
       <div className="d-flex hrms-doc bg-light  ">
@@ -481,8 +496,7 @@ const Users = () => {
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>Update
-                      /user
+                      <span className="text-secondary mx-2">1</span>Update /user
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
                       https://api.prounity.uz/hrms/user
@@ -523,8 +537,8 @@ const Users = () => {
                   User Delete
                 </h2>
                 <p>
-                  Foydalanuvchini o'chirish uchun{" "}
-                  <code>DELETE</code> so&apos;rovi yordamida amalga oshiriladi
+                  Foydalanuvchini o'chirish uchun <code>DELETE</code>{" "}
+                  so&apos;rovi yordamida amalga oshiriladi
                 </p>
                 <h5>Attributes</h5>
                 <hr />
@@ -564,8 +578,7 @@ const Users = () => {
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>Delete
-                      /user
+                      <span className="text-secondary mx-2">1</span>Delete /user
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
                       https://api.prounity.uz/hrms/user
@@ -646,8 +659,7 @@ const Users = () => {
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>Detail
-                      /user
+                      <span className="text-secondary mx-2">1</span>Detail /user
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
                       https://api.prounity.uz/hrms/user/
@@ -692,14 +704,12 @@ const Users = () => {
                   HR Manager
                 </h2>
                 <p>
-                  Har qaysi company hrlarini ma&apos;lumootlarni olish
-                  uchun <code>GET</code> so&apos;rovi yordamida amalga
-                  oshiriladi
+                  Har qaysi company hrlarini ma&apos;lumootlarni olish uchun{" "}
+                  <code>GET</code> so&apos;rovi yordamida amalga oshiriladi
                 </p>
                 <h5>Attributes</h5>
                 <hr />
-                <ul className="doc-list p-0">
-                </ul>
+                <ul className="doc-list p-0"></ul>
                 <h5>Response Status</h5>
                 <hr />
                 <ul className="doc-list p-0">
@@ -727,8 +737,7 @@ const Users = () => {
                   </div>
                   <div className="pre-code-block">
                     <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>Manager
-                      /hrs
+                      <span className="text-secondary mx-2">1</span>Manager /hrs
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
                       https://api.prounity.uz/hrms/hrs

@@ -5,11 +5,11 @@
 .home ul {
   list-style: outside;
 }
-.hrms-doc-sidebar {
+/* .hrms-doc-sidebar {
   position: relative;
   min-width: 250px;
   z-index: 9999;
-}
+} */
 .accordion .accordion-item {
   background: transparent;
   border: 0;
@@ -158,14 +158,14 @@
   .hrms-doc-asaide {
     display: none;
   }
-  .hrms-doc-sidebar {
+  /* .hrms-doc-sidebar {
     position: absolute;
     transition: 0.5s;
-    height: 130vh;
+
     left: -100%;
     z-index: 99;
     margin-top: -2px;
-  }
+  } */
   .hrms-doc-navbar .searchbar {
     width: auto;
   }

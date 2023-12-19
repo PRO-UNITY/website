@@ -1,7 +1,9 @@
 import Asaide from "../Asaide";
 import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
 import CodeFormat from "../components/Code-format";
-import { Jobs, User } from "./Data";
+import { Jobs } from "./Data";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 const Sidenavs = [
   {
     id: 1,
@@ -10,35 +12,137 @@ const Sidenavs = [
   },
   {
     id: 2,
-    title: "Sign in",
-    path: "sign-in",
+    title: "Job Analytics ",
+    path: "job-analytics",
   },
   {
     id: 3,
-    title: "User Profile",
-    path: "user-profile",
+    title: "Job Analytics Detail",
+    path: "job-analytics-detail",
   },
   {
     id: 4,
-    title: "User Update",
-    path: "user-update",
+    title: "Job Filter",
+    path: "job-filter",
   },
   {
     id: 5,
-    title: "User Detail",
-    path: "user-detail",
+    title: "Job Category",
+    path: "job-category",
   },
   {
     id: 6,
-    title: "User Meneger",
-    path: "user-manager",
+    title: "Job Category Detail",
+    path: "job-category-detail",
+  },
+  {
+    id: 7,
+    title: "Job Create Category",
+    path: "job-create-category",
+  },
+  {
+    id: 8,
+    title: "Job Update Category",
+    path: "job-update-category",
+  },
+  {
+    id: 9,
+    title: "Job Delete Category",
+    path: "job-delete-category",
+  },
+  {
+    id: 10,
+    title: "Job Country",
+    path: "job-country",
+  },
+  {
+    id: 11,
+    title: " Job Detail",
+    path: "job-detail",
+  },
+  {
+    id: 12,
+    title: "Job Delete Details",
+    path: "job-delete-detail",
+  },
+  {
+    id: 13,
+    title: "Job Favourite",
+    path: "job-favourite",
+  },
+  {
+    id: 14,
+    title: " Create Job Favourite",
+    path: "job-favourite-create",
+  },
+  {
+    id: 15,
+    title: "Resumes",
+    path: "resumes",
+  },
+  {
+    id: 16,
+    title: "Resumes Detail ",
+    path: "resumes-detail",
+  },
+  {
+    id: 17,
+    title: "Notificaton list ",
+    path: "notificaton-list",
+  },
+  {
+    id: 18,
+    title: "Job types ",
+    path: "job-types",
+  },
+  {
+    id: 19,
+    title: " Job Vacancies ",
+    path: "job-vacancies",
+  },
+  {
+    id: 20,
+    title: " Creat Vacancies ",
+    path: "creat-vacancies",
+  },
+  {
+    id: 21,
+    title: " Job Vacancies Detail ",
+    path: "job-vacancies-detail",
+  },
+  {
+    id: 22,
+    title: " Updated Vacancies ",
+    path: "updated-vacancies",
+  },
+  {
+    id: 23,
+    title: "Delete Vacancies",
+    path: "deleted-vacancies",
+  },
+  {
+    id: 24,
+    title: "Viewers Vacancies",
+    path: "viewers-vacancies",
   },
 ];
 const Job = () => {
+  const location = useLocation();
+  useEffect(() => {
+    const elementId = location.hash.substring(1);
+    scrollToElement(elementId);
+  }, [location]);
+
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <HrmsDocumentationLayout>
       <div className="d-flex hrms-doc bg-light  ">
-        <div className="doc-content bg-light pt-5">
+        <div className="doc-content w-100 bg-light pt-5">
           <div className="row px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <h1 className="text-primary mt-4">Jobs</h1>
@@ -47,7 +151,7 @@ const Job = () => {
           {/* Apply Job */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="create-user">
+              <h2 className="fs-3 my-md-4 text-primary" id="apply-job">
                 Apply Job
               </h2>
               <p>
@@ -138,135 +242,11 @@ const Job = () => {
           </div>
           <hr className="my-md-5" />
 
-          {/* Get User */}
-          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
-            <div className="col-xl-6">
-              <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="sign-in">
-                  Sign in
-                </h2>
-                <p>
-                  Foydalanuvchilar tizimga kirishi{" "}
-                  <pre className="d-inline">username</pre> va{" "}
-                  <pre className="d-inline">password</pre> yordamida amalga
-                  oshiriladi <code>POST</code> so&apos;rovi yordamida amalga
-                  oshiriladi.
-                </p>
-                <h5>Attributes</h5>
-                <hr />
-                <ul className="doc-list p-0">
-                  <li className="title">
-                    <p className="m-0">
-                      username :<code>string</code>
-                    </p>
-                    <p className="m-0">
-                      password :<code>string</code>
-                    </p>
-                  </li>
-                </ul>
-                <h5>Response Status</h5>
-                <hr />
-                <ul className="doc-list p-0">
-                  <h6>
-                    Success: <pre className="text-success d-inline">200 Ok</pre>
-                  </h6>
-                  <h6>
-                    Error:{" "}
-                    <pre className="text-danger d-inline">400 Bad Request</pre>
-                  </h6>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-6">
-              <div className="sidenote">
-                <div className="box">
-                  <div className="title px-3 py-2">
-                    <p className="m-0">Request</p>
-                    <pre className="ms-2 m-0 ">
-                      Method:
-                      <span className="text-success">
-                        <code className="bg-success text-light">POST</code>
-                      </span>
-                    </pre>
-                  </div>
-                  <div className="pre-code-block">
-                    <pre className="chroma p-2">
-                      <span className="text-secondary mx-2">1</span>LOGIN /users
-                      {"\n"}
-                      <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/hrms/job/{"{id}"}/{"{status_id}"}
-                      {"\n"}
-                    </pre>
-                  </div>
-                </div>
-                <div className="box">
-                  <div className="title px-3 py-2">
-                    <p className="m-0">Response</p>
-                    <pre className="ms-2 m-0 ">
-                      Status:<span className="text-success">200 Ok</span>
-                    </pre>
-                  </div>
-                  <div className="pre-code-block p-1">
-                    <h6 className="ms-2 m-0 h6 text-success text-center">
-                      Success
-                    </h6>
-
-                    <pre className="chroma">
-                      <span className="text-secondary mx-2"> 1</span>
-                      <span className="p">{"{"}</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 2</span>
-                      {"  "}
-                      <span className="p">&quot;token&quot;{" {"}</span> {"\n"}
-                      <span className="text-secondary mx-2"> 3</span>
-                      {"    "}
-                      <span className="nt">&quot;refresh&quot;</span>
-                      <span className="p">:</span>{" "}
-                      <span className="s2">&quot;string&quot;</span>
-                      <span className="p">,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 3</span>
-                      {"    "}
-                      <span className="nt">&quot;access&quot;</span>
-                      <span className="p">:</span>{" "}
-                      <span className="s2">&quot;string&quot;</span>
-                      <span className="p">,</span>
-                      {"\n"}
-                      <span className="text-secondary mx-2"> 4</span>
-                      {"  "}
-                      <span className="p">{"}"}</span>
-                      <span className="p">,</span>
-                      {"\n"} <span className="text-secondary mx-2">5</span>
-                      <span className="p">{"}"}</span>
-                      {"\n"}
-                    </pre>
-                  </div>
-                </div>
-                <div className="box">
-                  <div className="title px-3 py-2">
-                    <p className="m-0">Response</p>
-                    <pre className="ms-2 m-0 ">
-                      Status:
-                      <span className="text-danger">400 Bad Request</span>
-                    </pre>
-                  </div>
-                  <div className="pre-code-block p-1">
-                    <h6 className="ms-2 m-0 h6 text-danger text-center">
-                      Error
-                    </h6>
-                    <CodeFormat JsonData={User.GetUserError} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr className="my-md-5" />
-
           {/* Job Analytics*/}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-analytics">
                   Job Analytics
                 </h2>
 
@@ -341,7 +321,10 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2
+                  className="fs-3 my-4 text-primary"
+                  id="job-analytics-detail"
+                >
                   Job Analytics with id
                 </h2>
                 <p>
@@ -419,7 +402,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-filter">
                   Job Filter
                 </h2>
                 <p>
@@ -498,7 +481,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-category">
                   Job Category
                 </h2>
                 <p>
@@ -575,7 +558,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-category-detail">
                   Job Category Id
                 </h2>
                 <p>
@@ -652,7 +635,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-create-category">
                   Job Create Category
                 </h2>
                 <p>
@@ -729,7 +712,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-update-category">
                   Job Update Category
                 </h2>
                 <p>
@@ -806,7 +789,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-delete-category">
                   Job Delete Category
                 </h2>
                 <p>
@@ -883,7 +866,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-country">
                   Job Country
                 </h2>
 
@@ -957,7 +940,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-detail">
                   Job Detail
                 </h2>
                 <h5>Attributes</h5>
@@ -1025,11 +1008,11 @@ const Job = () => {
               </div>
             </div>
           </div>
-          {/* Job Delete Category */}
+          {/* Job Delete Details */}
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-delete-detail">
                   Job Delete Details
                 </h2>
                 <p>
@@ -1106,7 +1089,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-favourite">
                   Job Favourite
                 </h2>
 
@@ -1180,7 +1163,10 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2
+                  className="fs-3 my-4 text-primary"
+                  id="job-favourite-create"
+                >
                   Create Job Favourite
                 </h2>
                 <h5>Attributes</h5>
@@ -1252,7 +1238,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="resumes">
                   Job Resume
                 </h2>
                 <h5>Attributes</h5>
@@ -1324,7 +1310,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="resumes-detail">
                   Job Resume Detail
                 </h2>
                 <h5>Attributes</h5>
@@ -1397,7 +1383,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="notificaton-list">
                   Notificaton List
                 </h2>
                 <h5>Attributes</h5>
@@ -1470,7 +1456,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-types">
                   Job types
                 </h2>
                 <h5>Attributes</h5>
@@ -1543,7 +1529,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="job-vacancies">
                   Job Vacancies
                 </h2>
                 <h5>Attributes</h5>
@@ -1616,7 +1602,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="creat-vacancies">
                   Creat Vacancies
                 </h2>
                 <h5>Attributes</h5>
@@ -1724,7 +1710,10 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2
+                  className="fs-3 my-4 text-primary"
+                  id="job-vacancies-detail"
+                >
                   Job Vacancies Detail
                 </h2>
                 <h5>Attributes</h5>
@@ -1797,7 +1786,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="updated-vacancies">
                   Update Vacancies
                 </h2>
                 <h5>Attributes</h5>
@@ -1905,7 +1894,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="deleted-vacancies">
                   Delete Vacancies
                 </h2>
                 <p>
@@ -1982,7 +1971,7 @@ const Job = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2 className="fs-3 my-4 text-primary" id="viewers-vacancies">
                   Viewers Vacancies
                 </h2>
                 <h5>Attributes</h5>

@@ -1,7 +1,9 @@
+import { useLocation } from "react-router-dom";
 import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { Jobs, Resumes } from "./Data";
+import { useEffect } from "react";
 const Sidenavs = [
   {
     id: 1,
@@ -40,6 +42,19 @@ const Sidenavs = [
   },
 ];
 const Resume = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const elementId = location.hash.substring(1); // Remove the leading '#' from the URL hash
+    scrollToElement(elementId);
+  }, [location]);
+
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <HrmsDocumentationLayout>
       <div className="d-flex hrms-doc bg-light  ">
@@ -231,7 +246,7 @@ const Resume = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="reat-resume-list">
+                <h2 className="fs-3 my-4 text-primary" id="creat-resume-list">
                   Resume Create
                 </h2>
                 <h5>Attributes</h5>

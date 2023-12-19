@@ -1,7 +1,7 @@
 import { Accordion } from "react-bootstrap";
 import "./Documentation.css";
 import { Link } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ActiveNavContext } from "../../../../context/ActiveNav";
 
 const Sidenavs = [

@@ -1,14 +1,14 @@
-.active{
+.active {
   background-color: rgb(255, 187, 0) !important;
   color: white !important;
   border-radius: 10px;
 }
 
-.profile{
+.profile {
   min-height: 130vh;
 }
 
-.orange{
+.orange {
   color: rgb(255, 187, 0);
 }
 
@@ -16,7 +16,7 @@
   background-color: rgb(255, 187, 0);
 }
 
-.demo-navbar{
+.demo-navbar {
   width: 950px !important;
   height: 100px;
 }
@@ -122,19 +122,19 @@
   top: 0;
 }
 
-.hrms-doc-navbar .searchbar{
+.hrms-doc-navbar .searchbar {
   border: none;
   background-color: white;
 }
 
-.vaucher{
+.vaucher {
   width: 100%;
   height: 200px;
   background-color: rgb(255, 187, 0);
   border-radius: 20px;
 }
 
-.categories{
+.categories {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -142,7 +142,7 @@
   justify-content: start;
 }
 
-.category-item{
+.category-item {
   width: 130px;
   height: 130px;
   border-radius: 10px;
@@ -153,15 +153,15 @@
   gap: 10px;
 }
 
-.icon-category{
+.icon-category {
   font-size: 40px;
 }
 
-.name-category{
+.name-category {
   font-size: 12px;
 }
 
-.foods{
+.foods {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -169,7 +169,7 @@
   justify-content: space-between;
 }
 
-.food-item{
+.food-item {
   width: 260px;
   height: 260px;
   position: relative;
@@ -181,7 +181,7 @@
   padding: 20px;
 }
 
-.btn-add{
+.btn-add {
   border: none;
   border-radius: 10px;
   display: flex;
@@ -191,7 +191,7 @@
   color: white;
 }
 
-.sale{
+.sale {
   width: 100%;
   height: 30px;
   position: absolute;
@@ -203,26 +203,26 @@
   align-items: center;
 }
 
-.sale-percent{
+.sale-percent {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: rgb(247, 69, 69);
 }
 
-.btn-favourite{
+.btn-favourite {
   border: none;
   background: none;
 }
 
-.body-main{
+.body-main {
   height: 130vh;
   overflow-y: scroll;
 }
-.btn-none{
+.btn-none {
   border: none;
   background: none;
 }
-.card-balance{
+.card-balance {
   background: url(https://img.freepik.com/premium-photo/orange-bright-background-with-lines-waves_763713-4584.jpg);
   width: 100%;
   height: 150px;
@@ -243,7 +243,6 @@
   .hrms-doc-sidebar {
     position: absolute;
     transition: 0.5s;
-    height: 130vh;
     left: -100%;
     z-index: 9999;
     margin-top: -2px;
@@ -259,31 +258,30 @@
   .sidenote {
     width: 275px;
   }
-  .profile{
+  .profile {
     display: none;
   }
   .hrms-doc-sidebar {
     position: absolute;
     transition: 0.5s;
-    height: 130vh;
+
     left: -100%;
     z-index: 9999 !important;
     margin-top: 120px;
   }
-  .demo-navbar{
+  .demo-navbar {
     width: 380px !important;
     height: 130px;
     z-index: 9999;
-
   }
-  .categories{
+  .categories {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
   }
-  .category-item{
+  .category-item {
     width: 80px;
     height: 80px;
     border-radius: 10px;
@@ -293,23 +291,23 @@
     align-items: center;
     gap: 10px;
   }
-  
-  .icon-category{
+
+  .icon-category {
     font-size: 30px;
   }
-  
-  .name-category{
+
+  .name-category {
     font-size: 10px;
   }
-  .foods{
+  .foods {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
   }
-  
-  .food-item{
+
+  .food-item {
     width: 100%;
     height: 260px;
     position: relative;
@@ -320,8 +318,8 @@
     border-radius: 20px;
     padding: 20px;
   }
-  
-  .btn-add{
+
+  .btn-add {
     border: none;
     border-radius: 10px;
     display: flex;
