@@ -51,3 +51,7 @@ export { default as DeliveryStatistic } from "./Products/Delivery/admin/Delivery
 export { default as DeliveryTaskList } from "./Products/Delivery/admin/Task-list/Task-list";
 export { default as DeliveryServices } from "./Products/Delivery/admin/Delivery-services/Delivery-services";
 export { default as DeliveryNotification } from "./Products/Delivery/admin/Delivery-notification/Delivery-notification";
+
+// Delivery Demo
+export { default as DemoHome} from './Products/Delivery/Demo/Home'
+export { default as Dashboard } from './Products/Delivery/Demo/API/Dashboard' 
