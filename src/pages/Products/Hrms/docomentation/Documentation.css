@@ -5,11 +5,17 @@
 .home ul {
   list-style: outside;
 }
-/* .hrms-doc-sidebar {
+.hrms-doc-sidebar {
   position: relative;
   min-width: 250px;
   z-index: 9999;
-} */
+}
+.list-link {
+  color: rgb(0, 0, 0) !important;
+}
+.list-link:hover {
+  color: var(--primary) !important;
+}
 .accordion .accordion-item {
   background: transparent;
   border: 0;

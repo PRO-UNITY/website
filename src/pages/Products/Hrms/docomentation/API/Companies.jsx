@@ -30,15 +30,16 @@ const Sidenavs = [
     title: "Company Vacancies",
     path: "company-vacansy",
   },
+  {
+    id: 7,
+    title: "Hrs",
+    path: "hrs",
+  },
 ];
 const Companies = () => {
   const location = useLocation();
   useEffect(() => {
-    const elementId = location.hash.substring(1); // Remove the leading '#' from the URL hash
-    console.log(elementId);
-  }, [location]);
-  useEffect(() => {
-    const elementId = location.hash.substring(1); // Remove the leading '#' from the URL hash
+    const elementId = location.hash.substring(1); 
     scrollToElement(elementId);
   }, [location]);
 
@@ -514,7 +515,7 @@ const Companies = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="company-vacansy">
+                <h2 className="fs-3 my-4 text-primary" id="hrs">
                   Hrs
                 </h2>
                 <h5>Attributes</h5>

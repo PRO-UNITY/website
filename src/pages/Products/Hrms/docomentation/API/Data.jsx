@@ -870,6 +870,9 @@ export const Hrs = {
       },
     ],
   },
+  logOut: {
+    refresh: "string",
+  },
 };
 // Orders
 export const orders = {

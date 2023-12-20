@@ -13,7 +13,7 @@ const Data = [
             path: "users#create-user",
           },
           { name: "Login", path: "users#sign-in" },
-          { name: "Logout", path: "" },
+          { name: "Logout", path: "users#logout" },
         ],
       },
       {
@@ -21,14 +21,14 @@ const Data = [
         subchild: [
           { name: "Register", path: "users#create-user" },
           { name: "Login", path: "users#sign-in" },
-          { name: "Logout", path: "" },
+          { name: "Logout", path: "users#logout" },
         ],
       },
       {
         subtitle: "Admin",
         subchild: [
           { name: "Login", path: "users#sign-in" },
-          { name: "Logout", path: "/" },
+          { name: "Logout", path: "users#logout" },
         ],
       },
     ],
@@ -41,25 +41,24 @@ const Data = [
         subtitle: "Hr",
         subchild: [
           { name: "Companies List (GET)", path: "company#company-list" },
-          { name: "	Company Create (POST)", path: "/" },
+          { name: "	Company Create (POST)", path: "company#creat-company-list" },
           {
-            name: "Company Details (GET/PUT/DELETE) (/id[companyID]) ",
-            path: "/",
+            name: "Company Details (GET/PUT) (/id[companyID]) ",
+            path: "company#company-list-detail",
           },
           {
-            name: "Company Vacancies (GET) (/id[companyID]/vacancies)",
-            path: "/",
+            name: "Company Vacancies (GET) ",
+            path: "company#company-vacansy",
           },
-          { name: "Country", path: "/" },
         ],
       },
       {
         subtitle: "Admin",
         subchild: [
-          { name: "Companies List (GET)", path: "/" },
+          { name: "Companies List (GET)", path: "company#company-list" },
           {
-            name: "	Company Vacancies (GET) (/id[companyID]/vacancies)",
-            path: "/",
+            name: "	Company Vacancies (GET)",
+            path: "company#company-vacansy",
           },
         ],
       },
@@ -72,15 +71,15 @@ const Data = [
       {
         subtitle: "Hr",
         subchild: [
-          { name: "Hrs (GET) (all hrs get)", path: "/" },
-          { name: "Users (GET) (all users get)", path: "/" },
+          { name: "Hrs (GET) (all hrs get)", path: "company#hrs" },
+          { name: "Users (GET) (all users get)", path: "users#user-profile" },
         ],
       },
       {
         subtitle: "Admin",
         subchild: [
-          { name: "Hrs (GET) (all hrs get)", path: "/" },
-          { name: "Users (GET) (all users get)", path: "/" },
+          { name: "Hrs (GET) (all hrs get)", path: "company#hrs" },
+          { name: "Users (GET) (all users get)", path: "users#user-profile" },
         ],
       },
     ],
@@ -92,20 +91,21 @@ const Data = [
       {
         subtitle: "User",
         subchild: [
-          { name: "Apply job create (POST)", path: "/" },
-          { name: "Favorites (POST/GET)", path: "/" },
+          { name: "Apply job create (POST)", path: "job#apply-job" },
+          { name: "Favorites (POST/GET)", path: "job#job-favourite" },
         ],
       },
       {
         subtitle: "Hr",
         subchild: [
-          { name: "Analytics", path: "/" },
-          { name: "Categories", path: "/" },
-          { name: "Vacancies", path: "/" },
+          { name: "Analytics", path: "job#job-analytics" },
+          { name: "Categories", path: "job#job-category" },
+          { name: "Vacancies", path: "job#job-vacancies" },
         ],
       },
     ],
   },
+
   {
     id: 5,
     title: "Resumes",
@@ -113,21 +113,24 @@ const Data = [
       {
         subtitle: "User",
         subchild: [
-          { name: "	Resumes (POST/GET)", path: "/" },
-          { name: "Resume/id (GET/PUT/DELETE)", path: "/" },
-          { name: "User resumes (GET)", path: "/" },
+          { name: "Resumes (POST/GET)", path: "resume#resume-list" },
+          {
+            name: "Resume/id (GET/PUT/DELETE)",
+            path: "resume#resume-list-detail",
+          },
+          { name: "User resumes (GET)", path: "resume#user-resumes" },
         ],
       },
       {
         subtitle: "Hr",
         subchild: [
-          { name: "Job Hr resumes (GET)", path: "/" },
-          { name: "Job Hr resumes read (GET)", path: "/" },
+          { name: "Job Hr resumes (GET)", path: "resume#resume-list" },
+          { name: "Job Hr resumes read (GET)", path: "resume#resume-list-detail" },
         ],
       },
       {
         subtitle: "Admin",
-        subchild: [{ name: "Resumes (GET)", path: "/" }],
+        subchild: [{ name: "Resumes (GET)", path: "resume#resume-list" }],
       },
     ],
   },
@@ -158,7 +161,7 @@ const DocumentationHome = () => {
                       {e.subchild.map((item, index) => (
                         <Link
                           key={index}
-                          className="text-dark fw-semibold d-block text-decoration-none"
+                          className=" list-link fw-semibold d-block text-decoration-none"
                           to={item.path}
                         >
                           - {item.name}
