@@ -39,8 +39,13 @@ const Sidenavs = [
   },
   {
     id: 6,
-    title: "User Meneger",
+    title: "Hr Meneger",
     path: "user-manager",
+  },
+  {
+    id: 8,
+    title: "Logout",
+    path: "logout",
   },
 ];
 
