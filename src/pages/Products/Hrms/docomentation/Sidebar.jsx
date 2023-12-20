@@ -36,6 +36,7 @@ const Sidenavs = [
 // eslint-disable-next-line react/prop-types
 const Sidebar = ({ showSidebar, setshowSidebar }) => {
   const { activeHrmsdoc, setActiveHrmsdoc } = useContext(ActiveNavContext);
+  const { activeHrmsDash, setActiveHrmsDash } = useContext(ActiveNavContext);
 
   return (
     <>
@@ -60,8 +61,15 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
                     <Link
                       key={link.id}
                       to={link.path}
-                      className="d-block text-dark text-decoration-none"
-                      onClick={() => setshowSidebar(false)}
+                      className={`d-block  text-decoration-none ${
+                        activeHrmsDash === link.id
+                          ? "text-primary fw-semibold"
+                          : "text-dark"
+                      }`}
+                      onClick={() => {
+                        setshowSidebar(false);
+                        setActiveHrmsDash(link.id);
+                      }}
                     >
                       {link.name}
                     </Link>
