@@ -177,6 +177,12 @@ ul {
     width: 280px;
     z-index: -1;
   }
+  .hrms-hero h1 {
+    font-size: 45px;
+  }
+  .del-hero h1 {
+    font-size: 38px;
+  }
 }
 
 @media only screen and (max-width: 990px) {
@@ -246,7 +252,6 @@ ul {
 @media only screen and (max-width: 425px) {
   .hero_slider img {
     width: 250px;
-
     object-fit: contain;
   }
   .hrms .download-btn {

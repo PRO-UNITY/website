@@ -95,8 +95,8 @@ const Hrms = () => {
     <Layout>
       {" "}
       <div className="hrms">
-        <section className="hrms-hero container-fluid header bg-primary  mb-5">
-          <div className="row g-0 h-100 align-items-center flex-column flex-lg-row">
+        <section className="hrms-hero del-hero container-fluid header bg-primary  mb-5">
+          <div className="row g-0 h-100 align-items-end flex-column flex-lg-row">
             <div className="col-lg-6 px-3 px-md-5 py-md-5  pb-4">
               <h1
                 style={{ fontWeight: "600" }}
@@ -131,7 +131,7 @@ const Hrms = () => {
         <section className="hrms-about container-lg  p-0 py-5 mb-5">
           <div className="row g-0 align-items-center  flex-column-reverse flex-lg-row">
             <div className="col-lg-6 ">
-              <div className="img-box rounded-4 d-flex justify-content-center">
+              <div className="img-box   mx-auto mx-lg-0  mt-5  mt-lg-0 rounded-4 d-flex justify-content-center">
                 <img src={about_img} alt="about-img" />
                 <div className="img-mask rounded-4"></div>
               </div>

@@ -5,9 +5,9 @@
 .sidebar .nav .nav-link.active {
   background: var(--primary) !important;
 }
-.sidebar .nav .nav-link.active i {
+/* .sidebar .nav .nav-link.active i {
   color: var(--secondary) !important;
-}
+} */
 @media only screen and (max-width: 768px) {
   .sidebar {
     width: 85px;
