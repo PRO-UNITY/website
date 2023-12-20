@@ -3,10 +3,10 @@ import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayo
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { Company, Hrs, Resumes } from "./Data";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 const Sidenavs = [
   {
-    id: 2,
+    id: 1,
     title: "Company List",
     path: "company-list",
   },
@@ -38,6 +38,31 @@ const Sidenavs = [
 ];
 const Companies = () => {
   const location = useLocation();
+  const [activeSection, setActiveSection] = useState(null);
+  const observer = useRef(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver((entries) => {
+      const visibleSection = entries.find(
+        (entry) => entry.isIntersecting
+      )?.target;
+      if (visibleSection) {
+        setActiveSection(visibleSection.id);
+      }
+    });
+    const sections = document.querySelectorAll("[data-section]");
+
+    sections.forEach((section) => {
+      observer.current.observe(section);
+    });
+    return () => {
+      sections.forEach((section) => {
+        observer.current.unobserve(section);
+      });
+    };
+  }, []);
+  console.log(activeSection);
+
   useEffect(() => {
     const elementId = location.hash.substring(1);
     scrollToElement(elementId);
@@ -49,6 +74,7 @@ const Companies = () => {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
   return (
     <HrmsDocumentationLayout>
       <div className="d-flex hrms-doc bg-light  ">
@@ -65,7 +91,11 @@ const Companies = () => {
           {/* Company list */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="company-list">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="company-list"
+              >
                 Company list
               </h2>
               <h5>Attributes</h5>
@@ -152,7 +182,11 @@ const Companies = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="creat-company-list">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="creat-company-list"
+                >
                   Creat Company
                 </h2>
                 <h5>Attributes</h5>
@@ -258,7 +292,11 @@ const Companies = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="company-list-detail">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="company-list-detail"
+                >
                   Company Details
                 </h2>
                 <h5>Attributes</h5>
@@ -333,6 +371,7 @@ const Companies = () => {
             <div className="col-xl-6">
               <div className="content">
                 <h2
+                  data-section
                   className="fs-3 my-4 text-primary"
                   id="company-resume-update"
                 >
@@ -441,7 +480,11 @@ const Companies = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="company-vacansy">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="company-vacansy"
+                >
                   Company Vacancies
                 </h2>
                 <h5>Attributes</h5>
@@ -515,7 +558,7 @@ const Companies = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="hrs">
+                <h2 data-section className="fs-3 my-4 text-primary" id="hrs">
                   Hrs
                 </h2>
                 <h5>Attributes</h5>
@@ -585,7 +628,7 @@ const Companies = () => {
           </div>
           <hr className="my-md-5" />
         </div>
-        <Asaide Sidenavs={Sidenavs} />
+        <Asaide Sidenavs={Sidenavs} scrollActive={activeSection} />
       </div>
     </HrmsDocumentationLayout>
   );

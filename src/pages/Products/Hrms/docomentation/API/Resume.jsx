@@ -3,7 +3,7 @@ import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayo
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { Jobs, Resumes } from "./Data";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 const Sidenavs = [
   {
     id: 1,
@@ -43,6 +43,29 @@ const Sidenavs = [
 ];
 const Resume = () => {
   const location = useLocation();
+  const [activeSection, setActiveSection] = useState(null);
+  const observer = useRef(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver((entries) => {
+      const visibleSection = entries.find(
+        (entry) => entry.isIntersecting
+      )?.target;
+      if (visibleSection) {
+        setActiveSection(visibleSection.id);
+      }
+    });
+    const sections = document.querySelectorAll("[data-section]");
+
+    sections.forEach((section) => {
+      observer.current.observe(section);
+    });
+    return () => {
+      sections.forEach((section) => {
+        observer.current.unobserve(section);
+      });
+    };
+  }, []);
 
   useEffect(() => {
     const elementId = location.hash.substring(1); // Remove the leading '#' from the URL hash
@@ -71,7 +94,11 @@ const Resume = () => {
           {/* Level Educataion list */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="level-edu">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="level-edu"
+              >
                 Level Educataion list
               </h2>
 
@@ -160,7 +187,11 @@ const Resume = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="resume-list">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="resume-list"
+                >
                   Resume List
                 </h2>
                 <h5>Attributes</h5>
@@ -246,7 +277,11 @@ const Resume = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="creat-resume-list">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="creat-resume-list"
+                >
                   Resume Create
                 </h2>
                 <h5>Attributes</h5>
@@ -377,7 +412,11 @@ const Resume = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="resume-list-detail">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="resume-list-detail"
+                >
                   Resume Details
                 </h2>
                 <h5>Attributes</h5>
@@ -451,7 +490,11 @@ const Resume = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="updata-resume-list">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="updata-resume-list"
+                >
                   Update Resume
                 </h2>
                 <h5>Attributes</h5>
@@ -582,7 +625,11 @@ const Resume = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="delete-resume-list">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="delete-resume-list"
+                >
                   Delete Resume
                 </h2>
                 <h5>Attributes</h5>
@@ -668,7 +715,11 @@ const Resume = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-resumes">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-resumes"
+                >
                   User Resumes
                 </h2>
                 <h5>Attributes</h5>
@@ -751,7 +802,7 @@ const Resume = () => {
           </div>
           <hr className="my-md-5" />
         </div>
-        <Asaide Sidenavs={Sidenavs} />
+        <Asaide Sidenavs={Sidenavs} scrollActive={activeSection} />
       </div>
     </HrmsDocumentationLayout>
   );

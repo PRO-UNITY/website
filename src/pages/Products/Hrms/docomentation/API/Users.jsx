@@ -3,7 +3,7 @@ import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayo
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { Hrs, User } from "./Data";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Sidenavs = [
   {
@@ -21,10 +21,16 @@ const Sidenavs = [
     title: "Users",
     path: "user-profile",
   },
+
   {
     id: 4,
     title: "User Update",
     path: "user-update",
+  },
+  {
+    id: 7,
+    title: "User Delete",
+    path: "user-delete",
   },
   {
     id: 5,
@@ -36,25 +42,34 @@ const Sidenavs = [
     title: "User Meneger",
     path: "user-manager",
   },
-  {
-    id: 7,
-    title: "User Delivery",
-    path: "user-delivery",
-  },
-  {
-    id: 8,
-    title: "User Delivery with ID",
-    path: "user-delivery-id",
-  },
-  {
-    id: 9,
-    title: "User Delivery Update",
-    path: "user-delivery-update",
-  },
 ];
 
 const Users = () => {
   const location = useLocation();
+  const [activeSection, setActiveSection] = useState(null);
+  const observer = useRef(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver((entries) => {
+      const visibleSection = entries.find(
+        (entry) => entry.isIntersecting
+      )?.target;
+      if (visibleSection) {
+        setActiveSection(visibleSection.id);
+      }
+    });
+    const sections = document.querySelectorAll("[data-section]");
+
+    sections.forEach((section) => {
+      observer.current.observe(section);
+    });
+    return () => {
+      sections.forEach((section) => {
+        observer.current.unobserve(section);
+      });
+    };
+  }, []);
+  console.log(activeSection);
 
   useEffect(() => {
     const elementId = location.hash.substring(1);
@@ -83,7 +98,11 @@ const Users = () => {
           {/* Creat User */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="create-user">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="create-user"
+              >
                 Create User
               </h2>
               <p>
@@ -204,7 +223,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="sign-in">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="sign-in"
+                >
                   Sign in
                 </h2>
                 <p>
@@ -327,7 +350,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-profile"
+                >
                   Users
                 </h2>
                 <p>
@@ -405,7 +432,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-update">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-update"
+                >
                   User Update
                 </h2>
                 <p>
@@ -533,7 +564,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-update">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-delete"
+                >
                   User Delete
                 </h2>
                 <p>
@@ -615,7 +650,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-detail">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-detail"
+                >
                   User Details
                 </h2>
                 <p>
@@ -700,7 +739,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-manager">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-manager"
+                >
                   HR Manager
                 </h2>
                 <p>
@@ -774,7 +817,7 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="logout">
+                <h2 data-section className="fs-3 my-4 text-primary" id="logout">
                   Log out
                 </h2>
                 <h5>Attributes</h5>
@@ -848,7 +891,7 @@ const Users = () => {
           </div>
           <hr className="my-md-5" />
         </div>
-        <Asaide Sidenavs={Sidenavs} />
+        <Asaide Sidenavs={Sidenavs} scrollActive={activeSection} />
       </div>
     </HrmsDocumentationLayout>
   );
