@@ -1,7 +1,9 @@
+import { useContext } from "react";
 import DeliveryDocumentationLayout from "../../../../../Layout/DeliveryDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { orders } from "./Data";
+import { AsideScrollActive } from "../../../../../context/AsideScrollActive";
 
 const AsaideNavs = [
   {
@@ -25,7 +27,9 @@ const AsaideNavs = [
     path: "update-orders",
   },
 ];
+
 const Orders = () => {
+  const { activeSection } = useContext(AsideScrollActive);
   return (
     <DeliveryDocumentationLayout>
       <div className="d-flex w-100 hrms-doc bg-light  bg-white">
@@ -38,7 +42,11 @@ const Orders = () => {
           {/* All orders */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="all-kitchen">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="all-orders"
+              >
                 All orders
               </h2>
               <p>
@@ -119,7 +127,11 @@ const Orders = () => {
           {/* Create orders */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="create-orders">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="create-orders"
+              >
                 Create Order
               </h2>
               <p>
@@ -233,7 +245,11 @@ const Orders = () => {
           {/*  orders with ID */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="orders-id">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="orders-id"
+              >
                 Get orders ID
               </h2>
               <p>
@@ -324,7 +340,11 @@ const Orders = () => {
           {/*  orders Update */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="update-orders">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="update-orders"
+              >
                 Order Update
               </h2>
               <p>
@@ -453,7 +473,7 @@ const Orders = () => {
             </div>
           </div>
         </div>
-        <Asaide Sidenavs={AsaideNavs} />
+        <Asaide Sidenavs={AsaideNavs} scrollActive={activeSection} />
       </div>
     </DeliveryDocumentationLayout>
   );

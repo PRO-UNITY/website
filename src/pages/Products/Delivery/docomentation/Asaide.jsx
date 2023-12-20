@@ -1,13 +1,11 @@
 /* eslint-disable react/prop-types */
 import "./Documentation.css";
-import { useState } from "react";
-
-const Asaide = ({ Sidenavs }) => {
-  const [activeLink, setActiveLink] = useState(1);
+const Asaide = ({ Sidenavs, scrollActive }) => {
   
   return (
     <>
       <div
+        style={{ overflow: "auto" }}
         className={`hrms-doc-asaide border position-relative border-left bg-light   ps-5`}
       >
         <div className="  pt-5">
@@ -17,9 +15,8 @@ const Asaide = ({ Sidenavs }) => {
           {Sidenavs?.map((nav) => (
             <a
               key={nav.id}
-              onClick={() => setActiveLink(nav.id)}
               className={`d-block pt-1 text-decoration-none  ${
-                activeLink == nav.id && "fw-bold"
+                scrollActive === nav.path ? "fw-bold" : "fw-normal"
               }`}
               href={`#${nav.path}`}
             >

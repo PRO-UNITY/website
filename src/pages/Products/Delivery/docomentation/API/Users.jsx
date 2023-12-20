@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import DeliveryDocumentationLayout from "../../../../../Layout/DeliveryDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { User } from "./Data";
+import { AsideScrollActive } from "../../../../../context/AsideScrollActive";
+import { Hrs } from "../../../Hrms/docomentation/API/Data";
+
 const Sidenavs = [
   {
     id: 1,
@@ -23,11 +27,7 @@ const Sidenavs = [
     title: "User Update",
     path: "user-update",
   },
-  {
-    id: 5,
-    title: "User Detail",
-    path: "user-detail",
-  },
+
   {
     id: 6,
     title: "User Meneger",
@@ -38,19 +38,21 @@ const Sidenavs = [
     title: "User Delivery",
     path: "user-delivery",
   },
-  {
-    id: 8,
-    title: "User Delivery with ID",
-    path: "user-delivery-id",
-  },
+
   {
     id: 9,
     title: "User Delivery Update",
     path: "user-delivery-update",
   },
+  {
+    id: 10,
+    title: "Logout",
+    path: "logout",
+  },
 ];
 
 const Users = () => {
+  const { activeSection } = useContext(AsideScrollActive);
   return (
     <DeliveryDocumentationLayout>
       <div className="d-flex hrms-doc bg-light  ">
@@ -67,7 +69,11 @@ const Users = () => {
           {/* Creat User */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="create-user">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="create-user"
+              >
                 Create User
               </h2>
               <p>
@@ -185,7 +191,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="sign-in">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="sign-in"
+                >
                   Sign in
                 </h2>
                 <p>
@@ -340,7 +350,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-profile">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-profile"
+                >
                   User Profile
                 </h2>
                 <p>
@@ -418,7 +432,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-update">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-update"
+                >
                   User Udate
                 </h2>
                 <p>
@@ -573,7 +591,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-manager">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-manager"
+                >
                   User Manager
                 </h2>
                 <p>
@@ -746,7 +768,11 @@ const Users = () => {
           <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="fs-3 my-4 text-primary" id="user-delivery">
+                <h2
+                  data-section
+                  className="fs-3 my-4 text-primary"
+                  id="user-delivery"
+                >
                   Delivery User
                 </h2>
                 <p>
@@ -920,6 +946,7 @@ const Users = () => {
             <div className="col-xl-6">
               <div className="content">
                 <h2
+                  data-section
                   className="fs-3 my-4 text-primary"
                   id="user-delivery-update"
                 >
@@ -1129,7 +1156,7 @@ const Users = () => {
                     <span className="nt">&quot;detail&quot;</span>
                     <span className="p">:</span>{" "}
                     <span className="num">
-                      Unsupported media type \"\" in request.
+                      Unsupported media type \\ in request.
                     </span>
                     <span className="p">,</span>
                     {"\n"}
@@ -1142,10 +1169,86 @@ const Users = () => {
             </div>
           </div>
           <hr className="my-md-5" />
-
+          {/* Log out */}
+          <div className="row  pb-md-5 px-2 px-lg-5 mx-lg-5 ">
+            <div className="col-xl-6">
+              <div className="content">
+                <h2 data-section className="fs-3 my-4 text-primary" id="logout">
+                  Log out
+                </h2>
+                <h5>Attributes</h5>
+                <ul className="doc-list p-0">
+                  <li className="title">
+                    <p className="m-0 fw-semibold">
+                      refresh :<code>string</code>
+                    </p>
+                  </li>
+                </ul>
+                <hr />
+                <ul className="doc-list p-0"></ul>
+                <h5>Response Status</h5>
+                <hr />
+                <ul className="doc-list p-0">
+                  <h6>
+                    Success: <pre className="text-success d-inline">200 Ok</pre>
+                  </h6>
+                  <h6>
+                    Error:{" "}
+                    <pre className="text-danger d-inline">404 Not Found</pre>
+                  </h6>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="sidenote">
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Request</p>
+                    <pre className="ms-2 m-0 ">
+                      Method:
+                      <span className="text-success">
+                        <code className="bg-primary text-white">GET</code>
+                      </span>
+                    </pre>
+                  </div>
+                  <div className="pre-code-block">
+                    <pre className="chroma p-2">
+                      <span className="text-secondary mx-2">1</span>Manager /hrs
+                      {"\n"}
+                      <span className="text-secondary mx-2">2</span>URL =
+                      https://api.prounity.uz/hrms/auth/logout
+                      {"\n"}
+                    </pre>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-success">200 Ok</span>
+                    </pre>
+                  </div>
+                  <h6 className="ms-2 m-0 h6 text-success text-center">
+                    Success
+                  </h6>
+                  <CodeFormat JsonData={Hrs.logOut} />
+                </div>
+                <div className="box">
+                  <div className="title px-3 py-2">
+                    <p className="m-0">Response</p>
+                    <pre className="ms-2 m-0 ">
+                      Status:<span className="text-danger">404 Not Found</span>
+                    </pre>
+                  </div>
+                  <pre className="chroma py-3 px-2">* Not Found</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="my-md-5" />
           {/* Tasks section */}
         </div>
-        <Asaide Sidenavs={Sidenavs} />
+        <Asaide Sidenavs={Sidenavs} scrollActive={activeSection} />
       </div>
     </DeliveryDocumentationLayout>
   );

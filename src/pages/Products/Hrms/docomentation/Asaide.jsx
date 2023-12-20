@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import "./Documentation.css";
 const Asaide = ({ Sidenavs, scrollActive }) => {
-  console.log(scrollActive);
   return (
     <>
       <div
+        style={{ overflow: "auto" }}
         className={`hrms-doc-asaide border position-relative border-left bg-light   ps-5`}
       >
         <div className="  pt-5">

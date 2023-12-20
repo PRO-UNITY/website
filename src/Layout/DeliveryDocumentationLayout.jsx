@@ -4,13 +4,13 @@ import Navbar from "../pages/Products/Delivery/docomentation/Navbar";
 import Sidebar from "../pages/Products/Delivery/docomentation/Sidebar";
 
 const DeliveryDocumentationLayout = ({ children }) => {
-  const [showSidebar, setshowSidebar] = useState(false  );
+  const [showSidebar, setshowSidebar] = useState(false);
   return (
     <div className="bg-light vh-100 overflow-auto  ">
       <Navbar setshowSidebar={setshowSidebar} />
       <div className="d-flex bg-white">
         <Sidebar showSidebar={showSidebar} setshowSidebar={setshowSidebar} />
-        <main className="">{children}</main>
+        <main className="w-100">{children}</main>
       </div>
     </div>
   );

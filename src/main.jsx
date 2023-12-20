@@ -26,6 +26,7 @@ i18next
 import { Provider } from "react-redux";
 import store from "./pages/Products/Hrms/redux/store.js";
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>

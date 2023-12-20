@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import DeliveryDocumentationLayout from "../../../../../Layout/DeliveryDocumentationLayout";
 import Asaide from "../Asaide";
+import { AsideScrollActive } from "../../../../../context/AsideScrollActive";
 
 const AsaideNavs = [
   {
@@ -19,6 +21,8 @@ const AsaideNavs = [
   },
 ];
 const Deliveryman = () => {
+  const { activeSection } = useContext(AsideScrollActive);
+  console.log(activeSection);
   return (
     <DeliveryDocumentationLayout>
       <div className="d-flex w-100 hrms-doc bg-light  bg-white">
@@ -31,7 +35,11 @@ const Deliveryman = () => {
           {/* All deliveryman */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="all-kitchen">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="all-deliveryman"
+              >
                 All Deliveryman
               </h2>
               <p>
@@ -212,7 +220,11 @@ const Deliveryman = () => {
           {/* Create deliveryman */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="create-deliveryman">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="create-deliveryman"
+              >
                 Create Deliveryman
               </h2>
               <p>
@@ -360,7 +372,11 @@ const Deliveryman = () => {
           {/*  deliveryman update */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="update-deliveryman">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="update-deliveryman"
+              >
                 Get deliveryman ID
               </h2>
               <p>
@@ -480,7 +496,7 @@ const Deliveryman = () => {
             </div>
           </div>
         </div>
-        <Asaide Sidenavs={AsaideNavs} />
+        <Asaide Sidenavs={AsaideNavs} scrollActive={activeSection} />
       </div>
     </DeliveryDocumentationLayout>
   );

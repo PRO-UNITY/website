@@ -2,6 +2,8 @@ import DeliveryDocumentationLayout from "../../../../../Layout/DeliveryDocumenta
 import CodeFormat from "../../../Hrms/docomentation/components/Code-format";
 import Asaide from "../Asaide";
 import { kitchen } from "../../Data";
+import { useContext } from "react";
+import { AsideScrollActive } from "../../../../../context/AsideScrollActive";
 const AsaideNavs = [
   {
     id: 3,
@@ -55,6 +57,7 @@ const AsaideNavs = [
   },
 ];
 const Kitchen = () => {
+  const { activeSection } = useContext(AsideScrollActive);
   return (
     <DeliveryDocumentationLayout>
       <div className="d-flex w-100 hrms-doc bg-light  bg-white">
@@ -67,7 +70,11 @@ const Kitchen = () => {
           {/* All Kitchen */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="all-kitchen">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="all-kitchen"
+              >
                 All Kitchen
               </h2>
               <p>
@@ -303,7 +310,11 @@ const Kitchen = () => {
           {/* Get Kitchen With ID */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="kitchen-id">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="kitchen-id"
+              >
                 Kitchen with ID
               </h2>
               <p>
@@ -462,7 +473,11 @@ const Kitchen = () => {
           {/* Creat Kitchen */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="create-kitchen">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="create-kitchen"
+              >
                 Creat Kitchen
               </h2>
               <p>Oshxona yaratish uchun</p>
@@ -679,7 +694,11 @@ const Kitchen = () => {
           {/* Update Kitchen ID*/}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="update-kitchen">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="update-kitchen"
+              >
                 Update Kitchen
               </h2>
               <p>
@@ -898,7 +917,11 @@ const Kitchen = () => {
           {/* Delete Kitchen ID*/}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="delete-kitchen">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="delete-kitchen"
+              >
                 Delete Kitchen
               </h2>
               <p>
@@ -1003,7 +1026,11 @@ const Kitchen = () => {
           {/* Kitchen Category*/}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="kitchen-category">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="kitchen-category"
+              >
                 Kitchen Category
               </h2>
               <p>
@@ -1178,7 +1205,11 @@ const Kitchen = () => {
           {/* Create Kitchen Category*/}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="create-category">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="create-category"
+              >
                 Create Kitchen Category
               </h2>
               <p>
@@ -1347,7 +1378,11 @@ const Kitchen = () => {
           {/* Kitchen Category with Id */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="kitchen-id">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="kitchen-id"
+              >
                 Kitchen Category with ID
               </h2>
               <p>
@@ -1388,7 +1423,8 @@ const Kitchen = () => {
                       Kitchen/ Get With Id
                       {"\n"}
                       <span className="text-secondary mx-2">2</span>URL =
-                      https://api.prounity.uz/food-delivery/kitchen/category/{"{id}"}
+                      https://api.prounity.uz/food-delivery/kitchen/category/
+                      {"{id}"}
                     </pre>
                   </div>
                 </div>
@@ -1404,7 +1440,7 @@ const Kitchen = () => {
                       Success
                     </h6>
 
-                   <CodeFormat JsonData={kitchen.kitchenCategoryId}/>
+                    <CodeFormat JsonData={kitchen.kitchenCategoryId} />
                   </div>
                 </div>
                 <div className="box">
@@ -1431,7 +1467,11 @@ const Kitchen = () => {
           {/* Update Kitchen Category ID*/}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="update-category">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="update-category"
+              >
                 Kitchen Category Update
               </h2>
               <p>
@@ -1574,7 +1614,11 @@ const Kitchen = () => {
           {/* Delete Kitchen Category ID*/}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="delete-category">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="delete-category"
+              >
                 Delete Kitchen Category
               </h2>
               <p>
@@ -1675,7 +1719,11 @@ const Kitchen = () => {
           {/* Kitchen Food ID*/}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="kitchen-food-id">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="kitchen-food-id"
+              >
                 Get kitchen food with ID
               </h2>
               <p>
@@ -1880,7 +1928,7 @@ const Kitchen = () => {
           </div>
           <hr className="my-md-5" />
         </div>
-        <Asaide Sidenavs={AsaideNavs} />
+        <Asaide Sidenavs={AsaideNavs} scrollActive={activeSection} />
       </div>
     </DeliveryDocumentationLayout>
   );

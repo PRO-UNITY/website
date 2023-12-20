@@ -2,7 +2,6 @@ import Asaide from "../Asaide";
 import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
 import CodeFormat from "../components/Code-format";
 import { Jobs } from "./Data";
-import { useLocation } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 const Sidenavs = [
   {
@@ -127,8 +126,6 @@ const Sidenavs = [
   },
 ];
 const Job = () => {
-  const location = useLocation();
-
   const [activeSection, setActiveSection] = useState(null);
   const observer = useRef(null);
 
@@ -153,17 +150,6 @@ const Job = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const elementId = location.hash.substring(1);
-    scrollToElement(elementId);
-  }, [location]);
-
-  const scrollToElement = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
   return (
     <HrmsDocumentationLayout>
       <div className="d-flex hrms-doc bg-light  ">

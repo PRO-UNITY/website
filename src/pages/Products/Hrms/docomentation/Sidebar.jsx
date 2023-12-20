@@ -1,12 +1,12 @@
 import { Accordion } from "react-bootstrap";
 import "./Documentation.css";
-import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useContext, useEffect } from "react";
 import { ActiveNavContext } from "../../../../context/ActiveNav";
 
 const Sidenavs = [
   {
-    id: 2,
+    id: 1,
     title: "Api",
     child: [
       {
@@ -31,12 +31,32 @@ const Sidenavs = [
       },
     ],
   },
+  {
+    id: 2,
+    title: "Test",
+    child: [
+      {
+        id: "test",
+        name: "Test",
+        path: "",
+      },
+    ],
+  },
 ];
 
 // eslint-disable-next-line react/prop-types
 const Sidebar = ({ showSidebar, setshowSidebar }) => {
+  const { pathname } = useLocation();
   const { activeHrmsdoc, setActiveHrmsdoc } = useContext(ActiveNavContext);
-  const { activeHrmsDash, setActiveHrmsDash } = useContext(ActiveNavContext);
+  useEffect(() => {
+    Sidenavs.map((item) =>
+      item.child.map((e) => {
+        if (e.path == pathname) {
+          setActiveHrmsdoc(item.id);
+        }
+      })
+    );
+  }, []);
 
   return (
     <>
@@ -45,13 +65,13 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
          bg-light border border-right ${showSidebar && "show"} `}
       >
         <div className="side-body bg-light px-3">
-          <Accordion defaultActiveKey={activeHrmsdoc}>
+          <Accordion defaultActiveKey={activeHrmsdoc} activeKey={activeHrmsdoc}>
             {Sidenavs.map((item) => (
               <Accordion.Item
                 eventKey={item.id}
                 key={item.id}
-                onClick={() => setActiveHrmsdoc(item.id)}
                 className="mb-1"
+                onClick={() => setActiveHrmsdoc(item.id)}
               >
                 <Accordion.Header>
                   <h5 className="fs-6 m-0">{item.title}</h5>
@@ -62,13 +82,12 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
                       key={link.id}
                       to={link.path}
                       className={`d-block  text-decoration-none ${
-                        activeHrmsDash === link.id
+                        pathname === link.path
                           ? "text-primary fw-semibold"
                           : "text-dark"
                       }`}
                       onClick={() => {
                         setshowSidebar(false);
-                        setActiveHrmsDash(link.id);
                       }}
                     >
                       {link.name}

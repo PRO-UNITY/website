@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import DeliveryDocumentationLayout from "../../../../../Layout/DeliveryDocumentationLayout";
 import Asaide from "../Asaide";
+import { AsideScrollActive } from "../../../../../context/AsideScrollActive";
 
 const AsaideNavs = [
   {
@@ -19,6 +21,7 @@ const AsaideNavs = [
   },
 ];
 const Manager = () => {
+  const { activeSection } = useContext(AsideScrollActive);
   return (
     <DeliveryDocumentationLayout>
       <div className="d-flex w-100 hrms-doc bg-light  bg-white">
@@ -31,7 +34,11 @@ const Manager = () => {
           {/* All Manager */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="all-manager">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="all-manager"
+              >
                 All Manager
               </h2>
               <p>
@@ -206,7 +213,11 @@ const Manager = () => {
           {/* Create Manager */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="create-manager">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="create-manager"
+              >
                 Create Manager
               </h2>
               <p>
@@ -358,7 +369,11 @@ const Manager = () => {
           {/*  Manager with ID */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="manager-id">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="manager-id"
+              >
                 Updata Manager
               </h2>
               <p>
@@ -516,7 +531,7 @@ const Manager = () => {
             </div>
           </div>
         </div>
-        <Asaide Sidenavs={AsaideNavs} />
+        <Asaide Sidenavs={AsaideNavs} scrollActive={activeSection} />
       </div>
     </DeliveryDocumentationLayout>
   );

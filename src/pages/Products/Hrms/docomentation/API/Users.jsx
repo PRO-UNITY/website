@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
@@ -50,7 +49,6 @@ const Sidenavs = [
 ];
 
 const Users = () => {
-  const location = useLocation();
   const [activeSection, setActiveSection] = useState(null);
   const observer = useRef(null);
 
@@ -74,19 +72,7 @@ const Users = () => {
       });
     };
   }, []);
-  console.log(activeSection);
 
-  useEffect(() => {
-    const elementId = location.hash.substring(1);
-    scrollToElement(elementId);
-  }, [location]);
-
-  const scrollToElement = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
   return (
     <HrmsDocumentationLayout>
       <div className="d-flex hrms-doc bg-light  ">
@@ -577,7 +563,7 @@ const Users = () => {
                   User Delete
                 </h2>
                 <p>
-                  Foydalanuvchini o'chirish uchun <code>DELETE</code>{" "}
+                  Foydalanuvchini o&apos;chirish uchun <code>DELETE</code>{" "}
                   so&apos;rovi yordamida amalga oshiriladi
                 </p>
                 <h5>Attributes</h5>

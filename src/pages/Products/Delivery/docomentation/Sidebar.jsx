@@ -1,26 +1,12 @@
 import { Accordion } from "react-bootstrap";
 import "./Documentation.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { ActiveNavContext } from "../../../../context/ActiveNav";
 
 const Sidenavs = [
   {
     id: 1,
-    title: "Getting Started",
-    child: [
-      {
-        id: "create-user",
-        name: "Installation",
-        path: "installation",
-      },
-      {
-        id: "get-user",
-        name: "Get User",
-        path: "/products/delivery/documentation",
-      },
-    ],
-  },
-  {
-    id: 2,
     title: "Api",
     child: [
       {
@@ -56,23 +42,31 @@ const Sidenavs = [
     ],
   },
   {
-    id: 3,
-    title: "Use Cases",
+    id: 2,
+    title: "Test",
     child: [
-      { id: "create-task", name: "Link", path: "/products/delivery/documentation" },
-    ],
-  },
-  {
-    id: 4,
-    title: "Payment",
-    child: [
-      { id: "create-task", name: "Link", path: "/products/delivery/documentation" },
+      {
+        id: "create-user",
+        name: "Test",
+        path: "",
+      },
     ],
   },
 ];
 
 // eslint-disable-next-line react/prop-types
 const Sidebar = ({ showSidebar, setshowSidebar }) => {
+  const { pathname } = useLocation();
+  const { activeHrmsdoc, setActiveHrmsdoc } = useContext(ActiveNavContext);
+  useEffect(() => {
+    Sidenavs.map((item) =>
+      item.child.map((e) => {
+        if (e.path == pathname) {
+          setActiveHrmsdoc(item.id);
+        }
+      })
+    );
+  }, []);
   return (
     <>
       <div
@@ -80,9 +74,14 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
          bg-light border border-right ${showSidebar && "show"} `}
       >
         <div className="side-body bg-light px-3">
-          <Accordion defaultActiveKey="">
+          <Accordion activeKey={activeHrmsdoc}>
             {Sidenavs.map((item) => (
-              <Accordion.Item eventKey={item.id} key={item.id} className="mb-1">
+              <Accordion.Item
+                eventKey={item.id}
+                key={item.id}
+                className="mb-1"
+                onClick={() => setActiveHrmsdoc(item.id)}
+              >
                 <Accordion.Header>
                   <h5 className="fs-6 m-0">{item.title}</h5>
                 </Accordion.Header>
@@ -91,11 +90,17 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
                     <Link
                       key={link.id}
                       to={link.path}
-                      className="d-block text-dark text-decoration-none"
-                      onClick={() => setshowSidebar(false)}
+                      className={`d-block  text-decoration-none ${
+                        pathname === link.path
+                          ? "text-primary fw-semibold"
+                          : "text-dark"
+                      }`}
+                      onClick={() => {
+                        setshowSidebar(false);
+                      }}
                     >
                       {link.name}
-                    </Link> 
+                    </Link>
                   ))}
                 </Accordion.Body>
               </Accordion.Item>

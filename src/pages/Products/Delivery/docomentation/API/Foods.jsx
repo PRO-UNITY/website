@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import DeliveryDocumentationLayout from "../../../../../Layout/DeliveryDocumentationLayout";
 import Asaide from "../Asaide";
+import { AsideScrollActive } from "../../../../../context/AsideScrollActive";
 
 const AsaideNavs = [
   {
@@ -29,6 +31,7 @@ const AsaideNavs = [
   },
 ];
 const Foods = () => {
+  const { activeSection } = useContext(AsideScrollActive);
   return (
     <DeliveryDocumentationLayout>
       <div className="d-flex w-100 hrms-doc bg-light  bg-white">
@@ -41,7 +44,11 @@ const Foods = () => {
           {/* All Foods */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="all-foods">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="all-foods"
+              >
                 All Foods
               </h2>
               <p>
@@ -277,7 +284,11 @@ const Foods = () => {
           {/* Create Foods */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="create-foods">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="create-foods"
+              >
                 Create Foods
               </h2>
               <p>
@@ -423,7 +434,11 @@ const Foods = () => {
           {/*  Foods with ID */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="foods-id">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="foods-id"
+              >
                 Get Foods ID
               </h2>
               <p>
@@ -659,7 +674,11 @@ const Foods = () => {
           {/* Update Foods */}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="update-food">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="update-food"
+              >
                 Update Foods
               </h2>
               <p>
@@ -805,7 +824,11 @@ const Foods = () => {
           {/* Delete Kitchen ID*/}
           <div className="row pb-5 create-user px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
-              <h2 className="fs-3 my-md-4 text-primary" id="delete-food">
+              <h2
+                data-section
+                className="fs-3 my-md-4 text-primary"
+                id="delete-food"
+              >
                 Delete Foods
               </h2>
               <p>
@@ -908,7 +931,7 @@ const Foods = () => {
             </div>
           </div>
         </div>
-        <Asaide Sidenavs={AsaideNavs} />
+        <Asaide Sidenavs={AsaideNavs} scrollActive={activeSection} />
       </div>
     </DeliveryDocumentationLayout>
   );

@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
@@ -37,7 +36,6 @@ const Sidenavs = [
   },
 ];
 const Companies = () => {
-  const location = useLocation();
   const [activeSection, setActiveSection] = useState(null);
   const observer = useRef(null);
 
@@ -62,18 +60,6 @@ const Companies = () => {
     };
   }, []);
   console.log(activeSection);
-
-  useEffect(() => {
-    const elementId = location.hash.substring(1);
-    scrollToElement(elementId);
-  }, [location]);
-
-  const scrollToElement = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
 
   return (
     <HrmsDocumentationLayout>
