@@ -49,10 +49,10 @@ const Data = [
   },
   {
     id: 2,
-    title: "Kitchen",
+    title: "Admin(role)",
     child: [
       {
-        subtitle: "Admin",
+        subtitle: "Kitchen",
         subchild: [
           { name: "All kitchen", path: "kitchen#all-kitchen" },
           { name: "Kitchen foods", path: "kitchen#kitchen-food-id" },
@@ -70,69 +70,68 @@ const Data = [
   },
   {
     id: 3,
-    title: "Manager",
+    title: "Kitchen(role)",
     child: [
       {
-        subtitle: "Admin",
+        subtitle: "Managers",
         subchild: [
-          { name: "All Managers", path: "company#hrs" },
-          { name: "Create Managers", path: "users#user-profile" },
-          { name: "Update Managers", path: "company#hrs" },
-          { name: "Delete Managers", path: "users#user-profile" },
+          { name: "All Managers", path: "manager#all-manager" },
+          { name: "Create Managers", path: "manager#create-manager" },
+        ],
+      },
+      {
+        subtitle: "Deliveryman ",
+        subchild: [
+          { name: "All  deliveryman", path: "deliveryman#all-deliveryman" },
+          {
+            name: "Create deliveryman",
+            path: "deliveryman#create-deliveryman",
+          },
+          {
+            name: "Update deliveryman",
+            path: "deliveryman#update-deliveryman",
+          },
+        ],
+      },
+      {
+        subtitle: "Kitchen",
+        subchild: [
+          { name: "All Kitchen", path: "kitchen#all-kitchen" },
+          { name: "Create Kitchen", path: "kitchen#create-kitchen" },
+          { name: "Update Kitchen", path: "kitchen#update-kitchen" },
+          { name: "Delete Kitchen", path: "kitchen#delete-kitchen" },
+        ],
+      },
+      {
+        subtitle: "Category (category for the kitchen)",
+        subchild: [
+          { name: "All Category", path: "kitchen#kitchen-category" },
+          { name: "Create Category", path: "kitchen#create-category" },
+          { name: "Update Category", path: "kitchen#update-category" },
+          { name: "Delete Category", path: "kitchen#delete-category" },
         ],
       },
     ],
   },
   {
     id: 4,
-    title: "Deliveryman",
+    title: "Users(role)",
     child: [
       {
-        subtitle: "User",
+        subtitle: "Kitchen",
         subchild: [
-          { name: "Apply job create (POST)", path: "job#apply-job" },
-          { name: "Favorites (POST/GET)", path: "job#job-favourite" },
+          { name: "Category", path: "kitchen#kitchen-category" },
+          { name: "Foods", path: "foods#all-foods" },
         ],
       },
       {
-        subtitle: "Hr",
+        subtitle: "Order",
         subchild: [
-          { name: "Analytics", path: "job#job-analytics" },
-          { name: "Categories", path: "job#job-category" },
-          { name: "Vacancies", path: "job#job-vacancies" },
+          { name: "Send order", path: "orders#all-orders" },
+          { name: "Order[id]", path: "orders#orders-id" },
+          { name: "Create order", path: "orders#all-orders" },
+          { name: "Update order", path: "orders#update-orders" },
         ],
-      },
-    ],
-  },
-
-  {
-    id: 5,
-    title: "Resumes",
-    child: [
-      {
-        subtitle: "User",
-        subchild: [
-          { name: "Resumes (POST/GET)", path: "resume#resume-list" },
-          {
-            name: "Resume/id (GET/PUT/DELETE)",
-            path: "resume#resume-list-detail",
-          },
-          { name: "User resumes (GET)", path: "resume#user-resumes" },
-        ],
-      },
-      {
-        subtitle: "Hr",
-        subchild: [
-          { name: "Job Hr resumes (GET)", path: "resume#resume-list" },
-          {
-            name: "Job Hr resumes read (GET)",
-            path: "resume#resume-list-detail",
-          },
-        ],
-      },
-      {
-        subtitle: "Admin",
-        subchild: [{ name: "Resumes (GET)", path: "resume#resume-list" }],
       },
     ],
   },
@@ -177,22 +176,23 @@ const DocumentationHome = () => {
               </ol>
             </div>
           ))}
+
           <hr />
           <div className="mt-5">
-            <h5 className="h5  text-primary">Structure</h5>
-            <ul>
-              <li className="fw-semibold">Authentification </li>
-              <li className="fw-semibold">Company</li>
-              <li className="fw-semibold">Enrolls</li>
-              <li className="fw-semibold">Resume</li>
-            </ul>
-          </div>
-          <hr />
-          <div className="mt-5">
-            <h5 className="h5  text-primary">Structure</h5>
+            <h5 className="h5  text-primary">[Sourse code]</h5>
             <ul>
               <li className="fw-semibold">
-                Django Rest Framework Simple JWT{" "}
+                Django(REST framewrok){" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="ttps://www.django-rest-framework.org"
+                >
+                  [https://www.django-rest-framework.org]
+                </a>
+              </li>
+              <li className="fw-semibold">
+                JWT{" "}
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -202,17 +202,17 @@ const DocumentationHome = () => {
                 </a>
               </li>
               <li className="fw-semibold">
-                Django Rest Framework Yasg{" "}
+                Django-cors-heraders{" "}
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://drf-yasg.readthedocs.io/en/stable/"
+                  href="https://pypi.org/project/django-cors-headers/"
                 >
                   [https://drf-yasg.readthedocs.io/en/stable/]
                 </a>
               </li>
               <li className="fw-semibold">
-                Django Rest Framework Spectacular{" "}
+                Django-social-oauth{" "}
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -222,42 +222,97 @@ const DocumentationHome = () => {
                 </a>
               </li>
               <li className="fw-semibold">
-                Django Cors Headers{" "}
+                Django-allauth{" "}
                 <a target="_blank" rel="noreferrer" href="">
                   [pip install django-cors-headers]
                 </a>
               </li>
               <li className="fw-semibold">
-                Django Import Export
+                django-pillow
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://django-import-export.readthedocs.io/en/latest/"
+                  href="[https://docs.allauth.org/en/latest/index.html"
                 >
                   {" "}
-                  [https://django-import-export.readthedocs.io/en/latest/]
+                  [https://docs.allauth.org/en/latest/index.html]
                 </a>
               </li>
               <li className="fw-semibold">
-                Django Filter
+                django-postgresql
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://django-filter.readthedocs.io/en/stable/guide/usage.html"
+                  href="https://postgres-py.readthedocs.io/en/latest/"
                 >
                   {" "}
-                  [https://django-filter.readthedocs.io/en/stable/guide/usage.html]
+                  [https://postgres-py.readthedocs.io/en/latest/]
                 </a>
               </li>
               <li className="fw-semibold">
-                Django Channels
+                django-spectacual
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://channels.readthedocs.io/en/latest/"
+                  href="https://pypi.org/project/drf-spectacular/"
                 >
                   {" "}
-                  [https://channels.readthedocs.io/en/latest/]
+                  [https://pypi.org/project/drf-spectacular/]
+                </a>
+              </li>
+              <li className="fw-semibold">
+                django-drf-yasg
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://drf-yasg.readthedocs.io/en/stable/"
+                >
+                  {" "}
+                  [https://drf-yasg.readthedocs.io/en/stable/]
+                </a>
+              </li>
+              <li className="fw-semibold">
+                gunicorn
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://docs.gunicorn.org/en/stable/install.html"
+                >
+                  {" "}
+                  [https://docs.gunicorn.org/en/stable/install.html]
+                </a>
+              </li>
+              <li className="fw-semibold">
+                whitenoise
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://whitenoise.readthedocs.io/en/latest/"
+                >
+                  {" "}
+                  [https://whitenoise.readthedocs.io/en/latest/]
+                </a>
+              </li>
+              <li className="fw-semibold">
+                facebook-sdk
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://facebook-sdk.readthedocs.io/en/latest/install.html"
+                >
+                  {" "}
+                  [https://facebook-sdk.readthedocs.io/en/latest/install.html]
+                </a>
+              </li>
+              <li className="fw-semibold">
+                python-dotenv
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://pypi.org/project/python-dotenv/"
+                >
+                  {" "}
+                  [https://pypi.org/project/python-dotenv/]
                 </a>
               </li>
             </ul>

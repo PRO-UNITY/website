@@ -1,20 +1,20 @@
-.navbar .active {
+.home .navbar .active {
   border: 1px solid var(--primary);
   border-radius: 5px;
 }
-.navbar .nav-link {
+.home .navbar .nav-link {
   margin: 10px 0;
 }
-.navbar .dropdown .dropdown-item {
+.home .navbar .dropdown .dropdown-item {
   cursor: pointer;
 }
-.navbar .dropdown .dropdown-item:active {
+.home .navbar .dropdown .dropdown-item:active {
   background: none;
   color: #000;
 }
-.navbar .dropdown .dropdown-item-active {
+.home .navbar .dropdown .dropdown-item-active {
   border-bottom: 1px solid var(--primary);
 }
-.navbar .lang-menu {
+.home .navbar .lang-menu {
   transform: translateX(-70px);
 }

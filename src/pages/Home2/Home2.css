@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@font-face {
+  font-family: "Rf-Rosefin";
+  src: url("/public/Fonts/rf-rostin-regular.otf");
+}
+:root {
+  --color-primary: rgb(69, 32, 171);
+}
+.home2 {
+  font-family: "Inter", sans-serif;
+}
+.font-primary {
+  font-family: "Rf-Rosefin";
+}
+.home2 .nav-link {
+  color: var(--color-primary);
+  margin-right: 10px !important;
+  font-size: 15px;
+}
+.home2 h1 {
+  font-size: 55px !important;
+}
+.home2 .title,
+.home2 h1 {
+  font-size: 46px;
+  font-family: "Rf-Rosefin";
+  letter-spacing: -3px;
+}
+.home2 .btn {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Rf-Rosefin";
+
+  text-transform: uppercase;
+}
+.home2 .btn-gold {
+  background: rgb(255, 188, 91);
+}
+.home2 .btn-gold:hover {
+  background: rgb(255, 188, 91);
+}
+.home2 .hero {
+  background: url("../../assets/home2/main-desktop.webp") no-repeat center;
+  background-size: cover;
+  min-height: 580px;
+}
+.home2 .hero-bottom p {
+  font-size: 14px;
+}
+.home2 .hero-bottom p span {
+  color: rgb(255, 188, 91);
+}
+.home2 .hero .btn-bottom {
+  font-size: 15px;
+  padding: 12px 32px !important;
+}
+.home2 .hero-bottom .title {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0;
+}
+.home2 .hero .card {
+  text-align: left !important;
+  height: 80px;
+  background: rgb(255 255 255 / 14%) !important;
+  align-items: center;
+  flex-direction: row;
+}
+.home2 .course .card {
+  height: 300px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 0;
+}
+.home2 .course .card .content {
+  z-index: 999;
+}
+.home2 .course .card .img-wrapp {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home2 .course .head h5 {
+  color: var(--color-primary);
+}
