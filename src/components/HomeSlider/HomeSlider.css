@@ -3,7 +3,7 @@
   height: 100%;
   position: relative;
 }
-.swiper-slide {
+.home .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -21,19 +21,19 @@
 .home-slider {
   position: relative;
 }
-.navigationBox .swiper-button-prev {
+.home .navigationBox .swiper-button-prev {
   display: none;
 }
-.navigationBox .swiper-button-prev,
-.navigationBox .swiper-button-next {
+.home .navigationBox .swiper-button-prev,
+.home .navigationBox .swiper-button-next {
   background-color: rgb(255, 255, 255);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin: auto;
 }
-.navigationBox .swiper-button-prev::after,
-.navigationBox .swiper-button-next::after {
+.home .navigationBox .swiper-button-prev::after,
+.home .navigationBox .swiper-button-next::after {
   color: var(----bs-blue);
   font-size: 17px;
 }

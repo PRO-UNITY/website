@@ -9,16 +9,55 @@
 .home2 {
   font-family: "Inter", sans-serif;
 }
+.bg-section-prymary {
+  background-color: var(--color-primary);
+}
+.home2 .text-primary {
+  color: var(--color-primary) !important;
+}
 .font-primary {
   font-family: "Rf-Rosefin";
 }
+.home2 .navbar-wrapp {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+.home2 .navbar-home {
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+}
+.home2 .navbar-res {
+  right: 100%;
+}
+.home2 .menu-bars {
+  background-color: var(--color-primary);
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7px;
+  gap: 7px;
+  display: none;
+}
+.home2 .menu-bars .bar {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
 .home2 .nav-link {
   color: var(--color-primary);
-  margin-right: 10px !important;
-  font-size: 15px;
+  margin-right: 17px !important;
+  font-size: 14px !important;
+  letter-spacing: 0.2px;
+  opacity: 0.9;
 }
 .home2 h1 {
-  font-size: 55px !important;
+  font-size: 56px !important;
 }
 .home2 .title,
 .home2 h1 {
@@ -30,7 +69,6 @@
   font-size: 12px;
   font-weight: 600;
   font-family: "Rf-Rosefin";
-
   text-transform: uppercase;
 }
 .home2 .btn-gold {
@@ -62,19 +100,48 @@
 .home2 .hero .card {
   text-align: left !important;
   height: 80px;
+  width: 300px;
   background: rgb(255 255 255 / 14%) !important;
   align-items: center;
   flex-direction: row;
 }
 .home2 .course .card {
   height: 300px;
-  padding: 10px;
+  padding: 27px;
   position: relative;
   overflow: hidden;
+  min-width: 400px;
   border: 0;
+}
+.home2 .course .card .body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.home2 .course .card button {
+  padding: 10px 24px !important;
+  font-size: 13.5px;
+  letter-spacing: 0.5px;
+}
+.home2 .course .card h5 {
+  font-size: 23px !important;
+}
+.home2 .course .card-icon {
+  position: absolute;
+  z-index: 999;
+  width: 200px;
+  bottom: 20px;
+  right: 20px;
 }
 .home2 .course .card .content {
   z-index: 999;
+}
+.home2 .card .content li {
+  font-size: 14px;
+}
+.home2 .card .content i {
+  font-size: 5px;
 }
 .home2 .course .card .img-wrapp {
   position: absolute;
@@ -83,4 +150,267 @@
 }
 .home2 .course .head h5 {
   color: var(--color-primary);
+}
+
+.home2 .you-vid .card {
+  padding: 40px 62px;
+  background: transparent;
+  border: 1px solid rgb(41, 237, 255);
+}
+.home2 .you-vid h3 {
+  font-size: 34px;
+  color: rgb(41, 237, 255);
+  font-weight: 400px;
+}
+.home2 .you-vid .play-box {
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  color: #fff;
+}
+.employment {
+  background-color: rgb(248, 246, 252);
+}
+.employment h3,
+.graduates-2 h3 {
+  color: var(--color-primary);
+  font-size: 60px;
+}
+.employment a,
+.graduates-2 a {
+  color: var(--color-primary);
+}
+.employment .box,
+.graduates-2 .box {
+  width: 210px;
+}
+.employment .hh-logo {
+  width: 65px;
+}
+.employment button,
+.graduates button,
+.our-events button,
+.application button {
+  padding: 12px 27px !important;
+  border-radius: 13px !important;
+  letter-spacing: 0.5px;
+  font-size: 14px !important;
+}
+
+.employment-assistance .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(69, 32, 171, 0.33);
+}
+.employment-assistance .card {
+  width: 210px;
+  border: 0;
+}
+.employment-assistance .card h5 {
+  font-size: 18px;
+}
+.employment-assistance .card p {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgb(47, 47, 47);
+}
+.our-events {
+  background: rgb(248, 246, 252);
+}
+.our-events .card {
+  padding: 25px;
+  max-width: 536px;
+  width: 100%;
+  min-height: 350px;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: rgba(227, 225, 237, 0.68) -2px -2px 7px,
+    rgba(223, 221, 231, 0.76) 1px 1px 10px;
+}
+.our-events .card span {
+  font-size: 12px;
+}
+.our-events .card h4 {
+  font-size: 22px;
+}
+.our-events .box-l .check {
+  background-color: aqua;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 800;
+}
+.our-events .status {
+  background-color: rgb(233, 233, 255);
+  padding: 8px;
+  border-radius: 7px;
+}
+.home2 .swiper-slide img {
+  width: 120px;
+}
+.home2 .navigationBox {
+  width: 140px;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+}
+.home2 .swiper-button-prev,
+.home2 .swiper-button-next {
+  background-color: var(--color-primary);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.home2 .swiper-button-prev::after,
+.home2 .swiper-button-next::after {
+  color: white;
+  font-size: 25px;
+}
+.bootcamp img {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.bootcamp img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.home2 .faq .card {
+  background: rgb(248, 246, 252);
+  padding: 40px 62px;
+}
+.home2 .faq .card img {
+  height: 300px;
+}
+.home2 .faq .card h5 {
+  font-size: 18px;
+}
+.home2 .faq li {
+  font-size: 14px;
+  padding: 5px 0;
+}
+.home2 .faq .check {
+  background-color: aqua;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 800;
+}
+.home2 .faq .play-box {
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  color: #fff;
+}
+
+.home2 .application {
+  background: rgb(239, 236, 245);
+  padding: 84px 10px !important;
+}
+
+.home2 .footer a {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  text-decoration: none;
+}
+.home2 .footer span {
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.home2 .footer span a {
+  font-size: 0.9rem;
+}
+.home2 .footer .location {
+  font-size: 1rem;
+  color: rgb(255, 188, 91);
+
+  display: block;
+}
+.home2 .footer a:hover {
+  text-decoration: underline;
+}
+.home2 .footer .social-box {
+  border: 1px solid #fff;
+  padding: 8px;
+  color: #fff !important;
+  opacity: 1;
+  display: inline-flex;
+  font-size: 22px;
+  border-radius: 15px;
+}
+
+.home2 .footer form input {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+}
+.home2 .footer form button {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 22px !important;
+  border-radius: 13px !important;
+  letter-spacing: 1px;
+  font-size: 13px !important;
+}
+.home2 .footer form label {
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .home2 .navbar-res {
+    position: fixed;
+    height: 250px;
+    right: 100%;
+    top: 60px;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  .home2 .navbar-res.show {
+    left: 0;
+  }
+  .home2 .menu-bars {
+    display: flex;
+  }
+  .home2 .nav-link {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 480px) {
+  .home2 h1 {
+    font-size: 35px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.5px;
+  }
+  .home2 .hero .card {
+    height: 80px;
+    width: 100%;
+  }
+  .home2 .nav-link {
+    font-size: 14px !important;
+  }
 }
