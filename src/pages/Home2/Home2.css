@@ -162,18 +162,23 @@
   color: rgb(41, 237, 255);
   font-weight: 400px;
 }
-.home2 .you-vid .play-box {
-  background-color: var(--color-primary);
+.home2 .you-vid .play-btn-wrapp {
   position: absolute;
+  width: 100%;
   top: 40%;
-  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home2 .you-vid .play-btn {
+  background-color: var(--color-primary);
   border-radius: 50%;
   width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 27px;
+  font-size: 25px;
   color: #fff;
 }
 .employment {
@@ -213,6 +218,8 @@
 .employment-assistance .card {
   width: 210px;
   border: 0;
+  display: flex;
+  
 }
 .employment-assistance .card h5 {
   font-size: 18px;
@@ -311,11 +318,16 @@
   font-size: 10px;
   font-weight: 800;
 }
-.home2 .faq .play-box {
-  background-color: var(--color-primary);
+.home2 .play-btn-wrapp {
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home2 .faq .play-btn {
+  background-color: var(--color-primary);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -400,17 +412,124 @@
     font-size: 12px !important;
   }
 }
+@media (max-width: 768px) {
+  .home2 .you-vid .card {
+    padding: 20px;
+    border: 0;
+  }
+  .home2 .you-vid h3 {
+    font-size: 22px;
+  }
+}
 @media (max-width: 480px) {
   .home2 h1 {
     font-size: 35px !important;
     font-weight: 400 !important;
     letter-spacing: 0.5px;
   }
+  .home2 h2 {
+    font-size: 22px !important;
+  }
+  .home2 .title {
+    font-size: 35px !important;
+  }
+
   .home2 .hero .card {
     height: 80px;
     width: 100%;
   }
   .home2 .nav-link {
     font-size: 14px !important;
+  }
+  .home2 .course .card {
+    height: auto;
+    padding: 20px;
+    min-width: 290px;
+  }
+  .home2 .course .card-icon {
+    width: 130px;
+  }
+  .home2 .card .content li {
+    font-size: 12px;
+  }
+  .home2 .course .card button {
+    font-size: 12px;
+    padding: 5px 17px !important;
+    border-radius: 11px !important;
+  }
+  .home2 .course .card h6 {
+    font-size: 14px;
+  }
+  .home2 .you-vid .card {
+    padding: 7px;
+  }
+  .home2 .you-vid .card .time {
+    font-size: 15px;
+    margin: 12px 0 !important;
+  }
+  .employment .box,
+  .graduates-2 .box {
+    width: 155px;
+  }
+  .employment-bottom p {
+    font-size: 14px;
+  }
+  .our-events .card {
+    padding: 15px;
+    min-height: auto;
+  }
+  .our-events .card ul li {
+    font-size: 12px;
+    margin: 0 !important;
+  }
+  .our-events .card ul .check {
+    display: none;
+  }
+  .our-events .card h4 {
+    font-size: 1rem;
+  }
+  .our-events .card p {
+    font-size: 0.8rem;
+  }
+  .employment button,
+  .graduates button,
+  .our-events button,
+  .application button {
+    padding: 7px 18px !important;
+    border-radius: 11px !important;
+    font-size: 12px !important;
+  }
+  .home2 .swiper-slide p {
+    font-size: 14px;
+  }
+  .home2 .swiper-button-prev,
+  .home2 .swiper-button-next {
+    width: 37px;
+    height: 37px;
+  }
+  .home2 .swiper-button-prev::after,
+  .home2 .swiper-button-next::after {
+    font-size: 15px;
+  }
+  .bootcamp img {
+    width: 75px;
+  }
+  .home2 .faq .card {
+    background: rgb(248, 246, 252);
+    padding: 20px 15px;
+  }
+  .home2 .faq .card img {
+    height: 200px;
+    border-radius: 12px;
+  }
+  .home2 .application {
+    padding: 34px 10px !important;
+  }
+  .graduates img {
+    width: 82px;
+  }
+  .employment h3,
+  .graduates-2 h3 {
+    font-size: 40px;
   }
 }

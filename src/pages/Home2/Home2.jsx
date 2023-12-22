@@ -125,11 +125,11 @@ const Home2 = () => {
         {/* Hero end */}
 
         {/* Course */}
-        {/* <section className="course py-5">
-          <div className="container">
+        <section className="course py-5">
+          <div className="container-lg">
             <h2 className="title">Программы обучения</h2>
-            <div className="row my-4">
-              <div className="col-4">
+            <div className="row my-4 gap-3">
+              <div className="col-lg-5">
                 <div className="card rounded-4">
                   <img src={JscardIcon} alt="" className="card-icon" />
                   <div className="content">
@@ -144,7 +144,7 @@ const Home2 = () => {
                     <div className="body">
                       <ul className="p-0">
                         <p className="mb-1 mt-2">Форматы:</p>
-                        <li className="d-flex align-items-center ">
+                        <li className="d-flex  align-items-center ">
                           <i className="fa-solid fa-circle mt-1 me-2"></i>
                           <span>офлайн в Москве и Санкт-Петербурге</span>
                         </li>
@@ -159,7 +159,7 @@ const Home2 = () => {
                       >
                         Есть вступительное интервью
                       </p>
-                      <h6>3-6 месяцев</h6>
+                      <h6 className="h6">3-6 месяцев</h6>
                       <button className="btn rounded-4  btn-gold mt-2">
                         ПОДРОБНЕЕ
                       </button>
@@ -170,7 +170,7 @@ const Home2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-lg-5">
                 <div className="card rounded-4">
                   <img src={PycardIcon} alt="" className="card-icon" />
                   <div className="content">
@@ -213,11 +213,11 @@ const Home2 = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
         {/* Course End*/}
 
         {/* You Tube Video */}
-        {/* <section className="you-vid col bg-section-prymary py-5">
+        <section className="you-vid col bg-section-prymary py-5">
           <div className="container">
             <h2 className="title text-white">Что такое буткемп?</h2>
             <div className="card mt-5 rounded-4">
@@ -237,20 +237,22 @@ const Home2 = () => {
                 <div className="col-lg-5 pt-2">
                   <div className="position-relative">
                     <img src={perview} alt="" className="w-100" />
-                    <button className=" btn play-box  ">
-                      <i className="fa-solid fa-play "></i>
-                    </button>
+                    <div className="play-btn-wrapp">
+                      <button className=" btn play-btn">
+                        <i className="fa-solid fa-play"></i>
+                      </button>
+                    </div>
                   </div>
-                  <p className="text-secondary mt-4 h5">1 час 12 минут</p>
+                  <p className="text-secondary mt-4 h5 time">1 час 12 минут</p>
                 </div>
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
         {/* You Tube Video End*/}
 
         {/* Employment */}
-        {/* <section className="employment py-5 ">
+        <section className="employment py-5 ">
           <div className="container">
             <h2 className="title text-dark">Трудоустройство</h2>
             <div className="d-flex mt-4  flex-wrap gap-5">
@@ -276,28 +278,30 @@ const Home2 = () => {
             <div className="employment-bottom">
               <h2 className="font-primary mt-5">Исследование hh.ru</h2>
               <div className="d-flex mt-4 align-items-center flex-wrap ">
-                <div className="hh-logo">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png"
-                    alt=""
-                    className="w-100"
-                  />
+                <div className="d-flex  align-items-center">
+                  <div className="hh-logo">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png"
+                      alt=""
+                      className="w-100"
+                    />
+                  </div>
+                  <p className="m-0 ms-3">
+                    Статистика по трудоустройству выпускников Эльбрус <br />{" "}
+                    Буткемп подтверждена исследователями hh.ru
+                  </p>
                 </div>
-                <p className="m-0 ms-3">
-                  Статистика по трудоустройству выпускников Эльбрус <br />{" "}
-                  Буткемп подтверждена исследователями hh.ru
-                </p>
-                <button className="btn btn-gold ms-5">
+                <button className="btn btn-gold mt-4 mt-lg-0 ms-5">
                   Читать исследование
                 </button>
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
         {/* Employment End*/}
 
         {/* Graduates */}
-        {/* <section className="py-5 graduates">
+        <section className="py-5 graduates">
           <div className="container">
             <h2 className="font-primary text-primary">
               Где работают наши выпускники
@@ -347,17 +351,17 @@ const Home2 = () => {
               </div>
             </div>
             <div className="">
-              <h2 className="font-primary fs-1 text-end">
+              <h2 className="font-primary text-center mt-3 mt-lg-0 text-lg-end fs-1 text-end">
                 и еще 750+ компаний
               </h2>
             </div>
             <h2 className="font-primary text-primary mt-5">
               Содействие в трудоустройстве
             </h2>
-            <div className="mt-4 employment-assistance">
+            {/* <div className="mt-4 employment-assistance">
               <div className="cards gap d-flex">
                 <div className="card">
-                  <div className="d-flex  align-items-center">
+                  <div className="d-flex line-box  align-items-center">
                     <i className="fa-solid fa-circle text-primary"></i>
                     <div className="line"></div>
                   </div>
@@ -370,7 +374,7 @@ const Home2 = () => {
                   </p>
                 </div>
                 <div className="card">
-                  <div className="d-flex  align-items-center">
+                  <div className="d-flex line-box align-items-center">
                     <i className="fa-solid fa-circle text-primary"></i>
                     <div className="line"></div>
                   </div>
@@ -381,7 +385,7 @@ const Home2 = () => {
                   </p>
                 </div>
                 <div className="card">
-                  <div className="d-flex  align-items-center">
+                  <div className="d-flex line-box align-items-center">
                     <i className="fa-solid fa-circle text-primary"></i>
                     <div className="line"></div>
                   </div>
@@ -432,25 +436,25 @@ const Home2 = () => {
               <button className="btn btn-gold mt-5">
                 О трудоустройстве выпускников
               </button>
-            </div>
+            </div> */}
           </div>
-        </section> */}
+        </section>
         {/* Graduates end*/}
 
         {/* Our events */}
-        {/* <section className="our-events py-5">
-          <div className="container">
+        <section className="our-events py-5">
+          <div className="container-lg">
             <h2 className="font-primary title">Наши мероприятия</h2>
-            <div className="d-flex  gap-5 align-items-start">
+            <div className="d-flex  flex-column flex-lg-row gap-5 align-items-start">
               <div className="card mt-4">
                 <div className="row">
-                  <div className="box-l d-flex  justify-content-between align-items-start flex-column col-lg-7">
+                  <div className="box-l d-flex h-100  justify-content-between align-items-start flex-column col-7">
                     <div className="">
                       <span>ВСТРЕЧА</span>
-                      <h4 className="font-primary mt-4 fw-bold">
+                      <h4 className="font-primary mt-2 mt-lg-4 fw-bold">
                         Баттл разработчиков: OZON vs СБЕР. Где лучше?
                       </h4>
-                      <ul className="p-0 mt-4">
+                      <ul className="p-0 mt-2  mt-lg-4">
                         <li className="d-flex mb-2 gap-2 align-items-center">
                           <div className="check">
                             <i className="fa-solid fa-check"></i>
@@ -473,7 +477,7 @@ const Home2 = () => {
                     </div>
                     <button className="btn btn-gold">ПОДРОБНЕЕ</button>
                   </div>
-                  <div className="box-r col-lg-5">
+                  <div className="box-r col-5">
                     <span className="status">Онлайн</span>
                     <h2 className="mt-4 display-4  font-primary fw-normal">
                       21
@@ -487,14 +491,14 @@ const Home2 = () => {
                 </div>
               </div>
               <div className="card mt-4">
-                <div className="row">
-                  <div className="box-l d-flex  justify-content-between align-items-start flex-column col-lg-7">
+                <div className="row ">
+                  <div className="box-l d-flex justify-content-between align-items-start flex-column col-7">
                     <div className="">
                       <span>ВСТРЕЧА</span>
-                      <h4 className="font-primary mt-4 fw-bold">
-                        Девушки в Data Science
+                      <h4 className="font-primary mt-2  mt-lg-4 fw-bold">
+                        Баттл разработчиков: OZON vs СБЕР. Где лучше?
                       </h4>
-                      <ul className="p-0 mt-4">
+                      <ul className="p-0 mt-2  mt-lg-4">
                         <li className="d-flex mb-2 gap-2 align-items-center">
                           <div className="check">
                             <i className="fa-solid fa-check"></i>
@@ -517,7 +521,7 @@ const Home2 = () => {
                     </div>
                     <button className="btn btn-gold">ПОДРОБНЕЕ</button>
                   </div>
-                  <div className="box-r col-lg-5">
+                  <div className="box-r col-5">
                     <span className="status">Онлайн</span>
                     <h2 className="mt-4 display-4  font-primary fw-normal">
                       10
@@ -532,11 +536,11 @@ const Home2 = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
         {/* Our events end*/}
 
         {/*slider  */}
-        {/* <section className="py-5 graduates-2">
+        <section className="py-5 graduates-2">
           <div className="container  position-relative">
             <h2 className="font-primary  title">Выпускники</h2>
             <div className="d-flex mt-4  flex-wrap gap-5">
@@ -558,7 +562,18 @@ const Home2 = () => {
             </div>
             <div className="row py-5">
               <Swiper
-                slidesPerView={4}
+                slidesPerView={1}
+                breakpoints={{
+                  1200: {
+                    slidesPerView: 4,
+                  },
+                  968: {
+                    slidesPerView: 3,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                  },
+                }}
                 navigation={{
                   nextEl: ".swiper-button-next",
                   prevEl: ".swiper-button-prev",
@@ -610,16 +625,16 @@ const Home2 = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
         {/* slider end */}
 
         {/*  bootcamp*/}
-        {/* <section className="bg-section-prymary py-5 bootcamp">
+        <section className="bg-section-prymary py-5 bootcamp">
           <div className="container">
             <h2 className="font-primary text-white pb-3 title">
               СМИ о нас и буткемпах
             </h2>
-            <div className="body d-flex gap-5 flex-wrap mt-4">
+            <div className="body d-flex gap-3 gap-md-5 flex-wrap mt-4">
               {slider.map((item) => (
                 <img
                   key={item}
@@ -630,11 +645,11 @@ const Home2 = () => {
               ))}
             </div>
           </div>
-        </section> */}
+        </section>
         {/* bootcamp end */}
 
         {/* Faq */}
-        {/* <section className="faq py-5">
+        <section className="faq py-5">
           <div className="container">
             <h2 className="font-primary pb-3 title">F.A.Q.</h2>
             <div className="card mt-5 rounded-4 border-0">
@@ -644,7 +659,7 @@ const Home2 = () => {
                     Основатель буткемпа Георгий Бабаян разбирает ваши самые
                     популярные вопросы.
                   </h5>
-                  <ul className="p-0 mt-4">
+                  <ul className="p-0 mt-4 d-none d-lg-block">
                     <li className="d-flex mb-2 gap-2 align-items-center">
                       <div className="check">
                         <i className="fa-solid fa-check"></i>
@@ -693,35 +708,37 @@ const Home2 = () => {
                 <div className="col-lg-6 pt-2">
                   <div className="position-relative">
                     <img src={perview} alt="" className="w-100" />
-                    <button className=" btn play-box">
-                      <i className="fa-solid fa-play  ms-1"></i>
-                    </button>
+                    <div className="play-btn-wrapp">
+                      <button className=" btn play-btn">
+                        <i className="fa-solid fa-play  ms-1"></i>
+                      </button>
+                    </div>
                   </div>
                   <p className="text-secondary fw-normal mt-4 h6">10 минут</p>
                 </div>
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
         {/* Faq end */}
 
         {/* application */}
-        {/* <section className="application py-5">
+        <section className="application py-5">
           <div className="container">
-            <div className="d-flex gap-5">
-              <h2 className="font-primary pb-3 m-0">
+            <div className="d-flex  align-items-center flex-column flex-lg-row gap-3 gap-lg-5">
+              <h2 className="font-primary text-center text-lg-left pb-lg-3 m-0">
                 Готовы ответить на ваши вопросы
               </h2>
               <button className="btn btn-gold">Оставить заявку</button>
             </div>
           </div>
-        </section> */}
+        </section>
         {/* application end */}
 
         {/* Footer */}
-        {/* <footer className="footer bg-section-prymary py-5">
+        <footer className="footer bg-section-prymary py-5">
           <div className="container">
-            <div className="row">
+            <div className="row gap-4 gap-lg-0">
               <div className="col-lg-4 ">
                 <ul className="p-0">
                   <li>
@@ -826,11 +843,11 @@ const Home2 = () => {
                 </ul>
               </div>
             </div>
-            <div className="row mt-5">
+            <div className="row  mt-5">
               <div className="col-lg-4 d-flex align-items-end">
                 <ul className="p-0 ">
                   <li>
-                    <h4 className="text-white">+7 (499) 938-68-24 </h4>
+                    <h4 className="text-white text-capitalize">участник</h4>
                   </li>
                 </ul>
               </div>
@@ -839,7 +856,7 @@ const Home2 = () => {
                   Хочу получать интересные материалы по программированию пару
                   раз в месяц
                 </p>
-                <form className="d-flex gap-4 align-items-center">
+                <form className="d-flex flex-column flex-lg-row gap-4 align-items-start align-items-lg-center">
                   <div className="form-floating  ">
                     <input
                       type="email"
@@ -859,7 +876,7 @@ const Home2 = () => {
                   </a>
                 </span>
               </div>
-              <div className="col-lg-4 d-flex  gap-3 align-items-end">
+              <div className="col-lg-4 d-flex pt-5  gap-3 align-items-end">
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -887,7 +904,7 @@ const Home2 = () => {
               </div>
             </div>
           </div>
-        </footer> */}
+        </footer>
         {/* Footer end*/}
       </div>
     </div>
