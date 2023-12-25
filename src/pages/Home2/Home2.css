@@ -24,6 +24,7 @@
   top: 0;
   z-index: 99999;
 }
+
 .home2 .navbar-home .dropdown {
   position: relative;
 }
@@ -214,16 +215,19 @@
   background-color: rgb(248, 246, 252);
 }
 .employment h3,
-.graduates-2 h3 {
+.graduates-2 h3,
+.statistics h3 {
   color: var(--color-primary);
   font-size: 60px;
 }
 .employment a,
-.graduates-2 a {
+.graduates-2 a,
+.statistics a {
   color: var(--color-primary);
 }
 .employment .box,
-.graduates-2 .box {
+.graduates-2 .box,
+.statistics .box {
   width: 210px;
 }
 .employment .hh-logo {
@@ -503,7 +507,8 @@
     margin: 12px 0 !important;
   }
   .employment .box,
-  .graduates-2 .box {
+  .graduates-2 .box,
+  .statistics .box {
     width: 155px;
   }
   .employment-bottom p {

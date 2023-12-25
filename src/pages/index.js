@@ -11,6 +11,9 @@ export { default as Contact } from "./Contact/Contact";
 export { default as PageNotFound } from "./PageNotFound/PageNotFound";
 export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 
+/*-- Home2 ---*/
+export { default as About2 } from "./Home2/AboutUs2/AboutUs2";
+
 /*-- Products ---*/
 export { default as Products } from "./Products/Products";
 // Hrms
