@@ -110,7 +110,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.429);
+  background-color: rgba(0, 0, 0, 0.552);
   top: 0;
   z-index: 1;
 }
@@ -129,10 +129,10 @@
   text-align: left !important;
   height: 80px;
   width: 210px;
-  background: rgba(255, 255, 255, 0.438) !important;
+  background: rgba(255, 255, 255, 0.725) !important;
   align-items: center;
   flex-direction: row;
-  border: 1px solid rgba(103, 103, 103, 0.403) !important;
+  border: 1px solid rgba(103, 103, 103, 0.362) !important;
 }
 .home2 .course .card {
   height: 300px;

@@ -157,7 +157,7 @@ const Home2 = () => {
                     </div>
 
                     <div className="card  border-0 row rounded-4 text-white">
-                      <h2 className="m-0 col-md-4 text-center">86</h2>
+                      <h2 className="m-0 col-md-5 text-center">120</h2>
                       <p className=" m-0 col-md-7 text-center text-md-start">
                         {t("herosection.students")}
                       </p>
