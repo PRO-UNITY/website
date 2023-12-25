@@ -24,6 +24,24 @@
   top: 0;
   z-index: 99999;
 }
+.home2 .navbar-home .dropdown {
+  position: relative;
+}
+
+.home2 .navbar-home .dropdown .dropdown-item {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  width: 200px;
+  left: 0;
+  margin-top: 30px;
+  visibility: hidden;
+}
+.home2 .navbar-home .dropdown:hover .dropdown-item {
+  visibility: visible;
+  margin-top: 0px;
+  transition: 0.3s;
+}
 .home2 .navbar-home {
   height: 60px !important;
   display: flex;
@@ -51,10 +69,11 @@
 }
 .home2 .nav-link {
   color: var(--color-primary);
-  margin-right: 17px !important;
-  font-size: 14px !important;
+  margin-right: 25px !important;
+  font-size: 15px !important;
   letter-spacing: 0.2px;
   opacity: 0.9;
+  text-transform: capitalize !important;
 }
 .home2 h1 {
   font-size: 56px !important;
@@ -78,12 +97,25 @@
   background: rgb(255, 188, 91);
 }
 .home2 .hero {
-  background: url("../../assets/home2/main-desktop.webp") no-repeat center;
+  background: url("../../assets/slide44.jpg") no-repeat center;
   background-size: cover;
   min-height: 580px;
+  position: relative;
+}
+.home2 .hero h1 {
+  position: relative;
+  z-index: 999;
+}
+.home2 .hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.429);
+  top: 0;
+  z-index: 1;
 }
 .home2 .hero-bottom p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .home2 .hero-bottom p span {
   color: rgb(255, 188, 91);
@@ -92,18 +124,15 @@
   font-size: 15px;
   padding: 12px 32px !important;
 }
-.home2 .hero-bottom .title {
-  font-size: 12px;
-  font-family: "Inter", sans-serif;
-  letter-spacing: 0;
-}
+
 .home2 .hero .card {
   text-align: left !important;
   height: 80px;
-  width: 300px;
-  background: rgb(255 255 255 / 14%) !important;
+  width: 210px;
+  background: rgba(255, 255, 255, 0.438) !important;
   align-items: center;
   flex-direction: row;
+  border: 1px solid rgba(103, 103, 103, 0.403) !important;
 }
 .home2 .course .card {
   height: 300px;
@@ -219,7 +248,6 @@
   width: 210px;
   border: 0;
   display: flex;
-  
 }
 .employment-assistance .card h5 {
   font-size: 18px;
@@ -264,8 +292,16 @@
   padding: 8px;
   border-radius: 7px;
 }
+.home2 .our-team .card .card-head {
+  height: 370px;
+}
 .home2 .swiper-slide img {
   width: 120px;
+}
+.home2 .swiper-pagination {
+  text-align: center;
+  padding-top: 25px;
+  font-family: "Inter", sans-serif;
 }
 .home2 .navigationBox {
   width: 140px;
@@ -360,7 +396,6 @@
 .home2 .footer .location {
   font-size: 1rem;
   color: rgb(255, 188, 91);
-
   display: block;
 }
 .home2 .footer a:hover {
@@ -428,7 +463,7 @@
     letter-spacing: 0.5px;
   }
   .home2 h2 {
-    font-size: 22px !important;
+    font-size: 24px !important;
   }
   .home2 .title {
     font-size: 35px !important;

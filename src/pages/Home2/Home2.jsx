@@ -1,28 +1,23 @@
-import Logo from "../../assets/home2/logo.webp";
+import Logo from "../../assets/logotogether.png";
 import "./Home2.css";
 import JscardBg from "../../assets/home2/program-card-js.webp";
 import JscardIcon from "../../assets/home2/program-card-js-pic.webp";
 import PycardBg from "../../assets/home2/program-card-ds.webp";
 import PycardIcon from "../../assets/home2/program-card-ds-pic.webp";
-import perview from "../../assets/home2/preview.webp";
+import perview from "../../assets/team1.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
-import { SlSocialVkontakte } from "react-icons/sl";
-import { FiYoutube } from "react-icons/fi";
-import { LiaTelegramPlane } from "react-icons/lia";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Partners, followUsLinks, teamMembers } from "../../constants";
+import i18next from "i18next";
 
-const navs = [
-  { id: 1, name: "  Бесплатные мероприятия" },
-  { id: 2, name: "   О буткемпе" },
-  { id: 3, name: "  Статьи для новичков" },
-  { id: 4, name: "  Контакты" },
-  { id: 5, name: "  F.A.Q." },
-];
 const slider = [0, 1, 2, 3, 4, 5, 6, 7];
 const Home2 = () => {
+  const { t } = useTranslation();
   const [navListShow, setNavListShow] = useState(false);
+  const [activeLang, setactiveLang] = useState("en");
   return (
     <div className="home2 ">
       <div className="">
@@ -31,7 +26,7 @@ const Home2 = () => {
           <nav className="navbar-home container-lg  p-0  ">
             <div className="container-fluid d-flex justify-content-between">
               <a className="navbar-brand d-flex align-items-center " href="#">
-                <img src={Logo} alt="" width={100} />
+                <img src={Logo} alt="" width={150} className="" />
               </a>
               <div
                 className="menu-bars"
@@ -45,23 +40,82 @@ const Home2 = () => {
                   navListShow ? "show" : ""
                 }`}
               >
-                <ul className="d-flex   align-items-lg-center justify-content-between flex-column p-0  h-100 flex-lg-row m-0 pb-4 pb-lg-0">
-                  <li className="">
-                    <a
-                      className="nav-link text-capitalize "
-                      aria-current="page"
-                      href="#"
-                    >
-                      Программы
-                    </a>
+                <ul className="d-flex mx-auto align-items-lg-center justify-content-between flex-column p-0  h-100 flex-lg-row m-0 pb-4 pb-lg-0">
+                  <li>
+                    <Link to={"/"} className="nav-link">
+                      {t("navbar.home")}
+                    </Link>
                   </li>
-                  {navs.map((nav) => (
-                    <li className="" key={nav.id}>
-                      <a className="nav-link text-capitalize" href="#">
-                        {nav.name}
-                      </a>
-                    </li>
-                  ))}
+                  <li>
+                    <Link to={"/"} className="nav-link">
+                      {t("navbar.about")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"} className="nav-link">
+                      {t("navbar.service")}
+                    </Link>
+                  </li>
+                  <li className="dropdown">
+                    <Link to={"/"} className="nav-link">
+                      {t("navbar.products")}
+                    </Link>
+                    <div className="dropdown-item border-top ">
+                      <ul className="p-0">
+                        <li>
+                          <Link to={"/products/hrms"} className="nav-link">
+                            Hrms
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={"/products/delivery"} className="nav-link">
+                            Delivery
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <Link to={"/"} className="nav-link">
+                      {t("navbar.contact")}
+                    </Link>
+                  </li>
+                  <li className="dropdown">
+                    <Link to={"/"} className="nav-link">
+                      {t("navbar.language")}
+                    </Link>
+                    <div className="dropdown-item border-top ">
+                      <ul className="p-0">
+                        <li
+                          className="nav-link cursor"
+                          onClick={() => {
+                            i18next.changeLanguage("en");
+                            setactiveLang("en");
+                          }}
+                        >
+                          En
+                        </li>
+                        <li
+                          className="nav-link cursor"
+                          onClick={() => {
+                            i18next.changeLanguage("ru");
+                            setactiveLang("ru");
+                          }}
+                        >
+                          Ru
+                        </li>
+                        <li
+                          className="nav-link cursor"
+                          onClick={() => {
+                            i18next.changeLanguage("uz");
+                            setactiveLang("uz");
+                          }}
+                        >
+                          Uz
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
                 <div className="d-flex gap-3">
                   <button className="btn btn-outline-dark rounded-3 border-2 py-1">
@@ -79,44 +133,46 @@ const Home2 = () => {
 
         {/* Hero */}
         <main className="hero py-5 text-white">
+          <div className="overlay"></div>
           <div className="container">
-            <div className="row text-center text-lg-start">
+            <div
+              className="row text-center text-lg-start"
+              style={{ zIndex: "9999" }}
+            >
               <div className="col-lg-7">
                 {" "}
-                <h1 className=" display-5 fw-semibold h1">
-                  ПОЛУЧИТЕ IT‍-‍ПРОФЕССИЮ И ИЗМЕНИТЕ СВОЮ ЖИЗНЬ
+                <h1 className=" display-5 fw-semibold h1 ">
+                  {t("herosection.title")}
                 </h1>
-                <div className="py-3 row">
-                  <div className="col-lg-6">
-                    <p>
-                      Узнайте, как стать разработчиком за 3 месяца и найти
-                      стабильную высокооплачиваемую работу
-                    </p>
-                  </div>
-                  <div className="col-lg-6"></div>
-                </div>
                 <div className="hero-bottom mt-4">
-                  <h5 className="title">
+                  {/* <h5 className="title">
                     *По версии посетителей портала Хабр в 2023г.
-                  </h5>
+                  </h5> */}
                   <div className="d-flex justify-content-center justify-content-lg-start flex-wrap gap-2 gap-lg-5">
                     <div className="card border-0 row rounded-4 text-white">
-                      <h2 className="m-0 col-4">141k</h2>
-                      <p className=" m-0 col-7">Средняя зарплата выпускников</p>
+                      <h2 className="m-0 col-md-4 text-center ">12</h2>
+                      <p className=" m-0 col-md-7 text-center text-md-start">
+                        {t("herosection.developers")}
+                      </p>
                     </div>
 
                     <div className="card  border-0 row rounded-4 text-white">
-                      <h2 className="m-0 col-4">86%</h2>
-                      <p className=" m-0 col-7">
-                        студентов находят работу за 3 месяца <br />
-                        <span>исследование hh.ru</span>
+                      <h2 className="m-0 col-md-4 text-center">86</h2>
+                      <p className=" m-0 col-md-7 text-center text-md-start">
+                        {t("herosection.students")}
+                      </p>
+                    </div>
+                    <div className="card border-0 row rounded-4 text-white">
+                      <h2 className="m-0 col-md-4  text-center">20</h2>
+                      <p className=" m-0 col-md-7  text-center text-md-start">
+                        {t("herosection.projects")}
                       </p>
                     </div>
                   </div>
                 </div>
-                <button className="btn btn-bottom btn-gold mt-4 mt-lg-5 px-4  p-2 rounded-4">
+                {/* <button className="btn btn-bottom btn-gold mt-4 mt-lg-5 px-4  p-2 rounded-4">
                   Посмотреть программы
-                </button>
+                </button> */}
               </div>
               <div className="col-lg-5"></div>
             </div>
@@ -219,31 +275,30 @@ const Home2 = () => {
         {/* You Tube Video */}
         <section className="you-vid col bg-section-prymary py-5">
           <div className="container">
-            <h2 className="title text-white">Что такое буткемп?</h2>
+            <h2 className="title text-white">{t("blogSection.title")}</h2>
             <div className="card mt-5 rounded-4">
               <div className="row">
                 <div className="col-lg-7">
-                  <h3 className="font-primary">
-                    Это интенсивный формат обучения программированию (ежедневно,
-                    с утра до вечера, на протяжении трех месяцев в кампусе и
-                    четырех при формате онлайн) на реальных проектах с
-                    трудоустройством после обучения
-                  </h3>
-                  <p className="text-white mt-4">
-                    В интервью с ИТ-Бородой рассказываем о формате образования в
-                    школе программирования Эльбрус Буткемп
-                  </p>
+                  <h3 className="font-primary">{t("blogSection.text")}</h3>
                 </div>
                 <div className="col-lg-5 pt-2">
                   <div className="position-relative">
-                    <img src={perview} alt="" className="w-100" />
+                    <img
+                      src={perview}
+                      alt="perview"
+                      className="w-100 rounded-3"
+                    />
                     <div className="play-btn-wrapp">
-                      <button className=" btn play-btn">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://www.youtube.com/watch?v=_voQ5MGXX3g"
+                        className=" btn play-btn"
+                      >
                         <i className="fa-solid fa-play"></i>
-                      </button>
+                      </a>
                     </div>
                   </div>
-                  <p className="text-secondary mt-4 h5 time">1 час 12 минут</p>
                 </div>
               </div>
             </div>
@@ -303,62 +358,27 @@ const Home2 = () => {
         {/* Graduates */}
         <section className="py-5 graduates">
           <div className="container">
-            <h2 className="font-primary text-primary">
-              Где работают наши выпускники
+            <h2 className="font-primary title text-primary">
+              {t("partners.title")}
             </h2>
-            <div className="row">
-              <div className="col mt-3">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kaspersky_logo.svg/1280px-Kaspersky_logo.svg.png"
-                  width={200}
-                  alt=""
-                />
-              </div>
-              <div className="col mt-3">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kaspersky_logo.svg/1280px-Kaspersky_logo.svg.png"
-                  width={200}
-                  alt=""
-                />
-              </div>
-              <div className="col mt-3">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kaspersky_logo.svg/1280px-Kaspersky_logo.svg.png"
-                  width={200}
-                  alt=""
-                />
-              </div>
-              <div className="col mt-3">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kaspersky_logo.svg/1280px-Kaspersky_logo.svg.png"
-                  width={200}
-                  alt=""
-                />
-              </div>
-              <div className="col mt-3">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kaspersky_logo.svg/1280px-Kaspersky_logo.svg.png"
-                  width={200}
-                  alt=""
-                />
-              </div>
-              <div className="col mt-3">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kaspersky_logo.svg/1280px-Kaspersky_logo.svg.png"
-                  width={200}
-                  alt=""
-                />
-              </div>
+            <div className="row mt-5">
+              {Partners.map((item, i) => (
+                <div className="col mt-3" key={i}>
+                  <img
+                    src={item}
+                    width={220}
+                    height={120}
+                    className="object-fit-contain "
+                    alt="Pro Unity partners"
+                  />
+                </div>
+              ))}
             </div>
-            <div className="">
-              <h2 className="font-primary text-center mt-3 mt-lg-0 text-lg-end fs-1 text-end">
-                и еще 750+ компаний
-              </h2>
-            </div>
-            <h2 className="font-primary text-primary mt-5">
+
+            {/* <h2 className="font-primary text-primary mt-5">
               Содействие в трудоустройстве
             </h2>
-            {/* <div className="mt-4 employment-assistance">
+            <div className="mt-4 employment-assistance">
               <div className="cards gap d-flex">
                 <div className="card">
                   <div className="d-flex line-box  align-items-center">
@@ -539,27 +559,11 @@ const Home2 = () => {
         </section>
         {/* Our events end*/}
 
-        {/*slider  */}
-        <section className="py-5 graduates-2">
+        {/*Our Team  */}
+        <section className="py-5 graduates-2 our-team">
           <div className="container  position-relative">
-            <h2 className="font-primary  title">Выпускники</h2>
-            <div className="d-flex mt-4  flex-wrap gap-5">
-              <div className="box">
-                <h3 className="font-primary fw-bold">2052</h3>
-                <p>студентов выпущено за 5 лет</p>
-              </div>
-              <div className="box">
-                <h3 className="font-primary fw-bold">86%</h3>
-                <p>студентов находят работу за 3 месяца</p>
-              </div>
+            <h2 className="font-primary  title">{t("teamsection.title")}</h2>
 
-              <div className="box">
-                <h3 className="font-primary fw-bold">5/5</h3>
-                <a href="#" className="text-decoration-none">
-                  Рейтинг Яндекса <i className="fa-solid fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
             <div className="row py-5">
               <Swiper
                 slidesPerView={1}
@@ -574,44 +578,29 @@ const Home2 = () => {
                     slidesPerView: 2,
                   },
                 }}
+                pagination={{
+                  type: "fraction",
+                }}
                 navigation={{
                   nextEl: ".swiper-button-next",
                   prevEl: ".swiper-button-prev",
                 }}
-                modules={[Navigation]}
+                modules={[Navigation, Pagination]}
                 spaceBetween={25}
               >
-                {slider.map((item) => (
-                  <SwiperSlide className="" key={item}>
+                {teamMembers.map((item) => (
+                  <SwiperSlide key={item.id}>
                     <div className="card border-0">
                       <div className="card-head">
                         <img
-                          src="https://elbrusboot.camp/static/83a8e39372ca12864fb203014184183f/ee0bb/solar.webp"
+                          src={item.image}
                           alt=""
-                          className="w-100 h-100"
+                          className="w-100 h-100 rounded-4"
                         />
                       </div>
-                      <div className="body mt-3">
-                        <h2 className="font-primary mb-1">Дарья</h2>
-                        <h2 className="font-primary mb-1">Соляр</h2>
-                        <p className="mb-0">Разработчик</p>
-                        <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Logo_Sberbank.svg/2560px-Logo_Sberbank.svg.png"
-                          alt=""
-                          width={100}
-                          className="py-2"
-                        />
-                        <p className="text-secondary">
-                          Больше всего запомнилась командная атмосфера всего
-                          буткемпа - это помогло освоить огромный объём
-                          информации, которой оказалось достаточно для легкого
-                          входа в IT. Я благодарна всему преподавательскому
-                          составу за полную поддержку в обучении и не жалею, что
-                          обучалась в Эльбрус Буткемп.
-                        </p>
-                        <a href="#" className="text-decoration-none">
-                          Спросить про обучение
-                        </a>
+                      <div className="body mt-3 text-center">
+                        <h4 className="font-primary mb-1">{item.name}</h4>
+                        <p className="mb-0 fs-5">{item.occupation}</p>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -707,7 +696,11 @@ const Home2 = () => {
                 </div>
                 <div className="col-lg-6 pt-2">
                   <div className="position-relative">
-                    <img src={perview} alt="" className="w-100" />
+                    <img
+                      src={perview}
+                      alt=""
+                      className="w-100 object-fit-cover rounded-3"
+                    />
                     <div className="play-btn-wrapp">
                       <button className=" btn play-btn">
                         <i className="fa-solid fa-play  ms-1"></i>
@@ -740,167 +733,122 @@ const Home2 = () => {
           <div className="container">
             <div className="row gap-4 gap-lg-0">
               <div className="col-lg-4 ">
+                <h3 className="text-light mb-4">{t("footer.address")}</h3>
                 <ul className="p-0">
                   <li>
-                    <a href="#">
-                      +7 (499) 938-68-24{" "}
+                    <a href="tel:+998-33-899-50-00">
+                      +998 33 899 50 00{" "}
                       <i className="fa-solid fa-arrow-right"></i>
                     </a>
                   </li>
-                  <li className="mt-2">
-                    <a href="#">
-                      Чат в whatsApp{" "}
-                      <i className="fa-solid fa-arrow-right"> </i>/
-                    </a>
 
-                    <a href="#">
-                      h Telegram <i className="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </li>
-                  <li className="mt-2">
-                    <a href="#">
-                      info@elbrusboot.camp{" "}
+                  <li className="">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="mailto:prounity.uz@gmail.com"
+                    >
+                      prounity.uz@gmail.com{" "}
                       <i className="fa-solid fa-arrow-right"></i>
                     </a>
                   </li>
-                  <li className="mt-4 location ">
-                    <i className="fa-solid fa-location-dot d-block my-3"></i>
+                  <li className="mt-1 location ">
+                    {/* <i className="fa-solid fa-location-dot d-block my-3"></i> */}
                     <a href="#">
-                      Москва, ул. Орджоникидзе, 11 стр. 10 (м. Ленинский
-                      проспект) <i className="fa-solid fa-arrow-right"></i>
+                      {t("topbar.location")}{" "}
+                      <i className="fa-solid fa-arrow-right"></i>
                     </a>
                   </li>
                 </ul>
+                <div className="d-flex pt-2">
+                  {followUsLinks.map((item) => (
+                    <a
+                      style={{ opacity: "1" }}
+                      key={item.id}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none btn btn-light btn-social rounded-circle"
+                      href={item.link}
+                    >
+                      <img width={17} src={item.icon} alt="" />
+                    </a>
+                  ))}
+                </div>
               </div>
               <div className="col-lg-4">
+                <h3 className="text-light mb-3">
+                  {t("footer.services.title")}
+                </h3>
                 <ul className="p-0">
                   <li>
                     <a href="#">
-                      О буткемпе <i className="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </li>
-                  <li className="mt-2">
-                    <a href="#">
-                      Программа лояльности{" "}
-                      <i className="fa-solid fa-arrow-right"> </i>/
-                    </a>
-                  </li>
-                  <li className="mt-2">
-                    <a href="#">
-                      Бесплатные мероприятия{" "}
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </li>
-                  <li className="mt-2 location ">
-                    <a href="#">
-                      Статьи для новичков{" "}
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </li>
-                  <li className="mt-2 location ">
-                    <a href="#">
-                      Контакты <i className="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </li>
-                  <li className="mt-2 location ">
-                    <a href="#">
-                      Вакансии <i className="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-4">
-                <ul className="p-0">
-                  <li>
-                    <a href="#">
-                      Политика обработки персональных данных{" "}
+                      {t("footer.services.link1")}
                       <i className="fa-solid fa-arrow-right"></i>
                     </a>
                   </li>
                   <li className="mt-2">
                     <a href="#">
-                      Пользовательское соглашение{" "}
+                      {t("footer.services.link2")}{" "}
                       <i className="fa-solid fa-arrow-right"> </i>
                     </a>
                   </li>
                   <li className="mt-2">
                     <a href="#">
-                      Договор оферта <i className="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </li>
-                  <li className="mt-2 location ">
-                    <a href="#">
-                      Об образовательной организации{" "}
+                      {t("footer.services.link3")}{" "}
                       <i className="fa-solid fa-arrow-right"></i>
                     </a>
                   </li>
                   <li className="mt-2 location ">
                     <a href="#">
-                      Государственная лицензия{" "}
+                      {t("footer.services.link4")}{" "}
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </li>
+                  <li className="mt-2 location ">
+                    <a href="#">
+                      {t("footer.services.link5")}{" "}
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </li>
+                  <li className="mt-2 location ">
+                    <a href="#">
+                      {t("footer.services.link6")}{" "}
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-4">
+                <h3 className="text-light mb-3">
+                  {t("footer.quicklinks.title")}
+                </h3>
+                <ul className="p-0">
+                  <li>
+                    <a href="#">
+                      {t("footer.quicklinks.link1")}{" "}
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </li>
+                  <li className="mt-2">
+                    <a href="#">
+                      {t("footer.quicklinks.link2")}{" "}
+                      <i className="fa-solid fa-arrow-right"> </i>
+                    </a>
+                  </li>
+                  <li className="mt-2">
+                    <a href="#">
+                      {t("footer.quicklinks.link3")}{" "}
                       <i className="fa-solid fa-arrow-right"></i>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="row  mt-5">
-              <div className="col-lg-4 d-flex align-items-end">
-                <ul className="p-0 ">
-                  <li>
-                    <h4 className="text-white text-capitalize">участник</h4>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-4">
-                <p className="text-white">
-                  Хочу получать интересные материалы по программированию пару
-                  раз в месяц
-                </p>
-                <form className="d-flex flex-column flex-lg-row gap-4 align-items-start align-items-lg-center">
-                  <div className="form-floating  ">
-                    <input
-                      type="email"
-                      className="form-control "
-                      id="floatingInput"
-                      placeholder="name@example.com"
-                    />
-                    <label htmlFor="floatingInput">Email </label>
-                  </div>
-                  <button className="btn">Подписаться</button>
-                </form>
-
-                <span className="mt-2 d-block">
-                  Продолжая, вы принимаете условия{" "}
-                  <a href="#">
-                    Соглашения <i className="fa-solid fa-arrow-right"></i>
-                  </a>
-                </span>
-              </div>
-              <div className="col-lg-4 d-flex pt-5  gap-3 align-items-end">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://vk.com/"
-                  className="social-box"
-                >
-                  <SlSocialVkontakte className="icon" />
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.youtube.com/@prounity40"
-                  className="social-box"
-                >
-                  <FiYoutube className="icon" />
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://t.me/ProUnityuz"
-                  className="social-box"
-                >
-                  <LiaTelegramPlane className="icon" />
-                </a>
+            <div className="row ">
+              <div className="container">
+                <div className=" copyright text-light text-center fs-5 text-md-center mb-3 mb-md-0">
+                  © Pro Unity, All Right Reserved.
+                </div>
               </div>
             </div>
           </div>

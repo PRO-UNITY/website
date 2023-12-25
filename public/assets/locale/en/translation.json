@@ -4,13 +4,12 @@
     "time": "Mon - Sat : 09.00 AM - 06.00 PM"
   },
   "navbar": {
-    "home": "HOME",
-    "about": "ABOUT",
-    "service": "SERVICE",
-    "products": "PRODUCTS",
-    "language": "EN",
-    "contact": "CONTACT",
-    "appointment": "APPOINTMENT"
+    "home": "Home",
+    "about": "About",
+    "service": "Sevices",
+    "products": "Products",
+    "language": "En",
+    "contact": "Contant"
   },
   "herosection": {
     "title": "Our mission is to empower individuals with the skills and knowledge needed to thrive in the digital age.",

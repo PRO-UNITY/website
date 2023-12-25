@@ -4,13 +4,12 @@
     "time": "Dush - shan : 09.00 - 18.00"
   },
   "navbar": {
-    "home": "UY",
-    "about": "HAQIDA",
-    "service": "XIZMATLAR",
-    "products": "MAHSULOTLAR",
-    "language": "UZ",
-    "contact": "KONTAKT",
-    "appointment": "Tayinlash"
+    "home": "Asosiy Sahifa",
+    "about": "Biz haqimizda",
+    "service": "Xizmatlar",
+    "products": "Mahsulatlar",
+    "language": "uz",
+    "contact": "Kontakt"
   },
   "herosection": {
     "title": "Bizning vazifamiz odamlarga raqamli asrda rivojlanish uchun zarur bo'lgan ko'nikma va bilimlarni berishdir.",

@@ -6,10 +6,10 @@
   "navbar": {
     "home": "Главная страница",
     "about": "О нас",
-    "service": "УСЛУГА",
-    "products": "ПРОДУКТЫ",
-    "language": "РУ",
-    "contact": "КОНТАКТ",
+    "service": "Услуга",
+    "products": "Продукты",
+    "language": "Рy",
+    "contact": "Кoнтакт",
     "appointment": "Встреча"
   },
   "herosection": {
