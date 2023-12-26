@@ -14,6 +14,8 @@ export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 /*-- Home2 ---*/
 export { default as About2 } from "./Home2/AboutUs2/AboutUs2";
 export { default as Contact2 } from "./Home2/Contact2/Contact2";
+export { default as Blog } from "./Home2/Blog/Blog";
+export { default as ServicesDetail } from "./Home2/ServicesDetail/ServicesDetail";
 
 /*-- Products ---*/
 export { default as Products } from "./Products/Products";

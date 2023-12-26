@@ -73,6 +73,11 @@ const Layout2 = ({ children }) => {
                     {t("navbar.contact")}
                   </Link>
                 </li>
+                <li>
+                  <Link to={"/home2/blog"} className="nav-link">
+                    Blog
+                  </Link>
+                </li>
                 <li className="dropdown">
                   <Link to={"/"} className="nav-link">
                     {t("navbar.language")}

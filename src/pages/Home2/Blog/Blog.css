@@ -1,0 +1,51 @@
+.blog-title {
+  color: var(--color-primary);
+  font-size: 2.9rem !important;
+  font-weight: 600;
+}
+.blog .blog-slider-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 28%;
+  left: 0;
+  z-index: 999;
+}
+.blog .blog-slider-navigation .swiper-button-next-blog,
+.blog .blog-slider-navigation .swiper-button-prev-blog {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 7px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+}
+
+.blog .slider-card .card-head .btn {
+  background-color: #29edff;
+  color: var(--color-primary);
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+.blog .blog-card,
+.blog .pagination {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+.blog .blog-card button {
+  background-color: #29edff;
+  color: var(--color-primary);
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.blog .blog-card span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0px;
+}

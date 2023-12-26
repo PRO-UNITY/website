@@ -77,10 +77,10 @@
   text-transform: capitalize !important;
 }
 .home2 h1 {
-  font-size: 56px !important;
+  font-size: 56px;
+  font-family: "Rf-Rosefin";
 }
-.home2 .title,
-.home2 h1 {
+.home2 .title {
   font-size: 46px;
   font-family: "Rf-Rosefin";
   letter-spacing: -3px;
