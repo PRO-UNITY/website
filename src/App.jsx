@@ -46,6 +46,7 @@ import {
   Dashboard,
   HrmsDocCompany,
   About2,
+  Contact2,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { useState } from "react";
@@ -78,6 +79,7 @@ function App() {
             {/* Home2 */}
             <Route path="/home2" element={<Home2 />} />
             <Route path="/home2/about2" element={<About2 />} />
+            <Route path="/home2/contact2" element={<Contact2 />} />
             {/* Home2 End*/}
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />

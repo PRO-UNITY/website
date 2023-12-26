@@ -13,6 +13,7 @@ export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 
 /*-- Home2 ---*/
 export { default as About2 } from "./Home2/AboutUs2/AboutUs2";
+export { default as Contact2 } from "./Home2/Contact2/Contact2";
 
 /*-- Products ---*/
 export { default as Products } from "./Products/Products";

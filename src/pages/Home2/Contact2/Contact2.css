@@ -1,0 +1,35 @@
+.contact2 p {
+  font-size: 18px;
+  color: rgb(102, 102, 102);
+}
+.contact2 a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.contact2 a:hover {
+  text-decoration: underline;
+}
+.contact2 .contact-link a {
+  font-size: 34px;
+  font-family: "Rf-Rosefin";
+}
+.contact2 .contact-link i {
+  font-size: 25px;
+}
+.contact2 img {
+  width: 130px;
+}
+.contact2 .map-box {
+  height: 250px;
+}
+@media (max-width: 992px) {
+  .contact2 p {
+    font-size: 14px;
+  }
+  .contact2 .contact-link a {
+    font-size: 22px;
+  }
+  .contact2 .contact-link i {
+    font-size: 16px;
+  }
+}

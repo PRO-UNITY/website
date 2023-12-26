@@ -24,20 +24,6 @@
   position: relative;
   border-radius: 15px;
 }
-/* .about2 .video-card .card-avatar-1 {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 50px;
-  left: 150px;
-}
-.about2 .video-card .card-avatar-2 {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  bottom: 50px;
-  right: 150px;
-} */
 .about2 .line {
   width: 2px;
   height: 100%;
@@ -54,7 +40,6 @@
   font-size: 25px;
   color: #fff;
 }
-
 .about2 .team .card {
   width: 200px;
   padding-bottom: 60px;
