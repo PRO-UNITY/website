@@ -1,7 +1,7 @@
 import Layout2 from "../../../Layout/Layout2";
 import TeamImg from "../../../assets/team1.jpg";
 import TeamImg2 from "../../../assets/slide77.jpg";
-import TeamImg3 from "../../../assets/grouplider.jpg";
+import TeamImg3 from "../../../assets/grouplider1.jpg";
 import dodBanner from "../../../assets/home2/dodPreview.webp";
 import carrierImg from "../../../assets/group1.jpg";
 
