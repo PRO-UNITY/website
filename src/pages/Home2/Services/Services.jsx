@@ -1,10 +1,10 @@
 import Layout2 from "../../../Layout/Layout2";
 import "./Services.css";
 import webIcon from "../../../assets/web-dew.png";
-import backendIcon from "../../../assets/backend-development-icon-style-vector-removebg-preview.png";
-import dataScienceIcon from "../../../assets/data-science-icon-style-vector-removebg-preview.png";
+import backendIcon from "../../../assets/backend-dev.png";
+import dataScienceIcon from "../../../assets/data-science.png";
 import architecIcon from "../../../assets/architec.png";
-import designIcon from "../../../assets/295-2951395_digital-aura-creative-media-rh-auracreativemedia-co-website-designing-icon-png-removebg-preview.png";
+import designIcon from "../../../assets/design.png";
 import { Link } from "react-router-dom";
 
 const servicesData = [
