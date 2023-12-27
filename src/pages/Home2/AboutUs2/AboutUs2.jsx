@@ -3,7 +3,7 @@ import TeamImg from "../../../assets/team1.jpg";
 import TeamImg2 from "../../../assets/slide77.jpg";
 import TeamImg3 from "../../../assets/grouplider2.jpg";
 import dodBanner from "../../../assets/home2/dodPreview.webp";
-import carrierImg from "../../../assets/group1.jpg";
+import carrierImg from "../../../assets/group11.jpg";
 
 import "./About2.css";
 import { teamMembers } from "../../../constants";
