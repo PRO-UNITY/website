@@ -3,6 +3,10 @@
   font-size: 2.9rem !important;
   font-weight: 600;
 }
+.slider-card img {
+  height: 150px;
+  object-fit: cover;
+}
 .blog .blog-slider-navigation {
   display: flex;
   align-items: center;

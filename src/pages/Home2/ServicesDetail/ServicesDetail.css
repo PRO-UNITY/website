@@ -1,11 +1,19 @@
 .services-detail main {
-  background: url(https://elbrusboot.camp/static/eb35e8cb31776704695ee29be32c912e/90964/devintro-desktop-large.webp)
-    no-repeat center;
-  background-size: auto;
+  background: url("../../../assets/slide44.jpg") no-repeat center;
+  background-size: cover;
   width: 100%;
   height: 585px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.services-detail .overlay {
+  background-color: rgba(0, 0, 0, 0.466);
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .services-detail .services-title {
   font-size: 100px;

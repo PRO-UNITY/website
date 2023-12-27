@@ -1,8 +1,12 @@
 import Layout2 from "../../../Layout/Layout2";
-import TeamImg from "../../../assets/home2/team-desktop.webp";
+import TeamImg from "../../../assets/team1.jpg";
+import TeamImg2 from "../../../assets/slide77.jpg";
+import TeamImg3 from "../../../assets/grouplider.jpg";
 import dodBanner from "../../../assets/home2/dodPreview.webp";
+import carrierImg from "../../../assets/group1.jpg";
 
 import "./About2.css";
+import { teamMembers } from "../../../constants";
 
 const AboutUs = () => {
   return (
@@ -13,20 +17,7 @@ const AboutUs = () => {
             <h1 className="section-title">О школе</h1>
             <div className="video-card  rounded my-5">
               <img src={dodBanner} alt="" />
-              {/* <div className="card-avatar-1">
-                <img
-                  src="https://elbrusboot.camp/static/351685d1fcd29b0a83a26c5d8445db57/528bd/babayan.webp"
-                  alt=""
-                  className="w-100 h-100 rounded-circle object-fit-cover"
-                />
-              </div> */}
-              {/* <div className="card-avatar-2">
-                <img
-                  src="https://elbrusboot.camp/static/351685d1fcd29b0a83a26c5d8445db57/528bd/babayan.webp"
-                  alt=""
-                  className="w-100 h-100 rounded-circle object-fit-cover"
-                />
-              </div> */}
+
               <div className="play-btn-wrapp flex-column align-items-center  ">
                 <a
                   target="_blank"
@@ -67,12 +58,12 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div className="row ">
+            <div className="row team-img-box">
               <div className="col-lg-6">
-                <img src={TeamImg} alt="" className="w-100" />
+                <img src={TeamImg3} alt="" className="w-100 rounded-3" />
               </div>
               <div className="col-lg-6 d-none d-lg-block">
-                <img src={TeamImg} alt="" className="w-100" />
+                <img src={TeamImg2} alt="" className="w-100 rounded-3" />
               </div>
               <div className="col-lg-6 my-5 d-flex">
                 <div className="line me-4"></div>
@@ -135,81 +126,19 @@ const AboutUs = () => {
                 Команда
               </h2>
               <div className="row py-4">
-                <div className="col-lg-3">
-                  <div className="card border-0">
-                    <div className="card-head">
-                      <img
-                        src="https://elbrusboot.camp/static/351685d1fcd29b0a83a26c5d8445db57/528bd/babayan.webp"
-                        alt=""
-                        className="w-100"
-                      />
-                      <div className="card-content ">
-                        <p className="name my-2">ГЕОРГИЙ БАБАЯН</p>
-                        <p className="occupation">Генеральный директор</p>
+                {teamMembers.map((item) => (
+                  <div className="col-lg-3" key={item.id}>
+                    <div className="card border-0">
+                      <div className="card-head">
+                        <img src={item.image} alt="" className="w-100" />
+                        <div className="card-content ">
+                          <p className="name my-2">{item.name}</p>
+                          <p className="occupation">{item.occupation}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-lg-3">
-                  <div className="card border-0">
-                    <div className="card-head">
-                      <img
-                        src="https://elbrusboot.camp/static/351685d1fcd29b0a83a26c5d8445db57/528bd/babayan.webp"
-                        alt=""
-                        className="w-100"
-                      />
-                      <div className="card-content ">
-                        <p className="name my-2">ГЕОРГИЙ БАБАЯН</p>
-                        <p className="occupation">Генеральный директор</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3">
-                  <div className="card border-0">
-                    <div className="card-head">
-                      <img
-                        src="https://elbrusboot.camp/static/351685d1fcd29b0a83a26c5d8445db57/528bd/babayan.webp"
-                        alt=""
-                        className="w-100"
-                      />
-                      <div className="card-content ">
-                        <p className="name my-2">ГЕОРГИЙ БАБАЯН</p>
-                        <p className="occupation">Генеральный директор</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3">
-                  <div className="card border-0">
-                    <div className="card-head">
-                      <img
-                        src="https://elbrusboot.camp/static/351685d1fcd29b0a83a26c5d8445db57/528bd/babayan.webp"
-                        alt=""
-                        className="w-100"
-                      />
-                      <div className="card-content ">
-                        <p className="name my-2">ГЕОРГИЙ БАБАЯН</p>
-                        <p className="occupation">Генеральный директор</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3">
-                  <div className="card border-0">
-                    <div className="card-head">
-                      <img
-                        src="https://elbrusboot.camp/static/351685d1fcd29b0a83a26c5d8445db57/528bd/babayan.webp"
-                        alt=""
-                        className="w-100"
-                      />
-                      <div className="card-content ">
-                        <p className="name my-2">ГЕОРГИЙ БАБАЯН</p>
-                        <p className="occupation">Генеральный директор</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
             <div className="admission-criteria">
@@ -236,7 +165,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="qualities my-5">
+            {/* <div className="qualities my-5">
               <h2 className="font-primary text-dark">
                 Какие качества важны <br /> в будущих студентах?
               </h2>
@@ -293,16 +222,12 @@ const AboutUs = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="">
               <h2 className="title text-dark mb-5">Карьера</h2>
               <div className="banner">
-                <img
-                  src="https://elbrusboot.camp/static/c96dac2f3168275c372238e862f9cd9f/ea4a4/career-desktop.webp"
-                  alt=""
-                  className="w-100"
-                />
+                <img src={carrierImg} alt="" className="w-100 carrier-img" />
               </div>
               <div className="row py-5">
                 <div className="col-lg-6 d-flex">

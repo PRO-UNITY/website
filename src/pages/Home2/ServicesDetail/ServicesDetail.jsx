@@ -2,24 +2,38 @@ import { Navigation } from "swiper/modules";
 import Layout2 from "../../../Layout/Layout2";
 import "./ServicesDetail.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Jscourse from "../../../assets/teamwork.jpg";
+import ExpessJs from "../../../assets/expressJs.webp";
+import Nodejs from "../../../assets/nodejs.webp";
+import TS from "../../../assets/ts.webp";
+import Postgress from "../../../assets/postgresql.webp";
+import Jest from "../../../assets/jest.webp";
+import React from "../../../assets/react.webp";
+import GitHub from "../../../assets/githubcat.webp";
+import Git from "../../../assets/git.webp";
+import Redux from "../../../assets/redux.webp";
+
+import TrainingCard1 from "../../../assets/online.webp";
+import TrainingCard2 from "../../../assets/spb.webp";
+import TrainingCard3 from "../../../assets/msk.webp";
 
 const Tools = [
-  "https://elbrusboot.camp/static/fc9cfa03a81d71778d5759ccd1007880/5eba4/express.webp",
-  "https://elbrusboot.camp/static/fcbf553506e813d7d6bd82d6abfc4ce4/5eba4/nodejs.webp",
-  "https://elbrusboot.camp/static/d7fa785b5eb8d1fb5ea6285fdbbf6ea3/5eba4/ts.webp",
-  "https://elbrusboot.camp/static/2f08b2412a283c00ebf4c1dcbd1f9550/5eba4/postgresql.webp",
-  "https://elbrusboot.camp/static/8dd747ec32d2d28593d5e8c571b86074/5eba4/jest.webp",
-  "https://elbrusboot.camp/static/abbafb3a63daf5b9088f4e84b4aa219a/5eba4/react.webp",
-  "https://elbrusboot.camp/static/7698935e72322dd8d10b3ffb000ead45/5eba4/githubcat.webp",
-  "https://elbrusboot.camp/static/3facf26e561c44b482475534deb2c3be/5eba4/git.webp",
-  "https://elbrusboot.camp/static/cc6ac98e6b66599da3d6f21267d9f247/a7ab1/redux.webp",
+  ExpessJs,
+  Nodejs,
+  TS,
+  Postgress,
+  Jest,
+  React,
+  GitHub,
+  Git,
+  Redux,
 ];
 const Services = () => {
   return (
     <Layout2>
       <div className="services-detail">
         <main>
-          <div className="container ">
+          <div className="container " style={{ zIndex: "999" }}>
             <div className="row ">
               <div className="col-lg-6 text-center text-lg-start">
                 <h1 className="services-title text-white">ВЕБ-РАЗРАБОТЧИК</h1>
@@ -27,6 +41,7 @@ const Services = () => {
               </div>
             </div>
           </div>
+          <div className="overlay"></div>
         </main>
         <section className="py-5" style={{ background: "rgb(248, 246, 252)" }}>
           <div className="container-lg">
@@ -339,7 +354,7 @@ const Services = () => {
               <div className="col-lg-4">
                 <div className="card p-3 border-0 position-relative">
                   <img
-                    src="https://elbrusboot.camp/static/fa80ad8db2dde9927426f1e6084c1c7c/6a5be/online.webp"
+                    src={TrainingCard1}
                     alt=""
                     className="position-absolute rounded-3 w-100 h-100 top-0 start-0"
                   />
@@ -377,7 +392,7 @@ const Services = () => {
               <div className="col-lg-4">
                 <div className="card p-3 border-0 position-relative">
                   <img
-                    src="https://elbrusboot.camp/static/f2ca2a82b1aba7278a7e236741f20e4b/6a5be/spb.webp"
+                    src={TrainingCard2}
                     alt=""
                     className="position-absolute rounded-3 w-100 h-100 top-0 start-0"
                   />
@@ -415,7 +430,7 @@ const Services = () => {
               <div className="col-lg-4">
                 <div className="card p-3 border-0 position-relative">
                   <img
-                    src="https://elbrusboot.camp/static/257d31ca9f5f6d9b7e5b02cfb72173b3/6a5be/msk.webp"
+                    src={TrainingCard3}
                     alt=""
                     className="position-absolute rounded-3 w-100 h-100 top-0 start-0"
                   />
@@ -465,9 +480,9 @@ const Services = () => {
                   Можно попробовать сейчас, а выбрать формат Буткемпа потом
                 </h2>
                 <img
-                  src="https://elbrusboot.camp/static/72f93c871bb3e645bfe8bacd530848db/640a7/bootcampFormat.webp"
+                  src={Jscourse}
                   alt=""
-                  className="w-100 d-none d-lg-block"
+                  className="w-100 py-4  d-none d-lg-block"
                 />
               </div>
               <div className="col-lg-6">

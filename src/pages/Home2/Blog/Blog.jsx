@@ -4,6 +4,9 @@ import "./Blog.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
+import SliderCard from "../../../assets/group1.jpg";
+import BlogCard from "../../../assets/grouplider.jpg";
+
 const Blog = () => {
   return (
     <Layout2>
@@ -37,8 +40,26 @@ const Blog = () => {
                     <Link to={""} className="btn">
                       Подготовка
                     </Link>
+                    <img src={SliderCard} alt="" className="w-100" />
+                  </div>
+                  <div className="card-content mt-3">
+                    <h5 className="font-primary text-primary fw-semibold">
+                      Нетворкинг в IT
+                    </h5>
+                    <span className="text-secondary font-primary">
+                      25 дек. 2023 г.
+                    </span>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider-card">
+                  <div className="card-head position-relative">
+                    <Link to={""} className="btn">
+                      Подготовка
+                    </Link>
                     <img
-                      src="https://elbrusboot.camp/blog/content/images/size/w750/2023/12/-------------IT--1-.png"
+                      src={SliderCard}
                       alt=""
                       className="w-100"
                     />
@@ -60,7 +81,7 @@ const Blog = () => {
                       Подготовка
                     </Link>
                     <img
-                      src="https://elbrusboot.camp/blog/content/images/size/w750/2023/12/-------------IT--1-.png"
+                      src={SliderCard}
                       alt=""
                       className="w-100"
                     />
@@ -82,7 +103,7 @@ const Blog = () => {
                       Подготовка
                     </Link>
                     <img
-                      src="https://elbrusboot.camp/blog/content/images/size/w750/2023/12/-------------IT--1-.png"
+                      src={SliderCard}
                       alt=""
                       className="w-100"
                     />
@@ -104,7 +125,7 @@ const Blog = () => {
                       Подготовка
                     </Link>
                     <img
-                      src="https://elbrusboot.camp/blog/content/images/size/w750/2023/12/-------------IT--1-.png"
+                      src={SliderCard}
                       alt=""
                       className="w-100"
                     />
@@ -126,29 +147,7 @@ const Blog = () => {
                       Подготовка
                     </Link>
                     <img
-                      src="https://elbrusboot.camp/blog/content/images/size/w750/2023/12/-------------IT--1-.png"
-                      alt=""
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="card-content mt-3">
-                    <h5 className="font-primary text-primary fw-semibold">
-                      Нетворкинг в IT
-                    </h5>
-                    <span className="text-secondary font-primary">
-                      25 дек. 2023 г.
-                    </span>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-card">
-                  <div className="card-head position-relative">
-                    <Link to={""} className="btn">
-                      Подготовка
-                    </Link>
-                    <img
-                      src="https://elbrusboot.camp/blog/content/images/size/w750/2023/12/-------------IT--1-.png"
+                      src={SliderCard}
                       alt=""
                       className="w-100"
                     />
@@ -179,11 +178,7 @@ const Blog = () => {
             <div className="row">
               <div className="blog-card">
                 <div className="card-head">
-                  <img
-                    src="https://elbrusboot.camp/blog/content/images/size/w960/2023/12/-------------IT--1-.png"
-                    alt=""
-                    className="w-100"
-                  />
+                  <img src={BlogCard} alt="" className="w-100" />
                 </div>
                 <div className="card-content px-lg-5 mx-lg-5 py-5">
                   <p>

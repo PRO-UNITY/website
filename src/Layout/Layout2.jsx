@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import i18next from "i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/logotogether.png";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
@@ -9,6 +9,8 @@ import { followUsLinks } from "../constants";
 const Layout2 = ({ children }) => {
   const { t } = useTranslation();
   const [navListShow, setNavListShow] = useState(false);
+  const { pathname } = useLocation();
+  console.log(pathname);
   return (
     <div className="home2">
       {/* Navbar */}
@@ -17,7 +19,7 @@ const Layout2 = ({ children }) => {
           <div className="container-fluid d-flex justify-content-between">
             <Link
               to={"/home2"}
-              className="navbar-brand d-flex align-items-center "
+              className={"navbar-brand d-flex align-items-center "}
             >
               <img src={Logo} alt="" width={150} className="" />
             </Link>
@@ -29,23 +31,23 @@ const Layout2 = ({ children }) => {
               <div className="bar"></div>
             </div>
             <div
-              className={`navbar-res  d-flex flex-column px-3  py-4 flex-lg-row justify-content-between align-items-lg-center  w-100  ms-lg-5 ${
+              className={`navbar-res d-flex flex-column px-3  py-4 flex-lg-row justify-content-between align-items-lg-center  w-100  ms-lg-5 ${
                 navListShow ? "show" : ""
               }`}
             >
-              <ul className="d-flex  align-items-lg-center justify-content-between flex-column p-0  h-100 flex-lg-row m-0 pb-4 pb-lg-0">
+              <ul className="d-flex  mx-0 mx-lg-auto align-items-lg-center justify-content-between flex-column p-0  h-100 flex-lg-row m-0 pb-4 pb-lg-0">
                 <li>
-                  <Link to={"/home2"} className="nav-link">
+                  <Link
+                    to={"/home2"}
+                    className={`nav-link  ${
+                      pathname === "/home2" ? "text-decoration-underline" : ""
+                    }`}
+                  >
                     {t("navbar.home")}
                   </Link>
                 </li>
-                <li>
-                  <Link to={"/home2/about2"} className="nav-link">
-                    {t("navbar.about")}
-                  </Link>
-                </li>
                 <li className="dropdown">
-                  <Link to={"/services"} className="nav-link">
+                  <Link to={""} className="nav-link">
                     {t("navbar.service")}
                   </Link>
                   <div className="dropdown-item border-top ">
@@ -61,8 +63,32 @@ const Layout2 = ({ children }) => {
                     </ul>
                   </div>
                 </li>
+                <li>
+                  <Link
+                    to={"/home2/events"}
+                    className={`nav-link  ${
+                      pathname === "/home2/events"
+                        ? "text-decoration-underline"
+                        : ""
+                    }`}
+                  >
+                    Events
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"/home2/about2"}
+                    className={`nav-link  ${
+                      pathname === "/home2/about2"
+                        ? "text-decoration-underline"
+                        : ""
+                    }`}
+                  >
+                    {t("navbar.about")}
+                  </Link>
+                </li>
                 <li className="dropdown">
-                  <Link to={"/products"} className="nav-link">
+                  <Link to={""} className="nav-link">
                     {t("navbar.products")}
                   </Link>
                   <div className="dropdown-item border-top ">
@@ -81,18 +107,27 @@ const Layout2 = ({ children }) => {
                   </div>
                 </li>
                 <li>
-                  <Link to={"/home2/contact2"} className="nav-link">
-                    {t("navbar.contact")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"/home2/blog"} className="nav-link">
+                  <Link
+                    to={"/home2/blog"}
+                    className={`nav-link  ${
+                      pathname === "/home2/blog"
+                        ? "text-decoration-underline"
+                        : ""
+                    }`}
+                  >
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/home2/events"} className="nav-link">
-                    Events
+                  <Link
+                    to={"/home2/contact2"}
+                    className={`nav-link  ${
+                      pathname === "/home2/contact2"
+                        ? "text-decoration-underline"
+                        : ""
+                    }`}
+                  >
+                    {t("navbar.contact")}
                   </Link>
                 </li>
                 <li className="dropdown">
