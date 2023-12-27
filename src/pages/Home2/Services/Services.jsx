@@ -1,14 +1,16 @@
 import Layout2 from "../../../Layout/Layout2";
 import "./Services.css";
+import webIcon from "../../../assets/web-dew.png";
 import backendIcon from "../../../assets/backend-development-icon-style-vector-removebg-preview.png";
 import dataScienceIcon from "../../../assets/data-science-icon-style-vector-removebg-preview.png";
+import architecIcon from "../../../assets/architec.png";
 import designIcon from "../../../assets/295-2951395_digital-aura-creative-media-rh-auracreativemedia-co-website-designing-icon-png-removebg-preview.png";
 import { Link } from "react-router-dom";
 
 const servicesData = [
   {
     id: 1,
-    img: "https://cdn-icons-png.flaticon.com/512/6352/6352331.png",
+    img: webIcon,
     name: "Web Developement",
     path: "/home2/services-detail",
     desc: "Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.",
@@ -33,7 +35,7 @@ const servicesData = [
   },
   {
     id: 5,
-    img: "https://cdn3.iconfinder.com/data/icons/flat-round-1/50/64-512.png",
+    img: architecIcon,
     name: "Architect",
     desc: "An architect is a person who plans, designs and oversees the construction of buildings.[1] To practice architecture means to provide services in connection with the design of buildings and the space within the site surrounding the buildings that have human occupancy or use as their principal purpose",
   },
