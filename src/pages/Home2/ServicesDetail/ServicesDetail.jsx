@@ -333,11 +333,11 @@ const Services = () => {
                 </div>
               </div>
               <div className="col-lg-4 d-none d-lg-block">
-                <img
+                {/* <img
                   src="https://elbrusboot.camp/static/7538ade71dcd7ddb88a25144a08039b2/dc153/howbootcampworks.webp"
                   alt=""
                   className="w-100"
-                />
+                /> */}
               </div>
             </div>
           </div>
