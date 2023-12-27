@@ -33,7 +33,7 @@ const Layout2 = ({ children }) => {
                 navListShow ? "show" : ""
               }`}
             >
-              <ul className="d-flex mx-auto align-items-lg-center justify-content-between flex-column p-0  h-100 flex-lg-row m-0 pb-4 pb-lg-0">
+              <ul className="d-flex  align-items-lg-center justify-content-between flex-column p-0  h-100 flex-lg-row m-0 pb-4 pb-lg-0">
                 <li>
                   <Link to={"/home2"} className="nav-link">
                     {t("navbar.home")}
@@ -51,7 +51,10 @@ const Layout2 = ({ children }) => {
                   <div className="dropdown-item border-top ">
                     <ul className="p-0">
                       <li>
-                        <Link to={"/home2/services-detail"} className="nav-link">
+                        <Link
+                          to={"/home2/services-detail"}
+                          className="nav-link"
+                        >
                           Web Developement
                         </Link>
                       </li>
