@@ -4,7 +4,7 @@ import "./Blog.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
-import SliderCard from "../../../assets/group1.jpg";
+import SliderCard from "../../../assets/group11.jpg";
 import BlogCard from "../../../assets/grouplider2.jpg";
 
 const Blog = () => {
