@@ -3,31 +3,31 @@ import Layout2 from "../../../Layout/Layout2";
 import "./ServicesDetail.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Jscourse from "../../../assets/teamwork.jpg";
-import ExpessJs from "../../../assets/expressJs.webp";
-import Nodejs from "../../../assets/nodejs.webp";
-import TS from "../../../assets/ts.webp";
-import Postgress from "../../../assets/postgresql.webp";
-import Jest from "../../../assets/jest.webp";
-import React from "../../../assets/react.webp";
-import GitHub from "../../../assets/githubcat.webp";
-import Git from "../../../assets/git.webp";
-import Redux from "../../../assets/redux.webp";
+// import ExpessJs from "../../../assets/expressJs.webp";
+// import Nodejs from "../../../assets/nodejs.webp";
+// import TS from "../../../assets/ts.webp";
+// import Postgress from "../../../assets/postgresql.webp";
+// import Jest from "../../../assets/jest.webp";
+// import React from "../../../assets/react.webp";
+// import GitHub from "../../../assets/githubcat.webp";
+// import Git from "../../../assets/git.webp";
+// import Redux from "../../../assets/redux.webp";
 
 import TrainingCard1 from "../../../assets/online.webp";
 import TrainingCard2 from "../../../assets/spb.webp";
 import TrainingCard3 from "../../../assets/msk.webp";
 
-const Tools = [
-  ExpessJs,
-  Nodejs,
-  TS,
-  Postgress,
-  Jest,
-  React,
-  GitHub,
-  Git,
-  Redux,
-];
+// const Tools = [
+//   ExpessJs,
+//   Nodejs,
+//   TS,
+//   Postgress,
+//   Jest,
+//   React,
+//   GitHub,
+//   Git,
+//   Redux,
+// ];
 const Services = () => {
   return (
     <Layout2>
@@ -223,7 +223,7 @@ const Services = () => {
             </div>
           </div>
         </section>
-        <section className="tools py-4 mb-5">
+        {/* <section className="tools py-4 mb-5">
           <div className="container">
             <h2 className="font-primary title text-lg-left pb-lg-3 m-0">
               Инструменты
@@ -236,7 +236,7 @@ const Services = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="bootcamp-content py-4">
           <div className="container">
             <h2 className="font-primary title text-lg-left pb-lg-3 m-0">
