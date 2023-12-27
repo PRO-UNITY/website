@@ -454,7 +454,7 @@ const Services = () => {
           </div>
         </section>
 
-        <section>
+        <section className="js-course">
           <div className="container">
             <div
               className="row rounded-4 py-5 px-3 my-5"
@@ -467,15 +467,57 @@ const Services = () => {
                 <img
                   src="https://elbrusboot.camp/static/72f93c871bb3e645bfe8bacd530848db/640a7/bootcampFormat.webp"
                   alt=""
-                  className="w-100"
+                  className="w-100 d-none d-lg-block"
                 />
               </div>
               <div className="col-lg-6">
-                <div className="card p-4">
-                  <h6 >
+                <div className="card h-100 border-0 rounded-4 p-4">
+                  <p>
                     Пройдите короткий курс занятий с ментором, чтобы начать
                     программировать и почувствовать атмосферу Буткемпа
-                  </h6>
+                  </p>
+                  <div className="d-flex mt-3 gap-4 align-items-center">
+                    <h4 className="font-primary m-0 fw-bold">
+                      Основы JavaScript•Онлайн
+                    </h4>
+                    <span className="card-badge d-none d-md-block px-3 rounded-3 text-secondary py-1">
+                      с нуля
+                    </span>
+                  </div>
+                  <div className="d-flex align-items-center gap-3 mt-3">
+                    <i className="fa-solid fa-calendar-days fs-5"></i>
+                    <p className="m-0 ">2 недели</p>
+                  </div>
+                  <ul className="p-0 mt-5">
+                    <li className="d-flex gap-3 mb-3  align-items-center">
+                      <div className="check-icon">
+                        <i className="fa-solid fa-check"></i>
+                      </div>
+                      <span>10 живых занятий с ментором</span>
+                    </li>
+                    <li className="d-flex gap-3 mb-3  align-items-center">
+                      <div className="check-icon">
+                        <i className="fa-solid fa-check"></i>
+                      </div>
+                      <span>
+                        Индивидуальная обратная связь по задачам от ментора
+                      </span>
+                    </li>
+                    <li className="d-flex gap-3 mb-3  align-items-center">
+                      <div className="check-icon">
+                        <i className="fa-solid fa-check"></i>
+                      </div>
+                      <span>Поддержка в закрытом чате разработчиков</span>
+                    </li>
+                  </ul>
+                  <div className="d-flex align-items-center gap-3 mt-3">
+                    <i className="fa-solid fa-clock fs-5"></i>
+                    <p className="m-0 ">старт: 08 января</p>
+                  </div>
+                  <div className="d-flex align-items-center  mt-4 justify-content-between">
+                    <h5 className="m-0">15 000 ₽</h5>
+                    <button className="btn btn-gold mt-0 px-4">Купить</button>
+                  </div>
                 </div>
               </div>
             </div>

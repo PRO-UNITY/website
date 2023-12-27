@@ -44,10 +44,19 @@ const Layout2 = ({ children }) => {
                     {t("navbar.about")}
                   </Link>
                 </li>
-                <li>
+                <li className="dropdown">
                   <Link to={"/services"} className="nav-link">
                     {t("navbar.service")}
                   </Link>
+                  <div className="dropdown-item border-top ">
+                    <ul className="p-0">
+                      <li>
+                        <Link to={"/home2/services-detail"} className="nav-link">
+                          Web Developement
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li className="dropdown">
                   <Link to={"/products"} className="nav-link">
@@ -76,6 +85,11 @@ const Layout2 = ({ children }) => {
                 <li>
                   <Link to={"/home2/blog"} className="nav-link">
                     Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/home2/events"} className="nav-link">
+                    Events
                   </Link>
                 </li>
                 <li className="dropdown">

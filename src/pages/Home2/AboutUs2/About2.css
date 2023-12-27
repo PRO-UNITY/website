@@ -115,6 +115,6 @@
   }
   .about2 .video-card img {
     border-radius: 15px;
-    object-fit: contain;
+    object-fit: cover;
   }
 }

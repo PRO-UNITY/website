@@ -61,7 +61,7 @@
 .services-detail .bootcamp-content {
   background: rgb(248, 246, 252);
 }
-.services-detail .bootcamp-content .check-icon {
+.services-detail .check-icon {
   background-color: aqua;
   min-width: 26px;
   height: 26px;
@@ -89,6 +89,18 @@
   color: #fff;
   border-radius: 5px;
 }
+.js-course p {
+  font-size: 18px;
+}
+.js-course .card .card-badge {
+  background-color: rgb(233, 233, 255);
+}
+.js-course .card ul li {
+  font-size: 15px;
+}
+.js-course .card button {
+  font-size: 15px !important;
+}
 @media (max-width: 992px) {
   .services-detail main {
     height: 350px;
@@ -113,5 +125,17 @@
   }
   .services-detail .tools img {
     width: 100%;
+  }
+  .js-course p {
+    font-size: 13px;
+  }
+  .js-course h4 {
+    font-size: 16px;
+  }
+  .services-detail .check-icon {
+    min-width: 22px;
+    height: 22px;
+    border-radius: 7px;
+    font-size: 11px;
   }
 }
