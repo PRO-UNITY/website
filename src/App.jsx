@@ -50,6 +50,7 @@ import {
   Blog,
   ServicesDetail,
   Events,
+  Services2,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { useState } from "react";
@@ -84,6 +85,7 @@ function App() {
             <Route path="/home2/about2" element={<About2 />} />
             <Route path="/home2/contact2" element={<Contact2 />} />
             <Route path="/home2/blog" element={<Blog />} />
+            <Route path="/home2/services" element={<Services2 />} />
             <Route path="/home2/services-detail" element={<ServicesDetail />} />
             <Route path="/home2/events" element={<Events />} />
             {/* Home2 End*/}

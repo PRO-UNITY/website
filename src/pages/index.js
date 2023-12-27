@@ -17,6 +17,7 @@ export { default as Contact2 } from "./Home2/Contact2/Contact2";
 export { default as Blog } from "./Home2/Blog/Blog";
 export { default as ServicesDetail } from "./Home2/ServicesDetail/ServicesDetail";
 export { default as Events } from "./Home2/Events/Events";
+export { default as Services2 } from "./Home2/Services/Services";
 
 /*-- Products ---*/
 export { default as Products } from "./Products/Products";

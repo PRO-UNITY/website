@@ -1,0 +1,25 @@
+.services-card {
+  padding: 24px 32px 32px;
+  border: 0;
+  background: rgb(239, 236, 245);
+  border-radius: 40px;
+  color: #000;
+}
+.services-card .card-head img {
+  height: 160px;
+}
+.services-card .card-name {
+  font-size: 24px;
+}
+.services-card p {
+  font-size: 14px;
+}
+@media (max-width: 425px) {
+  .services-card {
+    padding: 17px;
+    border-radius: 25px;
+  }
+  .services-card .card-head img {
+    height: 100px;
+  }
+}

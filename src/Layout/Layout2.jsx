@@ -47,7 +47,14 @@ const Layout2 = ({ children }) => {
                   </Link>
                 </li>
                 <li className="dropdown">
-                  <Link to={""} className="nav-link">
+                  <Link
+                    to={"/home2/services"}
+                    className={`nav-link  ${
+                      pathname === "/home2/services"
+                        ? "text-decoration-underline"
+                        : ""
+                    }`}
+                  >
                     {t("navbar.service")}
                   </Link>
                   <div className="dropdown-item border-top ">

@@ -58,11 +58,7 @@ const Blog = () => {
                     <Link to={""} className="btn">
                       Подготовка
                     </Link>
-                    <img
-                      src={SliderCard}
-                      alt=""
-                      className="w-100"
-                    />
+                    <img src={SliderCard} alt="" className="w-100" />
                   </div>
                   <div className="card-content mt-3">
                     <h5 className="font-primary text-primary fw-semibold">
@@ -80,11 +76,7 @@ const Blog = () => {
                     <Link to={""} className="btn">
                       Подготовка
                     </Link>
-                    <img
-                      src={SliderCard}
-                      alt=""
-                      className="w-100"
-                    />
+                    <img src={SliderCard} alt="" className="w-100" />
                   </div>
                   <div className="card-content mt-3">
                     <h5 className="font-primary text-primary fw-semibold">
@@ -102,11 +94,7 @@ const Blog = () => {
                     <Link to={""} className="btn">
                       Подготовка
                     </Link>
-                    <img
-                      src={SliderCard}
-                      alt=""
-                      className="w-100"
-                    />
+                    <img src={SliderCard} alt="" className="w-100" />
                   </div>
                   <div className="card-content mt-3">
                     <h5 className="font-primary text-primary fw-semibold">
@@ -124,11 +112,7 @@ const Blog = () => {
                     <Link to={""} className="btn">
                       Подготовка
                     </Link>
-                    <img
-                      src={SliderCard}
-                      alt=""
-                      className="w-100"
-                    />
+                    <img src={SliderCard} alt="" className="w-100" />
                   </div>
                   <div className="card-content mt-3">
                     <h5 className="font-primary text-primary fw-semibold">
@@ -146,11 +130,7 @@ const Blog = () => {
                     <Link to={""} className="btn">
                       Подготовка
                     </Link>
-                    <img
-                      src={SliderCard}
-                      alt=""
-                      className="w-100"
-                    />
+                    <img src={SliderCard} alt="" className="w-100" />
                   </div>
                   <div className="card-content mt-3">
                     <h5 className="font-primary text-primary fw-semibold">
