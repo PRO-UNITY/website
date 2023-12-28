@@ -6,6 +6,7 @@ import dataScienceIcon from "../../../assets/data-science.png";
 import architecIcon from "../../../assets/architec.png";
 import designIcon from "../../../assets/design.png";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const servicesData = [
   {
@@ -41,6 +42,9 @@ const servicesData = [
   },
 ];
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <Layout2>
       <div className="services-2 py-4">

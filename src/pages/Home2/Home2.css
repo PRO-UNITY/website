@@ -22,13 +22,11 @@
   background-color: #fff;
   position: sticky;
   top: 0;
-  z-index: 99999;
+  z-index: 9999999 !important;
 }
-
 .home2 .navbar-home .dropdown {
   position: relative;
 }
-
 .home2 .navbar-home .dropdown .dropdown-item {
   position: absolute;
   background-color: #fff;
@@ -76,8 +74,8 @@
   opacity: 0.9;
   text-transform: capitalize !important;
 }
-.home2 h1 {
-  font-size: 56px;
+.home2 .hero h1 {
+  font-size: 65px;
   font-family: "Rf-Rosefin";
 }
 .home2 .title {
@@ -90,6 +88,7 @@
   font-weight: 600;
   font-family: "Rf-Rosefin";
   text-transform: uppercase;
+  z-index: 999999;
 }
 .home2 .btn-gold {
   background: rgb(255, 188, 91);
@@ -124,16 +123,20 @@
 .home2 .hero .btn-bottom {
   font-size: 15px;
   padding: 12px 32px !important;
+  position: relative;
+  z-index: 999;
 }
 
 .home2 .hero .card {
   text-align: left !important;
   height: 80px;
   width: 210px;
-  background: rgba(255, 255, 255, 0.725) !important;
+  background: rgba(255, 255, 255, 0.267) !important;
   align-items: center;
   flex-direction: row;
   border: 1px solid rgba(103, 103, 103, 0.362) !important;
+  position: relative;
+  z-index: 999;
 }
 .home2 .course .card {
   height: 300px;
@@ -149,7 +152,7 @@
   align-items: start;
   justify-content: space-between;
 }
-.home2 .course .card button {
+.home2 .course .card .btn {
   padding: 10px 24px !important;
   font-size: 13.5px;
   letter-spacing: 0.5px;
@@ -233,10 +236,10 @@
 .employment .hh-logo {
   width: 65px;
 }
-.employment button,
-.graduates button,
-.our-events button,
-.application button {
+.employment .btn,
+.graduates .btn,
+.our-events .btn,
+.application .btn {
   padding: 12px 27px !important;
   border-radius: 13px !important;
   letter-spacing: 0.5px;

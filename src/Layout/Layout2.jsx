@@ -1,10 +1,57 @@
 /* eslint-disable react/prop-types */
-import i18next from "i18next";
+// import i18next from "i18next";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/logotogether.png";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { followUsLinks } from "../constants";
+
+const Footerlinks = {
+  ServicesLink: [
+    {
+      name: "Web Developement ",
+      path: "/",
+    },
+    {
+      name: "Backend Developement ",
+      path: "/",
+    },
+    {
+      name: "Data Science",
+      path: "/",
+    },
+    {
+      name: "Web and Graphic design",
+      path: "/",
+    },
+    {
+      name: "Architect",
+      path: "/",
+    },
+  ],
+  QuickLinks: [
+    {
+      name: "Events ",
+      path: "/home2/events",
+    },
+    {
+      name: "About",
+      path: "/home2/about2",
+    },
+    {
+      name: "Products",
+      path: "/home2/products2",
+    },
+    {
+      name: "Blog",
+      path: "/home2/blog",
+    },
+    {
+      name: "Contant",
+      path: "/home2/contact2",
+    },
+  ],
+};
 
 const Layout2 = ({ children }) => {
   const { t } = useTranslation();
@@ -95,7 +142,14 @@ const Layout2 = ({ children }) => {
                   </Link>
                 </li>
                 <li className="dropdown">
-                  <Link to={""} className="nav-link">
+                  <Link
+                    to={"/home2/products2"}
+                    className={`nav-link  ${
+                      pathname === "/home2/products2"
+                        ? "text-decoration-underline"
+                        : ""
+                    }`}
+                  >
                     {t("navbar.products")}
                   </Link>
                   <div className="dropdown-item border-top ">
@@ -137,7 +191,7 @@ const Layout2 = ({ children }) => {
                     {t("navbar.contact")}
                   </Link>
                 </li>
-                <li className="dropdown">
+                {/* <li className="dropdown">
                   <Link to={"/"} className="nav-link">
                     {t("navbar.language")}
                   </Link>
@@ -169,14 +223,14 @@ const Layout2 = ({ children }) => {
                       </li>
                     </ul>
                   </div>
-                </li>
+                </li> */}
               </ul>
               <div className="d-flex gap-3">
                 <button className="btn btn-outline-dark rounded-3 border-2 py-1">
-                  Войти
+                  Login
                 </button>
                 <button className="btn  btn-gold  rounded-3 border-2 py-1">
-                  Начать учиться
+                  Start studying
                 </button>
               </div>
             </div>
@@ -190,7 +244,9 @@ const Layout2 = ({ children }) => {
         <div className="container">
           <div className="row gap-4 gap-lg-0">
             <div className="col-lg-4 ">
-              <h3 className="text-light mb-4">{t("footer.address")}</h3>
+              <h3 className="text-light font-primary mb-4">
+                {t("footer.address")}
+              </h3>
               <ul className="p-0">
                 <li>
                   <a href="tel:+998-33-899-50-00">
@@ -210,7 +266,6 @@ const Layout2 = ({ children }) => {
                   </a>
                 </li>
                 <li className="mt-1 location ">
-                  {/* <i className="fa-solid fa-location-dot d-block my-3"></i> */}
                   <a href="#">
                     {t("topbar.location")}{" "}
                     <i className="fa-solid fa-arrow-right"></i>
@@ -220,7 +275,6 @@ const Layout2 = ({ children }) => {
               <div className="d-flex pt-2">
                 {followUsLinks.map((item) => (
                   <a
-                    style={{ opacity: "1" }}
                     key={item.id}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -233,73 +287,35 @@ const Layout2 = ({ children }) => {
               </div>
             </div>
             <div className="col-lg-4">
-              <h3 className="text-light mb-3">{t("footer.services.title")}</h3>
+              <h3 className="text-light mb-3 font-primary">
+                {t("footer.services.title")}
+              </h3>
               <ul className="p-0">
-                <li>
-                  <a href="#">
-                    {t("footer.services.link1")}
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </a>
-                </li>
-                <li className="mt-2">
-                  <a href="#">
-                    {t("footer.services.link2")}{" "}
-                    <i className="fa-solid fa-arrow-right"> </i>
-                  </a>
-                </li>
-                <li className="mt-2">
-                  <a href="#">
-                    {t("footer.services.link3")}{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </a>
-                </li>
-                <li className="mt-2 location ">
-                  <a href="#">
-                    {t("footer.services.link4")}{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </a>
-                </li>
-                <li className="mt-2 location ">
-                  <a href="#">
-                    {t("footer.services.link5")}{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </a>
-                </li>
-                <li className="mt-2 location ">
-                  <a href="#">
-                    {t("footer.services.link6")}{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </a>
-                </li>
+                {Footerlinks.ServicesLink.map((item, i) => (
+                  <li key={i} className="mb-1">
+                    <Link to={"/home2/services-detail"}>
+                      {item.name} <i className="fa-solid fa-arrow-right"></i>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="col-lg-4">
-              <h3 className="text-light mb-3">
+              <h3 className="font-primary text-light mb-3">
                 {t("footer.quicklinks.title")}
               </h3>
               <ul className="p-0">
-                <li>
-                  <a href="#">
-                    {t("footer.quicklinks.link1")}{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </a>
-                </li>
-                <li className="mt-2">
-                  <a href="#">
-                    {t("footer.quicklinks.link2")}{" "}
-                    <i className="fa-solid fa-arrow-right"> </i>
-                  </a>
-                </li>
-                <li className="mt-2">
-                  <a href="#">
-                    {t("footer.quicklinks.link3")}{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </a>
-                </li>
+                {Footerlinks.QuickLinks.map((item, i) => (
+                  <li key={i}>
+                    <Link to={item.path}>
+                      {item.name} <i className="fa-solid fa-arrow-right"></i>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
-          <div className="row ">
+          <div className="row">
             <div className="container">
               <div className=" copyright text-light text-center fs-5 text-md-center mb-3 mb-md-0">
                 © Pro Unity, All Right Reserved.

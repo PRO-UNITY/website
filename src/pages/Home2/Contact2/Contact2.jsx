@@ -1,18 +1,21 @@
 import Layout2 from "../../../Layout/Layout2";
 import "./Contact2.css";
 import coworking from "../../../assets/koworking.jpg";
+import { useEffect } from "react";
 const Contact2 = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <Layout2>
       <section className="contact2 py-4">
         <div className="container-lg">
-          <h2 className="font-primary title">Контакты</h2>
+          <h2 className="font-primary title">Contacts</h2>
           <div className="row mt-4">
             <div className="col-lg-6">
               <p>
-                Если вы хотите записаться на курс, получить дополнительную
-                информацию, познакомиться с нами или посетить наш буткемп —
-                звоните/пишите.
+                If you would like to get in touch, get more information, get to
+                know us or visit the office, please call/write.
               </p>
               <div className="contact-link">
                 <ul className="p-0 mt-4">
@@ -20,12 +23,20 @@ const Contact2 = () => {
                     <a href="tel:+998-33-899-50-00">+998 33 899 50 00 </a>
                   </li>
                   <li>
-                    <a href="https://t.me/ProUnityuz">
+                    <a
+                      href="https://t.me/ProUnityuz"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Telegram <i className="fa-solid fa-arrow-right"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.whatsapp.com/">
+                    <a
+                      href="https://www.whatsapp.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Whatsapp <i className="fa-solid fa-arrow-right"></i>
                     </a>
                   </li>
@@ -43,16 +54,18 @@ const Contact2 = () => {
             <div className="col-lg-6 ">
               <div className="card row border-0">
                 <img src={coworking} alt="" />
-                <h2 className="card-title font-primary mt-3">
-                  Кампус в Москве
-                </h2>
-                <div className="col-lg-6">
-                  <p>Islom Karimov 1 Street, Bukhara, Uzbekistan</p>
+                <div className=" mt-3">
+                  <h4 className="font-primary">
+                    Islom Karimov 1 Street, Bukhara, Uzbekistan
+                  </h4>
                 </div>
                 <div className="col-12 mt-4">
-                  <a href="#">
-                    Посмотреть на карте{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://maps.app.goo.gl/odKWvwVkG1aYhzy26"
+                  >
+                    View on map <i className="fa-solid fa-arrow-right"></i>
                   </a>
                   <div className="map-box pe-lg-5 mt-4 rounded-3">
                     <div

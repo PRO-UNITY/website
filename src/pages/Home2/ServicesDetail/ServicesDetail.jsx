@@ -16,6 +16,8 @@ import Jscourse from "../../../assets/teamwork.jpg";
 import TrainingCard1 from "../../../assets/online.webp";
 import TrainingCard2 from "../../../assets/spb.webp";
 import TrainingCard3 from "../../../assets/msk.webp";
+import ApplicationModal from "../../../components/Application-modal/Application-modal";
+import { useEffect } from "react";
 
 // const Tools = [
 //   ExpessJs,
@@ -29,6 +31,9 @@ import TrainingCard3 from "../../../assets/msk.webp";
 //   Redux,
 // ];
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <Layout2>
       <div className="services-detail">
@@ -36,8 +41,10 @@ const Services = () => {
           <div className="container " style={{ zIndex: "999" }}>
             <div className="row ">
               <div className="col-lg-6 text-center text-lg-start">
-                <h1 className="services-title text-white">ВЕБ-РАЗРАБОТЧИК</h1>
-                <button className="btn btn-gold ">Записаться</button>
+                <h1 className="services-title font-primary  text-white text-uppercase">
+                  Web-Developement
+                </h1>
+                <ApplicationModal btn={"Sign up"} />
               </div>
             </div>
           </div>
@@ -52,8 +59,8 @@ const Services = () => {
                     <i className="fa-solid fa-fire"></i>
                   </div>
                   <span className="card-desc">
-                    Актуальная программа: HTML, CSS, TypeScript, JavaScript,
-                    Node js, Express, React, Redux, PostgreSQL, Git
+                    Current program: HTML, CSS, TypeScript, JavaScript, Node js,
+                    Express, React, Redux, PostgreSQL, Git
                   </span>
                 </div>
                 <div className="col-lg-3 d-flex gap-2 align-items-start">
@@ -61,7 +68,7 @@ const Services = () => {
                     <i className="fa-solid fa-user"></i>
                   </div>
                   <span className="card-desc">
-                    Живые лекции и разбор кода ментором
+                    Live lectures and code analysis by a mentor
                   </span>
                 </div>
                 <div className="col-lg-3 d-flex gap-2 align-items-start">
@@ -69,7 +76,7 @@ const Services = () => {
                     <i className="fa-solid fa-briefcase"></i>
                   </div>
                   <span className="card-desc">
-                    Помощь в трудоустройстве: 40 часов с карьерными коучами
+                    Job placement assistance: 40 hours with career coaches
                   </span>
                 </div>
                 <div className="col-lg-3 d-flex gap-2 align-items-start">
@@ -77,8 +84,7 @@ const Services = () => {
                     <i className="fa-solid fa-book-open"></i>
                   </div>
                   <span className="card-desc">
-                    Диплом о профессиональной переподготовке установленного
-                    образца
+                    Diploma of professional retraining established sample
                   </span>
                 </div>
               </div>
@@ -88,7 +94,7 @@ const Services = () => {
         <section className="training-program">
           <div className="container py-5">
             <h2 className="title font-primary mt-3">
-              Программа обучения <br /> по Веб-разработке
+              Training program <br /> in Web Development
             </h2>
             <div className="row position-relative  my-5">
               <Swiper
@@ -119,14 +125,14 @@ const Services = () => {
                           <i className="fa-solid fa-code text-primary "></i>
                         </div>
                         <h4 className="card-title text-primary font-primary">
-                          Фаза 0
+                          Phase 0
                         </h4>
                       </div>
-                      <span className="">1-3 неделя</span>
+                      <span className="">1-3 week</span>
                     </div>
                     <p className="text-secondary mt-3">
-                      Терминал, Git, основы HTML/ CSS, основы JavaScript.
-                      Проходит online, 6-8 часов в день.
+                      Terminal, Git, HTML/CSS basics, JavaScript basics. Takes
+                      place online, 6-8 hours a day.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -138,14 +144,13 @@ const Services = () => {
                           <i className="fa-solid fa-code text-primary "></i>
                         </div>
                         <h4 className="card-title text-primary font-primary">
-                          Фаза 1
+                          Phase 1
                         </h4>
                       </div>
-                      <span className="">4-6 неделя</span>
+                      <span className="">4-6 week</span>
                     </div>
                     <p className="text-secondary mt-3">
-                      Ванильный JavaScript, тестирование, структуры данных,
-                      алгоритмы.
+                      Vanilla JavaScript, testing, data structures, algorithms.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -157,14 +162,14 @@ const Services = () => {
                           <i className="fa-solid fa-code text-primary "></i>
                         </div>
                         <h4 className="card-title text-primary font-primary">
-                          Фаза 2
+                          Phase 2
                         </h4>
                       </div>
-                      <span className="">7-9 неделя</span>
+                      <span className="">7-9 week</span>
                     </div>
                     <p className="text-secondary mt-3">
-                      Backend (Node.js, Express), базы данных. Два проекта для
-                      портфолио. Обучение деплоименту на платформе Selectel.
+                      Backend (Node.js, Express), databases. Two projects for
+                      portfolio. Deployment training on the Selectel platform.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -176,10 +181,10 @@ const Services = () => {
                           <i className="fa-solid fa-code text-primary "></i>
                         </div>
                         <h4 className="card-title text-primary font-primary">
-                          Фаза 3
+                          Phase 3
                         </h4>
                       </div>
-                      <span className="">10-12 неделя</span>
+                      <span className="">10-12 week</span>
                     </div>
                     <p className="text-secondary mt-3">
                       Frontend библиотеки (React, Redux). Связывание UI с
@@ -195,22 +200,20 @@ const Services = () => {
                     <div className="card-head d-flex justify-content-between align-items-end">
                       <div className="d-flex align-items-end gap-2">
                         <h4 className="card-title text-primary font-primary">
-                          Карьерная неделя
+                          Career week
                         </h4>
                       </div>
-                      <span className="">5 дней</span>
+                      <span className="">5 day</span>
                     </div>
                     <p className="text-secondary mt-3">
-                      Стратегия по поиску работы, составление резюме, подготовка
-                      к собеседованиям.
+                      Job search strategy, resume writing, preparation for
+                      interviews.
                     </p>
                   </div>
                 </SwiperSlide>
               </Swiper>
               <div className="my-5 d-flex flex-column-reverse align-items-center flex-md-row justify-content-between">
-                <button className="btn btn-gold text-dark">
-                  Получить подробную программу
-                </button>
+                <ApplicationModal btn={"Get detailed program"} />
                 <div className="services-detail-slider-navigation">
                   <button className=" swiper-button-prev-services-detail me-3">
                     <i className="fa-solid fa-chevron-left"></i>
@@ -240,14 +243,14 @@ const Services = () => {
         <section className="bootcamp-content py-4">
           <div className="container">
             <h2 className="font-primary title text-lg-left pb-lg-3 m-0">
-              Как устроен буткемп
+              How does the bootcamp work?
             </h2>
             <div className="row mt-4">
               <div className="col-lg-8">
                 <div className="row">
                   <div className="col-lg-6">
                     <h4 className="font-primary text-primary">
-                      Из чего состоит обучение
+                      What does the training consist of
                     </h4>
                     <ul className="p-0 mt-4">
                       <li className="d-flex gap-3 mb-3  align-items-center">
@@ -255,7 +258,7 @@ const Services = () => {
                           <i className="fa-solid fa-check"></i>
                         </div>
                         <span className="text-secondary">
-                          Живые лекции и обратная связь от преподавателя
+                          Live lectures and feedback from the instructor
                         </span>
                       </li>
                       <li className="d-flex gap-3 mb-3  align-items-center">
@@ -263,7 +266,7 @@ const Services = () => {
                           <i className="fa-solid fa-check"></i>
                         </div>
                         <span className="text-secondary">
-                          Код-ревью: проверка кода преподавателем
+                          Code reviews: code evaluation by the instructor
                         </span>
                       </li>
                       <li className="d-flex gap-3 mb-3  align-items-center">
@@ -271,7 +274,7 @@ const Services = () => {
                           <i className="fa-solid fa-check"></i>
                         </div>
                         <span className="text-secondary">
-                          Работа над проектами от заказчика
+                          Working on projects from a client
                         </span>
                       </li>
                       <li className="d-flex gap-3 mb-3  ">
@@ -279,19 +282,14 @@ const Services = () => {
                           <i className="fa-solid fa-check"></i>
                         </div>
                         <span className="text-secondary">
-                          Подготовка к собеседованиям вместе с карьерным коучем
+                          Interview preparation with a career coach
                         </span>
                       </li>
                     </ul>
-                    <img
-                      src="https://elbrusboot.camp/static/4e2a75a068cbe58215af79f0feec2274/08c91/500codingHours.webp"
-                      alt=""
-                      className=" mt-5 w-100"
-                    />
                   </div>
                   <div className="col-lg-6">
                     <h4 className="font-primary text-primary">
-                      Из чего состоит обучение
+                      What does the training consist of
                     </h4>
                     <ul className="p-0 mt-4">
                       <li className="d-flex gap-3 mb-3  align-items-center">
@@ -299,7 +297,7 @@ const Services = () => {
                           <i className="fa-solid fa-check"></i>
                         </div>
                         <span className="text-secondary">
-                          Профессия: разработчик JavaScript, TypeScript
+                          Profession: JavaScript, TypeScript Developer
                         </span>
                       </li>
                       <li className="d-flex gap-3 mb-3  align-items-center">
@@ -307,8 +305,8 @@ const Services = () => {
                           <i className="fa-solid fa-check"></i>
                         </div>
                         <span className="text-secondary">
-                          Портфолио на GitHub: 2 групповых, 1 индивидуальный и
-                          10 учебных проектов
+                          GitHub Portfolio: 2 group, 1 individual, and 10
+                          educational projects
                         </span>
                       </li>
                       <li className="d-flex gap-3 mb-3  align-items-center">
@@ -316,8 +314,8 @@ const Services = () => {
                           <i className="fa-solid fa-check"></i>
                         </div>
                         <span className="text-secondary">
-                          Диплом о профессиональной переподготовке
-                          установленного образца
+                          Diploma of professional retraining of the established
+                          sample
                         </span>
                       </li>
                       <li className="d-flex gap-3 mb-3  ">
@@ -325,30 +323,25 @@ const Services = () => {
                           <i className="fa-solid fa-check"></i>
                         </div>
                         <span className="text-secondary">
-                          Доступ к закрытому комьюнити разработчиков
+                          Access to a private community of developers
                         </span>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 d-none d-lg-block">
-                {/* <img
-                  src="https://elbrusboot.camp/static/7538ade71dcd7ddb88a25144a08039b2/dc153/howbootcampworks.webp"
-                  alt=""
-                  className="w-100"
-                /> */}
-              </div>
+              <div className="col-lg-4 d-none d-lg-block"></div>
             </div>
           </div>
         </section>
+
         <section className="py-4 mb-5 training-format">
           <div className="container">
             <h2 className="font-primary title text-lg-left pb-lg-3 m-0">
-              Формат обучения
+              Training Format
             </h2>
             <p className="text-secondary">
-              Программа обучения во всех форматах одинаковая.
+              The training program is the same in all formats.
             </p>
             <div className="row gap-4 gap-lg-0">
               <div className="col-lg-4">
@@ -360,31 +353,30 @@ const Services = () => {
                   />
                   <div className="card-content h-100  d-flex flex-column justify-content-between">
                     <div className="card-top d-flex justify-content-between">
-                      <span className="">Веб разработчик</span>
+                      <span className="">Web Developer</span>
                       <div className="d-flex gap-2 text-light align-items-center">
                         {" "}
-                        <i className="fa-regular fa-calendar-days"></i> 12
-                        недель
+                        <i className="fa-regular fa-calendar-days"></i> 12 weeks
                       </div>
                     </div>
                     <div className="card-body p-0 text-white mt-5">
-                      <h5>Онлайн</h5>
+                      <h5>Online</h5>
                       <h6>
                         {" "}
-                        <i className="fa-solid fa-clock"></i> старт: 29 января
+                        <i className="fa-solid fa-clock"></i> Start: January 29
                       </h6>
                     </div>
                     <div className="card-bottom d-flex align-items-center justify-content-between">
                       <div>
                         <h5 className="text-white fw-normal m-0">
                           {" "}
-                          От 9 500 ₽/месяц
+                          From 9,500 ₽/month
                         </h5>
                         <h6 className="text-secondary fw-semibold m-0">
-                          или сразу 275 000₽
+                          or 275,000₽ upfront
                         </h6>
                       </div>
-                      <button className="btn btn-gold">подробнее</button>
+                      <button className="btn btn-gold">Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -398,31 +390,30 @@ const Services = () => {
                   />
                   <div className="card-content h-100  d-flex flex-column justify-content-between">
                     <div className="card-top d-flex justify-content-between">
-                      <span className="">Веб разработчик</span>
+                      <span className="">Web Developer</span>
                       <div className="d-flex gap-2 text-light align-items-center">
                         {" "}
-                        <i className="fa-regular fa-calendar-days"></i> 12
-                        недель
+                        <i className="fa-regular fa-calendar-days"></i> 12 weeks
                       </div>
                     </div>
                     <div className="card-body p-0 text-white mt-5">
-                      <h5>Онлайн</h5>
+                      <h5>Online</h5>
                       <h6>
                         {" "}
-                        <i className="fa-solid fa-clock"></i> старт: 29 января
+                        <i className="fa-solid fa-clock"></i> Start: January 29
                       </h6>
                     </div>
                     <div className="card-bottom d-flex align-items-center justify-content-between">
                       <div>
                         <h5 className="text-white fw-normal m-0">
                           {" "}
-                          От 9 500 ₽/месяц
+                          From 9,500 ₽/month
                         </h5>
                         <h6 className="text-secondary fw-semibold m-0">
-                          или сразу 275 000₽
+                          or 275,000₽ upfront
                         </h6>
                       </div>
-                      <button className="btn btn-gold">подробнее</button>
+                      <button className="btn btn-gold">Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -436,31 +427,30 @@ const Services = () => {
                   />
                   <div className="card-content h-100  d-flex flex-column justify-content-between">
                     <div className="card-top d-flex justify-content-between">
-                      <span className="">Веб разработчик</span>
+                      <span className="">Web Developer</span>
                       <div className="d-flex gap-2 text-light align-items-center">
                         {" "}
-                        <i className="fa-regular fa-calendar-days"></i> 12
-                        недель
+                        <i className="fa-regular fa-calendar-days"></i> 12 weeks
                       </div>
                     </div>
                     <div className="card-body p-0 text-white mt-5">
-                      <h5>Онлайн</h5>
+                      <h5>Online</h5>
                       <h6>
                         {" "}
-                        <i className="fa-solid fa-clock"></i> старт: 29 января
+                        <i className="fa-solid fa-clock"></i> Start: January 29
                       </h6>
                     </div>
                     <div className="card-bottom d-flex align-items-center justify-content-between">
                       <div>
                         <h5 className="text-white fw-normal m-0">
                           {" "}
-                          От 9 500 ₽/месяц
+                          From 9,500 ₽/month
                         </h5>
                         <h6 className="text-secondary fw-semibold m-0">
-                          или сразу 275 000₽
+                          or 275,000₽ upfront
                         </h6>
                       </div>
-                      <button className="btn btn-gold">подробнее</button>
+                      <button className="btn btn-gold">Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -477,7 +467,7 @@ const Services = () => {
             >
               <div className="col-lg-6">
                 <h2 className="text-primary font-primary">
-                  Можно попробовать сейчас, а выбрать формат Буткемпа потом
+                  You can try now and choose the Bootcamp format later
                 </h2>
                 <img
                   src={Jscourse}
@@ -488,50 +478,48 @@ const Services = () => {
               <div className="col-lg-6">
                 <div className="card h-100 border-0 rounded-4 p-4">
                   <p>
-                    Пройдите короткий курс занятий с ментором, чтобы начать
-                    программировать и почувствовать атмосферу Буткемпа
+                    Take a short course with a mentor to start programming and
+                    feel the Bootcamp atmosphere
                   </p>
                   <div className="d-flex mt-3 gap-4 align-items-center">
                     <h4 className="font-primary m-0 fw-bold">
-                      Основы JavaScript•Онлайн
+                      JavaScript Basics•Online
                     </h4>
                     <span className="card-badge d-none d-md-block px-3 rounded-3 text-secondary py-1">
-                      с нуля
+                      from scratch
                     </span>
                   </div>
                   <div className="d-flex align-items-center gap-3 mt-3">
                     <i className="fa-solid fa-calendar-days fs-5"></i>
-                    <p className="m-0 ">2 недели</p>
+                    <p className="m-0 ">2 weeks</p>
                   </div>
                   <ul className="p-0 mt-5">
                     <li className="d-flex gap-3 mb-3  align-items-center">
                       <div className="check-icon">
                         <i className="fa-solid fa-check"></i>
                       </div>
-                      <span>10 живых занятий с ментором</span>
+                      <span>10 live sessions with a mentor</span>
                     </li>
                     <li className="d-flex gap-3 mb-3  align-items-center">
                       <div className="check-icon">
                         <i className="fa-solid fa-check"></i>
                       </div>
-                      <span>
-                        Индивидуальная обратная связь по задачам от ментора
-                      </span>
+                      <span>Individual feedback on tasks from a mentor</span>
                     </li>
                     <li className="d-flex gap-3 mb-3  align-items-center">
                       <div className="check-icon">
                         <i className="fa-solid fa-check"></i>
                       </div>
-                      <span>Поддержка в закрытом чате разработчиков</span>
+                      <span>Support in private developer chat</span>
                     </li>
                   </ul>
                   <div className="d-flex align-items-center gap-3 mt-3">
                     <i className="fa-solid fa-clock fs-5"></i>
-                    <p className="m-0 ">старт: 08 января</p>
+                    <p className="m-0 ">start: January 08</p>
                   </div>
                   <div className="d-flex align-items-center  mt-4 justify-content-between">
-                    <h5 className="m-0">15 000 ₽</h5>
-                    <button className="btn btn-gold mt-0 px-4">Купить</button>
+                    <h5 className="m-0">15 000 $</h5>
+                    <button className="btn btn-gold mt-0 px-4">Buy</button>
                   </div>
                 </div>
               </div>
@@ -542,9 +530,10 @@ const Services = () => {
           <div className="container">
             <div className="d-flex  align-items-center flex-column flex-lg-row gap-3 gap-lg-5">
               <h2 className="font-primary text-center text-lg-left pb-lg-3 m-0">
-                Готовы ответить на ваши вопросы
+                Ready to answer your questions
               </h2>
-              <button className="btn btn-gold">Оставить заявку</button>
+
+              <ApplicationModal btn={"Submit your application"} />
             </div>
           </div>
         </section>

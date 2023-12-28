@@ -1,8 +1,8 @@
 import "./Home2.css";
 import JscardBg from "../../assets/home2/program-card-js.webp";
 import JscardIcon from "../../assets/home2/program-card-js-pic.webp";
-import PycardBg from "../../assets/home2/program-card-ds.webp";
-import PycardIcon from "../../assets/home2/program-card-ds-pic.webp";
+// import PycardBg from "../../assets/home2/program-card-ds.webp";
+// import PycardIcon from "../../assets/home2/program-card-ds-pic.webp";
 import perview from "../../assets/team1.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -10,8 +10,9 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Partners, teamMembers } from "../../constants";
 import Layout2 from "../../Layout/Layout2";
+import ApplicationModal from "../../components/Application-modal/Application-modal";
+import YouTubePreview from "../../components/YouTubePreview/YouTubePreview";
 
-const slider = [0, 1, 2, 3, 4, 5, 6, 7];
 const Home2 = () => {
   const { t } = useTranslation();
   return (
@@ -25,15 +26,9 @@ const Home2 = () => {
               className="row text-center text-lg-start"
               style={{ zIndex: "9999" }}
             >
-              <div className="col-lg-7">
-                {" "}
-                <h1 className=" display-5 fw-semibold h1 ">
-                  {t("herosection.title")}
-                </h1>
+              <div className="col-lg-8">
+                <h1 className=" fw-semibold  ">{t("herosection.title")}</h1>
                 <div className="hero-bottom mt-4">
-                  {/* <h5 className="title">
-                    *По версии посетителей портала Хабр в 2023г.
-                  </h5> */}
                   <div className="d-flex justify-content-center justify-content-lg-start flex-wrap gap-2 gap-lg-5">
                     <div className="card border-0 row rounded-4 text-white">
                       <h2 className="m-0 col-md-4 text-center ">12</h2>
@@ -56,11 +51,13 @@ const Home2 = () => {
                     </div>
                   </div>
                 </div>
-                {/* <button className="btn btn-bottom btn-gold mt-4 mt-lg-5 px-4  p-2 rounded-4">
-                  Посмотреть программы
-                </button> */}
+                <Link
+                  to={"/home2/services"}
+                  className="btn btn-bottom btn-gold mt-4 mt-lg-5 px-4  p-2 rounded-4"
+                >
+                  All Services
+                </Link>
               </div>
-              <div className="col-lg-5"></div>
             </div>
           </div>
         </main>
@@ -69,7 +66,7 @@ const Home2 = () => {
         {/* Course */}
         <section className="course py-5">
           <div className="container-lg">
-            <h2 className="title">Программы обучения</h2>
+            <h2 className="title">Studying programs</h2>
             <div className="row my-4 gap-3">
               <div className="col-lg-5">
                 <div className="card rounded-4">
@@ -77,34 +74,37 @@ const Home2 = () => {
                   <div className="content">
                     <div className="head pe-4 d-flex align-items-center justify-content-between ">
                       <h5 className=" h5 fw-semibold font-primary">
-                        Веб-разработчик
+                        Web Developement
                       </h5>
                       <span className="badge text-bg-light fw-normal">
-                        с нуля
+                        from scratch
                       </span>
                     </div>
                     <div className="body">
                       <ul className="p-0">
-                        <p className="mb-1 mt-2">Форматы:</p>
+                        <p className="mb-1 mt-2">Formats:</p>
                         <li className="d-flex  align-items-center ">
                           <i className="fa-solid fa-circle mt-1 me-2"></i>
-                          <span>офлайн в Москве и Санкт-Петербурге</span>
+                          <span>Offline in Bukhara</span>
                         </li>
                         <li className="d-flex align-items-center ">
                           <i className="fa-solid fa-circle mt-1 me-2"></i>
-                          <span>онлайн</span>
+                          <span>online</span>
                         </li>
                       </ul>
                       <p
                         style={{ fontSize: "13px" }}
                         className="text-secondary"
                       >
-                        Есть вступительное интервью
+                        There is an introductory interview
                       </p>
-                      <h6 className="h6">3-6 месяцев</h6>
-                      <button className="btn rounded-4  btn-gold mt-2">
-                        ПОДРОБНЕЕ
-                      </button>
+                      <h6 className="h6">3-6 months</h6>
+                      <Link
+                        to={"/home2/services-detail"}
+                        className="btn  rounded-4  btn-gold mt-2"
+                      >
+                        More
+                      </Link>
                     </div>
                   </div>
                   <div className="img-wrapp w-100 h-100">
@@ -112,7 +112,7 @@ const Home2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5">
+              {/* <div className="col-lg-5">
                 <div className="card rounded-4">
                   <img src={PycardIcon} alt="" className="card-icon" />
                   <div className="content">
@@ -152,7 +152,7 @@ const Home2 = () => {
                     <img src={PycardBg} alt="" className="w-100 h-100" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -174,16 +174,8 @@ const Home2 = () => {
                       alt="perview"
                       className="w-100 rounded-3"
                     />
-                    <div className="play-btn-wrapp">
-                      <a
-                        target="_blank"
-                        rel="noreferrer"
-                        href="https://www.youtube.com/watch?v=_voQ5MGXX3g"
-                        className=" btn play-btn"
-                      >
-                        <i className="fa-solid fa-play"></i>
-                      </a>
-                    </div>
+
+                    <YouTubePreview />
                   </div>
                 </div>
               </div>
@@ -195,29 +187,23 @@ const Home2 = () => {
         {/* Employment */}
         <section className="employment py-5 ">
           <div className="container">
-            <h2 className="title text-dark">Трудоустройство</h2>
+            <h2 className="title text-dark">Employment</h2>
             <div className="d-flex mt-4  flex-wrap gap-5">
               <div className="box">
                 <h3 className="font-primary fw-bold">2052</h3>
-                <p>студентов выпущено за 5 лет</p>
+                <p>students graduated in 5 years</p>
               </div>
               <div className="box">
                 <h3 className="font-primary fw-bold">86%</h3>
-                <p>студентов находят работу за 3 месяца</p>
+                <p>students find jobs in 3 months</p>
               </div>
               <div className="box">
                 <h3 className="font-primary fw-bold">141</h3>
-                <p>тысяч рублей — средняя зарплата выпускников</p>
-              </div>
-              <div className="box">
-                <h3 className="font-primary fw-bold">5/5</h3>
-                <a href="#" className="text-decoration-none">
-                  Рейтинг Яндекса <i className="fa-solid fa-arrow-right"></i>
-                </a>
+                <p>thousand rubles - average salary of graduates</p>
               </div>
             </div>
             <div className="employment-bottom">
-              <h2 className="font-primary mt-5">Исследование hh.ru</h2>
+              <h2 className="font-primary mt-5">Research hh.ru</h2>
               <div className="d-flex mt-4 align-items-center flex-wrap ">
                 <div className="d-flex  align-items-center">
                   <div className="hh-logo">
@@ -228,13 +214,18 @@ const Home2 = () => {
                     />
                   </div>
                   <p className="m-0 ms-3">
-                    Статистика по трудоустройству выпускников Эльбрус <br />{" "}
-                    Буткемп подтверждена исследователями hh.ru
+                    Employment statistics for Elbrus graduates Bootcamp
+                    confirmed <br /> by hh.ru researchers
                   </p>
                 </div>
-                <button className="btn btn-gold mt-4 mt-lg-0 ms-5">
-                  Читать исследование
-                </button>
+                <a
+                  href="https://hh.uz/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn text-dark btn-gold mt-4 mt-lg-0 ms-5"
+                >
+                  Read the study
+                </a>
               </div>
             </div>
           </div>
@@ -350,48 +341,48 @@ const Home2 = () => {
         {/* Our events */}
         <section className="our-events py-5">
           <div className="container-lg">
-            <h2 className="font-primary title">Наши мероприятия</h2>
+            <h2 className="font-primary title">Our events</h2>
             <div className="d-flex  flex-column flex-lg-row gap-5 align-items-start">
               <div className="card mt-4">
                 <div className="row">
                   <div className="box-l d-flex h-100  justify-content-between align-items-start flex-column col-7">
                     <div className="">
-                      <span>ВСТРЕЧА</span>
+                      <span>MEETING</span>
                       <h4 className="font-primary mt-2 mt-lg-4 fw-bold">
-                        Баттл разработчиков: OZON vs СБЕР. Где лучше?
+                        Developer battle: OZON vs SBER. Where is better?
                       </h4>
                       <ul className="p-0 mt-2  mt-lg-4">
                         <li className="d-flex mb-2 gap-2 align-items-center">
                           <div className="check">
                             <i className="fa-solid fa-check"></i>
                           </div>
-                          Встреча с выпускником
+                          Meeting with a graduate
                         </li>
                         <li className="d-flex mb-2 gap-2 align-items-center">
                           <div className="check">
                             <i className="fa-solid fa-check"></i>
                           </div>
-                          Встреча с выпускником
+                          Meeting with a graduate
                         </li>
                         <li className="d-flex mb-2 gap-2 align-items-center">
                           <div className="check">
                             <i className="fa-solid fa-check"></i>
                           </div>
-                          Встреча с выпускником
+                          Meeting with a graduate
                         </li>
                       </ul>
                     </div>
-                    <button className="btn btn-gold">ПОДРОБНЕЕ</button>
+                    <button className="btn btn-gold">More</button>
                   </div>
                   <div className="box-r col-5">
-                    <span className="status">Онлайн</span>
+                    <span className="status">Online</span>
                     <h2 className="mt-4 display-4  font-primary fw-normal">
                       21
                     </h2>
-                    <p>декабря</p>
+                    <p>December</p>
                     <p className="mt-3">
-                      четверг <br /> 19:00 — 20:30 <br />
-                      по Мск
+                      Thursday <br /> 19:00 — 20:30 <br />
+                      Tashkent time
                     </p>
                   </div>
                 </div>
@@ -400,42 +391,42 @@ const Home2 = () => {
                 <div className="row ">
                   <div className="box-l d-flex justify-content-between align-items-start flex-column col-7">
                     <div className="">
-                      <span>ВСТРЕЧА</span>
+                      <span>MEETING</span>
                       <h4 className="font-primary mt-2  mt-lg-4 fw-bold">
-                        Баттл разработчиков: OZON vs СБЕР. Где лучше?
+                        Developer battle: OZON vs SBER. Where is better?
                       </h4>
                       <ul className="p-0 mt-2  mt-lg-4">
                         <li className="d-flex mb-2 gap-2 align-items-center">
                           <div className="check">
                             <i className="fa-solid fa-check"></i>
                           </div>
-                          Встреча с выпускником
+                          Meeting with a graduate
                         </li>
                         <li className="d-flex mb-2 gap-2 align-items-center">
                           <div className="check">
                             <i className="fa-solid fa-check"></i>
                           </div>
-                          Встреча с выпускником
+                          Meeting with a graduate
                         </li>
                         <li className="d-flex mb-2 gap-2 align-items-center">
                           <div className="check">
                             <i className="fa-solid fa-check"></i>
                           </div>
-                          Встреча с выпускником
+                          Meeting with a graduate
                         </li>
                       </ul>
                     </div>
-                    <button className="btn btn-gold">ПОДРОБНЕЕ</button>
+                    <button className="btn btn-gold">More</button>
                   </div>
                   <div className="box-r col-5">
-                    <span className="status">Онлайн</span>
+                    <span className="status">Online</span>
                     <h2 className="mt-4 display-4  font-primary fw-normal">
                       10
                     </h2>
-                    <p>декабря</p>
+                    <p>December</p>
                     <p className="mt-3">
-                      четверг <br /> 19:00 — 20:30 <br />
-                      по Мск
+                      Thursday <br /> 19:00 — 20:30 <br />
+                      Tashkent time
                     </p>
                   </div>
                 </div>
@@ -504,7 +495,7 @@ const Home2 = () => {
         {/* slider end */}
 
         {/*  bootcamp*/}
-        <section className="bg-section-prymary py-5 bootcamp">
+        {/* <section className="bg-section-prymary py-5 bootcamp">
           <div className="container">
             <h2 className="font-primary text-white pb-3 title">
               СМИ о нас и буткемпах
@@ -520,7 +511,7 @@ const Home2 = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
         {/* bootcamp end */}
 
         {/* Faq */}
@@ -587,13 +578,8 @@ const Home2 = () => {
                       alt=""
                       className="w-100 object-fit-cover rounded-3"
                     />
-                    <div className="play-btn-wrapp">
-                      <button className=" btn play-btn">
-                        <i className="fa-solid fa-play  ms-1"></i>
-                      </button>
-                    </div>
+                    <YouTubePreview />
                   </div>
-                  <p className="text-secondary fw-normal mt-4 h6">10 минут</p>
                 </div>
               </div>
             </div>
@@ -606,9 +592,10 @@ const Home2 = () => {
           <div className="container">
             <div className="d-flex  align-items-center flex-column flex-lg-row gap-3 gap-lg-5">
               <h2 className="font-primary text-center text-lg-left pb-lg-3 m-0">
-                Готовы ответить на ваши вопросы
+                Ready to answer your questions
               </h2>
-              <button className="btn btn-gold">Оставить заявку</button>
+
+              <ApplicationModal btn={"Submit your application"} />
             </div>
           </div>
         </section>

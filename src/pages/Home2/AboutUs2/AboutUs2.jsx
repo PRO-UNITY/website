@@ -7,53 +7,48 @@ import carrierImg from "../../../assets/group11.jpg";
 
 import "./About2.css";
 import { teamMembers } from "../../../constants";
+import { Link } from "react-router-dom";
+import YouTubePreview from "../../../components/YouTubePreview/YouTubePreview";
+import { useEffect } from "react";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <Layout2>
       <div className="about2">
         <section>
           <div className="container-lg">
-            <h1 className="section-title">О школе</h1>
+            <h1 className="section-title font-primary mt-3">
+              About the School
+            </h1>
             <div className="video-card  rounded my-5">
               <img src={dodBanner} alt="" />
-
-              <div className="play-btn-wrapp flex-column align-items-center  ">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.youtube.com/watch?v=_voQ5MGXX3g"
-                  className=" btn play-btn"
-                >
-                  <i className="fa-solid fa-play"></i>
-                </a>
-                {/* <p className="text-primary font-primary mt-4">
-                  ПОСМОТРЕТ ВИДЕО
-                </p> */}
-              </div>
+              <YouTubePreview />
             </div>
             <div className="row mb-5 py-5">
               <div className="col-lg-6 d-flex">
                 <div className="line me-lg-4"></div>
                 <p className="ps-lg-5">
-                  Эльбрус Буткемп появился в 2018 году благодаря Георгию
-                  Бабаяну. Его дедушка был программистом и участвовал в создании
-                  микропроцессора Эльбрус — отсюда и название школы. Сам Георгий
-                  в 2016 году прошел Dev Bootcamp в Сан-Франциско, один из самых
-                  старых буткемпов в Америке. Тогда о подобном формате в России
-                  еще не слышали, а в Америке он набирал популярность в сфере
-                  IT.
+                  Elbrus Bootcamp was founded in 2018 by Georgiy Babayan. His
+                  grandfather was a programmer who participated in the creation
+                  of the Elbrus microprocessor, hence the name of the school.
+                  Georgiy himself went through Dev Bootcamp in San Francisco in
+                  2016, one of the oldest bootcamps in America. At that time,
+                  this format of education was unheard of in Russia, while in
+                  America, it was gaining popularity in the IT industry.
                 </p>
               </div>
               <div className="col-lg-6">
                 <p>
-                  Буткемп давал возможность обучиться за 3-4 месяца тому, на что
-                  раньше требовались годы, и, следовательно, освоить новую
-                  профессию и найти работу. По возвращении Георгий решил
-                  внедрить подобный формат обучения и в России по двум
-                  направлениям — JavaScript и Data Science. Первый кампус
-                  Эльбрус Буткемп появился в Москве, затем открылся филиал в
-                  Санкт-Петербурге, а теперь обучаться можно и онлайн.
+                  Bootcamp provided the opportunity to learn in 3-4 months what
+                  previously took years, allowing individuals to acquire a new
+                  profession and find a job. Upon his return, Georgiy decided to
+                  implement a similar format of education in Russia in two
+                  directions—JavaScript and Data Science. The first Elbrus
+                  Bootcamp campus appeared in Moscow, followed by a branch in
+                  St. Petersburg, and now you can also study online.
                 </p>
               </div>
             </div>
@@ -68,12 +63,12 @@ const AboutUs = () => {
               <div className="col-lg-6 my-5 d-flex">
                 <div className="line me-4"></div>
                 <p className="ms-lg-5">
-                  В школе преподают практикующие программисты и разработчики — у
-                  каждой группы есть свои менторы и ассистенты, помогающие с
-                  любыми вопросами. Одна из ключевых ценностей Эльбрус Буткемп —
-                  growth mindset: преподаватели и сотрудники буткемпа постоянно
-                  учатся и развиваются, чтобы делиться со студентами самыми
-                  актуальными знаниями.
+                  The school is staffed by practicing programmers and
+                  developers. Each group has its mentors and assistants who help
+                  with any questions. One of the key values of Elbrus Bootcamp
+                  is the growth mindset: teachers and Bootcamp staff constantly
+                  learn and develop to share the most up-to-date knowledge with
+                  students.
                 </p>
               </div>
             </div>
@@ -81,17 +76,17 @@ const AboutUs = () => {
               <div className="  d-flex justify-content-center justify-content-lg-end  mt-4   flex-wrap gap-5">
                 <div className="box">
                   <h3 className="font-primary fw-bold">2052</h3>
-                  <p>студентов выпущено за 5 лет</p>
+                  <p>students graduated in 5 years</p>
                 </div>
                 <div className="box">
                   <h3 className="font-primary fw-bold">86%</h3>
-                  <p>студентов находят работу за 3 месяца</p>
+                  <p>of students find jobs within 3 months</p>
                 </div>
 
                 <div className="box">
                   <h3 className="font-primary fw-bold">5/5</h3>
                   <a href="#" className="text-decoration-none">
-                    Рейтинг Яндекса <i className="fa-solid fa-arrow-right"></i>
+                    Yandex Rating <i className="fa-solid fa-arrow-right"></i>
                   </a>
                 </div>
               </div>
@@ -101,20 +96,21 @@ const AboutUs = () => {
                   <div className="col-lg-6 d-flex">
                     <div className="line me-4"></div>
                     <p className="ms-lg-5">
-                      Студенты выбирают Эльбрус Буткемп за предсказуемый
-                      результат, ведь главная цель школы — трудоустройство
-                      выпускников. Так к выпуску у каждого студента есть три
-                      проекта для портфолио: индивидуальный, групповой и проект
-                      от реального заказчика, а по окончании курса всех ждет
-                      серия групповых и индивидуальных сессий с карьерными
-                      коучами. Благодаря такому подходу 93% выпускников находят
-                      работу в течение трех месяцев сразу после курсов.
+                      Students choose Elbrus Bootcamp for predictable results,
+                      as the school&apos;s main goal is the employment of
+                      graduates. Thus, each student has three portfolio projects
+                      before graduation: individual, group, and a project from a
+                      real customer. After completing the course, all students
+                      participate in a series of group and individual sessions
+                      with career coaches. Thanks to this approach, 93% of
+                      graduates find a job within three months after the
+                      courses.
                     </p>
                   </div>
                   <div className="col-lg-6 px-lg-5">
                     <p>
-                      Эльбрус Буткемп — это сильное поддерживающее коммьюнити,
-                      люди в котором продолжают общаться и после выпуска.
+                      Elbrus Bootcamp is a strong supporting community, where
+                      people continue to communicate even after graduation.
                     </p>
                   </div>
                 </div>
@@ -123,7 +119,7 @@ const AboutUs = () => {
 
             <div className="team">
               <h2 className="title text-center text-lg-start text-dark">
-                Команда
+                Team
               </h2>
               <div className="row py-4">
                 {teamMembers.map((item) => (
@@ -142,90 +138,31 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="admission-criteria">
-              <h2 className="title text-dark">Критерии зачисления</h2>
+              <h2 className="title text-dark">Admission Criteria</h2>
               <div className="row my-5">
                 <div className="col-lg-6 d-flex">
                   <div className="line me-4"></div>
                   <p className="ms-lg-5">
-                    Чтобы попасть в Эльбрус буткемп, не нужно иметь опыт в
-                    программировании или математический склад ума. Достаточно
-                    желания получить новую профессию и быть готовым осваивать
-                    большой объем новой информации.
+                    To enroll in Elbrus Bootcamp, you don&apos;t need to have
+                    programming experience or a mathematical mindset. It&apos;s
+                    enough to have the desire to gain a new profession and be
+                    ready to learn a large amount of new information.
                   </p>
                 </div>
                 <div className="col-lg-6">
                   <p>
-                    Перед поступлением будущих программистов ждет техническое
-                    интервью. Это нужно, чтобы студенты поняли, с чем им
-                    предстоит работать в ближайшие месяцы и убедились в
-                    серьезности своих намерений. Наши кураторы расскажут, как к
-                    нему подготовиться, и пришлют все необходимые материалы,
-                    которые можно и нужно использовать для подготовки.
+                    Before admission, future programmers undergo a technical
+                    interview. This is necessary for students to understand what
+                    they will be working on in the coming months and to confirm
+                    the seriousness of their intentions. Our curators will tell
+                    you how to prepare for it and provide all the necessary
+                    materials that can and should be used for preparation.
                   </p>
                 </div>
               </div>
             </div>
-            {/* <div className="qualities my-5">
-              <h2 className="font-primary text-dark">
-                Какие качества важны <br /> в будущих студентах?
-              </h2>
-              <div className="row gap-4  gap-lg-0 py-5">
-                <div className="col-lg-4">
-                  <div className="card">
-                    <div className="card-head">
-                      <img
-                        src="https://elbrusboot.camp/static/64b49ed7574c9a9c604117e920c98169/b809a/quality-1.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div className="card-content pt-3">
-                      <p className="card-name font-primary">Мотивация</p>
-                      <p className="card-desc text-dark">
-                        Вы серьезно настроены получить новую профессию и знаете,
-                        для чего вы пришли в буткемп.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4">
-                  <div className="card">
-                    <div className="card-head">
-                      <img
-                        src="https://elbrusboot.camp/static/64b49ed7574c9a9c604117e920c98169/b809a/quality-1.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div className="card-content pt-3">
-                      <p className="card-name font-primary">Мотивация</p>
-                      <p className="card-desc text-dark">
-                        Вы серьезно настроены получить новую профессию и знаете,
-                        для чего вы пришли в буткемп.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4">
-                  <div className="card">
-                    <div className="card-head">
-                      <img
-                        src="https://elbrusboot.camp/static/64b49ed7574c9a9c604117e920c98169/b809a/quality-1.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div className="card-content pt-3">
-                      <p className="card-name font-primary">Мотивация</p>
-                      <p className="card-desc text-dark">
-                        Вы серьезно настроены получить новую профессию и знаете,
-                        для чего вы пришли в буткемп.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
             <div className="">
-              <h2 className="title text-dark mb-5">Карьера</h2>
+              <h2 className="title text-dark mb-5">Career</h2>
               <div className="banner">
                 <img src={carrierImg} alt="" className="w-100 carrier-img" />
               </div>
@@ -233,25 +170,25 @@ const AboutUs = () => {
                 <div className="col-lg-6 d-flex">
                   <div className="line me-4"></div>
                   <p className="ms-lg-5">
-                    Карьерные коучи Эльбрус Буткемп помогают составить сильное
-                    резюме, прокачать софт-скиллы и научиться проходить
-                    собеседования, чтобы получить оффер мечты.
+                    Career coaches at Elbrus Bootcamp help create a strong
+                    resume, improve soft skills, and learn how to pass
+                    interviews to land the job of their dreams.
                   </p>
                 </div>
                 <div className="col-lg-6">
                   <p>
-                    Наши выпускники работают в таких крупных компаниях, как
-                    Ozon, Финам, МТС, VK и Сбер.
+                    Our graduates work in major companies such as Ozon, Finam,
+                    MTS, VK, and Sber.
                   </p>
                 </div>
               </div>
               <div className="d-flex flex-column flex-lg-row   gap-4 pb-5">
-                <button className="btn btn-gold fw-bold fs-6 px-md-5 py-3 py-md-3 rounded-4">
-                  О трудоустройстве выпускников
-                </button>
-                <button className="btn btn-outline-dark fs-6 px-md-5 py-2 py-md-3 rounded-4 border-2 ">
-                  Посмотреть Программы
-                </button>
+                <Link
+                  to={"/home2/services"}
+                  className="btn btn-outline-dark fs-6 px-md-5 py-2 py-md-3 rounded-4 border-2 "
+                >
+                  View Programs
+                </Link>
               </div>
             </div>
           </div>
