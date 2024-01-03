@@ -24,7 +24,7 @@ import {
   ProCommunity,
   Services,
   SoftwareDevelopenent,
-  TeamDetails,
+  // TeamDetails,
   DeliverySignIn,
   DeliverySignUp,
   DeliveryAdminHomeEditProfile,
@@ -112,7 +112,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/products/delivery" element={<Delivery />} />
-            <Route path="/user/:id" element={<TeamDetails />} />
+            {/* <Route path="/user/:id" element={<TeamDetails />} /> */}
             <Route path="*" element={<PageNotFound />} />
             {/* Hrms */}
             <Route path="/products/hrms" element={<Hrms />} />
