@@ -8,7 +8,7 @@ const DeliveryDocumentationLayout = ({ children }) => {
   return (
     <div className="bg-light vh-100 overflow-auto  ">
       <Navbar setshowSidebar={setshowSidebar} />
-      <div className="d-flex bg-white">
+      <div className="d-flex bg-white container-lg p-0">
         <Sidebar showSidebar={showSidebar} setshowSidebar={setshowSidebar} />
         <main className="w-100">{children}</main>
       </div>

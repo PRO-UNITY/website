@@ -62,7 +62,7 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
     <>
       <div
         className={`hrms-doc-sidebar py-4
-         bg-light border border-right ${showSidebar && "show"} `}
+         bg-light  border-end border-start ${showSidebar && "show"} `}
       >
         <div className="side-body bg-light px-3">
           <Accordion defaultActiveKey={activeHrmsdoc} activeKey={activeHrmsdoc}>

@@ -75,7 +75,7 @@ const Users = () => {
 
   return (
     <HrmsDocumentationLayout>
-      <div className="d-flex hrms-doc bg-light  ">
+      <div className="d-flex hrms-doc bg-light  w-100">
         <div className="doc-content bg-light pt-5">
           <div className="row px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
@@ -880,7 +880,6 @@ const Users = () => {
               </div>
             </div>
           </div>
-          <hr className="my-md-5" />
         </div>
         <Asaide Sidenavs={Sidenavs} scrollActive={activeSection} />
       </div>
