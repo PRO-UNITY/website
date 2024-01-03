@@ -13,7 +13,7 @@ const TeamDetails = () => {
     const user1 = teamMembers.filter((item) => item.id == id);
     setUser(user1);
   }, [id]);
-  console.log(user);
+
   return (
     <Layout>
       <div className="team-detail bg-primary py-5 h-auto">
