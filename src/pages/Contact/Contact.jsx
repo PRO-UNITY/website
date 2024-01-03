@@ -45,7 +45,7 @@ const Contact = () => {
                   className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
                   style={{ width: 55, height: 55 }}
                 >
-                  <i className="fa fa-phone-alt text-primary" />
+                  <i className="fa fa-phone-alt pro-text-primary" />
                 </div>
                 <div className="ms-4">
                   <p className="mb-2">{t("appointment.call")}</p>
@@ -57,7 +57,7 @@ const Contact = () => {
                   className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
                   style={{ width: 55, height: 55 }}
                 >
-                  <i className="fa fa-envelope-open text-primary" />
+                  <i className="fa fa-envelope-open pro-text-primary" />
                 </div>
                 <div className="ms-4">
                   <p className="mb-2">{t("appointment.message")}</p>
@@ -123,7 +123,7 @@ const Contact = () => {
                     </div>
                     <div className="col-12">
                       <button
-                        className="btn btn-primary w-100 py-3"
+                        className="btn pro-bg-primary text-light w-100 py-3"
                         type="submit"
                       >
                         {t("appointment.bookbutton")}

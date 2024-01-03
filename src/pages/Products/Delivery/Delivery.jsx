@@ -95,7 +95,7 @@ const Hrms = () => {
     <Layout>
       {" "}
       <div className="hrms">
-        <section className="hrms-hero del-hero container-fluid header bg-primary  mb-5">
+        <section className="hrms-hero del-hero container-fluid header pro-bg-primary  mb-5">
           <div className="row g-0 h-100 align-items-end flex-column flex-lg-row">
             <div className="col-lg-6 px-3 px-md-5 py-md-5  pb-4">
               <h1
@@ -107,7 +107,7 @@ const Hrms = () => {
               <p className="description text-white">
                 {t("delivery.home.description")}
               </p>
-              <a className="download-btn btn  text-decoration-none fs-5 text-primary me-3 rounded ">
+              <a className="download-btn btn  text-decoration-none fs-5 pro-text-primary me-3 rounded ">
                 {t("hrms.home.button1")}
                 <i className="fa-solid fa-arrow-right-long "></i>
               </a>
@@ -160,7 +160,7 @@ const Hrms = () => {
             </div>
           </div>
         </section>
-        <section className="platform py-2 py-md-5 container-fluid bg-primary">
+        <section className="platform py-2 py-md-5 container-fluid pro-bg-primary">
           <div className="container h-100 my-4 d-flex justify-content-center align-items-center">
             <div className="row">
               {platformData.map((item) => (
@@ -189,7 +189,7 @@ const Hrms = () => {
         </section>
 
         {/* Pricing */}
-        {/* <section className="pricing container-fluid  bg-primary py-5">
+        {/* <section className="pricing container-fluid  pro-bg-primary py-5">
      <div className="container d-flex align-items-center flex-column  flex-md-row py-5 justify-content-center gap-5">
        <div className="card p-3 p-md-5 rounded-4">
          <div className="card-head">
@@ -316,7 +316,7 @@ const Hrms = () => {
                 </div>
               </div>
               <div className="col-lg-8">
-                <div className="card unlimited bg-primary text-white unlimited rounded-4 border-0 my-3 d-flex w-100  p-5">
+                <div className="card unlimited pro-bg-primary text-white unlimited rounded-4 border-0 my-3 d-flex w-100  p-5">
                   <div className="border-bottom pb-4">
                     <a className="btn border text-white mb-2 rounded-pill ">
                       {t("hrms.pricing.cardUnlimited.subtitle")}
@@ -422,7 +422,7 @@ const Hrms = () => {
         </section>
 
         {/* Archive */}
-        {/* <div className=" hrms-archive container-fluid bg-primary servces-detail pt-5">
+        {/* <div className=" hrms-archive container-fluid pro-bg-primary servces-detail pt-5">
      <div className="head text-center text-white">
        <h5 className="subtitle">{t("hrms.archived.subtitle")}</h5>
        <h2>{t("hrms.archived.title")}</h2>
@@ -460,7 +460,7 @@ const Hrms = () => {
              className="d-inline-flex  align-items-center justify-content-center bg-light rounded-circle mb-4"
              style={{ width: 100, height: 100 }}
            >
-             <i className="fa-solid fa-computer fs-2 text-primary" />
+             <i className="fa-solid fa-computer fs-2 pro-text-primary" />
            </div>
          </div>
          <div className="card-body text-center">
@@ -478,7 +478,7 @@ const Hrms = () => {
                className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                style={{ width: 100, height: 100 }}
              >
-               <i className="fa-solid fa-computer fs-2 text-primary" />
+               <i className="fa-solid fa-computer fs-2 pro-text-primary" />
              </div>
            </div>
            <div className="card-body text-center">
@@ -495,7 +495,7 @@ const Hrms = () => {
                className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                style={{ width: 100, height: 100 }}
              >
-               <i className="fa-solid fa-computer fs-2 text-primary" />
+               <i className="fa-solid fa-computer fs-2 pro-text-primary" />
              </div>
            </div>
            <div className="card-body text-center">
@@ -509,7 +509,7 @@ const Hrms = () => {
      </div>
    </section> */}
         {/* Feedback */}
-        {/* <section className="feedback container-fluid bg-primary servces-detail my-5 py-3  pt-md-5">
+        {/* <section className="feedback container-fluid pro-bg-primary servces-detail my-5 py-3  pt-md-5">
      <div className="head text-center text-white">
        <h5 className="subtitle">{t("hrms.feedback.subtitle")}</h5>
        <h1 className="mx-auto w-100" style={{ maxWidth: "800px" }}>
@@ -609,7 +609,7 @@ const Hrms = () => {
        <img src={home_slider} alt="phone-img" />
        <img src={home_slider} alt="phone-img" />
      </div>
-     <div className="container bg-primary rounded-4  d-flex align-items-center justify-content-center">
+     <div className="container pro-bg-primary rounded-4  d-flex align-items-center justify-content-center">
        <div className="head text-center text-white">
          <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
          <h2>{t("hrms.pricing.pricingCardText")}</h2>

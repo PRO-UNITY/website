@@ -8,7 +8,7 @@ const Products = () => {
         <div className="d-flex gap-5 flex-wrap">
           <Link
             to={"/products/hrms"}
-            className="card bg-primary  text-decoration-none border-0 p-4 text-light"
+            className="card pro-bg-primary  text-decoration-none border-0 p-4 text-light"
             style={{ width: "25rem" }}
           >
             <div className="card-head">
@@ -21,7 +21,7 @@ const Products = () => {
           </Link>
           <Link
             to={"/products/delivery"}
-            className="card bg-primary border-0 text-decoration-none  p-4 text-light"
+            className="card pro-bg-primary border-0 text-decoration-none  p-4 text-light"
             style={{ width: "25rem" }}
           >
             <div className="card-head">

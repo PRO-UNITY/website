@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 const OurTeam = ({ id, name, occupation, image, socialLinks }) => {
-  
   return (
     <div
       className="col-lg-3 col-md-6 wow cursor fadeInUp"
@@ -17,7 +16,7 @@ const OurTeam = ({ id, name, occupation, image, socialLinks }) => {
               alt={"team-img"}
             />
           </div>
-          <div className="team-text bg-primary text-center p-4">
+          <div className="team-text pro-bg-primary text-center p-4">
             <h5 className="text-white">{name}</h5>
             <p className="text-white">{occupation}</p>
             <div className="team-social text-center">

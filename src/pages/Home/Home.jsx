@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <Layout>
       {/* Header Start */}
-      <section className=" container-fluid header bg-primary p-0 mb-5">
+      <section className=" container-fluid header pro-bg-primary p-0 mb-5">
         <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
           <div className="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
             <h1
@@ -109,24 +109,24 @@ const Home = () => {
               <h1 className="mb-4">{t("herosection.title")}</h1>
               <p>{t("aboutsection.text")}</p>
               <p>
-                <i className="far fa-check-circle text-primary me-3" />
+                <i className="far fa-check-circle pro-text-primary me-3" />
                 {t("aboutsection.list1")}
               </p>
               <p>
-                <i className="far fa-check-circle text-primary me-3" />
+                <i className="far fa-check-circle pro-text-primary me-3" />
                 {t("aboutsection.list2")}
               </p>
               <p>
-                <i className="far fa-check-circle text-primary me-3" />
+                <i className="far fa-check-circle pro-text-primary me-3" />
                 {t("aboutsection.list3")}
               </p>
               <p>
-                <i className="far fa-check-circle text-primary me-3" />
+                <i className="far fa-check-circle pro-text-primary me-3" />
                 {t("aboutsection.list4")}
               </p>
               <Link
                 to={"/about"}
-                className="btn btn-primary rounded-pill py-3 px-5 mt-3"
+                className="btn pro-bg-primary rounded-pill text-light py-3 px-5 mt-3"
               >
                 {t("aboutsection.morebutton")}
               </Link>
@@ -230,7 +230,7 @@ const Home = () => {
       {/* Partners End */}
 
       {/* Feature Start */}
-      <div className="container-fluid bg-primary overflow-hidden mt-5 px-lg-0">
+      <div className="container-fluid pro-bg-primary overflow-hidden mt-5 px-lg-0">
         <div className="container-xxl feature px-lg-0">
           <div className="row g-0 mx-lg-0">
             <div
@@ -252,7 +252,7 @@ const Home = () => {
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
                         style={{ width: 50, height: 50 }}
                       >
-                        <i className="fa fa-user-md text-primary" />
+                        <i className="fa fa-user-md pro-text-primary" />
                       </div>
                       <div className="ms-2">
                         <p className="text-white m-0">
@@ -270,7 +270,7 @@ const Home = () => {
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
                         style={{ width: 50, height: 50 }}
                       >
-                        <i className="fa fa-check text-primary" />
+                        <i className="fa fa-check pro-text-primary" />
                       </div>
                       <div className="ms-2">
                         <p className="text-white m-0">
@@ -288,7 +288,7 @@ const Home = () => {
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
                         style={{ width: 50, height: 50 }}
                       >
-                        <i className="fa fa-comment-medical text-primary" />
+                        <i className="fa fa-comment-medical pro-text-primary" />
                       </div>
                       <div className="ms-2">
                         <p className="text-white m-0">
@@ -306,7 +306,7 @@ const Home = () => {
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
                         style={{ width: 50, height: 50 }}
                       >
-                        <i className="fa fa-headphones text-primary" />
+                        <i className="fa fa-headphones pro-text-primary" />
                       </div>
                       <div className="ms-2">
                         <p className="text-white m-0">
@@ -409,7 +409,7 @@ const Home = () => {
                     className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
                     style={{ width: 55, height: 55 }}
                   >
-                    <i className="fa fa-phone-alt text-primary" />
+                    <i className="fa fa-phone-alt pro-text-primary" />
                   </div>
                   <div className="ms-2 ms-md-5">
                     <p className="mb-2">{t("appointment.call")}</p>
@@ -428,7 +428,7 @@ const Home = () => {
                     className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
                     style={{ width: 55, height: 55 }}
                   >
-                    <i className="fa fa-envelope-open text-primary" />
+                    <i className="fa fa-envelope-open pro-text-primary" />
                   </div>
                   <div className="ms-2 ms-md-5">
                     <p className="mb-2">{t("appointment.message")}</p>
@@ -495,7 +495,7 @@ const Home = () => {
                     </div>
                     <div className="col-12">
                       <button
-                        className="btn btn-primary w-100 py-3"
+                        className="btn pro-bg-primary text-light w-100 py-3"
                         type="submit"
                       >
                         {t("appointment.bookbutton")}

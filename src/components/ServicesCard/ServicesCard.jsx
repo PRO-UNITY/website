@@ -8,12 +8,12 @@ const ServicesCard = ({ title, description }) => {
           className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
           style={{ width: 65, height: 65 }}
         >
-          <i className="fa-solid fa-computer fs-4 text-primary" />
+          <i className="fa-solid fa-computer fs-4 pro-text-primary" />
         </div>
         <h4 className="mb-3">{title}</h4>
         <p className="mb-4">{description}</p>
         <a className="btn bg-light" href>
-          <i className="fa fa-plus text-primary me-3" />
+          <i className="fa fa-plus pro-text-primary me-3" />
           Reafd
         </a>
       </div>

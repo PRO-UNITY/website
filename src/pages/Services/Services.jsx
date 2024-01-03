@@ -32,7 +32,7 @@ const Services = () => {
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
                 >
-                  <i className="fa-solid fa-computer fs-4 text-primary" />
+                  <i className="fa-solid fa-computer fs-4 pro-text-primary " />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice1.title")}
@@ -46,7 +46,7 @@ const Services = () => {
                   className="btn bg-light"
                   href
                 >
-                  <i className="fa fa-plus text-primary me-3" />
+                  <i className="fa fa-plus pro-text-primary  me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -61,7 +61,7 @@ const Services = () => {
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
                 >
-                  <i className="fa-solid fa-school text-primary fs-4" />
+                  <i className="fa-solid fa-school pro-text-primary  fs-4" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice2.title")}
@@ -71,7 +71,7 @@ const Services = () => {
                   ...
                 </p>
                 <Link to={"/services/IT-school"} className="btn bg-light" href>
-                  <i className="fa fa-plus text-primary me-3" />
+                  <i className="fa fa-plus pro-text-primary  me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -86,7 +86,7 @@ const Services = () => {
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
                 >
-                  <i className="fa-solid fa-diagram-successor text-primary fs-4" />
+                  <i className="fa-solid fa-diagram-successor pro-text-primary  fs-4" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice3.title")}
@@ -100,7 +100,7 @@ const Services = () => {
                   className="btn bg-light"
                   href
                 >
-                  <i className="fa fa-plus text-primary me-3" />
+                  <i className="fa fa-plus pro-text-primary  me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -115,7 +115,7 @@ const Services = () => {
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
                 >
-                  <i className="fa-solid fa-briefcase text-primary fs-4" />
+                  <i className="fa-solid fa-briefcase pro-text-primary  fs-4" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice4.title")}
@@ -125,7 +125,7 @@ const Services = () => {
                   ...
                 </p>
                 <Link to={"/services/coworking"} className="btn bg-light" href>
-                  <i className="fa fa-plus text-primary me-3" />
+                  <i className="fa fa-plus pro-text-primary  me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -140,7 +140,7 @@ const Services = () => {
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
                 >
-                  <i className="fa-brands fa-sourcetree text-primary fs-4" />
+                  <i className="fa-brands fa-sourcetree pro-text-primary  fs-4" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice5.title")}
@@ -150,7 +150,7 @@ const Services = () => {
                   ...
                 </p>
                 <Link to={"/services/opencourse"} className="btn bg-light" href>
-                  <i className="fa fa-plus text-primary me-3" />
+                  <i className="fa fa-plus pro-text-primary  me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -165,7 +165,7 @@ const Services = () => {
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
                 >
-                  <i className="fa-solid fa-people-group text-primary fs-4" />
+                  <i className="fa-solid fa-people-group pro-text-primary  fs-4" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice6.title")}
@@ -179,7 +179,7 @@ const Services = () => {
                   className="btn bg-light pl-5"
                   href
                 >
-                  <i className="fa fa-plus text-primary me-3" />
+                  <i className="fa fa-plus pro-text-primary  me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>

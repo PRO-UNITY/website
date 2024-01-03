@@ -5,6 +5,14 @@
 ul {
   list-style: none;
 }
+.btn-outline-primary {
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+}
+.btn-outline-primary:hover {
+  background: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
 .hrms .download-btn,
 .hrms .download-btn:hover {
   background: var(--secondary);

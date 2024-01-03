@@ -1,12 +1,18 @@
 /********** Template CSS **********/
 :root {
-  --primary: #0463fa;
+  --primary: #3833cc;
   --light: #eff5ff;
   --dark: #1b2c51;
   --secondary: yellow;
 }
 html {
   overscroll-behavior: none;
+}
+.pro-bg-primary {
+  background: var(--primary) !important;
+}
+.pro-text-primary {
+  color: var(--primary) !important;
 }
 .fw-medium {
   font-weight: 500 !important;

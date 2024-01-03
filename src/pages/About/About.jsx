@@ -35,19 +35,19 @@ const About = () => {
               <h1 className="mb-4">{t("herosection.title")}</h1>
               <p>{t("aboutsection.text")}</p>
               <p>
-                <i className="far fa-check-circle text-primary me-3" />
+                <i className="far fa-check-circle pro-text-primary  me-3" />
                 {t("aboutsection.list1")}
               </p>
               <p>
-                <i className="far fa-check-circle text-primary me-3" />
+                <i className="far fa-check-circle pro-text-primary  me-3" />
                 {t("aboutsection.list2")}
               </p>
               <p>
-                <i className="far fa-check-circle text-primary me-3" />
+                <i className="far fa-check-circle pro-text-primary  me-3" />
                 {t("aboutsection.list3")}
               </p>
               <p>
-                <i className="far fa-check-circle text-primary me-3" />
+                <i className="far fa-check-circle pro-text-primary  me-3" />
                 {t("aboutsection.list4")}
               </p>
             </div>

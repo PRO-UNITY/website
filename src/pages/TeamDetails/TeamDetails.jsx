@@ -16,7 +16,7 @@ const TeamDetails = () => {
 
   return (
     <Layout>
-      <div className="team-detail bg-primary py-5 h-auto">
+      <div className="team-detail pro-bg-primary py-5 h-auto">
         <div className="container">
           <div className="row">
             <div className="col-lg-5">

@@ -19,7 +19,7 @@ const AuthorizedTutorial = () => {
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 150, height: 150 }}
                 >
-                  <i className="fa-solid fa-diagram-successor text-primary fs-4" />
+                  <i className="fa-solid fa-diagram-successor pro-text-primary  fs-4" />
                 </div>
               </div>
               <div className="col-lg-8">

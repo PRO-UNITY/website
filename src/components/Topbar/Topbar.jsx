@@ -13,11 +13,11 @@ const Topbar = () => {
             href="https://maps.app.goo.gl/oz5im3ic1GM48FfL6"
             className="h-100 d-inline-flex align-items-center py-3 me-4 text-decoration-none text-dark"
           >
-            <small className="fa fa-map-marker-alt text-primary me-2" />
+            <small className="fa fa-map-marker-alt pro-text-primary me-2" />
             <small>{t("topbar.location")}</small>
           </a>
           <div className="h-100 d-inline-flex align-items-center py-3">
-            <small className="far fa-clock text-primary me-2" />
+            <small className="far fa-clock pro-text-primary me-2" />
             <small>{t("topbar.time")}</small>
           </div>
         </div>
@@ -26,7 +26,7 @@ const Topbar = () => {
             href="tel:+998-33-899-50-00"
             className="h-100 d-inline-flex align-items-center py-3 me-4 text-decoration-none text-dark"
           >
-            <small className="fa fa-phone-alt text-primary me-2" />
+            <small className="fa fa-phone-alt pro-text-primary me-2" />
             <small>+998 33 899 50 00</small>
           </a>
           <div className="h-100 d-inline-flex align-items-center">
@@ -35,7 +35,7 @@ const Topbar = () => {
                 key={item.id}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-decoration-none btn-sm-square rounded-circle bg-white text-primary me-1"
+                className="text-decoration-none btn-sm-square rounded-circle bg-white pro-text-primary me-1"
                 href={item.link}
               >
                 <img width={16} src={item.icon} alt="" />

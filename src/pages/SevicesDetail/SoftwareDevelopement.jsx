@@ -18,7 +18,7 @@ const SoftwareDevelopenent = () => {
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 150, height: 150 }}
                 >
-                  <i className="fa-solid fa-computer fs-2 text-primary" />
+                  <i className="fa-solid fa-computer fs-2 pro-text-primary" />
                 </div>
               </div>
               <div className="col-lg-8">
