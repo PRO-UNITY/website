@@ -27,7 +27,7 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-5">
+              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
                 <div
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
@@ -56,7 +56,7 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-5">
+              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
                 <div
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
@@ -81,7 +81,7 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-5">
+              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
                 <div
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
@@ -110,7 +110,7 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-5">
+              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
                 <div
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
@@ -135,7 +135,7 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-5">
+              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
                 <div
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}
@@ -160,7 +160,7 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-5">
+              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
                 <div
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
                   style={{ width: 65, height: 65 }}

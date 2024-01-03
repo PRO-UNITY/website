@@ -220,6 +220,7 @@ p {
     visibility: hidden;
     transition: 0.5s;
   }
+
   .navbar .nav-item:hover .dropdown-menu {
     top: 100%;
     visibility: visible;
@@ -297,6 +298,10 @@ p {
   }
   .img-partner {
     opacity: 1;
+  }
+  .img-lider:hover {
+    box-shadow: 0 0 0 20px rgba(0, 8, 255, 0.616);
+    transition: 500ms;
   }
 
   @keyframes pulsing2 {

@@ -57,7 +57,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-sm-4">
-                <div className="border-start border-light ps-4">
+                <div className="border-start  border-md-1  border-light ps-4">
                   <h2 className="text-white mb-1" data-toggle="counter-up">
                     120
                   </h2>
@@ -102,7 +102,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div className="col-lg-6 wow fadeIn ps-5" data-wow-delay="0.5s">
               <p className="d-inline-block border rounded-pill py-1 px-4">
                 {t("aboutsection.aboutbutton")}
               </p>
@@ -246,7 +246,7 @@ const Home = () => {
                   {t("featuresection.text")}
                 </p>
                 <div className="row g-4">
-                  <div className="col-6">
+                  <div className="col-md-6">
                     <div className="d-flex align-items-center">
                       <div
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
@@ -264,7 +264,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-6">
+                  <div className="col-md-6">
                     <div className="d-flex align-items-center">
                       <div
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
@@ -282,7 +282,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-6">
+                  <div className="col-md-6">
                     <div className="d-flex align-items-center">
                       <div
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
@@ -300,7 +300,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-6">
+                  <div className="col-md-6">
                     <div className="d-flex align-items-center">
                       <div
                         className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
@@ -343,8 +343,8 @@ const Home = () => {
       <div className="back">
         <div className="container-xxl pt-3">
           <div className="container pt-3">
-            <div className="row w-100 align-items-center pt-3 g-5 body-video">
-              <div className="col-lg-6">
+            <div className="row w-100 align-items-center pt-3 g-lg-5 body-video">
+              <div className="col-lg-6 text-center text-lg-start">
                 <div>
                   <h1 className="display-4 text-white mb-5">
                     {t("blogSection.title")}

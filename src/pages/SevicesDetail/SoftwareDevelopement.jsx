@@ -12,7 +12,7 @@ const SoftwareDevelopenent = () => {
       <div className="container-xxl servces-detail py-5">
         <div className="container ">
           <div className=" wow fadeInUp" data-wow-delay="0.1s">
-            <div className="service-item row bg-white rounded h-100 p-5">
+            <div className="service-item row bg-white rounded h-100 p-4 p-md-5">
               <div className="col-lg-4 d-flex align-items-center justify-content-center">
                 <div
                   className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
