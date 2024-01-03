@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ setshowSidebar }) => {
   return (
-    <div className="hrms-doc-navbar bg-light   border-bottom">
+    <div className="hrms-doc-navbar bg-white   border-bottom">
       <div className=" container-lg d-flex flex-column flex-md-row gap-3 align-items-center  justify-content-between  py-3">
         <i
           className="fa-solid fa-bars position-absolute top-0 start-0 m-3 my-4 "
@@ -12,17 +12,19 @@ const Navbar = ({ setshowSidebar }) => {
         <div className="hrms-doc-navbar-logo">
           <h4>Hrms</h4>
         </div>
-        <div className="searchbar">
+        <div className="searchbar border border-dark  rounded-3">
           <i className="fa-solid fa-magnifying-glass"></i>
           <input
             type="text"
             placeholder="Search docs..."
-            className="px-2 py-1"
+            className="px-2 "
           />
         </div>
         <div className="auth">
-          <Link className="mx-3 btn fw-semibold">Sign in</Link>
-          <Link className="btn btn-primary rounded-1 px-3 fw-semibold">
+          <Link className="mx-3 btn btn-outline-dark rounded-3 border-2 py-1 fw-semibold">
+            Sign in
+          </Link>
+          <Link className="btn btn-gold rounded-1 px-3 fw-semibold">
             Get Started
           </Link>
         </div>

@@ -2,11 +2,14 @@
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
+.hrms-doc {
+  background: rgb(248, 246, 252) !important ;
+}
 .hrms-doc-sidebar {
   position: relative;
   min-width: 250px;
-  z-index: 9999;
   top: 0;
+  background: rgb(248, 246, 252) !important ;
 }
 .accordion .accordion-item {
   background: transparent;
@@ -16,7 +19,7 @@
   padding: 7px 20px !important;
 }
 .hrms-doc-navbar {
-  z-index: 9999;
+  z-index: 99999;
 }
 .hrms-doc-navbar .searchbar {
   border: 1px solid #ccc;
@@ -47,6 +50,7 @@
   max-width: 230px;
   width: 100%;
   width: 100vh;
+  background: rgb(248, 246, 252) !important ;
 }
 .hrms-doc-asaide a {
   font-size: 14px;
@@ -100,24 +104,6 @@
   width: 100%;
 }
 
-.sidenote .box {
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
-  margin-bottom: 12px;
-  margin-top: 24px;
-}
-.sidenote .box .title {
-  background: rgb(219, 219, 219);
-  font-weight: 500;
-  color: rgb(76, 76, 76);
-  letter-spacing: 0.01em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-}
 .sidenote .s2 {
   color: rgb(0, 150, 35);
 }

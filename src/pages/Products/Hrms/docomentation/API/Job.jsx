@@ -152,8 +152,8 @@ const Job = () => {
 
   return (
     <HrmsDocumentationLayout>
-      <div className="d-flex hrms-doc bg-light  ">
-        <div className="doc-content w-100 bg-light pt-5">
+      <div className="d-flex hrms-doc   ">
+        <div className="doc-content w-100  pt-5">
           <div className="row px-2 px-lg-5 mx-lg-5 ">
             <div className="col-xl-6">
               <h1 className="text-primary mt-4">Jobs</h1>
@@ -299,7 +299,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -381,7 +383,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -463,7 +467,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -546,7 +552,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -627,7 +635,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -948,7 +958,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1025,7 +1037,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1183,7 +1197,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1336,7 +1352,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1412,7 +1430,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1489,7 +1509,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1566,7 +1588,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1643,7 +1667,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1832,7 +1858,9 @@ const Job = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-primary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>

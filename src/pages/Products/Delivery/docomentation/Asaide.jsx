@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
 import "./Documentation.css";
 const Asaide = ({ Sidenavs, scrollActive }) => {
-  
   return (
     <>
       <div
         style={{ overflow: "auto" }}
-        className={`hrms-doc-asaide border position-relative border-left bg-light   ps-5`}
+        className={`hrms-doc-asaide border position-relative border-left    ps-5`}
       >
         <div className="  pt-5">
           <h5 className="h6 m-0 fw-bold text-uppercase ">One This Page</h5>

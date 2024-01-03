@@ -41,17 +41,17 @@ const Sidenavs = [
       },
     ],
   },
-  {
-    id: 2,
-    title: "Test",
-    child: [
-      {
-        id: "create-user",
-        name: "Test",
-        path: "",
-      },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   title: "Test",
+  //   child: [
+  //     {
+  //       id: "create-user",
+  //       name: "Test",
+  //       path: "",
+  //     },
+  //   ],
+  // },
 ];
 
 // eslint-disable-next-line react/prop-types
@@ -71,9 +71,9 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
     <>
       <div
         className={`hrms-doc-sidebar py-4
-         bg-light border border-right ${showSidebar && "show"} `}
+          border border-right ${showSidebar && "show"} `}
       >
-        <div className="side-body bg-light px-3">
+        <div className="side-body  px-3">
           <Accordion activeKey={activeHrmsdoc}>
             {Sidenavs.map((item) => (
               <Accordion.Item
@@ -83,14 +83,14 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
                 onClick={() => setActiveHrmsdoc(item.id)}
               >
                 <Accordion.Header>
-                  <h5 className="fs-6 m-0">{item.title}</h5>
+                  <h5 className="fs-5 m-0">{item.title}</h5>
                 </Accordion.Header>
                 <Accordion.Body>
                   {item.child.map((link) => (
                     <Link
                       key={link.id}
                       to={link.path}
-                      className={`d-block  text-decoration-none ${
+                      className={`d-block fs-6  text-decoration-none ${
                         pathname === link.path
                           ? "text-primary fw-semibold"
                           : "text-dark"

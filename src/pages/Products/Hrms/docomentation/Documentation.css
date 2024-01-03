@@ -1,14 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@font-face {
+  font-family: "Rf-Rosefin";
+  src: url("/public/Fonts/rf-rostin-regular.otf");
+}
+:root {
+  --color-primary: rgb(69, 32, 171);
+}
+.products-doc {
+  font-family: "Inter", sans-serif;
+}
+.bg-section-prymary {
+  background-color: var(--color-primary);
+}
+.products-doc .text-primary {
+  color: var(--color-primary) !important;
+}
+.products-doc h1,
+.products-doc h2,
+.products-doc h5 {
+  font-family: "Rf-Rosefin";
+  font-weight: 600;
+}
+.products-doc .btn {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Rf-Rosefin";
+  text-transform: uppercase;
+  z-index: 999999;
+}
+.products-doc .btn-gold {
+  background: rgb(255, 188, 91);
+  border: 1px solid rgb(255, 188, 91);
+}
+.products-doc .btn-gold:hover {
+  background: rgb(247, 169, 60);
+}
+
 .hrms-doc .row {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
+.hrms-doc {
+  background: rgb(248, 246, 252) !important ;
+}
 .home ul {
   list-style: outside;
 }
+
 .hrms-doc-sidebar {
   position: relative;
   min-width: 250px;
   z-index: 9999;
+  background: rgb(248, 246, 252) !important ;
 }
 .list-link {
   color: rgb(0, 0, 0) !important;
@@ -25,12 +68,15 @@
 }
 .hrms-doc-navbar {
   z-index: 9999;
+  filter: drop-shadow(rgba(103, 102, 131, 0.12) 0px 4px 8px);
+  
+  display: flex;
+  align-items: center;
 }
 .hrms-doc-navbar .searchbar {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 500px;
-  padding: 5px 10px;
 }
 .hrms-doc-navbar .searchbar input {
   background: transparent;
@@ -59,6 +105,7 @@
 .hrms-doc-asaide {
   max-width: 230px;
   width: 100%;
+  background: rgb(248, 246, 252) !important ;
 }
 .hrms-doc-asaide a {
   font-size: 14px;

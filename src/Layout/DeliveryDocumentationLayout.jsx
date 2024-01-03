@@ -6,7 +6,10 @@ import Sidebar from "../pages/Products/Delivery/docomentation/Sidebar";
 const DeliveryDocumentationLayout = ({ children }) => {
   const [showSidebar, setshowSidebar] = useState(false);
   return (
-    <div className="bg-light vh-100 overflow-auto  ">
+    <div
+      className=" vh-100 overflow-auto products-doc "
+      style={{ background: "rgb(248, 246, 252)" }}
+    >
       <Navbar setshowSidebar={setshowSidebar} />
       <div className="d-flex bg-white container-lg p-0">
         <Sidebar showSidebar={showSidebar} setshowSidebar={setshowSidebar} />
