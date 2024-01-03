@@ -57,7 +57,6 @@ const Layout2 = ({ children }) => {
   const { t } = useTranslation();
   const [navListShow, setNavListShow] = useState(false);
   const { pathname } = useLocation();
-  console.log(pathname);
   return (
     <div className="home2">
       {/* Navbar */}
@@ -155,12 +154,15 @@ const Layout2 = ({ children }) => {
                   <div className="dropdown-item border-top ">
                     <ul className="p-0">
                       <li>
-                        <Link to={"/products/hrms"} className="nav-link">
+                        <Link to={"/home2/products2/hrms"} className="nav-link">
                           Hrms
                         </Link>
                       </li>
                       <li>
-                        <Link to={"/products/delivery"} className="nav-link">
+                        <Link
+                          to={"/home2/products2/delivery"}
+                          className="nav-link"
+                        >
                           Delivery
                         </Link>
                       </li>

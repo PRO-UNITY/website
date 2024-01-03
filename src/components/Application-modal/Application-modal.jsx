@@ -47,7 +47,11 @@ const ApplicationModal = ({ btn }) => {
                 ></textarea>
               </div>
               <div className="d-flex justify-content-center">
-                <button onClick={sendMessage} className="btn btn-gold ">
+                <button
+                  type="button"
+                  onClick={sendMessage}
+                  className="btn btn-gold "
+                >
                   Send Mesage
                 </button>
               </div>

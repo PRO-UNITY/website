@@ -518,58 +518,52 @@ const Home2 = () => {
         <section className="faq py-5">
           <div className="container">
             <h2 className="font-primary pb-3 title">F.A.Q.</h2>
-            <div className="card mt-5 rounded-4 border-0">
+            <div className="card mt-3 rounded-4 border-0">
               <div className="row">
                 <div className="col-lg-6">
                   <h5 className="fw-normal">
-                    Основатель буткемпа Георгий Бабаян разбирает ваши самые
-                    популярные вопросы.
+                    Bootcamp founder Georgiy Babayan answers your most
+                    frequently asked questions.
                   </h5>
                   <ul className="p-0 mt-4 d-none d-lg-block">
                     <li className="d-flex mb-2 gap-2 align-items-center">
                       <div className="check">
                         <i className="fa-solid fa-check"></i>
                       </div>
-                      Почему JavaScript?
+                      Why JavaScript?
                     </li>
                     <li className="d-flex mb-2 gap-2 align-items-center">
                       <div className="check">
                         <i className="fa-solid fa-check"></i>
                       </div>
-                      Какие есть направления в обучении?
+                      What learning directions are available?
                     </li>
                     <li className="d-flex mb-2 gap-2 align-items-center">
                       <div className="check">
                         <i className="fa-solid fa-check"></i>
                       </div>
-                      Кто преподает в Эльбрус Буткемп?
+                      Who teaches at Elbrus Bootcamp?
                     </li>
                     <li className="d-flex mb-2 gap-2 align-items-center">
                       <div className="check">
                         <i className="fa-solid fa-check"></i>
                       </div>
-                      Как строится обучение?
+                      How is the training structured?
                     </li>
                     <li className="d-flex mb-2 gap-2 align-items-center">
                       <div className="check">
                         <i className="fa-solid fa-check"></i>
                       </div>
-                      Какие есть варианты оплаты?
+                      What are the payment options?
                     </li>
                     <li className="d-flex mb-2 gap-2 align-items-center">
                       <div className="check">
                         <i className="fa-solid fa-check"></i>
                       </div>
-                      Легко ли найти работу после обучения в Эльбрус Буткемп?
+                      Is it easy to find a job after training at Elbrus
+                      Bootcamp?
                     </li>
                   </ul>
-                  <Link
-                    to={"/"}
-                    className="text-primary text-decoration-none d-block pt-3"
-                  >
-                    Страница ответов на другие вопросы{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </Link>
                 </div>
                 <div className="col-lg-6 pt-2">
                   <div className="position-relative">

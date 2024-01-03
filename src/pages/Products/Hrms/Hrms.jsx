@@ -393,9 +393,9 @@ const Hrms = () => {
             centeredSlides
             loop
             spaceBetween={30}
-            autoplay={{
-              delay: 2500,
-            }}
+            // autoplay={{
+            //   delay: 2500,
+            // }}
             className="mySwiper "
             modules={[Autoplay]}
           >

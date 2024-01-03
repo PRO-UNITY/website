@@ -10,14 +10,14 @@ const servicesData = [
     id: 1,
     img: Hrms,
     name: "Hrms",
-    path: "/products/hrms",
+    path: "/home2/products2/hrms",
     desc: "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management. Explore the future of workforce optimization with our innovative solution",
   },
   {
     id: 2,
     img: Delivery,
     name: "Delivery",
-    path: "/products/delivery",
+    path: "/home2/products2/delivery",
     desc: "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟.",
   },
 ];

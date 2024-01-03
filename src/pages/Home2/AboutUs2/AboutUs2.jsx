@@ -82,13 +82,6 @@ const AboutUs = () => {
                   <h3 className="font-primary fw-bold">86%</h3>
                   <p>of students find jobs within 3 months</p>
                 </div>
-
-                <div className="box">
-                  <h3 className="font-primary fw-bold">5/5</h3>
-                  <a href="#" className="text-decoration-none">
-                    Yandex Rating <i className="fa-solid fa-arrow-right"></i>
-                  </a>
-                </div>
               </div>
               <div className="">
                 <img className="banner" src={TeamImg} alt="" />

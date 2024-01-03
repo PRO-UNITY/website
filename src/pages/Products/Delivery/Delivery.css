@@ -100,7 +100,7 @@ ul {
   justify-content: center;
   overflow: hidden;
 }
-.delivery .carusel .swiper-slide {
+/* .delivery .carusel .swiper-slide {
   background: transparent;
 }
 .delivery .carusel .swiper-slide img {
@@ -125,7 +125,7 @@ ul {
   height: 95%;
   object-fit: cover;
   border-radius: 20px;
-}
+} */
 .pricing .unlimited .start-btn {
   background: var(--secondary);
 }
