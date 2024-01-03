@@ -7,7 +7,7 @@
   --color-primary: rgb(69, 32, 171);
 }
 .products-doc {
-  font-family: "Inter", sans-serif;
+  font-family: "Rf-Rosefin";
 }
 .bg-section-prymary {
   background-color: var(--color-primary);
@@ -69,7 +69,7 @@
 .hrms-doc-navbar {
   z-index: 9999;
   filter: drop-shadow(rgba(103, 102, 131, 0.12) 0px 4px 8px);
-  
+
   display: flex;
   align-items: center;
 }
@@ -106,6 +106,7 @@
   max-width: 230px;
   width: 100%;
   background: rgb(248, 246, 252) !important ;
+  overflow-y: auto;
 }
 .hrms-doc-asaide a {
   font-size: 14px;

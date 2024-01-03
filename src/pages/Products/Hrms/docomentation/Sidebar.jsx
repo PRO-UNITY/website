@@ -48,6 +48,7 @@ const Sidenavs = [
 const Sidebar = ({ showSidebar, setshowSidebar }) => {
   const { pathname } = useLocation();
   const { activeHrmsdoc, setActiveHrmsdoc } = useContext(ActiveNavContext);
+  console.log(activeHrmsdoc);
   useEffect(() => {
     Sidenavs.map((item) =>
       item.child.map((e) => {
@@ -65,7 +66,7 @@ const Sidebar = ({ showSidebar, setshowSidebar }) => {
            border-end border-start ${showSidebar && "show"} `}
       >
         <div className="side-body  px-3">
-          <Accordion defaultActiveKey={activeHrmsdoc} activeKey={activeHrmsdoc}>
+          <Accordion defaultActiveKey={1}>
             {Sidenavs.map((item) => (
               <Accordion.Item
                 eventKey={item.id}

@@ -402,14 +402,14 @@ const Home = () => {
               <p className="mb-4">{t("appointment.text")}</p>
               <a
                 href="tel:+998-33-899-50-00 "
-                className="text-decoration-none text-dark"
+                className="text-decoration-none text-white"
               >
-                <div className="bg-light rounded  d-flex align-items-center py-4 px-2 px-md-5 py-md-5 mb-4">
+                <div className="bg-white rounded contact-card  d-flex align-items-center py-4 px-2 px-md-5 py-md-5 mb-4">
                   <div
-                    className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle border border-white"
                     style={{ width: 55, height: 55 }}
                   >
-                    <i className="fa fa-phone-alt pro-text-primary" />
+                    <i className="fa fa-phone-alt text-white  " />
                   </div>
                   <div className="ms-2 ms-md-5">
                     <p className="mb-2">{t("appointment.call")}</p>
@@ -421,14 +421,14 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="mailto:prounity.uz@gmail.com"
-                className="text-decoration-none text-dark"
+                className="text-decoration-none text-white"
               >
-                <div className="bg-light rounded d-flex align-items-center py-4 px-2 px-md-5 py-md-5">
+                <div className="bg-white contact-card  rounded d-flex align-items-center py-4 px-2 px-md-5 py-md-5">
                   <div
-                    className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                    className="d-flex  flex-shrink-0 align-items-center justify-content-center rounded-circle border border-white"
                     style={{ width: 55, height: 55 }}
                   >
-                    <i className="fa fa-envelope-open pro-text-primary" />
+                    <i className="fa fa-envelope-open text-white" />
                   </div>
                   <div className="ms-2 ms-md-5">
                     <p className="mb-2">{t("appointment.message")}</p>

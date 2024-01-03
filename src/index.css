@@ -398,11 +398,17 @@ p {
 .bootstrap-datetimepicker-widget table td.today::before {
   border-bottom-color: var(--primary);
 }
+.contact .contact-card {
+  background: var(--primary) !important;
+  border-radius: 12px !important;
+}
+
 @media (max-width: 425px) {
   .contact h5 {
     font-size: 1rem;
   }
 }
+
 /*** Footer ***/
 .footer .btn.btn-social {
   margin-right: 5px;
