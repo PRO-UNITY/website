@@ -60,7 +60,7 @@ import { useState } from "react";
 import DeliveryHome from "./pages/Products/Delivery/admin/Delivery-home/Delivery-home";
 import HrmsCalendar from "./pages/Products/Hrms/admin/Hrms-calendar/HrmsCalendar";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
-import Home2 from "./pages/Home2/Home2";
+// import Home2 from "./pages/Home2/Home2";
 // const optimizely = createInstance({
 //   sdkKey: "YOUR_OPTIMIZELY_SDK_KEY", // Optimizely SDK key
 // });
@@ -84,7 +84,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             {/* Home2 */}
-            <Route path="/home2" element={<Home2 />} />
+            {/* <Route path="/home2" element={<Home2 />} /> */}
             {/* <Route path="/home2/about2" element={<About2 />} />
             <Route path="/home2/contact2" element={<Contact2 />} />
             <Route path="/home2/blog" element={<Blog />} />
