@@ -12,6 +12,7 @@ ul {
 .btn-outline-primary:hover {
   background: var(--primary) !important;
   border: 1px solid var(--primary) !important;
+  color: #fff !important;
 }
 .hrms .download-btn,
 .hrms .download-btn:hover {
