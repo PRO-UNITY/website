@@ -1,0 +1,7 @@
+.service-item:hover {
+  box-shadow: 3px 3px 10px #ddd;
+  transform: translateY(-10px);
+}
+.service-item .btn:hover {
+  background: rgb(198, 198, 198) !important;
+}

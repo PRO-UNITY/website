@@ -126,7 +126,7 @@ const Home = () => {
               </p>
               <Link
                 to={"/about"}
-                className="btn pro-bg-primary rounded-pill text-light py-3 px-5 mt-3"
+                className="btn home-btn pro-bg-primary rounded-pill text-light py-3 px-5 mt-3"
               >
                 {t("aboutsection.morebutton")}
               </Link>
@@ -495,7 +495,7 @@ const Home = () => {
                     </div>
                     <div className="col-12">
                       <button
-                        className="btn pro-bg-primary text-light w-100 py-3"
+                        className="btn home-btn pro-bg-primary text-light w-100 py-3"
                         type="submit"
                       >
                         {t("appointment.bookbutton")}

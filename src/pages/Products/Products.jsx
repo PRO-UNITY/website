@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import Layout from "../../Layout/Layout";
+import "./Products.css";
 
 const Products = () => {
   return (
     <Layout>
-      <div className="vh-100 container-xxl py-5">
+      <div className="vh-100 container-xxl py-5 products">
         <div className="d-flex gap-5 flex-wrap">
           <Link
             to={"/products/hrms"}

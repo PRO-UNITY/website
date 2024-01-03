@@ -14,8 +14,7 @@ ul {
   border: 1px solid var(--primary) !important;
   color: #fff !important;
 }
-.hrms .download-btn,
-.hrms .download-btn:hover {
+.hrms .download-btn {
   background: var(--secondary);
   display: inline-flex;
   align-items: center;
@@ -25,11 +24,17 @@ ul {
   cursor: pointer;
   margin: 10px 0;
 }
-.hrms .download-btn-outline,
-.hrms .download-btn-outline:hover {
+.hrms .download-btn:hover {
+  background: rgb(220, 220, 15);
+}
+.hrms .download-btn-outline {
   background-color: transparent;
   color: var(--secondary);
   border: 1px solid var(--secondary);
+}
+.hrms .download-btn-outline:hover {
+  background: rgb(220, 220, 15);
+  color: var(--primary);
 }
 .hrms .download-btn-outline img {
   width: 30px;
@@ -160,6 +165,12 @@ ul {
   height: 72px;
   background: rgba(64, 196, 255, 0.26);
   border-radius: 50%;
+}
+.platform .col {
+  transition: 0.3s all;
+}
+.platform .col:hover {
+  transform: translateY(-10px);
 }
 /* .get-app .container {
   max-width: 1000px;

@@ -20,14 +20,14 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               href="https://maps.app.goo.gl/oz5im3ic1GM48FfL6"
-              className="mb-2 text-decoration-none text-white d-block"
+              className="mb-2 text-decoration-none  d-block btn btn-link"
             >
               <i className="fa fa-map-marker-alt me-3" />
               {t("topbar.location")}
             </a>
             <a
               href="tel:+998-33-899-50-00 "
-              className="mb-2 text-decoration-none text-white d-block"
+              className="mb-2 text-decoration-none  d-block btn btn-link"
             >
               <i className="fa fa-phone-alt me-3" />
               +998 33 899 50 00
@@ -36,7 +36,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               href="mailto:prounity.uz@gmail.com"
-              className="mb-2 text-decoration-none text-white"
+              className="mb-2 text-decoration-none  btn btn-link"
             >
               <i className="fa fa-envelope me-3" />
               prounity.uz@gmail.com

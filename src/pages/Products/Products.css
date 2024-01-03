@@ -1,0 +1,7 @@
+.products .card {
+  transition: 0.5s all;
+}
+
+.products .card:hover {
+  transform: translateY(-7px);
+}

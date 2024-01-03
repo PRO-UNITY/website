@@ -30,7 +30,9 @@ html {
   bottom: 45px;
   z-index: 99;
 }
-
+.home-btn:hover {
+  background-color: #1d17bf !important;
+}
 /*** Spinner ***/
 #spinner {
   opacity: 0;
@@ -78,6 +80,12 @@ html {
 }
 
 /*** Navbar ***/
+.topbar .text-dark:hover {
+  color: var(--primary) !important;
+}
+.topbar .social-links:hover {
+  background: #ddd !important;
+}
 .logo {
   width: 200px;
   height: 200px;
@@ -178,6 +186,9 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+}
+.btn-youtube:hover {
+  background-color: rgb(202, 0, 0);
 }
 .cursor {
   cursor: pointer;

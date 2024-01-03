@@ -123,7 +123,7 @@ const Contact = () => {
                     </div>
                     <div className="col-12">
                       <button
-                        className="btn pro-bg-primary text-light w-100 py-3"
+                        className="btn home-btn pro-bg-primary text-light w-100 py-3"
                         type="submit"
                       >
                         {t("appointment.bookbutton")}
