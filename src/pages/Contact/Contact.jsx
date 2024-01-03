@@ -31,7 +31,7 @@ const Contact = () => {
   }, []);
   return (
     <Layout>
-      <div className="container-xxl py-5">
+      <div className="container-xxl py-5 contact">
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -40,30 +40,42 @@ const Contact = () => {
               </p>
               <h1 className="mb-4"> {t("appointment.title")}</h1>
               <p className="mb-4">{t("appointment.text")}</p>
-              <div className="bg-light rounded d-flex align-items-center p-5 mb-4">
-                <div
-                  className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                  style={{ width: 55, height: 55 }}
-                >
-                  <i className="fa fa-phone-alt pro-text-primary" />
+              <a
+                href="tel:+998-33-899-50-00 "
+                className="text-decoration-none text-white"
+              >
+                <div className="bg-white rounded contact-card  d-flex align-items-center py-4 px-2 px-md-5 py-md-5 mb-4">
+                  <div
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle border border-white"
+                    style={{ width: 55, height: 55 }}
+                  >
+                    <i className="fa fa-phone-alt text-white  " />
+                  </div>
+                  <div className="ms-2 ms-md-5">
+                    <p className="mb-2">{t("appointment.call")}</p>
+                    <h5 className="mb-0">+998 33 899 50 00</h5>
+                  </div>
                 </div>
-                <div className="ms-4">
-                  <p className="mb-2">{t("appointment.call")}</p>
-                  <h5 className="mb-0">+998 33 899 50 00</h5>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto:prounity.uz@gmail.com"
+                className="text-decoration-none text-white"
+              >
+                <div className="bg-white contact-card  rounded d-flex align-items-center py-4 px-2 px-md-5 py-md-5">
+                  <div
+                    className="d-flex  flex-shrink-0 align-items-center justify-content-center rounded-circle border border-white"
+                    style={{ width: 55, height: 55 }}
+                  >
+                    <i className="fa fa-envelope-open text-white" />
+                  </div>
+                  <div className="ms-2 ms-md-5">
+                    <p className="mb-2">{t("appointment.message")}</p>
+                    <h5 className="mb-0 ">prounity.uz@gmail.com</h5>
+                  </div>
                 </div>
-              </div>
-              <div className="bg-light rounded d-flex align-items-center p-5">
-                <div
-                  className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
-                  style={{ width: 55, height: 55 }}
-                >
-                  <i className="fa fa-envelope-open pro-text-primary" />
-                </div>
-                <div className="ms-4">
-                  <p className="mb-2">{t("appointment.message")}</p>
-                  <h5 className="mb-0">prounity.uz@gmail.com</h5>
-                </div>
-              </div>
+              </a>
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
               <div className="bg-light rounded h-100 d-flex align-items-center p-5">
