@@ -25,6 +25,10 @@ import partner15 from "../assets/partner7.png";
 import partner16 from "../assets/partner9.png";
 import partner17 from "../assets/partner12.png";
 
+import Developer from "../assets/slide77.jpg";
+import Students from "../assets/group11.jpg";
+import Projects from "../assets/office.jpg";
+
 // Team
 import Azizbek from "../assets/akaaziz.jpg";
 import Miron from "../assets/akamiron.jpg";
@@ -86,6 +90,12 @@ export const followUsLinks = [
     icon: "https://assets-global.website-files.com/603fea6471d9d8559d077603/6092b7514135708162a4be92_Favicon%20256.png",
     link: "https://www.upwork.com/agencies/1514836313665982464/",
   },
+];
+
+export const HeroBottom = [
+  { id: 1, number: 12, name: "Expert Developers", background: Developer },
+  { id: 2, number: 120, name: "Students", background: Students },
+  { id: 3, number: 20, name: "Projects", background: Projects },
 ];
 
 export const HomeSliderImage = [

@@ -138,6 +138,14 @@ html {
   top: -100px;
   transition: 0.5s;
 }
+.hero-bottom a > div {
+  padding: 10px;
+  border-bottom: 1px solid #ffffff00;
+  transition: 0.3s all;
+}
+.hero-bottom a > div:hover {
+  border-bottom: 1px solid #fff;
+}
 .back {
   background: url(./assets/koworking.jpg);
   background-repeat: no-repeat;

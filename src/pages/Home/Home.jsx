@@ -2,7 +2,7 @@ import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
 import teamwork from "../../assets/teamwork.jpg";
 import { HomeSlider, OurTeam, PartnersCard } from "../../components";
-import { Partners, teamMembers } from "../../constants";
+import { HeroBottom, Partners, teamMembers } from "../../constants";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
@@ -45,33 +45,21 @@ const Home = () => {
             >
               {t("herosection.title")}
             </h1>
-            <div className="row g-4 text-center">
-              <div className="col-sm-4">
-                <div className=" ps-4">
-                  <h2 className="text-white mb-1" data-toggle="counter-up">
-                    12
-                  </h2>
-                  <p className="text-light mb-0">
-                    {t("herosection.developers")}
-                  </p>
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="border-start  border-md-1  border-light ps-4">
-                  <h2 className="text-white mb-1" data-toggle="counter-up">
-                    120
-                  </h2>
-                  <p className="text-light mb-0">{t("herosection.students")}</p>
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="border-start border-light ps-4">
-                  <h2 className="text-white mb-1" data-toggle="counter-up">
-                    20
-                  </h2>
-                  <p className="text-light mb-0">{t("herosection.projects")}</p>
-                </div>
-              </div>
+            <div className="row g-4 text-center hero-bottom ">
+              {HeroBottom.map((item) => (
+                <Link
+                  to={`/widgets/${item.id}`}
+                  className="col-sm-4 text-decoration-none"
+                  key={item.id}
+                >
+                  <div className=" ">
+                    <h2 className="text-white mb-1" data-toggle="counter-up">
+                      {item.number}
+                    </h2>
+                    <p className="text-light mb-0">{item.name}</p>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">

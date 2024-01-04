@@ -45,6 +45,7 @@ import {
   HrmsDocResume,
   Dashboard,
   HrmsDocCompany,
+  HeroWidgets,
   // About2,
   // Contact2,
   // Blog,
@@ -83,6 +84,8 @@ function App() {
         >
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/widgets/:id" element={<HeroWidgets />} />
+
             {/* Home2 */}
             {/* <Route path="/home2" element={<Home2 />} /> */}
             {/* <Route path="/home2/about2" element={<About2 />} />
