@@ -2,7 +2,7 @@ import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
 import teamwork from "../../assets/teamwork.jpg";
 import { HomeSlider, OurTeam, PartnersCard } from "../../components";
-import { HeroBottom, Partners, teamMembers } from "../../constants";
+import { Partners, teamMembers } from "../../constants";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
@@ -45,21 +45,40 @@ const Home = () => {
             >
               {t("herosection.title")}
             </h1>
-            <div className="row g-4 text-center hero-bottom ">
-              {HeroBottom.map((item) => (
-                <Link
-                  to={`/widgets/${item.id}`}
-                  className="col-sm-4 text-decoration-none"
-                  key={item.id}
-                >
-                  <div className=" ">
-                    <h2 className="text-white mb-1" data-toggle="counter-up">
-                      {item.number}
-                    </h2>
-                    <p className="text-light mb-0">{item.name}</p>
-                  </div>
-                </Link>
-              ))}
+            <div className="d-flex gap-4 pt-3 g-4 text-center hero-bottom ">
+              <Link to={`/widgets/1`} className=" text-decoration-none">
+                <div className=" ">
+                  <h2
+                    className="text-white mb-1 display-6  fw-semibold"
+                    data-toggle="counter-up"
+                  >
+                    12
+                  </h2>
+                  <p className="text-light mb-0">Expert Developers</p>
+                </div>
+              </Link>
+              <Link to={`/widgets/2`} className=" text-decoration-none">
+                <div className=" ">
+                  <h2
+                    className="text-white mb-1 display-6  fw-semibold"
+                    data-toggle="counter-up"
+                  >
+                    120
+                  </h2>
+                  <p className="text-light mb-0">Students</p>
+                </div>
+              </Link>
+              <Link to={`/products`} className=" text-decoration-none">
+                <div className=" ">
+                  <h2
+                    className="text-white mb-1 display-6  fw-semibold"
+                    data-toggle="counter-up"
+                  >
+                    20
+                  </h2>
+                  <p className="text-light mb-0">Projects</p>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="col-lg-5 wow fadeIn" data-wow-delay="0.5s">

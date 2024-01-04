@@ -138,13 +138,23 @@ html {
   top: -100px;
   transition: 0.5s;
 }
-.hero-bottom a > div {
-  padding: 10px;
-  border-bottom: 1px solid #ffffff00;
-  transition: 0.3s all;
+.hero-bottom a {
+  width: 170px;
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 12px;
+  padding: 7px;
+  transition: 0.4s all;
 }
-.hero-bottom a > div:hover {
-  border-bottom: 1px solid #fff;
+.hero-bottom h2,
+.hero-bottom p {
+  color: inherit !important;
+  margin: 0 !important;
+}
+
+.hero-bottom a:hover {
+  background: var(--secondary);
+  color: var(--primary);
 }
 .back {
   background: url(./assets/koworking.jpg);

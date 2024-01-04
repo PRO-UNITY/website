@@ -93,8 +93,8 @@ export const followUsLinks = [
 ];
 
 export const HeroBottom = [
-  { id: 1, number: 12, name: "Expert Developers", background: Developer },
-  { id: 2, number: 120, name: "Students", background: Students },
+  { id: 1, number: 12, name: "Expert Developers", background: Developer,  },
+  { id: 2, number: 120, name: "Students", background: Students  },
   { id: 3, number: 20, name: "Projects", background: Projects },
 ];
 
