@@ -23,3 +23,12 @@
 .hero-widgets h2.number {
   font-size: 65px;
 }
+@media (max-width: 768px) {
+  .hero-widgets h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .hero-widgets h2.number {
+    font-size: 45px;
+  }
+}
