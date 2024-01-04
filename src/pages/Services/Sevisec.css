@@ -1,7 +1,25 @@
+.service-item {
+  background: var(--secondary) !important;
+}
 .service-item:hover {
   box-shadow: 3px 3px 10px #ddd;
   transform: translateY(-10px);
 }
+.services-page {
+  background: var(--primary);
+}
+.service-item h4 {
+  color: var(--primary);
+  font-size: 32px;
+}
+.service-item p {
+  color: #2d2d2d;
+}
+.service-item .btn {
+  border: 2px solid var(--primary);
+  color: #fff;
+  background: var(--primary) !important;
+}
 .service-item .btn:hover {
-  background: rgb(198, 198, 198) !important;
+  color: #fff;
 }

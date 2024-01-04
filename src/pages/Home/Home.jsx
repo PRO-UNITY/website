@@ -229,7 +229,7 @@ const Home = () => {
           </div>
           <div className="row g-4">
             {Partners.map((item, i) => (
-              <PartnersCard key={i} img={item} />
+              <PartnersCard key={i} {...item} />
             ))}
           </div>
         </div>

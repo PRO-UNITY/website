@@ -11,29 +11,29 @@ const Services = () => {
   }, []);
   return (
     <Layout>
-      <div className="container-xxl py-5">
-        <div className="container ">
+      <div className="py-5 services-page">
+        <div className="px-5">
           <div
             className="text-center mx-auto mb-5 wow fadeInUp"
             data-wow-delay="0.1s"
             style={{ maxWidth: 600 }}
           >
-            <p className="d-inline-block border rounded-pill py-1 px-4">
+            <p className="d-inline-block border text-white rounded-pill py-1 px-4">
               {t("servicesection.subtitle")}
             </p>
-            <h1>{t("servicesection.title")}</h1>
+            <h1 className="text-white">{t("servicesection.title")}</h1>
           </div>
           <div className="row g-4">
             <div
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
+              <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
                 <div
-                  className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-                  style={{ width: 65, height: 65 }}
+                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
+                  
                 >
-                  <i className="fa-solid fa-computer fs-4 pro-text-primary " />
+                  <i className="fa-solid fa-computer fs-2 pro-text-primary " />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice1.title")}
@@ -44,10 +44,10 @@ const Services = () => {
                 </p>
                 <Link
                   to={"/services/softwareDevelopenent"}
-                  className="btn bg-light"
+                  className="btn "
                   href
                 >
-                  <i className="fa fa-plus pro-text-primary  me-3" />
+                  <i className="fa fa-plus   me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -57,12 +57,12 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
+              <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
                 <div
-                  className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-                  style={{ width: 65, height: 65 }}
+                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
+                  
                 >
-                  <i className="fa-solid fa-school pro-text-primary  fs-4" />
+                  <i className="fa-solid fa-school pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice2.title")}
@@ -71,8 +71,8 @@ const Services = () => {
                   {t("servicesection.cardservice2.Description").slice(0, 100)}
                   ...
                 </p>
-                <Link to={"/services/IT-school"} className="btn bg-light" href>
-                  <i className="fa fa-plus pro-text-primary  me-3" />
+                <Link to={"/services/IT-school"} className="btn " href>
+                  <i className="fa fa-plus me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -82,12 +82,12 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
+              <div className="service-item rounded-4 h-100 px-3  px-md-5 py-4">
                 <div
-                  className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-                  style={{ width: 65, height: 65 }}
+                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
+                  
                 >
-                  <i className="fa-solid fa-diagram-successor pro-text-primary  fs-4" />
+                  <i className="fa-solid fa-diagram-successor pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice3.title")}
@@ -98,10 +98,10 @@ const Services = () => {
                 </p>
                 <Link
                   to={"/services/authorized-tutorial"}
-                  className="btn bg-light"
+                  className="btn "
                   href
                 >
-                  <i className="fa fa-plus pro-text-primary  me-3" />
+                  <i className="fa fa-plus   me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -111,12 +111,12 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
+              <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
                 <div
-                  className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-                  style={{ width: 65, height: 65 }}
+                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
+                  
                 >
-                  <i className="fa-solid fa-briefcase pro-text-primary  fs-4" />
+                  <i className="fa-solid fa-briefcase pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice4.title")}
@@ -125,8 +125,8 @@ const Services = () => {
                   {t("servicesection.cardservice4.Description").slice(0, 100)}
                   ...
                 </p>
-                <Link to={"/services/coworking"} className="btn bg-light" href>
-                  <i className="fa fa-plus pro-text-primary  me-3" />
+                <Link to={"/services/coworking"} className="btn " href>
+                  <i className="fa fa-plus   me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -136,12 +136,12 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
+              <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
                 <div
-                  className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-                  style={{ width: 65, height: 65 }}
+                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
+                  
                 >
-                  <i className="fa-brands fa-sourcetree pro-text-primary  fs-4" />
+                  <i className="fa-brands fa-sourcetree pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice5.title")}
@@ -150,8 +150,8 @@ const Services = () => {
                   {t("servicesection.cardservice5.Description").slice(0, 100)}
                   ...
                 </p>
-                <Link to={"/services/opencourse"} className="btn bg-light" href>
-                  <i className="fa fa-plus pro-text-primary  me-3" />
+                <Link to={"/services/opencourse"} className="btn " href>
+                  <i className="fa fa-plus   me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>
@@ -161,12 +161,12 @@ const Services = () => {
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="service-item bg-white rounded h-100 p-4 p-md-5">
+              <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
                 <div
-                  className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-                  style={{ width: 65, height: 65 }}
+                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
+                  
                 >
-                  <i className="fa-solid fa-people-group pro-text-primary  fs-4" />
+                  <i className="fa-solid fa-people-group pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
                   {t("servicesection.cardservice6.title")}
@@ -177,10 +177,10 @@ const Services = () => {
                 </p>
                 <Link
                   to={"/services/pro-community"}
-                  className="btn bg-light pl-5"
+                  className="btn  pl-5"
                   href
                 >
-                  <i className="fa fa-plus pro-text-primary  me-3" />
+                  <i className="fa fa-plus me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
               </div>

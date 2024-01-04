@@ -141,9 +141,9 @@ html {
 .hero-bottom a {
   width: 170px;
   color: var(--secondary);
-  border: 2px solid var(--secondary);
+  border: 1px solid var(--secondary);
   border-radius: 12px;
-  padding: 7px;
+  padding: 5  px;
   transition: 0.4s all;
 }
 .hero-bottom h2,

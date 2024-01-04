@@ -93,8 +93,8 @@ export const followUsLinks = [
 ];
 
 export const HeroBottom = [
-  { id: 1, number: 12, name: "Expert Developers", background: Developer,  },
-  { id: 2, number: 120, name: "Students", background: Students  },
+  { id: 1, number: 12, name: "Expert Developers", background: Developer },
+  { id: 2, number: 120, name: "Students", background: Students },
   { id: 3, number: 20, name: "Projects", background: Projects },
 ];
 
@@ -111,23 +111,74 @@ export const HomeSliderImage = [
 ];
 
 export const Partners = [
-  partner1,
-  partner2,
-  partner3,
-  partner4,
-  partner5,
-  partner6,
-  partner7,
-  partner8,
-  partner9,
-  partner10,
-  partner11,
-  partner12,
-  partner13,
-  partner14,
-  partner15,
-  partner16,
-  partner17,
+  {
+    logo: partner1,
+    link: "https://fayzprint.uz/",
+  },
+  {
+    logo: partner2,
+    link: "https://uzedu.uz/",
+  },
+  {
+    logo: partner3,
+    link: "https://devedu.uz/",
+  },
+  {
+    logo: partner4,
+    link: "#",
+  },
+  {
+    logo: partner5,
+    link: "http://orzutech.uz/",
+  },
+  {
+    logo: partner6,
+    link: "#",
+  },
+  {
+    logo: partner7,
+    link: "https://mitc.uz/uz/management/index",
+  },
+  {
+    logo: partner8,
+    link: "",
+  },
+  {
+    logo: partner9,
+    link: "",
+  },
+  {
+    logo: partner10,
+    link: "https://oxu.uz/",
+  },
+  {
+    logo: partner11,
+    link: "http://www.aongi.uz/",
+  },
+  {
+    logo: partner12,
+    link: "https://www.instagram.com/enricorosettibukhara/",
+  },
+  {
+    logo: partner13,
+    link: "",
+  },
+  {
+    logo: partner14,
+    link: "https://yoshlar.gov.uz/",
+  },
+  {
+    logo: partner15,
+    link: "http://imoratdevelopment.uz/",
+  },
+  {
+    logo: partner16,
+    link: "https://toureast.uz/",
+  },
+  {
+    logo: partner17,
+    link: "https://uztelecom.uz/",
+  },
 ];
 
 export const teamMembers = [
