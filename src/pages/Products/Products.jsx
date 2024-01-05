@@ -23,12 +23,10 @@ const Products = () => {
     <Layout>
       <div className="py-5 products">
         <div className="row px-md-5 h-100">
-          <div className="col-lg-6">
-            <div className="d-flex  px-4 px-md-5 text-light flex-column align-items-center justify-content-center h-100">
-              <h1 className="section-title text-center text-lg-start">
-                Our Products
-              </h1>
-              <p className="page-decription text-center text-lg-start mt-4">
+          <div className="col-lg-5">
+            <div className="d-flex  px-4 px-md-5 text-light flex-column justify-content-center h-100">
+              <h1 className="section-title  ">Our Products</h1>
+              <p className="page-decription  mt-3">
                 Welcome to the ProUnity company&apos;s products page! Explore
                 our range of products and discover tailored solutions designed
                 to meet the demands and inquiries of anyone. Navigate through
@@ -38,18 +36,23 @@ const Products = () => {
               </p>
             </div>
           </div>
-          <div className="col-lg-6 d-flex px-4 px-md-5 align-items-center h-100">
+          <div className="col-lg-7 d-flex px-4 px-md-5 align-items-center h-100">
             <ul className="p-0">
-              {products.map((item) => (
+              {products.map((item, i) => (
                 <li key={item.id}>
                   <Link
                     to={item.path}
-                    className=" list-item text-decoration-none text-light"
+                    className="list-item text-decoration-none text-light"
                   >
-                    <div className="card-head">
-                      <h1 className="">{item.title}</h1>
+                    <div className=" number rounded-circle border ">
+                      {i + 1}
                     </div>
-                    <p>{item.description}</p>
+                    <div className="">
+                      <div className="card-head">
+                        <h1 className="">{item.title}</h1>
+                      </div>
+                      <p>{item.description}</p>
+                    </div>
                   </Link>
                 </li>
               ))}
