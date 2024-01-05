@@ -12,17 +12,6 @@ export { default as Contact } from "./Contact/Contact";
 export { default as PageNotFound } from "./PageNotFound/PageNotFound";
 export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 
-/*-- Home2 ---*/
-export { default as About2 } from "./Home2/AboutUs2/AboutUs2";
-export { default as Contact2 } from "./Home2/Contact2/Contact2";
-export { default as Blog } from "./Home2/Blog/Blog";
-export { default as ServicesDetail } from "./Home2/ServicesDetail/ServicesDetail";
-export { default as Events } from "./Home2/Events/Events";
-export { default as Services2 } from "./Home2/Services/Services";
-export { default as Products2 } from "./Home2/Products/Products";
-export { default as HrmsLanding } from "./Home2/Products/Hrms/HrmsLanding/HrmsLanding";
-export { default as DeliveryLanding } from "./Home2/Products/Delivery/DeliveryLanding/DeliveryLanding";
-
 /*-- Products ---*/
 export { default as Products } from "./Products/Products";
 // Hrms

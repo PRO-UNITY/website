@@ -110,76 +110,76 @@ export const HomeSliderImage = [
   { id: 1, img: slider_img_9 },
 ];
 
-export const Partners = [
-  {
-    logo: partner1,
-    link: "https://fayzprint.uz/",
-  },
-  {
-    logo: partner2,
-    link: "https://uzedu.uz/",
-  },
-  {
-    logo: partner3,
-    link: "https://devedu.uz/",
-  },
-  {
-    logo: partner4,
-    link: "#",
-  },
-  {
-    logo: partner5,
-    link: "http://orzutech.uz/",
-  },
-  {
-    logo: partner6,
-    link: "#",
-  },
-  {
-    logo: partner7,
-    link: "https://mitc.uz/uz/management/index",
-  },
-  {
-    logo: partner8,
-    link: "",
-  },
-  {
-    logo: partner9,
-    link: "",
-  },
-  {
-    logo: partner10,
-    link: "https://oxu.uz/",
-  },
-  {
-    logo: partner11,
-    link: "http://www.aongi.uz/",
-  },
-  {
-    logo: partner12,
-    link: "https://www.instagram.com/enricorosettibukhara/",
-  },
-  {
-    logo: partner13,
-    link: "",
-  },
-  {
-    logo: partner14,
-    link: "https://yoshlar.gov.uz/",
-  },
-  {
-    logo: partner15,
-    link: "http://imoratdevelopment.uz/",
-  },
-  {
-    logo: partner16,
-    link: "https://toureast.uz/",
-  },
-  {
-    logo: partner17,
-    link: "https://uztelecom.uz/",
-  },
-];
+  export const Partners = [
+    {
+      logo: partner1,
+      link: "https://fayzprint.uz/",
+    },
+    {
+      logo: partner2,
+      link: "https://uzedu.uz/",
+    },
+    {
+      logo: partner3,
+      link: "https://devedu.uz/",
+    },
+    {
+      logo: partner4,
+      link: "#",
+    },
+    {
+      logo: partner5,
+      link: "http://orzutech.uz/",
+    },
+    {
+      logo: partner6,
+      link: "#",
+    },
+    {
+      logo: partner7,
+      link: "https://mitc.uz/uz/management/index",
+    },
+    {
+      logo: partner8,
+      link: "",
+    },
+    {
+      logo: partner9,
+      link: "",
+    },
+    {
+      logo: partner10,
+      link: "https://oxu.uz/",
+    },
+    {
+      logo: partner11,
+      link: "http://www.aongi.uz/",
+    },
+    {
+      logo: partner12,
+      link: "https://www.instagram.com/enricorosettibukhara/",
+    },
+    {
+      logo: partner13,
+      link: "",
+    },
+    {
+      logo: partner14,
+      link: "https://yoshlar.gov.uz/",
+    },
+    {
+      logo: partner15,
+      link: "http://imoratdevelopment.uz/",
+    },
+    {
+      logo: partner16,
+      link: "https://toureast.uz/",
+    },
+    {
+      logo: partner17,
+      link: "https://uztelecom.uz/",
+    },
+  ];
 
 export const teamMembers = [
   {

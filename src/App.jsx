@@ -46,22 +46,12 @@ import {
   Dashboard,
   HrmsDocCompany,
   HeroWidgets,
-  // About2,
-  // Contact2,
-  // Blog,
-  // ServicesDetail,
-  // Events,
-  // Services2,
-  // Products2,
-  // HrmsLanding,
-  // DeliveryLanding,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { useState } from "react";
 import DeliveryHome from "./pages/Products/Delivery/admin/Delivery-home/Delivery-home";
 import HrmsCalendar from "./pages/Products/Hrms/admin/Hrms-calendar/HrmsCalendar";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
-// import Home2 from "./pages/Home2/Home2";
 // const optimizely = createInstance({
 //   sdkKey: "YOUR_OPTIMIZELY_SDK_KEY", // Optimizely SDK key
 // });
@@ -85,19 +75,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/widgets/:id" element={<HeroWidgets />} />
-
-            {/* Home2 */}
-            {/* <Route path="/home2" element={<Home2 />} /> */}
-            {/* <Route path="/home2/about2" element={<About2 />} />
-            <Route path="/home2/contact2" element={<Contact2 />} />
-            <Route path="/home2/blog" element={<Blog />} />
-            <Route path="/home2/services" element={<Services2 />} />
-            <Route path="/home2/services-detail" element={<ServicesDetail />} />
-            <Route path="/home2/events" element={<Events />} />
-            <Route path="/home2/products2" element={<Products2 />} />
-            <Route path="/home2/products2/hrms" element={<HrmsLanding />} />
-            <Route path="/home2/products2/delivery" element={<DeliveryLanding />} /> */}
-            {/* Home2 End*/}
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route
