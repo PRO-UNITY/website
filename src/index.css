@@ -139,11 +139,12 @@ html {
   transition: 0.5s;
 }
 .hero-bottom a {
-  width: 170px;
-  color: var(--secondary);
-  border: 1px solid var(--secondary);
+  width: 160px;
+  text-align: center;
+  color: #fff;
   border-radius: 12px;
-  padding: 5 px;
+  padding: 5px;
+
   transition: 0.4s all;
 }
 .hero-bottom h2,
@@ -153,8 +154,7 @@ html {
 }
 
 .hero-bottom a:hover {
-  background: var(--secondary);
-  color: var(--primary);
+  color: var(--secondary);
 }
 .back {
   background: url(./assets/koworking.jpg);
