@@ -10,8 +10,11 @@ const TeamDetails = () => {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    const user1 = teamMembers.filter((item) => item.id == id);
-    setUser(user1);
+    const newUser = teamMembers.filter(
+      (item) => item.name.replace(/\s/g, "").toLowerCase() == id.toLowerCase()
+    );
+    console.log(newUser);
+    setUser(newUser);
   }, [id]);
 
   return (
@@ -24,7 +27,7 @@ const TeamDetails = () => {
                 <img src={user[0]?.image} alt="team-img" />
               </div>
             </div>
-            <div className="col-lg-7 px-5  text-white">
+            <div className="col-lg-7 px-5 d-flex align-items-center   text-white">
               <div className="content">
                 <h2
                   style={{ fontWeight: "400" }}
@@ -32,11 +35,19 @@ const TeamDetails = () => {
                 >
                   {user[0]?.name}
                 </h2>
-                <h3 className="display-5 text-center">{user[0]?.occupation}</h3>
-                <h4 className="fs-3 pt-5">Position:</h4>
-                <h4 className="fs-3 pt-3">Function:</h4>
-                <h4 className="fs-3 pt-3">Education:</h4>
-                <h4 className="fs-3 pt-3">Social Media:</h4>
+                <div className="row">
+                  <div className="col-5">
+                    <h4 className="fs-3 pt-5">Position:</h4>
+                    <h4 className="fs-3 pt-3">Function:</h4>
+                    <h4 className="fs-3 pt-3">Education:</h4>
+                    <h4 className="fs-3 pt-3">Social Media:</h4>
+                  </div>
+                  <div className="col-7">
+                    <h4 className="fs-3 fw-normal pt-5">
+                      {user[0]?.occupation}
+                    </h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
