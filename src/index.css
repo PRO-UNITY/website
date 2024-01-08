@@ -380,15 +380,16 @@ p {
 .team-item:hover .team-text .team-social {
   opacity: 1;
 }
-.team-item .team-social .btn {
+.team-social .btn {
   display: inline-flex;
   color: var(--primary);
   background: #ffffff;
   border-radius: 40px;
 }
-.team-item .team-social .btn:hover {
+.team-social .btn:hover {
   color: #ffffff;
   background: var(--primary);
+  border: 1px solid #fff;
 }
 /*** Appointment ***/
 .bootstrap-datetimepicker-widget.bottom {

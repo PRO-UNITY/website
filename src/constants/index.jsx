@@ -110,385 +110,446 @@ export const HomeSliderImage = [
   { id: 1, img: slider_img_9 },
 ];
 
-  export const Partners = [
-    {
-      logo: partner1,
-      link: "https://fayzprint.uz/",
-    },
-    {
-      logo: partner2,
-      link: "https://uzedu.uz/",
-    },
-    {
-      logo: partner3,
-      link: "https://devedu.uz/",
-    },
-    {
-      logo: partner4,
-      link: "#",
-    },
-    {
-      logo: partner5,
-      link: "http://orzutech.uz/",
-    },
-    {
-      logo: partner6,
-      link: "#",
-    },
-    {
-      logo: partner7,
-      link: "https://mitc.uz/uz/management/index",
-    },
-    {
-      logo: partner8,
-      link: "",
-    },
-    {
-      logo: partner9,
-      link: "",
-    },
-    {
-      logo: partner10,
-      link: "https://oxu.uz/",
-    },
-    {
-      logo: partner11,
-      link: "http://www.aongi.uz/",
-    },
-    {
-      logo: partner12,
-      link: "https://www.instagram.com/enricorosettibukhara/",
-    },
-    {
-      logo: partner13,
-      link: "",
-    },
-    {
-      logo: partner14,
-      link: "https://yoshlar.gov.uz/",
-    },
-    {
-      logo: partner15,
-      link: "http://imoratdevelopment.uz/",
-    },
-    {
-      logo: partner16,
-      link: "https://toureast.uz/",
-    },
-    {
-      logo: partner17,
-      link: "https://uztelecom.uz/",
-    },
-  ];
+export const Partners = [
+  {
+    logo: partner1,
+    link: "https://fayzprint.uz/",
+  },
+  {
+    logo: partner2,
+    link: "https://uzedu.uz/",
+  },
+  {
+    logo: partner3,
+    link: "https://devedu.uz/",
+  },
+  {
+    logo: partner4,
+    link: "#",
+  },
+  {
+    logo: partner5,
+    link: "http://orzutech.uz/",
+  },
+  {
+    logo: partner6,
+    link: "#",
+  },
+  {
+    logo: partner7,
+    link: "https://mitc.uz/uz/management/index",
+  },
+  {
+    logo: partner8,
+    link: "",
+  },
+  {
+    logo: partner9,
+    link: "",
+  },
+  {
+    logo: partner10,
+    link: "https://oxu.uz/",
+  },
+  {
+    logo: partner11,
+    link: "http://www.aongi.uz/",
+  },
+  {
+    logo: partner12,
+    link: "https://www.instagram.com/enricorosettibukhara/",
+  },
+  {
+    logo: partner13,
+    link: "",
+  },
+  {
+    logo: partner14,
+    link: "https://yoshlar.gov.uz/",
+  },
+  {
+    logo: partner15,
+    link: "http://imoratdevelopment.uz/",
+  },
+  {
+    logo: partner16,
+    link: "https://toureast.uz/",
+  },
+  {
+    logo: partner17,
+    link: "https://uztelecom.uz/",
+  },
+];
 
 export const teamMembers = [
   {
     id: 1,
     name: "Azizbek Hamroyev",
     occupation: "Co-founder",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "O'zbekiston Milliy Universiteti",
+    email: "azizbekhamroyev@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/azizbekh/", icon: "instagram" },
+    ],
     image: Azizbek,
   },
   {
     id: 2,
     name: "Miron Mustafoev",
     occupation: "Co-founder, CEO",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "https://www.instagram.com/bigmustafaa/",
-    },
+    education: "Toshkent Davlat Texnologiya Universiteti",
+    email: "mironmustafoev@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/bigmustafaa/", icon: "instagram" },
+    ],
     image: Miron,
   },
   {
     id: 3,
     name: "Andrey Molodsov",
     occupation: "Designer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "O'zbekiston San'at va Arxitektura Instituti",
+    email: "andreymolodsov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Andrey,
   },
   {
     id: 4,
     name: "Sobirjon Bobojonov",
     occupation: "Software Engineer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "https://instagram.com/sobirjon_0576/",
-    },
+    education: "Inha University in Tashkent",
+    email: "sobirjonbobojonov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/sobirjon_0576/", icon: "instagram" },
+    ],
     image: Sobir,
   },
   {
     id: 5,
     name: "Davlatshoh Naimov",
     occupation: "Frontend Developer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "https://www.instagram.com/naimov_2001/",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "davlatshohnaimov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/naimov_2001/", icon: "instagram" },
+    ],
     image: Davlatshoh,
   },
   {
     id: 6,
     name: "Amirbek Azimov",
     occupation: "Mobile Developer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "https://www.instagram.com/amirbek_azimov/",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "amirbekazimov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      {
+        link: "https://www.linkedin.com/in/amirbek-azimov-354073255/",
+        icon: "linkedin-in",
+      },
+      { link: "https://www.instagram.com/amirbek_azimov/", icon: "instagram" },
+    ],
     image: Amirbek,
   },
   {
     id: 7,
     name: "Jobir Ashurov",
     occupation: "Frontend Developer",
-    socialLinks: {
-      facebook: "https://www.facebook.com/AshurovJobir/",
-      twitter: "",
-      instagram: "https://www.instagram.com/jobir__ashurov/",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "jobirashurov8@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/AshurovJobir", icon: "facebook-f" },
+      {
+        link: "https://www.linkedin.com/in/jobir-ashurov/",
+        icon: "linkedin-in",
+      },
+      { link: "https://www.instagram.com/jobir__ashurov/", icon: "instagram" },
+    ],
     image: Jobir,
   },
   {
     id: 8,
     name: "Ibrohim Istamov",
     occupation: "Devops Developer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "https://www.instagram.com/ibrokhim10.06/",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "ibrohimistamov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Ibrohim,
   },
   {
     id: 9,
     name: "Otabek Kadirov",
     occupation: "Frontend Mentor",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "otabekkadirov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Otabek,
   },
   {
     id: 11,
     name: "Behzod Baxshilloyev",
     occupation: "Frontend Mentor",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "behzodbaxshilloyev@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Behzodf,
   },
   {
     id: 12,
     name: "Behzod Usmanov",
     occupation: "Graphic Designer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Buxoro Davlat Universiteti",
+    email: "behzodusmanov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Behzodorg,
   },
   {
     id: 13,
     name: "Bobur Khamraev",
     occupation: "Backend Developer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "boburkhamraev@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Bobur,
   },
   {
     id: 14,
     name: "Dilshod Chuliyev",
     occupation: "Backend Developer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "dilshodchuliyev@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Dilshod,
   },
   {
     id: 15,
     name: "Jamshid Ismoilov",
     occupation: "Backend Developer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "jamshidismoilov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Jamshid,
   },
   {
     id: 16,
     name: "Baxtior Raxmonov",
     occupation: "Finance",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Davlat Moliya Instituti",
+    email: "baxtiorraxmonov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Baxtior,
   },
   {
     id: 17,
     name: "Miron Nusratov",
     occupation: "PR Manager",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Davlat Texnologiya Universiteti",
+    email: "mironnusratov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Mironchik,
   },
   {
     id: 18,
     name: "Mirxon Kuziyev",
     occupation: "Mobile Developer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "mirxonkuziyev@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Mirxon,
   },
   {
     id: 19,
     name: "Murod Axmadov",
     occupation: "Designer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Buxoro Davlat Universiteti",
+    email: "murodaxmadov@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Murod,
   },
   {
     id: 20,
     name: "Nafisa Rasulova",
     occupation: "Sales Manager",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Davlat Moliya Instituti",
+    email: "nafisarasulova@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Nafisa,
   },
   {
     id: 21,
     name: "Darya Usyakiya",
     occupation: "Trainer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "O'zbekiston Milliy Universiteti",
+    email: "daryausyakiya@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Darya,
   },
   {
     id: 22,
     name: "Polina Nosova",
     occupation: "Designer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent San'at va Arxitektura Instituti",
+    email: "polinanosova@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Polina,
   },
   {
     id: 23,
     name: "Samiya Ibragimova",
     occupation: "Sales assistaint",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Davlat Moliya Instituti",
+    email: "samiyaibragimova@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Samiya,
   },
   {
     id: 24,
     name: "Sadoqat Abdulayeva",
     occupation: "Office Manager",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Davlat Moliya Instituti",
+    email: "sadoqatabdulayeva@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Sadoqat,
   },
   {
     id: 25,
     name: "Zarnigor Majidova",
     occupation: "Marketing Manager",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Davlat Moliya Instituti",
+    email: "zarnigormajidova@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Apazarnigor,
   },
   {
     id: 26,
     name: "Nigina Burxanova",
     occupation: "Videographer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Axborot Texnologiyalari Universiteti",
+    email: "niginaburxanova@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Nigina,
   },
   {
     id: 27,
     name: "Dilnoza Barakatova",
     occupation: "Trainer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Davlat Moliya Instituti",
+    email: "dilnozabarakatova@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Dilnozaorg,
   },
   {
     id: 28,
     name: "Shaxina",
     occupation: "Trainer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Davlat Moliya Instituti",
+    email: "shaxina@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Shaxinaorg,
   },
-
   {
     id: 30,
     name: "Mohinur Tursunova",
     occupation: "Web-designer",
-    socialLinks: {
-      facebook: "",
-      twitter: "",
-      instagram: "",
-    },
+    education: "Toshkent Davlat Texnologiya Universiteti",
+    email: "mohinurtursunova@gmail.com",
+    socialLinks: [
+      { link: "https://www.facebook.com/", icon: "facebook-f" },
+      { link: "https://www.linkedin.com/", icon: "linkedin-in" },
+      { link: "https://www.instagram.com/", icon: "instagram" },
+    ],
     image: Mohinur,
   },
 ];

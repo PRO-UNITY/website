@@ -13,8 +13,7 @@ const TeamDetails = () => {
     const newUser = teamMembers.filter(
       (item) => item.name.replace(/\s/g, "").toLowerCase() == id.toLowerCase()
     );
-    console.log(newUser);
-    setUser(newUser);
+    setUser(newUser[0]);
   }, [id]);
 
   return (
@@ -24,28 +23,64 @@ const TeamDetails = () => {
           <div className="row">
             <div className="col-lg-5">
               <div className="img-card ">
-                <img src={user[0]?.image} alt="team-img" />
+                <img src={user?.image} alt="team-img" />
               </div>
             </div>
-            <div className="col-lg-7 px-5 d-flex align-items-center   text-white">
-              <div className="content">
-                <h2
-                  style={{ fontWeight: "400" }}
-                  className="h1 display-3 text-center"
-                >
-                  {user[0]?.name}
+            <div className="col-lg-7 px-3 px-md-5 d-flex align-items-center text-white">
+              <div className="content w-100">
+                <h2 className="h1 display-3 text-center fw-normal">
+                  {user?.name}
                 </h2>
-                <div className="row">
-                  <div className="col-5">
-                    <h4 className="fs-3 pt-5">Position:</h4>
-                    <h4 className="fs-3 pt-3">Function:</h4>
-                    <h4 className="fs-3 pt-3">Education:</h4>
-                    <h4 className="fs-3 pt-3">Social Media:</h4>
+                <div className="">
+                  <div className="row">
+                    <div className="col-5">
+                      <h4 className="fs-3 pt-5">Position:</h4>
+                    </div>
+                    <div className="col-7">
+                      <h4 className="fs-4 fw-normal pt-5">
+                        {user?.occupation}
+                      </h4>
+                    </div>
                   </div>
-                  <div className="col-7">
-                    <h4 className="fs-3 fw-normal pt-5">
-                      {user[0]?.occupation}
-                    </h4>
+                  <div className="row">
+                    <div className="col-5">
+                      <h4 className="fs-3 pt-3">Education:</h4>
+                    </div>
+                    <div className="col-7">
+                      <h4 className="fs-4 pt-3 fw-normal">{user?.education}</h4>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-5">
+                      <h4 className="fs-3 pt-3">Email:</h4>
+                    </div>
+                    <div className="col-7">
+                      <h4 className="fs-4 pt-3 fw-normal text-break">
+                        {user?.email}
+                      </h4>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-5">
+                      <h4 className="fs-3 pt-3">Social Media:</h4>
+                    </div>
+                    <div className="col-7">
+                      <div className="fs-4 pt-3 fw-normal">
+                        <div className="team-social d-flex gap-2">
+                          {user?.socialLinks?.map((item) => (
+                            <a
+                              key={item.id}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="btn btn-square"
+                              href={item?.link}
+                            >
+                              <i className={`fab fa-${item?.icon}`} />
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

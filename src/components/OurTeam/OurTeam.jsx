@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-const OurTeam = ({ name, occupation, image, socialLinks }) => {
+const OurTeam = ({ name, occupation, image }) => {
   return (
     <div
       className="col-lg-3 col-md-6 wow cursor fadeInUp"
@@ -22,38 +22,6 @@ const OurTeam = ({ name, occupation, image, socialLinks }) => {
           <div className="team-text pro-bg-primary text-center p-4">
             <h5 className="text-white">{name}</h5>
             <p className="text-white">{occupation}</p>
-            <div className="team-social text-center">
-              {socialLinks.facebook && (
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-square"
-                  href={socialLinks.facebook}
-                >
-                  <i className="fab fa-facebook-f" />
-                </a>
-              )}
-              {socialLinks.twitter && (
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-square"
-                  href={socialLinks.twitter}
-                >
-                  <i className="fab fa-twitter" />
-                </a>
-              )}
-              {socialLinks.instagram && (
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-square"
-                  href={socialLinks.instagram}
-                >
-                  <i className="fab fa-instagram" />
-                </a>
-              )}
-            </div>
           </div>
         </div>
       </Link>
