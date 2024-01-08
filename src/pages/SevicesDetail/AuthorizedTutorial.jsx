@@ -9,27 +9,16 @@ const AuthorizedTutorial = () => {
   }, []);
   return (
     <Layout>
-      {" "}
-      <div className="container-xxl  py-5">
-        <div className="container ">
-          <div>
-            <div className="service-item row bg-white rounded h-100 p-4 p-md-5">
-              <div className="col-lg-4 d-flex align-items-center justify-content-center">
-                <div
-                  className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-                  style={{ width: 150, height: 150 }}
-                >
-                  <i className="fa-solid fa-diagram-successor pro-text-primary  fs-4" />
-                </div>
-              </div>
-              <div className="col-lg-8">
-                <h2 className="mb-3 ">
-                  {t("servicesection.cardservice3.title")}
-                </h2>
-                <p className="mb-4">
-                  {t("servicesection.cardservice3.Description")}
-                </p>
-              </div>
+      <div className="servces-detail py-5">
+        <div className="container">
+          <div className="text-light mt-5">
+            <h2 className="mt-3 display-4 fw-semibold text-center text-light">
+              {t("servicesection.cardservice3.title")}
+            </h2>
+            <div className="p-4 p-md-5">
+              <p className="mb-4 fs-5 text-center">
+                {t("servicesection.cardservice3.Description")}
+              </p>
             </div>
           </div>
         </div>
