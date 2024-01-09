@@ -1,0 +1,42 @@
+{
+  "name": "Pro Unity",
+  "short_name": "Pro Unity",
+  "description": "Transform Your Business with ProUnity's Web and Mobile Development Services in Bukhara.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3833cc",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./PwaIcon/pro-unity-logo-72-72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./PwaIcon/pro-unity-logo-96-96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./PwaIcon/pro-unity-logo-144-144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./PwaIcon/pro-unity-logo-192-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./PwaIcon/pro-unity-logo-512-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -8,34 +8,41 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://prounity.uz" />
     <meta property="og:site_name" content="Pro Unity" />
-    <meta property="og:title" content="ProUnity - Your Partner in Web and Mobile Development in Bukhara."/>
+    <meta property="og:title" content="ProUnity - Your Partner in Web and Mobile Development in Bukhara." />
     <meta property="og:description" content="Transform Your Business with ProUnity's Web and Mobile Development Services in Bukhara." />
     <meta property="og:image" content="/src/assets/logoheader.jpg" />
     <meta property="og:image:secure_url" content="/src/assets/logoheader.jpg" />
     <meta property="og:image:type" content="image/jpg" />
     <meta property="og:image:width" content="968" />
     <meta property="og:image:height" content="504" />
-    <meta name="robots" content="all"  />
+    <meta name="robots" content="all" />
     <meta name="googlebot" content="all" />
     <meta name="description" content="Transform Your Business with ProUnity's Web and Mobile Development Services in Bukhara." />
-    <met name="google-site-verification" content="eTBU-tNv3A6VY86MHhi8TStR64AFVz6kHvW-HHvR62U" />
+    <meta name="google-site-verification" content="eTBU-tNv3A6VY86MHhi8TStR64AFVz6kHvW-HHvR62U" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <title>
-      ProUnity - Your Partner in Web and Mobile Development in Bukhara.
-    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="manifest" href="/public/manifest.json" />
+    <title> ProUnity - Your Partner in Web and Mobile Development in Bukhara. </title>
     <link rel="canonical" href="https://prounity.uz" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./public/serviceWorker.js")
+            .then((reg) => {
+              console.log("Worker Registered");
+            })
+            .catch((err) => {
+              console.log("Error in service worker registration.");
+            });
+        });
+      }
+    </script>
   </body>
 </html>
