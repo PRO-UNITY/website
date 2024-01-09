@@ -1,4 +1,4 @@
-import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
+import HrmsDocumentationLayout from "../../../../../layout/HrmsDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { Hrs, User } from "./Data";
@@ -382,7 +382,9 @@ const Users = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-section-prymary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -683,7 +685,9 @@ const Users = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-section-prymary text-white">GET</code>
+                        <code className="bg-section-prymary text-white">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -765,7 +769,9 @@ const Users = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-section-prymary text-white">GET</code>
+                        <code className="bg-section-prymary text-white">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -842,7 +848,9 @@ const Users = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-section-prymary text-white">GET</code>
+                        <code className="bg-section-prymary text-white">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>

@@ -2,7 +2,7 @@ import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-import Layout from "../../Layout/Layout";
+import Layout from "../../layout/Layout";
 const About = () => {
   const { t } = useTranslation();
   useEffect(() => {

@@ -18,7 +18,7 @@ import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import Layout from "../../../Layout/Layout";
+import Layout from "../../../layout/Layout";
 import { Link } from "react-router-dom";
 
 const CaruselItem = [

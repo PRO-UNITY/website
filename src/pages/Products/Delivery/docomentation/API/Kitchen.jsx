@@ -1,9 +1,9 @@
-import DeliveryDocumentationLayout from "../../../../../Layout/DeliveryDocumentationLayout";
+import DeliveryDocumentationLayout from "../../../../../layout/DeliveryDocumentationLayout";
 import CodeFormat from "../../../Hrms/docomentation/components/Code-format";
 import Asaide from "../Asaide";
-import { kitchen } from "../../Data";
 import { useContext } from "react";
 import { AsideScrollActive } from "../../../../../context/AsideScrollActive";
+import { kitchen } from "./Data";
 const AsaideNavs = [
   {
     id: 3,
@@ -105,7 +105,9 @@ const Kitchen = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-section-prymary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -345,7 +347,9 @@ const Kitchen = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-section-prymary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1061,7 +1065,9 @@ const Kitchen = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-section-prymary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1413,7 +1419,9 @@ const Kitchen = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-section-prymary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>
@@ -1753,7 +1761,9 @@ const Kitchen = () => {
                     <pre className="ms-2 m-0 ">
                       Method:
                       <span className="text-success">
-                        <code className="bg-section-prymary text-light">GET</code>
+                        <code className="bg-section-prymary text-light">
+                          GET
+                        </code>
                       </span>
                     </pre>
                   </div>

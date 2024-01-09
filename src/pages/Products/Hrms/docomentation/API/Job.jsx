@@ -1,5 +1,5 @@
 import Asaide from "../Asaide";
-import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
+import HrmsDocumentationLayout from "../../../../../layout/HrmsDocumentationLayout";
 import CodeFormat from "../components/Code-format";
 import { Jobs } from "./Data";
 import { useEffect, useRef, useState } from "react";

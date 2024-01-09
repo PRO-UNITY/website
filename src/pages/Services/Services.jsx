@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import Layout from "../../Layout/Layout";
+import Layout from "../../layout/Layout";
 import "./Sevisec.css";
 
 const Services = () => {
@@ -29,10 +29,7 @@ const Services = () => {
               data-wow-delay="0.1s"
             >
               <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
-                <div
-                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
-                  
-                >
+                <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-computer fs-2 pro-text-primary " />
                 </div>
                 <h4 className="mb-3">
@@ -58,10 +55,7 @@ const Services = () => {
               data-wow-delay="0.1s"
             >
               <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
-                <div
-                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
-                  
-                >
+                <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-school pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
@@ -83,10 +77,7 @@ const Services = () => {
               data-wow-delay="0.1s"
             >
               <div className="service-item rounded-4 h-100 px-3  px-md-5 py-4">
-                <div
-                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
-                  
-                >
+                <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-diagram-successor pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
@@ -112,10 +103,7 @@ const Services = () => {
               data-wow-delay="0.1s"
             >
               <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
-                <div
-                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
-                  
-                >
+                <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-briefcase pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
@@ -137,10 +125,7 @@ const Services = () => {
               data-wow-delay="0.1s"
             >
               <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
-                <div
-                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
-                  
-                >
+                <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-brands fa-sourcetree pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
@@ -162,10 +147,7 @@ const Services = () => {
               data-wow-delay="0.1s"
             >
               <div className="service-item  rounded-4 h-100 px-3  px-md-5 py-4">
-                <div
-                  className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4"
-                  
-                >
+                <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-people-group pro-text-primary  fs-2" />
                 </div>
                 <h4 className="mb-3">
@@ -175,11 +157,7 @@ const Services = () => {
                   {t("servicesection.cardservice6.Description").slice(0, 100)}
                   ...
                 </p>
-                <Link
-                  to={"/services/pro-community"}
-                  className="btn  pl-5"
-                  href
-                >
+                <Link to={"/services/pro-community"} className="btn  pl-5" href>
                   <i className="fa fa-plus me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>

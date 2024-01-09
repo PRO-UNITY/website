@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import Layout from "../../Layout/Layout";
+import Layout from "../../layout/Layout";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -116,8 +116,9 @@ const Contact = () => {
                         className="form-select border-0"
                         style={{ height: 55 }}
                         ref={purposeRef}
+                        defaultValue={0}
                       >
-                        <option selected>
+                        <option value={0} hidden>
                           {t("appointment.inputplaceholderpurpose")}
                         </option>
                         <option value={1}>Frontend</option>

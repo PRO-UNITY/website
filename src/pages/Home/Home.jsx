@@ -6,7 +6,7 @@ import { Partners, teamMembers } from "../../constants";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
-import Layout from "../../Layout/Layout";
+import Layout from "../../layout/Layout";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -483,8 +483,9 @@ const Home = () => {
                         className="form-select border-0"
                         style={{ height: 55 }}
                         ref={purposeRef}
+                        defaultValue={0}
                       >
-                        <option selected>
+                        <option value={0} hidden>
                           {t("appointment.inputplaceholderpurpose")}
                         </option>
                         <option value={1}>Frontend</option>

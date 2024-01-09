@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import Layout from "../../Layout/Layout";
+import Layout from "../../layout/Layout";
 
 const ProCommunity = () => {
   const { t } = useTranslation();

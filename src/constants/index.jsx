@@ -100,14 +100,14 @@ export const HeroBottom = [
 
 export const HomeSliderImage = [
   { id: 1, img: slider_img_1 },
-  { id: 1, img: slider_img_2 },
-  { id: 1, img: slider_img_3 },
-  { id: 1, img: slider_img_4 },
-  { id: 1, img: slider_img_5 },
-  { id: 1, img: slider_img_6 },
-  { id: 1, img: slider_img_7 },
-  { id: 1, img: slider_img_8 },
-  { id: 1, img: slider_img_9 },
+  { id: 2, img: slider_img_2 },
+  { id: 3, img: slider_img_3 },
+  { id: 4, img: slider_img_4 },
+  { id: 5, img: slider_img_5 },
+  { id: 6, img: slider_img_6 },
+  { id: 7, img: slider_img_7 },
+  { id: 8, img: slider_img_8 },
+  { id: 9, img: slider_img_9 },
 ];
 
 export const Partners = [

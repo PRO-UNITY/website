@@ -1,4 +1,4 @@
-import HrmsDocumentationLayout from "../../../../../Layout/HrmsDocumentationLayout";
+import HrmsDocumentationLayout from "../../../../../layout/HrmsDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { Jobs, Resumes } from "./Data";

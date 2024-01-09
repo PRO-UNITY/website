@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Layout from "../../Layout/Layout";
+import Layout from "../../layout/Layout";
 import "./Products.css";
 const products = [
   {

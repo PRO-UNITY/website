@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import DeliveryDocumentationLayout from "../../../../../Layout/DeliveryDocumentationLayout";
+import DeliveryDocumentationLayout from "../../../../../layout/DeliveryDocumentationLayout";
 import Asaide from "../Asaide";
 import CodeFormat from "../components/Code-format";
 import { orders } from "./Data";

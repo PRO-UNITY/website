@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import HrmsDocumentationLayout from "../../../../Layout/HrmsDocumentationLayout";
+import HrmsDocumentationLayout from "../../../../layout/HrmsDocumentationLayout";
 const Data = [
   {
     id: 1,
@@ -125,7 +125,10 @@ const Data = [
         subtitle: "Hr",
         subchild: [
           { name: "Job Hr resumes (GET)", path: "resume#resume-list" },
-          { name: "Job Hr resumes read (GET)", path: "resume#resume-list-detail" },
+          {
+            name: "Job Hr resumes read (GET)",
+            path: "resume#resume-list-detail",
+          },
         ],
       },
       {

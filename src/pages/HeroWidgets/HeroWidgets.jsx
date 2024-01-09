@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Layout from "../../Layout/Layout";
+import Layout from "../../layout/Layout";
 import { useParams } from "react-router-dom";
 import { HeroBottom } from "../../constants";
 import "./HeroWidgets.css";

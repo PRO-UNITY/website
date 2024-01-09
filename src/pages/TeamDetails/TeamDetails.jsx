@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Layout from "../../Layout/Layout";
+import Layout from "../../layout/Layout";
 import { teamMembers } from "../../constants";
 import "./TeamDatail.css";
 import { useEffect, useState } from "react";
