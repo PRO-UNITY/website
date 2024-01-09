@@ -2,7 +2,7 @@
   "name": "Pro Unity",
   "short_name": "Pro Unity",
   "description": "Transform Your Business with ProUnity's Web and Mobile Development Services in Bukhara.",
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3833cc",
