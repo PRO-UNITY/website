@@ -8,9 +8,8 @@
 .services-page {
   background: var(--primary);
 }
-.service-item h4 {
+.service-item h1 {
   color: var(--primary);
-  font-size: 32px;
 }
 .service-item p {
   color: #2d2d2d;

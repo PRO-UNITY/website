@@ -15,7 +15,9 @@ const Footer = () => {
       <div className="container py-5">
         <div className="row g-5">
           <div className="col-lg-4 col-md-6">
-            <h5 className="text-light mb-4">{t("footer.address")}</h5>
+            <p className="fs-5 fw-semibold text-light mb-4">
+              {t("footer.address")}
+            </p>
             <a
               target="_blank"
               rel="noreferrer"
@@ -44,19 +46,22 @@ const Footer = () => {
             <div className="d-flex pt-2">
               {followUsLinks.map((item) => (
                 <a
+                  aria-label="Pro Unity social links"
                   key={item.id}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-decoration-none btn btn-light btn-social rounded-circle"
                   href={item.link}
                 >
-                  <img width={16} src={item.icon} alt="" />
+                  <img width={16} height={16} src={item.icon} alt="" />
                 </a>
               ))}
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <h5 className="text-light mb-4">{t("footer.services.title")}</h5>
+            <p className="fs-5 fw-semibold text-light mb-4">
+              {t("footer.services.title")}
+            </p>
             <Link
               to={"/services/softwareDevelopenent"}
               className="btn btn-link"
@@ -101,7 +106,9 @@ const Footer = () => {
             </Link>
           </div>
           <div className="col-lg-4 col-md-6">
-            <h5 className="text-light mb-4">{t("footer.quicklinks.title")}</h5>
+            <p className="fs-5 fw-semibold text-light mb-4">
+              {t("footer.quicklinks.title")}
+            </p>
             <Link
               to={"/about"}
               className="btn btn-link"

@@ -9,21 +9,21 @@ const About = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
-    <Layout>
+    <Layout title={"ProUnity | About Us"}>
       <div className="container-xxl py-5 mb-5 mb-">
         <div className="container">
           <div className="row g-5">
-            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div className="col-lg-6 wow fadeIn">
               <div className="d-flex flex-column">
                 <img
                   className="img-fluid rounded w-75 align-self-end img-lider"
                   src={creator}
-                  alt
+                  alt="Pro Unity about"
                 />
                 <img
                   className="img-animation img-fluid rounded w-50 bg-white cursor"
                   src={albomPro}
-                  alt
+                  alt="Pro Unity alboom"
                   style={{ marginTop: "-25%" }}
                 />
               </div>

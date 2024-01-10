@@ -66,7 +66,7 @@ const platformData = [
   {
     id: 2,
     image: flutterb,
-    background: "rgba(48, 220, 128, 0.26);",
+    background: "rgba(48, 220, 128, 0.26)",
     link: "https://bloclibrary.dev/",
   },
   {
@@ -92,8 +92,7 @@ const platformData = [
 const Hrms = () => {
   const { t } = useTranslation();
   return (
-    <Layout>
-      {" "}
+    <Layout title={"ProUnity | Hrms"}>
       <div className="hrms">
         <section className="hrms-hero container-fluid header pro-bg-primary   mb-5">
           <div className="row g-0 h-100 align-items-end flex-column flex-lg-row">
@@ -107,10 +106,13 @@ const Hrms = () => {
               <p className="description text-white">
                 {t("hrms.home.description")}
               </p>
-              <a className="download-btn btn  text-decoration-none fs-5 pro-text-primary me-3 rounded ">
+              <Link
+                to={""}
+                className="download-btn btn  text-decoration-none fs-5 pro-text-primary me-3 rounded "
+              >
                 {t("hrms.home.button1")}
                 <i className="fa-solid fa-arrow-right-long "></i>
-              </a>
+              </Link>
               <Link
                 to={"/products/hrms/documentation/"}
                 className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded "
@@ -143,11 +145,17 @@ const Hrms = () => {
               <p className="description">{t("hrms.about.box1.description")}</p>
               <p className="description">{t("hrms.about.box1.description2")}</p>
               <p className="description">{t("hrms.about.box1.description3")}</p>
-              <a className=" btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3">
+              <a
+                href="#"
+                className="btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3"
+              >
                 <i className="fa-brands fa-google-play fs-5 me-2"></i>
                 Google Play
               </a>
-              <a className=" btn btn-outline-primary  me-3 fs-5 py-md-3 px-4 mt-3">
+              <a
+                href="#"
+                className=" btn btn-outline-primary  me-3 fs-5 py-md-3 px-4 mt-3"
+              >
                 <i className="fa-brands fa-apple fs-4 me-2"></i>
                 App Store
               </a>
@@ -158,7 +166,7 @@ const Hrms = () => {
           <div className="container h-100 my-4 d-flex justify-content-center align-items-center">
             <div className="row">
               {platformData.map((item) => (
-                <div className="col " key={item.id}>
+                <div className="col" key={item.id}>
                   <a
                     target="_blank"
                     rel="noreferrer"
@@ -166,13 +174,14 @@ const Hrms = () => {
                     className="card my-3"
                   >
                     <div
-                      style={{ background: item.background }}
+                      style={{ backgroundColor: `${item.background}` }}
                       className="img-box d-flex justify-content-center align-items-center"
                     >
                       <img
                         src={item.image}
-                        alt=""
-                        className="w-100 h-100  p-3"
+                        alt="platform image"
+                        width={80}
+                        className="p-3"
                       />
                     </div>
                   </a>
@@ -181,97 +190,18 @@ const Hrms = () => {
             </div>
           </div>
         </section>
-
-        {/* Pricing */}
-        {/* <section className="pricing container-fluid  pro-bg-primary  py-5">
-     <div className="container d-flex align-items-center flex-column  flex-md-row py-5 justify-content-center gap-5">
-       <div className="card p-3 p-md-5 rounded-4">
-         <div className="card-head">
-           <h4 className="fw-semibold">Econom</h4>
-           <p className="m-0">
-             E-commerce app for One Store Owner, use for multi-purpose app
-           </p>
-         </div>
-         <ul className="card-content p-0 pb-4 border-bottom border-primary">
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Work with ProUnity 3.x
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Full ProUnity Source Code
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Design & Extensions Files
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={close_icon} alt="check" />
-             Purchase one, life-time update
-           </li>
-         </ul>
-         <div className="card-bottom text-center">
-           <div className="price text-center d-flex justify-content-center align-items-end">
-             <h1 className="m-0 fw-bold">69$ </h1>{" "}
-             <span className="h6"> /one time</span>
-           </div>
-           <button
-             style={{ color: "yellow" }}
-             className="btn btn-primary mt-4 px-3 py-2 fw-semibold"
-           >
-             Purchase Now
-           </button>
-         </div>
-       </div>
-       <div className="card p-3 p-md-5 rounded-4">
-         <div className="card-head">
-           <h4 className="fw-semibold">Econom</h4>
-           <p className="m-0">
-             E-commerce app for One Store Owner, use for multi-purpose app
-           </p>
-         </div>
-         <ul className="card-content p-0 pb-4 border-bottom border-primary">
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Work with ProUnity 3.x
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Full ProUnity Source Code
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Design & Extensions Files
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={close_icon} alt="check" />
-             Purchase one, life-time update
-           </li>
-         </ul>
-         <div className="card-bottom text-center">
-           <div className="price text-center d-flex justify-content-center align-items-end">
-             <h1 className="m-0 fw-bold">79$ </h1>
-             <span className="h6"> /one time</span>
-           </div>
-           <button
-             style={{ color: "yellow" }}
-             className="btn btn-primary mt-4 px-3 py-2 fw-semibold"
-           >
-             Purchase Now
-           </button>
-         </div>
-       </div>
-     </div>
-   </section> */}
         <section className="pricing py-md-5 ">
           <div className="head text-center mt-5">
-            <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
+            <p className="subtitle">{t("hrms.pricing.subtitle")}</p>
             <h2>{t("hrms.pricing.title")}</h2>
           </div>
           <div className="pricing-cards mt-4 container gap-4">
             <div className="row">
               <div className="col-lg-4">
-                <div className="card bg-light rounded-4 border-0 proffesional my-3 w-100  p-5">
+                <div
+                  style={{ backgroundColor: "#fff" }}
+                  className="card rounded-4 border-0 proffesional my-3 w-100  p-5"
+                >
                   <div className="mt-md-5 border-bottom pb-4">
                     <h2>{t("hrms.pricing.cardProffesional.title")}</h2>
                   </div>
@@ -302,7 +232,10 @@ const Hrms = () => {
                       <span className="h5 lh-lg">3.990$ </span>
                       <span className="text-secondary">/ month</span>
                     </div>
-                    <a className=" btn btn-outline-primary  py-md-3 px-3 ">
+                    <a
+                      href="#"
+                      className=" btn btn-outline-primary  py-md-3 px-3 "
+                    >
                       Start now
                       <i className="fa-solid fa-arrow-right-long ms-1"></i>
                     </a>
@@ -312,9 +245,9 @@ const Hrms = () => {
               <div className="col-lg-8">
                 <div className="card unlimited pro-bg-primary  text-white unlimited rounded-4 border-0 my-3 d-flex w-100  p-5">
                   <div className="border-bottom pb-4">
-                    <a className="btn border text-white mb-2 rounded-pill ">
+                    <span className="btn border text-white mb-2 rounded-pill ">
                       {t("hrms.pricing.cardUnlimited.subtitle")}
-                    </a>
+                    </span>
                     <h2>{t("hrms.pricing.cardUnlimited.title")}</h2>
                   </div>
                   <div className="card-content mt-2 border-bottom row pb-4">
@@ -364,7 +297,10 @@ const Hrms = () => {
                       <span className="h5 lh-lg">5.990$ </span>
                       <span className="text-light">/ month</span>
                     </div>
-                    <a className="download-btn download-btn-outline  m-0 text-decoration-none  rounded ">
+                    <a
+                      href="#"
+                      className="download-btn download-btn-outline  m-0 text-decoration-none  rounded "
+                    >
                       Start now
                       <i className="fa-solid fa-arrow-right-long mt-1"></i>
                     </a>
@@ -393,231 +329,31 @@ const Hrms = () => {
             centeredSlides
             loop
             spaceBetween={30}
-            // autoplay={{
-            //   delay: 2500,
-            // }}
+            autoplay={{
+              delay: 2500,
+            }}
             className="mySwiper "
             modules={[Autoplay]}
           >
             {CaruselItem.map((item) => (
-              <>
-                <SwiperSlide key={item.id}>
-                  <img src={item.image} alt="" />
-                </SwiperSlide>
-              </>
+              <SwiperSlide key={item.id}>
+                <img src={item.image} alt="" />
+              </SwiperSlide>
             ))}
           </Swiper>
           <div className="slider-overlay"></div>
           <div className="img-form w-100 h-100 position-absolute top-0 text-center">
-            <div className="img-box  ">
-              <img src={form_bg} alt="" className="bg-img" />
+            <div className="img-box">
+              <img
+                width={"100%"}
+                height={"100%"}
+                src={form_bg}
+                alt="perview slider img hrms"
+                className="bg-img img-fluid"
+              />
             </div>
           </div>
         </section>
-
-        {/* Archive */}
-        {/* <div className=" hrms-archive container-fluid pro-bg-primary  servces-detail pt-5">
-     <div className="head text-center text-white">
-       <h5 className="subtitle">{t("hrms.archived.subtitle")}</h5>
-       <h2>{t("hrms.archived.title")}</h2>
-     </div>
-     <div className="archive-card">
-       <div className="row bg-white rounded h-100 p-5">
-         <div className="col-md-4 d-flex align-items-center justify-content-center flex-column">
-           <h1>1M</h1>
-           <h5>{t("hrms.archived.cardDownloads.text")}</h5>
-         </div>
-         <div className="col-md-4 card-item  d-flex align-items-center justify-content-center flex-column">
-           <h1>30K</h1>
-           <h5>{t("hrms.archived.cardReviews.text")}</h5>
-         </div>
-         <div className="col-md-4  d-flex align-items-center justify-content-center flex-column">
-           <h1>4.8/5</h1>
-           <h5>{t("hrms.archived.cardRating.text")}</h5>
-         </div>
-       </div>
-     </div>
-   </div> */}
-
-        {/* Features */}
-        {/* <section className="feature container mt-5 pt-5">
-     <div className="head text-center text-dark">
-       <h5 className="subtitle">{t("hrms.features.subtitle")}</h5>
-       <h1 className="mx-auto w-100" style={{ maxWidth: "800px" }}>
-         {t("hrms.features.title")}
-       </h1>
-     </div>
-     <div className="cards d-flex align-items-center justify-content-center flex-column ">
-       <div className="card card-top p-4 ">
-         <div className="card-head d-flex align-items-center justify-content-center">
-           <div
-             className="d-inline-flex  align-items-center justify-content-center bg-light rounded-circle mb-4"
-             style={{ width: 100, height: 100 }}
-           >
-             <i className="fa-solid fa-computer fs-2 pro-text-primary" />
-           </div>
-         </div>
-         <div className="card-body text-center">
-           <h5 className="card-title">{t("hrms.features.card1.title")}</h5>
-           <p className="card-text">
-             {t("hrms.features.card1.description")}
-           </p>
-         </div>
-       </div>
-
-       <div className=" card-bottom  d-md-flex justify-content-center gap-4">
-         <div className="card p-4 border-0 my-2">
-           <div className="card-head">
-             <div
-               className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-               style={{ width: 100, height: 100 }}
-             >
-               <i className="fa-solid fa-computer fs-2 pro-text-primary" />
-             </div>
-           </div>
-           <div className="card-body text-center">
-             <h5 className="card-title">{t("hrms.features.card2.title")}</h5>
-             <p className="card-text">
-               {t("hrms.features.card2.description")}
-             </p>
-           </div>
-         </div>
-
-         <div className="card p-4 border-0 my-2">
-           <div className="card-head d-flex justify-content-lg-end">
-             <div
-               className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-               style={{ width: 100, height: 100 }}
-             >
-               <i className="fa-solid fa-computer fs-2 pro-text-primary" />
-             </div>
-           </div>
-           <div className="card-body text-center">
-             <h5 className="card-title">{t("hrms.features.card3.title")}</h5>
-             <p className="card-text">
-               {t("hrms.features.card3.description")}
-             </p>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section> */}
-        {/* Feedback */}
-        {/* <section className="feedback container-fluid pro-bg-primary  servces-detail my-5 py-3  pt-md-5">
-     <div className="head text-center text-white">
-       <h5 className="subtitle">{t("hrms.feedback.subtitle")}</h5>
-       <h1 className="mx-auto w-100" style={{ maxWidth: "800px" }}>
-         {t("hrms.feedback.title")}
-       </h1>
-     </div>
-     <div className="feedback-cards gap-4 container">
-       <div className="row">
-         <div className="col-lg-4">
-           <div className="card">
-             <div className="card-head p-4">
-               <i>{t("hrms.feedback.card1.text")}</i>
-             </div>
-             <div className="card-body">
-               <div className="row">
-                 <div className="col-lg-auto">
-                   <img
-                     className="profile-image"
-                     src={feedbackProfile}
-                     alt="profile-img"
-                   />
-                 </div>
-                 <div className="col-lg-8">
-                   <h5 className="name m-0">
-                     {t("hrms.feedback.card1.name")}
-                   </h5>
-                   <p className="profession">
-                     {t("hrms.feedback.card1.proffesion")}
-                   </p>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div className="col-lg-4">
-           <div className="card">
-             <div className="card-head p-4">
-               <i>{t("hrms.feedback.card1.text")}</i>
-             </div>
-             <div className="card-body">
-               <div className="row">
-                 <div className="col-lg-auto">
-                   <img
-                     className="profile-image"
-                     src={feedbackProfile}
-                     alt="profile-img"
-                   />
-                 </div>
-                 <div className="col-lg-8">
-                   <h5 className="name m-0">
-                     {t("hrms.feedback.card1.name")}
-                   </h5>
-                   <p className="profession">
-                     {t("hrms.feedback.card1.proffesion")}
-                   </p>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div className="col-lg-4">
-           <div className="card">
-             <div className="card-head p-4">
-               <i>{t("hrms.feedback.card1.text")}</i>
-             </div>
-             <div className="card-body">
-               <div className="row">
-                 <div className="col-lg-auto">
-                   <img
-                     className="profile-image"
-                     src={feedbackProfile}
-                     alt="profile-img"
-                   />
-                 </div>
-                 <div className="col-lg-8">
-                   <h5 className="name m-0">
-                     {t("hrms.feedback.card1.name")}
-                   </h5>
-                   <p className="profession">
-                     {t("hrms.feedback.card1.proffesion")}
-                   </p>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section> */}
-
-        {/* Pricing */}
-
-        {/*  */}
-        {/* <section className="get-app my-5">
-     <div className="img-box d-flex align-items-center justify-content-center">
-       <img src={home_slider} alt="phone-img" />
-       <img src={home_slider} alt="phone-img" />
-       <img src={home_slider} alt="phone-img" />
-     </div>
-     <div className="container pro-bg-primary  rounded-4  d-flex align-items-center justify-content-center">
-       <div className="head text-center text-white">
-         <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
-         <h2>{t("hrms.pricing.pricingCardText")}</h2>
-         <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
-           {t("hrms.home.button")}
-           <img src={aplleLogo} alt="aplle" />
-         </a>
-         <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
-           {t("hrms.home.button")}
-           <img src={playStoreLogo} alt="" />
-         </a>
-       </div>
-     </div>
-   </section> */}
       </div>
     </Layout>
   );

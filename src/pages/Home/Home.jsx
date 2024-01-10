@@ -34,7 +34,11 @@ const Home = () => {
     });
   };
   return (
-    <Layout>
+    <Layout
+      title={
+        "ProUnity - Your Partner in Web and Mobile Development in Bukhara."
+      }
+    >
       {/* Header Start */}
       <section className=" container-fluid header pro-bg-primary p-0 mb-5">
         <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
@@ -135,7 +139,7 @@ const Home = () => {
                 to={"/about"}
                 className="btn home-btn pro-bg-primary rounded-pill text-light py-3 px-5 mt-3"
               >
-                {t("aboutsection.morebutton")}
+                About Us
               </Link>
             </div>
           </div>
@@ -265,9 +269,9 @@ const Home = () => {
                         <p className="text-white m-0">
                           {t("featuresection.listmini1")}
                         </p>
-                        <h5 className="text-white mb-0">
+                        <p className="fs-5 fw-semibold text-white mb-0">
                           {t("featuresection.listbig1")}
-                        </h5>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -280,12 +284,12 @@ const Home = () => {
                         <i className="fa fa-check pro-text-primary" />
                       </div>
                       <div className="ms-2">
-                        <p className="text-white m-0">
+                        <p className="  text-white m-0">
                           {t("featuresection.listmini2")}
                         </p>
-                        <h5 className="text-white mb-0">
+                        <p className="fs-5 fw-semibold text-white mb-0">
                           {t("featuresection.listbig2")}
-                        </h5>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -298,12 +302,12 @@ const Home = () => {
                         <i className="fa fa-comment-medical pro-text-primary" />
                       </div>
                       <div className="ms-2">
-                        <p className="text-white m-0">
+                        <p className="  text-white m-0">
                           {t("featuresection.listmini3")}
                         </p>
-                        <h5 className="text-white text-wrap m-0">
+                        <p className="fs-5 fw-semibold text-white text-wrap m-0">
                           {t("featuresection.listbig3")}
-                        </h5>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -319,9 +323,9 @@ const Home = () => {
                         <p className="text-white m-0">
                           {t("featuresection.listmini4")}
                         </p>
-                        <h5 className="text-white m-0">
+                        <p className="fs-5 fw-semibold text-white m-0">
                           {t("featuresection.listbig4")}
-                        </h5>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -362,6 +366,9 @@ const Home = () => {
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center">
                 <a
+                  aria-label="ProUnit's YouTube blog"
+                  rel="noreferrer"
+                  target="_blank"
                   href="https://www.youtube.com/watch?v=_voQ5MGXX3g"
                   className=" btn-danger btn-youtube   mx-auto mb-4 "
                 >
@@ -420,7 +427,7 @@ const Home = () => {
                   </div>
                   <div className="ms-2 ms-md-5">
                     <p className="mb-2">{t("appointment.call")}</p>
-                    <h5 className="mb-0">+998 33 899 50 00</h5>
+                    <p className="fs-5 fw-semibold mb-0">+998 33 899 50 00</p>
                   </div>
                 </div>
               </a>
@@ -439,7 +446,9 @@ const Home = () => {
                   </div>
                   <div className="ms-2 ms-md-5">
                     <p className="mb-2">{t("appointment.message")}</p>
-                    <h5 className="mb-0 ">prounity.uz@gmail.com</h5>
+                    <p className="fs-5 fw-semibold mb-0">
+                      prounity.uz@gmail.com
+                    </p>
                   </div>
                 </div>
               </a>
@@ -480,6 +489,7 @@ const Home = () => {
                     </div>
                     <div className="col-12 col-sm-6">
                       <select
+                        aria-label="Purpose"
                         className="form-select border-0"
                         style={{ height: 55 }}
                         ref={purposeRef}

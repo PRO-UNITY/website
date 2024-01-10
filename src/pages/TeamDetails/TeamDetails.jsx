@@ -17,7 +17,7 @@ const TeamDetails = () => {
   }, [id]);
 
   return (
-    <Layout>
+    <Layout title={`ProUnity | ${user?.name}`}>
       <div className="team-detail pro-bg-primary py-5 h-auto">
         <div className="container">
           <div className="row">

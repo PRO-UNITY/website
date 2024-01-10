@@ -10,7 +10,7 @@ const Services = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
-    <Layout>
+    <Layout title={"ProUnity | Services"}>
       <div className="py-5 services-page">
         <div className="px-5">
           <div
@@ -32,17 +32,17 @@ const Services = () => {
                 <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-computer fs-2 pro-text-primary " />
                 </div>
-                <h4 className="mb-3">
+                <h1 className="fs-2 mb-3">
                   {t("servicesection.cardservice1.title")}
-                </h4>
+                </h1>
                 <p className="mb-4">
                   {t("servicesection.cardservice1.Description").slice(0, 100)}
                   ...
                 </p>
                 <Link
                   to={"/services/softwareDevelopenent"}
-                  className="btn "
-                  href
+                  title="Software developement"
+                  className="btn"
                 >
                   <i className="fa fa-plus   me-3" />
                   {t("servicesection.servicebutton")}
@@ -58,14 +58,14 @@ const Services = () => {
                 <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-school pro-text-primary  fs-2" />
                 </div>
-                <h4 className="mb-3">
+                <h1 className="fs-2 mb-3">
                   {t("servicesection.cardservice2.title")}
-                </h4>
+                </h1>
                 <p className="mb-4">
                   {t("servicesection.cardservice2.Description").slice(0, 100)}
                   ...
                 </p>
-                <Link to={"/services/IT-school"} className="btn " href>
+                <Link to={"/services/IT-school"} className="btn ">
                   <i className="fa fa-plus me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
@@ -80,18 +80,14 @@ const Services = () => {
                 <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-diagram-successor pro-text-primary  fs-2" />
                 </div>
-                <h4 className="mb-3">
+                <h1 className="fs-2 mb-3">
                   {t("servicesection.cardservice3.title")}
-                </h4>
+                </h1>
                 <p className="mb-4">
                   {t("servicesection.cardservice3.Description").slice(0, 100)}
                   ...
                 </p>
-                <Link
-                  to={"/services/authorized-tutorial"}
-                  className="btn "
-                  href
-                >
+                <Link to={"/services/authorized-tutorial"} className="btn ">
                   <i className="fa fa-plus   me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
@@ -106,14 +102,14 @@ const Services = () => {
                 <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-briefcase pro-text-primary  fs-2" />
                 </div>
-                <h4 className="mb-3">
+                <h1 className="fs-2 mb-3">
                   {t("servicesection.cardservice4.title")}
-                </h4>
+                </h1>
                 <p className="mb-4">
                   {t("servicesection.cardservice4.Description").slice(0, 100)}
                   ...
                 </p>
-                <Link to={"/services/coworking"} className="btn " href>
+                <Link to={"/services/coworking"} className="btn ">
                   <i className="fa fa-plus   me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
@@ -128,14 +124,14 @@ const Services = () => {
                 <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-brands fa-sourcetree pro-text-primary  fs-2" />
                 </div>
-                <h4 className="mb-3">
+                <h1 className="fs-2 mb-3">
                   {t("servicesection.cardservice5.title")}
-                </h4>
+                </h1>
                 <p className="mb-4">
                   {t("servicesection.cardservice5.Description").slice(0, 100)}
                   ...
                 </p>
-                <Link to={"/services/opencourse"} className="btn " href>
+                <Link to={"/services/opencourse"} className="btn ">
                   <i className="fa fa-plus   me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>
@@ -150,14 +146,14 @@ const Services = () => {
                 <div className="d-inline-flex align-items-center justify-content-center icon-box rounded-circle mb-4">
                   <i className="fa-solid fa-people-group pro-text-primary  fs-2" />
                 </div>
-                <h4 className="mb-3">
+                <h1 className="fs-2 mb-3">
                   {t("servicesection.cardservice6.title")}
-                </h4>
+                </h1>
                 <p className="mb-4">
                   {t("servicesection.cardservice6.Description").slice(0, 100)}
                   ...
                 </p>
-                <Link to={"/services/pro-community"} className="btn  pl-5" href>
+                <Link to={"/services/pro-community"} className="btn  pl-5">
                   <i className="fa fa-plus me-3" />
                   {t("servicesection.servicebutton")}
                 </Link>

@@ -41,7 +41,7 @@ const Topbar = () => {
                 className="social-links text-decoration-none btn-sm-square rounded-circle bg-white  me-1"
                 href={item.link}
               >
-                <img width={16} src={item.icon} alt="" />
+                <img width={16} height={16} src={item.icon} alt="social-icon" />
               </a>
             ))}
           </div>

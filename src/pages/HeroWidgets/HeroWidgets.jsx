@@ -14,7 +14,7 @@ const HeroWidgets = () => {
   }, [id]);
   console.log(widgets);
   return (
-    <Layout>
+    <Layout title={`ProUnity | ${widgets[0]?.name}`}>
       <div
         className="hero-widgets"
         style={{ backgroundImage: `url(${widgets[0]?.background})` }}

@@ -8,7 +8,7 @@ const Coworking = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
-    <Layout>
+    <Layout title={"ProUnity | Coworking"}>
       <div className="servces-detail py-5">
         <div className="container">
           <div className="text-light mt-5">

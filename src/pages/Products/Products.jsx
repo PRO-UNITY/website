@@ -20,7 +20,7 @@ const products = [
 
 const Products = () => {
   return (
-    <Layout>
+    <Layout title={"ProUnity | Products"}>
       <div className="py-5 products">
         <div className="row px-md-5 h-100">
           <div className="col-lg-5">

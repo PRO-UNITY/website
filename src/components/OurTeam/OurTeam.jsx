@@ -13,14 +13,15 @@ const OurTeam = ({ name, occupation, image }) => {
         <div className="team-item position-relative rounded overflow-hidden">
           <div className="overflow-hidden">
             <img
-              style={{ height: 380, width: "100%", objectFit: "cover" }}
+              width={"100%"}
+              height={"100%"}
               className="img-fluid"
               src={image}
-              alt={"team-img"}
+              alt={name}
             />
           </div>
           <div className="team-text pro-bg-primary text-center p-4">
-            <h5 className="text-white">{name}</h5>
+            <p className="fs-5 fw-semibold text-white">{name}</p>
             <p className="text-white">{occupation}</p>
           </div>
         </div>

@@ -30,7 +30,7 @@ const Contact = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
-    <Layout>
+    <Layout title={"ProUnity | Contact"}>
       <div className="container-xxl py-5 contact">
         <div className="container">
           <div className="row g-5">
@@ -113,6 +113,7 @@ const Contact = () => {
                     </div>
                     <div className="col-12 col-sm-6">
                       <select
+                        aria-label="Purpose"
                         className="form-select border-0"
                         style={{ height: 55 }}
                         ref={purposeRef}

@@ -92,8 +92,7 @@ const platformData = [
 const Hrms = () => {
   const { t } = useTranslation();
   return (
-    <Layout>
-      {" "}
+    <Layout title={"ProUnity | Delivery"}>
       <div className="hrms">
         <section className="hrms-hero del-hero container-fluid header pro-bg-primary  mb-5">
           <div className="row g-0 h-100 align-items-end flex-column flex-lg-row">

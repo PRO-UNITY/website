@@ -5,7 +5,7 @@
   },
   "navbar": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
     "service": "Sevices",
     "products": "Products",
     "language": "En",
@@ -228,7 +228,7 @@
       "title": "Pro Community",
       "Description": "At PRO UNITY, we are proud to be a part of the community, consisting of many developers and startups from Bukhara. Join us in our mission to create innovative solutions and push the boundaries of technology.."
     },
-    "servicebutton": "Read More"
+    "servicebutton": "See More Services"
   },
 
   "hrms": {

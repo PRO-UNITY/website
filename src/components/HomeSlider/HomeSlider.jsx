@@ -26,7 +26,12 @@ export default function HomeSwipper() {
       >
         {HomeSliderImage.map((item) => (
           <SwiperSlide key={item.id} className="swiper-slide">
-            <img src={item.img} alt="slider-image" />
+            <img
+              src={item.img}
+              alt="slider-image"
+              srcSet={item.img}
+              loading="lazy"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

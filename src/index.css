@@ -286,11 +286,9 @@ p {
   overflow: hidden;
   transition: 0.5s;
 }
-
 .service-item:hover .btn {
-  width: 140px;
+  width: 190px;
 }
-
 .partners-carousel {
   display: none;
 }

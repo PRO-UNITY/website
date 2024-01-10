@@ -7,7 +7,9 @@ const PartnersCard = ({ logo, link }) => {
     >
       <a href={link} target="_blank" rel="noreferrer">
         <img
-          style={{ width: "100%", height: 130, objectFit: "contain" }}
+          width={100}
+          height={100}
+          style={{ width: "100%", height: "130px", objectFit: "contain" }}
           src={logo}
           alt={"prouniti-partners"}
         />
