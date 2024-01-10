@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import Layout from "../../layout/Layout";
 
-
 const Home = () => {
   const { t } = useTranslation();
   const nameRef = useRef(null);
@@ -35,11 +34,7 @@ const Home = () => {
     });
   };
   return (
-    <Layout
-      title={
-        "ProUnity - Your Partner in Web and Mobile Development in Bukhara."
-      }
-    >
+    <Layout>
       {/* Header Start */}
       <section className=" container-fluid header pro-bg-primary p-0 mb-5">
         <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
