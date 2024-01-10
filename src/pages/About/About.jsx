@@ -9,7 +9,7 @@ const About = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
-    <Layout title={"ProUnity | About Us"}>
+    <Layout title={"ProUnity | About Us "}>
       <div className="container-xxl py-5 mb-5 mb-">
         <div className="container">
           <div className="row g-5">
