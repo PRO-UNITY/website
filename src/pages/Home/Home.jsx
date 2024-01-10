@@ -34,7 +34,7 @@ const Home = () => {
     });
   };
   return (
-    <Layout>
+    <>
       {/* Header Start */}
       <section className=" container-fluid header pro-bg-primary p-0 mb-5">
         <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
@@ -523,7 +523,7 @@ const Home = () => {
         </div>
       </div>
       {/* Appointment End */}
-    </Layout>
+    </>
   );
 };
 
