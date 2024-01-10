@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import Layout from "../../layout/Layout";
 
+
 const Home = () => {
   const { t } = useTranslation();
   const nameRef = useRef(null);
