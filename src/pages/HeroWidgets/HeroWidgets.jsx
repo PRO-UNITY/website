@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Layout from "../../layout/Layout";
 import { useParams } from "react-router-dom";
 import { HeroBottom } from "../../constants";
 import "./HeroWidgets.css";
+import Layout from "../../Layout/Layout";
 
 const HeroWidgets = () => {
   const { id } = useParams();

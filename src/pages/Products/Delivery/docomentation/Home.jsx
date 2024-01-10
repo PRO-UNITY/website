@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import DeliveryDocumentationLayout from "../../../../layout/DeliveryDocumentationLayout";
+import DeliveryDocumentationLayout from "../../../../Layout/DeliveryDocumentationLayout";
 const Data = [
   {
     id: 1,

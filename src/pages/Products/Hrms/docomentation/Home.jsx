@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import HrmsDocumentationLayout from "../../../../layout/HrmsDocumentationLayout";
+import HrmsDocumentationLayout from "../../../../Layout/HrmsDocumentationLayout";
 const Data = [
   {
     id: 1,

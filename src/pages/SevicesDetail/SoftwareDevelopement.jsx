@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import Layout from "../../layout/Layout";
+import Layout from "../../Layout/Layout";
 import "./SevicesDetail.css";
 
 const SoftwareDevelopenent = () => {

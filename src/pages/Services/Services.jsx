@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import Layout from "../../layout/Layout";
+import Layout from "../../Layout/Layout";
 import "./Sevisec.css";
 
 const Services = () => {

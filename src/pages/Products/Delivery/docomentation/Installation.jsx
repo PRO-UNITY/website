@@ -1,4 +1,4 @@
-import DeliveryDocumentationLayout from "../../../../layout/DeliveryDocumentationLayout";
+import DeliveryDocumentationLayout from "../../../../Layout/DeliveryDocumentationLayout";
 
 const Installation = () => {
   return (

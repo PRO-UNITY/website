@@ -1,4 +1,4 @@
-import DeliveryDocumentationLayout from "../../../../../layout/DeliveryDocumentationLayout";
+import DeliveryDocumentationLayout from "../../../../../Layout/DeliveryDocumentationLayout";
 import CodeFormat from "../../../Hrms/docomentation/components/Code-format";
 import Asaide from "../Asaide";
 import { useContext } from "react";
