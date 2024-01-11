@@ -349,7 +349,7 @@ export const teamMembers = [
   {
     id: 14,
     name: "Dilshod Chuliyev",
-    occupation: "Backend Developer",
+    occupation: "Frontend Mentor ",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "dilshodchuliyev@gmail.com",
     socialLinks: [
