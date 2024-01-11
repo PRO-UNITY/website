@@ -1,5 +1,6 @@
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
+import albomPDF from "../../assets/albom.pdf";
 import teamwork from "../../assets/teamwork.jpg";
 import Drrrible_logo from "../../assets/Dribbble_logo.png";
 import GitHub_logo from "../../assets/pngimg.com - github_PNG15.png";
@@ -108,7 +109,7 @@ const Home = () => {
                   src={creator}
                   alt="creator"
                 />
-                <a target="_blank" href="/src/assets/albom.pdf">
+                <a target="_blank" href={albomPDF} rel="noreferrer">
                   <img
                     className="img-animation img-fluid rounded w-50 bg-white cursor"
                     src={albomPro}
