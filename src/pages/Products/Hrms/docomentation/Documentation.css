@@ -2,6 +2,7 @@
 @font-face {
   font-family: "Rf-Rosefin";
   src: url("/public/Fonts/rf-rostin-regular.otf");
+  font-display: swap;
 }
 :root {
   --color-primary: rgb(69, 32, 171);

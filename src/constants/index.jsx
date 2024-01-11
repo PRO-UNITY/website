@@ -178,10 +178,10 @@ export const Partners = [
     logo: partner16,
     link: "https://toureast.uz/",
   },
-  {
-    logo: partner17,
-    link: "https://uztelecom.uz/",
-  },
+  // {
+  //   logo: partner17,
+  //   link: "https://uztelecom.uz/",
+  // },
 ];
 
 export const teamMembers = [
