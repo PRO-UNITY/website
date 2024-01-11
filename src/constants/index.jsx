@@ -1,12 +1,12 @@
 import slider_img_1 from "../assets/team1.jpg";
 import slider_img_2 from "../assets/slide77.jpg";
-// import slider_img_3 from "../assets/slide44.jpg";
-// import slider_img_4 from "../assets/koridor1.jpg";
-// import slider_img_5 from "../assets/koworking1.jpg";
-// import slider_img_6 from "../assets/grouplider1.jpg";
-// import slider_img_7 from "../assets/group11.jpg";
-// import slider_img_8 from "../assets/slide5.jpg";
-// import slider_img_9 from "../assets/slide88.jpg";
+import slider_img_3 from "../assets/slide44.jpg";
+import slider_img_4 from "../assets/koridor1.jpg";
+import slider_img_5 from "../assets/koworking1.jpg";
+import slider_img_6 from "../assets/grouplider1.jpg";
+import slider_img_7 from "../assets/group11.jpg";
+import slider_img_8 from "../assets/slide5.jpg";
+import slider_img_9 from "../assets/slide88.jpg";
 import partner1 from "../assets/partnerfp.jpg";
 import partner2 from "../assets/partner2.png";
 import partner3 from "../assets/partner3.png";
@@ -103,13 +103,13 @@ export const HeroBottom = [
 export const HomeSliderImage = [
   { id: 1, img: slider_img_1 },
   { id: 2, img: slider_img_2 },
-  // { id: 3, img: slider_img_3 },
-  // { id: 4, img: slider_img_4 },
-  // { id: 5, img: slider_img_5 },
-  // { id: 6, img: slider_img_6 },
-  // { id: 7, img: slider_img_7 },
-  // { id: 8, img: slider_img_8 },
-  // { id: 9, img: slider_img_9 },
+  { id: 3, img: slider_img_3 },
+  { id: 4, img: slider_img_4 },
+  { id: 5, img: slider_img_5 },
+  { id: 6, img: slider_img_6 },
+  { id: 7, img: slider_img_7 },
+  { id: 8, img: slider_img_8 },
+  { id: 9, img: slider_img_9 },
 ];
 
 export const Partners = [
