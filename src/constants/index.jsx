@@ -19,11 +19,10 @@ import partner9 from "../assets/partner11.png";
 import partner10 from "../assets/partner1.jpg";
 import partner11 from "../assets/partner6.png";
 import partner12 from "../assets/partnerenrico.png";
-import partner13 from "../assets/partnerart.jpg";
+// import partner13 from "../assets/partnerart.jpg";
 import partner14 from "../assets/partner5.png";
 import partner15 from "../assets/partner7.png";
 import partner16 from "../assets/partner9.png";
-import partner17 from "../assets/partner12.png";
 
 import Developer from "../assets/slide77.jpg";
 import Students from "../assets/group11.jpg";
@@ -162,10 +161,10 @@ export const Partners = [
     logo: partner12,
     link: "https://www.instagram.com/enricorosettibukhara/",
   },
-  {
-    logo: partner13,
-    link: "",
-  },
+  // {
+  //   logo: partner13,
+  //   link: "",
+  // },
   {
     logo: partner14,
     link: "https://yoshlar.gov.uz/",
