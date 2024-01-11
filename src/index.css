@@ -172,6 +172,7 @@ html {
 .img-partner {
   opacity: 0.4;
   transition: 500ms;
+  
 }
 .img-partner:hover {
   opacity: 1;

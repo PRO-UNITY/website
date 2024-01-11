@@ -105,13 +105,17 @@ const Home = () => {
             <div className="col-lg-6 wow fadeIn">
               <div className="d-flex flex-column">
                 <img
-                  className="img-fluid rounded w-75 align-self-end img-lider"
+                  width={"75%"}
+                  height={"100%"}
+                  className="img-fluid rounded align-self-end img-lider"
                   src={creator}
                   alt="creator"
                 />
                 <a target="_blank" href={albomPDF} rel="noreferrer">
                   <img
-                    className="img-animation img-fluid rounded w-50 bg-white cursor"
+                    width={"50%"}
+                    height={"100%"}
+                    className="img-animation img-fluid rounded  bg-white cursor"
                     src={albomPro}
                     alt={"albom-pro"}
                     style={{ marginTop: "-25%" }}
@@ -173,8 +177,9 @@ const Home = () => {
                 href={"https://github.com/PRO-UNITY"}
               >
                 <img
+                  width={"100%"}
+                  height={"100%"}
                   className="img-partner"
-                  style={{ width: "100%" }}
                   src={GitHub_logo}
                   alt="prounity-github"
                 />
@@ -190,8 +195,9 @@ const Home = () => {
                 href={"https://dribbble.com/prounity"}
               >
                 <img
+                  width={"100%"}
+                  height={"100%"}
                   className="img-partner"
-                  style={{ width: "100%" }}
                   src={Drrrible_logo}
                   alt="prounity-dribbble"
                 />
@@ -208,8 +214,9 @@ const Home = () => {
                 href={"https://clutch.co/profile/pro-unity"}
               >
                 <img
+                  width={"100%"}
+                  height={"100%"}
                   className="img-partner mt-4"
-                  style={{ width: "100%" }}
                   src={Clutch_logo}
                   alt={"prounity-clutch"}
                 />
