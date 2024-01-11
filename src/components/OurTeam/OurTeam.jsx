@@ -12,13 +12,7 @@ const OurTeam = ({ name, occupation, image }) => {
       >
         <div className="team-item position-relative rounded overflow-hidden">
           <div className="overflow-hidden">
-            <img
-              width={"100%"}
-              height={"100%"}
-              className="img-fluid"
-              src={image}
-              alt={name}
-            />
+            <img width={"100%"} src={image} alt={name} />
           </div>
           <div className="team-text pro-bg-primary text-center p-4">
             <p className="fs-5 fw-semibold text-white">{name}</p>

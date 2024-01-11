@@ -1,6 +1,9 @@
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
 import teamwork from "../../assets/teamwork.jpg";
+import Drrrible_logo from "../../assets/Dribbble_logo.png";
+import GitHub_logo from "../../assets/pngimg.com - github_PNG15.png";
+import Clutch_logo from "../../assets/clutch-logo-red.png";
 import { HomeSlider, OurTeam, PartnersCard } from "../../components";
 import { Partners, teamMembers } from "../../constants";
 import { useTranslation } from "react-i18next";
@@ -105,12 +108,14 @@ const Home = () => {
                   src={creator}
                   alt="creator"
                 />
-                <img
-                  className="img-animation img-fluid rounded w-50 bg-white cursor"
-                  src={albomPro}
-                  alt={"albom-pro"}
-                  style={{ marginTop: "-25%" }}
-                />
+                <a target="_blank" href="/src/assets/albom.pdf">
+                  <img
+                    className="img-animation img-fluid rounded w-50 bg-white cursor"
+                    src={albomPro}
+                    alt={"albom-pro"}
+                    style={{ marginTop: "-25%" }}
+                  />
+                </a>
               </div>
             </div>
             <div className="col-lg-6 wow fadeIn ps-5" data-wow-delay="0.5s">
@@ -169,7 +174,7 @@ const Home = () => {
                 <img
                   className="img-partner"
                   style={{ width: "100%" }}
-                  src="https://pngimg.com/d/github_PNG15.png"
+                  src={GitHub_logo}
                   alt="prounity-github"
                 />
               </a>
@@ -186,7 +191,7 @@ const Home = () => {
                 <img
                   className="img-partner"
                   style={{ width: "100%" }}
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/32/Dribbble_logo.png"
+                  src={Drrrible_logo}
                   alt="prounity-dribbble"
                 />
               </a>
@@ -204,7 +209,7 @@ const Home = () => {
                 <img
                   className="img-partner mt-4"
                   style={{ width: "100%" }}
-                  src="https://ml.globenewswire.com/Resource/Download/77ae316b-82ad-4147-9189-ee10517a4208"
+                  src={Clutch_logo}
                   alt={"prounity-clutch"}
                 />
               </a>

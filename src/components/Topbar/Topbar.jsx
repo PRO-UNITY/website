@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { followUsLinks } from "../../constants";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Topbar = () => {
   const { t } = useTranslation();
@@ -38,10 +39,15 @@ const Topbar = () => {
                 key={item.id}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-links text-decoration-none btn-sm-square rounded-circle bg-white  me-1"
+                className="social-links text-decoration-none btn-sm-square rounded-circle bg-white p-2 me-1"
                 href={item.link}
               >
-                <img width={16} height={16} src={item.icon} alt="social-icon" />
+                <LazyLoadImage
+                  alt="Prounity-github"
+                  className=" w-100 h-100 mb-1"
+                  effect="blur"
+                  src={item.icon}
+                />
               </a>
             ))}
           </div>
