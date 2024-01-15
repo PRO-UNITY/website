@@ -220,7 +220,6 @@ const Home = () => {
               >
                 <img
                   width={"100%"}
-                  height={"100%"}
                   className="img-partner mt-4"
                   src={Clutch_logo}
                   alt={"prounity-clutch"}
