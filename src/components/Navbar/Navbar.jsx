@@ -1,18 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/logotogether.png";
 import Topbar from "../Topbar/Topbar";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import { Nav, Navbar } from "react-bootstrap";
-import { useContext, useState } from "react";
+import { Nav, NavLink, Navbar } from "react-bootstrap";
 import "./Navbar.css";
-import { ActiveNavContext } from "../../context/ActiveNav";
+import { useState } from "react";
 
 const MyNavbar = () => {
   const { t } = useTranslation();
-  const { activeNav, setactiveNav } = useContext(ActiveNavContext);
-  const [activeProduct, setactiveProduct] = useState(0);
   const [activeLang, setactiveLang] = useState("en");
+  const { pathname } = useLocation();
+  const changeLang = (lang) => {
+    i18next.changeLanguage(lang);
+    setactiveLang(document.cookie.split("=")[1] || "en");
+  };
+
   return (
     <>
       <Topbar />
@@ -23,73 +26,61 @@ const MyNavbar = () => {
         data-wow-delay="0.1s"
       >
         <div className="container-fluid">
-          <Navbar.Brand
-            as={Link}
-            to="/"
-            onClick={() => setactiveNav(1)}
-            className="logo"
-          >
+          <Navbar.Brand as={Link} to="/home" className="logo">
             <img className="ml-0 " src={Logo} alt="prounity-logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarCollapse" />
           <Navbar.Collapse id="navbarCollapse">
             <Nav className="ms-auto p-4 p-lg-0 align-items-center">
-              <Nav.Link
-                className={`${activeNav === 1 ? "active" : ""} py-0`}
-                onClick={() => setactiveNav(1)}
+              <NavLink
+                className={`${pathname.includes("/home") ? "active" : ""} py-0`}
                 as={Link}
-                to="/"
+                to="/home"
               >
                 {t("navbar.home")}
-              </Nav.Link>
-              <Nav.Link
+              </NavLink>
+              <NavLink
                 as={Link}
                 to="/about"
-                className={`${activeNav === 2 ? "active" : ""} py-0`}
-                onClick={() => setactiveNav(2)}
+                className={`${pathname.includes("/about") && "active"} py-0`}
               >
                 {t("navbar.about")}
-              </Nav.Link>
+              </NavLink>
               <Nav.Link
                 as={Link}
                 to="/services"
-                className={`${activeNav === 3 ? "active" : ""} py-0`}
-                onClick={() => setactiveNav(3)}
+                className={`${pathname.includes("/services") && "active"} py-0`}
               >
                 {t("navbar.service")}
               </Nav.Link>
               <div className="nav-item dropdown">
-                <Link
+                <NavLink
+                  as={Link}
                   to={"/products"}
-                  className={`${
-                    activeNav === 4 ? "active" : ""
-                  } py-0 nav-link dropdown-toggle `}
-                  onClick={() => setactiveNav(4)}
+                  className={`py-0 nav-link dropdown-toggle ${
+                    pathname.includes("/products") && "active"
+                  }`}
                 >
                   Products
-                </Link>
+                </NavLink>
                 <div className="dropdown-menu  rounded px-3 mt-2">
                   <Link
                     to={"/products/hrms"}
-                    className={`dropdown-item    px-0 ${
-                      activeProduct === 1 ? "dropdown-item-active " : ""
+                    className={`dropdown-item px-0 ${
+                      pathname === "/products/hrms"
+                        ? "dropdown-item-active"
+                        : ""
                     }`}
-                    onClick={() => {
-                      setactiveProduct(1);
-                      setactiveNav(4);
-                    }}
                   >
                     Hrms
                   </Link>
                   <Link
                     to={"/products/delivery"}
-                    className={`dropdown-item    px-0 ${
-                      activeProduct === 2 ? "dropdown-item-active " : ""
+                    className={`dropdown-item px-0 ${
+                      pathname === "/products/delivery"
+                        ? "dropdown-item-active"
+                        : ""
                     }`}
-                    onClick={() => {
-                      setactiveProduct(2);
-                      setactiveNav(4);
-                    }}
                   >
                     Delivery
                   </Link>
@@ -99,19 +90,12 @@ const MyNavbar = () => {
               <Nav.Link
                 as={Link}
                 to="/contact"
-                className={`${activeNav === 6 ? "active" : ""} py-0 `}
-                onClick={() => setactiveNav(6)}
+                className={`${pathname.includes("/contact") && "active"} py-0 `}
               >
                 {t("navbar.contact")}
               </Nav.Link>
               <div className="nav-item dropdown ">
-                <a
-                  href="#"
-                  className={`${
-                    activeNav === 5 ? "active" : ""
-                  } py-0 nav-link dropdown-toggle `}
-                  onClick={() => setactiveNav(5)}
-                >
+                <a href="#" className={`py-0 nav-link dropdown-toggle`}>
                   En
                 </a>
                 <div className="dropdown-menu lang-menu  rounded pb-3  px-3 mt-2">
@@ -119,10 +103,7 @@ const MyNavbar = () => {
                     className={`dropdown-item px-0 ${
                       activeLang === "en" ? "dropdown-item-active " : ""
                     } `}
-                    onClick={() => {
-                      i18next.changeLanguage("en");
-                      setactiveLang("en");
-                    }}
+                    onClick={() => changeLang("en")}
                   >
                     En
                   </span>
@@ -130,10 +111,7 @@ const MyNavbar = () => {
                     className={`dropdown-item px-0 ${
                       activeLang === "ru" ? "dropdown-item-active " : ""
                     } `}
-                    onClick={() => {
-                      i18next.changeLanguage("ru");
-                      setactiveLang("ru");
-                    }}
+                    onClick={() => changeLang("ru")}
                   >
                     Ru
                   </span>
@@ -141,10 +119,7 @@ const MyNavbar = () => {
                     className={`dropdown-item px-0 ${
                       activeLang === "uz" ? "dropdown-item-active " : ""
                     } `}
-                    onClick={() => {
-                      i18next.changeLanguage("uz");
-                      setactiveLang("uz");
-                    }}
+                    onClick={() => changeLang("uz")}
                   >
                     Uz
                   </span>
