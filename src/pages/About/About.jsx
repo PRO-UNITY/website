@@ -16,16 +16,28 @@ const About = () => {
             <div className="col-lg-6 wow fadeIn">
               <div className="d-flex flex-column">
                 <img
-                  className="img-fluid rounded w-75 align-self-end img-lider"
+                  width={"75%"}
+                  height={"100%"}
+                  className="img-fluid rounded align-self-end img-lider"
                   src={creator}
-                  alt="Pro Unity about"
+                  alt="creator"
                 />
-                <img
-                  className="img-animation img-fluid rounded w-50 bg-white cursor"
-                  src={albomPro}
-                  alt="Pro Unity alboom"
-                  style={{ marginTop: "-25%" }}
-                />
+                <a
+                  target="_blank"
+                  href={
+                    "https://drive.google.com/file/d/1u87Btr9npvvZ-23WjS3ZpDnOXHln9dea/view?usp=sharing"
+                  }
+                  rel="noreferrer"
+                >
+                  <img
+                    width={"50%"}
+                    height={"100%"}
+                    className="img-animation img-fluid rounded  bg-white cursor"
+                    src={albomPro}
+                    alt={"albom-pro"}
+                    style={{ marginTop: "-25%" }}
+                  />
+                </a>
               </div>
             </div>
             <div
