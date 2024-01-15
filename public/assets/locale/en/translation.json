@@ -9,7 +9,7 @@
     "service": "Sevices",
     "products": "Products",
     "language": "En",
-    "contact": "Contant"
+    "contact": "Contact"
   },
   "herosection": {
     "title": "Our mission is to empower individuals with the skills and knowledge needed to thrive in the digital age.",
@@ -186,7 +186,7 @@
     "services": {
       "title": "Services",
       "link1": "Software Development",
-      "link2": "It School",
+      "link2": "IT School",
       "link3": "Authorized Tutorial",
       "link4": "Coworking",
       "link5": "Open Source",

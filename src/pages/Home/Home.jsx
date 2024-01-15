@@ -1,6 +1,5 @@
 import creator from "../../assets/creater.jpg";
 import albomPro from "../../assets/albompro.jpg";
-import albomPDF from "../../assets/albom.pdf";
 import teamwork from "../../assets/teamwork.jpg";
 import Drrrible_logo from "../../assets/Dribbble_logo.png";
 import GitHub_logo from "../../assets/pngimg.com - github_PNG15.png";
@@ -111,7 +110,13 @@ const Home = () => {
                   src={creator}
                   alt="creator"
                 />
-                <a target="_blank" href={albomPDF} rel="noreferrer">
+                <a
+                  target="_blank"
+                  href={
+                    "https://drive.google.com/file/d/1u87Btr9npvvZ-23WjS3ZpDnOXHln9dea/view?usp=sharing"
+                  }
+                  rel="noreferrer"
+                >
                   <img
                     width={"50%"}
                     height={"100%"}
@@ -398,7 +403,7 @@ const Home = () => {
             </p>
             <h1>{t("teamsection.title")}</h1>
           </div>
-          <div className="row g-4">
+          <div className="row g-4 h-100 ">
             {teamMembers.map((item, i) => (
               <OurTeam key={i} {...item} />
             ))}

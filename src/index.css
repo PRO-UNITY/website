@@ -172,7 +172,6 @@ html {
 .img-partner {
   opacity: 0.4;
   transition: 500ms;
-  
 }
 .img-partner:hover {
   opacity: 1;
@@ -222,6 +221,10 @@ p {
 .img-animation {
   animation: pulsing2 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.5s;
+}
+.home-team  img{
+  height: 350px;
+  object-fit: cover
 }
 @keyframes pulsing2 {
   from {

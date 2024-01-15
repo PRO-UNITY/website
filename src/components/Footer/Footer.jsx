@@ -9,7 +9,7 @@ const Footer = () => {
   const { setactiveNav } = useContext(ActiveNavContext);
   return (
     <div
-      className="container-fluid bg-dark text-light footer  pt-5 wow fadeIn"
+      className="container-fluid bg-dark text-light footer pt-5"
       data-wow-delay="0.1s"
     >
       <div className="container py-5">
@@ -38,7 +38,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               href="mailto:prounity.uz@gmail.com"
-              className="mb-2 text-decoration-none  btn btn-link"
+              className="mb-2 text-decoration-none btn btn-link text-lowercase"
             >
               <i className="fa fa-envelope me-3" />
               prounity.uz@gmail.com

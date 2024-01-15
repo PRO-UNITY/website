@@ -42,7 +42,7 @@ import Behzodf from "../assets/behzodf.jpg";
 import Behzodorg from "../assets/behzodorg.jpg";
 import Bobur from "../assets/bobur1.jpg";
 import Dilshod from "../assets/dilshod.jpg";
-import Jamshid from "../assets/jamshid1.jpg";
+import Jamshid from "../assets/Jamshid-Ismoilov.jpg";
 import Baxtior from "../assets/bugalter2.jpg";
 import Mironchik from "../assets/mironchik1.jpg";
 import Mirxon from "../assets/mirxon.jpg";
@@ -361,8 +361,8 @@ export const teamMembers = [
   },
   {
     id: 15,
-    name: "Jamshid Ismoilov",
-    occupation: "Backend Developer",
+    name: "Jamshid Barotov",
+    occupation: "Architecture Mentor",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "jamshidismoilov@gmail.com",
     socialLinks: [
