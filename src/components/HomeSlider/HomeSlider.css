@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   height: 550px;
+  user-select: none;
 }
 .swiper-slide img {
   display: block;
@@ -21,9 +22,9 @@
 .home-slider {
   position: relative;
 }
-.home .navigationBox .swiper-button-prev {
+/* .home .navigationBox .swiper-button-prev {
   display: none;
-}
+} */
 .home .navigationBox .swiper-button-prev,
 .home .navigationBox .swiper-button-next {
   background-color: rgb(255, 255, 255);
