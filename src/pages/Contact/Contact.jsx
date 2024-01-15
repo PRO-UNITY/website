@@ -1,36 +1,43 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Layout from "../../Layout/Layout";
+import { Alert } from "react-bootstrap";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [show, setShow] = useState(false);
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const mobileRef = useRef(null);
   const purposeRef = useRef(null);
   const descriptionRef = useRef(null);
+
   const ContactPost = async (event) => {
     event.preventDefault();
-    const formData = {
-      name: nameRef.current?.value,
-      email: emailRef.current?.value,
-      phone: mobileRef.current?.value,
-      purpose: purposeRef.current?.value,
-      description: descriptionRef.current?.value,
-    };
-    await fetch("https://api.prounity.uz/email/send_email/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    setShow(true);
+    nameRef.current.value = null;
+    emailRef.current.value = null;
+    mobileRef.current.value = null;
+    purposeRef.current.value = 0;
+    descriptionRef.current.value = null;
   };
+
+  setTimeout(() => setShow(false), 5000);
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
     <Layout title={"ProUnity | Contact"}>
+      {show && (
+        <Alert
+          className="send-message"
+          variant="success"
+          onClose={() => setShow(false)}
+          dismissible
+        >
+          <p className="m-0">Your message has been sent successfully!</p>
+        </Alert>
+      )}
       <div className="container-xxl py-5 contact">
         <div className="container">
           <div className="row g-5">
@@ -89,6 +96,7 @@ const Contact = () => {
                         style={{ height: 55 }}
                         name="name"
                         ref={nameRef}
+                        required
                       />
                     </div>
                     <div className="col-12 col-sm-6">
@@ -99,6 +107,7 @@ const Contact = () => {
                         style={{ height: 55 }}
                         name="email"
                         ref={emailRef}
+                        required
                       />
                     </div>
                     <div className="col-12 col-sm-6">
@@ -109,6 +118,7 @@ const Contact = () => {
                         style={{ height: 55 }}
                         name="mobile"
                         ref={mobileRef}
+                        required
                       />
                     </div>
                     <div className="col-12 col-sm-6">
@@ -118,6 +128,7 @@ const Contact = () => {
                         style={{ height: 55 }}
                         ref={purposeRef}
                         defaultValue={0}
+                        required
                       >
                         <option value={0} hidden>
                           {t("appointment.inputplaceholderpurpose")}
@@ -133,6 +144,7 @@ const Contact = () => {
                         rows={5}
                         placeholder={t("appointment.inputplaceholderdescripe")}
                         ref={descriptionRef}
+                        required
                       />
                     </div>
                     <div className="col-12">
