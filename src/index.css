@@ -8,6 +8,12 @@
 html {
   overscroll-behavior: none;
 }
+.send-message {
+  position: fixed !important;
+  z-index: 999999;
+  right: 10px;
+  top: 10px;
+}
 .pro-bg-primary {
   background: var(--primary) !important;
 }
@@ -222,9 +228,9 @@ p {
   animation: pulsing2 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.5s;
 }
-.home-team  img{
+.home-team img {
   height: 350px;
-  object-fit: cover
+  object-fit: cover;
 }
 @keyframes pulsing2 {
   from {
