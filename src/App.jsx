@@ -27,8 +27,9 @@ import {
   HrmsDocJob,
   HrmsDocResume,
   HrmsDocCompany,
-  HeroWidgets,
   Delivery,
+  Students,
+  ExpertDevlopers,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
@@ -53,7 +54,8 @@ function App() {
         >
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/widgets/:id" element={<HeroWidgets />} />
+            <Route path="/students" element={<Students />} />
+            <Route path="/expert-devlopers" element={<ExpertDevlopers />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/softwareDevelopenent" element={<SoftwareDevelopenent />} />

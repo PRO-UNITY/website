@@ -1,5 +1,6 @@
 export { default as Home } from "./Home/Home";
-export { default as HeroWidgets } from "./HeroWidgets/HeroWidgets";
+export { default as Students } from "./HeroWidgets/Students";
+export { default as ExpertDevlopers } from "./HeroWidgets/ExpertDevlopers";
 export { default as About } from "./About/About";
 export { default as Services } from "./Services/Services";
 export { default as SoftwareDevelopenent } from "./SevicesDetail/SoftwareDevelopement";
@@ -12,7 +13,6 @@ export { default as Contact } from "./Contact/Contact";
 export { default as PageNotFound } from "./PageNotFound/PageNotFound";
 export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 export { default as Products } from "./Products/Products";
-
 // Hrms
 export { default as Hrms } from "./Products/Hrms/Hrms";
 export { default as HrmsDocumentation } from "./Products/Hrms/docomentation/Home";

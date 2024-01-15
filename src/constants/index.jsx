@@ -190,6 +190,7 @@ export const teamMembers = [
     occupation: "Co-founder",
     education: "O'zbekiston Milliy Universiteti",
     email: "azizbekhamroyev@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -203,6 +204,7 @@ export const teamMembers = [
     occupation: "Co-founder, CEO",
     education: "Toshkent Davlat Texnologiya Universiteti",
     email: "mironmustafoev@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -216,6 +218,7 @@ export const teamMembers = [
     occupation: "Designer",
     education: "O'zbekiston San'at va Arxitektura Instituti",
     email: "andreymolodsov@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -229,6 +232,7 @@ export const teamMembers = [
     occupation: "Software Engineer",
     education: "Inha University in Tashkent",
     email: "sobirjonbobojonov@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -242,6 +246,7 @@ export const teamMembers = [
     occupation: "Frontend Developer",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "davlatshohnaimov@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -255,6 +260,7 @@ export const teamMembers = [
     occupation: "Mobile Developer",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "amirbekazimov@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       {
@@ -271,6 +277,7 @@ export const teamMembers = [
     occupation: "Frontend Developer",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "jobirashurov8@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/AshurovJobir", icon: "facebook-f" },
       {
@@ -287,6 +294,7 @@ export const teamMembers = [
     occupation: "Devops Developer",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "ibrohimistamov@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -300,6 +308,7 @@ export const teamMembers = [
     occupation: "Frontend Mentor",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "otabekkadirov@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -313,6 +322,7 @@ export const teamMembers = [
     occupation: "Frontend Mentor",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "behzodbaxshilloyev@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -326,6 +336,7 @@ export const teamMembers = [
     occupation: "Graphic Designer",
     education: "Buxoro Davlat Universiteti",
     email: "behzodusmanov@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -339,6 +350,7 @@ export const teamMembers = [
     occupation: "Backend Developer",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "boburkhamraev@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -352,6 +364,7 @@ export const teamMembers = [
     occupation: "Frontend Mentor ",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "dilshodchuliyev@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -365,6 +378,7 @@ export const teamMembers = [
     occupation: "Architecture Mentor",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "jamshidismoilov@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -378,6 +392,7 @@ export const teamMembers = [
     occupation: "Finance",
     education: "Toshkent Davlat Moliya Instituti",
     email: "baxtiorraxmonov@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -391,6 +406,7 @@ export const teamMembers = [
     occupation: "PR Manager",
     education: "Toshkent Davlat Texnologiya Universiteti",
     email: "mironnusratov@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -404,6 +420,7 @@ export const teamMembers = [
     occupation: "Mobile Developer",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "mirxonkuziyev@gmail.com",
+    role: "developer",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -417,6 +434,7 @@ export const teamMembers = [
     occupation: "Designer",
     education: "Buxoro Davlat Universiteti",
     email: "murodaxmadov@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -430,6 +448,7 @@ export const teamMembers = [
     occupation: "Sales Manager",
     education: "Toshkent Davlat Moliya Instituti",
     email: "nafisarasulova@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -443,6 +462,7 @@ export const teamMembers = [
     occupation: "Trainer",
     education: "O'zbekiston Milliy Universiteti",
     email: "daryausyakiya@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -456,6 +476,7 @@ export const teamMembers = [
     occupation: "Designer",
     education: "Toshkent San'at va Arxitektura Instituti",
     email: "polinanosova@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -469,6 +490,7 @@ export const teamMembers = [
     occupation: "Sales assistaint",
     education: "Toshkent Davlat Moliya Instituti",
     email: "samiyaibragimova@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -482,6 +504,7 @@ export const teamMembers = [
     occupation: "Office Manager",
     education: "Toshkent Davlat Moliya Instituti",
     email: "sadoqatabdulayeva@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -495,6 +518,7 @@ export const teamMembers = [
     occupation: "Marketing Manager",
     education: "Toshkent Davlat Moliya Instituti",
     email: "zarnigormajidova@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -508,6 +532,7 @@ export const teamMembers = [
     occupation: "Videographer",
     education: "Toshkent Axborot Texnologiyalari Universiteti",
     email: "niginaburxanova@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -521,6 +546,7 @@ export const teamMembers = [
     occupation: "Trainer",
     education: "Toshkent Davlat Moliya Instituti",
     email: "dilnozabarakatova@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -534,6 +560,7 @@ export const teamMembers = [
     occupation: "Trainer",
     education: "Toshkent Davlat Moliya Instituti",
     email: "shaxina@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },
@@ -547,6 +574,7 @@ export const teamMembers = [
     occupation: "Web-designer",
     education: "Toshkent Davlat Texnologiya Universiteti",
     email: "mohinurtursunova@gmail.com",
+    role: "",
     socialLinks: [
       { link: "https://www.facebook.com/", icon: "facebook-f" },
       { link: "https://www.linkedin.com/", icon: "linkedin-in" },

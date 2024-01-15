@@ -4,7 +4,7 @@ const OurTeam = ({ name, occupation, image }) => {
   return (
     <div className="col-lg-3 col-md-6 wow cursor home-team">
       <Link
-        to={`user/${name.replace(/\s/g, "")}`}
+        to={`/user/${name.replace(/\s/g, "")}`}
         className="text-decoration-none"
       >
         <div className="team-item position-relative rounded overflow-hidden">

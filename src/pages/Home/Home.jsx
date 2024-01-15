@@ -53,36 +53,25 @@ const Home = () => {
               {t("herosection.title")}
             </h1>
             <div className="d-flex gap-4 pt-3 g-4  hero-bottom ">
-              <Link to={`/widgets/1`} className=" text-decoration-none">
+              <Link to={`/expert-devlopers`} className=" text-decoration-none">
                 <div className=" ">
-                  <h2
-                    className="text-white mb-1 display-5  fw-semibold"
-                    data-toggle="counter-up"
-                  >
-                    40+
+                  <h2 className="text-white mb-1 display-5  fw-semibold">
+                    10+
                   </h2>
                   <p className="text-light mb-0">Expert Developers</p>
                 </div>
               </Link>
-              <Link to={`/widgets/2`} className=" text-decoration-none">
+              <Link to={`/students`} className=" text-decoration-none">
                 <div className=" ">
-                  <h2
-                    className="text-white mb-1 display-5  fw-semibold"
-                    data-toggle="counter-up"
-                  >
-                    2k
+                  <h2 className="text-white mb-1 display-5  fw-semibold">
+                    100+
                   </h2>
-                  <p className="text-light mb-0">Students</p>
+                  <p className="text-light mb-0">Our Students</p>
                 </div>
               </Link>
               <Link to={`/products`} className="text-decoration-none">
                 <div className=" ">
-                  <h2
-                    className="text-white mb-1 display-5 fw-semibold"
-                    data-toggle="counter-up"
-                  >
-                    20+
-                  </h2>
+                  <h2 className="text-white mb-1 display-5 fw-semibold">2+</h2>
                   <p className="text-light mb-0">Projects</p>
                 </div>
               </Link>

@@ -140,7 +140,7 @@ html {
 }
 .hero-bottom a {
   width: 160px;
-  text-align: center;
+  /* text-align: center; */
   color: #fff;
   border-radius: 12px;
   padding: 5px;
