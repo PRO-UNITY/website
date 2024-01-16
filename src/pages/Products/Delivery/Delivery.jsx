@@ -1,13 +1,14 @@
 import "./Delivery.css";
-import home_slider from "../../../assets/images/hrms/home-img.png";
-import about_img from "../../../assets/images/hrms/about-img.png";
-import slider_img1 from "../../../assets/images/hrms/Rectangle 30.jpg";
-import slider_img2 from "../../../assets/images/hrms/Rectangle 31.png";
-import slider_img3 from "../../../assets/images/hrms/Rectangle 32.png";
-import slider_img4 from "../../../assets/images/hrms/Rectangle 33.png";
-import slider_img5 from "../../../assets/images/hrms/Rectangle 34.png";
-import slider_img6 from "../../../assets/images/hrms/Rectangle 35.jpg";
-import slider_img7 from "../../../assets/images/hrms/Rectangle 36.jpg";
+import home_slider from "../../../assets/images/Delivery/home-img.png";
+import about_img from "../../../assets/images/Delivery/about-img.png";
+import slider_img1 from "../../../assets/images/Delivery/slider-img-1.jpeg";
+import slider_img2 from "../../../assets/images/Delivery/slider-img-2.jpg";
+import slider_img3 from "../../../assets/images/Delivery/slider-img-3.jpg";
+import slider_img4 from "../../../assets/images/Delivery/slider-img-4.jpg";
+import slider_img5 from "../../../assets/images/Delivery/slider-img-5.jpg";
+import slider_img6 from "../../../assets/images/Delivery/slider-img-6.jpeg";
+import slider_img7 from "../../../assets/images/Delivery/slider-img-7.jpg";
+import slider_img8 from "../../../assets/images/Delivery/slider-img-8.jpg";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import flutter from "../../../assets/images/hrms/icons8-flutter-480 1.png";
 import flutterb from "../../../assets/images/hrms/pluginIcon.png";
@@ -52,7 +53,7 @@ const CaruselItem = [
   },
   {
     id: 8,
-    image: slider_img5,
+    image: slider_img8,
   },
 ];
 
@@ -106,7 +107,12 @@ const Hrms = () => {
               <p className="description text-white">
                 {t("delivery.home.description")}
               </p>
-              <a className="download-btn btn  text-decoration-none fs-5 pro-text-primary me-3 rounded ">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://food-delivery.prounity.uz/"
+                className="download-btn btn  text-decoration-none fs-5 pro-text-primary me-3 rounded "
+              >
                 {t("hrms.home.button1")}
                 <i className="fa-solid fa-arrow-right-long "></i>
               </a>
@@ -186,88 +192,6 @@ const Hrms = () => {
             </div>
           </div>
         </section>
-
-        {/* Pricing */}
-        {/* <section className="pricing container-fluid  pro-bg-primary py-5">
-     <div className="container d-flex align-items-center flex-column  flex-md-row py-5 justify-content-center gap-5">
-       <div className="card p-3 p-md-5 rounded-4">
-         <div className="card-head">
-           <h4 className="fw-semibold">Econom</h4>
-           <p className="m-0">
-             E-commerce app for One Store Owner, use for multi-purpose app
-           </p>
-         </div>
-         <ul className="card-content p-0 pb-4 border-bottom border-primary">
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Work with ProUnity 3.x
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Full ProUnity Source Code
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Design & Extensions Files
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={close_icon} alt="check" />
-             Purchase one, life-time update
-           </li>
-         </ul>
-         <div className="card-bottom text-center">
-           <div className="price text-center d-flex justify-content-center align-items-end">
-             <h1 className="m-0 fw-bold">69$ </h1>{" "}
-             <span className="h6"> /one time</span>
-           </div>
-           <button
-             style={{ color: "yellow" }}
-             className="btn btn-primary mt-4 px-3 py-2 fw-semibold"
-           >
-             Purchase Now
-           </button>
-         </div>
-       </div>
-       <div className="card p-3 p-md-5 rounded-4">
-         <div className="card-head">
-           <h4 className="fw-semibold">Econom</h4>
-           <p className="m-0">
-             E-commerce app for One Store Owner, use for multi-purpose app
-           </p>
-         </div>
-         <ul className="card-content p-0 pb-4 border-bottom border-primary">
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Work with ProUnity 3.x
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Full ProUnity Source Code
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={check_icon} alt="check" />
-             Design & Extensions Files
-           </li>
-           <li className="d-flex align-items-center mt-2 gap-2">
-             <img src={close_icon} alt="check" />
-             Purchase one, life-time update
-           </li>
-         </ul>
-         <div className="card-bottom text-center">
-           <div className="price text-center d-flex justify-content-center align-items-end">
-             <h1 className="m-0 fw-bold">79$ </h1>
-             <span className="h6"> /one time</span>
-           </div>
-           <button
-             style={{ color: "yellow" }}
-             className="btn btn-primary mt-4 px-3 py-2 fw-semibold"
-           >
-             Purchase Now
-           </button>
-         </div>
-       </div>
-     </div>
-   </section> */}
         <section className="pricing py-md-5 ">
           <div className="head text-center mt-5">
             <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
@@ -419,210 +343,6 @@ const Hrms = () => {
             </div>
           </div>
         </section>
-
-        {/* Archive */}
-        {/* <div className=" hrms-archive container-fluid pro-bg-primary servces-detail pt-5">
-     <div className="head text-center text-white">
-       <h5 className="subtitle">{t("hrms.archived.subtitle")}</h5>
-       <h2>{t("hrms.archived.title")}</h2>
-     </div>
-     <div className="archive-card">
-       <div className="row bg-white rounded h-100 p-5">
-         <div className="col-md-4 d-flex align-items-center justify-content-center flex-column">
-           <h1>1M</h1>
-           <h5>{t("hrms.archived.cardDownloads.text")}</h5>
-         </div>
-         <div className="col-md-4 card-item  d-flex align-items-center justify-content-center flex-column">
-           <h1>30K</h1>
-           <h5>{t("hrms.archived.cardReviews.text")}</h5>
-         </div>
-         <div className="col-md-4  d-flex align-items-center justify-content-center flex-column">
-           <h1>4.8/5</h1>
-           <h5>{t("hrms.archived.cardRating.text")}</h5>
-         </div>
-       </div>
-     </div>
-   </div> */}
-
-        {/* Features */}
-        {/* <section className="feature container mt-5 pt-5">
-     <div className="head text-center text-dark">
-       <h5 className="subtitle">{t("hrms.features.subtitle")}</h5>
-       <h1 className="mx-auto w-100" style={{ maxWidth: "800px" }}>
-         {t("hrms.features.title")}
-       </h1>
-     </div>
-     <div className="cards d-flex align-items-center justify-content-center flex-column ">
-       <div className="card card-top p-4 ">
-         <div className="card-head d-flex align-items-center justify-content-center">
-           <div
-             className="d-inline-flex  align-items-center justify-content-center bg-light rounded-circle mb-4"
-             style={{ width: 100, height: 100 }}
-           >
-             <i className="fa-solid fa-computer fs-2 pro-text-primary" />
-           </div>
-         </div>
-         <div className="card-body text-center">
-           <h5 className="card-title">{t("hrms.features.card1.title")}</h5>
-           <p className="card-text">
-             {t("hrms.features.card1.description")}
-           </p>
-         </div>
-       </div>
-
-       <div className=" card-bottom  d-md-flex justify-content-center gap-4">
-         <div className="card p-4 border-0 my-2">
-           <div className="card-head">
-             <div
-               className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-               style={{ width: 100, height: 100 }}
-             >
-               <i className="fa-solid fa-computer fs-2 pro-text-primary" />
-             </div>
-           </div>
-           <div className="card-body text-center">
-             <h5 className="card-title">{t("hrms.features.card2.title")}</h5>
-             <p className="card-text">
-               {t("hrms.features.card2.description")}
-             </p>
-           </div>
-         </div>
-
-         <div className="card p-4 border-0 my-2">
-           <div className="card-head d-flex justify-content-lg-end">
-             <div
-               className="d-inline-flex align-items-center justify-content-center bg-light rounded-circle mb-4"
-               style={{ width: 100, height: 100 }}
-             >
-               <i className="fa-solid fa-computer fs-2 pro-text-primary" />
-             </div>
-           </div>
-           <div className="card-body text-center">
-             <h5 className="card-title">{t("hrms.features.card3.title")}</h5>
-             <p className="card-text">
-               {t("hrms.features.card3.description")}
-             </p>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section> */}
-        {/* Feedback */}
-        {/* <section className="feedback container-fluid pro-bg-primary servces-detail my-5 py-3  pt-md-5">
-     <div className="head text-center text-white">
-       <h5 className="subtitle">{t("hrms.feedback.subtitle")}</h5>
-       <h1 className="mx-auto w-100" style={{ maxWidth: "800px" }}>
-         {t("hrms.feedback.title")}
-       </h1>
-     </div>
-     <div className="feedback-cards gap-4 container">
-       <div className="row">
-         <div className="col-lg-4">
-           <div className="card">
-             <div className="card-head p-4">
-               <i>{t("hrms.feedback.card1.text")}</i>
-             </div>
-             <div className="card-body">
-               <div className="row">
-                 <div className="col-lg-auto">
-                   <img
-                     className="profile-image"
-                     src={feedbackProfile}
-                     alt="profile-img"
-                   />
-                 </div>
-                 <div className="col-lg-8">
-                   <h5 className="name m-0">
-                     {t("hrms.feedback.card1.name")}
-                   </h5>
-                   <p className="profession">
-                     {t("hrms.feedback.card1.proffesion")}
-                   </p>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div className="col-lg-4">
-           <div className="card">
-             <div className="card-head p-4">
-               <i>{t("hrms.feedback.card1.text")}</i>
-             </div>
-             <div className="card-body">
-               <div className="row">
-                 <div className="col-lg-auto">
-                   <img
-                     className="profile-image"
-                     src={feedbackProfile}
-                     alt="profile-img"
-                   />
-                 </div>
-                 <div className="col-lg-8">
-                   <h5 className="name m-0">
-                     {t("hrms.feedback.card1.name")}
-                   </h5>
-                   <p className="profession">
-                     {t("hrms.feedback.card1.proffesion")}
-                   </p>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div className="col-lg-4">
-           <div className="card">
-             <div className="card-head p-4">
-               <i>{t("hrms.feedback.card1.text")}</i>
-             </div>
-             <div className="card-body">
-               <div className="row">
-                 <div className="col-lg-auto">
-                   <img
-                     className="profile-image"
-                     src={feedbackProfile}
-                     alt="profile-img"
-                   />
-                 </div>
-                 <div className="col-lg-8">
-                   <h5 className="name m-0">
-                     {t("hrms.feedback.card1.name")}
-                   </h5>
-                   <p className="profession">
-                     {t("hrms.feedback.card1.proffesion")}
-                   </p>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section> */}
-
-        {/* Pricing */}
-
-        {/*  */}
-        {/* <section className="get-app my-5">
-     <div className="img-box d-flex align-items-center justify-content-center">
-       <img src={home_slider} alt="phone-img" />
-       <img src={home_slider} alt="phone-img" />
-       <img src={home_slider} alt="phone-img" />
-     </div>
-     <div className="container pro-bg-primary rounded-4  d-flex align-items-center justify-content-center">
-       <div className="head text-center text-white">
-         <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
-         <h2>{t("hrms.pricing.pricingCardText")}</h2>
-         <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
-           {t("hrms.home.button")}
-           <img src={aplleLogo} alt="aplle" />
-         </a>
-         <a className="download-btn text-decoration-none text-dark me-3 rounded-pill ">
-           {t("hrms.home.button")}
-           <img src={playStoreLogo} alt="" />
-         </a>
-       </div>
-     </div>
-   </section> */}
       </div>
     </Layout>
   );
