@@ -1,14 +1,12 @@
 import "./Delivery.css";
 import home_slider from "../../../assets/images/Delivery/home-img.png";
 import about_img from "../../../assets/images/Delivery/about-img.png";
-import slider_img1 from "../../../assets/images/Delivery/slider-img-1.jpeg";
-import slider_img2 from "../../../assets/images/Delivery/slider-img-2.jpg";
-import slider_img3 from "../../../assets/images/Delivery/slider-img-3.jpg";
-import slider_img4 from "../../../assets/images/Delivery/slider-img-4.jpg";
-import slider_img5 from "../../../assets/images/Delivery/slider-img-5.jpg";
-import slider_img6 from "../../../assets/images/Delivery/slider-img-6.jpeg";
-import slider_img7 from "../../../assets/images/Delivery/slider-img-7.jpg";
-import slider_img8 from "../../../assets/images/Delivery/slider-img-8.jpg";
+import slider_img1 from "../../../assets/images/Delivery/slider-img-1.png";
+import slider_img2 from "../../../assets/images/Delivery/slider-img-2.png";
+import slider_img3 from "../../../assets/images/Delivery/slider-img-3.png";
+import slider_img4 from "../../../assets/images/Delivery/slider-img-4.png";
+import slider_img5 from "../../../assets/images/Delivery/slider-img-5.png";
+import slider_img6 from "../../../assets/images/Delivery/slider-img-6.png";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import flutter from "../../../assets/images/hrms/icons8-flutter-480 1.png";
 import flutterb from "../../../assets/images/hrms/pluginIcon.png";
@@ -46,14 +44,6 @@ const CaruselItem = [
   {
     id: 6,
     image: slider_img6,
-  },
-  {
-    id: 7,
-    image: slider_img7,
-  },
-  {
-    id: 8,
-    image: slider_img8,
   },
 ];
 
