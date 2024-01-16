@@ -14,7 +14,7 @@ const products = [
     title: "Delivery",
     description:
       " Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet ...",
-    path: "/products/hrms",
+    path: "/products/delivery",
   },
 ];
 
@@ -22,7 +22,7 @@ const Products = () => {
   return (
     <Layout title={"ProUnity | Products"}>
       <div className="py-5 products">
-        <div className="row px-md-5 h-100">
+        <div className="row px-md-5 h-100 m-0">
           <div className="col-lg-5">
             <div className="d-flex  px-4 px-md-5 text-light flex-column justify-content-center h-100">
               <h1 className="section-title  ">Our Products</h1>

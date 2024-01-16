@@ -1,13 +1,12 @@
 import "./Hrms.css";
 import home_slider from "../../../assets/images/hrms/home-img.png";
 import about_img from "../../../assets/images/hrms/about-img.png";
-import slider_img1 from "../../../assets/images/hrms/Rectangle 30.jpg";
-import slider_img2 from "../../../assets/images/hrms/Rectangle 31.png";
-import slider_img3 from "../../../assets/images/hrms/Rectangle 32.png";
-import slider_img4 from "../../../assets/images/hrms/Rectangle 33.png";
-import slider_img5 from "../../../assets/images/hrms/Rectangle 34.png";
-import slider_img6 from "../../../assets/images/hrms/Rectangle 35.jpg";
-import slider_img7 from "../../../assets/images/hrms/Rectangle 36.jpg";
+import slider_img1 from "../../../assets/images/hrms/slider-img-1.png";
+import slider_img2 from "../../../assets/images/hrms/slider-img-2.png";
+import slider_img3 from "../../../assets/images/hrms/slider-img-3.png";
+import slider_img4 from "../../../assets/images/hrms/slider-img-4.png";
+import slider_img5 from "../../../assets/images/hrms/slider-img-5.png";
+import slider_img6 from "../../../assets/images/hrms/slider-img-6.png";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import flutter from "../../../assets/images/hrms/icons8-flutter-480 1.png";
 import flutterb from "../../../assets/images/hrms/pluginIcon.png";
@@ -45,14 +44,6 @@ const CaruselItem = [
   {
     id: 6,
     image: slider_img6,
-  },
-  {
-    id: 7,
-    image: slider_img7,
-  },
-  {
-    id: 8,
-    image: slider_img5,
   },
 ];
 
@@ -106,13 +97,13 @@ const Hrms = () => {
               <p className="description text-white">
                 {t("hrms.home.description")}
               </p>
-              <Link
-                to={""}
+              <a
+                href="https://hrms.prounity.uz/"
                 className="download-btn btn  text-decoration-none fs-5 pro-text-primary me-3 rounded "
               >
                 {t("hrms.home.button1")}
                 <i className="fa-solid fa-arrow-right-long "></i>
-              </Link>
+              </a>
               <Link
                 to={"/products/hrms/documentation/"}
                 className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded "
