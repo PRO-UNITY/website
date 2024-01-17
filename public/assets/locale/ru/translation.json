@@ -200,7 +200,8 @@
       "link3": "Наши сервисы",
       "link4": "Условия",
       "link5": "Поддерживать"
-    }
+    },
+    "footer-bottom": "© Pro Unity, все права защищены."
   },
   "servicesection": {
     "title": "Услуги PROUNITY",

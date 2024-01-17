@@ -64,7 +64,9 @@ const Home = () => {
                   <h2 className="text-white mb-1 display-5  fw-semibold">
                     10+
                   </h2>
-                  <p className="text-light mb-0">Expert Developers</p>
+                  <p className="text-light mb-0">
+                    {t("herosection.developers")}
+                  </p>
                 </div>
               </Link>
               <Link to={`/students`} className=" text-decoration-none">
@@ -72,13 +74,13 @@ const Home = () => {
                   <h2 className="text-white mb-1 display-5  fw-semibold">
                     100+
                   </h2>
-                  <p className="text-light mb-0">Our Students</p>
+                  <p className="text-light mb-0">{t("herosection.students")}</p>
                 </div>
               </Link>
               <Link to={`/products`} className="text-decoration-none">
                 <div className=" ">
                   <h2 className="text-white mb-1 display-5 fw-semibold">2+</h2>
-                  <p className="text-light mb-0">Projects</p>
+                  <p className="text-light mb-0">{t("herosection.projects")}</p>
                 </div>
               </Link>
             </div>
@@ -96,7 +98,7 @@ const Home = () => {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="row g-5">
-            <div className="col-lg-6 wow fadeIn">
+            <div className="col-lg-6">
               <div className="d-flex flex-column">
                 <img
                   width={"75%"}
@@ -149,7 +151,7 @@ const Home = () => {
                 to={"/about"}
                 className="btn home-btn pro-bg-primary rounded-pill text-light py-3 px-5 mt-3"
               >
-                About Us
+                {t("aboutsection.aboutbutton")}
               </Link>
             </div>
           </div>

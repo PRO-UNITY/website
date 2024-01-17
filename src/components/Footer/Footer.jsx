@@ -99,7 +99,7 @@ const Footer = () => {
       </div>
       <div className="container">
         <div className=" copyright text-center text-md-center mb-3 mb-md-0">
-          © Pro Unity, All Right Reserved.
+          {t("footer.footer-bottom")}
         </div>
       </div>
     </div>

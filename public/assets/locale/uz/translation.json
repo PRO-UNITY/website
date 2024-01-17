@@ -9,11 +9,11 @@
     "service": "Xizmatlar",
     "products": "Mahsulatlar",
     "language": "uz",
-    "contact": "Kontakt"
+    "contact": "Bog'lanish"
   },
   "herosection": {
     "title": "Bizning vazifamiz odamlarga raqamli asrda rivojlanish uchun zarur bo'lgan ko'nikma va bilimlarni berishdir.",
-    "developers": "Expert Dasturchilar",
+    "developers": "Mutaxassis Dasturchilar",
     "students": "Talabalar",
     "projects": "Loyihalar"
   },
@@ -199,7 +199,8 @@
       "link3": "Bizning xizmatlarimiz",
       "link4": "Shartlar",
       "link5": "Qo'llab-quvvatlash"
-    }
+    },
+    "footer-bottom": "© Pro Unity, Barcha huquqlar himoyalangan."
   },
   "servicesection": {
     "title": "PROUNITY xizmatlari",

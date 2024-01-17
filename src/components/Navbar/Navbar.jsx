@@ -22,8 +22,7 @@ const MyNavbar = () => {
       <Navbar
         style={{ backgroundColor: "yellow" }}
         expand="lg"
-        className="sticky-top navbar wow fadeIn"
-        data-wow-delay="0.1s"
+        className="sticky-top navbar"
       >
         <div className="container-fluid">
           <Navbar.Brand as={Link} to="/home" className="logo">
@@ -61,7 +60,7 @@ const MyNavbar = () => {
                     pathname.includes("/products") && "active"
                   }`}
                 >
-                  Products
+                  {t("navbar.products")}
                 </NavLink>
                 <div className="dropdown-menu  rounded px-3 mt-2">
                   <Link
