@@ -258,59 +258,7 @@
         "description2": "Our commitment goes beyond just providing a software solution. We believe in fostering a collaborative environment, where businesses thrive and employees excel. With a focus on simplicity, automation, and adaptability, our HRMS platform is designed to seamlessly integrate into your workflow, allowing you to focus on what truly matters - the growth of your business.",
         "description3": "As we continue to evolve, our mission remains clear: to be the catalyst for positive change in HR management. Join us in redefining the future of your business with a personalized and powerful HRMS experience. Your success is our motivation."
       },
-      "box2": {
-        "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
-      },
       "moreButton": "View Demo"
-    },
-    "archived": {
-      "subtitle": "What we have",
-      "title": "Archived",
-      "cardDownloads": {
-        "text": "Downloads"
-      },
-      "cardReviews": {
-        "text": "Positive Reviews"
-      },
-      "cardRating": {
-        "text": "Rating"
-      }
-    },
-    "features": {
-      "subtitle": "Advanced Features",
-      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum ipsa eaque quibusdam aspernatur",
-      "card1": {
-        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
-      },
-      "card2": {
-        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
-      },
-      "card3": {
-        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
-      }
-    },
-    "feedback": {
-      "subtitle": "What we have",
-      "title": "Feedback",
-      "card1": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
-        "name": "Logan Wolf",
-        "proffesion": "User Experiens Designer"
-      },
-      "card2": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
-        "name": "Logan Wolf",
-        "proffesion": "User Experiens Designer"
-      },
-      "card3": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
-        "name": "Logan Wolf",
-        "proffesion": "User Experiens Designer"
-      }
     },
     "pricing": {
       "subtitle": "Pricing",
@@ -348,7 +296,9 @@
   "delivery": {
     "home": {
       "title": "Fast, Convenient, and Reliable: Elevate Your Delivery Experience with Us",
-      "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟"
+      "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟",
+      "button1": "View Demo",
+      "documentation": "Documentation"
     },
     "about": {
       "box1": {
@@ -357,59 +307,7 @@
         "description2": "Our cutting-edge technology empowers you with real-time tracking, smart route optimization, and robust analytics, giving you unparalleled control and insights into your delivery operations. Delivary is not just a delivery service; it's a strategic partner in your business growth.",
         "description3": "Experience the ease of logistics management with Delivary. From doorstep to destination, we are dedicated to ensuring your deliveries are prompt, precise, and hassle-free. Join us in simplifying the way you deliver success."
       },
-      "box2": {
-        "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
-      },
       "moreButton": "View Demo"
-    },
-    "archived": {
-      "subtitle": "What we have",
-      "title": "Archived",
-      "cardDownloads": {
-        "text": "Downloads"
-      },
-      "cardReviews": {
-        "text": "Positive Reviews"
-      },
-      "cardRating": {
-        "text": "Rating"
-      }
-    },
-    "features": {
-      "subtitle": "Advanced Features",
-      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum ipsa eaque quibusdam aspernatur",
-      "card1": {
-        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
-      },
-      "card2": {
-        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
-      },
-      "card3": {
-        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
-      }
-    },
-    "feedback": {
-      "subtitle": "What we have",
-      "title": "Feedback",
-      "card1": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
-        "name": "Logan Wolf",
-        "proffesion": "User Experiens Designer"
-      },
-      "card2": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
-        "name": "Logan Wolf",
-        "proffesion": "User Experiens Designer"
-      },
-      "card3": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
-        "name": "Logan Wolf",
-        "proffesion": "User Experiens Designer"
-      }
     },
     "pricing": {
       "subtitle": "Pricing",

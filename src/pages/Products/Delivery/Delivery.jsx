@@ -103,7 +103,7 @@ const Hrms = () => {
                 href="https://food-delivery.prounity.uz/"
                 className="download-btn btn  text-decoration-none fs-5 pro-text-primary me-3 rounded "
               >
-                {t("hrms.home.button1")}
+                {t("delivery.home.button1")}
                 <i className="fa-solid fa-arrow-right-long "></i>
               </a>
               <Link
@@ -111,7 +111,7 @@ const Hrms = () => {
                 className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded "
               >
                 <i className="fa-solid fa-file-lines"></i>
-                Documentation
+                {t("delivery.home.documentation")}
               </Link>
             </div>
             <div className="col-lg-6  h-100">
@@ -184,45 +184,47 @@ const Hrms = () => {
         </section>
         <section className="pricing py-md-5 ">
           <div className="head text-center mt-5">
-            <h5 className="subtitle">{t("hrms.pricing.subtitle")}</h5>
-            <h2>{t("hrms.pricing.title")}</h2>
+            <h5 className="subtitle">{t("delivery.pricing.subtitle")}</h5>
+            <h2>{t("delivery.pricing.title")}</h2>
           </div>
           <div className="pricing-cards mt-4 container gap-4">
             <div className="row">
               <div className="col-lg-4">
                 <div className="card bg-light rounded-4 border-0 proffesional my-3 w-100  p-5">
                   <div className="mt-md-5 border-bottom pb-4">
-                    <h2>{t("hrms.pricing.cardProffesional.title")}</h2>
+                    <h2>{t("delivery.pricing.cardProffesional.title")}</h2>
                   </div>
                   <div className="card-content mt-2 border-bottom pb-4">
                     <span className="d-block mt-3 ">
                       <i className="fa-solid fa-check me-2"></i>
-                      {t("hrms.pricing.cardProffesional.cardList.list1")}
+                      {t("delivery.pricing.cardProffesional.cardList.list1")}
                     </span>
                     <span className="d-block mt-3 ">
                       <i className="fa-solid fa-check me-2"></i>
-                      {t("hrms.pricing.cardProffesional.cardList.list2")}
+                      {t("delivery.pricing.cardProffesional.cardList.list2")}
                     </span>
                     <span className="d-block mt-3 ">
                       <i className="fa-solid fa-check me-2"></i>
-                      {t("hrms.pricing.cardProffesional.cardList.list3")}
+                      {t("delivery.pricing.cardProffesional.cardList.list3")}
                     </span>
                     <span className="d-block mt-3 ">
                       <i className="fa-solid fa-check me-2"></i>
-                      {t("hrms.pricing.cardProffesional.cardList.list4")}
+                      {t("delivery.pricing.cardProffesional.cardList.list4")}
                     </span>
                     <span className="d-block mt-3 ">
                       <i className="fa-solid fa-check me-2"></i>
-                      {t("hrms.pricing.cardProffesional.cardList.list5")}
+                      {t("delivery.pricing.cardProffesional.cardList.list5")}
                     </span>
                   </div>
                   <div className="card-bottom mt-2 mt-md-5 d-md-flex align-items-center justify-content-between">
                     <div>
                       <span className="h5 lh-lg">3.990$ </span>
-                      <span className="text-secondary">/ month</span>
+                      <span className="text-secondary">
+                        / {t("delivery.pricing.price")}
+                      </span>
                     </div>
                     <a className=" btn btn-outline-primary  py-md-3 px-3 ">
-                      Start now
+                      {t("delivery.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long ms-1"></i>
                     </a>
                   </div>
@@ -232,59 +234,61 @@ const Hrms = () => {
                 <div className="card unlimited pro-bg-primary text-white unlimited rounded-4 border-0 my-3 d-flex w-100  p-5">
                   <div className="border-bottom pb-4">
                     <a className="btn border text-white mb-2 rounded-pill ">
-                      {t("hrms.pricing.cardUnlimited.subtitle")}
+                      {t("delivery.pricing.cardUnlimited.subtitle")}
                     </a>
-                    <h2>{t("hrms.pricing.cardUnlimited.title")}</h2>
+                    <h2>{t("delivery.pricing.cardUnlimited.title")}</h2>
                   </div>
                   <div className="card-content mt-2 border-bottom row pb-4">
                     <div className="col-lg-6">
                       <span className="d-block mt-3 ">
                         <i className="fa-solid fa-circle-check me-2"></i>
-                        {t("hrms.pricing.cardUnlimited.cardList.list1")}
+                        {t("delivery.pricing.cardUnlimited.cardList.list1")}
                       </span>
                       <span className="d-block mt-3 ">
                         <i className="fa-solid fa-circle-check me-2"></i>
-                        {t("hrms.pricing.cardUnlimited.cardList.list2")}
+                        {t("delivery.pricing.cardUnlimited.cardList.list2")}
                       </span>
                       <span className="d-block mt-3 ">
                         <i className="fa-solid fa-circle-check me-2"></i>
-                        {t("hrms.pricing.cardUnlimited.cardList.list3")}
+                        {t("delivery.pricing.cardUnlimited.cardList.list3")}
                       </span>
                       <span className="d-block mt-3 ">
                         <i className="fa-solid fa-circle-check me-2"></i>
-                        {t("hrms.pricing.cardUnlimited.cardList.list4")}
+                        {t("delivery.pricing.cardUnlimited.cardList.list4")}
                       </span>
                       <span className="d-block mt-3 ">
                         <i className="fa-solid fa-circle-check me-2"></i>
-                        {t("hrms.pricing.cardUnlimited.cardList.list5")}
+                        {t("delivery.pricing.cardUnlimited.cardList.list5")}
                       </span>
                     </div>
                     <div className="col-lg-6">
                       <span className="d-block mt-3 ">
                         <i className="fa-solid fa-circle-check me-2"></i>
-                        {t("hrms.pricing.cardUnlimited.cardList.list6")}
+                        {t("delivery.pricing.cardUnlimited.cardList.list6")}
                       </span>
                       <span className="d-block mt-3 ">
                         <i className="fa-solid fa-circle-check me-2"></i>
-                        {t("hrms.pricing.cardUnlimited.cardList.list7")}
+                        {t("delivery.pricing.cardUnlimited.cardList.list7")}
                       </span>
                       <span className="d-block mt-3 ">
                         <i className="fa-solid fa-circle-check me-2"></i>
-                        {t("hrms.pricing.cardUnlimited.cardList.list8")}
+                        {t("delivery.pricing.cardUnlimited.cardList.list8")}
                       </span>
                       <span className="d-block mt-3 ">
                         <i className="fa-solid fa-circle-check me-2"></i>
-                        {t("hrms.pricing.cardUnlimited.cardList.list9")}
+                        {t("delivery.pricing.cardUnlimited.cardList.list9")}
                       </span>
                     </div>
                   </div>
                   <div className="card-bottom  mt-2 mt-md-5 d-md-flex align-items-center justify-content-between">
                     <div>
                       <span className="h5 lh-lg">5.990$ </span>
-                      <span className="text-light">/ month</span>
+                      <span className="text-light">
+                        / {t("delivery.pricing.price")}
+                      </span>
                     </div>
                     <a className="download-btn download-btn-outline  m-0 text-decoration-none  rounded ">
-                      Start now
+                      {t("delivery.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long mt-1"></i>
                     </a>
                   </div>

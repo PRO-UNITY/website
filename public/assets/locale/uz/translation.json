@@ -263,54 +263,7 @@
       },
       "moreButton": "View Demo"
     },
-    "archived": {
-      "subtitle": "What we have",
-      "title": "Archived",
-      "cardDownloads": {
-        "text": "Downloads"
-      },
-      "cardReviews": {
-        "text": "Positive Reviews"
-      },
-      "cardRating": {
-        "text": "Rating"
-      }
-    },
-    "features": {
-      "subtitle": "Advanced Features",
-      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum ipsa eaque quibusdam aspernatur",
-      "card1": {
-        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
-      },
-      "card2": {
-        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
-      },
-      "card3": {
-        "title": "Expand Your reach To Desired Tickets Precise & Quickly",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card content."
-      }
-    },
-    "feedback": {
-      "subtitle": "What we have",
-      "title": "Feedback",
-      "card1": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
-        "name": "Logan Wolf",
-        "proffesion": "User Experiens Designer"
-      },
-      "card2": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
-        "name": "Logan Wolf",
-        "proffesion": "User Experiens Designer"
-      },
-      "card3": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit excepturi, vel saepe quae veniam aperiam exercitationem eligendi voluptas atque",
-        "name": "Logan Wolf",
-        "proffesion": "User Experiens Designer"
-      }
-    },
+
     "pricing": {
       "subtitle": "Narxlar",
       "title": "Bizda yaxshiroq narx rejamiz bor",
@@ -341,6 +294,54 @@
         }
       },
 
+      "pricingButton": "Hozir boshlang"
+    }
+  },
+  "delivery": {
+    "home": {
+      "title": "Tez, qulay va ishonchli: biz bilan yetkazib berish tajribangizni oshiring",
+      "description": "Salom! Xizmatlarimiz bilan chaqmoq tez, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu gurme taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz. Hoziroq buyurtma bering va qulaylikdan bahramand bo'lishni boshlang! 🚚🌟",
+      "button1": "Demoni ko'rish",
+      "documentation": "Hujjatlar"
+    },
+    "about": {
+      "box1": {
+        "title": "Engil yetkazib berish: Sizning muvaffaqiyatingiz uchun logistikani soddalashtirish",
+        "description": "Delivary-da biz biznesingizning noyob ehtiyojlarini qondirish uchun moslashtirilgan uzluksiz va samarali yetkazib berish yechimini taqdim etish orqali logistika landshaftini qayta belgilaymiz. Bizning majburiyatimiz ishonchlilik, tezlik va mijozlar ehtiyojini qondirishni ta'minlab, yetkazib berish jarayonlaringizni oshirishdan iborat.",
+        "description2": "Bizning ilg‘or texnologiyamiz sizga real vaqt rejimida kuzatuv, aqlli marshrutni optimallashtirish va ishonchli tahlillar bilan yordam beradi, bu sizga yetkazib berish operatsiyalaringiz bo‘yicha misli ko‘rilmagan nazorat va tushunchalarni beradi. Yetkazib berish shunchaki yetkazib berish xizmati emas; bu sizning biznesingiz o'sishida strategik hamkordir.",
+        "description3": "Delivary bilan logistika boshqaruvining qulayligini his eting. Eshikdan manzilgacha biz sizning yetkazib berishlaringiz tez, aniq va muammosiz bo'lishini ta'minlashga harakat qilamiz. Muvaffaqiyatga erishish yo'llarini soddalashtirishda bizga qo'shiling."
+      },
+      "moreButton": "View Demo"
+    },
+    "pricing": {
+      "subtitle": "Narxlar",
+      "title": "Bizda yaxshiroq narx rejamiz bor",
+      "price": "oyiga",
+      "cardProffesional": {
+        "title": "Profesional",
+        "cardList": {
+          "list1": "Barcha asosiy xizmatlar",
+          "list2": "Cheksiz so'rov",
+          "list3": "Cheksiz qayta ko'rib chiqish",
+          "list4": "Istalgan vaqtda bekor qilish",
+          "list5": "A-Sync hamkorlik"
+        }
+      },
+      "cardUnlimited": {
+        "title": "Cheksiz",
+        "subtitle": "Eng mashhur",
+        "cardList": {
+          "list1": "Barcha asosiy xizmatlar",
+          "list2": "Barcha rivojlanayotgan xizmatlar",
+          "list3": "Har qanday vaqt bekor qilish",
+          "list4": "Badiiy yo'nalish",
+          "list5": "Kontseptsiya va g'oya",
+          "list6": "Cheksiz so'rov",
+          "list7": "Cheksiz qayta ko'rib chiqish",
+          "list8": "A-Sync hamkorlik",
+          "list9": "Haftalik yangilanishlar"
+        }
+      },
       "pricingButton": "Hozir boshlang"
     }
   }
