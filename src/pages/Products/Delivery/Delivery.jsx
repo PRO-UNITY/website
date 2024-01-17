@@ -108,7 +108,7 @@ const Hrms = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://food-delivery.prounity.uz/dashboard/doc"
+                href="https://food-delivery.prounity.uz/doc"
                 className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded "
               >
                 <i className="fa-solid fa-file-lines"></i>

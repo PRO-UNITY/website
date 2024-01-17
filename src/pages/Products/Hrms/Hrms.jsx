@@ -18,6 +18,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Layout from "../../../Layout/Layout";
+import { Link } from "react-router-dom";
 
 const CaruselItem = [
   {
@@ -97,13 +98,15 @@ const Hrms = () => {
                 {t("hrms.home.description")}
               </p>
               <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://hrms.prounity.uz/"
                 className="download-btn btn  text-decoration-none fs-5 pro-text-primary me-3 rounded "
               >
                 {t("hrms.home.button1")}
                 <i className="fa-solid fa-arrow-right-long "></i>
               </a>
-              <a
+              <Link
                 target="_blank"
                 rel="noreferrer"
                 href="https://hrms.prounity.uz/doc"
@@ -111,7 +114,7 @@ const Hrms = () => {
               >
                 <i className="fa-solid fa-file-lines"></i>
                 {t("hrms.home.documentation")}
-              </a>
+              </Link>
             </div>
             <div className="col-lg-6  h-100">
               <div className="hero_slider d-flex justify-content-center align-items-end">
