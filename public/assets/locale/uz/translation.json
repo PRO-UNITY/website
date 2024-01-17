@@ -231,6 +231,18 @@
     },
     "servicebutton": "Ko'proq"
   },
+  "products": {
+    "title": "Bizning mahsulotlar",
+    "desciption": "ProUnity kompaniyasining mahsulotlar sahifasiga xush kelibsiz! Mahsulotlarimiz assortimentini o'rganing va har qanday odamning talab va so'rovlarini qondirish uchun mo'ljallangan maxsus echimlarni toping. Bizning sahifamiz orqali yuqori sifatli mahsulotlarimizni toping va yechimlarimizga doimiy ravishda kiritilgan so'nggi xususiyatlar va afzalliklar bilan tanishing",
+    "product-hrms": {
+      "title": "",
+      "description": ""
+    },
+    "product-delivery": {
+      "title": "",
+      "description": ""
+    }
+  },
   "hrms": {
     "home": {
       "title": "Book Movie Ticket From Your Home",

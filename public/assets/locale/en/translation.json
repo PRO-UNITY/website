@@ -231,6 +231,18 @@
     },
     "servicebutton": "See More Services"
   },
+  "products": {
+    "title": "Our Products",
+    "desciption": "Welcome to the ProUnity company's products page! Explore our range of products and discover tailored solutions designed to meet the demands and inquiries of anyone. Navigate through our page to find our top-notch products and get acquainted with the latest features and advantages consistently integrated into our solutions.",
+    "product-hrms": {
+      "title": "Hrms",
+      "description": "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management. Explore the future of workforce optimization with our innovative solution."
+    },
+    "product-delivery": {
+      "title": "Deivery",
+      "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟"
+    }
+  },
 
   "hrms": {
     "home": {
