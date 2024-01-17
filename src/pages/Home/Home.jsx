@@ -70,7 +70,7 @@ const Home = () => {
                 </div>
               </Link>
               <Link to={`/students`} className=" text-decoration-none">
-                <div className=" ">
+                <div>
                   <h2 className="text-white mb-1 display-5  fw-semibold">
                     100+
                   </h2>

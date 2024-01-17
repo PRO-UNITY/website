@@ -249,6 +249,10 @@
     "email": "Email",
     "social-media": "Social Media"
   },
+  "students": {
+    "firstName": "First Name",
+    "lastName": "Last Name"
+  },
   "hrms": {
     "home": {
       "title": "All-In-One HR platform to manage your entire employee experience",

@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import Layout from "../../Layout/Layout";
 import "./HeroWidgets.css";
 import StudentData from "./Students.json";
 const Students = () => {
+  const { t } = useTranslation();
   return (
     <Layout>
       <div className="py-5 pro-bg-primary students">
@@ -11,15 +13,17 @@ const Students = () => {
             data-wow-delay="0.1s"
             style={{ maxWidth: 600 }}
           >
-            <h1 className="display-3 fw-semibold text-white">Students</h1>
+            <h1 className="display-3 fw-semibold text-white">
+              {t("herosection.students")}
+            </h1>
           </div>
           <div className="table-responsive container">
             <table className="table table-bordered">
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
+                  <th>{t("students.firstName")}</th>
+                  <th>{t("students.lastName")}</th>
                 </tr>
               </thead>
               <tbody>

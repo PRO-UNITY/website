@@ -95,7 +95,7 @@ const MyNavbar = () => {
               </Nav.Link>
               <div className="nav-item dropdown ">
                 <a href="#" className={`py-0 nav-link dropdown-toggle`}>
-                  En
+                  {t("navbar.language")}
                 </a>
                 <div className="dropdown-menu lang-menu  rounded pb-3  px-3 mt-2">
                   <span

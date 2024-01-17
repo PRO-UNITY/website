@@ -249,6 +249,10 @@
     "email": "Email",
     "social-media": "Ijtimoiy tarmoqlar"
   },
+  "students": {
+    "firstName": "Ismi",
+    "lastName": "Familiyasi"
+  },
   "hrms": {
     "home": {
       "title": "Butun xodimlar tajribangizni boshqarish uchun All-In-One HR platformasi",
