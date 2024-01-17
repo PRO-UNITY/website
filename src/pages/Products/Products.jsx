@@ -15,7 +15,7 @@ const Products = () => {
     {
       id: 2,
       title: t("products.product-delivery.title"),
-      description: t("products.product-hrms.description"),
+      description: t("products.product-delivery.description"),
       path: "/products/delivery",
     },
   ];

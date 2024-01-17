@@ -109,7 +109,7 @@ const Hrms = () => {
                 className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded "
               >
                 <i className="fa-solid fa-file-lines"></i>
-                Documentation
+                {t("hrms.home.documentation")}
               </Link>
             </div>
             <div className="col-lg-6  h-100">
@@ -221,13 +221,15 @@ const Hrms = () => {
                   <div className="card-bottom mt-2 mt-md-5 d-md-flex align-items-center justify-content-between">
                     <div>
                       <span className="h5 lh-lg">3.990$ </span>
-                      <span className="text-secondary">/ month</span>
+                      <span className="text-secondary">
+                        / {t("hrms.pricing.price")}
+                      </span>
                     </div>
                     <a
                       href="#"
                       className=" btn btn-outline-primary  py-md-3 px-3 "
                     >
-                      Start now
+                      {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long ms-1"></i>
                     </a>
                   </div>
@@ -286,13 +288,15 @@ const Hrms = () => {
                   <div className="card-bottom  mt-2 mt-md-5 d-md-flex align-items-center justify-content-between">
                     <div>
                       <span className="h5 lh-lg">5.990$ </span>
-                      <span className="text-light">/ month</span>
+                      <span className="text-light">
+                        / {t("hrms.pricing.price")}
+                      </span>
                     </div>
                     <a
                       href="#"
                       className="download-btn download-btn-outline  m-0 text-decoration-none  rounded "
                     >
-                      Start now
+                      {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long mt-1"></i>
                     </a>
                   </div>

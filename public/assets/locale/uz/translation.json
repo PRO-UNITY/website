@@ -235,30 +235,33 @@
     "title": "Bizning mahsulotlar",
     "desciption": "ProUnity kompaniyasining mahsulotlar sahifasiga xush kelibsiz! Mahsulotlarimiz assortimentini o'rganing va har qanday odamning talab va so'rovlarini qondirish uchun mo'ljallangan maxsus echimlarni toping. Bizning sahifamiz orqali yuqori sifatli mahsulotlarimizni toping va yechimlarimizga doimiy ravishda kiritilgan so'nggi xususiyatlar va afzalliklar bilan tanishing",
     "product-hrms": {
-      "title": "",
-      "description": ""
+      "title": "Hrms",
+      "description": "Bizning zamonaviy HRMS ilovamiz yordamida tashkiliy samaradorlikni oshiring. HR jarayonlarini soddalashtiring, ishchi kuchingizni kengaytiring va uzluksiz boshqaruvning yangi davrini qabul qiling. Bizning innovatsion yechimimiz bilan ishchi kuchini optimallashtirish kelajagini o'rganing."
     },
     "product-delivery": {
-      "title": "",
-      "description": ""
+      "title": "Delivery",
+      "description": "Assalomu alaykum! Xizmatlarimiz yordamida yashin tezligida, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz. Hoziroq buyurtma bering va zavqlanishni boshlang. qulaylik! 🚚🌟"
     }
   },
   "hrms": {
     "home": {
-      "title": "Book Movie Ticket From Your Home",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus. Dolorum, ipsam maiores est quibusdam consequatur ratione omnis adipisci ea quis soluta possimus sapiente dolor voluptatum.",
-      "button": "Download for"
+      "title": "Butun xodimlar tajribangizni boshqarish uchun All-In-One HR platformasi",
+      "description": "Bizning zamonaviy HRMS ilovamiz yordamida tashkiliy samaradorlikni oshiring. HR jarayonlarini soddalashtiring, ishchi kuchingizni kengaytiring va uzluksiz boshqaruvning yangi davrini qabul qiling. Bizning innovatsion yechimimiz bilan ishchi kuchini optimallashtirish kelajagini o'rganing.",
+      "button1": "Demoni ko'rish",
+      "documentation": "Hujjatlar"
     },
     "about": {
       "box1": {
-        "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
+        "title": "Bizning hikoyamizni kashf eting: Muvaffaqiyat uchun HR boshqaruvida inqilob",
+        "description": "Pro Unity-da biz an'anaviy HR boshqaruvini dinamik va samarali jarayonga aylantirish sayohatiga chiqamiz. Biznesni innovatsion texnologiyalar orqali kengaytirish g‘oyasi bilan tashkil etilgan biz o‘zimizni zamonaviy korxonalarning o‘zgaruvchan ehtiyojlariga javob beradigan HRMS yechimini yaratishga bag‘ishladik.",
+        "description2": "Bizning majburiyatimiz faqat dasturiy yechimni taqdim etishdan tashqarida. Biz hamkorlik muhitini rivojlantirishga ishonamiz, bu erda biznes rivojlanadi va xodimlar ustunlik qiladi. Oddiylik, avtomatlashtirish va moslashuvchanlikka e'tibor qaratgan holda, bizning HRMS platformamiz sizning ish oqimingizga muammosiz integratsiya qilish uchun yaratilgan bo'lib, sizga haqiqatan ham muhim bo'lgan narsaga - biznesingizning rivojlanishiga e'tibor qaratish imkonini beradi.",
+        "description3": "Rivojlanishda davom etar ekanmiz, bizning vazifamiz aniq bo'lib qolmoqda: HR boshqaruvidagi ijobiy o'zgarishlar uchun katalizator bo'lish. Shaxsiylashtirilgan va kuchli HRMS tajribasi bilan biznesingiz kelajagini qayta belgilashda bizga qo‘shiling. Sizning muvaffaqiyatingiz bizning motivatsiyamizdir."
       },
       "box2": {
         "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
       },
-      "moreButton": "Read More"
+      "moreButton": "View Demo"
     },
     "archived": {
       "subtitle": "What we have",
@@ -309,35 +312,36 @@
       }
     },
     "pricing": {
-      "subtitle": "Pricing",
-      "title": "We Have Better Pricing Plan",
+      "subtitle": "Narxlar",
+      "title": "Bizda yaxshiroq narx rejamiz bor",
+      "price": "oyiga",
       "cardProffesional": {
-        "title": "Proffesional",
+        "title": "Profesional",
         "cardList": {
-          "list1": "All Basic Services",
-          "list2": "Unlimited Request",
-          "list3": "Unlimited Revision",
-          "list4": "Cancel Anytime",
-          "list5": "A-Sync Collaboration"
+          "list1": "Barcha asosiy xizmatlar",
+          "list2": "Cheksiz so'rov",
+          "list3": "Cheksiz qayta ko'rib chiqish",
+          "list4": "Istalgan vaqtda bekor qilish",
+          "list5": "A-Sync hamkorlik"
         }
       },
       "cardUnlimited": {
-        "title": "Unlimited",
-        "subtitle": "Most Popular",
+        "title": "Cheksiz",
+        "subtitle": "Eng mashhur",
         "cardList": {
-          "list1": "All Basic Services",
-          "list2": "All Advanced Services",
-          "list3": "Cancel Anytime",
-          "list4": "Art Direction",
-          "list5": "Concept and Ideation",
-          "list6": "Unlimited Request",
-          "list7": "Unlimited Revision",
-          "list8": "A-Sync Collaboration",
-          "list9": "Weekly Updates"
+          "list1": "Barcha asosiy xizmatlar",
+          "list2": "Barcha rivojlanayotgan xizmatlar",
+          "list3": "Har qanday vaqt bekor qilish",
+          "list4": "Badiiy yo'nalish",
+          "list5": "Kontseptsiya va g'oya",
+          "list6": "Cheksiz so'rov",
+          "list7": "Cheksiz qayta ko'rib chiqish",
+          "list8": "A-Sync hamkorlik",
+          "list9": "Haftalik yangilanishlar"
         }
       },
 
-      "pricingButton": "Start Now"
+      "pricingButton": "Hozir boshlang"
     }
   }
 }

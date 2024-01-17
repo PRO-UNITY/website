@@ -248,7 +248,8 @@
     "home": {
       "title": "All-In-One HR platform to manage your entire employee experience",
       "description": "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management. Explore the future of workforce optimization with our innovative solution.",
-      "button1": "View Demo"
+      "button1": "View Demo",
+      "documentation": "Documentation"
     },
     "about": {
       "box1": {
@@ -314,8 +315,9 @@
     "pricing": {
       "subtitle": "Pricing",
       "title": "We Have Better Pricing Plan",
+      "price": "month",
       "cardProffesional": {
-        "title": "Proffesional",
+        "title": "Profesional",
         "cardList": {
           "list1": "All Basic Services",
           "list2": "Unlimited Request",
