@@ -3,8 +3,10 @@ import Layout from "../../Layout/Layout";
 import { teamMembers } from "../../constants";
 import "./TeamDatail.css";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const TeamDetails = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   const [user, setUser] = useState([]);
 
@@ -34,7 +36,9 @@ const TeamDetails = () => {
                 <div className="">
                   <div className="row">
                     <div className="col-5">
-                      <h4 className="fs-3 pt-5">Position:</h4>
+                      <h4 className="fs-3 pt-5">
+                        {t("team-details.position")}:
+                      </h4>
                     </div>
                     <div className="col-7">
                       <h4 className="fs-4 fw-normal pt-5">
@@ -44,7 +48,9 @@ const TeamDetails = () => {
                   </div>
                   <div className="row">
                     <div className="col-5">
-                      <h4 className="fs-3 pt-3">Education:</h4>
+                      <h4 className="fs-3 pt-3">
+                        {t("team-details.education")}:
+                      </h4>
                     </div>
                     <div className="col-7">
                       <h4 className="fs-4 pt-3 fw-normal">{user?.education}</h4>
@@ -52,7 +58,7 @@ const TeamDetails = () => {
                   </div>
                   <div className="row">
                     <div className="col-5">
-                      <h4 className="fs-3 pt-3">Email:</h4>
+                      <h4 className="fs-3 pt-3">{t("team-details.email")}:</h4>
                     </div>
                     <div className="col-7">
                       <h4 className="fs-4 pt-3 fw-normal text-break">
@@ -62,7 +68,9 @@ const TeamDetails = () => {
                   </div>
                   <div className="row">
                     <div className="col-5">
-                      <h4 className="fs-3 pt-3">Social Media:</h4>
+                      <h4 className="fs-3 pt-3">
+                        {t("team-details.social-media")}:
+                      </h4>
                     </div>
                     <div className="col-7">
                       <div className="fs-4 pt-3 fw-normal">

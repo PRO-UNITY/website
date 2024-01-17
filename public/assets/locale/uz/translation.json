@@ -243,6 +243,12 @@
       "description": "Assalomu alaykum! Xizmatlarimiz yordamida yashin tezligida, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz. Hoziroq buyurtma bering va zavqlanishni boshlang. qulaylik! 🚚🌟"
     }
   },
+  "team-details": {
+    "position": "Kasbi",
+    "education": "Ta'lim",
+    "email": "Email",
+    "social-media": "Ijtimoiy tarmoqlar"
+  },
   "hrms": {
     "home": {
       "title": "Butun xodimlar tajribangizni boshqarish uchun All-In-One HR platformasi",

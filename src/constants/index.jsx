@@ -229,7 +229,7 @@ export const teamMembers = [
   {
     id: 4,
     name: "Sobirjon Bobojonov",
-    occupation: "Software Engineer",
+    occupation: "Software Developer",
     education: "Inha University in Tashkent",
     email: "sobirjonbobojonov@gmail.com",
     role: "developer",

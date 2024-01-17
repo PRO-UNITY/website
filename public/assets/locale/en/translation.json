@@ -243,7 +243,12 @@
       "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟"
     }
   },
-
+  "team-details": {
+    "position": "Position",
+    "education": "Education",
+    "email": "Email",
+    "social-media": "Social Media"
+  },
   "hrms": {
     "home": {
       "title": "All-In-One HR platform to manage your entire employee experience",
