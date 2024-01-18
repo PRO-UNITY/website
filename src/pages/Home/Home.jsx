@@ -367,7 +367,6 @@ const Home = () => {
                     {t("blogSection.title")}
                   </h1>
                 </div>
-
                 <p className="fs-4 text-white">{t("blogSection.text")}</p>
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center">
@@ -375,7 +374,7 @@ const Home = () => {
                   aria-label="ProUnit's YouTube blog"
                   rel="noreferrer"
                   target="_blank"
-                  href="https://www.youtube.com/watch?v=_voQ5MGXX3g"
+                  href="https://www.youtube.com/watch?v=XtZuux5_g5U"
                   className=" btn-danger btn-youtube   mx-auto mb-4 "
                 >
                   <i className="fa-solid fa-play text-light fs-4" />
