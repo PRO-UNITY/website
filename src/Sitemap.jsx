@@ -2,7 +2,10 @@ const Sitemap = () => {
   const routes = [
     "/home",
     "/about",
-    "/services",  
+    "/services",
+    "/expert-devlopers",
+    "/students",
+    "/user/:id",
     "/services/softwareDevelopenent",
     "/services/IT-school",
     "/services/authorized-tutorial",
