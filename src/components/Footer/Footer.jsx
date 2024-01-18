@@ -94,6 +94,15 @@ const Footer = () => {
             <Link to={"/services"} className="btn btn-link">
               {t("footer.quicklinks.link3")}
             </Link>
+            <Link to={"/advertise"} className="btn btn-link">
+              {t("footer.quicklinks.link4")}
+            </Link>
+            <Link to={"/privacy-policy"} className="btn btn-link">
+              {t("footer.quicklinks.link5")}
+            </Link>
+            <Link to={"/license"} className="btn btn-link">
+              {t("footer.quicklinks.link6")}
+            </Link>
           </div>
         </div>
       </div>

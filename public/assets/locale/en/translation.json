@@ -197,8 +197,9 @@
       "link1": "About Us",
       "link2": "Contact Us",
       "link3": "Our Services",
-      "link4": "Terms & Condition",
-      "link5": "Support"
+      "link4": "Рекламировать",
+      "link5": "Privacy Policy",
+      "link6": "License"
     },
     "footer-bottom": "© Pro Unity, All Right Reserved."
   },
@@ -252,6 +253,18 @@
   "students": {
     "firstName": "First Name",
     "lastName": "Last Name"
+  },
+  "license": {
+    "title": "License",
+    "text": "Copyright © 2022 <br /> <br /> ProUnity Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: <br /> <br /> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  You are free to copy excerpts of our articles but please don’t republish entire articles. If you’d like to translate single articles, please contact us."
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "text": "This Website collects some Personal Data from its Users. <h2>Owner and Data Controller </h2> Islom Karimov 1 Street, Bukhara, Uzbekistan , +998 33 899 50 00 <br /> <span>Uzbekistan Owner contact email</span>: prounity.uz@gmail.com <h2>Types of Data collected</h2><p>Among the types of Personal Data that this Website collects, by itself or through third parties, there are: Cookies; Usage Data; first name; last name; email address; website.</p> <p>Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation texts displayed prior to the Data collection. Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Website. Unless specified otherwise, all Data requested by this Website is mandatory and failure to provide this Data may make it impossible for this Website to provide its services. In cases where this Website specifically states that some Data is not mandatory, Users are free not to communicate this Data without consequences to the availability or the functioning of the Service. Users who are uncertain about which Personal Data is mandatory are welcome to contact the Owner.</p> <p> Any use of Cookies – or of other tracking tools – by this Website or by the owners of third-party services used by this Website serves the purpose of providing the Service required by the User, in addition to any other purposes described in the present document and in the Cookie Policy, if available.</p> <p>Users are responsible for any third-party Personal Data obtained, published or shared through this Website and confirm that they have the third party’s consent to provide the Data to the Owner.</p><h2>Mode and place of processing the Data</h2> <p>The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data. The Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Owner, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of this Website (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Owner at any time.</p>"
+  },
+  "Advertise": {
+    "title": "Advertise",
+    "text": "<p> ProUnity is dedicated to provide high quality content that is completely free of charge for its readers. With over half a million active users every month, ProUnity is a great place to advertise to a wonderful international audience of web designers and developers!</p><p>As a potential sponsor, you hold the key to unlocking an extraordinary opportunity – the chance to introduce your brand to this brilliant audience. With an array of carefully crafted advertising options, we provide a platform where your message will genuinely connect with our audience.</p><p>Have a look at our banner ads that you can purchase via our ad management platform. Below you can find all other sponsorship options. If you have any questions or would like to book one, get in touch with us via email or connect to our dedicated ad sales team via this form:</p>"
   },
   "hrms": {
     "home": {

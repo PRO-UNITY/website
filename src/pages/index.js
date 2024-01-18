@@ -13,6 +13,9 @@ export { default as Contact } from "./Contact/Contact";
 export { default as PageNotFound } from "./PageNotFound/PageNotFound";
 export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 export { default as Products } from "./Products/Products";
+export { default as License } from "./License/License";
+export { default as PrivacyPolicy } from "./PrivacyPolicy/PrivacyPolicy";
+export { default as Advertise } from "./Advertise/Advertise";
 // Hrms
 export { default as Hrms } from "./Products/Hrms/Hrms";
 export { default as HrmsDocumentation } from "./Products/Hrms/docomentation/Home";

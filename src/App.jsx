@@ -30,6 +30,9 @@ import {
   Delivery,
   Students,
   ExpertDevlopers,
+  License,
+  PrivacyPolicy,
+  Advertise,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
@@ -58,6 +61,9 @@ function App() {
             <Route path="/students" element={<Students />} />
             <Route path="/expert-devlopers" element={<ExpertDevlopers />} />
             <Route path="/about" element={<About />} />
+            <Route path="/license" element={<License />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/advertise" element={<Advertise />} />
             <Route path="/services" element={<Services />} />
             <Route
               path="/services/softwareDevelopenent"

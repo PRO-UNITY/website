@@ -197,8 +197,9 @@
       "link1": "Biz haqimizda",
       "link2": "Bizga bog'lanish",
       "link3": "Bizning xizmatlarimiz",
-      "link4": "Shartlar",
-      "link5": "Qo'llab-quvvatlash"
+      "link4": "Reklama",
+      "link5": "Maxfiylik siyosati",
+      "link6": "Litsenziya"
     },
     "footer-bottom": "© Pro Unity, Barcha huquqlar himoyalangan."
   },
@@ -252,6 +253,14 @@
   "students": {
     "firstName": "Ismi",
     "lastName": "Familiyasi"
+  },
+  "license": {
+    "title": "Litsenziya",
+    "text": "Mualliflik huquqi © 2022 <br /> <br /> Shu bilan ProUnity ruxsati ushbu dasturiy ta'minot nusxasini va tegishli hujjat fayllarini (Dastur ta'minot) olgan har qanday shaxsga dasturiy ta'minot bilan cheklovsiz, jumladan, cheklovsiz muomala qilish uchun beriladi. Dasturiy ta'minotdan foydalanish, nusxa ko'chirish, o'zgartirish, birlashtirish, nashr qilish, tarqatish, sublitsenziyalash va/yoki sotish, shuningdek, dasturiy ta'minot taqdim etilgan shaxslarga quyidagi shartlarga rioya qilgan holda ruxsat berish huquqlari cheklanmagan holda: <br /> <br /> Yuqoridagi mualliflik huquqi to'g'risidagi bildirishnoma va ushbu ruxsatnomalar Dasturiy ta'minotning barcha nusxalari yoki muhim qismlariga kiritilishi kerak. Siz bizning maqolalarimizdan parchalarni ko'chirib olishingiz mumkin, lekin iltimos, to'liq maqolalarni qayta nashr qilmang. Agar siz bitta maqolani tarjima qilmoqchi bo'lsangiz, biz bilan bog'laning."
+  },
+  "PrivacyPolicy": {
+    "title": "Maxfiylik siyosati",
+    "text": "Ushbu veb-sayt o'z foydalanuvchilaridan ba'zi shaxsiy ma'lumotlarni to'playdi. <h2>Egasi va ma'lumotlar nazoratchisi </h2> Islom Karimov ko'chasi, 1, Buxoro, O'zbekiston, +998 33 899 50 00 <br /> <span>O'zbekiston Egasi bilan bog'lanish email</span>: prounity.uz@gmail.com < h2>To'plangan ma'lumotlar turlari</h2><p>Ushbu veb-sayt o'zi yoki uchinchi shaxslar orqali to'playdigan Shaxsiy ma'lumotlar turlari orasida quyidagilar mavjud: Cookie fayllari; Foydalanish ma'lumotlari; ism; familiya; E-pochta manzili; veb-sayt.</p> <p>To'plangan shaxsiy ma'lumotlarning har bir turi bo'yicha to'liq ma'lumotlar ushbu maxfiylik siyosatining maxsus bo'limlarida yoki ma'lumotlarni to'plashdan oldin ko'rsatilgan maxsus tushuntirish matnlarida keltirilgan. Shaxsiy ma'lumotlar Foydalanuvchi tomonidan bepul taqdim etilishi mumkin, yoki foydalanish ma'lumotlari bo'lsa, ushbu veb-saytdan foydalanganda avtomatik ravishda to'planishi mumkin. Agar boshqacha ko'rsatilmagan bo'lsa, ushbu veb-sayt tomonidan so'ralgan barcha ma'lumotlar majburiydir va ushbu ma'lumotlarni taqdim etmaslik ushbu veb-saytga o'z xizmatlarini taqdim etishni imkonsiz qilishi mumkin. Agar ushbu veb-saytda ba'zi ma'lumotlar majburiy emasligi alohida ta'kidlangan bo'lsa, foydalanuvchilar ushbu ma'lumotlarni Xizmatning mavjudligi yoki ishlashiga ta'sir qilmasdan etkazmasliklari mumkin. Qaysi Shaxsiy ma'lumotlar majburiy ekanligiga amin bo'lmagan foydalanuvchilar Egasi bilan bog'lanishlari mumkin.</p> <p> Ushbu veb-sayt yoki uchinchi tomon xizmatlari egalari tomonidan cookie-fayllardan yoki boshqa kuzatuv vositalaridan har qanday foydalanish. Veb-sayt, agar mavjud bo'lsa, ushbu hujjatda va cookie-fayllar siyosatida tavsiflangan boshqa maqsadlarga qo'shimcha ravishda, Foydalanuvchi tomonidan talab qilinadigan Xizmatni taqdim etish maqsadiga xizmat qiladi.</p> <p>Foydalanuvchilar uchinchi tomon shaxsiy ma'lumotlari uchun javobgardirlar. ushbu veb-sayt orqali olingan, nashr etilgan yoki baham ko'rilgan va ular egasiga ma'lumotlarni taqdim qilish uchun uchinchi tomonning roziligi borligini tasdiqlaydi.</p><h2>Ma'lumotlarni qayta ishlash tartibi va joyi</h2> <p>Egasi tegishli qabul qiladi. ma'lumotlarga ruxsatsiz kirish, oshkor qilish, o'zgartirish yoki ruxsatsiz yo'q qilishning oldini olish uchun xavfsizlik choralari. Ma'lumotlarni qayta ishlash ko'rsatilgan maqsadlarga qat'iy bog'liq bo'lgan tashkiliy tartib va rejimlarga rioya qilgan holda, kompyuterlar va/yoki IT vositalaridan foydalangan holda amalga oshiriladi. Egasidan tashqari, ba'zi hollarda, ma'lumotlarga ushbu veb-saytning ishlashi bilan bog'liq bo'lgan mas'ul shaxslar (ma'muriyat, savdo, marketing, yuridik, tizim ma'muriyati) yoki tashqi tomonlar (masalan, uchinchi shaxslar) foydalanishi mumkin. tomonlarning texnik xizmat ko'rsatuvchi provayderlari, pochta tashuvchilari, xosting provayderlari, IT-kompaniyalari, aloqa agentliklari), agar kerak bo'lsa, Egasi tomonidan Ma'lumot protsessorlari sifatida tayinlanadi. Ushbu tomonlarning yangilangan roʻyxati istalgan vaqtda egasidan soʻralishi mumkin.</p>"
   },
   "hrms": {
     "home": {
