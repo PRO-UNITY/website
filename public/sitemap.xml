@@ -4,13 +4,88 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
 <url>
   <loc>https://prounity.uz/</loc>
   <lastmod>2024-01-18T13:36:15+00:00</lastmod>
 </url>
-
-
+<url>
+  <loc>https://prounity.uz/about</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/services</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/expert-developers</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/students</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/user/:id</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/services/software-development</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/services/IT-school</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/services/authorized-tutorial</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/services/coworking</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/services/open-course</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/services/pro-community</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/services/coworking</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/services/coworking</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/products</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/contact</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/license</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/privacy-policy</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/advertise</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/products/hrms</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://prounity.uz/products/delivery</loc>
+  <lastmod>2024-01-19T06:14:45+00:00</lastmod>
+</url>
 </urlset>
