@@ -36,7 +36,6 @@ import {
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
-import Sitemap from "./Sitemap";
 
 function App() {
   const [activeHrmsDash, setActiveHrmsDash] = useState(1);
@@ -141,7 +140,6 @@ function App() {
               path="products/delivery/documentation/orders"
               element={<DeliveryDocOrders />}
             />
-            <Route path="/sitemap.xml" element={<Sitemap />} />
           </Routes>
         </ActiveNavContext.Provider>
       </AsideScrollActiveProvider>
