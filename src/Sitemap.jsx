@@ -14,6 +14,9 @@ const Sitemap = () => {
     "/services/pro-community",
     "/products",
     "/contact",
+    "/license",
+    "/privacy-policy",
+    "/advertise",
     "/products/hrms",
     "/products/delivery",
   ];
