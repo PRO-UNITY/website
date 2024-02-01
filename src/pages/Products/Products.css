@@ -1,6 +1,6 @@
 .products {
   background: var(--primary);
-  height: 600px;
+  min-height: 600px;
 }
 .products .section-title {
   font-size: 60px;

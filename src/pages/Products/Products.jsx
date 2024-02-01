@@ -20,10 +20,9 @@ const Products = () => {
     },
     {
       id: 3,
-      title: t("products.clinic-app.title"),
-      description: t("products.clinic-app.description"),
-      description2: t("products.clinic-app.description2"),
-      path: "/products/clinic",
+      title: t("products.product-clinic-app.title"),
+      description: t("products.product-clinic-app.description"),
+      path: "/products/clinic-app",
     },
     {
       id: 4,

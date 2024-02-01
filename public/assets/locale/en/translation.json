@@ -246,6 +246,10 @@
     "product-chat-app": {
       "title": "Chat App",
       "description": "Chat App is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries."
+    },
+    "product-clinic-app": {
+      "title": "Clinic App",
+      "description": "Our clinic app is a free, feature-rich platform designed to facilitate easy and meaningful communication with patients and medical staff worldwide. This sophisticated messaging and communication tool empowers users to connect seamlessly across borders, cultures, and boundaries, enhancing the efficiency and effectiveness of healthcare interactions."
     }
   },
   "team-details": {
