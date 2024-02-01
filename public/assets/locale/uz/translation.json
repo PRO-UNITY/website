@@ -246,6 +246,10 @@
     "product-chat-app": {
       "title": "Delivery",
       "description": "Chat ilovasi butun dunyo boʻylab doʻstlar va tanishlar bilan oson va mazmunli muloqot qilish uchun moʻljallangan bepul, boy funksiyalarga ega platformadir. Ushbu murakkab chat va xabar almashish platformasi foydalanuvchilarga chegaralar, madaniyatlar va chegaralar orqali ulanish imkonini beradi."
+    },
+    "product-clinic-app": {
+      "title": "Delivery",
+      "description": "Bizning klinik ilovamiz bepul, funksiyalar bilan boyitilgan platforma, dunyo bo'ylab oson va ma'noiy muloqotni o'rnatish uchun mo'ljallangan. Ushbu tanqisiz xabarlashish va muloqot vositasi foydalanuvchilarga chegaralar, madaniyatlar va cheklanmalar orqali oson ulashish huquqini beradi, shifoxona muloqotlarini qulay va samarali qiladi."
     }
   },
   "team-details": {
