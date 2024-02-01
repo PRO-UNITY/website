@@ -8,8 +8,6 @@ import slider_img4 from "../../../assets/images/Clinic/slider_img4.png";
 import slider_img5 from "../../../assets/images/Clinic/slider_img5.png";
 import slider_img6 from "../../../assets/images/Clinic/slider_img6.png";
 import slider_img8 from "../../../assets/images/Clinic/slider_img8.png";
-
-// import slider_img6 from "../../../assets/images/hrms/slider-img-6.png";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import flutter from "../../../assets/images/hrms/icons8-flutter-480 1.png";
 import flutterb from "../../../assets/images/hrms/pluginIcon.png";
