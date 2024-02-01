@@ -34,3 +34,6 @@ export { default as DeliveryDocDeliveryman } from "./Products/Delivery/docomenta
 export { default as DeliveryDocManager } from "./Products/Delivery/docomentation/API/Manager";
 export { default as DeliveryDocOrders } from "./Products/Delivery/docomentation/API/Orders";
 export { default as DeliveryDocInstallation } from "./Products/Delivery/docomentation/Installation";
+
+// Clinic
+export { default as ClinicApp } from "./Products/Clinic/ClinicApp";

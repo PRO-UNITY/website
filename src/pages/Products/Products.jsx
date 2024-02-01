@@ -18,6 +18,13 @@ const Products = () => {
       description: t("products.product-delivery.description"),
       path: "/products/delivery",
     },
+    {
+      id: 3,
+      title: t("products.clinic-app.title"),
+      description: t("products.clinic-app.description"),
+      description2: t("products.clinic-app.description2"),
+      path: "/products/clinic",
+    },
   ];
   return (
     <Layout title={"ProUnity | Products"}>
