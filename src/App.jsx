@@ -33,6 +33,7 @@ import {
   License,
   PrivacyPolicy,
   Advertise,
+  ClinicApp,
   ChatApp,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
@@ -142,6 +143,8 @@ function App() {
               path="products/delivery/documentation/orders"
               element={<DeliveryDocOrders />}
             />
+            {/* Clinic App */}
+            <Route path="products/clinic-app" element={<ClinicApp />} />
           </Routes>
         </ActiveNavContext.Provider>
       </AsideScrollActiveProvider>

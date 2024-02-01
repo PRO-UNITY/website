@@ -20,6 +20,13 @@ const Products = () => {
     },
     {
       id: 3,
+      title: t("products.clinic-app.title"),
+      description: t("products.clinic-app.description"),
+      description2: t("products.clinic-app.description2"),
+      path: "/products/clinic",
+    },
+    {
+      id: 4,
       title: t("products.product-chat-app.title"),
       description: t("products.product-chat-app.description"),
       path: "/products/chat-app",

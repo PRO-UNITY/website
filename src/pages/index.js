@@ -37,3 +37,5 @@ export { default as DeliveryDocInstallation } from "./Products/Delivery/docoment
 
 // Chat App
 export { default as ChatApp } from "./Products/ChatApp/ChatApp";
+// Clinic
+export { default as ClinicApp } from "./Products/Clinic/ClinicApp";

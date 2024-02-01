@@ -93,6 +93,16 @@ const MyNavbar = () => {
                   >
                     Chat App
                   </Link>
+                  <Link
+                    to={"/products/clinic-app"}
+                    className={`dropdown-item px-0 ${
+                      pathname === "/products/clinic-app"
+                        ? "dropdown-item-active"
+                        : ""
+                    }`}
+                  >
+                    Clinic App
+                  </Link>
                 </div>
               </div>
 
