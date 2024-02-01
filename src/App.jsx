@@ -33,6 +33,7 @@ import {
   License,
   PrivacyPolicy,
   Advertise,
+  ChatApp,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
@@ -82,6 +83,7 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
             {/* Hrms */}
             <Route path="/products/hrms" element={<Hrms />} />
+            <Route path="/products/chat-app" element={<ChatApp />} />
             <Route
               path="products/hrms/documentation"
               element={<HrmsDocumentation />}

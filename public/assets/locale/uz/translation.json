@@ -242,6 +242,10 @@
     "product-delivery": {
       "title": "Delivery",
       "description": "Assalomu alaykum! Xizmatlarimiz yordamida yashin tezligida, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz. Hoziroq buyurtma bering va zavqlanishni boshlang. qulaylik! 🚚🌟"
+    },
+    "product-chat-app": {
+      "title": "Delivery",
+      "description": "Chat ilovasi butun dunyo boʻylab doʻstlar va tanishlar bilan oson va mazmunli muloqot qilish uchun moʻljallangan bepul, boy funksiyalarga ega platformadir. Ushbu murakkab chat va xabar almashish platformasi foydalanuvchilarga chegaralar, madaniyatlar va chegaralar orqali ulanish imkonini beradi."
     }
   },
   "team-details": {
@@ -333,6 +337,54 @@
         "description": "Delivary-da biz biznesingizning noyob ehtiyojlarini qondirish uchun moslashtirilgan uzluksiz va samarali yetkazib berish yechimini taqdim etish orqali logistika landshaftini qayta belgilaymiz. Bizning majburiyatimiz ishonchlilik, tezlik va mijozlar ehtiyojini qondirishni ta'minlab, yetkazib berish jarayonlaringizni oshirishdan iborat.",
         "description2": "Bizning ilg‘or texnologiyamiz sizga real vaqt rejimida kuzatuv, aqlli marshrutni optimallashtirish va ishonchli tahlillar bilan yordam beradi, bu sizga yetkazib berish operatsiyalaringiz bo‘yicha misli ko‘rilmagan nazorat va tushunchalarni beradi. Yetkazib berish shunchaki yetkazib berish xizmati emas; bu sizning biznesingiz o'sishida strategik hamkordir.",
         "description3": "Delivary bilan logistika boshqaruvining qulayligini his eting. Eshikdan manzilgacha biz sizning yetkazib berishlaringiz tez, aniq va muammosiz bo'lishini ta'minlashga harakat qilamiz. Muvaffaqiyatga erishish yo'llarini soddalashtirishda bizga qo'shiling."
+      },
+      "moreButton": "View Demo"
+    },
+    "pricing": {
+      "subtitle": "Narxlar",
+      "title": "Bizda yaxshiroq narx rejamiz bor",
+      "price": "oyiga",
+      "cardProffesional": {
+        "title": "Profesional",
+        "cardList": {
+          "list1": "Barcha asosiy xizmatlar",
+          "list2": "Cheksiz so'rov",
+          "list3": "Cheksiz qayta ko'rib chiqish",
+          "list4": "Istalgan vaqtda bekor qilish",
+          "list5": "A-Sync hamkorlik"
+        }
+      },
+      "cardUnlimited": {
+        "title": "Cheksiz",
+        "subtitle": "Eng mashhur",
+        "cardList": {
+          "list1": "Barcha asosiy xizmatlar",
+          "list2": "Barcha rivojlanayotgan xizmatlar",
+          "list3": "Har qanday vaqt bekor qilish",
+          "list4": "Badiiy yo'nalish",
+          "list5": "Kontseptsiya va g'oya",
+          "list6": "Cheksiz so'rov",
+          "list7": "Cheksiz qayta ko'rib chiqish",
+          "list8": "A-Sync hamkorlik",
+          "list9": "Haftalik yangilanishlar"
+        }
+      },
+      "pricingButton": "Hozir boshlang"
+    }
+  },
+  "ChatApp": {
+    "home": {
+      "title": " Chat App - O'zaro Aloqa va Munozara Platformasi",
+      "description": "Chat App - bu so'zlash, munozara va do'stlar bilan aloqada bo'lishning samarali, oson va ilmiy usuli. Bu ilmiy chat ilmiy platforma, foydalanuvchilarga dunyo bo'ylab turli hududda, madaniyat va madaniyatning chegaralari orasida o'zaro aloqada bo'lish imkoniyatini beradi.",
+      "button1": "Demoni ko'rish",
+      "documentation": "Hujjatlar"
+    },
+    "about": {
+      "box1": {
+        "title": "Chat App - Dunyo Bo'ylab Aloqada Bo'lishingiz Uchun Eng Yaxshi Platforma",
+        "description": "Chat App - bu dunyo bo'ylab o'zaro aloqada bo'lish, yangi do'stlar topish va muntazam munozaralar uchun mahsulot. Bizning chat ilmiy platformamiz sizga yengil, maxfiy va samarali aloqa imkoniyatini taqdim etadi. Anonimlik va multimedia ulashishning yanada osonligi bilan, ChatHub sizning aloqa tajribangizni boshqarish uchun ideal vosita.",
+        "description2": "ChatApp - bu o'zaro aloqa, multimedia ulashish va do'stlar bilan munozara qilish uchun mo'ljallangan chat ilmiy platforma. Anonimlik va maxfiylikni oshirib, dunyo bo'ylab aloqalarni yaratish uchun dizayn qilingan, aloqa tajribangizni yanada kuchaytiradi. Yangi do'stlar topish, dunyo bo'ylab muntazam aloqalar tashkil etish va xususiy multimedia xabarlarni ulashish uchun Chat App - eng ma'qul tanlov.",
+        "description3": "Chat App - bu mahsulot yangi do'stlar topish, muntazam aloqalar yaratish va multimedia xabarlarni ulashish imkoniyatini taqdim etuvchi chat ilmiy platformasi. Maxfiylik va anonimlik muhim maqbuliyatlardir. Chat App sizga dunyo bo'ylab aloqada bo'lishning eng qulay va samarali yo'llarini taklif etadi. Sizning do'stlar doirangizni kengaytirish va dunyo bo'ylab do'stlar topish uchun Chat App - eng yaxshi tanlov."
       },
       "moreButton": "View Demo"
     },

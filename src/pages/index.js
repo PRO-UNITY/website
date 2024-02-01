@@ -34,3 +34,6 @@ export { default as DeliveryDocDeliveryman } from "./Products/Delivery/docomenta
 export { default as DeliveryDocManager } from "./Products/Delivery/docomentation/API/Manager";
 export { default as DeliveryDocOrders } from "./Products/Delivery/docomentation/API/Orders";
 export { default as DeliveryDocInstallation } from "./Products/Delivery/docomentation/Installation";
+
+// Chat App
+export { default as ChatApp } from "./Products/ChatApp/ChatApp";

@@ -242,6 +242,10 @@
     "product-delivery": {
       "title": "Deivery",
       "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟"
+    },
+    "product-chat-app": {
+      "title": "Chat App",
+      "description": "Chat App is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries."
     }
   },
   "team-details": {
@@ -328,6 +332,54 @@
         "description": "At Delivary, we redefine the logistics landscape by providing a seamless and efficient delivery solution tailored to meet the unique needs of your business. Our commitment is to elevate your delivery processes, ensuring reliability, speed, and customer satisfaction.",
         "description2": "Our cutting-edge technology empowers you with real-time tracking, smart route optimization, and robust analytics, giving you unparalleled control and insights into your delivery operations. Delivary is not just a delivery service; it's a strategic partner in your business growth.",
         "description3": "Experience the ease of logistics management with Delivary. From doorstep to destination, we are dedicated to ensuring your deliveries are prompt, precise, and hassle-free. Join us in simplifying the way you deliver success."
+      },
+      "moreButton": "View Demo"
+    },
+    "pricing": {
+      "subtitle": "Pricing",
+      "title": "We Have Better Pricing Plan",
+      "cardProffesional": {
+        "title": "Proffesional",
+        "cardList": {
+          "list1": "All Basic Services",
+          "list2": "Unlimited Request",
+          "list3": "Unlimited Revision",
+          "list4": "Cancel Anytime",
+          "list5": "A-Sync Collaboration"
+        }
+      },
+      "cardUnlimited": {
+        "title": "Unlimited",
+        "subtitle": "Most Popular",
+        "cardList": {
+          "list1": "All Basic Services",
+          "list2": "All Advanced Services",
+          "list3": "Cancel Anytime",
+          "list4": "Art Direction",
+          "list5": "Concept and Ideation",
+          "list6": "Unlimited Request",
+          "list7": "Unlimited Revision",
+          "list8": "A-Sync Collaboration",
+          "list9": "Weekly Updates"
+        }
+      },
+
+      "pricingButton": "Start Now"
+    }
+  },
+  "ChatApp": {
+    "home": {
+      "title": "Chat App - Seamless Chat and Messaging Platform",
+      "description": "Chat App is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries.",
+      "button1": "View Demo",
+      "documentation": "Documentation"
+    },
+    "about": {
+      "box1": {
+        "title": "Chat App - The Ultimate Platform for Connecting Worldwide",
+        "description": "Chat App is a product designed for connecting globally, finding new friends, and engaging in regular discussions. Our chat platform offers you an easy, private, and effective way to communicate. With enhanced features like anonymity and multimedia sharing, Chat App is your ideal choice for managing your communication experiences.",
+        "description2": "Chat App is an intelligently crafted chat platform for connecting with friends, sharing multimedia, and engaging in conversations. Designed to prioritize anonymity and privacy, Chat App enhances your communication experience globally. It's the perfect choice for discovering new friends, creating global connections, and sharing special multimedia messages.",
+        "description3": "Chat App is a product dedicated to fostering social connections, creating regular discussions, and sharing multimedia messages. Privacy and anonymity are paramount in our design. Chat App provides you with the most convenient and effective ways to connect globally. Expand your friend circle and make global connections with ChatApp - your best choice."
       },
       "moreButton": "View Demo"
     },
