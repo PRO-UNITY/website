@@ -35,6 +35,7 @@ import {
   Advertise,
   ClinicApp,
   ChatApp,
+  TodoApp,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
@@ -85,6 +86,7 @@ function App() {
             {/* Hrms */}
             <Route path="/products/hrms" element={<Hrms />} />
             <Route path="/products/chat-app" element={<ChatApp />} />
+            <Route path="/products/todo-app" element={<TodoApp />} />
             <Route
               path="products/hrms/documentation"
               element={<HrmsDocumentation />}

@@ -30,6 +30,12 @@ const Products = () => {
       description: t("products.product-chat-app.description"),
       path: "/products/chat-app",
     },
+    {
+      id: 5,
+      title: t("products.product-todo.title"),
+      description: t("products.product-todo.description"),
+      path: "/products/todo-app",
+    },
   ];
   return (
     <Layout title={"ProUnity | Products"}>

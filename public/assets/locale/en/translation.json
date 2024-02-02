@@ -250,6 +250,10 @@
     "product-clinic-app": {
       "title": "Clinic App",
       "description": "Our clinic app is a free, feature-rich platform designed to facilitate easy and meaningful communication with patients and medical staff worldwide. This sophisticated messaging and communication tool empowers users to connect seamlessly across borders, cultures, and boundaries, enhancing the efficiency and effectiveness of healthcare interactions."
+    },
+    "product-todo": {
+      "title": "Todo",
+      "description": "Todo - is a smart application for easy and convenient task management. Organize your daily tasks, set deadlines, and never forget to complete them. Todo offers a simple and efficient solution for managing your actions effortlessly."
     }
   },
   "team-details": {
@@ -429,6 +433,17 @@
     "about": {
       "description": "Patients can choose a doctor from categories and apply for an appointment, making it easy to find a doctor that suits their needs. Our availability calendar for doctors is a great way for patients to see when their preferred doctor is available and plan their appointment accordingly.",
       "description2": "Our clinic app is a reliable and efficient way to manage your healthcare needs. With features like appointment scheduling, doctor availability calendars, and categories for doctors, our app is the perfect tool for patients looking for a convenient way to manage their healthcare. Download our app today and experience the convenience of managing your healthcare needs at your fingertips!"
+    }
+  },
+  "todo-app": {
+    "home": {
+      "title": "Todo - Easy Task Organization at Your Fingertips",
+      "description": "Todo is a smart application for easy and convenient task management. Organize your daily tasks, set deadlines, and never forget to complete them. Todo offers a simple and efficient solution for managing your actions effortlessly."
+    },
+    "about": {
+      "title": "Todo - Your Personal Task Assistant",
+      "description": "Meet Todo, your ultimate task companion. We understand that life can get busy, and staying on top of your tasks is crucial. Todo is designed to be your personal task assistant, helping you organize, prioritize, and accomplish your goals with ease. From simple to-do lists to complex project management, Todo adapts to your needs, ensuring a seamless and productive experience.",
+      "description2": "Todo is all about making task management simple and straightforward. We believe in providing a clean and intuitive platform that allows you to focus on what matters most – your tasks. Whether you're a professional managing work projects or an individual handling personal goals, Todo is here to simplify your daily routine. Take control of your tasks effortlessly and enjoy a more organized and productive life with Todo."
     }
   }
 }
