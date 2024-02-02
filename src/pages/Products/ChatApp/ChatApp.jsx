@@ -7,11 +7,11 @@ import slider_img3 from "../../../assets/images/ChatApp/slider-img-3.png";
 import slider_img4 from "../../../assets/images/ChatApp/slider-img-4.png";
 import slider_img5 from "../../../assets/images/ChatApp/slider-img-5.png";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
-import flutter from "../../../assets/images/hrms/icons8-flutter-480 1.png";
-import flutterb from "../../../assets/images/hrms/pluginIcon.png";
+import reactnative from "../../../assets/images/hrms/react-native.png";
+import expo from "../../../assets/images/hrms/expo-icon.svg";
 import python from "../../../assets/images/hrms/python-logo.png";
 import django from "../../../assets/images/hrms/django-logo.png";
-import dribbble from "../../../assets/images/hrms/material-design-icon-512x512-fz9kqvlo.png";
+import websocket from "../../../assets/images/hrms/websocket.svg";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -45,15 +45,15 @@ const CaruselItem = [
 const platformData = [
   {
     id: 1,
-    image: flutter,
-    background: "rgba(64, 196, 255, 0.26)",
-    link: "https://flutter.dev/",
+    image: reactnative,
+    background: "rgba(64, 196, 255, 0.2)",
+    link: "hhttps://reactnative.dev/",
   },
   {
     id: 2,
-    image: flutterb,
-    background: "rgba(48, 220, 128, 0.26)",
-    link: "https://bloclibrary.dev/",
+    image: expo,
+    background: "rgba(255, 255, 255)",
+    link: "https://expo.dev/",
   },
   {
     id: 3,
@@ -69,9 +69,9 @@ const platformData = [
   },
   {
     id: 5,
-    image: dribbble,
-    background: "rgba(255, 255, 255, 0.6)",
-    link: "https://m3.material.io/",
+    image: websocket,
+    background: "rgba(0, 0, 0, 0.5)",
+    link: "https://socket.io/",
   },
 ];
 
