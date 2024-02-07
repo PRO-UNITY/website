@@ -248,8 +248,12 @@
       "description": "Chat ilovasi butun dunyo boʻylab doʻstlar va tanishlar bilan oson va mazmunli muloqot qilish uchun moʻljallangan bepul, boy funksiyalarga ega platformadir. Ushbu murakkab chat va xabar almashish platformasi foydalanuvchilarga chegaralar, madaniyatlar va chegaralar orqali ulanish imkonini beradi."
     },
     "product-clinic-app": {
-      "title": "Delivery",
+      "title": "Clinic App",
       "description": "Bizning klinik ilovamiz bepul, funksiyalar bilan boyitilgan platforma, dunyo bo'ylab oson va ma'noiy muloqotni o'rnatish uchun mo'ljallangan. Ushbu tanqisiz xabarlashish va muloqot vositasi foydalanuvchilarga chegaralar, madaniyatlar va cheklanmalar orqali oson ulashish huquqini beradi, shifoxona muloqotlarini qulay va samarali qiladi."
+    },
+    "product-spa-app": {
+      "title": "SPA App",
+      "description": "Harmoniya Oazis: Jahon sog'liqni Sodda Spa Kommunikatsiyasi va Bog'lovchilik orqali kuchaytirish"
     }
   },
   "team-details": {
@@ -422,6 +426,18 @@
         }
       },
       "pricingButton": "Hozir boshlang"
+    }
+  },
+  "spa-app": {
+    "home": {
+      "title": "Bizning innovatsion spa ilova bilan o'zingizni yaxshilang: sog'likni kuchaytiring, bitta bosingiz bilan.",
+      "title2": "Sog'likni boshqarishning keyingi bosqichini oching: spadagi yengiluvchi ilovamiz, tizimni jonatish, va yana bir qancha narsalarni ta'minlash!",
+      "description": "Spa tajribangizni osonlashtiring: kutilgan xizmatlarni oson tanlang va bizning intuitsiyalik tartibga solingan tizimimiz orqali vizitlarni rejalashtiring. Spa mavjudlik kalendarimiz yordamida vizitlaringizni aniq va oson rejalashing.",
+      "description2": "O'z sog'lig'ingizni qabul qiling: bizning ishonchli va samarali ilovamiz yordamida spa tajribangizni boshqarishni osonlashtiring. Vizitlar buyurtma berishdan, xizmatlar mavjudligini ko'rishgacha va qulay xizmat kategoriyalariga qadar - bizning ilovamiz spa boshqarish uchun ideal hamshirasidir. Bugun yuklab oling va spa yo'liningizni osonlashtiring."
+    },
+    "about": {
+      "description": "Sizning spa tanloqlaringizga kuch bering: xizmatlarni qulay bo'limlar boyicha oson tanlang va ishonch bilan vizitlarni buyurtma bering.",
+      "description2": "Spa boshqarishda og'irlikni his qiling: bizning ilovamiz spa muhtojliklaringiz uchun ishonchli va samarali yechimlar taklif qiladi. Vizitlarni oson buyurtma berishdan, spa mavjudlik kalendariga kirishgacha va kategoriyalangan xizmatlarga - bu spa boshqarishda qulay vositadir. Bugun yuklab oling va o'zingizning qurilmangizda spa turishining osonligidan lezzatlaning!"
     }
   }
 }

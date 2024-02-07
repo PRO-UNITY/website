@@ -41,3 +41,6 @@ export { default as ChatApp } from "./Products/ChatApp/ChatApp";
 export { default as ClinicApp } from "./Products/Clinic/ClinicApp";
 // Clinic
 export { default as TodoApp } from "./Products/TodoApp/TodoApp";
+
+// Spa App
+export { default as SpaApp } from "./Products/SpaApp/SpaApp";

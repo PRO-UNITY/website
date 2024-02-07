@@ -36,6 +36,7 @@ import {
   ClinicApp,
   ChatApp,
   TodoApp,
+  SpaApp,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
@@ -147,6 +148,7 @@ function App() {
             />
             {/* Clinic App */}
             <Route path="products/clinic-app" element={<ClinicApp />} />
+            <Route path="products/spa-app" element={<SpaApp />} />
           </Routes>
         </ActiveNavContext.Provider>
       </AsideScrollActiveProvider>
