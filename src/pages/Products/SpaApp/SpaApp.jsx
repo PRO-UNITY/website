@@ -1,13 +1,12 @@
-import "./ClinicApp.css";
-import home_img from "../../../assets/images/Clinic/clinic-app-home.png"
-import about_img from "../../../assets/images/Clinic/clinic-app-appointment.png";
-import slider_img1 from "../../../assets/images/Clinic/slider_img1.png";
-import slider_img2 from "../../../assets/images/Clinic/slider_img2.png";
-import slider_img3 from "../../../assets/images/Clinic/slider_img3.png";
-import slider_img4 from "../../../assets/images/Clinic/slider_img4.png";
-import slider_img5 from "../../../assets/images/Clinic/slider_img5.png";
-import slider_img6 from "../../../assets/images/Clinic/slider_img6.png";
-import slider_img8 from "../../../assets/images/Clinic/slider_img8.png";
+import "./SpaApp.css";
+import home_img from "../../../assets/images/SpaApp/main-page.png";
+import about_img from "../../../assets/images/SpaApp/master-info.png";
+import slider_img1 from "../../../assets/images/SpaApp/new-password.png";
+import slider_img2 from "../../../assets/images/SpaApp/info-slider.png";
+import slider_img3 from "../../../assets/images/SpaApp/chat.png";
+import slider_img4 from "../../../assets/images/SpaApp/categories.png";
+import slider_img5 from "../../../assets/images/SpaApp/calendar-search.png";
+
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import reactNative from '../../../assets/images/Clinic/react-native-bg.png'
 import ts from '../../../assets/images/Clinic/ts.png'
@@ -42,14 +41,7 @@ const CaruselItem = [
         id: 5,
         image: slider_img5,
     },
-    {
-        id: 6,
-        image: slider_img6,
-    },
-    {
-        id: 7,
-        image: slider_img8,
-    },
+
 ];
 
 const platformData = [
@@ -85,7 +77,7 @@ const platformData = [
     // },
 ];
 
-const ClinicApp = () => {
+const SpaApp = () => {
     const { t } = useTranslation();
     return (
         <Layout title={"ProUnity | Hrms"}>
@@ -97,10 +89,10 @@ const ClinicApp = () => {
                                 style={{ fontWeight: "600" }}
                                 className="display-3 text-white mt-5 mt-md-0 mb-5 "
                             >
-                                {t("clinic-app.home.title")}
+                                {t("spa-app.home.title")}
                             </h1>
                             <p className="description text-white">
-                                {t("clinic-app.home.title2")}
+                                {t("spa-app.home.title2")}
                             </p>
                             <a
                                 target="_blank"
@@ -140,10 +132,10 @@ const ClinicApp = () => {
                         </div>
                         <div className="col-lg-6 p-3 p-md-5">
                             <h2 style={{ fontWeight: "600" }} className="mb-4">
-                                {t("hrms.about.box1.title")}
+                                {t("spa-app.about.description")}
                             </h2>
-                            <p className="description">{t("clinic-app.home.description")}</p>
-                            <p className="description">{t("clinic-app.home.description2")}</p>
+                            <p className="description">{t("spa-app.home.description")}</p>
+                            <p className="description">{t("spa-app.home.description2")}</p>
                             <a
                                 href="#"
                                 className="btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3"
@@ -362,4 +354,4 @@ const ClinicApp = () => {
     );
 };
 
-export default ClinicApp;
+export default SpaApp;

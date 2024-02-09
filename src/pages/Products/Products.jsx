@@ -43,6 +43,12 @@ const Products = () => {
     //   description: t("products.product-chat-app2.description"),
     //   path: "/products/chat-app2",
     // },
+    {
+      id: 6,
+      title: t("products.product-spa-app.title"),
+      description: t("products.product-spa-app.description"),
+      path: "/products/spa-app",
+    },
   ];
 
   const [visibleProducts, setVisibleProducts] = useState(products.slice(0, 3));

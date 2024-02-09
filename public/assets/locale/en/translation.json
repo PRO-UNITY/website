@@ -255,9 +255,9 @@
       "title": "Todo",
       "description": "Todo - is a smart application for easy and convenient task management. Organize your daily tasks, set deadlines, and never forget to complete them. Todo offers a simple and efficient solution for managing your actions effortlessly."
     },
-    "product-chat-app2": {
-      "title": "Chat App",
-      "description": "Welcome to Chat App, the ultimate platform for meaningful connections. Whether you're looking to make new friends, engage in global discussions, or share moments with loved ones, Chat App provides a secure and feature-rich environment. With anonymous messaging and multimedia sharing, Chat App is designed to enrich your communication experience. Join the hub and bring your conversations to life."
+    "product-spa-app": {
+      "title": "SPA App",
+      "description": "HarmonyHaven: Empowering Global Wellness through Seamless Spa Communication and Connection."
     }
   },
   "team-details": {
@@ -450,15 +450,16 @@
       "description2": "Todo is all about making task management simple and straightforward. We believe in providing a clean and intuitive platform that allows you to focus on what matters most – your tasks. Whether you're a professional managing work projects or an individual handling personal goals, Todo is here to simplify your daily routine. Take control of your tasks effortlessly and enjoy a more organized and productive life with Todo."
     }
   },
-  "chat-app2": {
+  "spa-app": {
     "home": {
-      "title": "Chat App - Connecting People, One Chat at a Time",
-      "description": "Welcome to Chat app, the ultimate platform for meaningful connections. Whether you're looking to make new friends, engage in global discussions, or share moments with loved ones, Chat app provides a secure and feature-rich environment. With anonymous messaging and multimedia sharing, Chat app is designed to enrich your communication experience. Join the hub and bring your conversations to life."
+      "title": "Elevate Your Well-Being with Our Innovative Spa App: Empowering Wellness, One Touch Away",
+      "title2": "Unveil the Next Generation of Wellness Management: Your Essential Spa App for Effortless Appointment Booking and Beyond!",
+      "description": "Simplify Your Spa Experience: Effortlessly Choose Your Preferred Services and Schedule Appointments with Our Intuitive Category-Based System. With Our Spa Availability Calendar, Plan Your Visits with Precision and Ease.",
+      "description2": "Embrace Wellness: Seamlessly Manage Your Spa Experience with Our Reliable and Efficient App. From Booking Appointments to Viewing Service Availability and Convenient Service Categories, Our App is Your Perfect Companion for Effortless Spa Management. Download Today and Elevate Your Spa Journey with Ease."
     },
     "about": {
-      "title": " Chat App - Bridging Conversations Across Borders",
-      "description": "Welcome to Chat app, where conversations know no boundaries. Our mission is to create a platform that transcends borders, allowing individuals from around the world to connect effortlessly. Chat app is more than just a chat app; it's a global community fostering meaningful interactions, friendships, and cultural exchanges.",
-      "description2": "Todo is all about making task management simple and straightforward. We believe in providing a clean and intuitive platform that allows you to focus on what matters most – your tasks. Whether you're a professional managing work projects or an individual handling personal goals, Todo is here to simplify your daily routine. Take control of your tasks effortlessly and enjoy a more organized and productive life with Todo."
+      "description": "Empower Your Spa Choices: Effortlessly Select Your Preferred Services by Category and Book Appointments with Confidence.",
+      "description2": "Experience Effortless Spa Management: Our App Offers Reliable and Efficient Solutions for Your Spa Needs. From Easy Appointment Scheduling to Accessing Spa Availability Calendars and Categorized Services, It's Your Ideal Tool for Convenient Spa Management. Download Today and Enjoy the Ease of Spa Care at Your Fingertips!"
     }
   }
 }

@@ -36,7 +36,7 @@ import {
   ClinicApp,
   ChatApp,
   TodoApp,
-  ChatApp2,
+  SpaApp,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
@@ -81,7 +81,6 @@ function App() {
             {/* Hrms */}
             <Route path="/products/hrms" element={<Hrms />} />
             <Route path="/products/chat-app" element={<ChatApp />} />
-            <Route path="/products/chat-app2" element={<ChatApp2 />} />
             <Route path="/products/todo-app" element={<TodoApp />} />
             <Route path="products/hrms/documentation" element={<HrmsDocumentation />} />
             <Route path="products/hrms/documentation/users" element={<HrmsDocUser />} />
@@ -101,6 +100,7 @@ function App() {
             <Route path="products/delivery/documentation/orders" element={<DeliveryDocOrders />} />
             {/* Clinic App */}
             <Route path="products/clinic-app" element={<ClinicApp />} />
+            <Route path="products/spa-app" element={<SpaApp />} />
           </Routes>
         </ActiveNavContext.Provider>
       </AsideScrollActiveProvider>

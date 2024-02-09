@@ -56,62 +56,65 @@ const MyNavbar = () => {
                 <NavLink
                   as={Link}
                   to={"/products"}
-                  className={`py-0 nav-link dropdown-toggle ${
-                    pathname.includes("/products") && "active"
-                  }`}
+                  className={`py-0 nav-link dropdown-toggle ${pathname.includes("/products") && "active"
+                    }`}
                 >
                   {t("navbar.products")}
                 </NavLink>
                 <div className="dropdown-menu  rounded px-3 mt-2">
                   <Link
                     to={"/products/hrms"}
-                    className={`dropdown-item px-0 ${
-                      pathname === "/products/hrms"
+                    className={`dropdown-item px-0 ${pathname === "/products/hrms"
                         ? "dropdown-item-active"
                         : ""
-                    }`}
+                      }`}
                   >
                     Hrms
                   </Link>
                   <Link
                     to={"/products/delivery"}
-                    className={`dropdown-item px-0 ${
-                      pathname === "/products/delivery"
+                    className={`dropdown-item px-0 ${pathname === "/products/delivery"
                         ? "dropdown-item-active"
                         : ""
-                    }`}
+                      }`}
                   >
                     Delivery
                   </Link>
                   <Link
                     to={"/products/chat-app"}
-                    className={`dropdown-item px-0 ${
-                      pathname === "/products/chat-app"
+                    className={`dropdown-item px-0 ${pathname === "/products/chat-app"
                         ? "dropdown-item-active"
                         : ""
-                    }`}
+                      }`}
                   >
                     Chat App
                   </Link>
                   <Link
                     to={"/products/clinic-app"}
-                    className={`dropdown-item px-0 ${
-                      pathname === "/products/clinic-app"
+                    className={`dropdown-item px-0 ${pathname === "/products/clinic-app"
                         ? "dropdown-item-active"
                         : ""
-                    }`}
+                      }`}
                   >
                     Clinic App
                   </Link>
                   <Link
                     to={"/products/todo-app"}
-                    className={`dropdown-item px-0 ${
-                      pathname === "/products/clinic-app"
+                    className={`dropdown-item px-0 ${pathname === "/products/clinic-app"
                         ? "dropdown-item-active"
                         : ""
-                    }`}
+                      }`}
                   >
                     Todo
+                  </Link>
+                  <Link
+                    to={"/products/spa-app"}
+                    className={`dropdown-item px-0 ${pathname === "/products/clinic-app"
+                        ? "dropdown-item-active"
+                        : ""
+                      }`}
+                  >
+                    SPA App
                   </Link>
                 </div>
               </div>
@@ -129,25 +132,22 @@ const MyNavbar = () => {
                 </a>
                 <div className="dropdown-menu lang-menu  rounded pb-3  px-3 mt-2">
                   <span
-                    className={`dropdown-item px-0 ${
-                      activeLang === "en" ? "dropdown-item-active " : ""
-                    } `}
+                    className={`dropdown-item px-0 ${activeLang === "en" ? "dropdown-item-active " : ""
+                      } `}
                     onClick={() => changeLang("en")}
                   >
                     En
                   </span>
                   <span
-                    className={`dropdown-item px-0 ${
-                      activeLang === "ru" ? "dropdown-item-active " : ""
-                    } `}
+                    className={`dropdown-item px-0 ${activeLang === "ru" ? "dropdown-item-active " : ""
+                      } `}
                     onClick={() => changeLang("ru")}
                   >
                     Ru
                   </span>
                   <span
-                    className={`dropdown-item px-0 ${
-                      activeLang === "uz" ? "dropdown-item-active " : ""
-                    } `}
+                    className={`dropdown-item px-0 ${activeLang === "uz" ? "dropdown-item-active " : ""
+                      } `}
                     onClick={() => changeLang("uz")}
                   >
                     Uz
