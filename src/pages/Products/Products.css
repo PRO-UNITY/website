@@ -33,6 +33,16 @@
 .products .list-item p {
   margin: 0;
 }
+.products .show-more {
+  background: var(--secondary);
+  margin: 20px auto;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.products .show-more:hover {
+  background: var(--secondary);
+  opacity: 0.8;
+}
 @media (max-width: 768px) {
   .products {
     height: auto;

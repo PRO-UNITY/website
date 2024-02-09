@@ -1,10 +1,11 @@
 import home_slider from "../../../assets/images/ChatApp/home-img.png";
 import about_img from "../../../assets/images/ChatApp/about-img.png";
-import slider_img1 from "../../../assets/images/ChatApp/slider-img-1.png";
-import slider_img2 from "../../../assets/images/ChatApp/slider-img-2.png";
-import slider_img3 from "../../../assets/images/ChatApp/slider-img-3.png";
-import slider_img4 from "../../../assets/images/ChatApp/slider-img-4.png";
-import slider_img5 from "../../../assets/images/ChatApp/slider-img-5.png";
+import slider_img1 from "../../../assets/images/ChatApp2/slider-img-1.png";
+import slider_img2 from "../../../assets/images/ChatApp2/slider-img-2.png";
+import slider_img3 from "../../../assets/images/ChatApp2/slider-img-3.png";
+import slider_img4 from "../../../assets/images/ChatApp2/slider-img-4.png";
+import slider_img5 from "../../../assets/images/ChatApp2/slider-img-5.png";
+import slider_img6 from "../../../assets/images/ChatApp2/slider-img-6.png";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import reactnative from "../../../assets/images/hrms/react-native.png";
 import expo from "../../../assets/images/hrms/expo-icon.svg";
@@ -38,6 +39,10 @@ const CaruselItem = [
   {
     id: 5,
     image: slider_img5,
+  },
+  {
+    id: 6,
+    image: slider_img6,
   },
 ];
 
@@ -74,10 +79,11 @@ const platformData = [
   },
 ];
 
-const ChatApp = () => {
+const ChatApp22 = () => {
   const { t } = useTranslation();
   return (
     <Layout title={"ProUnity | Hrms"}>
+      <p></p>
       <div className="hrms">
         <section className="hrms-hero container-fluid header pro-bg-primary   mb-5">
           <div className="row g-0 h-100 align-items-end flex-column flex-lg-row">
@@ -86,10 +92,10 @@ const ChatApp = () => {
                 style={{ fontWeight: "600" }}
                 className="display-3 text-white mt-5 mt-md-0 mb-5 "
               >
-                {t("ChatApp.home.title")}
+                {t("chat-app2.home.title")}
               </h1>
               <p className="description text-white">
-                {t("ChatApp.home.description")}
+                {t("chat-app2.home.description")}
               </p>
               <a
                 target="_blank"
@@ -129,17 +135,9 @@ const ChatApp = () => {
             </div>
             <div className="col-lg-6 p-3 p-md-5">
               <h2 style={{ fontWeight: "600" }} className="mb-4">
-                {t("ChatApp.about.box1.title")}
+                {t("chat-app2.about.title")}
               </h2>
-              <p className="description">
-                {t("ChatApp.about.box1.description")}
-              </p>
-              <p className="description">
-                {t("ChatApp.about.box1.description2")}
-              </p>
-              <p className="description">
-                {t("ChatApp.about.box1.description3")}
-              </p>
+              <p className="description">{t("chat-app2.about.description")}</p>
               <a
                 href="#"
                 className="btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3"
@@ -355,4 +353,4 @@ const ChatApp = () => {
   );
 };
 
-export default ChatApp;
+export default ChatApp22;

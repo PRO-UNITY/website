@@ -36,6 +36,7 @@ import {
   ClinicApp,
   ChatApp,
   TodoApp,
+  ChatApp2,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
@@ -67,15 +68,9 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/advertise" element={<Advertise />} />
             <Route path="/services" element={<Services />} />
-            <Route
-              path="/services/softwareDevelopenent"
-              element={<SoftwareDevelopenent />}
-            />
+            <Route path="/services/softwareDevelopenent" element={<SoftwareDevelopenent />}/>
             <Route exact path="/services/IT-school" element={<ITScholl />} />
-            <Route
-              path="/services/authorized-tutorial"
-              element={<AuthorizedTutorial />}
-            />
+            <Route path="/services/authorized-tutorial" element={<AuthorizedTutorial />} />
             <Route path="/services/coworking" element={<Coworking />} />
             <Route path="/services/pro-community" element={<ProCommunity />} />
             <Route path="/services/opencourse" element={<OpenCourse />} />
@@ -86,65 +81,24 @@ function App() {
             {/* Hrms */}
             <Route path="/products/hrms" element={<Hrms />} />
             <Route path="/products/chat-app" element={<ChatApp />} />
+            <Route path="/products/chat-app2" element={<ChatApp2 />} />
             <Route path="/products/todo-app" element={<TodoApp />} />
-            <Route
-              path="products/hrms/documentation"
-              element={<HrmsDocumentation />}
-            />
-            <Route
-              path="products/hrms/documentation/users"
-              element={<HrmsDocUser />}
-            />
-            <Route
-              path="products/hrms/documentation/job"
-              element={<HrmsDocJob />}
-            />
-            <Route
-              path="products/hrms/documentation/resume"
-              element={<HrmsDocResume />}
-            />
-            <Route
-              path="products/hrms/documentation/company"
-              element={<HrmsDocCompany />}
-            />
+            <Route path="products/hrms/documentation" element={<HrmsDocumentation />} />
+            <Route path="products/hrms/documentation/users" element={<HrmsDocUser />} />
+            <Route path="products/hrms/documentation/job" element={<HrmsDocJob />} />
+            <Route path="products/hrms/documentation/resume" element={<HrmsDocResume />} />
+            <Route path="products/hrms/documentation/company" element={<HrmsDocCompany />} />
             {/* Delivery */}
             <Route path="/products/delivery" element={<Delivery />} />
-            <Route
-              path="products/delivery/documentation"
-              element={<DeliveryDocumentation />}
-            />
-            <Route
-              path="products/delivery/documentation/users"
-              element={<DeliveryDocUser />}
-            />
-            <Route
-              path="products/delivery/documentation"
-              element={<DeliveryDocumentation />}
-            />
-            <Route
-              path="products/delivery/documentation/users"
-              element={<DeliveryDocUser />}
-            />
-            <Route
-              path="products/delivery/documentation/kitchen"
-              element={<DeliveryDocKitchen />}
-            />
-            <Route
-              path="products/delivery/documentation/foods"
-              element={<DeliveryDocFoods />}
-            />
-            <Route
-              path="products/delivery/documentation/deliveryman"
-              element={<DeliveryDocDeliveryman />}
-            />
-            <Route
-              path="products/delivery/documentation/manager"
-              element={<DeliveryDocManager />}
-            />
-            <Route
-              path="products/delivery/documentation/orders"
-              element={<DeliveryDocOrders />}
-            />
+            <Route path="products/delivery/documentation" element={<DeliveryDocumentation />} />
+            <Route path="products/delivery/documentation/users" element={<DeliveryDocUser />} />
+            <Route path="products/delivery/documentation" element={<DeliveryDocumentation />} />
+            <Route path="products/delivery/documentation/users" element={<DeliveryDocUser />} />
+            <Route path="products/delivery/documentation/kitchen" element={<DeliveryDocKitchen />} />
+            <Route path="products/delivery/documentation/foods" element={<DeliveryDocFoods />} />
+            <Route path="products/delivery/documentation/deliveryman" element={<DeliveryDocDeliveryman />} />
+            <Route path="products/delivery/documentation/manager" element={<DeliveryDocManager />} />
+            <Route path="products/delivery/documentation/orders" element={<DeliveryDocOrders />} />
             {/* Clinic App */}
             <Route path="products/clinic-app" element={<ClinicApp />} />
           </Routes>

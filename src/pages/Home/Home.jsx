@@ -79,7 +79,7 @@ const Home = () => {
               </Link>
               <Link to={`/products`} className="text-decoration-none">
                 <div className=" ">
-                  <h2 className="text-white mb-1 display-5 fw-semibold">2+</h2>
+                  <h2 className="text-white mb-1 display-5 fw-semibold">10+</h2>
                   <p className="text-light mb-0">{t("herosection.projects")}</p>
                 </div>
               </Link>

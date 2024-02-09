@@ -254,6 +254,10 @@
     "product-todo": {
       "title": "Todo",
       "description": "Todo - is a smart application for easy and convenient task management. Organize your daily tasks, set deadlines, and never forget to complete them. Todo offers a simple and efficient solution for managing your actions effortlessly."
+    },
+    "product-chat-app2": {
+      "title": "Chat App",
+      "description": "Welcome to Chat App, the ultimate platform for meaningful connections. Whether you're looking to make new friends, engage in global discussions, or share moments with loved ones, Chat App provides a secure and feature-rich environment. With anonymous messaging and multimedia sharing, Chat App is designed to enrich your communication experience. Join the hub and bring your conversations to life."
     }
   },
   "team-details": {
@@ -443,6 +447,17 @@
     "about": {
       "title": "Todo - Your Personal Task Assistant",
       "description": "Meet Todo, your ultimate task companion. We understand that life can get busy, and staying on top of your tasks is crucial. Todo is designed to be your personal task assistant, helping you organize, prioritize, and accomplish your goals with ease. From simple to-do lists to complex project management, Todo adapts to your needs, ensuring a seamless and productive experience.",
+      "description2": "Todo is all about making task management simple and straightforward. We believe in providing a clean and intuitive platform that allows you to focus on what matters most – your tasks. Whether you're a professional managing work projects or an individual handling personal goals, Todo is here to simplify your daily routine. Take control of your tasks effortlessly and enjoy a more organized and productive life with Todo."
+    }
+  },
+  "chat-app2": {
+    "home": {
+      "title": "Chat App - Connecting People, One Chat at a Time",
+      "description": "Welcome to Chat app, the ultimate platform for meaningful connections. Whether you're looking to make new friends, engage in global discussions, or share moments with loved ones, Chat app provides a secure and feature-rich environment. With anonymous messaging and multimedia sharing, Chat app is designed to enrich your communication experience. Join the hub and bring your conversations to life."
+    },
+    "about": {
+      "title": " Chat App - Bridging Conversations Across Borders",
+      "description": "Welcome to Chat app, where conversations know no boundaries. Our mission is to create a platform that transcends borders, allowing individuals from around the world to connect effortlessly. Chat app is more than just a chat app; it's a global community fostering meaningful interactions, friendships, and cultural exchanges.",
       "description2": "Todo is all about making task management simple and straightforward. We believe in providing a clean and intuitive platform that allows you to focus on what matters most – your tasks. Whether you're a professional managing work projects or an individual handling personal goals, Todo is here to simplify your daily routine. Take control of your tasks effortlessly and enjoy a more organized and productive life with Todo."
     }
   }

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../Layout/Layout";
 import "./Products.css";
@@ -36,7 +37,16 @@ const Products = () => {
       description: t("products.product-todo.description"),
       path: "/products/todo-app",
     },
+    // {
+    //   id: 6,
+    //   title: t("products.product-chat-app2.title"),
+    //   description: t("products.product-chat-app2.description"),
+    //   path: "/products/chat-app2",
+    // },
   ];
+
+  const [visibleProducts, setVisibleProducts] = useState(products.slice(0, 3));
+
   return (
     <Layout title={"ProUnity | Products"}>
       <div className="py-5 products">
@@ -49,7 +59,7 @@ const Products = () => {
           </div>
           <div className="col-lg-7 d-flex px-4 px-md-5 align-items-center h-100">
             <ul className="p-0">
-              {products.map((item, i) => (
+              {visibleProducts.map((item, i) => (
                 <li key={item.id}>
                   <Link
                     to={item.path}
@@ -67,6 +77,21 @@ const Products = () => {
                   </Link>
                 </li>
               ))}
+              {visibleProducts.length < products.length ? (
+                <button
+                  className="btn show-more"
+                  onClick={() => setVisibleProducts(products)}
+                >
+                  Show more
+                </button>
+              ) : (
+                <button
+                  className="btn show-more"
+                  onClick={() => setVisibleProducts(products.slice(0, 3))}
+                >
+                  Show less
+                </button>
+              )}
             </ul>
           </div>
         </div>
