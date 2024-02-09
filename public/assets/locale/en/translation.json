@@ -244,8 +244,8 @@
       "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟"
     },
     "product-chat-app": {
-      "title": "Chat App",
-      "description": "Chat App is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries."
+      "title": "Chat",
+      "description": "Chat is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries."
     },
     "product-clinic-app": {
       "title": "Clinic App",
@@ -381,17 +381,17 @@
   },
   "ChatApp": {
     "home": {
-      "title": "Chat App - Seamless Chat and Messaging Platform",
-      "description": "Chat App is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries.",
+      "title": "Chat - Seamless Chat and Messaging Platform",
+      "description": "Chat is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries.",
       "button1": "View Demo",
       "documentation": "Documentation"
     },
     "about": {
       "box1": {
-        "title": "Chat App - The Ultimate Platform for Connecting Worldwide",
-        "description": "Chat App is a product designed for connecting globally, finding new friends, and engaging in regular discussions. Our chat platform offers you an easy, private, and effective way to communicate. With enhanced features like anonymity and multimedia sharing, Chat App is your ideal choice for managing your communication experiences.",
-        "description2": "Chat App is an intelligently crafted chat platform for connecting with friends, sharing multimedia, and engaging in conversations. Designed to prioritize anonymity and privacy, Chat App enhances your communication experience globally. It's the perfect choice for discovering new friends, creating global connections, and sharing special multimedia messages.",
-        "description3": "Chat App is a product dedicated to fostering social connections, creating regular discussions, and sharing multimedia messages. Privacy and anonymity are paramount in our design. Chat App provides you with the most convenient and effective ways to connect globally. Expand your friend circle and make global connections with ChatApp - your best choice."
+        "title": "Chat - The Ultimate Platform for Connecting Worldwide",
+        "description": "Chat is a product designed for connecting globally, finding new friends, and engaging in regular discussions. Our chat platform offers you an easy, private, and effective way to communicate. With enhanced features like anonymity and multimedia sharing, Chat is your ideal choice for managing your communication experiences.",
+        "description2": "Chat is an intelligently crafted chat platform for connecting with friends, sharing multimedia, and engaging in conversations. Designed to prioritize anonymity and privacy, Chat enhances your communication experience globally. It's the perfect choice for discovering new friends, creating global connections, and sharing special multimedia messages.",
+        "description3": "Chat is a product dedicated to fostering social connections, creating regular discussions, and sharing multimedia messages. Privacy and anonymity are paramount in our design. Chat provides you with the most convenient and effective ways to connect globally. Expand your friend circle and make global connections with ChatApp - your best choice."
       },
       "moreButton": "View Demo"
     },

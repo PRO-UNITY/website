@@ -38,6 +38,9 @@
   margin: 20px auto;
   font-weight: 500;
   transition: 0.3s;
+  border-radius: 20px;
+  color: var(--primary);
+  padding: 8px 25px;
 }
 .products .show-more:hover {
   background: var(--secondary);
