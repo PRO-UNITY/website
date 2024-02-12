@@ -1,4 +1,4 @@
-import home_img from "../../../assets/images/SpaApp/main-page.png";
+import home_img from "../../../assets/images/SpaApp/spaCut.png";
 import about_img from "../../../assets/images/SpaApp/master-info.png";
 import slider_img1 from "../../../assets/images/SpaApp/new-password.png";
 import slider_img2 from "../../../assets/images/SpaApp/info-slider.png";

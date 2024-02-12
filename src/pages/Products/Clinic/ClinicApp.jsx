@@ -1,4 +1,4 @@
-import home_img from "../../../assets/images/Clinic/clinic-app-home.png";
+import home_img from "../../../assets/images/Clinic/clinicCut.png";
 import about_img from "../../../assets/images/Clinic/clinic-app-appointment.png";
 import slider_img1 from "../../../assets/images/Clinic/slider_img1.png";
 import slider_img2 from "../../../assets/images/Clinic/slider_img2.png";
