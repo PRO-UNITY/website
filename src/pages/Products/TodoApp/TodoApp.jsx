@@ -50,13 +50,13 @@ const platformData = [
     id: 1,
     image: ionic,
     background: "rgba(64, 196, 255, 0.2)",
-    link: "hhttps://ionic.dev/",
+    link: "https://ionicframework.com/",
   },
   {
     id: 2,
     image: expo,
     background: "rgba(255, 255, 255)",
-    link: "https://expo.dev/",
+    link: "https://www.typescriptlang.org/",
   },
   {
     id: 3,
