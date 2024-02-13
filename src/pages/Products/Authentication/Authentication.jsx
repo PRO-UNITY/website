@@ -1,16 +1,15 @@
-import home_slider from "../../../assets/images/Todo/home-img.png";
-import about_img from "../../../assets/images/Todo/about-img.png";
-import slider_img1 from "../../../assets/images/Todo/slider-img-1.png";
-import slider_img2 from "../../../assets/images/Todo/slider-img-2.png";
-import slider_img3 from "../../../assets/images/Todo/slider-img-3.png";
-import slider_img4 from "../../../assets/images/Todo/slider-img-4.png";
-import slider_img5 from "../../../assets/images/Todo/slider-img-5.png";
-import slider_img6 from "../../../assets/images/Todo/slider-img-6.png";
+import home_slider from "../../../assets/images/Authentication/home-img.png";
+import about_img from "../../../assets/images/Authentication/about-img.png";
+import slider_img1 from "../../../assets/images/Authentication/slider-img-1.png";
+import slider_img2 from "../../../assets/images/Authentication/slider-img-2.jpg";
+import slider_img3 from "../../../assets/images/Authentication/slider-img-3.jpg";
+import slider_img4 from "../../../assets/images/Authentication/slider-img-4.jpg";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
-import ionic from "../../../assets/images/hrms/ionic.png";
-import expo from "../../../assets/images/Clinic/ts.png";
+import reactnative from "../../../assets/images/hrms/react-native.png";
+import expo from "../../../assets/images/hrms/expo-icon.svg";
 import python from "../../../assets/images/hrms/python-logo.png";
 import django from "../../../assets/images/hrms/django-logo.png";
+import websocket from "../../../assets/images/hrms/websocket.svg";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -35,22 +34,14 @@ const CaruselItem = [
     id: 4,
     image: slider_img4,
   },
-  {
-    id: 5,
-    image: slider_img5,
-  },
-  {
-    id: 6,
-    image: slider_img6,
-  },
 ];
 
 const platformData = [
   {
     id: 1,
-    image: ionic,
+    image: reactnative,
     background: "rgba(64, 196, 255, 0.2)",
-    link: "hhttps://ionic.dev/",
+    link: "hhttps://reactnative.dev/",
   },
   {
     id: 2,
@@ -70,12 +61,18 @@ const platformData = [
     background: "rgba(48, 220, 128, 0.15)",
     link: "https://www.djangoproject.com/",
   },
+  {
+    id: 5,
+    image: websocket,
+    background: "rgba(0, 0, 0, 0.5)",
+    link: "https://socket.io/",
+  },
 ];
 
-const TodoApp = () => {
+const Authentication = () => {
   const { t } = useTranslation();
   return (
-    <Layout title={"ProUnity | Hrms"}>
+    <Layout title={"ProUnity | Authentication"}>
       <div className="hrms">
         <section className="hrms-hero container-fluid header pro-bg-primary   mb-5">
           <div className="row g-0 h-100 align-items-end flex-column flex-lg-row">
@@ -84,24 +81,24 @@ const TodoApp = () => {
                 style={{ fontWeight: "600" }}
                 className="display-3 text-white mt-5 mt-md-0 mb-5 "
               >
-                {t("todo-app.home.title")}
+                {t("authentication.home.title")}
               </h1>
               <p className="description text-white">
-                {t("todo-app.home.description")}
+                {t("authentication.home.description")}
               </p>
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://hrms.prounity.uz/"
+                href="#"
                 className="download-btn btn  text-decoration-none fs-5 pro-text-primary me-3 rounded "
               >
                 {t("hrms.home.button1")}
-                <i className="fa-solid fa-arrow-right-long "></i>
+                <i className="fa-solid fa-arrow-right-long"></i>
               </a>
               <Link
                 target="_blank"
                 rel="noreferrer"
-                href="https://hrms.prounity.uz/doc"
+                href="#"
                 className="download-btn btn download-btn-outline  text-decoration-none fs-5  me-3 rounded "
               >
                 <i className="fa-solid fa-file-lines"></i>
@@ -127,11 +124,14 @@ const TodoApp = () => {
             </div>
             <div className="col-lg-6 p-3 p-md-5">
               <h2 style={{ fontWeight: "600" }} className="mb-4">
-                {t("todo-app.about.title")}
+                {t("authentication.about.title")}
               </h2>
-              <p className="description">{t("todo-app.about.description")}</p>
-              <p className="description">{t("todo-app.about.description2")}</p>
-
+              <p className="description">
+                {t("authentication.about.description")}
+              </p>
+              <p className="description">
+                {t("authentication.about.description2")}
+              </p>
               <a
                 href="#"
                 className="btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3"
@@ -309,11 +309,8 @@ const TodoApp = () => {
               576: {
                 slidesPerView: 2,
               },
-              768: {
-                slidesPerView: 3,
-              },
               1200: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
             }}
             slidesPerView={1}
@@ -350,4 +347,4 @@ const TodoApp = () => {
   );
 };
 
-export default TodoApp;
+export default Authentication;

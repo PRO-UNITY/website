@@ -12,7 +12,6 @@ import reactNative from "../../../assets/images/Clinic/react-native-bg.png";
 import ts from "../../../assets/images/Clinic/ts.png";
 import python from "../../../assets/images/hrms/python-logo.png";
 import django from "../../../assets/images/hrms/django-logo.png";
-// import dribbble from "../../../assets/images/hrms/material-design-icon-512x512-fz9kqvlo.png";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";

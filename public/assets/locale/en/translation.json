@@ -248,7 +248,7 @@
       "description": "Chat is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries."
     },
     "product-clinic-app": {
-      "title": "Clinic App",
+      "title": "Clinic ",
       "description": "Our clinic app is a free, feature-rich platform designed to facilitate easy and meaningful communication with patients and medical staff worldwide. This sophisticated messaging and communication tool empowers users to connect seamlessly across borders, cultures, and boundaries, enhancing the efficiency and effectiveness of healthcare interactions."
     },
     "product-todo": {
@@ -256,8 +256,12 @@
       "description": "Todo - is a smart application for easy and convenient task management. Organize your daily tasks, set deadlines, and never forget to complete them. Todo offers a simple and efficient solution for managing your actions effortlessly."
     },
     "product-spa-app": {
-      "title": "SPA App",
+      "title": "SPA ",
       "description": "HarmonyHaven: Empowering Global Wellness through Seamless Spa Communication and Connection."
+    },
+    "product-authentication": {
+      "title": "Authentication",
+      "description": "This product offers convenient and reliable solutions for securing system access and protecting user data. Understanding and implementing it is easy and effective."
     }
   },
   "team-details": {
@@ -460,6 +464,17 @@
     "about": {
       "description": "Empower Your Spa Choices: Effortlessly Select Your Preferred Services by Category and Book Appointments with Confidence.",
       "description2": "Experience Effortless Spa Management: Our App Offers Reliable and Efficient Solutions for Your Spa Needs. From Easy Appointment Scheduling to Accessing Spa Availability Calendars and Categorized Services, It's Your Ideal Tool for Convenient Spa Management. Download Today and Enjoy the Ease of Spa Care at Your Fingertips!"
+    }
+  },
+  "authentication": {
+    "home": {
+      "title": "Authentication: Secure Ways to Protect System Access",
+      "description": "This product offers convenient and reliable solutions for securing system access and protecting user data. Understanding and implementing it is easy and effective"
+    },
+    "about": {
+      "title": "About Authentication:",
+      "description": "Authentication is a cutting-edge solution designed to enhance the security of system access and safeguard sensitive information. Our product is crafted with a deep understanding of the modern digital landscape, where ensuring the authenticity of users is paramount.",
+      "description2": "At Authentication, we believe in empowering businesses and individuals with robust tools to fortify their digital defenses. With a focus on user-friendly interfaces and seamless integration, our solution makes implementing strong authentication measures a straightforward process."
     }
   }
 }

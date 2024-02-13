@@ -6,11 +6,12 @@ import slider_img3 from "../../../assets/images/ChatApp/slider-img-3.png";
 import slider_img4 from "../../../assets/images/ChatApp/slider-img-4.png";
 import slider_img5 from "../../../assets/images/ChatApp/slider-img-5.png";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
-import reactnative from "../../../assets/images/hrms/react-native.png";
-import expo from "../../../assets/images/hrms/expo-icon.svg";
+import ionic from "../../../assets/images/hrms/ionic.png";
+import expo from "../../../assets/images/Clinic/ts.png";
+import websocket from "../../../assets/images/hrms/websocket.svg";
 import python from "../../../assets/images/hrms/python-logo.png";
 import django from "../../../assets/images/hrms/django-logo.png";
-import websocket from "../../../assets/images/hrms/websocket.svg";
+
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -44,9 +45,9 @@ const CaruselItem = [
 const platformData = [
   {
     id: 1,
-    image: reactnative,
+    image: ionic,
     background: "rgba(64, 196, 255, 0.2)",
-    link: "hhttps://reactnative.dev/",
+    link: "hhttps://ionic.dev/",
   },
   {
     id: 2,

@@ -46,3 +46,4 @@ export { default as TodoApp } from "./Products/TodoApp/TodoApp";
 
 // Spa App
 export { default as SpaApp } from "./Products/SpaApp/SpaApp";
+export { default as Authentication } from "./Products/Authentication/Authentication";
