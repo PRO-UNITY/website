@@ -91,7 +91,7 @@ const MyNavbar = () => {
                         : ""
                     }`}
                   >
-                    Chat App
+                    Chat
                   </Link>
                   <Link
                     to={"/products/clinic-app"}
@@ -101,7 +101,7 @@ const MyNavbar = () => {
                         : ""
                     }`}
                   >
-                    Clinic App
+                    Clinic
                   </Link>
                   <Link
                     to={"/products/todo-app"}
@@ -121,7 +121,7 @@ const MyNavbar = () => {
                         : ""
                     }`}
                   >
-                    SPA App
+                    SPA
                   </Link>
                   <Link
                     to={"/products/authentication"}

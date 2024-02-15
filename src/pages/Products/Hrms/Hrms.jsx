@@ -19,6 +19,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Layout from "../../../Layout/Layout";
 import { Link } from "react-router-dom";
+import { ProductsVideo } from "../../../components";
 
 const CaruselItem = [
   {
@@ -118,7 +119,10 @@ const Hrms = () => {
             </div>
             <div className="col-lg-6  h-100">
               <div className="hero_slider d-flex justify-content-center align-items-end">
-                <img src={home_slider} alt="hero-img" />
+                <div className="position-relative">
+                  <ProductsVideo />
+                  <img src={home_slider} alt="hero-img" />
+                </div>
               </div>
             </div>
           </div>

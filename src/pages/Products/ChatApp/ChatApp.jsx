@@ -18,6 +18,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Layout from "../../../Layout/Layout";
 import { Link } from "react-router-dom";
+import { ProductsVideo } from "../../../components";
 
 const CaruselItem = [
   {
@@ -78,7 +79,7 @@ const platformData = [
 const ChatApp = () => {
   const { t } = useTranslation();
   return (
-    <Layout title={"ProUnity | Hrms"}>
+    <Layout title={"ProUnity | Chat"}>
       <div className="hrms">
         <section className="hrms-hero container-fluid header pro-bg-primary   mb-5">
           <div className="row g-0 h-100 align-items-end flex-column flex-lg-row">
@@ -113,7 +114,10 @@ const ChatApp = () => {
             </div>
             <div className="col-lg-6  h-100">
               <div className="hero_slider d-flex justify-content-center align-items-end">
-                <img src={home_slider} alt="hero-img" />
+                <div className="position-relative ">
+                  <ProductsVideo />
+                  <img src={home_slider} alt="hero-img" />
+                </div>
               </div>
             </div>
           </div>
