@@ -84,7 +84,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/user/:id" element={<TeamDetails />} />
-            {/* <Route path="*" element={<PageNotFound />} /> */}
+            <Route path="*" element={<PageNotFound />} />
             {/* Hrms */}
             <Route path="/products/hrms" element={<Hrms />} />
             <Route path="/products/chat-app" element={<ChatApp />} />
