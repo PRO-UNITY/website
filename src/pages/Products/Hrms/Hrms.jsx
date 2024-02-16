@@ -88,10 +88,10 @@ const Hrms = () => {
       <div className="hrms">
         <section className="hrms-hero container-fluid header pro-bg-primary   mb-5">
           <div className="row g-0 h-100 align-items-end flex-column flex-lg-row">
-            <div className="col-lg-6 px-3 px-md-5 py-md-5  pb-4">
+            <div className="col-lg-6 px-3 px-md-4 py-md-5  pb-4">
               <h1
                 style={{ fontWeight: "600" }}
-                className="display-3 text-white mt-5 mt-md-0 mb-5 "
+                className="display-4 text-white mt-5 mt-md-0 mb-5 "
               >
                 {t("hrms.home.title")}
               </h1>
@@ -129,7 +129,7 @@ const Hrms = () => {
         </section>
 
         {/* About */}
-        <section className="hrms-about container-lg  p-0 py-5 mb-5">
+        <section className="hrms-about container-lg  p-0 py-2 mb-5">
           <div className="row g-0 align-items-center  flex-column-reverse flex-lg-row">
             <div className="col-lg-6 ">
               <div className="img-box   mx-auto mx-lg-0 mt-5  mt-lg-0  rounded-4 d-flex justify-content-center">
@@ -142,18 +142,17 @@ const Hrms = () => {
                 {t("hrms.about.box1.title")}
               </h2>
               <p className="description">{t("hrms.about.box1.description")}</p>
-              <p className="description">{t("hrms.about.box1.description2")}</p>
-              <p className="description">{t("hrms.about.box1.description3")}</p>
+
               <a
                 href="#"
-                className="btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3"
+                className="btn btn-outline-primary me-3 fs-5 py-md-2 px-4 mt-3"
               >
                 <i className="fa-brands fa-google-play fs-5 me-2"></i>
                 Google Play
               </a>
               <a
                 href="#"
-                className=" btn btn-outline-primary  me-3 fs-5 py-md-3 px-4 mt-3"
+                className=" btn btn-outline-primary  me-3 fs-5 py-md-2 px-4 mt-3"
               >
                 <i className="fa-brands fa-apple fs-4 me-2"></i>
                 App Store

@@ -82,11 +82,11 @@ const SpaApp = () => {
     <Layout title={"ProUnity | Hrms"}>
       <div className="hrms">
         <section className="hrms-hero container-fluid header pro-bg-primary   mb-5">
-          <div className="row g-0 h-100 align-items-end flex-column flex-lg-row">
+          <div className="row g-0 h-100 align-items-center flex-column flex-lg-row">
             <div className="col-lg-6 px-3 px-md-5 py-md-5  pb-4">
               <h1
                 style={{ fontWeight: "600" }}
-                className="display-3 text-white mt-5 mt-md-0 mb-5 "
+                className="display-4 text-white mt-5 mt-md-0 mb-5 "
               >
                 {t("spa-app.home.title")}
               </h1>
@@ -115,7 +115,9 @@ const SpaApp = () => {
             <div className="col-lg-6  h-100">
               <div className="hero_slider d-flex justify-content-center align-items-end">
                 <div className="position-relative ">
-                  <ProductsVideo />
+                  <ProductsVideo
+                    videoUrl={"https://prounity.uz/video/SPA.mp4"}
+                  />
                   <img src={home_img} alt="hero-img" />
                 </div>
               </div>
@@ -124,7 +126,7 @@ const SpaApp = () => {
         </section>
 
         {/* About */}
-        <section className="hrms-about container-lg  p-0 py-5 mb-5">
+        <section className="hrms-about container-lg  p-0 py-3 mb-5">
           <div className="row g-0 align-items-center  flex-column-reverse flex-lg-row">
             <div className="col-lg-6 ">
               <div className="img-box   mx-auto mx-lg-0 mt-5  mt-lg-0  rounded-4 d-flex justify-content-center">
@@ -140,14 +142,14 @@ const SpaApp = () => {
               <p className="description">{t("spa-app.home.description2")}</p>
               <a
                 href="#"
-                className="btn btn-outline-primary me-3 fs-5 py-md-3 px-4 mt-3"
+                className="btn btn-outline-primary me-3 fs-5 py-md-2 px-4 mt-3"
               >
                 <i className="fa-brands fa-google-play fs-5 me-2"></i>
                 Google Play
               </a>
               <a
                 href="#"
-                className=" btn btn-outline-primary  me-3 fs-5 py-md-3 px-4 mt-3"
+                className=" btn btn-outline-primary  me-3 fs-5 py-md-2 px-4 mt-3"
               >
                 <i className="fa-brands fa-apple fs-4 me-2"></i>
                 App Store

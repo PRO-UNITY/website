@@ -44,8 +44,14 @@
   overflow: hidden;
   max-width: 1200px;
   width: 100%;
+  height: 80vh;
   margin: 0 auto;
 }
+.product-video .modal-content video {
+  /* height: 100%;
+  width: 100%; */
+}
+
 @media (max-width: 425px) {
   .product-video .modal-content video {
     height: 100%;

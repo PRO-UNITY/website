@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useRef, useState } from "react";
 import "./ProductsVideo.css";
 import Video from "./Video";
 
-const ProductsVideo = () => {
+const ProductsVideo = ({ videoUrl }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const toggleModal = () => {
@@ -17,7 +18,7 @@ const ProductsVideo = () => {
     fluid: true,
     sources: [
       {
-        src: "/src/assets/images/153976-806571973 (1080p).mp4",
+        src: videoUrl,
         type: "video/mp4",
       },
     ],
@@ -25,17 +26,13 @@ const ProductsVideo = () => {
 
   const handlePlayerReady = (player) => {
     playerRef.current = player;
-
-    // You can handle player events here, for example:
     player.on("waiting", () => {
       videojs.log("player is waiting");
     });
-
     player.on("dispose", () => {
       videojs.log("player will dispose");
     });
   };
-
   return (
     <div className="product-video">
       <div className="btn-box" onClick={toggleModal}>

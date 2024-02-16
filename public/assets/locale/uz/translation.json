@@ -13,7 +13,7 @@
   },
   "herosection": {
     "title": "Bizning vazifamiz odamlarga raqamli asrda rivojlanish uchun zarur bo'lgan ko'nikma va bilimlarni berishdir.",
-    "developers": "Mutaxassis Dasturchilar",
+    "developers": "Dasturchilar",
     "students": "Talabalar",
     "projects": "Loyihalar"
   },
@@ -280,8 +280,8 @@
   },
   "hrms": {
     "home": {
-      "title": "Butun xodimlar tajribangizni boshqarish uchun All-In-One HR platformasi",
-      "description": "Bizning zamonaviy HRMS ilovamiz yordamida tashkiliy samaradorlikni oshiring. HR jarayonlarini soddalashtiring, ishchi kuchingizni kengaytiring va uzluksiz boshqaruvning yangi davrini qabul qiling. Bizning innovatsion yechimimiz bilan ishchi kuchini optimallashtirish kelajagini o'rganing.",
+      "title": "Butun xodimlar tajribangizni boshqarish uchun HRMS platformasi",
+      "description": "Bizning zamonaviy HRMS ilovamiz yordamida tashkiliy samaradorlikni oshiring. HR jarayonlarini soddalashtiring, ishchi kuchingizni kengaytiring va uzluksiz boshqaruvning yangi davrini qabul qiling. ",
       "button1": "Demoni ko'rish",
       "documentation": "Hujjatlar"
     },
@@ -335,16 +335,14 @@
   "delivery": {
     "home": {
       "title": "Tez, qulay va ishonchli: biz bilan yetkazib berish tajribangizni oshiring",
-      "description": "Salom! Xizmatlarimiz bilan chaqmoq tez, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu gurme taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz. Hoziroq buyurtma bering va qulaylikdan bahramand bo'lishni boshlang! 🚚🌟",
+      "description": "Salom! Xizmatlarimiz bilan chaqmoq tez, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu gurme taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz.z",
       "button1": "Demoni ko'rish",
       "documentation": "Hujjatlar"
     },
     "about": {
       "box1": {
         "title": "Engil yetkazib berish: Sizning muvaffaqiyatingiz uchun logistikani soddalashtirish",
-        "description": "Delivary-da biz biznesingizning noyob ehtiyojlarini qondirish uchun moslashtirilgan uzluksiz va samarali yetkazib berish yechimini taqdim etish orqali logistika landshaftini qayta belgilaymiz. Bizning majburiyatimiz ishonchlilik, tezlik va mijozlar ehtiyojini qondirishni ta'minlab, yetkazib berish jarayonlaringizni oshirishdan iborat.",
-        "description2": "Bizning ilg‘or texnologiyamiz sizga real vaqt rejimida kuzatuv, aqlli marshrutni optimallashtirish va ishonchli tahlillar bilan yordam beradi, bu sizga yetkazib berish operatsiyalaringiz bo‘yicha misli ko‘rilmagan nazorat va tushunchalarni beradi. Yetkazib berish shunchaki yetkazib berish xizmati emas; bu sizning biznesingiz o'sishida strategik hamkordir.",
-        "description3": "Delivary bilan logistika boshqaruvining qulayligini his eting. Eshikdan manzilgacha biz sizning yetkazib berishlaringiz tez, aniq va muammosiz bo'lishini ta'minlashga harakat qilamiz. Muvaffaqiyatga erishish yo'llarini soddalashtirishda bizga qo'shiling."
+        "description": "Delivary-da biz biznesingizning noyob ehtiyojlarini qondirish uchun moslashtirilgan uzluksiz va samarali yetkazib berish yechimini taqdim etish orqali logistika landshaftini qayta belgilaymiz. Bizning majburiyatimiz ishonchlilik, tezlik va mijozlar ehtiyojini qondirishni ta'minlab, yetkazib berish jarayonlaringizni oshirishdan iborat."
       },
       "moreButton": "View Demo"
     },
@@ -390,9 +388,7 @@
     "about": {
       "box1": {
         "title": "Chat App - Dunyo Bo'ylab Aloqada Bo'lishingiz Uchun Eng Yaxshi Platforma",
-        "description": "Chat App - bu dunyo bo'ylab o'zaro aloqada bo'lish, yangi do'stlar topish va muntazam munozaralar uchun mahsulot. Bizning chat ilmiy platformamiz sizga yengil, maxfiy va samarali aloqa imkoniyatini taqdim etadi. Anonimlik va multimedia ulashishning yanada osonligi bilan, ChatHub sizning aloqa tajribangizni boshqarish uchun ideal vosita.",
-        "description2": "ChatApp - bu o'zaro aloqa, multimedia ulashish va do'stlar bilan munozara qilish uchun mo'ljallangan chat ilmiy platforma. Anonimlik va maxfiylikni oshirib, dunyo bo'ylab aloqalarni yaratish uchun dizayn qilingan, aloqa tajribangizni yanada kuchaytiradi. Yangi do'stlar topish, dunyo bo'ylab muntazam aloqalar tashkil etish va xususiy multimedia xabarlarni ulashish uchun Chat App - eng ma'qul tanlov.",
-        "description3": "Chat App - bu mahsulot yangi do'stlar topish, muntazam aloqalar yaratish va multimedia xabarlarni ulashish imkoniyatini taqdim etuvchi chat ilmiy platformasi. Maxfiylik va anonimlik muhim maqbuliyatlardir. Chat App sizga dunyo bo'ylab aloqada bo'lishning eng qulay va samarali yo'llarini taklif etadi. Sizning do'stlar doirangizni kengaytirish va dunyo bo'ylab do'stlar topish uchun Chat App - eng yaxshi tanlov."
+        "description": "Chat App - bu dunyo bo'ylab o'zaro aloqada bo'lish, yangi do'stlar topish va muntazam munozaralar uchun mahsulot. Bizning chat ilmiy platformamiz sizga yengil, maxfiy va samarali aloqa imkoniyatini taqdim etadi. Anonimlik va multimedia ulashishning yanada osonligi bilan, ChatHub sizning aloqa tajribangizni boshqarish uchun ideal vosita."
       },
       "moreButton": "View Demo"
     },
@@ -428,16 +424,48 @@
       "pricingButton": "Hozir boshlang"
     }
   },
-  "spa-app": {
+  "clinic-app": {
     "home": {
-      "title": "Bizning innovatsion spa ilova bilan o'zingizni yaxshilang: sog'likni kuchaytiring, bitta bosingiz bilan.",
-      "title2": "Sog'likni boshqarishning keyingi bosqichini oching: spadagi yengiluvchi ilovamiz, tizimni jonatish, va yana bir qancha narsalarni ta'minlash!",
-      "description": "Spa tajribangizni osonlashtiring: kutilgan xizmatlarni oson tanlang va bizning intuitsiyalik tartibga solingan tizimimiz orqali vizitlarni rejalashtiring. Spa mavjudlik kalendarimiz yordamida vizitlaringizni aniq va oson rejalashing.",
-      "description2": "O'z sog'lig'ingizni qabul qiling: bizning ishonchli va samarali ilovamiz yordamida spa tajribangizni boshqarishni osonlashtiring. Vizitlar buyurtma berishdan, xizmatlar mavjudligini ko'rishgacha va qulay xizmat kategoriyalariga qadar - bizning ilovamiz spa boshqarish uchun ideal hamshirasidir. Bugun yuklab oling va spa yo'liningizni osonlashtiring."
+      "title": "Bizning ilg'or klinik ilovamiz bilan sog'ligingizni inqilob qiling",
+      "title2": "Klinika ilovamiz bilan tanishing - sog'liqni saqlash ehtiyojlarini boshqarish uchun eng yaxshi vosita! Bizning ilovamiz bemorlarga o'zlarining afzal ko'rgan shifokorlari bilan uchrashuvlarni topish va rejalashtirishni osonlashtirish uchun yaratilgan.",
+      "button1": "Demoni ko'rish",
+      "documentation": "Hujjatlar"
     },
     "about": {
-      "description": "Sizning spa tanloqlaringizga kuch bering: xizmatlarni qulay bo'limlar boyicha oson tanlang va ishonch bilan vizitlarni buyurtma bering.",
+      "title": "Klinika haqida:",
+      "description": "Bemorlar toifalar orasidan shifokorni tanlashlari va qabulga yozilishlari mumkin, bu esa o'z ehtiyojlariga mos shifokorni topishni osonlashtiradi. Bizning shifokorlar uchun mavjudlik taqvimi bemorlar uchun o'zlari afzal ko'rgan shifokor borligini bilishning ajoyib usuli va o'z uchrashuvlarini shunga muvofiq rejalashtiring.",
+      "description2": "Bizning klinika ilovamiz sog'liqni saqlash ehtiyojlarini boshqarishning ishonchli va samarali usulidir. Uchrashuvni rejalashtirish, shifokorlar mavjudligi taqvimi va shifokorlar uchun toifalar kabi xususiyatlar bilan bizning ilovamiz boshqarishning qulay usulini izlayotgan bemorlar uchun mukammal vositadir. Bizning ilovamizni bugun yuklab oling va sog'liqni saqlash ehtiyojlaringizni barmoq uchida boshqarish qulayligini his eting!"
+    }
+  },
+  "todo-app": {
+    "home": {
+      "title": "Todo - Barmoqlaringiz uchida oson vazifalarni tashkil etish",
+      "description": "Todo - oson va qulay vazifalarni boshqarish uchun aqlli dastur. Kundalik vazifalaringizni tartibga soling, muddatlarni belgilang va ularni bajarishni hech qachon unutmang. Todo harakatlaringizni osonlikcha boshqarish uchun oddiy va samarali yechim taklif etadi."
+    },
+    "about": {
+      "title": "Todo - Sizning shaxsiy vazifalaringiz bo'yicha yordamchingiz",
+      "description": "Sizning asosiy hamrohingiz Todo bilan tanishing. Biz hayot band bo'lishi mumkinligini tushunamiz va vazifalaringizni bajarish juda muhim. Todo sizning shaxsiy yordamchingiz bo'lib, o'z vazifalaringizni tartibga solish, birinchi o'ringa qo'yish va bajarishga yordam beradi. Maqsadlarga osonlik bilan erishing. Oddiy ishlar roʻyxatidan tortib murakkab loyihalarni boshqarishgacha, Todo sizning ehtiyojlaringizga moslashadi va muammosiz va samarali tajribani taʼminlaydi."
+    }
+  },
+  "spa-app": {
+    "home": {
+      "title": "Bizning innovatsion spa ilova bilan o'zingizni yaxshilang",
+      "title2": "Sog'likni boshqarishning keyingi bosqichini oching: spadagi yengiluvchi ilovamiz, tizimni jonatish, va yana bir qancha narsalarni ta'minlash!"
+    },
+    "about": {
+      "description": "O'zingizning spa tanlovlaringizni kengaytiring",
       "description2": "Spa boshqarishda og'irlikni his qiling: bizning ilovamiz spa muhtojliklaringiz uchun ishonchli va samarali yechimlar taklif qiladi. Vizitlarni oson buyurtma berishdan, spa mavjudlik kalendariga kirishgacha va kategoriyalangan xizmatlarga - bu spa boshqarishda qulay vositadir. Bugun yuklab oling va o'zingizning qurilmangizda spa turishining osonligidan lezzatlaning!"
+    }
+  },
+  "authentication": {
+    "home": {
+      "title": "Autentifikatsiya: tizimga kirishni himoya qilishning xavfsiz usullari",
+      "ta'rif": "Ushbu mahsulot tizimga kirishni ta'minlash va foydalanuvchi ma'lumotlarini himoya qilish uchun qulay va ishonchli echimlarni taklif etadi. Uni tushunish va amalga oshirish oson va samarali"
+    },
+    "about": {
+      "title": "Autentifikatsiya haqida:",
+      "description": "Autentifikatsiya - tizimga kirish xavfsizligini oshirish va maxfiy ma'lumotlarni himoya qilish uchun mo'ljallangan zamonaviy yechim. Bizning mahsulotimiz zamonaviy raqamli landshaftni chuqur anglagan holda ishlab chiqilgan, bunda foydalanuvchilarning haqiqiyligini ta'minlash muhim ahamiyatga ega.",
+      "description2": "Autentifikatsiyada biz korxonalar va jismoniy shaxslarga raqamli himoyani mustahkamlash uchun mustahkam vositalar bilan imkoniyatlar berishga ishonamiz. Bizning yechimimiz foydalanuvchilarga qulay interfeyslar va uzluksiz integratsiyaga e'tibor qaratgan holda, kuchli autentifikatsiya choralarini amalga oshirishni oddiy jarayonga aylantiradi."
     }
   }
 }

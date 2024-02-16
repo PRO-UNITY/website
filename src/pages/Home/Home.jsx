@@ -4,7 +4,12 @@ import teamwork from "../../assets/teamwork.jpg";
 import Drrrible_logo from "../../assets/Dribbble_logo.png";
 import GitHub_logo from "../../assets/pngimg.com - github_PNG15.png";
 import Clutch_logo from "../../assets/clutch-logo-red.png";
-import { HomeSlider, OurTeam, PartnersCard } from "../../components";
+import {
+  HomeSlider,
+  OurTeam,
+  PartnersCard,
+  YouTubeVideo,
+} from "../../components";
 import { Partners, teamMembers } from "../../constants";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -62,7 +67,7 @@ const Home = () => {
               <Link to={`/expert-devlopers`} className=" text-decoration-none">
                 <div className=" ">
                   <h2 className="text-white mb-1 display-5  fw-semibold">
-                    10+
+                    20+
                   </h2>
                   <p className="text-light mb-0">
                     {t("herosection.developers")}
@@ -72,7 +77,7 @@ const Home = () => {
               <Link to={`/students`} className=" text-decoration-none">
                 <div>
                   <h2 className="text-white mb-1 display-5  fw-semibold">
-                    100+
+                    500+
                   </h2>
                   <p className="text-light mb-0">{t("herosection.students")}</p>
                 </div>
@@ -370,15 +375,7 @@ const Home = () => {
                 <p className="fs-4 text-white">{t("blogSection.text")}</p>
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                <a
-                  aria-label="ProUnit's YouTube blog"
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://www.youtube.com/watch?v=XtZuux5_g5U"
-                  className=" btn-danger btn-youtube   mx-auto mb-4 "
-                >
-                  <i className="fa-solid fa-play text-light fs-4" />
-                </a>
+                <YouTubeVideo />
               </div>
             </div>
           </div>

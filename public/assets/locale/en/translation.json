@@ -13,7 +13,7 @@
   },
   "herosection": {
     "title": "Our mission is to empower individuals with the skills and knowledge needed to thrive in the digital age.",
-    "developers": "Expert Developers",
+    "developers": "Developers",
     "students": "Students",
     "projects": "Projects"
   },
@@ -197,11 +197,11 @@
       "link1": "About Us",
       "link2": "Contact Us",
       "link3": "Our Services",
-      "link4": "Рекламировать",
+      "link4": "Advertise",
       "link5": "Privacy Policy",
       "link6": "License"
     },
-    "footer-bottom": "© Pro Unity, All Right Reserved."
+    "footer-bottom": "Copyright © 2024, Pro Unity. All Right Reserved."
   },
   "servicesection": {
     "title": "PROUNITY services",
@@ -288,17 +288,15 @@
   },
   "hrms": {
     "home": {
-      "title": "All-In-One HR platform to manage your entire employee experience",
-      "description": "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management. Explore the future of workforce optimization with our innovative solution.",
+      "title": "HRMS - platform to manage your entire employee experience",
+      "description": "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management.",
       "button1": "View Demo",
       "documentation": "Documentation"
     },
     "about": {
       "box1": {
         "title": "Discover Our Story: Revolutionizing HR Management for Success",
-        "description": "At Pro Unity, we embark on a journey of transforming traditional HR management into a dynamic and efficient process. Founded with a vision to empower businesses through innovative technology, we have dedicated ourselves to creating an HRMS solution that caters to the evolving needs of modern enterprises.",
-        "description2": "Our commitment goes beyond just providing a software solution. We believe in fostering a collaborative environment, where businesses thrive and employees excel. With a focus on simplicity, automation, and adaptability, our HRMS platform is designed to seamlessly integrate into your workflow, allowing you to focus on what truly matters - the growth of your business.",
-        "description3": "As we continue to evolve, our mission remains clear: to be the catalyst for positive change in HR management. Join us in redefining the future of your business with a personalized and powerful HRMS experience. Your success is our motivation."
+        "description": "At Pro Unity, we embark on a journey of transforming traditional HR management into a dynamic and efficient process. Founded with a vision to empower businesses through innovative technology, we have dedicated ourselves to creating an HRMS solution that caters to the evolving needs of modern enterprises."
       },
       "moreButton": "View Demo"
     },
@@ -338,7 +336,7 @@
   "delivery": {
     "home": {
       "title": "Fast, Convenient, and Reliable: Elevate Your Delivery Experience with Us",
-      "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟",
+      "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep.",
       "button1": "View Demo",
       "documentation": "Documentation"
     },
@@ -393,9 +391,7 @@
     "about": {
       "box1": {
         "title": "Chat - The Ultimate Platform for Connecting Worldwide",
-        "description": "Chat is a product designed for connecting globally, finding new friends, and engaging in regular discussions. Our chat platform offers you an easy, private, and effective way to communicate. With enhanced features like anonymity and multimedia sharing, Chat is your ideal choice for managing your communication experiences.",
-        "description2": "Chat is an intelligently crafted chat platform for connecting with friends, sharing multimedia, and engaging in conversations. Designed to prioritize anonymity and privacy, Chat enhances your communication experience globally. It's the perfect choice for discovering new friends, creating global connections, and sharing special multimedia messages.",
-        "description3": "Chat is a product dedicated to fostering social connections, creating regular discussions, and sharing multimedia messages. Privacy and anonymity are paramount in our design. Chat provides you with the most convenient and effective ways to connect globally. Expand your friend circle and make global connections with ChatApp - your best choice."
+        "description": "Chat is a product designed for connecting globally, finding new friends, and engaging in regular discussions. Our chat platform offers you an easy, private, and effective way to communicate. With enhanced features like anonymity and multimedia sharing, Chat is your ideal choice for managing your communication experiences."
       },
       "moreButton": "View Demo"
     },
@@ -433,12 +429,11 @@
   },
   "clinic-app": {
     "home": {
-      "title": "Revolutionize Your Health with Our Cutting-Edge Clinic App: Empowering Wellness, One Click at a Time",
-      "title2": "introducing our clinic app - the ultimate tool for managing your healthcare needs! Our app is designed to make it easy for patients to find and schedule appointments with their preferred doctors. With separate roles for patients and doctors, our app is user-friendly and efficient.",
-      "description": "Patients can choose a doctor from categories and apply for an appointment, making it easy to find a doctor that suits their needs. Our availability calendar for doctors is a great way for patients to see when their preferred doctor is available and plan their appointment accordingly.",
-      "description2": "Our clinic app is a reliable and efficient way to manage your healthcare needs. With features like appointment scheduling, doctor availability calendars, and categories for doctors, our app is the perfect tool for patients looking for a convenient way to manage their healthcare. Download our app today and experience the convenience of managing your healthcare needs at your fingertips!"
+      "title": "Revolutionize Your Health with Our Cutting-Edge Clinic App",
+      "title2": "Introducing our clinic app - the ultimate tool for managing your healthcare needs! Our app is designed to make it easy for patients to find and schedule appointments with their preferred doctors. With separate roles for patients and doctors, our app is user-friendly and efficient."
     },
     "about": {
+      "title": "Clinic About:",
       "description": "Patients can choose a doctor from categories and apply for an appointment, making it easy to find a doctor that suits their needs. Our availability calendar for doctors is a great way for patients to see when their preferred doctor is available and plan their appointment accordingly.",
       "description2": "Our clinic app is a reliable and efficient way to manage your healthcare needs. With features like appointment scheduling, doctor availability calendars, and categories for doctors, our app is the perfect tool for patients looking for a convenient way to manage their healthcare. Download our app today and experience the convenience of managing your healthcare needs at your fingertips!"
     }
@@ -450,19 +445,18 @@
     },
     "about": {
       "title": "Todo - Your Personal Task Assistant",
-      "description": "Meet Todo, your ultimate task companion. We understand that life can get busy, and staying on top of your tasks is crucial. Todo is designed to be your personal task assistant, helping you organize, prioritize, and accomplish your goals with ease. From simple to-do lists to complex project management, Todo adapts to your needs, ensuring a seamless and productive experience.",
-      "description2": "Todo is all about making task management simple and straightforward. We believe in providing a clean and intuitive platform that allows you to focus on what matters most – your tasks. Whether you're a professional managing work projects or an individual handling personal goals, Todo is here to simplify your daily routine. Take control of your tasks effortlessly and enjoy a more organized and productive life with Todo."
+      "description": "Meet Todo, your ultimate task companion. We understand that life can get busy, and staying on top of your tasks is crucial. Todo is designed to be your personal task assistant, helping you organize, prioritize, and accomplish your goals with ease. From simple to-do lists to complex project management, Todo adapts to your needs, ensuring a seamless and productive experience."
     }
   },
   "spa-app": {
     "home": {
-      "title": "Elevate Your Well-Being with Our Innovative Spa App: Empowering Wellness, One Touch Away",
+      "title": "Elevate Your Well-Being with Our Innovative SPA App.",
       "title2": "Unveil the Next Generation of Wellness Management: Your Essential Spa App for Effortless Appointment Booking and Beyond!",
       "description": "Simplify Your Spa Experience: Effortlessly Choose Your Preferred Services and Schedule Appointments with Our Intuitive Category-Based System. With Our Spa Availability Calendar, Plan Your Visits with Precision and Ease.",
       "description2": "Embrace Wellness: Seamlessly Manage Your Spa Experience with Our Reliable and Efficient App. From Booking Appointments to Viewing Service Availability and Convenient Service Categories, Our App is Your Perfect Companion for Effortless Spa Management. Download Today and Elevate Your Spa Journey with Ease."
     },
     "about": {
-      "description": "Empower Your Spa Choices: Effortlessly Select Your Preferred Services by Category and Book Appointments with Confidence.",
+      "description": "Empower Your Spa Choices",
       "description2": "Experience Effortless Spa Management: Our App Offers Reliable and Efficient Solutions for Your Spa Needs. From Easy Appointment Scheduling to Accessing Spa Availability Calendars and Categorized Services, It's Your Ideal Tool for Convenient Spa Management. Download Today and Enjoy the Ease of Spa Care at Your Fingertips!"
     }
   },
