@@ -1,11 +1,17 @@
 import home_img from "../../../assets/images/SpaApp/spaCut.png";
-import about_img from "../../../assets/images/SpaApp/master-info.png";
 import slider_img1 from "../../../assets/images/SpaApp/new-password.png";
 import slider_img2 from "../../../assets/images/SpaApp/info-slider.png";
 import slider_img3 from "../../../assets/images/SpaApp/chat.png";
 import slider_img4 from "../../../assets/images/SpaApp/categories.png";
 import slider_img5 from "../../../assets/images/SpaApp/calendar-search.png";
-
+import about_slider1 from "../../../assets/images/SpaApp/about-slider-1.png";
+import about_slider2 from "../../../assets/images/SpaApp/about-slider-2.png";
+import about_slider3 from "../../../assets/images/SpaApp/about-slider-3.png";
+import about_slider4 from "../../../assets/images/SpaApp/about-slider-4.png";
+import about_slider5 from "../../../assets/images/SpaApp/about-slider-5.png";
+import about_slider6 from "../../../assets/images/SpaApp/about-slider-6.png";
+import about_slider7 from "../../../assets/images/SpaApp/about-slider-7.png";
+import about_slider8 from "../../../assets/images/SpaApp/about-slider-8.png";
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import reactNative from "../../../assets/images/Clinic/react-native-bg.png";
 import ts from "../../../assets/images/Clinic/ts.png";
@@ -18,7 +24,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Layout from "../../../Layout/Layout";
 import { Link } from "react-router-dom";
-import { ProductsVideo } from "../../../components";
+import { ProductsAbout, ProductsVideo } from "../../../components";
 
 const CaruselItem = [
   {
@@ -68,12 +74,16 @@ const platformData = [
     background: "rgba(48, 220, 128, 0.15)",
     link: "https://www.djangoproject.com/",
   },
-  // {
-  //     id: 5,
-  //     image: dribbble,
-  //     background: "rgba(255, 255, 255, 0.6)",
-  //     link: "https://m3.material.io/",
-  // },
+];
+const aboutSlider = [
+  about_slider1,
+  about_slider2,
+  about_slider3,
+  about_slider4,
+  about_slider5,
+  about_slider6,
+  about_slider7,
+  about_slider8,
 ];
 
 const SpaApp = () => {
@@ -130,7 +140,7 @@ const SpaApp = () => {
           <div className="row g-0 align-items-center  flex-column-reverse flex-lg-row">
             <div className="col-lg-6 ">
               <div className="img-box   mx-auto mx-lg-0 mt-5  mt-lg-0  rounded-4 d-flex justify-content-center">
-                <img src={about_img} alt="about-img" />
+                <ProductsAbout aboutSlider={aboutSlider} />
                 <div className="img-mask rounded-4"></div>
               </div>
             </div>

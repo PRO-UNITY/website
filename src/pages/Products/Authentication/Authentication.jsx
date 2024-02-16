@@ -118,7 +118,7 @@ const Authentication = () => {
               <div className="hero_slider d-flex justify-content-center align-items-end">
                 <div className="position-relative ">
                   <ProductsVideo
-                    videoUrl={"https://prounity.uz/video/Auth.mp4"}
+                    videoUrl={"https://prounity.uz/video/Authentication.mp4"}
                   />
                   <img src={home_slider} alt="hero-img" />
                 </div>
