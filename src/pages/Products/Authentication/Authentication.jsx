@@ -1,5 +1,8 @@
 import home_slider from "../../../assets/images/Authentication/home-img.png";
-import about_img from "../../../assets/images/Authentication/about-img.png";
+import about_slider1 from "../../../assets/images/Authentication/about-slider-1.png";
+import about_slider2 from "../../../assets/images/Authentication/about-slider-2.png";
+import about_slider3 from "../../../assets/images/Authentication/about-slider-3.png";
+import about_slider4 from "../../../assets/images/Authentication/about-slider-4.png";
 import slider_img1 from "../../../assets/images/Authentication/slider-img-1.png";
 import slider_img2 from "../../../assets/images/Authentication/slider-img-2.jpg";
 import slider_img3 from "../../../assets/images/Authentication/slider-img-3.jpg";
@@ -16,7 +19,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Layout from "../../../Layout/Layout";
 import { Link } from "react-router-dom";
-import { ProductsVideo } from "../../../components";
+import { ProductsAbout, ProductsVideo } from "../../../components";
 
 const CaruselItem = [
   {
@@ -69,7 +72,12 @@ const platformData = [
     link: "https://socket.io/",
   },
 ];
-
+const aboutSlider = [
+  about_slider1,
+  about_slider2,
+  about_slider3,
+  about_slider4,
+];
 const Authentication = () => {
   const { t } = useTranslation();
   return (
@@ -122,7 +130,7 @@ const Authentication = () => {
           <div className="row g-0 align-items-center  flex-column-reverse flex-lg-row">
             <div className="col-lg-6 ">
               <div className="img-box   mx-auto mx-lg-0 mt-5  mt-lg-0  rounded-4 d-flex justify-content-center">
-                <img src={about_img} alt="about-img" />
+                <ProductsAbout aboutSlider={aboutSlider} />
                 <div className="img-mask rounded-4"></div>
               </div>
             </div>
