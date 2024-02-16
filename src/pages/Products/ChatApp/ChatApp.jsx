@@ -1,5 +1,8 @@
 import home_slider from "../../../assets/images/ChatApp/home-img.png";
-import about_img from "../../../assets/images/ChatApp/about-img.png";
+import about_slider1 from "../../../assets/images/ChatApp/about-slider-1.png";
+import about_slider2 from "../../../assets/images/ChatApp/about-slider-2.png";
+import about_slider3 from "../../../assets/images/ChatApp/about-slider-4.png";
+import about_slider4 from "../../../assets/images/ChatApp/about-slider-5.png";
 import slider_img1 from "../../../assets/images/ChatApp/slider-img-1.png";
 import slider_img2 from "../../../assets/images/ChatApp/slider-img-2.png";
 import slider_img3 from "../../../assets/images/ChatApp/slider-img-3.png";
@@ -18,7 +21,8 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Layout from "../../../Layout/Layout";
 import { Link } from "react-router-dom";
-import { ProductsVideo } from "../../../components";
+import { ProductsAbout, ProductsVideo } from "../../../components";
+import { ProductsPrice } from "../../../services";
 
 const CaruselItem = [
   {
@@ -75,9 +79,23 @@ const platformData = [
     link: "https://socket.io/",
   },
 ];
+const aboutSlider = [
+  about_slider1,
+  about_slider2,
+  about_slider3,
+  about_slider4,
+];
 
 const ChatApp = () => {
   const { t } = useTranslation();
+  const handlePrice = (key) => {
+    ProductsPrice({ product: key })
+      .then((res) => {
+        window.location.href = res?.url;
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <Layout title={"ProUnity | Chat"}>
       <div className="hrms">
@@ -130,7 +148,7 @@ const ChatApp = () => {
           <div className="row g-0 align-items-center  flex-column-reverse flex-lg-row">
             <div className="col-lg-6 ">
               <div className="img-box   mx-auto mx-lg-0 mt-5  mt-lg-0  rounded-4 d-flex justify-content-center">
-                <img src={about_img} alt="about-img" />
+                <ProductsAbout aboutSlider={aboutSlider} />
                 <div className="img-mask rounded-4"></div>
               </div>
             </div>
@@ -230,15 +248,15 @@ const ChatApp = () => {
                         / {t("hrms.pricing.price")}
                       </span>
                     </div>
-                    <a
-                      href="https://buy.stripe.com/test_bIY4j2c20aas4j69AA"
-                      target="_blank"
-                      rel="noreferrer"
-                      className=" btn btn-outline-primary  py-md-3 px-3 "
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2pUEANFIAv9jSfM0pG6Zn")
+                      }
+                      className="btn btn-outline-primary  py-md-3 px-3 "
                     >
                       {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long ms-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

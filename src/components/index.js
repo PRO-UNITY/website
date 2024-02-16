@@ -5,3 +5,4 @@ export { default as HomeSlider } from "./HomeSlider/HomeSlider";
 export { default as PartnersCard } from "./PartnersCard/PartnersCard";
 export { default as ProductsVideo } from "./ProductsVideo/ProductsVideo";
 export { default as YouTubeVideo } from "./YouTubeVideo/YouTubeVideo";
+export { default as ProductsAbout } from "./Slider/ProductsAbout";

@@ -7,8 +7,6 @@ import {
   Coworking,
   Home,
   Hrms,
-  HrmsDocUser,
-  HrmsDocumentation,
   ITScholl,
   OpenCourse,
   PageNotFound,
@@ -16,17 +14,7 @@ import {
   Services,
   SoftwareDevelopenent,
   TeamDetails,
-  DeliveryDocumentation,
-  DeliveryDocUser,
   Products,
-  DeliveryDocKitchen,
-  DeliveryDocFoods,
-  DeliveryDocDeliveryman,
-  DeliveryDocManager,
-  DeliveryDocOrders,
-  HrmsDocJob,
-  HrmsDocResume,
-  HrmsDocCompany,
   Delivery,
   Students,
   ExpertDevlopers,
@@ -38,6 +26,7 @@ import {
   TodoApp,
   SpaApp,
   Authentication,
+  PaymentSucces,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
@@ -45,10 +34,6 @@ import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
 function App() {
   const [activeHrmsDash, setActiveHrmsDash] = useState(1);
   const [activeHrmsdoc, setActiveHrmsdoc] = useState(null);
-  // const { pathname } = useLocation();
-  // if (pathname === "/") {
-  //     return <Navigate to={"/home"} />;
-  // }
   return (
     <>
       <AsideScrollActiveProvider>
@@ -89,68 +74,16 @@ function App() {
             <Route path="/products/hrms" element={<Hrms />} />
             <Route path="/products/chat-app" element={<ChatApp />} />
             <Route path="/products/todo-app" element={<TodoApp />} />
-            <Route
-              path="products/hrms/documentation"
-              element={<HrmsDocumentation />}
-            />
-            <Route
-              path="products/hrms/documentation/users"
-              element={<HrmsDocUser />}
-            />
-            <Route
-              path="products/hrms/documentation/job"
-              element={<HrmsDocJob />}
-            />
-            <Route
-              path="products/hrms/documentation/resume"
-              element={<HrmsDocResume />}
-            />
-            <Route
-              path="products/hrms/documentation/company"
-              element={<HrmsDocCompany />}
-            />
             {/* Delivery */}
             <Route path="/products/delivery" element={<Delivery />} />
-            <Route
-              path="products/delivery/documentation"
-              element={<DeliveryDocumentation />}
-            />
-            <Route
-              path="products/delivery/documentation/users"
-              element={<DeliveryDocUser />}
-            />
-            <Route
-              path="products/delivery/documentation"
-              element={<DeliveryDocumentation />}
-            />
-            <Route
-              path="products/delivery/documentation/users"
-              element={<DeliveryDocUser />}
-            />
-            <Route
-              path="products/delivery/documentation/kitchen"
-              element={<DeliveryDocKitchen />}
-            />
-            <Route
-              path="products/delivery/documentation/foods"
-              element={<DeliveryDocFoods />}
-            />
-            <Route
-              path="products/delivery/documentation/deliveryman"
-              element={<DeliveryDocDeliveryman />}
-            />
-            <Route
-              path="products/delivery/documentation/manager"
-              element={<DeliveryDocManager />}
-            />
-            <Route
-              path="products/delivery/documentation/orders"
-              element={<DeliveryDocOrders />}
-            />
             {/* Clinic App */}
             <Route path="products/clinic-app" element={<ClinicApp />} />
             <Route path="products/spa-app" element={<SpaApp />} />
-            <Route path="products/authentication" element={<Authentication />} />
+            <Route
+              path="products/authentication"
+              element={<Authentication />}
+            />
+            <Route path="/payment_successful" element={<PaymentSucces />} />
           </Routes>
         </ActiveNavContext.Provider>
       </AsideScrollActiveProvider>

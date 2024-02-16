@@ -14,13 +14,15 @@ const YouTubeVideo = ({ videoUrl }) => {
     autoplay: false,
     controls: true,
     responsive: true,
-    fluid: true,
+    fluid: false,
     sources: [
       {
         src: videoUrl,
         type: "video/mp4",
       },
     ],
+    width: "100%", // Ekran englik bo'yicha to'ldirilishi
+    height: "auto", // Ekran balandligi bo'yicha o'zgaradi
   };
 
   const handlePlayerReady = (player) => {

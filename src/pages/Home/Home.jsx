@@ -375,7 +375,7 @@ const Home = () => {
                 <p className="fs-4 text-white">{t("blogSection.text")}</p>
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                <YouTubeVideo />
+                <YouTubeVideo videoUrl={"https://prounity.uz/video/Blog.mp4"} />
               </div>
             </div>
           </div>

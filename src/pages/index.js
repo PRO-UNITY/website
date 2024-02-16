@@ -16,33 +16,11 @@ export { default as Products } from "./Products/Products";
 export { default as License } from "./License/License";
 export { default as PrivacyPolicy } from "./PrivacyPolicy/PrivacyPolicy";
 export { default as Advertise } from "./Advertise/Advertise";
-// Hrms
 export { default as Hrms } from "./Products/Hrms/Hrms";
-export { default as HrmsDocumentation } from "./Products/Hrms/docomentation/Home";
-export { default as HrmsDocUser } from "./Products/Hrms/docomentation/API/Users";
-export { default as HrmsDocJob } from "./Products/Hrms/docomentation/API/Job";
-export { default as HrmsDocResume } from "./Products/Hrms/docomentation/API/Resume";
-export { default as HrmsDocCompany } from "./Products/Hrms/docomentation/API/Companies";
-
-// Delivery
 export { default as Delivery } from "./Products/Delivery/Delivery";
-export { default as DeliveryDocumentation } from "./Products/Delivery/docomentation/Home";
-export { default as DeliveryDocUser } from "./Products/Delivery/docomentation/API/Users";
-export { default as DeliveryDocKitchen } from "./Products/Delivery/docomentation/API/Kitchen";
-export { default as DeliveryDocFoods } from "./Products/Delivery/docomentation/API/Foods";
-export { default as DeliveryDocDeliveryman } from "./Products/Delivery/docomentation/API/Deliveryman";
-export { default as DeliveryDocManager } from "./Products/Delivery/docomentation/API/Manager";
-export { default as DeliveryDocOrders } from "./Products/Delivery/docomentation/API/Orders";
-export { default as DeliveryDocInstallation } from "./Products/Delivery/docomentation/Installation";
-
-// Chat App
 export { default as ChatApp } from "./Products/ChatApp/ChatApp";
-
-// Clinic
 export { default as ClinicApp } from "./Products/Clinic/ClinicApp";
-// Clinic
 export { default as TodoApp } from "./Products/TodoApp/TodoApp";
-
-// Spa App
 export { default as SpaApp } from "./Products/SpaApp/SpaApp";
 export { default as Authentication } from "./Products/Authentication/Authentication";
+export { default as PaymentSucces } from "./PaymentSucces/PaymentSucces";
