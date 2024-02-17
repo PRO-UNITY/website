@@ -20,6 +20,7 @@ import "swiper/css";
 import Layout from "../../../Layout/Layout";
 import { Link } from "react-router-dom";
 import { ProductsVideo } from "../../../components";
+import { ProductsPrice } from "../../../services";
 
 const CaruselItem = [
   {
@@ -83,6 +84,13 @@ const platformData = [
 
 const Hrms = () => {
   const { t } = useTranslation();
+  const handlePrice = (key) => {
+    ProductsPrice({ product: key })
+      .then((res) => {
+        window.location.href = res?.url;
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <Layout title={"ProUnity | Hrms"}>
       <div className="hrms">
@@ -147,7 +155,7 @@ const Hrms = () => {
                 href="#"
                 className="btn btn-outline-primary me-3 fs-5 py-md-2 px-4 mt-3"
               >
-                <i className="fa-brands fa-google-play fs-5 me-2"></i>
+                <i className="fa-brands fa-google-play fs-4 me-2"></i>
                 Google Play
               </a>
               <a
@@ -232,13 +240,15 @@ const Hrms = () => {
                         / {t("hrms.pricing.price")}
                       </span>
                     </div>
-                    <a
-                      href="#"
-                      className=" btn btn-outline-primary  py-md-3 px-3 "
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2pUEANFIAv9jSfM0pG6Zn")
+                      }
+                      className="btn btn-outline-primary  py-md-3 px-3 "
                     >
                       {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long ms-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -299,13 +309,15 @@ const Hrms = () => {
                         / {t("hrms.pricing.price")}
                       </span>
                     </div>
-                    <a
-                      href="#"
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2q2EANFIAv9jSamZSQRNU")
+                      }
                       className="download-btn download-btn-outline  m-0 text-decoration-none  rounded "
                     >
                       {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long mt-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

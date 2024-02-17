@@ -317,15 +317,15 @@ const ChatApp = () => {
                         / {t("hrms.pricing.price")}
                       </span>
                     </div>
-                    <a
-                      href="https://buy.stripe.com/test_14kdTC8POdmE9Dq001"
-                      target="_blank"
-                      rel="noreferrer"
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2q2EANFIAv9jSamZSQRNU")
+                      }
                       className="download-btn download-btn-outline  m-0 text-decoration-none  rounded "
                     >
                       {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long mt-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

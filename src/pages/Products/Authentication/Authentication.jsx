@@ -20,6 +20,7 @@ import "swiper/css";
 import Layout from "../../../Layout/Layout";
 import { Link } from "react-router-dom";
 import { ProductsAbout, ProductsVideo } from "../../../components";
+import { ProductsPrice } from "../../../services";
 
 const CaruselItem = [
   {
@@ -80,6 +81,13 @@ const aboutSlider = [
 ];
 const Authentication = () => {
   const { t } = useTranslation();
+  const handlePrice = (key) => {
+    ProductsPrice({ product: key })
+      .then((res) => {
+        window.location.href = res?.url;
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <Layout title={"ProUnity | Authentication"}>
       <div className="hrms">
@@ -229,17 +237,16 @@ const Authentication = () => {
                   <div className="card-bottom mt-2 mt-md-5 d-md-flex align-items-center justify-content-between">
                     <div>
                       <span className="h5 lh-lg">3.990$ </span>
-                      <span className="text-secondary">
-                        / {t("hrms.pricing.price")}
-                      </span>
                     </div>
-                    <a
-                      href="#"
-                      className=" btn btn-outline-primary  py-md-3 px-3 "
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2pUEANFIAv9jSfM0pG6Zn")
+                      }
+                      className="btn btn-outline-primary  py-md-3 px-3 "
                     >
                       {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long ms-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -300,13 +307,15 @@ const Authentication = () => {
                         / {t("hrms.pricing.price")}
                       </span>
                     </div>
-                    <a
-                      href="#"
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2q2EANFIAv9jSamZSQRNU")
+                      }
                       className="download-btn download-btn-outline  m-0 text-decoration-none  rounded "
                     >
                       {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long mt-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

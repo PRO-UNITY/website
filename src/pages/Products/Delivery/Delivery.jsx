@@ -18,6 +18,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Layout from "../../../Layout/Layout";
 import { ProductsVideo } from "../../../components";
+import { ProductsPrice } from "../../../services";
 
 const CaruselItem = [
   {
@@ -79,8 +80,15 @@ const platformData = [
   },
 ];
 
-const Hrms = () => {
+const Delivery = () => {
   const { t } = useTranslation();
+  const handlePrice = (key) => {
+    ProductsPrice({ product: key })
+      .then((res) => {
+        window.location.href = res?.url;
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <Layout title={"ProUnity | Delivery"}>
       <div className="hrms">
@@ -219,13 +227,18 @@ const Hrms = () => {
                     <div>
                       <span className="h5 lh-lg">3.990$ </span>
                       <span className="text-secondary">
-                        / {t("delivery.pricing.price")}
+                        / {t("hrms.pricing.price")}
                       </span>
                     </div>
-                    <a className=" btn btn-outline-primary  py-md-3 px-3 ">
-                      {t("delivery.pricing.pricingButton")}
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2pUEANFIAv9jSfM0pG6Zn")
+                      }
+                      className="btn btn-outline-primary  py-md-3 px-3 "
+                    >
+                      {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long ms-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -283,13 +296,18 @@ const Hrms = () => {
                     <div>
                       <span className="h5 lh-lg">5.990$ </span>
                       <span className="text-light">
-                        / {t("delivery.pricing.price")}
+                        / {t("hrms.pricing.price")}
                       </span>
                     </div>
-                    <a className="download-btn download-btn-outline  m-0 text-decoration-none  rounded ">
-                      {t("delivery.pricing.pricingButton")}
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2q2EANFIAv9jSamZSQRNU")
+                      }
+                      className="download-btn download-btn-outline  m-0 text-decoration-none  rounded "
+                    >
+                      {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long mt-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -341,4 +359,4 @@ const Hrms = () => {
   );
 };
 
-export default Hrms;
+export default Delivery;

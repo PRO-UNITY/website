@@ -19,6 +19,7 @@ import "swiper/css";
 import Layout from "../../../Layout/Layout";
 import { Link } from "react-router-dom";
 import { ProductsVideo } from "../../../components";
+import { ProductsPrice } from "../../../services";
 
 const CaruselItem = [
   {
@@ -76,18 +77,19 @@ const platformData = [
     background: "rgba(48, 220, 128, 0.15)",
     link: "https://www.djangoproject.com/",
   },
-  // {
-  //     id: 5,
-  //     image: dribbble,
-  //     background: "rgba(255, 255, 255, 0.6)",
-  //     link: "https://m3.material.io/",
-  // },
 ];
 
 const ClinicApp = () => {
   const { t } = useTranslation();
+  const handlePrice = (key) => {
+    ProductsPrice({ product: key })
+      .then((res) => {
+        window.location.href = res?.url;
+      })
+      .catch((err) => console.log(err));
+  };
   return (
-    <Layout title={"ProUnity | Hrms"}>
+    <Layout title={"ProUnity | Clinic"}>
       <div className="hrms">
         <section className="hrms-hero container-fluid header pro-bg-primary   mb-5">
           <div className="row g-0 h-100 align-items-center flex-column flex-lg-row">
@@ -239,13 +241,15 @@ const ClinicApp = () => {
                         / {t("hrms.pricing.price")}
                       </span>
                     </div>
-                    <a
-                      href="#"
-                      className=" btn btn-outline-primary  py-md-3 px-3 "
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2pUEANFIAv9jSfM0pG6Zn")
+                      }
+                      className="btn btn-outline-primary  py-md-3 px-3 "
                     >
                       {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long ms-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -306,13 +310,15 @@ const ClinicApp = () => {
                         / {t("hrms.pricing.price")}
                       </span>
                     </div>
-                    <a
-                      href="#"
+                    <button
+                      onClick={() =>
+                        handlePrice("price_1Ok2q2EANFIAv9jSamZSQRNU")
+                      }
                       className="download-btn download-btn-outline  m-0 text-decoration-none  rounded "
                     >
                       {t("hrms.pricing.pricingButton")}
                       <i className="fa-solid fa-arrow-right-long mt-1"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
