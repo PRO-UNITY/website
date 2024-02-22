@@ -1,538 +1,553 @@
 {
-  "topbar": {
-    "location": "Islom Karimov 1 Street, Bukhara, Uzbekistan",
-    "time": "Mon - Sat : 09.00 AM - 06.00 PM"
-  },
-  "navbar": {
-    "home": "Home",
-    "about": "About Us",
-    "service": "Sevices",
-    "products": "Products",
-    "language": "En",
-    "contact": "Contact"
-  },
-  "herosection": {
-    "title": "Our mission is to empower individuals with the skills and knowledge needed to thrive in the digital age.",
-    "developers": "Developers",
-    "students": "Students",
-    "projects": "Projects"
-  },
-  "aboutsection": {
-    "aboutbutton": "About Us",
-    "title": "Welcome to PRO UNITY",
-    "text": "Located in Bukhara, Uzbekistan, PRO UNITY is an innovative IT company specializing in software development and IT education. Our mission is to empower individuals with the skills and knowledge needed to thrive in the digital age.",
-    "list1": "Customer-Centric Approach",
-    "list2": "Careful Conceptualization",
-    "list3": "Precision Preparation and Finalization",
-    "list4": "Top-Notch Services",
-    "morebutton": "Read More"
-  },
-  "followsection": {
-    "followbutton": "Follow",
-    "title": "Follow Us Here"
-  },
-  "partners": {
-    "partnersbutton": "Partners",
-    "title": "Clients & Partners"
-  },
-  "featuresection": {
-    "featurebutton": "Features",
-    "title": "Why Choose Us",
-    "text": "",
-    "listmini1": "Experience",
-    "listbig1": "Developers",
-    "listmini2": "Quality",
-    "listbig2": "Services",
-    "listmini3": "Positive",
-    "listbig3": "Consultation",
-    "listmini4": "24 Hours",
-    "listbig4": "Support"
-  },
-  "blogSection": {
-    "title": "Watch Our blogs here",
-    "text": "Stay up to date with the latest news and developments in the world of software development by visiting our blog. We cover everything from beginner tutorials to advanced techniques, so there's something for everyone."
-  },
-  "teamsection": {
-    "teambutton": "Team",
-    "title": "Our Pro Team",
-    "user1": {
-      "name": "Azizbek Hamroyev",
-      "occupation": "Co-founder"
+    "topbar": {
+        "location": "Islom Karimov 1 Street, Bukhara, Uzbekistan",
+        "time": "Mon - Sat : 09.00 AM - 06.00 PM"
     },
-    "user2": {
-      "name": "Miron Mustafoev",
-      "occupation": "Co-founder, CEO"
+    "navbar": {
+        "home": "Home",
+        "about": "About Us",
+        "service": "Sevices",
+        "products": "Products",
+        "language": "En",
+        "contact": "Contact"
     },
-    "user3": {
-      "name": "Andrey Molodsov",
-      "occupation": "Designer"
+    "herosection": {
+        "title": "Our mission is to empower individuals with the skills and knowledge needed to thrive in the digital age.",
+        "developers": "Developers",
+        "students": "Students",
+        "projects": "Projects"
     },
-    "user4": {
-      "name": "Sobirjon Bobojonov",
-      "occupation": "Software Engineer"
+    "aboutsection": {
+        "aboutbutton": "About Us",
+        "title": "Welcome to PRO UNITY",
+        "text": "Located in Bukhara, Uzbekistan, PRO UNITY is an innovative IT company specializing in software development and IT education. Our mission is to empower individuals with the skills and knowledge needed to thrive in the digital age.",
+        "list1": "Customer-Centric Approach",
+        "list2": "Careful Conceptualization",
+        "list3": "Precision Preparation and Finalization",
+        "list4": "Top-Notch Services",
+        "morebutton": "Read More"
     },
-    "user5": {
-      "name": "Davlatshoh Naimov",
-      "occupation": "Frontend Developer"
+    "followsection": {
+        "followbutton": "Follow",
+        "title": "Follow Us Here"
     },
-    "user6": {
-      "name": "Amirbek Azimov",
-      "occupation": "Mobile Developer"
+    "partners": {
+        "partnersbutton": "Partners",
+        "title": "Clients & Partners"
     },
-    "user7": {
-      "name": "Jobir Ashurov",
-      "occupation": "Frontend Developer"
+    "featuresection": {
+        "featurebutton": "Features",
+        "title": "Why Choose Us",
+        "text": "",
+        "listmini1": "Experience",
+        "listbig1": "Developers",
+        "listmini2": "Quality",
+        "listbig2": "Services",
+        "listmini3": "Positive",
+        "listbig3": "Consultation",
+        "listmini4": "24 Hours",
+        "listbig4": "Support"
     },
-    "user8": {
-      "name": "Ibrohim Istamov",
-      "occupation": "Devops Developer"
+    "blogSection": {
+        "title": "Watch Our blogs here",
+        "text": "Stay up to date with the latest news and developments in the world of software development by visiting our blog. We cover everything from beginner tutorials to advanced techniques, so there's something for everyone."
     },
-    "user9": {
-      "name": "Otabek Kadirov",
-      "occupation": "Frontend Mentor"
-    },
-    "user10": {
-      "name": "Behzod Baxshilloyev",
-      "occupation": "Frontend Mentor"
-    },
-    "user11": {
-      "name": "Behzod Usmanov",
-      "occupation": "Graphic Designer"
-    },
-    "user12": {
-      "name": "Bobur Khamraev",
-      "occupation": "Backend Mentor"
-    },
-    "user13": {
-      "name": "Dilshod Chuliev",
-      "occupation": "Frontend Developer"
-    },
-    "user14": {
-      "name": "Jamshid Barotov",
-      "occupation": "Software Engineer"
-    },
-    "user15": {
-      "name": "Baxtior Raxmonov",
-      "occupation": "Finance"
-    },
-    "user16": {
-      "name": "Miron Nusratov",
-      "occupation": "PR Meneger"
-    },
-    "user17": {
-      "name": "Mirxon Kuziyev",
-      "occupation": "Mobile Developer"
-    },
-    "user18": {
-      "name": "Murod Axmadov",
-      "occupation": "Designer"
-    },
-    "user19": {
-      "name": "Nafisa Rasulova",
-      "occupation": "Sales Manager"
-    },
-    "user20": {
-      "name": "Darya Usyakina",
-      "occupation": "Trainer"
-    },
-    "user21": {
-      "name": "Polina Nosova",
-      "occupation": "Designer"
-    },
-    "user22": {
-      "name": "Samiya Ibragimova",
-      "occupation": "Sales assistant"
-    },
-    "user23": {
-      "name": "Sadoqat Abdullayeva",
-      "occupation": "Office Manager"
-    },
-    "user24": {
-      "name": "Zarnigor Majidova",
-      "occupation": "Marketing Manager"
-    },
-    "user25": {
-      "name": "Nigina Burxanova",
-      "occupation": "Videographer"
-    },
-    "user26": {
-      "name": "Dilnoza Barakatova",
-      "occupation": "Trainer"
-    },
-    "user27": {
-      "name": "Shaxina",
-      "occupation": "Trainer"
-    },
-    "user28": {
-      "name": "Mohinur Tursunova",
-      "occupation": "Web-designer"
-    }
-  },
-  "appointment": {
-    "appointmentbutton": "Appointment",
-    "title": "Make An Appointment To Visit Our Doctor",
-    "text": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
-    "call": "Call Us Now",
-    "message": "Mail Us Now",
-    "inputplaceholdername": "Your Name",
-    "inputplaceholderemail": "Your Email",
-    "inputplaceholdermobile": "Your Mobile",
-    "inputplaceholderpurpose": "Your Purpose",
-    "inputplaceholderdescripe": "Describe your problem",
-    "bookbutton": "Book Appointment"
-  },
-  "footer": {
-    "address": "Address",
-    "services": {
-      "title": "Services",
-      "link1": "Software Development",
-      "link2": "IT School",
-      "link3": "Authorized Tutorial",
-      "link4": "Coworking",
-      "link5": "Open Source",
-      "link6": "Pro Community"
-    },
-    "quicklinks": {
-      "title": "Quick Links",
-      "link1": "About Us",
-      "link2": "Contact Us",
-      "link3": "Our Services",
-      "link4": "Advertise",
-      "link5": "Privacy Policy",
-      "link6": "License"
-    },
-    "footer-bottom": "Copyright © 2024, Pro Unity. All Right Reserved."
-  },
-  "servicesection": {
-    "title": "PROUNITY services",
-    "subtitle": "Services",
-    "cardservice1": {
-      "title": "Software Development",
-      "Description": "At PRO UNITY, we are dedicated to creating cutting-edge software solutions for businesses and individuals. Our team of experienced developers specializes in mobile applications, web development, and more. We utilize a variety of technologies, including Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django, and more."
-    },
-    "cardservice2": {
-      "title": "IT School",
-      "Description": "In addition to our software development services, we also operate an IT school where we provide comprehensive training in coding and programming. Our goal is to equip our students with the tools they need to succeed in the ever-evolving tech industry."
-    },
-    "cardservice3": {
-      "title": "Authorized Tutorials",
-      "Description": "In addition to our coding and programming courses, we also offer authorized video courses on IT and design education. These courses are designed to provide individuals with the knowledge and skills needed to excel in the industry. Our expert instructors deliver high-quality content that is easy to understand and follow, ensuring that our students receive the best possible education."
-    },
-    "cardservice4": {
-      "title": "Coworking",
-      "Description": "Our co-working space is small yet convenient, providing a comfortable environment for our team to work and collaborate. We also offer authorized tutorials on IT and design education to help individuals expand their knowledge and skills."
-    },
-    "cardservice5": {
-      "title": "Open Source",
-      "Description": "We are proud to offer our own open source framework that includes essential components for UI and frontend work. This framework is the result of our dedication to innovation and collaboration within the developer community Our team of experienced developers specializes in mobile applications, web development, and more."
-    },
-    "cardservice6": {
-      "title": "Pro Community",
-      "Description": "At PRO UNITY, we are proud to be a part of the community, consisting of many developers and startups from Bukhara. Join us in our mission to create innovative solutions and push the boundaries of technology.."
-    },
-    "servicebutton": "See More Services"
-  },
-  "products": {
-    "title": "Our Products",
-    "desciption": "Welcome to the ProUnity company's products page! Explore our range of products and discover tailored solutions designed to meet the demands and inquiries of anyone. Navigate through our page to find our top-notch products and get acquainted with the latest features and advantages consistently integrated into our solutions.",
-    "product-hrms": {
-      "title": "Hrms",
-      "description": "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management. Explore the future of workforce optimization with our innovative solution."
-    },
-    "product-delivery": {
-      "title": "Deivery",
-      "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟"
-    },
-    "product-chat-app": {
-      "title": "Chat",
-      "description": "Chat is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries."
-    },
-    "product-clinic-app": {
-      "title": "Clinic ",
-      "description": "Our clinic app is a free, feature-rich platform designed to facilitate easy and meaningful communication with patients and medical staff worldwide. This sophisticated messaging and communication tool empowers users to connect seamlessly across borders, cultures, and boundaries, enhancing the efficiency and effectiveness of healthcare interactions."
-    },
-    "product-todo": {
-      "title": "Todo",
-      "description": "Todo - is a smart application for easy and convenient task management. Organize your daily tasks, set deadlines, and never forget to complete them. Todo offers a simple and efficient solution for managing your actions effortlessly."
-    },
-    "product-spa-app": {
-      "title": "SPA ",
-      "description": "HarmonyHaven: Empowering Global Wellness through Seamless Spa Communication and Connection."
-    },
-    "product-authentication": {
-      "title": "Authentication",
-      "description": "This product offers convenient and reliable solutions for securing system access and protecting user data. Understanding and implementing it is easy and effective."
-    },
-    "product-store": {
-      "title": "Store",
-      "description": "Get ready to discover and purchase the latest products with Store! Our app makes it easy and fast to find and buy high-quality products.Store helps you find and purchase quality products with ease. Shop now and be ready for a new world with ease!"
-    },
-    "product-real-estate": {
-      "title": "Real Estate",
-      "description": "Welcome to RealEase, the ultimate real estate app that simplifies property transactions like never before. With RealEase, effortlessly browse listings, connect with agents, and find your ideal home or investment property with ease. Our user-friendly interface and powerful features make navigating the real estate market a breeze. Whether you're buying, selling, or renting, RealEase has you covered. Say goodbye to the complexities of property search and hello to seamless transactions with RealEase."
-    }
-  },
-  "team-details": {
-    "position": "Position",
-    "education": "Education",
-    "email": "Email",
-    "social-media": "Social Media"
-  },
-  "students": {
-    "firstName": "First Name",
-    "lastName": "Last Name"
-  },
-  "license": {
-    "title": "License",
-    "text": "Copyright © 2022 <br /> <br /> ProUnity Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: <br /> <br /> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  You are free to copy excerpts of our articles but please don’t republish entire articles. If you’d like to translate single articles, please contact us."
-  },
-  "PrivacyPolicy": {
-    "title": "Privacy Policy",
-    "text": "This Website collects some Personal Data from its Users. <h2>Owner and Data Controller </h2> Islom Karimov 1 Street, Bukhara, Uzbekistan , +998 33 899 50 00 <br /> <span>Uzbekistan Owner contact email</span>: prounity.uz@gmail.com <h2>Types of Data collected</h2><p>Among the types of Personal Data that this Website collects, by itself or through third parties, there are: Cookies; Usage Data; first name; last name; email address; website.</p> <p>Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation texts displayed prior to the Data collection. Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Website. Unless specified otherwise, all Data requested by this Website is mandatory and failure to provide this Data may make it impossible for this Website to provide its services. In cases where this Website specifically states that some Data is not mandatory, Users are free not to communicate this Data without consequences to the availability or the functioning of the Service. Users who are uncertain about which Personal Data is mandatory are welcome to contact the Owner.</p> <p> Any use of Cookies – or of other tracking tools – by this Website or by the owners of third-party services used by this Website serves the purpose of providing the Service required by the User, in addition to any other purposes described in the present document and in the Cookie Policy, if available.</p> <p>Users are responsible for any third-party Personal Data obtained, published or shared through this Website and confirm that they have the third party’s consent to provide the Data to the Owner.</p><h2>Mode and place of processing the Data</h2> <p>The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data. The Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Owner, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of this Website (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Owner at any time.</p>"
-  },
-  "Advertise": {
-    "title": "Advertise",
-    "text": "<p> ProUnity is dedicated to provide high quality content that is completely free of charge for its readers. With over half a million active users every month, ProUnity is a great place to advertise to a wonderful international audience of web designers and developers!</p><p>As a potential sponsor, you hold the key to unlocking an extraordinary opportunity – the chance to introduce your brand to this brilliant audience. With an array of carefully crafted advertising options, we provide a platform where your message will genuinely connect with our audience.</p><p>Have a look at our banner ads that you can purchase via our ad management platform. Below you can find all other sponsorship options. If you have any questions or would like to book one, get in touch with us via email or connect to our dedicated ad sales team via this form:</p>"
-  },
-  "hrms": {
-    "home": {
-      "title": "HRMS - platform to manage your entire employee experience",
-      "description": "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management.",
-      "button1": "View Demo",
-      "documentation": "Documentation"
-    },
-    "about": {
-      "box1": {
-        "title": "Discover Our Story: Revolutionizing HR Management for Success",
-        "description": "At Pro Unity, we embark on a journey of transforming traditional HR management into a dynamic and efficient process. Founded with a vision to empower businesses through innovative technology, we have dedicated ourselves to creating an HRMS solution that caters to the evolving needs of modern enterprises."
-      },
-      "moreButton": "View Demo"
-    },
-    "pricing": {
-      "subtitle": "Pricing",
-      "title": "We Have Better Pricing Plan",
-      "price": "month",
-      "cardProffesional": {
-        "title": "Profesional",
-        "cardList": {
-          "list1": "All Basic Services",
-          "list2": "Unlimited Request",
-          "list3": "Unlimited Revision",
-          "list4": "Cancel Anytime",
-          "list5": "A-Sync Collaboration"
+    "teamsection": {
+        "teambutton": "Team",
+        "title": "Our Pro Team",
+        "user1": {
+            "name": "Azizbek Hamroyev",
+            "occupation": "Co-founder"
+        },
+        "user2": {
+            "name": "Miron Mustafoev",
+            "occupation": "Co-founder, CEO"
+        },
+        "user3": {
+            "name": "Andrey Molodsov",
+            "occupation": "Designer"
+        },
+        "user4": {
+            "name": "Sobirjon Bobojonov",
+            "occupation": "Software Engineer"
+        },
+        "user5": {
+            "name": "Davlatshoh Naimov",
+            "occupation": "Frontend Developer"
+        },
+        "user6": {
+            "name": "Amirbek Azimov",
+            "occupation": "Mobile Developer"
+        },
+        "user7": {
+            "name": "Jobir Ashurov",
+            "occupation": "Frontend Developer"
+        },
+        "user8": {
+            "name": "Ibrohim Istamov",
+            "occupation": "Devops Developer"
+        },
+        "user9": {
+            "name": "Otabek Kadirov",
+            "occupation": "Frontend Mentor"
+        },
+        "user10": {
+            "name": "Behzod Baxshilloyev",
+            "occupation": "Frontend Mentor"
+        },
+        "user11": {
+            "name": "Behzod Usmanov",
+            "occupation": "Graphic Designer"
+        },
+        "user12": {
+            "name": "Bobur Khamraev",
+            "occupation": "Backend Mentor"
+        },
+        "user13": {
+            "name": "Dilshod Chuliev",
+            "occupation": "Frontend Developer"
+        },
+        "user14": {
+            "name": "Jamshid Barotov",
+            "occupation": "Software Engineer"
+        },
+        "user15": {
+            "name": "Baxtior Raxmonov",
+            "occupation": "Finance"
+        },
+        "user16": {
+            "name": "Miron Nusratov",
+            "occupation": "PR Meneger"
+        },
+        "user17": {
+            "name": "Mirxon Kuziyev",
+            "occupation": "Mobile Developer"
+        },
+        "user18": {
+            "name": "Murod Axmadov",
+            "occupation": "Designer"
+        },
+        "user19": {
+            "name": "Nafisa Rasulova",
+            "occupation": "Sales Manager"
+        },
+        "user20": {
+            "name": "Darya Usyakina",
+            "occupation": "Trainer"
+        },
+        "user21": {
+            "name": "Polina Nosova",
+            "occupation": "Designer"
+        },
+        "user22": {
+            "name": "Samiya Ibragimova",
+            "occupation": "Sales assistant"
+        },
+        "user23": {
+            "name": "Sadoqat Abdullayeva",
+            "occupation": "Office Manager"
+        },
+        "user24": {
+            "name": "Zarnigor Majidova",
+            "occupation": "Marketing Manager"
+        },
+        "user25": {
+            "name": "Nigina Burxanova",
+            "occupation": "Videographer"
+        },
+        "user26": {
+            "name": "Dilnoza Barakatova",
+            "occupation": "Trainer"
+        },
+        "user27": {
+            "name": "Shaxina",
+            "occupation": "Trainer"
+        },
+        "user28": {
+            "name": "Mohinur Tursunova",
+            "occupation": "Web-designer"
         }
-      },
-      "cardUnlimited": {
-        "title": "Unlimited",
-        "subtitle": "Most Popular",
-        "cardList": {
-          "list1": "All Basic Services",
-          "list2": "All Advanced Services",
-          "list3": "Cancel Anytime",
-          "list4": "Art Direction",
-          "list5": "Concept and Ideation",
-          "list6": "Unlimited Request",
-          "list7": "Unlimited Revision",
-          "list8": "A-Sync Collaboration",
-          "list9": "Weekly Updates"
+    },
+    "appointment": {
+        "appointmentbutton": "Appointment",
+        "title": "Make An Appointment To Visit Our Doctor",
+        "text": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+        "call": "Call Us Now",
+        "message": "Mail Us Now",
+        "inputplaceholdername": "Your Name",
+        "inputplaceholderemail": "Your Email",
+        "inputplaceholdermobile": "Your Mobile",
+        "inputplaceholderpurpose": "Your Purpose",
+        "inputplaceholderdescripe": "Describe your problem",
+        "bookbutton": "Book Appointment"
+    },
+    "footer": {
+        "address": "Address",
+        "services": {
+            "title": "Services",
+            "link1": "Software Development",
+            "link2": "IT School",
+            "link3": "Authorized Tutorial",
+            "link4": "Coworking",
+            "link5": "Open Source",
+            "link6": "Pro Community"
+        },
+        "quicklinks": {
+            "title": "Quick Links",
+            "link1": "About Us",
+            "link2": "Contact Us",
+            "link3": "Our Services",
+            "link4": "Advertise",
+            "link5": "Privacy Policy",
+            "link6": "License"
+        },
+        "footer-bottom": "Copyright © 2024, Pro Unity. All Right Reserved."
+    },
+    "servicesection": {
+        "title": "PROUNITY services",
+        "subtitle": "Services",
+        "cardservice1": {
+            "title": "Software Development",
+            "Description": "At PRO UNITY, we are dedicated to creating cutting-edge software solutions for businesses and individuals. Our team of experienced developers specializes in mobile applications, web development, and more. We utilize a variety of technologies, including Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django, and more."
+        },
+        "cardservice2": {
+            "title": "IT School",
+            "Description": "In addition to our software development services, we also operate an IT school where we provide comprehensive training in coding and programming. Our goal is to equip our students with the tools they need to succeed in the ever-evolving tech industry."
+        },
+        "cardservice3": {
+            "title": "Authorized Tutorials",
+            "Description": "In addition to our coding and programming courses, we also offer authorized video courses on IT and design education. These courses are designed to provide individuals with the knowledge and skills needed to excel in the industry. Our expert instructors deliver high-quality content that is easy to understand and follow, ensuring that our students receive the best possible education."
+        },
+        "cardservice4": {
+            "title": "Coworking",
+            "Description": "Our co-working space is small yet convenient, providing a comfortable environment for our team to work and collaborate. We also offer authorized tutorials on IT and design education to help individuals expand their knowledge and skills."
+        },
+        "cardservice5": {
+            "title": "Open Source",
+            "Description": "We are proud to offer our own open source framework that includes essential components for UI and frontend work. This framework is the result of our dedication to innovation and collaboration within the developer community Our team of experienced developers specializes in mobile applications, web development, and more."
+        },
+        "cardservice6": {
+            "title": "Pro Community",
+            "Description": "At PRO UNITY, we are proud to be a part of the community, consisting of many developers and startups from Bukhara. Join us in our mission to create innovative solutions and push the boundaries of technology.."
+        },
+        "servicebutton": "See More Services"
+    },
+    "products": {
+        "title": "Our Products",
+        "desciption": "Welcome to the ProUnity company's products page! Explore our range of products and discover tailored solutions designed to meet the demands and inquiries of anyone. Navigate through our page to find our top-notch products and get acquainted with the latest features and advantages consistently integrated into our solutions.",
+        "product-hrms": {
+            "title": "Hrms",
+            "description": "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management. Explore the future of workforce optimization with our innovative solution."
+        },
+        "product-delivery": {
+            "title": "Deivery",
+            "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep. Place an order now and start enjoying the convenience! 🚚🌟"
+        },
+        "product-chat-app": {
+            "title": "Chat",
+            "description": "Chat is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries."
+        },
+        "product-clinic-app": {
+            "title": "Clinic ",
+            "description": "Our clinic app is a free, feature-rich platform designed to facilitate easy and meaningful communication with patients and medical staff worldwide. This sophisticated messaging and communication tool empowers users to connect seamlessly across borders, cultures, and boundaries, enhancing the efficiency and effectiveness of healthcare interactions."
+        },
+        "product-todo": {
+            "title": "Todo",
+            "description": "Todo - is a smart application for easy and convenient task management. Organize your daily tasks, set deadlines, and never forget to complete them. Todo offers a simple and efficient solution for managing your actions effortlessly."
+        },
+        "product-spa-app": {
+            "title": "SPA ",
+            "description": "HarmonyHaven: Empowering Global Wellness through Seamless Spa Communication and Connection."
+        },
+        "product-authentication": {
+            "title": "Authentication",
+            "description": "This product offers convenient and reliable solutions for securing system access and protecting user data. Understanding and implementing it is easy and effective."
+        },
+        "product-store": {
+            "title": "Store",
+            "description": "Get ready to discover and purchase the latest products with Store! Our app makes it easy and fast to find and buy high-quality products.Store helps you find and purchase quality products with ease. Shop now and be ready for a new world with ease!"
+        },
+        "product-real-estate": {
+            "title": "Real Estate",
+            "description": "Welcome to RealEase, the ultimate real estate app that simplifies property transactions like never before. With RealEase, effortlessly browse listings, connect with agents, and find your ideal home or investment property with ease. Our user-friendly interface and powerful features make navigating the real estate market a breeze. Whether you're buying, selling, or renting, RealEase has you covered. Say goodbye to the complexities of property search and hello to seamless transactions with RealEase."
+        },
+        "product-qr-app": {
+            "title": "QR App",
+            "description": "QR App: Instant QR transactions for seamless payments anytime, anywhere. Fast, secure, and convenient mobile payments at your fingertips."
         }
-      },
+    },
+    "team-details": {
+        "position": "Position",
+        "education": "Education",
+        "email": "Email",
+        "social-media": "Social Media"
+    },
+    "students": {
+        "firstName": "First Name",
+        "lastName": "Last Name"
+    },
+    "license": {
+        "title": "License",
+        "text": "Copyright © 2022 <br /> <br /> ProUnity Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: <br /> <br /> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  You are free to copy excerpts of our articles but please don’t republish entire articles. If you’d like to translate single articles, please contact us."
+    },
+    "PrivacyPolicy": {
+        "title": "Privacy Policy",
+        "text": "This Website collects some Personal Data from its Users. <h2>Owner and Data Controller </h2> Islom Karimov 1 Street, Bukhara, Uzbekistan , +998 33 899 50 00 <br /> <span>Uzbekistan Owner contact email</span>: prounity.uz@gmail.com <h2>Types of Data collected</h2><p>Among the types of Personal Data that this Website collects, by itself or through third parties, there are: Cookies; Usage Data; first name; last name; email address; website.</p> <p>Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation texts displayed prior to the Data collection. Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Website. Unless specified otherwise, all Data requested by this Website is mandatory and failure to provide this Data may make it impossible for this Website to provide its services. In cases where this Website specifically states that some Data is not mandatory, Users are free not to communicate this Data without consequences to the availability or the functioning of the Service. Users who are uncertain about which Personal Data is mandatory are welcome to contact the Owner.</p> <p> Any use of Cookies – or of other tracking tools – by this Website or by the owners of third-party services used by this Website serves the purpose of providing the Service required by the User, in addition to any other purposes described in the present document and in the Cookie Policy, if available.</p> <p>Users are responsible for any third-party Personal Data obtained, published or shared through this Website and confirm that they have the third party’s consent to provide the Data to the Owner.</p><h2>Mode and place of processing the Data</h2> <p>The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data. The Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Owner, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of this Website (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Owner at any time.</p>"
+    },
+    "Advertise": {
+        "title": "Advertise",
+        "text": "<p> ProUnity is dedicated to provide high quality content that is completely free of charge for its readers. With over half a million active users every month, ProUnity is a great place to advertise to a wonderful international audience of web designers and developers!</p><p>As a potential sponsor, you hold the key to unlocking an extraordinary opportunity – the chance to introduce your brand to this brilliant audience. With an array of carefully crafted advertising options, we provide a platform where your message will genuinely connect with our audience.</p><p>Have a look at our banner ads that you can purchase via our ad management platform. Below you can find all other sponsorship options. If you have any questions or would like to book one, get in touch with us via email or connect to our dedicated ad sales team via this form:</p>"
+    },
+    "hrms": {
+        "home": {
+            "title": "HRMS - platform to manage your entire employee experience",
+            "description": "Elevate your organizational efficiency with our cutting-edge HRMS application. Streamline HR processes, empower your workforce, and embrace a new era of seamless management.",
+            "button1": "View Demo",
+            "documentation": "Documentation"
+        },
+        "about": {
+            "box1": {
+                "title": "Discover Our Story: Revolutionizing HR Management for Success",
+                "description": "At Pro Unity, we embark on a journey of transforming traditional HR management into a dynamic and efficient process. Founded with a vision to empower businesses through innovative technology, we have dedicated ourselves to creating an HRMS solution that caters to the evolving needs of modern enterprises."
+            },
+            "moreButton": "View Demo"
+        },
+        "pricing": {
+            "subtitle": "Pricing",
+            "title": "We Have Better Pricing Plan",
+            "price": "month",
+            "cardProffesional": {
+                "title": "Profesional",
+                "cardList": {
+                    "list1": "All Basic Services",
+                    "list2": "Unlimited Request",
+                    "list3": "Unlimited Revision",
+                    "list4": "Cancel Anytime",
+                    "list5": "A-Sync Collaboration"
+                }
+            },
+            "cardUnlimited": {
+                "title": "Unlimited",
+                "subtitle": "Most Popular",
+                "cardList": {
+                    "list1": "All Basic Services",
+                    "list2": "All Advanced Services",
+                    "list3": "Cancel Anytime",
+                    "list4": "Art Direction",
+                    "list5": "Concept and Ideation",
+                    "list6": "Unlimited Request",
+                    "list7": "Unlimited Revision",
+                    "list8": "A-Sync Collaboration",
+                    "list9": "Weekly Updates"
+                }
+            },
 
-      "pricingButton": "Start Now"
-    }
-  },
-  "delivery": {
-    "home": {
-      "title": "Fast, Convenient, and Reliable: Elevate Your Delivery Experience with Us",
-      "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep.",
-      "button1": "View Demo",
-      "documentation": "Documentation"
-    },
-    "about": {
-      "box1": {
-        "title": "Effortless Delivery: Streamlining Logistics for Your Success",
-        "description": "At Delivary, we redefine the logistics landscape by providing a seamless and efficient delivery solution tailored to meet the unique needs of your business. Our commitment is to elevate your delivery processes, ensuring reliability, speed, and customer satisfaction.",
-        "description2": "Our cutting-edge technology empowers you with real-time tracking, smart route optimization, and robust analytics, giving you unparalleled control and insights into your delivery operations. Delivary is not just a delivery service; it's a strategic partner in your business growth.",
-        "description3": "Experience the ease of logistics management with Delivary. From doorstep to destination, we are dedicated to ensuring your deliveries are prompt, precise, and hassle-free. Join us in simplifying the way you deliver success."
-      },
-      "moreButton": "View Demo"
-    },
-    "pricing": {
-      "subtitle": "Pricing",
-      "title": "We Have Better Pricing Plan",
-      "cardProffesional": {
-        "title": "Proffesional",
-        "cardList": {
-          "list1": "All Basic Services",
-          "list2": "Unlimited Request",
-          "list3": "Unlimited Revision",
-          "list4": "Cancel Anytime",
-          "list5": "A-Sync Collaboration"
+            "pricingButton": "Start Now"
         }
-      },
-      "cardUnlimited": {
-        "title": "Unlimited",
-        "subtitle": "Most Popular",
-        "cardList": {
-          "list1": "All Basic Services",
-          "list2": "All Advanced Services",
-          "list3": "Cancel Anytime",
-          "list4": "Art Direction",
-          "list5": "Concept and Ideation",
-          "list6": "Unlimited Request",
-          "list7": "Unlimited Revision",
-          "list8": "A-Sync Collaboration",
-          "list9": "Weekly Updates"
-        }
-      },
+    },
+    "delivery": {
+        "home": {
+            "title": "Fast, Convenient, and Reliable: Elevate Your Delivery Experience with Us",
+            "description": "Hello there! Experience lightning-fast, hassle-free, and reliable delivery with our services. Whether it's gourmet meals, special orders, or anything in between, we ensure prompt and trustworthy delivery to your doorstep.",
+            "button1": "View Demo",
+            "documentation": "Documentation"
+        },
+        "about": {
+            "box1": {
+                "title": "Effortless Delivery: Streamlining Logistics for Your Success",
+                "description": "At Delivary, we redefine the logistics landscape by providing a seamless and efficient delivery solution tailored to meet the unique needs of your business. Our commitment is to elevate your delivery processes, ensuring reliability, speed, and customer satisfaction.",
+                "description2": "Our cutting-edge technology empowers you with real-time tracking, smart route optimization, and robust analytics, giving you unparalleled control and insights into your delivery operations. Delivary is not just a delivery service; it's a strategic partner in your business growth.",
+                "description3": "Experience the ease of logistics management with Delivary. From doorstep to destination, we are dedicated to ensuring your deliveries are prompt, precise, and hassle-free. Join us in simplifying the way you deliver success."
+            },
+            "moreButton": "View Demo"
+        },
+        "pricing": {
+            "subtitle": "Pricing",
+            "title": "We Have Better Pricing Plan",
+            "cardProffesional": {
+                "title": "Proffesional",
+                "cardList": {
+                    "list1": "All Basic Services",
+                    "list2": "Unlimited Request",
+                    "list3": "Unlimited Revision",
+                    "list4": "Cancel Anytime",
+                    "list5": "A-Sync Collaboration"
+                }
+            },
+            "cardUnlimited": {
+                "title": "Unlimited",
+                "subtitle": "Most Popular",
+                "cardList": {
+                    "list1": "All Basic Services",
+                    "list2": "All Advanced Services",
+                    "list3": "Cancel Anytime",
+                    "list4": "Art Direction",
+                    "list5": "Concept and Ideation",
+                    "list6": "Unlimited Request",
+                    "list7": "Unlimited Revision",
+                    "list8": "A-Sync Collaboration",
+                    "list9": "Weekly Updates"
+                }
+            },
 
-      "pricingButton": "Start Now"
-    }
-  },
-  "ChatApp": {
-    "home": {
-      "title": "Chat - Seamless Chat and Messaging Platform",
-      "description": "Chat is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries.",
-      "button1": "View Demo",
-      "documentation": "Documentation"
-    },
-    "about": {
-      "box1": {
-        "title": "Chat - The Ultimate Platform for Connecting Worldwide",
-        "description": "Chat is a product designed for connecting globally, finding new friends, and engaging in regular discussions. Our chat platform offers you an easy, private, and effective way to communicate. With enhanced features like anonymity and multimedia sharing, Chat is your ideal choice for managing your communication experiences."
-      },
-      "moreButton": "View Demo"
-    },
-    "pricing": {
-      "subtitle": "Pricing",
-      "title": "We Have Better Pricing Plan",
-      "cardProffesional": {
-        "title": "Proffesional",
-        "cardList": {
-          "list1": "All Basic Services",
-          "list2": "Unlimited Request",
-          "list3": "Unlimited Revision",
-          "list4": "Cancel Anytime",
-          "list5": "A-Sync Collaboration"
+            "pricingButton": "Start Now"
         }
-      },
-      "cardUnlimited": {
-        "title": "Unlimited",
-        "subtitle": "Most Popular",
-        "cardList": {
-          "list1": "All Basic Services",
-          "list2": "All Advanced Services",
-          "list3": "Cancel Anytime",
-          "list4": "Art Direction",
-          "list5": "Concept and Ideation",
-          "list6": "Unlimited Request",
-          "list7": "Unlimited Revision",
-          "list8": "A-Sync Collaboration",
-          "list9": "Weekly Updates"
-        }
-      },
+    },
+    "ChatApp": {
+        "home": {
+            "title": "Chat - Seamless Chat and Messaging Platform",
+            "description": "Chat is a free, feature-rich platform designed to facilitate easy and meaningful communication with friends and acquaintances worldwide. This sophisticated chat and messaging platform empower users to connect across borders, cultures, and boundaries.",
+            "button1": "View Demo",
+            "documentation": "Documentation"
+        },
+        "about": {
+            "box1": {
+                "title": "Chat - The Ultimate Platform for Connecting Worldwide",
+                "description": "Chat is a product designed for connecting globally, finding new friends, and engaging in regular discussions. Our chat platform offers you an easy, private, and effective way to communicate. With enhanced features like anonymity and multimedia sharing, Chat is your ideal choice for managing your communication experiences."
+            },
+            "moreButton": "View Demo"
+        },
+        "pricing": {
+            "subtitle": "Pricing",
+            "title": "We Have Better Pricing Plan",
+            "cardProffesional": {
+                "title": "Proffesional",
+                "cardList": {
+                    "list1": "All Basic Services",
+                    "list2": "Unlimited Request",
+                    "list3": "Unlimited Revision",
+                    "list4": "Cancel Anytime",
+                    "list5": "A-Sync Collaboration"
+                }
+            },
+            "cardUnlimited": {
+                "title": "Unlimited",
+                "subtitle": "Most Popular",
+                "cardList": {
+                    "list1": "All Basic Services",
+                    "list2": "All Advanced Services",
+                    "list3": "Cancel Anytime",
+                    "list4": "Art Direction",
+                    "list5": "Concept and Ideation",
+                    "list6": "Unlimited Request",
+                    "list7": "Unlimited Revision",
+                    "list8": "A-Sync Collaboration",
+                    "list9": "Weekly Updates"
+                }
+            },
 
-      "pricingButton": "Start Now"
-    }
-  },
-  "clinic-app": {
-    "home": {
-      "title": "Revolutionize Your Health with Our Cutting-Edge Clinic App",
-      "title2": "Introducing our clinic app - the ultimate tool for managing your healthcare needs! Our app is designed to make it easy for patients to find and schedule appointments with their preferred doctors. With separate roles for patients and doctors, our app is user-friendly and efficient."
-    },
-    "about": {
-      "title": "Clinic About:",
-      "description": "Patients can choose a doctor from categories and apply for an appointment, making it easy to find a doctor that suits their needs. Our availability calendar for doctors is a great way for patients to see when their preferred doctor is available and plan their appointment accordingly.",
-      "description2": "Our clinic app is a reliable and efficient way to manage your healthcare needs. With features like appointment scheduling, doctor availability calendars, and categories for doctors, our app is the perfect tool for patients looking for a convenient way to manage their healthcare. Download our app today and experience the convenience of managing your healthcare needs at your fingertips!"
-    }
-  },
-  "todo-app": {
-    "home": {
-      "title": "Todo - Easy Task Organization at Your Fingertips",
-      "description": "Todo is a smart application for easy and convenient task management. Organize your daily tasks, set deadlines, and never forget to complete them. Todo offers a simple and efficient solution for managing your actions effortlessly."
-    },
-    "about": {
-      "title": "Todo - Your Personal Task Assistant",
-      "description": "Meet Todo, your ultimate task companion. We understand that life can get busy, and staying on top of your tasks is crucial. Todo is designed to be your personal task assistant, helping you organize, prioritize, and accomplish your goals with ease. From simple to-do lists to complex project management, Todo adapts to your needs, ensuring a seamless and productive experience."
-    }
-  },
-  "spa-app": {
-    "home": {
-      "title": "Elevate Your Well-Being with Our Innovative SPA App.",
-      "title2": "Unveil the Next Generation of Wellness Management: Your Essential Spa App for Effortless Appointment Booking and Beyond!",
-      "description": "Simplify Your Spa Experience: Effortlessly Choose Your Preferred Services and Schedule Appointments with Our Intuitive Category-Based System. With Our Spa Availability Calendar, Plan Your Visits with Precision and Ease.",
-      "description2": "Embrace Wellness: Seamlessly Manage Your Spa Experience with Our Reliable and Efficient App. From Booking Appointments to Viewing Service Availability and Convenient Service Categories, Our App is Your Perfect Companion for Effortless Spa Management. Download Today and Elevate Your Spa Journey with Ease."
-    },
-    "about": {
-      "description": "Empower Your Spa Choices",
-      "description2": "Experience Effortless Spa Management: Our App Offers Reliable and Efficient Solutions for Your Spa Needs. From Easy Appointment Scheduling to Accessing Spa Availability Calendars and Categorized Services, It's Your Ideal Tool for Convenient Spa Management. Download Today and Enjoy the Ease of Spa Care at Your Fingertips!"
-    }
-  },
-  "authentication": {
-    "home": {
-      "title": "Authentication: Secure Ways to Protect System Access",
-      "description": "This product offers convenient and reliable solutions for securing system access and protecting user data. Understanding and implementing it is easy and effective"
-    },
-    "about": {
-      "title": "About Authentication:",
-      "description": "Authentication is a cutting-edge solution designed to enhance the security of system access and safeguard sensitive information. Our product is crafted with a deep understanding of the modern digital landscape, where ensuring the authenticity of users is paramount.",
-      "description2": "At Authentication, we believe in empowering businesses and individuals with robust tools to fortify their digital defenses. With a focus on user-friendly interfaces and seamless integration, our solution makes implementing strong authentication measures a straightforward process."
-    }
-  },
-  "store": {
-    "home": {
-      "title": "Store: Discover and Buy the Latest Products with Ease",
-      "description": "Get ready to discover and purchase the latest products with Store! Our app makes it easy and fast to find and buy high-quality products.Store helps you find and purchase quality products with ease. Shop now and be ready for a new world with ease!"
-    },
-    "about": {
-      "title": "About Store:",
-      "description": "Store is your go-to app for discovering and purchasing products with ease. Our app streamlines the process of finding and buying your favorite items, allowing you to subscribe and shop for them effortlessly. Store simplifies the purchasing journey and grants you free access to the latest products. Choose Store for a convenient and swift shopping experience!"
-    }
-  },
-  "RealEstate": {
-    "home": {
-      "title": "RealEstate - Your Real Estate Connection. Effortlessly browse listings, connect with agents, and find your perfect property seamlessly.",
-      "description": "Introducing HomeConnect: Your free, feature-rich platform designed to simplify property communication worldwide. Connect seamlessly with agents and find your perfect home, transcending borders and cultures effortlessly.",
-      "button1": "View Demo",
-      "documentation": "Documentation"
-    },
-    "about": {
-      "box1": {
-        "title": "HomeConnect - Where Real Estate Connects Worldwide.",
-        "description": "Introducing EstateConnect: Your Global Hub for Property Connections. EstateConnect provides a seamless, private, and efficient platform for all your real estate communications. With enhanced features like anonymity and multimedia sharing, EstateConnect revolutionizes your property management experience."
-      },
-      "moreButton": "View Demo"
-    },
-    "pricing": {
-      "subtitle": "Pricing",
-      "title": "We Have Better Pricing Plan",
-      "cardProffesional": {
-        "title": "Proffesional",
-        "cardList": {
-          "list1": "All Basic Services",
-          "list2": "Unlimited Request",
-          "list3": "Unlimited Revision",
-          "list4": "Cancel Anytime",
-          "list5": "A-Sync Collaboration"
+            "pricingButton": "Start Now"
         }
-      },
-      "cardUnlimited": {
-        "title": "Unlimited",
-        "subtitle": "Most Popular",
-        "cardList": {
-          "list1": "All Basic Services",
-          "list2": "All Advanced Services",
-          "list3": "Cancel Anytime",
-          "list4": "Art Direction",
-          "list5": "Concept and Ideation",
-          "list6": "Unlimited Request",
-          "list7": "Unlimited Revision",
-          "list8": "A-Sync Collaboration",
-          "list9": "Weekly Updates"
+    },
+    "clinic-app": {
+        "home": {
+            "title": "Revolutionize Your Health with Our Cutting-Edge Clinic App",
+            "title2": "Introducing our clinic app - the ultimate tool for managing your healthcare needs! Our app is designed to make it easy for patients to find and schedule appointments with their preferred doctors. With separate roles for patients and doctors, our app is user-friendly and efficient."
+        },
+        "about": {
+            "title": "Clinic About:",
+            "description": "Patients can choose a doctor from categories and apply for an appointment, making it easy to find a doctor that suits their needs. Our availability calendar for doctors is a great way for patients to see when their preferred doctor is available and plan their appointment accordingly.",
+            "description2": "Our clinic app is a reliable and efficient way to manage your healthcare needs. With features like appointment scheduling, doctor availability calendars, and categories for doctors, our app is the perfect tool for patients looking for a convenient way to manage their healthcare. Download our app today and experience the convenience of managing your healthcare needs at your fingertips!"
         }
-      },
+    },
+    "todo-app": {
+        "home": {
+            "title": "Todo - Easy Task Organization at Your Fingertips",
+            "description": "Todo is a smart application for easy and convenient task management. Organize your daily tasks, set deadlines, and never forget to complete them. Todo offers a simple and efficient solution for managing your actions effortlessly."
+        },
+        "about": {
+            "title": "Todo - Your Personal Task Assistant",
+            "description": "Meet Todo, your ultimate task companion. We understand that life can get busy, and staying on top of your tasks is crucial. Todo is designed to be your personal task assistant, helping you organize, prioritize, and accomplish your goals with ease. From simple to-do lists to complex project management, Todo adapts to your needs, ensuring a seamless and productive experience."
+        }
+    },
+    "spa-app": {
+        "home": {
+            "title": "Elevate Your Well-Being with Our Innovative SPA App.",
+            "title2": "Unveil the Next Generation of Wellness Management: Your Essential Spa App for Effortless Appointment Booking and Beyond!",
+            "description": "Simplify Your Spa Experience: Effortlessly Choose Your Preferred Services and Schedule Appointments with Our Intuitive Category-Based System. With Our Spa Availability Calendar, Plan Your Visits with Precision and Ease.",
+            "description2": "Embrace Wellness: Seamlessly Manage Your Spa Experience with Our Reliable and Efficient App. From Booking Appointments to Viewing Service Availability and Convenient Service Categories, Our App is Your Perfect Companion for Effortless Spa Management. Download Today and Elevate Your Spa Journey with Ease."
+        },
+        "about": {
+            "description": "Empower Your Spa Choices",
+            "description2": "Experience Effortless Spa Management: Our App Offers Reliable and Efficient Solutions for Your Spa Needs. From Easy Appointment Scheduling to Accessing Spa Availability Calendars and Categorized Services, It's Your Ideal Tool for Convenient Spa Management. Download Today and Enjoy the Ease of Spa Care at Your Fingertips!"
+        }
+    },
+    "authentication": {
+        "home": {
+            "title": "Authentication: Secure Ways to Protect System Access",
+            "description": "This product offers convenient and reliable solutions for securing system access and protecting user data. Understanding and implementing it is easy and effective"
+        },
+        "about": {
+            "title": "About Authentication:",
+            "description": "Authentication is a cutting-edge solution designed to enhance the security of system access and safeguard sensitive information. Our product is crafted with a deep understanding of the modern digital landscape, where ensuring the authenticity of users is paramount.",
+            "description2": "At Authentication, we believe in empowering businesses and individuals with robust tools to fortify their digital defenses. With a focus on user-friendly interfaces and seamless integration, our solution makes implementing strong authentication measures a straightforward process."
+        }
+    },
+    "store": {
+        "home": {
+            "title": "Store: Discover and Buy the Latest Products with Ease",
+            "description": "Get ready to discover and purchase the latest products with Store! Our app makes it easy and fast to find and buy high-quality products.Store helps you find and purchase quality products with ease. Shop now and be ready for a new world with ease!"
+        },
+        "about": {
+            "title": "About Store:",
+            "description": "Store is your go-to app for discovering and purchasing products with ease. Our app streamlines the process of finding and buying your favorite items, allowing you to subscribe and shop for them effortlessly. Store simplifies the purchasing journey and grants you free access to the latest products. Choose Store for a convenient and swift shopping experience!"
+        }
+    },
+    "RealEstate": {
+        "home": {
+            "title": "RealEstate - Your Real Estate Connection. Effortlessly browse listings, connect with agents, and find your perfect property seamlessly.",
+            "description": "Introducing HomeConnect: Your free, feature-rich platform designed to simplify property communication worldwide. Connect seamlessly with agents and find your perfect home, transcending borders and cultures effortlessly.",
+            "button1": "View Demo",
+            "documentation": "Documentation"
+        },
+        "about": {
+            "box1": {
+                "title": "HomeConnect - Where Real Estate Connects Worldwide.",
+                "description": "Introducing EstateConnect: Your Global Hub for Property Connections. EstateConnect provides a seamless, private, and efficient platform for all your real estate communications. With enhanced features like anonymity and multimedia sharing, EstateConnect revolutionizes your property management experience."
+            },
+            "moreButton": "View Demo"
+        },
+        "pricing": {
+            "subtitle": "Pricing",
+            "title": "We Have Better Pricing Plan",
+            "cardProffesional": {
+                "title": "Proffesional",
+                "cardList": {
+                    "list1": "All Basic Services",
+                    "list2": "Unlimited Request",
+                    "list3": "Unlimited Revision",
+                    "list4": "Cancel Anytime",
+                    "list5": "A-Sync Collaboration"
+                }
+            },
+            "cardUnlimited": {
+                "title": "Unlimited",
+                "subtitle": "Most Popular",
+                "cardList": {
+                    "list1": "All Basic Services",
+                    "list2": "All Advanced Services",
+                    "list3": "Cancel Anytime",
+                    "list4": "Art Direction",
+                    "list5": "Concept and Ideation",
+                    "list6": "Unlimited Request",
+                    "list7": "Unlimited Revision",
+                    "list8": "A-Sync Collaboration",
+                    "list9": "Weekly Updates"
+                }
+            },
 
-      "pricingButton": "Start Now"
+            "pricingButton": "Start Now"
+        }
+    },
+    "qr-app": {
+        "home": {
+            "title": "QR App: Payment System",
+            "description": "QR App: Instant QR App transactions for seamless payments anytime, anywhere. Fast, secure, and convenient mobile payments at your fingertips. Scan, pay, and go hassle-free with our intuitive app!"
+        },
+        "about": {
+            "title": "About QR App:",
+            "description": "Introducing QR App: the ultimate QR payment solution. Experience lightning-fast transactions, enhanced security features, and unparalleled convenience—all in one app. Simply scan, pay, and enjoy seamless transactions wherever you go. Revolutionize your payment experience today with ScanPay, your trusted mobile payment companion.",
+            "description2": "Discover QR App: the go-to app for effortless QR payments. Enjoy swift transactions, robust security, and unmatched convenience. With ScanPay, scanning and paying become second nature. Simplify your payments and elevate your experience with ScanPay today!"
+        }
     }
-  }
 }

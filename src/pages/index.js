@@ -22,6 +22,7 @@ export { default as ChatApp } from "./Products/ChatApp/ChatApp";
 export { default as ClinicApp } from "./Products/Clinic/ClinicApp";
 export { default as TodoApp } from "./Products/TodoApp/TodoApp";
 export { default as SpaApp } from "./Products/SpaApp/SpaApp";
+export { default as QRApp } from "./Products/QRApp/QRApp";
 export { default as Authentication } from "./Products/Authentication/Authentication";
 export { default as Store } from "./Products/Store/Store";
 export { default as PaymentSucces } from "./PaymentSucces/PaymentSucces";

@@ -1,527 +1,542 @@
 {
-  "topbar": {
-    "location": "Islom Karimov 1 Ko'cha, Buxoro, O'zbekiston",
-    "time": "Dush - shan : 09.00 - 18.00"
-  },
-  "navbar": {
-    "home": "Asosiy Sahifa",
-    "about": "Biz haqimizda",
-    "service": "Xizmatlar",
-    "products": "Mahsulatlar",
-    "language": "uz",
-    "contact": "Bog'lanish"
-  },
-  "herosection": {
-    "title": "Bizning vazifamiz odamlarga raqamli asrda rivojlanish uchun zarur bo'lgan ko'nikma va bilimlarni berishdir.",
-    "developers": "Dasturchilar",
-    "students": "Talabalar",
-    "projects": "Loyihalar"
-  },
-  "aboutsection": {
-    "aboutbutton": "Biz haqimizda",
-    "title": "PRO UNITY ga xush kelibsiz",
-    "text": "O‘zbekistonning Buxoro shahrida joylashgan PRO UNITY innovatsion IT-kompaniyasi bo‘lib, dasturiy ta’minot ishlab chiqish va IT-ta’limga ixtisoslashgan. Bizning vazifamiz odamlarga raqamli asrda rivojlanish uchun zarur bo'lgan ko'nikma va bilimlarni berishdir.        ",
-    "list1": "Mijozlarga yo'naltirilgan yondashuv",
-    "list2": "Ehtiyotkorlik bilan kontseptsiyalash",
-    "list3": "Aniq tayyorlash va yakunlash",
-    "list4": " Yuqori darajadagi xizmatlar",
-    "morebutton": "Ko'proq o'qish"
-  },
-  "followsection": {
-    "followbutton": "Kuzating",
-    "title": "Bizni bu yerda kuzatib boring"
-  },
-  "partners": {
-    "partnersbutton": "Hamkorlar",
-    "title": "Mijozlar & Hamkorlar"
-  },
-  "featuresection": {
-    "featurebutton": "Xususiyatlari",
-    "title": "Nima uchun bizni tanlaysiz",
-    "text": "",
-    "listmini1": "Tajriba",
-    "listbig1": "Dasturchilar",
-    "listmini2": "Sifat",
-    "listbig2": "Xizmatlar",
-    "listmini3": "Ijobiy",
-    "listbig3": "Maslahat",
-    "listmini4": "24 Soat",
-    "listbig4": "Qo'llab-quvvatlash"
-  },
-  "blogSection": {
-    "title": "Bizning bloglarimizni bu yerda tomosha qiling",
-    "text": "Bizning blogimizga tashrif buyurib, dasturiy ta'minotni ishlab chiqish dunyosidagi so'nggi yangiliklar va o'zgarishlardan xabardor bo'ling. Biz boshlang'ich darsliklardan tortib ilg'or texnikalargacha hamma narsani qamrab olamiz, shuning uchun hamma uchun nimadir bor."
-  },
-  "teamsection": {
-    "teambutton": "Jamoa",
-    "title": "Bizning Pro Jamoa",
-    "user1": {
-      "name": "Azizbek Hamroyev",
-      "occupation": "Co-founder"
+    "topbar": {
+        "location": "Islom Karimov 1 Ko'cha, Buxoro, O'zbekiston",
+        "time": "Dush - shan : 09.00 - 18.00"
     },
-    "user2": {
-      "name": "Miron Mustafoev",
-      "occupation": "Co-founder, CEO"
+    "navbar": {
+        "home": "Asosiy Sahifa",
+        "about": "Biz haqimizda",
+        "service": "Xizmatlar",
+        "products": "Mahsulatlar",
+        "language": "uz",
+        "contact": "Bog'lanish"
     },
-    "user3": {
-      "name": "Andrey Molodsov",
-      "occupation": "Designer"
+    "herosection": {
+        "title": "Bizning vazifamiz odamlarga raqamli asrda rivojlanish uchun zarur bo'lgan ko'nikma va bilimlarni berishdir.",
+        "developers": "Dasturchilar",
+        "students": "Talabalar",
+        "projects": "Loyihalar"
     },
-    "user4": {
-      "name": "Sobirjon Bobojonov",
-      "occupation": "Software Engineer"
+    "aboutsection": {
+        "aboutbutton": "Biz haqimizda",
+        "title": "PRO UNITY ga xush kelibsiz",
+        "text": "O‘zbekistonning Buxoro shahrida joylashgan PRO UNITY innovatsion IT-kompaniyasi bo‘lib, dasturiy ta’minot ishlab chiqish va IT-ta’limga ixtisoslashgan. Bizning vazifamiz odamlarga raqamli asrda rivojlanish uchun zarur bo'lgan ko'nikma va bilimlarni berishdir.        ",
+        "list1": "Mijozlarga yo'naltirilgan yondashuv",
+        "list2": "Ehtiyotkorlik bilan kontseptsiyalash",
+        "list3": "Aniq tayyorlash va yakunlash",
+        "list4": " Yuqori darajadagi xizmatlar",
+        "morebutton": "Ko'proq o'qish"
     },
-    "user5": {
-      "name": "Davlatshoh Naimov",
-      "occupation": "Frontend Developer"
+    "followsection": {
+        "followbutton": "Kuzating",
+        "title": "Bizni bu yerda kuzatib boring"
     },
-    "user6": {
-      "name": "Amirbek Azimov",
-      "occupation": "Mobile Developer"
+    "partners": {
+        "partnersbutton": "Hamkorlar",
+        "title": "Mijozlar & Hamkorlar"
     },
-    "user7": {
-      "name": "Jobir Ashurov",
-      "occupation": "Frontend Developer"
+    "featuresection": {
+        "featurebutton": "Xususiyatlari",
+        "title": "Nima uchun bizni tanlaysiz",
+        "text": "",
+        "listmini1": "Tajriba",
+        "listbig1": "Dasturchilar",
+        "listmini2": "Sifat",
+        "listbig2": "Xizmatlar",
+        "listmini3": "Ijobiy",
+        "listbig3": "Maslahat",
+        "listmini4": "24 Soat",
+        "listbig4": "Qo'llab-quvvatlash"
     },
-    "user8": {
-      "name": "Ibrohim Istamov",
-      "occupation": "Devops Developer"
+    "blogSection": {
+        "title": "Bizning bloglarimizni bu yerda tomosha qiling",
+        "text": "Bizning blogimizga tashrif buyurib, dasturiy ta'minotni ishlab chiqish dunyosidagi so'nggi yangiliklar va o'zgarishlardan xabardor bo'ling. Biz boshlang'ich darsliklardan tortib ilg'or texnikalargacha hamma narsani qamrab olamiz, shuning uchun hamma uchun nimadir bor."
     },
-    "user9": {
-      "name": "Otabek Kadirov",
-      "occupation": "Frontend Mentor"
+    "teamsection": {
+        "teambutton": "Jamoa",
+        "title": "Bizning Pro Jamoa",
+        "user1": {
+            "name": "Azizbek Hamroyev",
+            "occupation": "Co-founder"
+        },
+        "user2": {
+            "name": "Miron Mustafoev",
+            "occupation": "Co-founder, CEO"
+        },
+        "user3": {
+            "name": "Andrey Molodsov",
+            "occupation": "Designer"
+        },
+        "user4": {
+            "name": "Sobirjon Bobojonov",
+            "occupation": "Software Engineer"
+        },
+        "user5": {
+            "name": "Davlatshoh Naimov",
+            "occupation": "Frontend Developer"
+        },
+        "user6": {
+            "name": "Amirbek Azimov",
+            "occupation": "Mobile Developer"
+        },
+        "user7": {
+            "name": "Jobir Ashurov",
+            "occupation": "Frontend Developer"
+        },
+        "user8": {
+            "name": "Ibrohim Istamov",
+            "occupation": "Devops Developer"
+        },
+        "user9": {
+            "name": "Otabek Kadirov",
+            "occupation": "Frontend Mentor"
+        },
+        "user10": {
+            "name": "Behzod Baxshilloyev",
+            "occupation": "Frontend Mentor"
+        },
+        "user11": {
+            "name": "Behzod Usmanov",
+            "occupation": "Graphic Designer"
+        },
+        "user12": {
+            "name": "Bobur Khamraev",
+            "occupation": "Backend Mentor"
+        },
+        "user13": {
+            "name": "Dilshod Chuliev",
+            "occupation": "Frontend Developer"
+        },
+        "user14": {
+            "name": "Jamshid Barotov",
+            "occupation": "Software Engineer"
+        },
+        "user15": {
+            "name": "Baxtior Raxmonov",
+            "occupation": "Finance"
+        },
+        "user16": {
+            "name": "Miron Nusratov",
+            "occupation": "PR Meneger"
+        },
+        "user17": {
+            "name": "Mirxon Kuziyev",
+            "occupation": "Mobile Developer"
+        },
+        "user18": {
+            "name": "Murod Axmadov",
+            "occupation": "Designer"
+        },
+        "user19": {
+            "name": "Nafisa Rasulova",
+            "occupation": "Sales Manager"
+        },
+        "user20": {
+            "name": "Darya Usyakina",
+            "occupation": "Trainer"
+        },
+        "user21": {
+            "name": "Polina Nosova",
+            "occupation": "Designer"
+        },
+        "user22": {
+            "name": "Samiya Ibragimova",
+            "occupation": "Sales assistant"
+        },
+        "user23": {
+            "name": "Sadoqat Abdullayeva",
+            "occupation": "Office Manager"
+        },
+        "user24": {
+            "name": "Zarnigor Majidova",
+            "occupation": "Marketing Manager"
+        },
+        "user25": {
+            "name": "Nigina Burxanova",
+            "occupation": "Videographer"
+        },
+        "user26": {
+            "name": "Dilnoza Barakatova",
+            "occupation": "Trainer"
+        },
+        "user27": {
+            "name": "Shaxina",
+            "occupation": "Trainer"
+        },
+        "user28": {
+            "name": "Mohinur Tursunova",
+            "occupation": "Web-designer"
+        }
     },
-    "user10": {
-      "name": "Behzod Baxshilloyev",
-      "occupation": "Frontend Mentor"
+    "appointment": {
+        "appointmentbutton": "Tayinlash",
+        "title": "Bizning Kompaniya",
+        "text": "PRO UNITY sizga IT maqsadlaringizga erishishda qanday yordam berishi haqida ko'proq bilish uchun bugun biz bilan bog'laning",
+        "call": "Bizga qo'ng'iroq qilin",
+        "message": "Hozir bizga xat yuboring",
+        "inputplaceholdername": "Ismingiz",
+        "inputplaceholderemail": "Emailingiz",
+        "inputplaceholdermobile": "Telefon Raqamingiz",
+        "inputplaceholderpurpose": "Yo'nalishni tanlang",
+        "inputplaceholderdescripe": "Fikringizni qoldiring",
+        "bookbutton": "Yuborish"
     },
-    "user11": {
-      "name": "Behzod Usmanov",
-      "occupation": "Graphic Designer"
+    "footer": {
+        "address": "Manzil",
+        "services": {
+            "title": "Xizmatlar",
+            "link1": "Dasturiy Taminotni ishlab chiqish",
+            "link2": "It Maktab",
+            "link3": "Vakolatli Darsliklar",
+            "link4": "Kovorking",
+            "link5": "Ochiq Manba",
+            "link6": "Pro Oilasi"
+        },
+        "quicklinks": {
+            "title": "Tez havolalar",
+            "link1": "Biz haqimizda",
+            "link2": "Bizga bog'lanish",
+            "link3": "Bizning xizmatlarimiz",
+            "link4": "Reklama",
+            "link5": "Maxfiylik siyosati",
+            "link6": "Litsenziya"
+        },
+        "footer-bottom": "© Pro Unity, Barcha huquqlar himoyalangan."
     },
-    "user12": {
-      "name": "Bobur Khamraev",
-      "occupation": "Backend Mentor"
+    "servicesection": {
+        "title": "PROUNITY xizmatlari",
+        "subtitle": "Xizmatlar",
+        "cardservice1": {
+            "title": "Dasturiy ta'minotni ishlab chiqish",
+            "Description": "PRO UNITY kompaniyasida biz biznes va jismoniy shaxslar uchun ilg'or dasturiy yechimlarni yaratishga o'zimizni bag'ishlaymiz. Bizning tajribali dasturchilar jamoasi mobil ilovalar, veb-ishlab chiqish va boshqalarga ixtisoslashgan. Biz Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django va boshqalarni o'z ichiga olgan turli texnologiyalardan foydalanamiz."
+        },
+        "cardservice2": {
+            "title": "IT Maktab",
+            "Description": "Dasturiy ta'minotni ishlab chiqish xizmatlaridan tashqari, biz kodlash va dasturlash bo'yicha keng qamrovli treninglar o'tkazadigan IT maktabini ham boshqaramiz. Bizning maqsadimiz o'quvchilarimizni doimo rivojlanib borayotgan texnologiya sanoatida muvaffaqiyatga erishish uchun zarur bo'lgan vositalar bilan jihozlashdir."
+        },
+        "cardservice3": {
+            "title": "Ruxsat etilgan darsliklar",
+            "Description": "Kodlash va dasturlash kurslarimizdan tashqari, biz IT va dizayn ta'limi bo'yicha vakolatli video kurslarni ham taklif etamiz. Ushbu kurslar odamlarga sohada ustunlik qilish uchun zarur bo'lgan bilim va ko'nikmalarni berish uchun mo'ljallangan. Mutaxassis o'qituvchilarimiz o'quvchilarimizning eng yaxshi ta'lim olishlarini ta'minlab, tushunish va kuzatish oson bo'lgan yuqori sifatli kontentni taqdim etadilar."
+        },
+        "cardservice4": {
+            "title": "Kovorking",
+            "Description": "Bizning birgalikdagi ish joyimiz kichik, ammo qulay bo'lib, jamoamiz ishlashi va hamkorlik qilishi uchun qulay sharoit yaratadi. Shuningdek, biz odamlarga bilim va ko'nikmalarini kengaytirishga yordam berish uchun IT va dizayn ta'limi bo'yicha vakolatli darsliklar taklif etamiz."
+        },
+        "cardservice5": {
+            "title": "Ochiq manba",
+            "Description": "Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz. Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va dasturchilar hamjamiyatidagi hamkorlik natijasidir. Bizning tajribali dasturchilar jamoamiz mobil ilovalar, veb-ishlab chiqish va boshqalarga ixtisoslashgan."
+        },
+        "cardservice6": {
+            "title": "Pro Jamoa",
+            "Description": "PRO UNITY kompaniyasida biz buxorolik ko‘plab dasturchilar va startaplardan tashkil topgan hamjamiyatning bir qismi ekanligimizdan faxrlanamiz. Innovatsion yechimlarni yaratish va texnologiya chegaralarini oshirish missiyamizga qo'shiling.r"
+        },
+        "servicebutton": "Ko'proq"
     },
-    "user13": {
-      "name": "Dilshod Chuliev",
-      "occupation": "Frontend Developer"
+    "products": {
+        "title": "Bizning mahsulotlar",
+        "desciption": "ProUnity kompaniyasining mahsulotlar sahifasiga xush kelibsiz! Mahsulotlarimiz assortimentini o'rganing va har qanday odamning talab va so'rovlarini qondirish uchun mo'ljallangan maxsus echimlarni toping. Bizning sahifamiz orqali yuqori sifatli mahsulotlarimizni toping va yechimlarimizga doimiy ravishda kiritilgan so'nggi xususiyatlar va afzalliklar bilan tanishing",
+        "product-hrms": {
+            "title": "Hrms",
+            "description": "Bizning zamonaviy HRMS ilovamiz yordamida tashkiliy samaradorlikni oshiring. HR jarayonlarini soddalashtiring, ishchi kuchingizni kengaytiring va uzluksiz boshqaruvning yangi davrini qabul qiling. Bizning innovatsion yechimimiz bilan ishchi kuchini optimallashtirish kelajagini o'rganing."
+        },
+        "product-delivery": {
+            "title": "Delivery",
+            "description": "Assalomu alaykum! Xizmatlarimiz yordamida yashin tezligida, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz. Hoziroq buyurtma bering va zavqlanishni boshlang. qulaylik! 🚚🌟"
+        },
+        "product-chat-app": {
+            "title": "Delivery",
+            "description": "Chat ilovasi butun dunyo boʻylab doʻstlar va tanishlar bilan oson va mazmunli muloqot qilish uchun moʻljallangan bepul, boy funksiyalarga ega platformadir. Ushbu murakkab chat va xabar almashish platformasi foydalanuvchilarga chegaralar, madaniyatlar va chegaralar orqali ulanish imkonini beradi."
+        },
+        "product-clinic-app": {
+            "title": "Clinic App",
+            "description": "Bizning klinik ilovamiz bepul, funksiyalar bilan boyitilgan platforma, dunyo bo'ylab oson va ma'noiy muloqotni o'rnatish uchun mo'ljallangan. Ushbu tanqisiz xabarlashish va muloqot vositasi foydalanuvchilarga chegaralar, madaniyatlar va cheklanmalar orqali oson ulashish huquqini beradi, shifoxona muloqotlarini qulay va samarali qiladi."
+        },
+        "product-spa-app": {
+            "title": "SPA App",
+            "description": "Harmoniya Oazis: Jahon sog'liqni Sodda Spa Kommunikatsiyasi va Bog'lovchilik orqali kuchaytirish"
+        },
+        "product-qr-app": {
+            "title": "QR App",
+            "description": "QR ilovasi: istalgan vaqtda, istalgan joyda uzluksiz to'lovlar uchun tezkor QR tranzaksiyalari. Barmoqlaringiz uchida tez, xavfsiz va qulay mobil to'lovlar."
+        }
     },
-    "user14": {
-      "name": "Jamshid Barotov",
-      "occupation": "Software Engineer"
+    "team-details": {
+        "position": "Kasbi",
+        "education": "Ta'lim",
+        "email": "Email",
+        "social-media": "Ijtimoiy tarmoqlar"
     },
-    "user15": {
-      "name": "Baxtior Raxmonov",
-      "occupation": "Finance"
+    "students": {
+        "firstName": "Ismi",
+        "lastName": "Familiyasi"
     },
-    "user16": {
-      "name": "Miron Nusratov",
-      "occupation": "PR Meneger"
+    "license": {
+        "title": "Litsenziya",
+        "text": "Mualliflik huquqi © 2022 <br /> <br /> Shu bilan ProUnity ruxsati ushbu dasturiy ta'minot nusxasini va tegishli hujjat fayllarini (Dastur ta'minot) olgan har qanday shaxsga dasturiy ta'minot bilan cheklovsiz, jumladan, cheklovsiz muomala qilish uchun beriladi. Dasturiy ta'minotdan foydalanish, nusxa ko'chirish, o'zgartirish, birlashtirish, nashr qilish, tarqatish, sublitsenziyalash va/yoki sotish, shuningdek, dasturiy ta'minot taqdim etilgan shaxslarga quyidagi shartlarga rioya qilgan holda ruxsat berish huquqlari cheklanmagan holda: <br /> <br /> Yuqoridagi mualliflik huquqi to'g'risidagi bildirishnoma va ushbu ruxsatnomalar Dasturiy ta'minotning barcha nusxalari yoki muhim qismlariga kiritilishi kerak. Siz bizning maqolalarimizdan parchalarni ko'chirib olishingiz mumkin, lekin iltimos, to'liq maqolalarni qayta nashr qilmang. Agar siz bitta maqolani tarjima qilmoqchi bo'lsangiz, biz bilan bog'laning."
     },
-    "user17": {
-      "name": "Mirxon Kuziyev",
-      "occupation": "Mobile Developer"
+    "PrivacyPolicy": {
+        "title": "Maxfiylik siyosati",
+        "text": "Ushbu veb-sayt o'z foydalanuvchilaridan ba'zi shaxsiy ma'lumotlarni to'playdi. <h2>Egasi va ma'lumotlar nazoratchisi </h2> Islom Karimov ko'chasi, 1, Buxoro, O'zbekiston, +998 33 899 50 00 <br /> <span>O'zbekiston Egasi bilan bog'lanish email</span>: prounity.uz@gmail.com < h2>To'plangan ma'lumotlar turlari</h2><p>Ushbu veb-sayt o'zi yoki uchinchi shaxslar orqali to'playdigan Shaxsiy ma'lumotlar turlari orasida quyidagilar mavjud: Cookie fayllari; Foydalanish ma'lumotlari; ism; familiya; E-pochta manzili; veb-sayt.</p> <p>To'plangan shaxsiy ma'lumotlarning har bir turi bo'yicha to'liq ma'lumotlar ushbu maxfiylik siyosatining maxsus bo'limlarida yoki ma'lumotlarni to'plashdan oldin ko'rsatilgan maxsus tushuntirish matnlarida keltirilgan. Shaxsiy ma'lumotlar Foydalanuvchi tomonidan bepul taqdim etilishi mumkin, yoki foydalanish ma'lumotlari bo'lsa, ushbu veb-saytdan foydalanganda avtomatik ravishda to'planishi mumkin. Agar boshqacha ko'rsatilmagan bo'lsa, ushbu veb-sayt tomonidan so'ralgan barcha ma'lumotlar majburiydir va ushbu ma'lumotlarni taqdim etmaslik ushbu veb-saytga o'z xizmatlarini taqdim etishni imkonsiz qilishi mumkin. Agar ushbu veb-saytda ba'zi ma'lumotlar majburiy emasligi alohida ta'kidlangan bo'lsa, foydalanuvchilar ushbu ma'lumotlarni Xizmatning mavjudligi yoki ishlashiga ta'sir qilmasdan etkazmasliklari mumkin. Qaysi Shaxsiy ma'lumotlar majburiy ekanligiga amin bo'lmagan foydalanuvchilar Egasi bilan bog'lanishlari mumkin.</p> <p> Ushbu veb-sayt yoki uchinchi tomon xizmatlari egalari tomonidan cookie-fayllardan yoki boshqa kuzatuv vositalaridan har qanday foydalanish. Veb-sayt, agar mavjud bo'lsa, ushbu hujjatda va cookie-fayllar siyosatida tavsiflangan boshqa maqsadlarga qo'shimcha ravishda, Foydalanuvchi tomonidan talab qilinadigan Xizmatni taqdim etish maqsadiga xizmat qiladi.</p> <p>Foydalanuvchilar uchinchi tomon shaxsiy ma'lumotlari uchun javobgardirlar. ushbu veb-sayt orqali olingan, nashr etilgan yoki baham ko'rilgan va ular egasiga ma'lumotlarni taqdim qilish uchun uchinchi tomonning roziligi borligini tasdiqlaydi.</p><h2>Ma'lumotlarni qayta ishlash tartibi va joyi</h2> <p>Egasi tegishli qabul qiladi. ma'lumotlarga ruxsatsiz kirish, oshkor qilish, o'zgartirish yoki ruxsatsiz yo'q qilishning oldini olish uchun xavfsizlik choralari. Ma'lumotlarni qayta ishlash ko'rsatilgan maqsadlarga qat'iy bog'liq bo'lgan tashkiliy tartib va rejimlarga rioya qilgan holda, kompyuterlar va/yoki IT vositalaridan foydalangan holda amalga oshiriladi. Egasidan tashqari, ba'zi hollarda, ma'lumotlarga ushbu veb-saytning ishlashi bilan bog'liq bo'lgan mas'ul shaxslar (ma'muriyat, savdo, marketing, yuridik, tizim ma'muriyati) yoki tashqi tomonlar (masalan, uchinchi shaxslar) foydalanishi mumkin. tomonlarning texnik xizmat ko'rsatuvchi provayderlari, pochta tashuvchilari, xosting provayderlari, IT-kompaniyalari, aloqa agentliklari), agar kerak bo'lsa, Egasi tomonidan Ma'lumot protsessorlari sifatida tayinlanadi. Ushbu tomonlarning yangilangan roʻyxati istalgan vaqtda egasidan soʻralishi mumkin.</p>"
     },
-    "user18": {
-      "name": "Murod Axmadov",
-      "occupation": "Designer"
+    "Advertise": {
+        "title": "Reklama",
+        "text": "<p> ProUnity o'z o'quvchilari uchun mutlaqo bepul bo'lgan yuqori sifatli kontentni taqdim etishga bag'ishlangan. Har oyda yarim milliondan ortiq faol foydalanuvchilar bilan ProUnity veb-dizaynerlar va dasturchilardan iborat ajoyib xalqaro auditoriyaga reklama qilish uchun ajoyib joy!</p><p>Potentsial homiy sifatida siz ajoyib imkoniyatni ochish kalitini o'z zimmangizga olasiz – brendingizni ushbu ajoyib auditoriyaga taqdim etish imkoniyati. Ehtiyotkorlik bilan ishlab chiqilgan reklama opsiyalari qatori bilan biz sizning xabaringiz auditoriyamiz bilan chinakam bog‘lanadigan platformani taqdim etamiz.</p><p>Reklamalarni boshqarish platformamiz orqali xarid qilishingiz mumkin bo‘lgan banner reklamalarimizni ko‘ring. Quyida siz boshqa barcha homiylik variantlarini topishingiz mumkin. Agar sizda biron bir savol bo'lsa yoki ularni bron qilmoqchi bo'lsangiz, elektron pochta orqali biz bilan bog'laning yoki ushbu shakl orqali maxsus reklama sotuvi guruhimizga ulaning:</p>"
     },
-    "user19": {
-      "name": "Nafisa Rasulova",
-      "occupation": "Sales Manager"
-    },
-    "user20": {
-      "name": "Darya Usyakina",
-      "occupation": "Trainer"
-    },
-    "user21": {
-      "name": "Polina Nosova",
-      "occupation": "Designer"
-    },
-    "user22": {
-      "name": "Samiya Ibragimova",
-      "occupation": "Sales assistant"
-    },
-    "user23": {
-      "name": "Sadoqat Abdullayeva",
-      "occupation": "Office Manager"
-    },
-    "user24": {
-      "name": "Zarnigor Majidova",
-      "occupation": "Marketing Manager"
-    },
-    "user25": {
-      "name": "Nigina Burxanova",
-      "occupation": "Videographer"
-    },
-    "user26": {
-      "name": "Dilnoza Barakatova",
-      "occupation": "Trainer"
-    },
-    "user27": {
-      "name": "Shaxina",
-      "occupation": "Trainer"
-    },
-    "user28": {
-      "name": "Mohinur Tursunova",
-      "occupation": "Web-designer"
-    }
-  },
-  "appointment": {
-    "appointmentbutton": "Tayinlash",
-    "title": "Bizning Kompaniya",
-    "text": "PRO UNITY sizga IT maqsadlaringizga erishishda qanday yordam berishi haqida ko'proq bilish uchun bugun biz bilan bog'laning",
-    "call": "Bizga qo'ng'iroq qilin",
-    "message": "Hozir bizga xat yuboring",
-    "inputplaceholdername": "Ismingiz",
-    "inputplaceholderemail": "Emailingiz",
-    "inputplaceholdermobile": "Telefon Raqamingiz",
-    "inputplaceholderpurpose": "Yo'nalishni tanlang",
-    "inputplaceholderdescripe": "Fikringizni qoldiring",
-    "bookbutton": "Yuborish"
-  },
-  "footer": {
-    "address": "Manzil",
-    "services": {
-      "title": "Xizmatlar",
-      "link1": "Dasturiy Taminotni ishlab chiqish",
-      "link2": "It Maktab",
-      "link3": "Vakolatli Darsliklar",
-      "link4": "Kovorking",
-      "link5": "Ochiq Manba",
-      "link6": "Pro Oilasi"
-    },
-    "quicklinks": {
-      "title": "Tez havolalar",
-      "link1": "Biz haqimizda",
-      "link2": "Bizga bog'lanish",
-      "link3": "Bizning xizmatlarimiz",
-      "link4": "Reklama",
-      "link5": "Maxfiylik siyosati",
-      "link6": "Litsenziya"
-    },
-    "footer-bottom": "© Pro Unity, Barcha huquqlar himoyalangan."
-  },
-  "servicesection": {
-    "title": "PROUNITY xizmatlari",
-    "subtitle": "Xizmatlar",
-    "cardservice1": {
-      "title": "Dasturiy ta'minotni ishlab chiqish",
-      "Description": "PRO UNITY kompaniyasida biz biznes va jismoniy shaxslar uchun ilg'or dasturiy yechimlarni yaratishga o'zimizni bag'ishlaymiz. Bizning tajribali dasturchilar jamoasi mobil ilovalar, veb-ishlab chiqish va boshqalarga ixtisoslashgan. Biz Javascript, React, React Native, Flutter, Ionic, Java, Pyhton, Django va boshqalarni o'z ichiga olgan turli texnologiyalardan foydalanamiz."
-    },
-    "cardservice2": {
-      "title": "IT Maktab",
-      "Description": "Dasturiy ta'minotni ishlab chiqish xizmatlaridan tashqari, biz kodlash va dasturlash bo'yicha keng qamrovli treninglar o'tkazadigan IT maktabini ham boshqaramiz. Bizning maqsadimiz o'quvchilarimizni doimo rivojlanib borayotgan texnologiya sanoatida muvaffaqiyatga erishish uchun zarur bo'lgan vositalar bilan jihozlashdir."
-    },
-    "cardservice3": {
-      "title": "Ruxsat etilgan darsliklar",
-      "Description": "Kodlash va dasturlash kurslarimizdan tashqari, biz IT va dizayn ta'limi bo'yicha vakolatli video kurslarni ham taklif etamiz. Ushbu kurslar odamlarga sohada ustunlik qilish uchun zarur bo'lgan bilim va ko'nikmalarni berish uchun mo'ljallangan. Mutaxassis o'qituvchilarimiz o'quvchilarimizning eng yaxshi ta'lim olishlarini ta'minlab, tushunish va kuzatish oson bo'lgan yuqori sifatli kontentni taqdim etadilar."
-    },
-    "cardservice4": {
-      "title": "Kovorking",
-      "Description": "Bizning birgalikdagi ish joyimiz kichik, ammo qulay bo'lib, jamoamiz ishlashi va hamkorlik qilishi uchun qulay sharoit yaratadi. Shuningdek, biz odamlarga bilim va ko'nikmalarini kengaytirishga yordam berish uchun IT va dizayn ta'limi bo'yicha vakolatli darsliklar taklif etamiz."
-    },
-    "cardservice5": {
-      "title": "Ochiq manba",
-      "Description": "Biz UI va frontend ishi uchun muhim komponentlarni o'z ichiga olgan o'z ochiq manba asosimizni taklif qilishdan faxrlanamiz. Ushbu ramka innovatsiyalarga bo'lgan sadoqatimiz va dasturchilar hamjamiyatidagi hamkorlik natijasidir. Bizning tajribali dasturchilar jamoamiz mobil ilovalar, veb-ishlab chiqish va boshqalarga ixtisoslashgan."
-    },
-    "cardservice6": {
-      "title": "Pro Jamoa",
-      "Description": "PRO UNITY kompaniyasida biz buxorolik ko‘plab dasturchilar va startaplardan tashkil topgan hamjamiyatning bir qismi ekanligimizdan faxrlanamiz. Innovatsion yechimlarni yaratish va texnologiya chegaralarini oshirish missiyamizga qo'shiling.r"
-    },
-    "servicebutton": "Ko'proq"
-  },
-  "products": {
-    "title": "Bizning mahsulotlar",
-    "desciption": "ProUnity kompaniyasining mahsulotlar sahifasiga xush kelibsiz! Mahsulotlarimiz assortimentini o'rganing va har qanday odamning talab va so'rovlarini qondirish uchun mo'ljallangan maxsus echimlarni toping. Bizning sahifamiz orqali yuqori sifatli mahsulotlarimizni toping va yechimlarimizga doimiy ravishda kiritilgan so'nggi xususiyatlar va afzalliklar bilan tanishing",
-    "product-hrms": {
-      "title": "Hrms",
-      "description": "Bizning zamonaviy HRMS ilovamiz yordamida tashkiliy samaradorlikni oshiring. HR jarayonlarini soddalashtiring, ishchi kuchingizni kengaytiring va uzluksiz boshqaruvning yangi davrini qabul qiling. Bizning innovatsion yechimimiz bilan ishchi kuchini optimallashtirish kelajagini o'rganing."
-    },
-    "product-delivery": {
-      "title": "Delivery",
-      "description": "Assalomu alaykum! Xizmatlarimiz yordamida yashin tezligida, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz. Hoziroq buyurtma bering va zavqlanishni boshlang. qulaylik! 🚚🌟"
-    },
-    "product-chat-app": {
-      "title": "Delivery",
-      "description": "Chat ilovasi butun dunyo boʻylab doʻstlar va tanishlar bilan oson va mazmunli muloqot qilish uchun moʻljallangan bepul, boy funksiyalarga ega platformadir. Ushbu murakkab chat va xabar almashish platformasi foydalanuvchilarga chegaralar, madaniyatlar va chegaralar orqali ulanish imkonini beradi."
-    },
-    "product-clinic-app": {
-      "title": "Clinic App",
-      "description": "Bizning klinik ilovamiz bepul, funksiyalar bilan boyitilgan platforma, dunyo bo'ylab oson va ma'noiy muloqotni o'rnatish uchun mo'ljallangan. Ushbu tanqisiz xabarlashish va muloqot vositasi foydalanuvchilarga chegaralar, madaniyatlar va cheklanmalar orqali oson ulashish huquqini beradi, shifoxona muloqotlarini qulay va samarali qiladi."
-    },
-    "product-spa-app": {
-      "title": "SPA App",
-      "description": "Harmoniya Oazis: Jahon sog'liqni Sodda Spa Kommunikatsiyasi va Bog'lovchilik orqali kuchaytirish"
-    }
-  },
-  "team-details": {
-    "position": "Kasbi",
-    "education": "Ta'lim",
-    "email": "Email",
-    "social-media": "Ijtimoiy tarmoqlar"
-  },
-  "students": {
-    "firstName": "Ismi",
-    "lastName": "Familiyasi"
-  },
-  "license": {
-    "title": "Litsenziya",
-    "text": "Mualliflik huquqi © 2022 <br /> <br /> Shu bilan ProUnity ruxsati ushbu dasturiy ta'minot nusxasini va tegishli hujjat fayllarini (Dastur ta'minot) olgan har qanday shaxsga dasturiy ta'minot bilan cheklovsiz, jumladan, cheklovsiz muomala qilish uchun beriladi. Dasturiy ta'minotdan foydalanish, nusxa ko'chirish, o'zgartirish, birlashtirish, nashr qilish, tarqatish, sublitsenziyalash va/yoki sotish, shuningdek, dasturiy ta'minot taqdim etilgan shaxslarga quyidagi shartlarga rioya qilgan holda ruxsat berish huquqlari cheklanmagan holda: <br /> <br /> Yuqoridagi mualliflik huquqi to'g'risidagi bildirishnoma va ushbu ruxsatnomalar Dasturiy ta'minotning barcha nusxalari yoki muhim qismlariga kiritilishi kerak. Siz bizning maqolalarimizdan parchalarni ko'chirib olishingiz mumkin, lekin iltimos, to'liq maqolalarni qayta nashr qilmang. Agar siz bitta maqolani tarjima qilmoqchi bo'lsangiz, biz bilan bog'laning."
-  },
-  "PrivacyPolicy": {
-    "title": "Maxfiylik siyosati",
-    "text": "Ushbu veb-sayt o'z foydalanuvchilaridan ba'zi shaxsiy ma'lumotlarni to'playdi. <h2>Egasi va ma'lumotlar nazoratchisi </h2> Islom Karimov ko'chasi, 1, Buxoro, O'zbekiston, +998 33 899 50 00 <br /> <span>O'zbekiston Egasi bilan bog'lanish email</span>: prounity.uz@gmail.com < h2>To'plangan ma'lumotlar turlari</h2><p>Ushbu veb-sayt o'zi yoki uchinchi shaxslar orqali to'playdigan Shaxsiy ma'lumotlar turlari orasida quyidagilar mavjud: Cookie fayllari; Foydalanish ma'lumotlari; ism; familiya; E-pochta manzili; veb-sayt.</p> <p>To'plangan shaxsiy ma'lumotlarning har bir turi bo'yicha to'liq ma'lumotlar ushbu maxfiylik siyosatining maxsus bo'limlarida yoki ma'lumotlarni to'plashdan oldin ko'rsatilgan maxsus tushuntirish matnlarida keltirilgan. Shaxsiy ma'lumotlar Foydalanuvchi tomonidan bepul taqdim etilishi mumkin, yoki foydalanish ma'lumotlari bo'lsa, ushbu veb-saytdan foydalanganda avtomatik ravishda to'planishi mumkin. Agar boshqacha ko'rsatilmagan bo'lsa, ushbu veb-sayt tomonidan so'ralgan barcha ma'lumotlar majburiydir va ushbu ma'lumotlarni taqdim etmaslik ushbu veb-saytga o'z xizmatlarini taqdim etishni imkonsiz qilishi mumkin. Agar ushbu veb-saytda ba'zi ma'lumotlar majburiy emasligi alohida ta'kidlangan bo'lsa, foydalanuvchilar ushbu ma'lumotlarni Xizmatning mavjudligi yoki ishlashiga ta'sir qilmasdan etkazmasliklari mumkin. Qaysi Shaxsiy ma'lumotlar majburiy ekanligiga amin bo'lmagan foydalanuvchilar Egasi bilan bog'lanishlari mumkin.</p> <p> Ushbu veb-sayt yoki uchinchi tomon xizmatlari egalari tomonidan cookie-fayllardan yoki boshqa kuzatuv vositalaridan har qanday foydalanish. Veb-sayt, agar mavjud bo'lsa, ushbu hujjatda va cookie-fayllar siyosatida tavsiflangan boshqa maqsadlarga qo'shimcha ravishda, Foydalanuvchi tomonidan talab qilinadigan Xizmatni taqdim etish maqsadiga xizmat qiladi.</p> <p>Foydalanuvchilar uchinchi tomon shaxsiy ma'lumotlari uchun javobgardirlar. ushbu veb-sayt orqali olingan, nashr etilgan yoki baham ko'rilgan va ular egasiga ma'lumotlarni taqdim qilish uchun uchinchi tomonning roziligi borligini tasdiqlaydi.</p><h2>Ma'lumotlarni qayta ishlash tartibi va joyi</h2> <p>Egasi tegishli qabul qiladi. ma'lumotlarga ruxsatsiz kirish, oshkor qilish, o'zgartirish yoki ruxsatsiz yo'q qilishning oldini olish uchun xavfsizlik choralari. Ma'lumotlarni qayta ishlash ko'rsatilgan maqsadlarga qat'iy bog'liq bo'lgan tashkiliy tartib va rejimlarga rioya qilgan holda, kompyuterlar va/yoki IT vositalaridan foydalangan holda amalga oshiriladi. Egasidan tashqari, ba'zi hollarda, ma'lumotlarga ushbu veb-saytning ishlashi bilan bog'liq bo'lgan mas'ul shaxslar (ma'muriyat, savdo, marketing, yuridik, tizim ma'muriyati) yoki tashqi tomonlar (masalan, uchinchi shaxslar) foydalanishi mumkin. tomonlarning texnik xizmat ko'rsatuvchi provayderlari, pochta tashuvchilari, xosting provayderlari, IT-kompaniyalari, aloqa agentliklari), agar kerak bo'lsa, Egasi tomonidan Ma'lumot protsessorlari sifatida tayinlanadi. Ushbu tomonlarning yangilangan roʻyxati istalgan vaqtda egasidan soʻralishi mumkin.</p>"
-  },
-  "Advertise": {
-    "title": "Reklama",
-    "text": "<p> ProUnity o'z o'quvchilari uchun mutlaqo bepul bo'lgan yuqori sifatli kontentni taqdim etishga bag'ishlangan. Har oyda yarim milliondan ortiq faol foydalanuvchilar bilan ProUnity veb-dizaynerlar va dasturchilardan iborat ajoyib xalqaro auditoriyaga reklama qilish uchun ajoyib joy!</p><p>Potentsial homiy sifatida siz ajoyib imkoniyatni ochish kalitini o'z zimmangizga olasiz – brendingizni ushbu ajoyib auditoriyaga taqdim etish imkoniyati. Ehtiyotkorlik bilan ishlab chiqilgan reklama opsiyalari qatori bilan biz sizning xabaringiz auditoriyamiz bilan chinakam bog‘lanadigan platformani taqdim etamiz.</p><p>Reklamalarni boshqarish platformamiz orqali xarid qilishingiz mumkin bo‘lgan banner reklamalarimizni ko‘ring. Quyida siz boshqa barcha homiylik variantlarini topishingiz mumkin. Agar sizda biron bir savol bo'lsa yoki ularni bron qilmoqchi bo'lsangiz, elektron pochta orqali biz bilan bog'laning yoki ushbu shakl orqali maxsus reklama sotuvi guruhimizga ulaning:</p>"
-  },
-  "hrms": {
-    "home": {
-      "title": "Butun xodimlar tajribangizni boshqarish uchun HRMS platformasi",
-      "description": "Bizning zamonaviy HRMS ilovamiz yordamida tashkiliy samaradorlikni oshiring. HR jarayonlarini soddalashtiring, ishchi kuchingizni kengaytiring va uzluksiz boshqaruvning yangi davrini qabul qiling. ",
-      "button1": "Demoni ko'rish",
-      "documentation": "Hujjatlar"
-    },
-    "about": {
-      "box1": {
-        "title": "Bizning hikoyamizni kashf eting: Muvaffaqiyat uchun HR boshqaruvida inqilob",
-        "description": "Pro Unity-da biz an'anaviy HR boshqaruvini dinamik va samarali jarayonga aylantirish sayohatiga chiqamiz. Biznesni innovatsion texnologiyalar orqali kengaytirish g‘oyasi bilan tashkil etilgan biz o‘zimizni zamonaviy korxonalarning o‘zgaruvchan ehtiyojlariga javob beradigan HRMS yechimini yaratishga bag‘ishladik.",
-        "description2": "Bizning majburiyatimiz faqat dasturiy yechimni taqdim etishdan tashqarida. Biz hamkorlik muhitini rivojlantirishga ishonamiz, bu erda biznes rivojlanadi va xodimlar ustunlik qiladi. Oddiylik, avtomatlashtirish va moslashuvchanlikka e'tibor qaratgan holda, bizning HRMS platformamiz sizning ish oqimingizga muammosiz integratsiya qilish uchun yaratilgan bo'lib, sizga haqiqatan ham muhim bo'lgan narsaga - biznesingizning rivojlanishiga e'tibor qaratish imkonini beradi.",
-        "description3": "Rivojlanishda davom etar ekanmiz, bizning vazifamiz aniq bo'lib qolmoqda: HR boshqaruvidagi ijobiy o'zgarishlar uchun katalizator bo'lish. Shaxsiylashtirilgan va kuchli HRMS tajribasi bilan biznesingiz kelajagini qayta belgilashda bizga qo‘shiling. Sizning muvaffaqiyatingiz bizning motivatsiyamizdir."
-      },
-      "box2": {
-        "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
-      },
-      "moreButton": "View Demo"
-    },
+    "hrms": {
+        "home": {
+            "title": "Butun xodimlar tajribangizni boshqarish uchun HRMS platformasi",
+            "description": "Bizning zamonaviy HRMS ilovamiz yordamida tashkiliy samaradorlikni oshiring. HR jarayonlarini soddalashtiring, ishchi kuchingizni kengaytiring va uzluksiz boshqaruvning yangi davrini qabul qiling. ",
+            "button1": "Demoni ko'rish",
+            "documentation": "Hujjatlar"
+        },
+        "about": {
+            "box1": {
+                "title": "Bizning hikoyamizni kashf eting: Muvaffaqiyat uchun HR boshqaruvida inqilob",
+                "description": "Pro Unity-da biz an'anaviy HR boshqaruvini dinamik va samarali jarayonga aylantirish sayohatiga chiqamiz. Biznesni innovatsion texnologiyalar orqali kengaytirish g‘oyasi bilan tashkil etilgan biz o‘zimizni zamonaviy korxonalarning o‘zgaruvchan ehtiyojlariga javob beradigan HRMS yechimini yaratishga bag‘ishladik.",
+                "description2": "Bizning majburiyatimiz faqat dasturiy yechimni taqdim etishdan tashqarida. Biz hamkorlik muhitini rivojlantirishga ishonamiz, bu erda biznes rivojlanadi va xodimlar ustunlik qiladi. Oddiylik, avtomatlashtirish va moslashuvchanlikka e'tibor qaratgan holda, bizning HRMS platformamiz sizning ish oqimingizga muammosiz integratsiya qilish uchun yaratilgan bo'lib, sizga haqiqatan ham muhim bo'lgan narsaga - biznesingizning rivojlanishiga e'tibor qaratish imkonini beradi.",
+                "description3": "Rivojlanishda davom etar ekanmiz, bizning vazifamiz aniq bo'lib qolmoqda: HR boshqaruvidagi ijobiy o'zgarishlar uchun katalizator bo'lish. Shaxsiylashtirilgan va kuchli HRMS tajribasi bilan biznesingiz kelajagini qayta belgilashda bizga qo‘shiling. Sizning muvaffaqiyatingiz bizning motivatsiyamizdir."
+            },
+            "box2": {
+                "title": "We Are The Most Effecient Software Developement Company Having teh Methodologies",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero assumenda officia, ipsa dignissimos, suscipit minus molestias aliquid velit illo sequi voluptate cupiditate repellendus."
+            },
+            "moreButton": "View Demo"
+        },
 
-    "pricing": {
-      "subtitle": "Narxlar",
-      "title": "Bizda yaxshiroq narx rejamiz bor",
-      "price": "oyiga",
-      "cardProffesional": {
-        "title": "Profesional",
-        "cardList": {
-          "list1": "Barcha asosiy xizmatlar",
-          "list2": "Cheksiz so'rov",
-          "list3": "Cheksiz qayta ko'rib chiqish",
-          "list4": "Istalgan vaqtda bekor qilish",
-          "list5": "A-Sync hamkorlik"
-        }
-      },
-      "cardUnlimited": {
-        "title": "Cheksiz",
-        "subtitle": "Eng mashhur",
-        "cardList": {
-          "list1": "Barcha asosiy xizmatlar",
-          "list2": "Barcha rivojlanayotgan xizmatlar",
-          "list3": "Har qanday vaqt bekor qilish",
-          "list4": "Badiiy yo'nalish",
-          "list5": "Kontseptsiya va g'oya",
-          "list6": "Cheksiz so'rov",
-          "list7": "Cheksiz qayta ko'rib chiqish",
-          "list8": "A-Sync hamkorlik",
-          "list9": "Haftalik yangilanishlar"
-        }
-      },
+        "pricing": {
+            "subtitle": "Narxlar",
+            "title": "Bizda yaxshiroq narx rejamiz bor",
+            "price": "oyiga",
+            "cardProffesional": {
+                "title": "Profesional",
+                "cardList": {
+                    "list1": "Barcha asosiy xizmatlar",
+                    "list2": "Cheksiz so'rov",
+                    "list3": "Cheksiz qayta ko'rib chiqish",
+                    "list4": "Istalgan vaqtda bekor qilish",
+                    "list5": "A-Sync hamkorlik"
+                }
+            },
+            "cardUnlimited": {
+                "title": "Cheksiz",
+                "subtitle": "Eng mashhur",
+                "cardList": {
+                    "list1": "Barcha asosiy xizmatlar",
+                    "list2": "Barcha rivojlanayotgan xizmatlar",
+                    "list3": "Har qanday vaqt bekor qilish",
+                    "list4": "Badiiy yo'nalish",
+                    "list5": "Kontseptsiya va g'oya",
+                    "list6": "Cheksiz so'rov",
+                    "list7": "Cheksiz qayta ko'rib chiqish",
+                    "list8": "A-Sync hamkorlik",
+                    "list9": "Haftalik yangilanishlar"
+                }
+            },
 
-      "pricingButton": "Hozir boshlang"
-    }
-  },
-  "delivery": {
-    "home": {
-      "title": "Tez, qulay va ishonchli: biz bilan yetkazib berish tajribangizni oshiring",
-      "description": "Salom! Xizmatlarimiz bilan chaqmoq tez, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu gurme taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz.z",
-      "button1": "Demoni ko'rish",
-      "documentation": "Hujjatlar"
-    },
-    "about": {
-      "box1": {
-        "title": "Engil yetkazib berish: Sizning muvaffaqiyatingiz uchun logistikani soddalashtirish",
-        "description": "Delivary-da biz biznesingizning noyob ehtiyojlarini qondirish uchun moslashtirilgan uzluksiz va samarali yetkazib berish yechimini taqdim etish orqali logistika landshaftini qayta belgilaymiz. Bizning majburiyatimiz ishonchlilik, tezlik va mijozlar ehtiyojini qondirishni ta'minlab, yetkazib berish jarayonlaringizni oshirishdan iborat."
-      },
-      "moreButton": "View Demo"
-    },
-    "pricing": {
-      "subtitle": "Narxlar",
-      "title": "Bizda yaxshiroq narx rejamiz bor",
-      "price": "oyiga",
-      "cardProffesional": {
-        "title": "Profesional",
-        "cardList": {
-          "list1": "Barcha asosiy xizmatlar",
-          "list2": "Cheksiz so'rov",
-          "list3": "Cheksiz qayta ko'rib chiqish",
-          "list4": "Istalgan vaqtda bekor qilish",
-          "list5": "A-Sync hamkorlik"
+            "pricingButton": "Hozir boshlang"
         }
-      },
-      "cardUnlimited": {
-        "title": "Cheksiz",
-        "subtitle": "Eng mashhur",
-        "cardList": {
-          "list1": "Barcha asosiy xizmatlar",
-          "list2": "Barcha rivojlanayotgan xizmatlar",
-          "list3": "Har qanday vaqt bekor qilish",
-          "list4": "Badiiy yo'nalish",
-          "list5": "Kontseptsiya va g'oya",
-          "list6": "Cheksiz so'rov",
-          "list7": "Cheksiz qayta ko'rib chiqish",
-          "list8": "A-Sync hamkorlik",
-          "list9": "Haftalik yangilanishlar"
+    },
+    "delivery": {
+        "home": {
+            "title": "Tez, qulay va ishonchli: biz bilan yetkazib berish tajribangizni oshiring",
+            "description": "Salom! Xizmatlarimiz bilan chaqmoq tez, muammosiz va ishonchli yetkazib berishdan bahramand bo'ling. Bu gurme taomlar, maxsus buyurtmalar yoki boshqa narsalar bo'ladimi, biz sizning ostonangizga tez va ishonchli yetkazib berishni ta'minlaymiz.z",
+            "button1": "Demoni ko'rish",
+            "documentation": "Hujjatlar"
+        },
+        "about": {
+            "box1": {
+                "title": "Engil yetkazib berish: Sizning muvaffaqiyatingiz uchun logistikani soddalashtirish",
+                "description": "Delivary-da biz biznesingizning noyob ehtiyojlarini qondirish uchun moslashtirilgan uzluksiz va samarali yetkazib berish yechimini taqdim etish orqali logistika landshaftini qayta belgilaymiz. Bizning majburiyatimiz ishonchlilik, tezlik va mijozlar ehtiyojini qondirishni ta'minlab, yetkazib berish jarayonlaringizni oshirishdan iborat."
+            },
+            "moreButton": "View Demo"
+        },
+        "pricing": {
+            "subtitle": "Narxlar",
+            "title": "Bizda yaxshiroq narx rejamiz bor",
+            "price": "oyiga",
+            "cardProffesional": {
+                "title": "Profesional",
+                "cardList": {
+                    "list1": "Barcha asosiy xizmatlar",
+                    "list2": "Cheksiz so'rov",
+                    "list3": "Cheksiz qayta ko'rib chiqish",
+                    "list4": "Istalgan vaqtda bekor qilish",
+                    "list5": "A-Sync hamkorlik"
+                }
+            },
+            "cardUnlimited": {
+                "title": "Cheksiz",
+                "subtitle": "Eng mashhur",
+                "cardList": {
+                    "list1": "Barcha asosiy xizmatlar",
+                    "list2": "Barcha rivojlanayotgan xizmatlar",
+                    "list3": "Har qanday vaqt bekor qilish",
+                    "list4": "Badiiy yo'nalish",
+                    "list5": "Kontseptsiya va g'oya",
+                    "list6": "Cheksiz so'rov",
+                    "list7": "Cheksiz qayta ko'rib chiqish",
+                    "list8": "A-Sync hamkorlik",
+                    "list9": "Haftalik yangilanishlar"
+                }
+            },
+            "pricingButton": "Hozir boshlang"
         }
-      },
-      "pricingButton": "Hozir boshlang"
-    }
-  },
-  "ChatApp": {
-    "home": {
-      "title": " Chat App - O'zaro Aloqa va Munozara Platformasi",
-      "description": "Chat App - bu so'zlash, munozara va do'stlar bilan aloqada bo'lishning samarali, oson va ilmiy usuli. Bu ilmiy chat ilmiy platforma, foydalanuvchilarga dunyo bo'ylab turli hududda, madaniyat va madaniyatning chegaralari orasida o'zaro aloqada bo'lish imkoniyatini beradi.",
-      "button1": "Demoni ko'rish",
-      "documentation": "Hujjatlar"
     },
-    "about": {
-      "box1": {
-        "title": "Chat App - Dunyo Bo'ylab Aloqada Bo'lishingiz Uchun Eng Yaxshi Platforma",
-        "description": "Chat App - bu dunyo bo'ylab o'zaro aloqada bo'lish, yangi do'stlar topish va muntazam munozaralar uchun mahsulot. Bizning chat ilmiy platformamiz sizga yengil, maxfiy va samarali aloqa imkoniyatini taqdim etadi. Anonimlik va multimedia ulashishning yanada osonligi bilan, ChatHub sizning aloqa tajribangizni boshqarish uchun ideal vosita."
-      },
-      "moreButton": "View Demo"
-    },
-    "pricing": {
-      "subtitle": "Narxlar",
-      "title": "Bizda yaxshiroq narx rejamiz bor",
-      "price": "oyiga",
-      "cardProffesional": {
-        "title": "Profesional",
-        "cardList": {
-          "list1": "Barcha asosiy xizmatlar",
-          "list2": "Cheksiz so'rov",
-          "list3": "Cheksiz qayta ko'rib chiqish",
-          "list4": "Istalgan vaqtda bekor qilish",
-          "list5": "A-Sync hamkorlik"
+    "ChatApp": {
+        "home": {
+            "title": " Chat App - O'zaro Aloqa va Munozara Platformasi",
+            "description": "Chat App - bu so'zlash, munozara va do'stlar bilan aloqada bo'lishning samarali, oson va ilmiy usuli. Bu ilmiy chat ilmiy platforma, foydalanuvchilarga dunyo bo'ylab turli hududda, madaniyat va madaniyatning chegaralari orasida o'zaro aloqada bo'lish imkoniyatini beradi.",
+            "button1": "Demoni ko'rish",
+            "documentation": "Hujjatlar"
+        },
+        "about": {
+            "box1": {
+                "title": "Chat App - Dunyo Bo'ylab Aloqada Bo'lishingiz Uchun Eng Yaxshi Platforma",
+                "description": "Chat App - bu dunyo bo'ylab o'zaro aloqada bo'lish, yangi do'stlar topish va muntazam munozaralar uchun mahsulot. Bizning chat ilmiy platformamiz sizga yengil, maxfiy va samarali aloqa imkoniyatini taqdim etadi. Anonimlik va multimedia ulashishning yanada osonligi bilan, ChatHub sizning aloqa tajribangizni boshqarish uchun ideal vosita."
+            },
+            "moreButton": "View Demo"
+        },
+        "pricing": {
+            "subtitle": "Narxlar",
+            "title": "Bizda yaxshiroq narx rejamiz bor",
+            "price": "oyiga",
+            "cardProffesional": {
+                "title": "Profesional",
+                "cardList": {
+                    "list1": "Barcha asosiy xizmatlar",
+                    "list2": "Cheksiz so'rov",
+                    "list3": "Cheksiz qayta ko'rib chiqish",
+                    "list4": "Istalgan vaqtda bekor qilish",
+                    "list5": "A-Sync hamkorlik"
+                }
+            },
+            "cardUnlimited": {
+                "title": "Cheksiz",
+                "subtitle": "Eng mashhur",
+                "cardList": {
+                    "list1": "Barcha asosiy xizmatlar",
+                    "list2": "Barcha rivojlanayotgan xizmatlar",
+                    "list3": "Har qanday vaqt bekor qilish",
+                    "list4": "Badiiy yo'nalish",
+                    "list5": "Kontseptsiya va g'oya",
+                    "list6": "Cheksiz so'rov",
+                    "list7": "Cheksiz qayta ko'rib chiqish",
+                    "list8": "A-Sync hamkorlik",
+                    "list9": "Haftalik yangilanishlar"
+                }
+            },
+            "pricingButton": "Hozir boshlang"
         }
-      },
-      "cardUnlimited": {
-        "title": "Cheksiz",
-        "subtitle": "Eng mashhur",
-        "cardList": {
-          "list1": "Barcha asosiy xizmatlar",
-          "list2": "Barcha rivojlanayotgan xizmatlar",
-          "list3": "Har qanday vaqt bekor qilish",
-          "list4": "Badiiy yo'nalish",
-          "list5": "Kontseptsiya va g'oya",
-          "list6": "Cheksiz so'rov",
-          "list7": "Cheksiz qayta ko'rib chiqish",
-          "list8": "A-Sync hamkorlik",
-          "list9": "Haftalik yangilanishlar"
+    },
+    "clinic-app": {
+        "home": {
+            "title": "Bizning ilg'or klinik ilovamiz bilan sog'ligingizni inqilob qiling",
+            "title2": "Klinika ilovamiz bilan tanishing - sog'liqni saqlash ehtiyojlarini boshqarish uchun eng yaxshi vosita! Bizning ilovamiz bemorlarga o'zlarining afzal ko'rgan shifokorlari bilan uchrashuvlarni topish va rejalashtirishni osonlashtirish uchun yaratilgan.",
+            "button1": "Demoni ko'rish",
+            "documentation": "Hujjatlar"
+        },
+        "about": {
+            "title": "Klinika haqida:",
+            "description": "Bemorlar toifalar orasidan shifokorni tanlashlari va qabulga yozilishlari mumkin, bu esa o'z ehtiyojlariga mos shifokorni topishni osonlashtiradi. Bizning shifokorlar uchun mavjudlik taqvimi bemorlar uchun o'zlari afzal ko'rgan shifokor borligini bilishning ajoyib usuli va o'z uchrashuvlarini shunga muvofiq rejalashtiring.",
+            "description2": "Bizning klinika ilovamiz sog'liqni saqlash ehtiyojlarini boshqarishning ishonchli va samarali usulidir. Uchrashuvni rejalashtirish, shifokorlar mavjudligi taqvimi va shifokorlar uchun toifalar kabi xususiyatlar bilan bizning ilovamiz boshqarishning qulay usulini izlayotgan bemorlar uchun mukammal vositadir. Bizning ilovamizni bugun yuklab oling va sog'liqni saqlash ehtiyojlaringizni barmoq uchida boshqarish qulayligini his eting!"
         }
-      },
-      "pricingButton": "Hozir boshlang"
-    }
-  },
-  "clinic-app": {
-    "home": {
-      "title": "Bizning ilg'or klinik ilovamiz bilan sog'ligingizni inqilob qiling",
-      "title2": "Klinika ilovamiz bilan tanishing - sog'liqni saqlash ehtiyojlarini boshqarish uchun eng yaxshi vosita! Bizning ilovamiz bemorlarga o'zlarining afzal ko'rgan shifokorlari bilan uchrashuvlarni topish va rejalashtirishni osonlashtirish uchun yaratilgan.",
-      "button1": "Demoni ko'rish",
-      "documentation": "Hujjatlar"
     },
-    "about": {
-      "title": "Klinika haqida:",
-      "description": "Bemorlar toifalar orasidan shifokorni tanlashlari va qabulga yozilishlari mumkin, bu esa o'z ehtiyojlariga mos shifokorni topishni osonlashtiradi. Bizning shifokorlar uchun mavjudlik taqvimi bemorlar uchun o'zlari afzal ko'rgan shifokor borligini bilishning ajoyib usuli va o'z uchrashuvlarini shunga muvofiq rejalashtiring.",
-      "description2": "Bizning klinika ilovamiz sog'liqni saqlash ehtiyojlarini boshqarishning ishonchli va samarali usulidir. Uchrashuvni rejalashtirish, shifokorlar mavjudligi taqvimi va shifokorlar uchun toifalar kabi xususiyatlar bilan bizning ilovamiz boshqarishning qulay usulini izlayotgan bemorlar uchun mukammal vositadir. Bizning ilovamizni bugun yuklab oling va sog'liqni saqlash ehtiyojlaringizni barmoq uchida boshqarish qulayligini his eting!"
-    }
-  },
-  "todo-app": {
-    "home": {
-      "title": "Todo - Barmoqlaringiz uchida oson vazifalarni tashkil etish",
-      "description": "Todo - oson va qulay vazifalarni boshqarish uchun aqlli dastur. Kundalik vazifalaringizni tartibga soling, muddatlarni belgilang va ularni bajarishni hech qachon unutmang. Todo harakatlaringizni osonlikcha boshqarish uchun oddiy va samarali yechim taklif etadi."
-    },
-    "about": {
-      "title": "Todo - Sizning shaxsiy vazifalaringiz bo'yicha yordamchingiz",
-      "description": "Sizning asosiy hamrohingiz Todo bilan tanishing. Biz hayot band bo'lishi mumkinligini tushunamiz va vazifalaringizni bajarish juda muhim. Todo sizning shaxsiy yordamchingiz bo'lib, o'z vazifalaringizni tartibga solish, birinchi o'ringa qo'yish va bajarishga yordam beradi. Maqsadlarga osonlik bilan erishing. Oddiy ishlar roʻyxatidan tortib murakkab loyihalarni boshqarishgacha, Todo sizning ehtiyojlaringizga moslashadi va muammosiz va samarali tajribani taʼminlaydi."
-    }
-  },
-  "spa-app": {
-    "home": {
-      "title": "Bizning innovatsion spa ilova bilan o'zingizni yaxshilang",
-      "title2": "Sog'likni boshqarishning keyingi bosqichini oching: spadagi yengiluvchi ilovamiz, tizimni jonatish, va yana bir qancha narsalarni ta'minlash!"
-    },
-    "about": {
-      "description": "O'zingizning spa tanlovlaringizni kengaytiring",
-      "description2": "Spa boshqarishda og'irlikni his qiling: bizning ilovamiz spa muhtojliklaringiz uchun ishonchli va samarali yechimlar taklif qiladi. Vizitlarni oson buyurtma berishdan, spa mavjudlik kalendariga kirishgacha va kategoriyalangan xizmatlarga - bu spa boshqarishda qulay vositadir. Bugun yuklab oling va o'zingizning qurilmangizda spa turishining osonligidan lezzatlaning!"
-    }
-  },
-  "authentication": {
-    "home": {
-      "title": "Autentifikatsiya: tizimga kirishni himoya qilishning xavfsiz usullari",
-      "ta'rif": "Ushbu mahsulot tizimga kirishni ta'minlash va foydalanuvchi ma'lumotlarini himoya qilish uchun qulay va ishonchli echimlarni taklif etadi. Uni tushunish va amalga oshirish oson va samarali"
-    },
-    "about": {
-      "title": "Autentifikatsiya haqida:",
-      "description": "Autentifikatsiya - tizimga kirish xavfsizligini oshirish va maxfiy ma'lumotlarni himoya qilish uchun mo'ljallangan zamonaviy yechim. Bizning mahsulotimiz zamonaviy raqamli landshaftni chuqur anglagan holda ishlab chiqilgan, bunda foydalanuvchilarning haqiqiyligini ta'minlash muhim ahamiyatga ega.",
-      "description2": "Autentifikatsiyada biz korxonalar va jismoniy shaxslarga raqamli himoyani mustahkamlash uchun mustahkam vositalar bilan imkoniyatlar berishga ishonamiz. Bizning yechimimiz foydalanuvchilarga qulay interfeyslar va uzluksiz integratsiyaga e'tibor qaratgan holda, kuchli autentifikatsiya choralarini amalga oshirishni oddiy jarayonga aylantiradi."
-    }
-  },
-  "store": {
-    "home": {
-      "title": "Do'kon: Eng so'nggi mahsulotlarni osongina kashf qiling va sotib oling",
-      "description": "Do'kon bilan eng so'nggi mahsulotlarni kashf qilish va sotib olishga tayyor bo'ling! Bizning ilovamiz yuqori sifatli mahsulotlarni topish va sotib olishni oson va tez qiladi.Store sizga sifatli mahsulotlarni osongina topish va sotib olishga yordam beradi. Hozir xarid qiling va tayyor bo'ling. osonlik bilan yangi dunyo!"
-    },
-    "about": {
-      "title": "Do'kon haqida:",
-      "description": "Store - bu osonlik bilan mahsulotlarni topish va sotib olish uchun sizning asosiy ilovangiz. Bizning ilovamiz sevimli buyumlaringizni topish va sotib olish jarayonini soddalashtiradi, bu sizga obuna bo'lish va ularni bemalol xarid qilish imkonini beradi. Do'kon xarid qilish va grantlarni osonlashtiradi. so'nggi mahsulotlarga bepul kirishingiz mumkin. Qulay va tez xarid qilish uchun Do'konni tanlang!"
-    }
-  },
-  "RealEstate": {
-    "home": {
-      "title": "Real Estate - Sizning ko'chmas mulk aloqangiz. Ro'yxatlarni osongina ko'rib chiqing, agentlar bilan bog'laning va mukammal mulkingizni muammosiz toping.",
-      "description": "Real Estate bilan tanishing: butun dunyo bo'ylab mulkiy aloqani soddalashtirish uchun mo'ljallangan bepul, imkoniyatlarga boy platformangiz. Agentlar bilan muammosiz bog'laning va chegaralar va madaniyatlardan oshib o'tadigan mukammal uyingizni toping.",
-      "button1": "Demoni ko'rish",
-      "documentation": "Hujjatlar"
-    },
-    "about": {
-      "box1": {
-        "title": "Real Estate - Ko'chmas mulk dunyo bo'ylab bog'langan joy.",
-        "description": "Real Estate bilan tanishing: Mulk ulanishlari uchun global markazingiz. EstateConnect sizning barcha ko'chmas mulk aloqalaringiz uchun uzluksiz, shaxsiy va samarali platformani taqdim etadi. Anonimlik va multimedia almashish kabi kengaytirilgan xususiyatlar bilan EstateConnect mulkni boshqarish tajribangizni inqilob qiladi."
-      },
-      "moreButton": "View Demo"
-    },
-    "pricing": {
-      "subtitle": "Narxlar",
-      "title": "Bizda yaxshiroq narx rejamiz bor",
-      "price": "oyiga",
-      "cardProffesional": {
-        "title": "Profesional",
-        "cardList": {
-          "list1": "Barcha asosiy xizmatlar",
-          "list2": "Cheksiz so'rov",
-          "list3": "Cheksiz qayta ko'rib chiqish",
-          "list4": "Istalgan vaqtda bekor qilish",
-          "list5": "A-Sync hamkorlik"
+    "todo-app": {
+        "home": {
+            "title": "Todo - Barmoqlaringiz uchida oson vazifalarni tashkil etish",
+            "description": "Todo - oson va qulay vazifalarni boshqarish uchun aqlli dastur. Kundalik vazifalaringizni tartibga soling, muddatlarni belgilang va ularni bajarishni hech qachon unutmang. Todo harakatlaringizni osonlikcha boshqarish uchun oddiy va samarali yechim taklif etadi."
+        },
+        "about": {
+            "title": "Todo - Sizning shaxsiy vazifalaringiz bo'yicha yordamchingiz",
+            "description": "Sizning asosiy hamrohingiz Todo bilan tanishing. Biz hayot band bo'lishi mumkinligini tushunamiz va vazifalaringizni bajarish juda muhim. Todo sizning shaxsiy yordamchingiz bo'lib, o'z vazifalaringizni tartibga solish, birinchi o'ringa qo'yish va bajarishga yordam beradi. Maqsadlarga osonlik bilan erishing. Oddiy ishlar roʻyxatidan tortib murakkab loyihalarni boshqarishgacha, Todo sizning ehtiyojlaringizga moslashadi va muammosiz va samarali tajribani taʼminlaydi."
         }
-      },
-      "cardUnlimited": {
-        "title": "Cheksiz",
-        "subtitle": "Eng mashhur",
-        "cardList": {
-          "list1": "Barcha asosiy xizmatlar",
-          "list2": "Barcha rivojlanayotgan xizmatlar",
-          "list3": "Har qanday vaqt bekor qilish",
-          "list4": "Badiiy yo'nalish",
-          "list5": "Kontseptsiya va g'oya",
-          "list6": "Cheksiz so'rov",
-          "list7": "Cheksiz qayta ko'rib chiqish",
-          "list8": "A-Sync hamkorlik",
-          "list9": "Haftalik yangilanishlar"
+    },
+    "spa-app": {
+        "home": {
+            "title": "Bizning innovatsion spa ilova bilan o'zingizni yaxshilang",
+            "title2": "Sog'likni boshqarishning keyingi bosqichini oching: spadagi yengiluvchi ilovamiz, tizimni jonatish, va yana bir qancha narsalarni ta'minlash!"
+        },
+        "about": {
+            "description": "O'zingizning spa tanlovlaringizni kengaytiring",
+            "description2": "Spa boshqarishda og'irlikni his qiling: bizning ilovamiz spa muhtojliklaringiz uchun ishonchli va samarali yechimlar taklif qiladi. Vizitlarni oson buyurtma berishdan, spa mavjudlik kalendariga kirishgacha va kategoriyalangan xizmatlarga - bu spa boshqarishda qulay vositadir. Bugun yuklab oling va o'zingizning qurilmangizda spa turishining osonligidan lezzatlaning!"
         }
-      },
-      "pricingButton": "Hozir boshlang"
+    },
+    "authentication": {
+        "home": {
+            "title": "Autentifikatsiya: tizimga kirishni himoya qilishning xavfsiz usullari",
+            "ta'rif": "Ushbu mahsulot tizimga kirishni ta'minlash va foydalanuvchi ma'lumotlarini himoya qilish uchun qulay va ishonchli echimlarni taklif etadi. Uni tushunish va amalga oshirish oson va samarali"
+        },
+        "about": {
+            "title": "Autentifikatsiya haqida:",
+            "description": "Autentifikatsiya - tizimga kirish xavfsizligini oshirish va maxfiy ma'lumotlarni himoya qilish uchun mo'ljallangan zamonaviy yechim. Bizning mahsulotimiz zamonaviy raqamli landshaftni chuqur anglagan holda ishlab chiqilgan, bunda foydalanuvchilarning haqiqiyligini ta'minlash muhim ahamiyatga ega.",
+            "description2": "Autentifikatsiyada biz korxonalar va jismoniy shaxslarga raqamli himoyani mustahkamlash uchun mustahkam vositalar bilan imkoniyatlar berishga ishonamiz. Bizning yechimimiz foydalanuvchilarga qulay interfeyslar va uzluksiz integratsiyaga e'tibor qaratgan holda, kuchli autentifikatsiya choralarini amalga oshirishni oddiy jarayonga aylantiradi."
+        }
+    },
+    "qr-app": {
+        "home": {
+            "title": "QR App: To'lov tizimi",
+            "ta'rif": "QR ilovasi: Istalgan vaqtda, istalgan joyda uzluksiz to'lovlar uchun tezkor QR ilovasi tranzaktsiyalari. Barmoqlaringiz uchida tez, xavfsiz va qulay mobil to'lovlar. Intuitiv ilovamiz yordamida skanerlang, toʻlang va muammosiz boring!"
+        },
+        "about": {
+            "title": "QR ilovasi haqida",
+            "description": "QR ilovasi bilan tanishish: QR to‘lovining yakuniy yechimi. Yashin tezligida tranzaktsiyalar, kengaytirilgan xavfsizlik funksiyalari va misli ko'rilmagan qulayliklardan - barchasini bitta ilovada sinab ko'ring. Qaerga borsangiz ham, shunchaki skanerlang, toʻlang va uzluksiz tranzaksiyalardan bahramand boʻling. Ishonchli mobil toʻlov hamkoringiz ScanPay bilan bugun toʻlov tajribangizni oʻzgartiring.",
+            "description2": "QR ilovasini kashf eting: oson QR to'lovlari uchun asosiy ilova. Tez tranzaktsiyalar, mustahkam xavfsizlik va tengsiz qulaylikdan bahramand bo'ling. ScanPay bilan skanerlash va to'lash ikkinchi xususiyatga aylanadi. Bugun to'lovlarni soddalashtiring va ScanPay bilan tajribangizni oshiring!"
+        }
+    },
+    "store": {
+        "home": {
+            "title": "Do'kon: Eng so'nggi mahsulotlarni osongina kashf qiling va sotib oling",
+            "description": "Do'kon bilan eng so'nggi mahsulotlarni kashf qilish va sotib olishga tayyor bo'ling! Bizning ilovamiz yuqori sifatli mahsulotlarni topish va sotib olishni oson va tez qiladi.Store sizga sifatli mahsulotlarni osongina topish va sotib olishga yordam beradi. Hozir xarid qiling va tayyor bo'ling. osonlik bilan yangi dunyo!"
+        },
+        "about": {
+            "title": "Do'kon haqida:",
+            "description": "Store - bu osonlik bilan mahsulotlarni topish va sotib olish uchun sizning asosiy ilovangiz. Bizning ilovamiz sevimli buyumlaringizni topish va sotib olish jarayonini soddalashtiradi, bu sizga obuna bo'lish va ularni bemalol xarid qilish imkonini beradi. Do'kon xarid qilish va grantlarni osonlashtiradi. so'nggi mahsulotlarga bepul kirishingiz mumkin. Qulay va tez xarid qilish uchun Do'konni tanlang!"
+        }
+    },
+    "RealEstate": {
+        "home": {
+            "title": "Real Estate - Sizning ko'chmas mulk aloqangiz. Ro'yxatlarni osongina ko'rib chiqing, agentlar bilan bog'laning va mukammal mulkingizni muammosiz toping.",
+            "description": "Real Estate bilan tanishing: butun dunyo bo'ylab mulkiy aloqani soddalashtirish uchun mo'ljallangan bepul, imkoniyatlarga boy platformangiz. Agentlar bilan muammosiz bog'laning va chegaralar va madaniyatlardan oshib o'tadigan mukammal uyingizni toping.",
+            "button1": "Demoni ko'rish",
+            "documentation": "Hujjatlar"
+        },
+        "about": {
+            "box1": {
+                "title": "Real Estate - Ko'chmas mulk dunyo bo'ylab bog'langan joy.",
+                "description": "Real Estate bilan tanishing: Mulk ulanishlari uchun global markazingiz. EstateConnect sizning barcha ko'chmas mulk aloqalaringiz uchun uzluksiz, shaxsiy va samarali platformani taqdim etadi. Anonimlik va multimedia almashish kabi kengaytirilgan xususiyatlar bilan EstateConnect mulkni boshqarish tajribangizni inqilob qiladi."
+            },
+            "moreButton": "View Demo"
+        },
+        "pricing": {
+            "subtitle": "Narxlar",
+            "title": "Bizda yaxshiroq narx rejamiz bor",
+            "price": "oyiga",
+            "cardProffesional": {
+                "title": "Profesional",
+                "cardList": {
+                    "list1": "Barcha asosiy xizmatlar",
+                    "list2": "Cheksiz so'rov",
+                    "list3": "Cheksiz qayta ko'rib chiqish",
+                    "list4": "Istalgan vaqtda bekor qilish",
+                    "list5": "A-Sync hamkorlik"
+                }
+            },
+            "cardUnlimited": {
+                "title": "Cheksiz",
+                "subtitle": "Eng mashhur",
+                "cardList": {
+                    "list1": "Barcha asosiy xizmatlar",
+                    "list2": "Barcha rivojlanayotgan xizmatlar",
+                    "list3": "Har qanday vaqt bekor qilish",
+                    "list4": "Badiiy yo'nalish",
+                    "list5": "Kontseptsiya va g'oya",
+                    "list6": "Cheksiz so'rov",
+                    "list7": "Cheksiz qayta ko'rib chiqish",
+                    "list8": "A-Sync hamkorlik",
+                    "list9": "Haftalik yangilanishlar"
+                }
+            },
+            "pricingButton": "Hozir boshlang"
+        }
     }
-  }
 }
