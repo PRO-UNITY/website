@@ -266,6 +266,10 @@
     "product-store": {
       "title": "Store",
       "description": "Get ready to discover and purchase the latest products with Store! Our app makes it easy and fast to find and buy high-quality products.Store helps you find and purchase quality products with ease. Shop now and be ready for a new world with ease!"
+    },
+    "product-real-estate": {
+      "title": "Real Estate",
+      "description": "Welcome to RealEase, the ultimate real estate app that simplifies property transactions like never before. With RealEase, effortlessly browse listings, connect with agents, and find your ideal home or investment property with ease. Our user-friendly interface and powerful features make navigating the real estate market a breeze. Whether you're buying, selling, or renting, RealEase has you covered. Say goodbye to the complexities of property search and hello to seamless transactions with RealEase."
     }
   },
   "team-details": {
@@ -483,6 +487,52 @@
     "about": {
       "title": "About Store:",
       "description": "Store is your go-to app for discovering and purchasing products with ease. Our app streamlines the process of finding and buying your favorite items, allowing you to subscribe and shop for them effortlessly. Store simplifies the purchasing journey and grants you free access to the latest products. Choose Store for a convenient and swift shopping experience!"
+    }
+  },
+  "RealEstate": {
+    "home": {
+      "title": "RealEstate - Your Real Estate Connection. Effortlessly browse listings, connect with agents, and find your perfect property seamlessly.",
+      "description": "Introducing HomeConnect: Your free, feature-rich platform designed to simplify property communication worldwide. Connect seamlessly with agents and find your perfect home, transcending borders and cultures effortlessly.",
+      "button1": "View Demo",
+      "documentation": "Documentation"
+    },
+    "about": {
+      "box1": {
+        "title": "HomeConnect - Where Real Estate Connects Worldwide.",
+        "description": "Introducing EstateConnect: Your Global Hub for Property Connections. EstateConnect provides a seamless, private, and efficient platform for all your real estate communications. With enhanced features like anonymity and multimedia sharing, EstateConnect revolutionizes your property management experience."
+      },
+      "moreButton": "View Demo"
+    },
+    "pricing": {
+      "subtitle": "Pricing",
+      "title": "We Have Better Pricing Plan",
+      "cardProffesional": {
+        "title": "Proffesional",
+        "cardList": {
+          "list1": "All Basic Services",
+          "list2": "Unlimited Request",
+          "list3": "Unlimited Revision",
+          "list4": "Cancel Anytime",
+          "list5": "A-Sync Collaboration"
+        }
+      },
+      "cardUnlimited": {
+        "title": "Unlimited",
+        "subtitle": "Most Popular",
+        "cardList": {
+          "list1": "All Basic Services",
+          "list2": "All Advanced Services",
+          "list3": "Cancel Anytime",
+          "list4": "Art Direction",
+          "list5": "Concept and Ideation",
+          "list6": "Unlimited Request",
+          "list7": "Unlimited Revision",
+          "list8": "A-Sync Collaboration",
+          "list9": "Weekly Updates"
+        }
+      },
+
+      "pricingButton": "Start Now"
     }
   }
 }

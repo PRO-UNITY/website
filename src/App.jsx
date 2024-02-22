@@ -28,6 +28,7 @@ import {
   Authentication,
   PaymentSucces,
   Store,
+  RealEstate,
 } from "./pages";
 import { ActiveNavContext } from "./context/ActiveNav";
 import { AsideScrollActiveProvider } from "./context/AsideScrollActive";
@@ -74,6 +75,7 @@ function App() {
             <Route path="products/authentication" element={<Authentication />} />
             <Route path="products/store" element={<Store />} />
             <Route path="/payment_successful" element={<PaymentSucces />} />
+            <Route path="products/real-estate" element={<RealEstate />} />
           </Routes>
         </ActiveNavContext.Provider>
       </AsideScrollActiveProvider>

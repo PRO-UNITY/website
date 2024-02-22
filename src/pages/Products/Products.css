@@ -54,7 +54,7 @@
 }
 
 .products ul.expanded {
-  max-height: 1200px;
+  max-height: 1500px;
 }
 
 @media (max-width: 768px) {

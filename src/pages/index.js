@@ -25,3 +25,4 @@ export { default as SpaApp } from "./Products/SpaApp/SpaApp";
 export { default as Authentication } from "./Products/Authentication/Authentication";
 export { default as Store } from "./Products/Store/Store";
 export { default as PaymentSucces } from "./PaymentSucces/PaymentSucces";
+export { default as RealEstate } from "./Products/Real-Estate/RealEstate";

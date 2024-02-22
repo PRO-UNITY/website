@@ -477,5 +477,51 @@
       "title": "Do'kon haqida:",
       "description": "Store - bu osonlik bilan mahsulotlarni topish va sotib olish uchun sizning asosiy ilovangiz. Bizning ilovamiz sevimli buyumlaringizni topish va sotib olish jarayonini soddalashtiradi, bu sizga obuna bo'lish va ularni bemalol xarid qilish imkonini beradi. Do'kon xarid qilish va grantlarni osonlashtiradi. so'nggi mahsulotlarga bepul kirishingiz mumkin. Qulay va tez xarid qilish uchun Do'konni tanlang!"
     }
+  },
+  "RealEstate": {
+    "home": {
+      "title": "Real Estate - Sizning ko'chmas mulk aloqangiz. Ro'yxatlarni osongina ko'rib chiqing, agentlar bilan bog'laning va mukammal mulkingizni muammosiz toping.",
+      "description": "Real Estate bilan tanishing: butun dunyo bo'ylab mulkiy aloqani soddalashtirish uchun mo'ljallangan bepul, imkoniyatlarga boy platformangiz. Agentlar bilan muammosiz bog'laning va chegaralar va madaniyatlardan oshib o'tadigan mukammal uyingizni toping.",
+      "button1": "Demoni ko'rish",
+      "documentation": "Hujjatlar"
+    },
+    "about": {
+      "box1": {
+        "title": "Real Estate - Ko'chmas mulk dunyo bo'ylab bog'langan joy.",
+        "description": "Real Estate bilan tanishing: Mulk ulanishlari uchun global markazingiz. EstateConnect sizning barcha ko'chmas mulk aloqalaringiz uchun uzluksiz, shaxsiy va samarali platformani taqdim etadi. Anonimlik va multimedia almashish kabi kengaytirilgan xususiyatlar bilan EstateConnect mulkni boshqarish tajribangizni inqilob qiladi."
+      },
+      "moreButton": "View Demo"
+    },
+    "pricing": {
+      "subtitle": "Narxlar",
+      "title": "Bizda yaxshiroq narx rejamiz bor",
+      "price": "oyiga",
+      "cardProffesional": {
+        "title": "Profesional",
+        "cardList": {
+          "list1": "Barcha asosiy xizmatlar",
+          "list2": "Cheksiz so'rov",
+          "list3": "Cheksiz qayta ko'rib chiqish",
+          "list4": "Istalgan vaqtda bekor qilish",
+          "list5": "A-Sync hamkorlik"
+        }
+      },
+      "cardUnlimited": {
+        "title": "Cheksiz",
+        "subtitle": "Eng mashhur",
+        "cardList": {
+          "list1": "Barcha asosiy xizmatlar",
+          "list2": "Barcha rivojlanayotgan xizmatlar",
+          "list3": "Har qanday vaqt bekor qilish",
+          "list4": "Badiiy yo'nalish",
+          "list5": "Kontseptsiya va g'oya",
+          "list6": "Cheksiz so'rov",
+          "list7": "Cheksiz qayta ko'rib chiqish",
+          "list8": "A-Sync hamkorlik",
+          "list9": "Haftalik yangilanishlar"
+        }
+      },
+      "pricingButton": "Hozir boshlang"
+    }
   }
 }
