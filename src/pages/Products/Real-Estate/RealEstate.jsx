@@ -9,7 +9,6 @@ import slider_img1 from "../../../assets/images/RealEstate/slider-img-1.png";
 import slider_img2 from "../../../assets/images/RealEstate/slider-img-2.png";
 import slider_img3 from "../../../assets/images/RealEstate/slider-img-3.png";
 
-
 import form_bg from "../../../assets/images/hrms/carusel-form.png";
 import reactNative from "../../../assets/images/Clinic/react-native-bg.png";
 import expo from "../../../assets/images/Clinic/ts.png";
