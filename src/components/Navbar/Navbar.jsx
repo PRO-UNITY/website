@@ -133,6 +133,16 @@ const MyNavbar = () => {
                   >
                     Authentication
                   </Link>
+                  <Link
+                    to={"/products/store"}
+                    className={`dropdown-item px-0 ${
+                      pathname === "/products/store"
+                        ? "dropdown-item-active"
+                        : ""
+                    }`}
+                  >
+                    Store
+                  </Link>
                 </div>
               </div>
 
