@@ -49,6 +49,12 @@ const Products = () => {
       description: t("products.product-authentication.description"),
       path: "/products/authentication",
     },
+    {
+      id: 8,
+      title: t("products.product-store.title"),
+      description: t("products.product-store.description"),
+      path: "/products/store",
+    },
   ];
 
   const [expanded, setExpanded] = useState(false);

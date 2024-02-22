@@ -44,19 +44,18 @@
 }
 .products .show-more:hover {
   background: var(--secondary);
-  opacity: 0.8; 
+  opacity: 0.8;
 }
 
 .products ul {
-  max-height: 550px;
+  max-height: auto;
   overflow: hidden;
-  transition: max-height 0.5s ease; 
+  transition: max-height 0.5s ease;
 }
 
 .products ul.expanded {
-  max-height: 1200px; 
+  max-height: 1200px;
 }
-
 
 @media (max-width: 768px) {
   .products {

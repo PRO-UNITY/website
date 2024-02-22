@@ -262,6 +262,10 @@
     "product-authentication": {
       "title": "Authentication",
       "description": "This product offers convenient and reliable solutions for securing system access and protecting user data. Understanding and implementing it is easy and effective."
+    },
+    "product-store": {
+      "title": "Store",
+      "description": "Get ready to discover and purchase the latest products with Store! Our app makes it easy and fast to find and buy high-quality products.Store helps you find and purchase quality products with ease. Shop now and be ready for a new world with ease!"
     }
   },
   "team-details": {
@@ -469,6 +473,16 @@
       "title": "About Authentication:",
       "description": "Authentication is a cutting-edge solution designed to enhance the security of system access and safeguard sensitive information. Our product is crafted with a deep understanding of the modern digital landscape, where ensuring the authenticity of users is paramount.",
       "description2": "At Authentication, we believe in empowering businesses and individuals with robust tools to fortify their digital defenses. With a focus on user-friendly interfaces and seamless integration, our solution makes implementing strong authentication measures a straightforward process."
+    }
+  },
+  "store": {
+    "home": {
+      "title": "Store: Discover and Buy the Latest Products with Ease",
+      "description": "Get ready to discover and purchase the latest products with Store! Our app makes it easy and fast to find and buy high-quality products.Store helps you find and purchase quality products with ease. Shop now and be ready for a new world with ease!"
+    },
+    "about": {
+      "title": "About Store:",
+      "description": "Store is your go-to app for discovering and purchasing products with ease. Our app streamlines the process of finding and buying your favorite items, allowing you to subscribe and shop for them effortlessly. Store simplifies the purchasing journey and grants you free access to the latest products. Choose Store for a convenient and swift shopping experience!"
     }
   }
 }

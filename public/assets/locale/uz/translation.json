@@ -467,5 +467,15 @@
       "description": "Autentifikatsiya - tizimga kirish xavfsizligini oshirish va maxfiy ma'lumotlarni himoya qilish uchun mo'ljallangan zamonaviy yechim. Bizning mahsulotimiz zamonaviy raqamli landshaftni chuqur anglagan holda ishlab chiqilgan, bunda foydalanuvchilarning haqiqiyligini ta'minlash muhim ahamiyatga ega.",
       "description2": "Autentifikatsiyada biz korxonalar va jismoniy shaxslarga raqamli himoyani mustahkamlash uchun mustahkam vositalar bilan imkoniyatlar berishga ishonamiz. Bizning yechimimiz foydalanuvchilarga qulay interfeyslar va uzluksiz integratsiyaga e'tibor qaratgan holda, kuchli autentifikatsiya choralarini amalga oshirishni oddiy jarayonga aylantiradi."
     }
+  },
+  "store": {
+    "home": {
+      "title": "Do'kon: Eng so'nggi mahsulotlarni osongina kashf qiling va sotib oling",
+      "description": "Do'kon bilan eng so'nggi mahsulotlarni kashf qilish va sotib olishga tayyor bo'ling! Bizning ilovamiz yuqori sifatli mahsulotlarni topish va sotib olishni oson va tez qiladi.Store sizga sifatli mahsulotlarni osongina topish va sotib olishga yordam beradi. Hozir xarid qiling va tayyor bo'ling. osonlik bilan yangi dunyo!"
+    },
+    "about": {
+      "title": "Do'kon haqida:",
+      "description": "Store - bu osonlik bilan mahsulotlarni topish va sotib olish uchun sizning asosiy ilovangiz. Bizning ilovamiz sevimli buyumlaringizni topish va sotib olish jarayonini soddalashtiradi, bu sizga obuna bo'lish va ularni bemalol xarid qilish imkonini beradi. Do'kon xarid qilish va grantlarni osonlashtiradi. so'nggi mahsulotlarga bepul kirishingiz mumkin. Qulay va tez xarid qilish uchun Do'konni tanlang!"
+    }
   }
 }
